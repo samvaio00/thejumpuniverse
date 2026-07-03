@@ -1,0 +1,39 @@
+name: Daily Gazette Generation
+
+on:
+  schedule:
+    - cron: '1 0 * * *'  # 00:01 UTC daily
+  workflow_dispatch:      # Manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Generate all 8 timelines
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python generate.py --all
+
+      - name: Commit and push
+        run: |
+          git config user.name "Gazette Bot"
+          git config user.email "bot@thejumpuniverse.com"
+          git add editions/ sitemap.xml rss.xml
+          git diff --quiet && git diff --staged --quiet || git commit -m "Daily edition: $(date +%Y-%m-%d) [skip ci]"
+          git push

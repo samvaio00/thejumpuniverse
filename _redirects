@@ -1,0 +1,5 @@
+# Redirect /timeline/123/2026-07-03 to query params for SEO-friendly sharing
+/timeline/:timeline/:date  /?timeline=:timeline&date=:date  301
+
+# Redirect /2026-07-03 to the default timeline for that date
+/:date  /?date=:date  301

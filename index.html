@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Multiverse Gazette — Daily Newspaper from Parallel Earths</title>
+    <meta name="description" content="Read the daily newspaper from alternate timelines. Each day, a new parallel Earth. Historical divergences, alternate futures, and news that never happened.">
+    <meta name="keywords" content="alternate history, parallel universe, speculative fiction, daily newspaper, multiverse, what if">
+    <meta name="author" content="The Multiverse Gazette">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="The Multiverse Gazette — Daily Newspaper from Parallel Earths">
+    <meta property="og:description" content="Today's headline from a timeline where history took a different turn.">
+    <meta property="og:image" content="https://multiversegazette.com/og-image.jpg">
+    <meta property="og:url" content="https://multiversegazette.com">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="canonical" href="https://multiversegazette.com">
+    <link rel="alternate" type="application/rss+xml" title="The Multiverse Gazette" href="/rss.xml">
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --paper-bg: #f4f1ea; --ink-color: #1a1a1a; --accent: #8b0000;
+            --column-rule: #c9c5bb; --font-headline: 'Georgia', serif;
+            --font-body: 'Georgia', serif; --font-masthead: 'Georgia', serif;
+            --font-special: 'Courier New', monospace;
+        }
+        html { scroll-behavior: smooth; }
+        body {
+            background: var(--paper-bg); color: var(--ink-color);
+            font-family: var(--font-body); line-height: 1.6;
+            min-height: 100vh; transition: background 0.5s ease, color 0.5s ease;
+            overflow-x: hidden;
+        }
+
+        [data-theme="victorian"] {
+            --paper-bg: #e8e0d5; --ink-color: #2c1810; --accent: #8b4513;
+            --column-rule: #a89080; --font-headline: 'Georgia', serif;
+            --font-body: 'Georgia', serif; --font-masthead: 'Georgia', serif;
+            --font-special: 'Courier New', monospace;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23d4c5b0' fill-opacity='0.15' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+        [data-theme="victorian"] .masthead { border-top: 4px double var(--accent); border-bottom: 4px double var(--accent); }
+        [data-theme="victorian"] .headline-main { text-transform: uppercase; letter-spacing: 2px; }
+        [data-theme="victorian"] .comic-panel { border: 2px solid var(--accent); background: #f0ebe3; }
+
+        [data-theme="artdeco"] {
+            --paper-bg: #f5f0e8; --ink-color: #1a1a2e; --accent: #c9a227;
+            --column-rule: #d4af37;
+            background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(201, 162, 39, 0.03) 35px, rgba(201, 162, 39, 0.03) 70px);
+        }
+        [data-theme="artdeco"] .masthead { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: var(--accent); border: 3px solid var(--accent); }
+        [data-theme="artdeco"] .masthead-title { letter-spacing: 8px; text-transform: uppercase; }
+        [data-theme="artdeco"] .headline-main { font-weight: 900; text-transform: uppercase; letter-spacing: 1px; }
+        [data-theme="artdeco"] .btn { background: var(--accent); color: #1a1a2e; border: 2px solid #1a1a2e; text-transform: uppercase; letter-spacing: 2px; font-weight: bold; }
+        [data-theme="artdeco"] .comic-panel { border: 3px solid var(--accent); background: linear-gradient(135deg, #f5f0e8, #fff); }
+
+        [data-theme="soviet"] {
+            --paper-bg: #e8e8e8; --ink-color: #1a1a1a; --accent: #cc0000;
+            --column-rule: #999; --font-headline: 'Courier New', monospace;
+            --font-body: 'Courier New', monospace; --font-masthead: 'Courier New', monospace;
+            --font-special: 'Courier New', monospace;
+        }
+        [data-theme="soviet"] .masthead { background: #cc0000; color: white; border: none; }
+        [data-theme="soviet"] .masthead-title { font-weight: 900; letter-spacing: 4px; }
+        [data-theme="soviet"] .headline-main { font-weight: 900; text-transform: uppercase; letter-spacing: 1px; }
+        [data-theme="soviet"] .btn { background: #cc0000; color: white; border: none; text-transform: uppercase; font-weight: 900; }
+        [data-theme="soviet"] .comic-panel { border: 4px solid #333; background: #f0f0f0; }
+        [data-theme="soviet"] .section-title { background: #333; color: white; padding: 2px 8px; display: inline-block; }
+
+        [data-theme="cyberpunk"] {
+            --paper-bg: #0a0a0f; --ink-color: #e0e0e0; --accent: #00ff9d;
+            --column-rule: #333; --font-headline: 'Courier New', monospace;
+            --font-body: 'Courier New', monospace; --font-masthead: 'Courier New', monospace;
+            --font-special: 'Courier New', monospace;
+            background-image: linear-gradient(rgba(0, 255, 157, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 255, 157, 0.03) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        [data-theme="cyberpunk"] .masthead { border: 2px solid var(--accent); box-shadow: 0 0 20px rgba(0, 255, 157, 0.2); background: #111118; }
+        [data-theme="cyberpunk"] .masthead-title { color: var(--accent); text-shadow: 0 0 10px rgba(0, 255, 157, 0.5); letter-spacing: 6px; }
+        [data-theme="cyberpunk"] .headline-main { color: var(--accent); text-shadow: 0 0 5px rgba(0, 255, 157, 0.3); }
+        [data-theme="cyberpunk"] .btn { background: transparent; color: var(--accent); border: 2px solid var(--accent); box-shadow: 0 0 10px rgba(0, 255, 157, 0.2); }
+        [data-theme="cyberpunk"] .comic-panel { border: 1px solid var(--accent); background: #111118; box-shadow: 0 0 15px rgba(0, 255, 157, 0.1); }
+        [data-theme="cyberpunk"] .ad-slot { border: 1px dashed var(--accent); background: rgba(0, 255, 157, 0.05); }
+        [data-theme="cyberpunk"] .weather-box { border: 1px solid var(--accent); background: rgba(0, 255, 157, 0.05); }
+
+        [data-theme="medieval"] {
+            --paper-bg: #f5f0e1; --ink-color: #3d2817; --accent: #8b0000;
+            --column-rule: #c9b896;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23c9b896' fill-opacity='0.2'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        [data-theme="medieval"] .masthead { border: 3px double var(--accent); background: linear-gradient(to bottom, #f5f0e1, #e8e0cc); }
+        [data-theme="medieval"] .masthead-title { font-variant: small-caps; letter-spacing: 3px; }
+        [data-theme="medieval"] .headline-main { font-variant: small-caps; letter-spacing: 1px; }
+        [data-theme="medieval"] .comic-panel { border: 2px solid var(--accent); background: #faf6ed; }
+
+        [data-theme="atomic"] {
+            --paper-bg: #faf8f3; --ink-color: #2c3e50; --accent: #e74c3c;
+            --column-rule: #bdc3c7;
+            background-image: radial-gradient(circle at 50% 50%, rgba(231, 76, 60, 0.03) 0%, transparent 70%);
+        }
+        [data-theme="atomic"] .masthead { border-top: 6px solid var(--accent); border-bottom: 2px solid var(--accent); background: white; }
+        [data-theme="atomic"] .masthead-title { letter-spacing: 6px; text-transform: uppercase; }
+        [data-theme="atomic"] .headline-main { text-transform: uppercase; letter-spacing: 1px; }
+        [data-theme="atomic"] .btn { background: var(--accent); color: white; border: none; border-radius: 4px; text-transform: uppercase; letter-spacing: 1px; }
+        [data-theme="atomic"] .comic-panel { border: 2px solid var(--accent); border-radius: 8px; background: white; box-shadow: 4px 4px 0 rgba(231, 76, 60, 0.2); }
+
+        [data-theme="vaporwave"] {
+            --paper-bg: #2d1b4e; --ink-color: #e0e0e0; --accent: #ff6b9d;
+            --column-rule: #553c7a; --font-headline: 'Courier New', monospace;
+            --font-body: 'Courier New', monospace; --font-masthead: 'Courier New', monospace;
+            --font-special: 'Courier New', monospace;
+            background-image: linear-gradient(180deg, rgba(255, 107, 157, 0.05) 0%, transparent 50%), linear-gradient(0deg, rgba(107, 207, 255, 0.05) 0%, transparent 50%);
+        }
+        [data-theme="vaporwave"] .masthead { border: 2px solid var(--accent); background: linear-gradient(135deg, #2d1b4e 0%, #1a0f2e 100%); box-shadow: 0 0 30px rgba(255, 107, 157, 0.2); }
+        [data-theme="vaporwave"] .masthead-title { color: var(--accent); text-shadow: 2px 2px 0px #6bcfff; letter-spacing: 8px; text-transform: uppercase; }
+        [data-theme="vaporwave"] .headline-main { color: #6bcfff; text-shadow: 2px 2px 0px rgba(255, 107, 157, 0.3); }
+        [data-theme="vaporwave"] .btn { background: linear-gradient(135deg, #ff6b9d, #6bcfff); color: #2d1b4e; border: none; text-transform: uppercase; letter-spacing: 2px; font-weight: bold; }
+        [data-theme="vaporwave"] .comic-panel { border: 2px solid #6bcfff; background: linear-gradient(135deg, #3d2566, #2d1b4e); box-shadow: 0 0 20px rgba(107, 207, 255, 0.2); }
+        [data-theme="vaporwave"] .ad-slot { border: 1px dashed #ff6b9d; background: rgba(255, 107, 157, 0.05); }
+
+        [data-theme="wasteland"] {
+            --paper-bg: #d4c5a9; --ink-color: #3d2817; --accent: #8b4513;
+            --column-rule: #a89070; --font-headline: 'Courier New', monospace;
+            --font-body: 'Courier New', monospace; --font-masthead: 'Courier New', monospace;
+            --font-special: 'Courier New', monospace;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.08'/%3E%3C/svg%3E");
+        }
+        [data-theme="wasteland"] .masthead { border: 3px solid var(--accent); background: #c9b896; }
+        [data-theme="wasteland"] .masthead-title { letter-spacing: 6px; text-transform: uppercase; font-weight: 900; }
+        [data-theme="wasteland"] .headline-main { text-transform: uppercase; letter-spacing: 2px; font-weight: 900; }
+        [data-theme="wasteland"] .btn { background: var(--accent); color: #d4c5a9; border: 2px solid #3d2817; text-transform: uppercase; letter-spacing: 2px; }
+        [data-theme="wasteland"] .comic-panel { border: 3px solid var(--accent); background: #e0d4bc; }
+        [data-theme="wasteland"] .paper-body { filter: sepia(0.3); }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        .ad-slot {
+            background: rgba(0,0,0,0.03); border: 1px dashed #999;
+            display: flex; align-items: center; justify-content: center;
+            font-family: var(--font-special); font-size: 0.75rem; color: #666;
+            text-transform: uppercase; letter-spacing: 1px; min-height: 90px;
+            margin: 20px 0; transition: all 0.3s ease;
+        }
+        .ad-slot:hover { background: rgba(0,0,0,0.05); }
+        .ad-slot.leaderboard { width: 100%; min-height: 90px; }
+        .ad-slot.sidebar-ad { min-height: 250px; margin: 0 0 20px 0; }
+
+        .masthead { text-align: center; padding: 30px 20px; margin: 20px 0; position: relative; }
+        .masthead-ornament { font-size: 1.2rem; letter-spacing: 4px; opacity: 0.6; margin-bottom: 8px; }
+        .masthead-title { font-family: var(--font-masthead); font-size: clamp(2rem, 5vw, 4rem); font-weight: 700; line-height: 1.1; margin-bottom: 8px; }
+        .masthead-subtitle { font-family: var(--font-special); font-size: 0.9rem; letter-spacing: 3px; text-transform: uppercase; opacity: 0.8; }
+        .masthead-date { font-family: var(--font-special); font-size: 0.85rem; margin-top: 12px; opacity: 0.7; }
+        .masthead-divergence { display: inline-block; margin-top: 10px; padding: 4px 12px; border: 1px solid var(--accent); font-family: var(--font-special); font-size: 0.75rem; letter-spacing: 2px; text-transform: uppercase; color: var(--accent); }
+
+        .nav-bar { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; padding: 15px 0; border-bottom: 1px solid var(--column-rule); margin-bottom: 30px; }
+        .btn { padding: 10px 24px; font-family: var(--font-special); font-size: 0.85rem; cursor: pointer; transition: all 0.3s ease; text-decoration: none; display: inline-block; border: none; }
+        .btn:hover { transform: translateY(-2px); opacity: 0.9; }
+        .btn-secondary { background: transparent; border: 1px solid var(--ink-color); color: var(--ink-color); }
+
+        .paper-body { display: grid; grid-template-columns: 1fr 300px; gap: 40px; margin-bottom: 40px; }
+        @media (max-width: 900px) { .paper-body { grid-template-columns: 1fr; } }
+
+        .headline-main { font-family: var(--font-headline); font-size: clamp(1.8rem, 4vw, 3rem); line-height: 1.1; margin-bottom: 20px; font-weight: 700; }
+        .headline-deck { font-family: var(--font-body); font-size: 1.1rem; font-style: italic; opacity: 0.8; margin-bottom: 20px; line-height: 1.4; }
+        .byline { font-family: var(--font-special); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; opacity: 0.7; margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px solid var(--column-rule); }
+
+        .article-body { font-family: var(--font-body); font-size: 1.05rem; line-height: 1.7; text-align: justify; hyphens: auto; }
+        .article-body p { margin-bottom: 1.2em; text-indent: 2em; }
+        .article-body p:first-of-type { text-indent: 0; }
+        .article-body p:first-of-type::first-letter { font-size: 3em; float: left; line-height: 0.8; margin-right: 8px; margin-top: 4px; font-weight: bold; color: var(--accent); }
+        [data-theme="medieval"] .article-body p:first-of-type::first-letter { font-size: 3.5em; }
+
+        @media (min-width: 700px) { .article-body { column-count: 2; column-gap: 40px; column-rule: 1px solid var(--column-rule); } .article-body p { break-inside: avoid; } }
+
+        .sidebar { border-left: 1px solid var(--column-rule); padding-left: 30px; }
+        @media (max-width: 900px) { .sidebar { border-left: none; border-top: 2px solid var(--column-rule); padding-left: 0; padding-top: 30px; } }
+
+        .section-title { font-family: var(--font-special); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 15px; padding-bottom: 8px; border-bottom: 2px solid var(--accent); display: inline-block; }
+
+        .weather-box { border: 1px solid var(--column-rule); padding: 20px; margin-bottom: 30px; text-align: center; }
+        .weather-city { font-family: var(--font-special); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; opacity: 0.7; margin-bottom: 10px; }
+        .weather-temp { font-size: 2.5rem; font-weight: 700; font-family: var(--font-headline); margin-bottom: 5px; }
+        .weather-condition { font-style: italic; font-size: 0.95rem; margin-bottom: 15px; }
+        .weather-details { font-family: var(--font-special); font-size: 0.75rem; opacity: 0.7; display: flex; justify-content: center; gap: 15px; }
+
+        .oped-box { margin-bottom: 30px; padding-bottom: 20px; border-bottom: 1px solid var(--column-rule); }
+        .oped-title { font-family: var(--font-headline); font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; line-height: 1.3; }
+        .oped-author { font-family: var(--font-special); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; opacity: 0.6; margin-bottom: 10px; }
+        .oped-body { font-size: 0.9rem; line-height: 1.6; font-style: italic; }
+
+        .classifieds-list { list-style: none; }
+        .classified-item { font-family: var(--font-special); font-size: 0.8rem; padding: 8px 0; border-bottom: 1px dotted var(--column-rule); line-height: 1.4; }
+        .classified-item:last-child { border-bottom: none; }
+        .classified-cat { font-weight: bold; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 1px; color: var(--accent); display: block; margin-bottom: 2px; }
+
+        .comic-section { margin: 40px 0; page-break-inside: avoid; }
+        .comic-panel { padding: 30px; text-align: center; position: relative; overflow: hidden; }
+        .comic-title { font-family: var(--font-special); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 20px; opacity: 0.7; }
+        .comic-visual { width: 100%; height: 300px; display: flex; align-items: center; justify-content: center; position: relative; margin-bottom: 15px; }
+        .comic-caption { font-family: var(--font-special); font-size: 0.9rem; font-style: italic; line-height: 1.5; max-width: 500px; margin: 0 auto; }
+        .comic-svg { width: 100%; height: 100%; }
+
+        .archive-section { border-top: 2px solid var(--column-rule); padding-top: 40px; margin-top: 40px; }
+        .archive-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; margin-top: 20px; }
+        .archive-card { border: 1px solid var(--column-rule); padding: 20px; cursor: pointer; transition: all 0.3s ease; }
+        .archive-card:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .archive-card-date { font-family: var(--font-special); font-size: 0.75rem; text-transform: uppercase; opacity: 0.6; margin-bottom: 8px; }
+        .archive-card-headline { font-family: var(--font-headline); font-size: 1rem; font-weight: 700; line-height: 1.3; margin-bottom: 8px; }
+        .archive-card-divergence { font-family: var(--font-special); font-size: 0.7rem; color: var(--accent); text-transform: uppercase; letter-spacing: 1px; }
+
+        .footer { border-top: 2px solid var(--column-rule); padding: 40px 0; text-align: center; font-family: var(--font-special); font-size: 0.8rem; opacity: 0.6; margin-top: 60px; }
+        .footer-links { display: flex; justify-content: center; gap: 20px; margin-bottom: 15px; flex-wrap: wrap; }
+        .footer-links a { color: inherit; text-decoration: none; }
+        .footer-links a:hover { text-decoration: underline; }
+
+        @media print { .nav-bar, .ad-slot, .archive-section, .footer { display: none !important; } .paper-body { grid-template-columns: 1fr 250px; } body { background: white !important; color: black !important; } }
+
+        .loading { opacity: 0.5; pointer-events: none; }
+        .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0; }
+        .breadcrumb { font-family: var(--font-special); font-size: 0.75rem; opacity: 0.6; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px; }
+        .breadcrumb a { color: inherit; text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .error-box { border: 2px solid var(--accent); padding: 20px; text-align: center; margin: 40px 0; font-family: var(--font-special); }
+    </style>
+</head>
+<body data-theme="victorian">
+    <div class="container">
+        <div class="ad-slot leaderboard" aria-label="Advertisement"><span>Advertisement</span></div>
+
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Home</a> / <span id="breadcrumb-date">Today's Edition</span> / <span id="breadcrumb-timeline">Timeline 8472</span>
+        </nav>
+
+        <header class="masthead" role="banner">
+            <div class="masthead-ornament" id="masthead-ornament">✦ ✦ ✦</div>
+            <h1 class="masthead-title" id="masthead-title">The Multiverse Gazette</h1>
+            <div class="masthead-subtitle" id="masthead-subtitle">The Daily Newspaper of Alternate Earths</div>
+            <div class="masthead-date" id="masthead-date">Loading...</div>
+            <div class="masthead-divergence" id="masthead-divergence">Divergence Point: Loading...</div>
+        </header>
+
+        <nav class="nav-bar" role="navigation" aria-label="Main Navigation">
+            <button class="btn" id="btn-jump" onclick="jumpUniverse()">🌌 Jump Universe</button>
+            <button class="btn btn-secondary" id="btn-next" onclick="nextDay()">📰 Read Next Day</button>
+            <button class="btn btn-secondary" id="btn-archive" onclick="toggleArchive()">📚 Browse Archive</button>
+            <button class="btn btn-secondary" onclick="sharePaper()">🔗 Share</button>
+        </nav>
+
+        <main class="paper-body" role="main">
+            <article class="main-article">
+                <h2 class="headline-main" id="headline-main">Loading Headline...</h2>
+                <p class="headline-deck" id="headline-deck">Loading deck...</p>
+                <div class="byline" id="byline">By <span id="author-name">Staff Correspondent</span> | <span id="dateline">The Capital</span></div>
+
+                <div class="article-body" id="article-body"><p>Loading article...</p></div>
+
+                <div class="ad-slot leaderboard" aria-label="Advertisement" style="margin: 30px 0;"><span>Advertisement</span></div>
+
+                <section class="comic-section" aria-label="Daily Comic">
+                    <div class="comic-panel" id="comic-panel">
+                        <div class="comic-title" id="comic-title">The Daily Panel</div>
+                        <div class="comic-visual" id="comic-visual"></div>
+                        <p class="comic-caption" id="comic-caption">Loading comic...</p>
+                    </div>
+                </section>
+            </article>
+
+            <aside class="sidebar" role="complementary">
+                <div class="ad-slot sidebar-ad" aria-label="Advertisement"><span>Ad Space</span></div>
+
+                <section aria-label="Weather Report">
+                    <h3 class="section-title">Weather</h3>
+                    <div class="weather-box" id="weather-box">
+                        <div class="weather-city" id="weather-city">Capital City</div>
+                        <div class="weather-temp" id="weather-temp">--°</div>
+                        <div class="weather-condition" id="weather-condition">--</div>
+                        <div class="weather-details">
+                            <span id="weather-high">H: --°</span>
+                            <span id="weather-low">L: --°</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section aria-label="Opinion Editorial">
+                    <h3 class="section-title">Op-Ed</h3>
+                    <div class="oped-box" id="oped-box">
+                        <div class="oped-title" id="oped-title">Loading...</div>
+                        <div class="oped-author" id="oped-author">By Guest Contributor</div>
+                        <div class="oped-body" id="oped-body">Loading...</div>
+                    </div>
+                </section>
+
+                <section aria-label="Classified Advertisements">
+                    <h3 class="section-title">Classifieds</h3>
+                    <ul class="classifieds-list" id="classifieds-list"></ul>
+                </section>
+
+                <div class="ad-slot sidebar-ad" aria-label="Advertisement"><span>Ad Space</span></div>
+            </aside>
+        </main>
+
+        <section class="archive-section" id="archive-section" style="display: none;" aria-label="Archive">
+            <h3 class="section-title" style="font-size: 1.2rem;">Recent Editions from This Timeline</h3>
+            <div class="archive-grid" id="archive-grid"></div>
+        </section>
+
+        <footer class="footer" role="contentinfo">
+            <div class="footer-links">
+                <a href="/about">About</a>
+                <a href="/archive">Full Archive</a>
+                <a href="/rss.xml">RSS Feed</a>
+                <a href="/api">API</a>
+                <a href="/privacy">Privacy</a>
+            </div>
+            <p>© <span id="footer-year">2026</span> The Multiverse Gazette. All timelines reserved.</p>
+            <p style="margin-top: 8px; font-size: 0.75rem; opacity: 0.5;">Each edition is algorithmically generated. No two timelines are alike.</p>
+        </footer>
+    </div>
+
+    <script>
+        const EDITIONS_DIR = '/editions';
+
+        class SeededRandom {
+            constructor(seed) { this.seed = seed; }
+            next() {
+                let t = this.seed += 0x6D2B79F5;
+                t = Math.imul(t ^ (t >>> 15), t | 1);
+                t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+                return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+            }
+            range(min, max) { return Math.floor(this.next() * (max - min + 1)) + min; }
+            pick(arr) { return arr[this.range(0, arr.length - 1)]; }
+        }
+
+        let currentState = { date: new Date(), timelineId: null, paper: null };
+
+        async function init() {
+            const params = new URLSearchParams(window.location.search);
+            const timelineParam = params.get('timeline');
+            const dateParam = params.get('date');
+            if (timelineParam) currentState.timelineId = parseInt(timelineParam);
+            if (dateParam) currentState.date = new Date(dateParam);
+            await loadEdition();
+        }
+
+        async function loadEdition() {
+            document.body.classList.add('loading');
+            const dateStr = currentState.date.toISOString().split('T')[0];
+            const timelineId = currentState.timelineId || getDefaultTimeline(currentState.date);
+            const filename = `${dateStr}-${timelineId}.json`;
+
+            let paper = null;
+            try {
+                const resp = await fetch(`${EDITIONS_DIR}/${filename}`, { cache: 'no-store' });
+                if (resp.ok) { paper = await resp.json(); console.log('Server:', filename); }
+            } catch (e) { console.log('Fallback to client generator'); }
+
+            if (!paper) paper = generateClientSide(currentState.date, timelineId);
+
+            currentState.paper = paper;
+            currentState.timelineId = paper.timeline_id || timelineId;
+            render(paper);
+            updateSEO(paper);
+            saveToArchive(paper);
+            document.body.classList.remove('loading');
+        }
+
+        function getDefaultTimeline(date) {
+            const start = new Date(date.getFullYear(), 0, 0);
+            const dayOfYear = Math.floor((date - start) / 86400000);
+            return (dayOfYear % 8) + 1;
+        }
+
+        function generateClientSide(date, timelineId) {
+            const dateSeed = date.getFullYear() * 10000 + (date.getMonth() + 1) * 100 + date.getDate();
+            const seed = timelineId * 1000000 + dateSeed;
+            const rng = new SeededRandom(seed);
+            const themes = ["victorian","artdeco","soviet","cyberpunk","medieval","atomic","vaporwave","wasteland"];
+            const theme = themes[(timelineId - 1) % 8];
+            const yearBase = {victorian:1890,artdeco:1927,soviet:1962,cyberpunk:2087,medieval:1347,atomic:1954,vaporwave:1986,wasteland:2147}[theme];
+            const year = yearBase + (date.getFullYear() - 2026);
+            const divergences = ["Babbage completed the Analytical Engine in 1840","The Great Depression never occurred","The Romanovs survived the revolution","Neural interfaces became mandatory in 2045","Rome never fell","The atomic bomb was never used in war","The Soviet Union won the Cold War","A plague wiped out 90% of humanity in 2020"];
+            const divergence = rng.pick(divergences);
+            const headlines = {victorian:[{t:"Aether-Train Derailment Claims Twelve Souls",d:"Investigators suspect sabotage by Luddite saboteurs."},{t:"Queen Approves Mass Expansion of Pneumatic Post",d:"The ambitious project promises delivery across the Empire in mere hours."},{t:"Clockwork Constables Deployed to East-End Districts",d:"Critics cite their inability to navigate stairs."}],artdeco:[{t:"Zeppelin Completes Trans-Atlantic Crossing in Record Time",d:"The future of luxury travel floats three thousand feet above the Atlantic."},{t:"Stock Market Reaches Stratospheric New Heights",d:"Analysts warn of a bubble, but the party shows no signs of stopping."},{t:"Architect Unveils Plans for Mile-High Tower",d:"Skeptics call it impossible. The architect calls it Tuesday."}],soviet:[{t:"FIVE-YEAR PLAN EXCEEDS QUOTA BY 12%",d:"Comrade workers have surpassed projections in steel and concrete."},{t:"NEW MONUMENT TO LABOR UNVEILED IN VICTORY SQUARE",d:"The 40-meter concrete statue depicts eternal forward motion."},{t:"COSMONAUT TRAINING EXPANDS TO INCLUDE WOMEN",d:"The Motherland will not waste half its genius."}],cyberpunk:[{t:"Neural Interface Hack Exposes 2 Million Brain-Linked Users",d:"Victims report intrusive memories of a beach they never visited."},{t:"Synthetic Pop Star Wins Grammy, Sparks Identity Debate",d:"She is code. She is art. She is property of Yutani Media."},{t:"AI Mayor Elected in District 13 by Landslide",d:"The algorithm promised efficiency. The voters promised obedience."}],medieval:[{t:"The King Returns From Crusade With Relics Most Holy",d:"His Majesty brought back a fragment of the True Cross."},{t:"Plague Ships Spotted in the Southern Harbor",d:"The port authority has ordered all vessels quarantined for forty days."},{t:"Tournament to Be Held in the Meadow of Saint George",d:"Knights from six kingdoms have pledged their lances."}],atomic:[{t:"Family Builds Fallout Shelter in Backyard Over Weekend",d:"The Andersons say it was easier than installing a pool."},{t:"New Kitchen of the Future Unveiled at World's Fair",d:"Push-button cooking and a refrigerator that plans your meals."},{t:"Polio Vaccine Declared Safe After Nationwide Trials",d:"Dr. Salk's miracle is here. Parents are lining up around the block."}],vaporwave:[{t:"Mall of America Breaks Ground: The Future of Shopping is Here",d:"Seven acres of retail under one climate-controlled roof."},{t:"Aerobics Craze Sweeps Nation: Spandex Sales Up 400%",d:"Doctors warn of 'jazzercise knee,' but the leg warmers march on."},{t:"Nintendo Entertainment System Saves the Video Game Industry",d:"After the crash, a plumber named Mario brings joy back to living rooms."}],wasteland:[{t:"Water Baron Controls Last Known Well in Sector 7",d:"He charges ten bullets per gallon. The thirsty have no choice."},{t:"War Rig Convoy Ambushed on the Salt Flats",d:"The raiders took the fuel, the food, and the driver."},{t:"Old World Library Burned for Heat by Freezing Refugees",d:"Shakespeare, Plato, and Asimov. All gone in one night."}]};
+            const hl = rng.pick(headlines[theme]);
+            const article = `<p>In a development that has stunned observers across the nation, ${hl.t.toLowerCase()}. Sources close to the matter have confirmed that the situation remains fluid.</p><p>Officials have declined to comment, but witnesses describe a scene of both confusion and cautious optimism. The implications for the average citizen remain unclear.</p><p>Historical records suggest a similar event occurred nearly a century ago in this timeline, though on a much smaller scale. International observers have expressed both admiration and concern.</p><p>Residents of the capital expressed mixed reactions. "I never thought I'd see the day," said one local merchant. "It changes everything, and yet it changes nothing."</p><p>Only time will tell whether this marks the beginning of a new era or merely a footnote in the annals of this parallel history.</p>`;
+            const opeds = {victorian:{title:"The Moral Cost of Automaton Labor",author:"A Concerned Clergyman",body:"When a man is replaced by brass and steam, what becomes of his soul?"},artdeco:{title:"The Jazz Age is Not a Rebellion, It is a Renaissance",author:"A Modernist",body:"We are not lost. We are merely dancing faster than our parents can hear the music."},soviet:{title:"THE INDIVIDUAL IS A MYTH",author:"A Worker-Philosopher",body:"The West speaks of personal freedom. We speak of collective strength."},cyberpunk:{title:"Your Body is a Rental",author:"A Ghost in the Machine",body:"You do not own your liver. You do not own your eyes."},medieval:{title:"The Peasant's Lot is God's Lot",author:"A Parish Priest",body:"To question one's station is to question the divine order."},atomic:{title:"Why Every American Family Needs a Bomb Shelter",author:"A Concerned Father",body:"It is not paranoia. It is prudence."},vaporwave:{title:"The Mall is the New Town Square",author:"A Consumer Advocate",body:"Where else can you buy sneakers, eat a pretzel, and see a movie?"},wasteland:{title:"The Old World Deserved to Die",author:"A Survivor",body:"They had everything and wasted it."}};
+            const oped = opeds[theme];
+            const classifieds = [{cat:"For Sale",text:"Pre-war can opener. Rusted but functional. Two bullets or best offer."},{cat:"Employment",text:"Scavenger needed for deep-ruin expedition. Must bring own gas mask."},{cat:"Housing",text:"Lean-to near the old highway. Wind protection minimal. No raiders currently."},{cat:"Services",text:"Radiation detox. 50% success rate. Payment upfront. No refunds."}];
+            const weather = {city: rng.pick(["The Capital","New London","Metropolis","Neo-Tokyo","King's Landing","Springfield","Miami Vice","New Eden"]),condition: rng.pick(["Clear","Foggy","Stormy","Bright","Hazy","Windy","Drizzle","Overcast"]),temp: rng.range(15,95),high:0,low:0};
+            weather.high = weather.temp + rng.range(3,10); weather.low = weather.temp - rng.range(3,10);
+            const comic = {caption: rng.pick(["'Life goes on. Somehow.'","'The future is here, and it is slightly greasy.'","'I came for the view. I stayed because the door locked.'"]),scene: rng.pick(["street","laboratory","castle","alley","suburb","ruin"])};
+            return {timeline_id: timelineId,theme:theme,date:date.toISOString().split('T')[0],date_display:date.toLocaleDateString('en-US',{weekday:'long',year:'numeric',month:'long',day:'numeric'}),year:year,divergence:divergence,headline:hl.t,deck:hl.d,article:article,author:rng.pick(["Staff Correspondent","Special Reporter","Foreign Bureau","Local Editor"]),city:weather.city,weather:weather,oped:oped,classifieds:classifieds,comic:comic};
+        }
+
+        function render(paper) {
+            document.body.setAttribute('data-theme', paper.theme);
+            const ornaments = {victorian:'✦ ☙ ✦',artdeco:'◆ ▲ ◆',soviet:'☭ ✦ ☭',cyberpunk:'▚ ▞ ▚',medieval:'✠ ✦ ✠',atomic:'⚛ ★ ⚛',vaporwave:'▓ ▒ ░',wasteland:'☢ ☠ ☢'};
+            document.getElementById('masthead-ornament').textContent = ornaments[paper.theme] || '✦ ✦ ✦';
+            document.getElementById('masthead-subtitle').textContent = `The Daily Newspaper of Alternate Earths — ${paper.theme.charAt(0).toUpperCase()+paper.theme.slice(1)}`;
+            document.getElementById('masthead-date').textContent = `${paper.date_display}, Year ${paper.year}`;
+            document.getElementById('masthead-divergence').textContent = `Divergence: ${paper.divergence}`;
+            document.getElementById('breadcrumb-date').textContent = paper.date_display;
+            document.getElementById('breadcrumb-timeline').textContent = `Timeline ${paper.timeline_id}`;
+            document.getElementById('headline-main').textContent = paper.headline;
+            document.getElementById('headline-deck').textContent = paper.deck;
+            document.getElementById('author-name').textContent = paper.author;
+            document.getElementById('dateline').textContent = paper.city;
+            document.getElementById('article-body').innerHTML = paper.article;
+            document.getElementById('weather-city').textContent = paper.city;
+            document.getElementById('weather-temp').textContent = `${paper.weather.temp}°`;
+            document.getElementById('weather-condition').textContent = paper.weather.condition;
+            document.getElementById('weather-high').textContent = `H: ${paper.weather.high}°`;
+            document.getElementById('weather-low').textContent = `L: ${paper.weather.low}°`;
+            document.getElementById('oped-title').textContent = paper.oped.title;
+            document.getElementById('oped-author').textContent = `By ${paper.oped.author}`;
+            document.getElementById('oped-body').textContent = paper.oped.body;
+            document.getElementById('classifieds-list').innerHTML = paper.classifieds.map(c => `<li class="classified-item"><span class="classified-cat">${c.cat}</span>${c.text}</li>`).join('');
+            document.getElementById('comic-title').textContent = "The Daily Panel";
+            document.getElementById('comic-visual').innerHTML = generateComicSVG(paper.comic.scene, paper.theme);
+            document.getElementById('comic-caption').textContent = paper.comic.caption;
+            document.getElementById('footer-year').textContent = new Date().getFullYear();
+            const url = new URL(window.location);
+            url.searchParams.set('timeline', paper.timeline_id);
+            url.searchParams.set('date', paper.date);
+            window.history.replaceState({}, '', url);
+        }
+
+        function updateSEO(paper) {
+            document.title = `${paper.headline} | The Multiverse Gazette — Timeline ${paper.timeline_id}`;
+            document.querySelector('meta[name="description"]').setAttribute('content', `${paper.deck} — Read today's edition from a timeline where ${paper.divergence}.`);
+            document.querySelector('meta[property="og:title"]').setAttribute('content', paper.headline);
+            document.querySelector('meta[property="og:description"]').setAttribute('content', paper.deck);
+            document.querySelector('meta[property="og:url"]').setAttribute('content', window.location.href);
+            const sd = {"@context":"https://schema.org","@type":"NewsArticle","headline":paper.headline,"description":paper.deck,"url":window.location.href,"datePublished":paper.date+"T00:00:00Z","author":{"@type":"Person","name":paper.author},"publisher":{"@type":"Organization","name":"The Multiverse Gazette","logo":{"@type":"ImageObject","url":"https://multiversegazette.com/logo.png"}}};
+            let el = document.getElementById('structured-data');
+            if (!el) { el = document.createElement('script'); el.id = 'structured-data'; el.type = 'application/ld+json'; document.head.appendChild(el); }
+            el.textContent = JSON.stringify(sd);
+        }
+
+        function generateComicSVG(scene, theme) {
+            const colors = {victorian:{bg:'#f0ebe3',fg:'#2c1810',accent:'#8b4513'},artdeco:{bg:'#f5f0e8',fg:'#1a1a2e',accent:'#c9a227'},soviet:{bg:'#f0f0f0',fg:'#1a1a1a',accent:'#cc0000'},cyberpunk:{bg:'#111118',fg:'#00ff9d',accent:'#ff00ff'},medieval:{bg:'#faf6ed',fg:'#3d2817',accent:'#8b0000'},atomic:{bg:'#ffffff',fg:'#2c3e50',accent:'#e74c3c'},vaporwave:{bg:'#3d2566',fg:'#6bcfff',accent:'#ff6b9d'},wasteland:{bg:'#e0d4bc',fg:'#3d2817',accent:'#8b4513'}};
+            const c = colors[theme] || colors.wasteland;
+            const scenes = {street:`<rect x="50" y="100" width="40" height="100" fill="none" stroke="${c.fg}" stroke-width="2"/><rect x="120" y="80" width="40" height="120" fill="none" stroke="${c.fg}" stroke-width="2"/><rect x="190" y="110" width="40" height="90" fill="none" stroke="${c.fg}" stroke-width="2"/><line x1="0" y1="200" x2="300" y2="200" stroke="${c.fg}" stroke-width="2"/><circle cx="70" cy="140" r="5" fill="${c.accent}"/>`,laboratory:`<rect x="100" y="50" width="100" height="80" fill="none" stroke="${c.fg}" stroke-width="2"/><line x1="120" y1="130" x2="120" y2="180" stroke="${c.fg}" stroke-width="2"/><line x1="180" y1="130" x2="180" y2="180" stroke="${c.fg}" stroke-width="2"/><rect x="110" y="180" width="80" height="40" fill="none" stroke="${c.fg}" stroke-width="2"/><circle cx="150" cy="90" r="15" fill="${c.accent}" opacity="0.3"/>`,castle:`<rect x="100" y="80" width="100" height="120" fill="none" stroke="${c.fg}" stroke-width="2"/><rect x="120" y="40" width="20" height="40" fill="none" stroke="${c.fg}" stroke-width="2"/><rect x="160" y="40" width="20" height="40" fill="none" stroke="${c.fg}" stroke-width="2"/><rect x="130" y="140" width="40" height="60" fill="none" stroke="${c.fg}" stroke-width="1"/>`,alley:`<rect x="80" y="50" width="50" height="150" fill="none" stroke="${c.fg}" stroke-width="2"/><rect x="170" y="50" width="50" height="150" fill="none" stroke="${c.fg}" stroke-width="2"/><line x1="130" y1="200" x2="170" y2="200" stroke="${c.fg}" stroke-width="2"/><circle cx="150" cy="120" r="5" fill="${c.accent}"/>`,suburb:`<rect x="60" y="100" width="60" height="80" fill="none" stroke="${c.fg}" stroke-width="2"/><rect x="140" y="80" width="80" height="100" fill="none" stroke="${c.fg}" stroke-width="2"/><rect x="160" y="110" width="20" height="30" fill="none" stroke="${c.fg}" stroke-width="1"/><circle cx="170" cy="140" r="3" fill="${c.accent}"/><line x1="0" y1="180" x2="300" y2="180" stroke="${c.fg}" stroke-width="2"/>`,ruin:`<rect x="80" y="80" width="60" height="100" fill="none" stroke="${c.fg}" stroke-width="2"/><rect x="160" y="60" width="60" height="120" fill="none" stroke="${c.fg}" stroke-width="2"/><line x1="100" y1="80" x2="120" y2="100" stroke="${c.fg}" stroke-width="2"/><line x1="180" y1="60" x2="200" y2="80" stroke="${c.fg}" stroke-width="2"/><line x1="0" y1="180" x2="300" y2="180" stroke="${c.fg}" stroke-width="2"/>`};
+            const content = scenes[scene] || scenes.street;
+            return `<svg class="comic-svg" viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="220" fill="${c.bg}"/>${content}</svg>`;
+        }
+
+        function jumpUniverse() { currentState.timelineId = Math.floor(Math.random() * 99999) + 1; currentState.date = new Date(); loadEdition(); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+        function nextDay() { const next = new Date(currentState.date); next.setDate(next.getDate() + 1); currentState.date = next; loadEdition(); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+        function toggleArchive() { const archive = document.getElementById('archive-section'); archive.style.display = archive.style.display === 'none' ? 'block' : 'none'; if (archive.style.display === 'block') loadArchiveUI(); }
+        function sharePaper() { if (navigator.share) { navigator.share({ title: document.title, text: currentState.paper.deck, url: window.location.href }); } else { navigator.clipboard.writeText(window.location.href); alert('Link copied to clipboard!'); } }
+
+        function saveToArchive(paper) {
+            let archive = JSON.parse(localStorage.getItem('mvg_archive') || '[]');
+            const key = `${paper.timeline_id}-${paper.date}`;
+            if (!archive.find(a => a.key === key)) {
+                archive.unshift({ key, timeline_id: paper.timeline_id, date: paper.date, date_display: paper.date_display, headline: paper.headline, divergence: paper.divergence, theme: paper.theme });
+                archive = archive.slice(0, 20);
+                localStorage.setItem('mvg_archive', JSON.stringify(archive));
+            }
+        }
+
+        function loadArchiveUI() {
+            const archive = JSON.parse(localStorage.getItem('mvg_archive') || '[]');
+            const grid = document.getElementById('archive-grid');
+            if (archive.length === 0) { grid.innerHTML = '<p style="grid-column: 1/-1; opacity: 0.6; font-style: italic;">No editions viewed yet. Jump universes to build your archive.</p>'; return; }
+            grid.innerHTML = archive.map(item => `<div class="archive-card" onclick="loadArchiveItem('${item.timeline_id}', '${item.date}')"><div class="archive-card-date">${item.date_display}</div><div class="archive-card-headline">${item.headline}</div><div class="archive-card-divergence">${item.divergence}</div></div>`).join('');
+        }
+
+        function loadArchiveItem(timelineId, date) { currentState.timelineId = parseInt(timelineId); currentState.date = new Date(date); loadEdition(); document.getElementById('archive-section').style.display = 'none'; window.scrollTo({ top: 0, behavior: 'smooth' }); }
+
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>
