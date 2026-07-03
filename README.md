@@ -8,7 +8,7 @@ A daily, procedurally generated newspaper from alternate timelines. Zero sign-up
 GitHub Actions (Daily 00:01) → Python Script (LLM + Fallback) → Static JSON /editions/
                                                                    │
                                                                    ▼
-                                                        Static HTML (Vercel/Netlify)
+                                                        Static HTML (Cloudflare Pages)
                                                         Fetches JSON + Client Fallback
 ```
 
@@ -22,8 +22,9 @@ python generate.py --all
 python -m http.server 8000
 # Open http://localhost:8000
 
-# 3. Deploy to Vercel
-vercel --prod
+# 3. Deploy to Cloudflare Pages
+#    Add CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID repo secrets, then push to main.
+#    See DEPLOY.md for setup details.
 ```
 
 ## GitHub Actions Setup

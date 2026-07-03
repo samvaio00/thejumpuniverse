@@ -38,13 +38,37 @@ git push -u origin main
 
 ## Step 4: Connect Cloudflare Pages
 
+Choose **one** of these options. Option A is recommended because it deploys from GitHub Actions and does not require linking the repo inside the Cloudflare dashboard.
+
+### Option A: Deploy via GitHub Actions (recommended)
+
+1. Log in to https://dash.cloudflare.com
+2. Copy your **Account ID** from the right sidebar on the Workers & Pages overview
+3. Create an API token:
+   - Go to **My Profile** → **API Tokens** → **Create Token**
+   - Use the **Edit Cloudflare Workers** template, or create a custom token with:
+     - **Account** → **Cloudflare Pages** → **Edit**
+   - Copy the token (shown only once)
+4. Add GitHub repository secrets:
+   - Go to your repo → **Settings** → **Secrets and variables** → **Actions**
+   - Add `CLOUDFLARE_API_TOKEN` with the token value
+   - Add `CLOUDFLARE_ACCOUNT_ID` with your account ID
+5. Push to `main` (or merge a PR). The **Deploy to Cloudflare Pages** workflow will:
+   - Create the `thejumpuniverse` Pages project on first run if it does not exist
+   - Upload the static site from the repo root
+   - Deploy on every push to `main` and after each daily edition commit
+
+Your site will be live at `https://thejumpuniverse.pages.dev` until you add a custom domain.
+
+### Option B: Connect Git in the Cloudflare dashboard
+
 1. Log in to https://dash.cloudflare.com
 2. Go to **Workers & Pages** → **Create application** → **Pages** → **Connect to Git**
 3. Select your GitHub account → authorize Cloudflare
 4. Select the `thejumpuniverse` repository
 5. Click **Begin setup**
 
-### Build Settings
+### Build Settings (Option B only)
 - **Project name:** `thejumpuniverse`
 - **Production branch:** `main`
 - **Build command:** *(leave empty — this is a static site)*
@@ -52,6 +76,8 @@ git push -u origin main
 - **Root directory:** *(leave empty)*
 
 Click **Save and Deploy**
+
+> **Note:** If you use Option A (GitHub Actions), do not also connect the same repo in the Cloudflare dashboard. That would create duplicate deployments.
 
 ## Step 5: Connect Custom Domain
 
@@ -148,9 +174,10 @@ Every day at 00:01 UTC
 - Make sure `permissions: contents: write` is in the workflow
 
 ### "Site not updating after workflow"
-- Cloudflare Pages deploys automatically on every commit to main
+- If using GitHub Actions deploy: check **Actions** → **Deploy to Cloudflare Pages**
+- Ensure `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` secrets are set
+- If using Cloudflare Git integration: Pages deploys automatically on every commit to main
 - Check Pages dashboard → Deployments for status
-- If using `[skip ci]` in commit message, Pages still deploys (it ignores that tag)
 
 ### "Custom domain shows 404"
 - Ensure DNS record in Cloudflare is proxied (orange cloud)
