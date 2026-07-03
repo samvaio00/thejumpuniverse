@@ -26,15 +26,35 @@ git remote add origin https://github.com/YOUR_USERNAME/thejumpuniverse.git
 git push -u origin main
 ```
 
-## Step 3: Configure GitHub Actions Secret
+## Step 3: Configure Secrets
+
+Add credentials in **one** of these places:
+
+### Option 1: Cursor Cloud Agent Secrets (best for autonomous setup)
+
+1. Open https://cursor.com/dashboard/cloud-agents
+2. Go to **Secrets**
+3. Add:
+   - `CLOUDFLARE_API_TOKEN` — API token with **Cloudflare Pages → Edit**
+   - `CLOUDFLARE_ACCOUNT_ID` — from the Cloudflare dashboard sidebar
+4. Ask the cloud agent to deploy, or run:
+
+```bash
+./scripts/deploy-cloudflare.sh
+```
+
+The agent can deploy immediately without GitHub Actions secrets.
+
+### Option 2: GitHub Actions Secrets
 
 1. Go to your repo → **Settings** → **Secrets and variables** → **Actions**
 2. Click **New repository secret**
 3. Name: `OPENAI_API_KEY`
 4. Value: your OpenAI API key (sk-...)
 5. Click **Add secret**
+6. Add `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` the same way
 
-> **Note:** If you don't add an API key, the generator will use built-in templates. The site works perfectly either way.
+> **Note:** If you don't add an OpenAI key, the generator will use built-in templates. The site works perfectly either way.
 
 ## Step 4: Connect Cloudflare Pages
 
