@@ -7,6 +7,8 @@ Generates a static JSON edition file for the frontend to consume.
 
 import json
 import os
+import re
+import base64
 import random
 import hashlib
 from datetime import datetime, timezone
@@ -15,26 +17,46 @@ import requests
 
 # ─── CONFIG ─────────────────────────────────────────────────────────
 OUTPUT_DIR = Path("editions")
-LLM_PROVIDER = os.environ.get("LLM_PROVIDER", "auto").lower()
+IMAGE_DIR = OUTPUT_DIR / "images"
+LLM_PROVIDER = os.environ.get("LLM_PROVIDER", "random").lower()
+GENERATE_IMAGES = os.environ.get("GENERATE_IMAGES", "true").lower() != "false"
+MAX_ARCHIVE_DAYS = 30  # Keep last 30 days
 
-LLM_PROVIDERS = {
+TEXT_PROVIDERS = {
     "moonshot": {
         "api_key": os.environ.get("MOONSHOT_API_KEY"),
         "base_url": "https://api.moonshot.ai/v1",
         "model": os.environ.get("MOONSHOT_MODEL", "kimi-k2.6"),
+        "label": "Moonshot Kimi",
     },
     "grok": {
         "api_key": os.environ.get("GROK_API_KEY") or os.environ.get("XAI_API_KEY"),
         "base_url": "https://api.x.ai/v1",
         "model": os.environ.get("GROK_MODEL", "grok-2-1212"),
+        "label": "Grok",
     },
     "openai": {
         "api_key": os.environ.get("OPENAI_API_KEY"),
         "base_url": "https://api.openai.com/v1",
         "model": os.environ.get("OPENAI_MODEL", "gpt-4o-mini"),
+        "label": "OpenAI",
     },
 }
-MAX_ARCHIVE_DAYS = 30  # Keep last 30 days
+
+IMAGE_PROVIDERS = {
+    "grok": {
+        "api_key": os.environ.get("GROK_API_KEY") or os.environ.get("XAI_API_KEY"),
+        "base_url": "https://api.x.ai/v1",
+        "model": os.environ.get("GROK_IMAGE_MODEL", "grok-imagine-image"),
+        "label": "Grok Imagine",
+    },
+    "openai": {
+        "api_key": os.environ.get("OPENAI_API_KEY"),
+        "base_url": "https://api.openai.com/v1",
+        "model": os.environ.get("OPENAI_IMAGE_MODEL", "dall-e-3"),
+        "label": "DALL-E",
+    },
+}
 
 THEMES = [
     "victorian", "artdeco", "soviet", "cyberpunk",
@@ -78,46 +100,117 @@ class SeededRandom:
         return int(self.next() * (max_v - min_v + 1)) + min_v
 
 # ─── LLM CONTENT GENERATION ─────────────────────────────────────────
-def llm_provider_order():
-    if LLM_PROVIDER != "auto":
-        return [LLM_PROVIDER]
-    return [name for name in ("moonshot", "grok", "openai") if LLM_PROVIDERS[name]["api_key"]]
+def available_text_providers():
+    return [name for name, cfg in TEXT_PROVIDERS.items() if cfg["api_key"]]
 
 
-def llm_available():
-    return bool(llm_provider_order())
+def available_image_providers():
+    return [name for name, cfg in IMAGE_PROVIDERS.items() if cfg["api_key"]]
 
 
-def generate_with_llm(prompt):
-    """Generate content using the configured OpenAI-compatible LLM provider."""
-    for provider_name in llm_provider_order():
-        provider = LLM_PROVIDERS.get(provider_name)
-        if not provider or not provider["api_key"]:
-            continue
+def pick_text_provider(rng):
+    providers = available_text_providers()
+    if not providers:
+        return None
+    if LLM_PROVIDER in TEXT_PROVIDERS and LLM_PROVIDER in providers:
+        return LLM_PROVIDER
+    if LLM_PROVIDER == "auto":
+        return providers[0]
+    return rng.pick(providers)
 
-        try:
-            resp = requests.post(
-                f"{provider['base_url']}/chat/completions",
-                headers={
-                    "Authorization": f"Bearer {provider['api_key']}",
-                    "Content-Type": "application/json",
-                },
-                json={
-                    "model": provider["model"],
-                    "messages": [{"role": "user", "content": prompt}],
-                    "temperature": 0.9,
-                    "max_tokens": 800,
-                },
-                timeout=60,
-            )
-            resp.raise_for_status()
-            content = resp.json()["choices"][0]["message"]["content"].strip()
-            print(f"LLM provider: {provider_name} ({provider['model']})")
-            return content
-        except Exception as e:
-            print(f"LLM error ({provider_name}): {e}")
 
-    return None
+def pick_image_provider(rng):
+    providers = available_image_providers()
+    if not providers:
+        return None
+    return rng.pick(providers)
+
+
+def parse_llm_json(raw):
+    if not raw:
+        return None
+    cleaned = raw.strip()
+    if cleaned.startswith("```"):
+        cleaned = re.sub(r"^```(?:json)?\s*", "", cleaned)
+        cleaned = re.sub(r"\s*```$", "", cleaned)
+    try:
+        return json.loads(cleaned)
+    except json.JSONDecodeError:
+        return None
+
+
+def generate_with_llm(prompt, provider_name):
+    """Generate text with a specific OpenAI-compatible provider."""
+    provider = TEXT_PROVIDERS.get(provider_name)
+    if not provider or not provider["api_key"]:
+        return None
+
+    try:
+        resp = requests.post(
+            f"{provider['base_url']}/chat/completions",
+            headers={
+                "Authorization": f"Bearer {provider['api_key']}",
+                "Content-Type": "application/json",
+            },
+            json={
+                "model": provider["model"],
+                "messages": [{"role": "user", "content": prompt}],
+                "temperature": 0.9,
+                "max_tokens": 800,
+            },
+            timeout=60,
+        )
+        resp.raise_for_status()
+        content = resp.json()["choices"][0]["message"]["content"].strip()
+        print(f"Text LLM: {provider_name} ({provider['model']})")
+        return content
+    except Exception as e:
+        print(f"Text LLM error ({provider_name}): {e}")
+        return None
+
+
+def generate_image(prompt, provider_name):
+    """Generate an image with Grok or OpenAI and return saved relative path."""
+    provider = IMAGE_PROVIDERS.get(provider_name)
+    if not provider or not provider["api_key"]:
+        return None
+
+    payload = {
+        "model": provider["model"],
+        "prompt": prompt,
+        "n": 1,
+        "response_format": "b64_json",
+    }
+    if provider_name == "openai":
+        payload["size"] = "1024x1024"
+    else:
+        payload["aspect_ratio"] = "4:3"
+
+    try:
+        resp = requests.post(
+            f"{provider['base_url']}/images/generations",
+            headers={
+                "Authorization": f"Bearer {provider['api_key']}",
+                "Content-Type": "application/json",
+            },
+            json=payload,
+            timeout=120,
+        )
+        resp.raise_for_status()
+        image_b64 = resp.json()["data"][0]["b64_json"]
+        print(f"Image LLM: {provider_name} ({provider['model']})")
+        return image_b64
+    except Exception as e:
+        print(f"Image LLM error ({provider_name}): {e}")
+        return None
+
+
+def save_image_file(image_b64, filename):
+    IMAGE_DIR.mkdir(parents=True, exist_ok=True)
+    path = IMAGE_DIR / filename
+    with open(path, "wb") as f:
+        f.write(base64.b64decode(image_b64))
+    return f"/editions/images/{filename}"
 
 # ─── PROMPT ENGINEERING ─────────────────────────────────────────────
 HEADLINE_PROMPT = """You are the editor-in-chief of a newspaper from an alternate timeline.
@@ -163,6 +256,15 @@ COMIC_PROMPT = """Write a one-panel comic caption for a newspaper from a timelin
 Theme: {theme}. The caption should be a single line of dialogue or observation, dryly humorous.
 Return ONLY JSON: {{"caption": "...", "scene": "..."}}
 Scene should be one of: clockwork, airship, laboratory, street, skyscraper, club, car, park, factory, monument, apartment, train, alley, terminal, rooftop, market, castle, village, forest, tavern, suburb, diner, shelter, fair, mall, beach, arcade, desert, ruin, camp, vehicle"""
+
+HERO_IMAGE_PROMPT = """Editorial news photograph for an alternate-history newspaper.
+Theme: {theme}. Year: {year}. Headline: {headline}
+Divergence: {divergence}
+Style: dramatic photojournalism matching the {theme} era. No text or watermarks."""
+
+COMIC_IMAGE_PROMPT = """Single-panel newspaper comic illustration for an alternate-history timeline.
+Theme: {theme}. Year: {year}. Scene: {scene}. Mood from caption: {caption}
+Style: {theme} era newspaper comic art. No text, captions, or speech bubbles in the image."""
 
 # ─── FALLBACK GENERATORS (no LLM) ───────────────────────────────────
 def fallback_headline(rng, theme, year, divergence):
@@ -286,9 +388,12 @@ def fallback_classifieds(rng, theme):
     return all_ads.get(theme, all_ads["wasteland"])
 
 # ─── MAIN GENERATION ────────────────────────────────────────────────
-def generate_edition(date=None, timeline_id=None):
+def generate_edition(date=None, timeline_id=None, with_images=None):
     if date is None:
         date = datetime.now(timezone.utc)
+
+    if with_images is None:
+        with_images = GENERATE_IMAGES
 
     date_seed = date.year * 10000 + (date.month) * 100 + date.day
 
@@ -304,42 +409,38 @@ def generate_edition(date=None, timeline_id=None):
             "medieval": 1347, "atomic": 1954, "vaporwave": 1986, "wasteland": 2147}[theme] + (date.year - 2026)
 
     divergence = rng.pick(DIVERGENCES)
+    text_provider = pick_text_provider(rng)
+    date_slug = date.strftime("%Y-%m-%d")
 
-    # Try LLM first, fallback to templates
+    # Headline
     headline_data = None
-    if llm_available():
-        prompt = HEADLINE_PROMPT.format(divergence=divergence, theme=theme, year=year, date=date.strftime("%B %d, %Y"))
-        raw = generate_with_llm(prompt)
-        if raw:
-            try:
-                headline_data = json.loads(raw)
-            except:
-                pass
+    if text_provider:
+        prompt = HEADLINE_PROMPT.format(
+            divergence=divergence, theme=theme, year=year,
+            date=date.strftime("%B %d, %Y"),
+        )
+        headline_data = parse_llm_json(generate_with_llm(prompt, text_provider))
 
     if not headline_data:
         headline_data = fallback_headline(rng, theme, year, divergence)
 
     # Op-Ed
     oped_data = None
-    if llm_available():
-        raw = generate_with_llm(OPED_PROMPT.format(divergence=divergence, theme=theme, year=year))
-        if raw:
-            try:
-                oped_data = json.loads(raw)
-            except:
-                pass
+    if text_provider:
+        oped_data = parse_llm_json(generate_with_llm(
+            OPED_PROMPT.format(divergence=divergence, theme=theme, year=year),
+            text_provider,
+        ))
     if not oped_data:
         oped_data = fallback_oped(rng, theme)
 
     # Classifieds
     classifieds_data = None
-    if llm_available():
-        raw = generate_with_llm(CLASSIFIED_PROMPT.format(divergence=divergence, theme=theme, year=year))
-        if raw:
-            try:
-                classifieds_data = json.loads(raw)
-            except:
-                pass
+    if text_provider:
+        classifieds_data = parse_llm_json(generate_with_llm(
+            CLASSIFIED_PROMPT.format(divergence=divergence, theme=theme, year=year),
+            text_provider,
+        ))
     if not classifieds_data:
         classifieds_data = fallback_classifieds(rng, theme)
 
@@ -350,17 +451,66 @@ def generate_edition(date=None, timeline_id=None):
     weather_data["high"] = weather_data["temp"] + rng.range(3, 10)
     weather_data["low"] = weather_data["temp"] - rng.range(3, 10)
 
-    # Comic
-    comic_data = {"caption": rng.pick(["'Life goes on. Somehow.'", "'The future is here, and it is slightly greasy.'", "'I came for the view. I stayed because the door locked.'"]),
-                  "scene": rng.pick(["street", "laboratory", "castle", "alley", "suburb", "ruin"])}
+    # Comic text
+    comic_data = None
+    if text_provider:
+        comic_data = parse_llm_json(generate_with_llm(
+            COMIC_PROMPT.format(divergence=divergence, theme=theme),
+            text_provider,
+        ))
+    if not comic_data:
+        comic_data = {
+            "caption": rng.pick([
+                "'Life goes on. Somehow.'",
+                "'The future is here, and it is slightly greasy.'",
+                "'I came for the view. I stayed because the door locked.'",
+            ]),
+            "scene": rng.pick(["street", "laboratory", "castle", "alley", "suburb", "ruin"]),
+        }
+
+    # AI images (Grok or OpenAI only)
+    hero_image = None
+    hero_image_provider = None
+    comic_image = None
+    comic_image_provider = None
+
+    if with_images and available_image_providers():
+        hero_provider = pick_image_provider(rng)
+        comic_provider = pick_image_provider(rng)
+
+        hero_prompt = HERO_IMAGE_PROMPT.format(
+            theme=theme, year=year,
+            headline=headline_data["headline"],
+            divergence=divergence,
+        )
+        hero_b64 = generate_image(hero_prompt, hero_provider)
+        if hero_b64:
+            hero_image = save_image_file(hero_b64, f"{date_slug}-{timeline_id}-hero.png")
+            hero_image_provider = hero_provider
+
+        comic_prompt = COMIC_IMAGE_PROMPT.format(
+            theme=theme, year=year,
+            scene=comic_data["scene"],
+            caption=comic_data["caption"],
+        )
+        comic_b64 = generate_image(comic_prompt, comic_provider)
+        if comic_b64:
+            comic_image = save_image_file(comic_b64, f"{date_slug}-{timeline_id}-comic.png")
+            comic_image_provider = comic_provider
+
+    if comic_image:
+        comic_data["image"] = comic_image
+        comic_data["image_provider"] = comic_image_provider
 
     edition = {
         "timeline_id": timeline_id,
         "theme": theme,
-        "date": date.strftime("%Y-%m-%d"),
+        "date": date_slug,
         "date_display": date.strftime("%A, %B %d, %Y"),
         "year": year,
         "divergence": divergence,
+        "llm_provider": text_provider,
+        "llm_label": TEXT_PROVIDERS[text_provider]["label"] if text_provider else "Template",
         "headline": headline_data["headline"],
         "deck": headline_data["deck"],
         "article": headline_data["article"],
@@ -372,6 +522,10 @@ def generate_edition(date=None, timeline_id=None):
         "comic": comic_data,
         "generated_at": datetime.now(timezone.utc).isoformat()
     }
+
+    if hero_image:
+        edition["hero_image"] = hero_image
+        edition["hero_image_provider"] = hero_image_provider
 
     return edition
 
@@ -388,8 +542,12 @@ def cleanup_old_editions():
     """Keep only the last MAX_ARCHIVE_DAYS editions."""
     files = sorted(OUTPUT_DIR.glob("*.json"), key=lambda p: p.stat().st_mtime, reverse=True)
     for old in files[MAX_ARCHIVE_DAYS:]:
+        stem = old.stem
         old.unlink()
         print(f"Removed old: {old.name}")
+        for img in IMAGE_DIR.glob(f"{stem}-*.png"):
+            img.unlink()
+            print(f"Removed old image: {img.name}")
 
 def generate_sitemap():
     """Generate sitemap.xml for SEO."""
@@ -454,7 +612,10 @@ if __name__ == "__main__":
     parser.add_argument("--date", help="Date to generate for (YYYY-MM-DD)")
     parser.add_argument("--timeline", type=int, help="Timeline ID")
     parser.add_argument("--all", action="store_true", help="Generate for all 8 themes for today")
+    parser.add_argument("--no-images", action="store_true", help="Skip AI image generation")
     args = parser.parse_args()
+
+    with_images = GENERATE_IMAGES and not args.no_images
 
     if args.date:
         date = datetime.strptime(args.date, "%Y-%m-%d").replace(tzinfo=timezone.utc)
@@ -463,10 +624,10 @@ if __name__ == "__main__":
 
     if args.all:
         for tid in range(1, 9):
-            ed = generate_edition(date, tid)
+            ed = generate_edition(date, tid, with_images=with_images)
             save_edition(ed)
     else:
-        ed = generate_edition(date, args.timeline)
+        ed = generate_edition(date, args.timeline, with_images=with_images)
         save_edition(ed)
 
     cleanup_old_editions()
