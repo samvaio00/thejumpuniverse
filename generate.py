@@ -59,17 +59,29 @@ THEME_GUIDE = """
 - wasteland: sparse brutal prose, survival math, rust and dust, gallows humor
 """
 
+# Per-provider model fallbacks when the default model returns 400
+TEXT_MODEL_FALLBACKS = {
+    "moonshot": ["kimi-k2.6", "moonshot-v1-32k", "moonshot-v1-8k"],
+    "grok": ["grok-4.3", "grok-4", "grok-3"],
+    "openai": ["gpt-4o-mini"],
+}
+
+IMAGE_MODEL_FALLBACKS = {
+    "openai": ["dall-e-3", "dall-e-2"],
+    "grok": ["grok-imagine-image"],
+}
+
 TEXT_PROVIDERS = {
     "moonshot": {
         "api_key": os.environ.get("MOONSHOT_API_KEY"),
-        "base_url": "https://api.moonshot.ai/v1",
+        "base_url": os.environ.get("MOONSHOT_BASE_URL", "https://api.moonshot.ai/v1"),
         "model": os.environ.get("MOONSHOT_MODEL", "kimi-k2.6"),
         "label": "Moonshot Kimi",
     },
     "grok": {
         "api_key": os.environ.get("GROK_API_KEY") or os.environ.get("XAI_API_KEY"),
         "base_url": "https://api.x.ai/v1",
-        "model": os.environ.get("GROK_MODEL", "grok-2-1212"),
+        "model": os.environ.get("GROK_MODEL", "grok-4.3"),
         "label": "Grok",
     },
     "openai": {
@@ -154,34 +166,81 @@ def resolve_role(role):
     return None
 
 
-def generate_with_llm(prompt, provider_name, max_tokens=800, temperature=0.9):
+def _model_candidates(provider_name, configured_model, fallback_key):
+    """Build ordered unique model list: env override first, then fallbacks."""
+    fallbacks = list(fallback_key.get(provider_name, [configured_model]))
+    if configured_model in fallbacks:
+        fallbacks.remove(configured_model)
+    return [configured_model] + fallbacks
+
+
+def _api_error_body(exc):
+    if hasattr(exc, "response") and exc.response is not None:
+        try:
+            return exc.response.text[:300]
+        except Exception:
+            pass
+    return ""
+
+
+def generate_with_llm(prompt, provider_name, max_tokens=800, temperature=0.9, json_mode=False):
     """Generate text with a specific OpenAI-compatible provider."""
     provider = TEXT_PROVIDERS.get(provider_name)
     if not provider or not provider["api_key"]:
         return None
 
-    try:
-        resp = requests.post(
-            f"{provider['base_url']}/chat/completions",
-            headers={
-                "Authorization": f"Bearer {provider['api_key']}",
-                "Content-Type": "application/json",
-            },
-            json={
-                "model": provider["model"],
-                "messages": [{"role": "user", "content": prompt}],
-                "temperature": temperature,
-                "max_tokens": max_tokens,
-            },
-            timeout=90,
-        )
-        resp.raise_for_status()
-        content = resp.json()["choices"][0]["message"]["content"].strip()
-        print(f"  [{provider_name}] {provider['model']}")
-        return content
-    except Exception as e:
-        print(f"  LLM error ({provider_name}): {e}")
+    models = _model_candidates(provider_name, provider["model"], TEXT_MODEL_FALLBACKS)
+    for model in models:
+        payload = {
+            "model": model,
+            "messages": [
+                {"role": "system", "content": "You are a creative writer. Return only valid JSON when asked."},
+                {"role": "user", "content": prompt},
+            ],
+            "temperature": temperature,
+            "max_tokens": max_tokens,
+        }
+        if json_mode and provider_name == "openai":
+            payload["response_format"] = {"type": "json_object"}
+
+        try:
+            resp = requests.post(
+                f"{provider['base_url']}/chat/completions",
+                headers={
+                    "Authorization": f"Bearer {provider['api_key']}",
+                    "Content-Type": "application/json",
+                },
+                json=payload,
+                timeout=90,
+            )
+            resp.raise_for_status()
+            content = resp.json()["choices"][0]["message"]["content"].strip()
+            print(f"  [{provider_name}] {model}")
+            return content
+        except Exception as e:
+            print(f"  LLM error ({provider_name}/{model}): {e} {_api_error_body(e)}")
+    return None
+
+
+def llm_json(prompt, provider_name, **kwargs):
+    """Call one provider and parse JSON."""
+    if not provider_name:
         return None
+    kwargs.setdefault("json_mode", True)
+    raw = generate_with_llm(prompt, provider_name, **kwargs)
+    return parse_llm_json(raw)
+
+
+def llm_json_with_fallback(prompt, primary_role, **kwargs):
+    """Try primary role provider chain until one returns valid JSON."""
+    primary, fallbacks = ROLE_PROVIDERS[primary_role]
+    for name in [primary] + fallbacks:
+        if not TEXT_PROVIDERS.get(name, {}).get("api_key"):
+            continue
+        result = llm_json(prompt, name, **kwargs)
+        if result:
+            return result, name
+    return None, None
 
 
 def pick_image_provider(preferred):
@@ -203,43 +262,60 @@ def parse_llm_json(raw):
     try:
         return json.loads(cleaned)
     except json.JSONDecodeError:
+        match = re.search(r"(\{[\s\S]*\}|\[[\s\S]*\])", cleaned)
+        if match:
+            try:
+                return json.loads(match.group(1))
+            except json.JSONDecodeError:
+                pass
         return None
 
 
 def generate_image(prompt, provider_name):
-    """Generate an image with Grok or OpenAI and return saved relative path."""
+    """Generate an image with Grok or OpenAI and return base64 data."""
     provider = IMAGE_PROVIDERS.get(provider_name)
     if not provider or not provider["api_key"]:
         return None
 
-    payload = {
-        "model": provider["model"],
-        "prompt": prompt,
-        "n": 1,
-        "response_format": "b64_json",
-    }
-    if provider_name == "openai":
-        payload["size"] = "1024x1024"
-    else:
-        payload["aspect_ratio"] = "4:3"
+    models = _model_candidates(provider_name, provider["model"], IMAGE_MODEL_FALLBACKS)
+    for model in models:
+        payload = {
+            "model": model,
+            "prompt": prompt[:4000],
+            "n": 1,
+        }
+        if provider_name == "openai":
+            payload["size"] = "1024x1024"
+            payload["response_format"] = "b64_json"
+            if model == "dall-e-3":
+                payload["quality"] = "standard"
+        else:
+            payload["aspect_ratio"] = "4:3"
+            payload["response_format"] = "b64_json"
 
-    try:
-        resp = requests.post(
-            f"{provider['base_url']}/images/generations",
-            headers={
-                "Authorization": f"Bearer {provider['api_key']}",
-                "Content-Type": "application/json",
-            },
-            json=payload,
-            timeout=120,
-        )
-        resp.raise_for_status()
-        image_b64 = resp.json()["data"][0]["b64_json"]
-        print(f"Image LLM: {provider_name} ({provider['model']})")
-        return image_b64
-    except Exception as e:
-        print(f"Image LLM error ({provider_name}): {e}")
-        return None
+        try:
+            resp = requests.post(
+                f"{provider['base_url']}/images/generations",
+                headers={
+                    "Authorization": f"Bearer {provider['api_key']}",
+                    "Content-Type": "application/json",
+                },
+                json=payload,
+                timeout=120,
+            )
+            resp.raise_for_status()
+            data = resp.json()["data"][0]
+            if data.get("b64_json"):
+                print(f"Image LLM: {provider_name} ({model})")
+                return data["b64_json"]
+            if data.get("url"):
+                img_resp = requests.get(data["url"], timeout=60)
+                img_resp.raise_for_status()
+                print(f"Image LLM: {provider_name} ({model}) via URL")
+                return base64.b64encode(img_resp.content).decode("ascii")
+        except Exception as e:
+            print(f"Image LLM error ({provider_name}/{model}): {e} {_api_error_body(e)}")
+    return None
 
 
 def save_image_file(image_b64, filename):
@@ -501,9 +577,6 @@ def article_to_html(article):
 
 def run_editor_pass(content, editor_provider):
     """Editor AI polishes all text sections for variety and removes clichés."""
-    if not editor_provider:
-        return content
-
     draft = {
         "headline": content.get("headline"),
         "deck": content.get("deck"),
@@ -520,11 +593,16 @@ def run_editor_pass(content, editor_provider):
         forbidden=", ".join(FORBIDDEN_PHRASES[:12]),
         content=json.dumps(draft, indent=2),
     )
-    revised = parse_llm_json(generate_with_llm(prompt, editor_provider, max_tokens=2500, temperature=0.4))
+    revised, used = llm_json_with_fallback(prompt, "editor", max_tokens=2500, temperature=0.4)
+    if not revised:
+        if editor_provider:
+            revised = parse_llm_json(generate_with_llm(prompt, editor_provider, max_tokens=2500, temperature=0.4, json_mode=True))
+            used = editor_provider
     if not revised:
         return content
 
-    print(f"  Editor pass: {TEXT_PROVIDERS[editor_provider]['label']}")
+    label = TEXT_PROVIDERS.get(used or editor_provider, {}).get("label", "Editor")
+    print(f"  Editor pass: {label}")
     for key in ("headline", "deck", "article", "oped", "classifieds", "comic_strip", "joke", "sponsor_ads", "weather"):
         if revised.get(key):
             content[key] = revised[key]
@@ -557,6 +635,7 @@ def generate_edition(date=None, timeline_id=None, with_images=None):
     story_p = resolve_role("story")
     humor_p = resolve_role("humor")
     structure_p = resolve_role("structure")
+    used_providers = {}
 
     print(f"Timeline {timeline_id} ({theme}): story={story_p}, humor={humor_p}, editor={editor_p}")
 
@@ -565,61 +644,64 @@ def generate_edition(date=None, timeline_id=None, with_images=None):
            "forbidden": forbidden}
 
     # 1. Editor assigns story brief
-    brief = None
-    if editor_p:
-        brief = parse_llm_json(generate_with_llm(BRIEF_PROMPT.format(**ctx), editor_p, temperature=0.7))
+    brief, used = llm_json_with_fallback(BRIEF_PROMPT.format(**ctx), "editor", temperature=0.7)
+    if used:
+        used_providers["brief"] = used
     brief_text = json.dumps(brief) if brief else f"angle: {angle}, theme: {theme}"
 
-    # 2. Moonshot (story) writes main article
-    headline_data = None
-    if story_p:
-        headline_data = parse_llm_json(generate_with_llm(
-            STORY_PROMPT.format(brief=brief_text, **ctx), story_p, max_tokens=1200))
+    # 2. Moonshot (story) writes main article — falls back to OpenAI/Grok on API failure
+    headline_data, used = llm_json_with_fallback(
+        STORY_PROMPT.format(brief=brief_text, **ctx), "story", max_tokens=1200)
+    if used:
+        used_providers["story"] = used
     if not headline_data:
         headline_data = fallback_headline(rng, theme, year, divergence)
     headline_data["article"] = article_to_html(headline_data.get("article", ""))
 
     ctx["headline"] = headline_data["headline"]
 
-    # 3. Grok (humor) — op-ed, comic strip, joke
-    oped_data = fallback_oped(rng, theme)
-    if humor_p:
-        parsed = parse_llm_json(generate_with_llm(OPED_PROMPT.format(**ctx), humor_p))
-        if parsed:
-            oped_data = parsed
+    # 3. Grok (humor) — op-ed, comic strip, joke — falls back to OpenAI when Grok fails
+    oped_data, used = llm_json_with_fallback(OPED_PROMPT.format(**ctx), "humor")
+    if used:
+        used_providers["oped"] = used
+    if not oped_data:
+        oped_data = fallback_oped(rng, theme)
 
-    comic_strip = fallback_comic_strip(rng, headline_data["headline"], theme)
-    if humor_p:
-        parsed = parse_llm_json(generate_with_llm(COMIC_STRIP_PROMPT.format(**ctx), humor_p))
-        if parsed and parsed.get("panels"):
-            comic_strip = parsed
+    comic_strip, used = llm_json_with_fallback(COMIC_STRIP_PROMPT.format(**ctx), "humor")
+    if used:
+        used_providers["comic"] = used
+    if not comic_strip or not comic_strip.get("panels"):
+        comic_strip = fallback_comic_strip(rng, headline_data["headline"], theme)
 
-    joke = fallback_joke(rng, headline_data["headline"], theme)
-    if humor_p:
-        parsed = parse_llm_json(generate_with_llm(JOKE_PROMPT.format(**ctx), humor_p))
-        if parsed:
-            joke = parsed
+    joke, used = llm_json_with_fallback(JOKE_PROMPT.format(**ctx), "humor")
+    if used:
+        used_providers["joke"] = used
+    if not joke:
+        joke = fallback_joke(rng, headline_data["headline"], theme)
 
     # 4. OpenAI (structure) — classifieds, weather, sponsor ads
-    classifieds_data = fallback_classifieds(rng, theme)
-    sponsor_ads = fallback_sponsor_ads(rng, theme)
-    weather_data = {"city": rng.pick(["The Capital", "New London", "Metropolis", "Neo-Tokyo",
-                    "King's Landing", "Springfield", "Miami Vice", "New Eden"]),
-                    "condition": rng.pick(["Clear", "Foggy", "Stormy", "Bright"]),
-                    "temp": rng.range(15, 95), "high": 0, "low": 0}
-    weather_data["high"] = weather_data["temp"] + rng.range(3, 10)
-    weather_data["low"] = weather_data["temp"] - rng.range(3, 10)
+    classifieds_data, used = llm_json_with_fallback(CLASSIFIED_PROMPT.format(**ctx), "structure")
+    if used:
+        used_providers["classifieds"] = used
+    if not classifieds_data:
+        classifieds_data = fallback_classifieds(rng, theme)
 
-    if structure_p:
-        parsed = parse_llm_json(generate_with_llm(CLASSIFIED_PROMPT.format(**ctx), structure_p))
-        if parsed:
-            classifieds_data = parsed
-        parsed = parse_llm_json(generate_with_llm(WEATHER_PROMPT.format(**ctx), structure_p, temperature=0.7))
-        if parsed:
-            weather_data = parsed
-        parsed = parse_llm_json(generate_with_llm(SPONSOR_ADS_PROMPT.format(**ctx), structure_p))
-        if parsed:
-            sponsor_ads = parsed
+    sponsor_ads, used = llm_json_with_fallback(SPONSOR_ADS_PROMPT.format(**ctx), "structure")
+    if used:
+        used_providers["sponsor_ads"] = used
+    if not sponsor_ads:
+        sponsor_ads = fallback_sponsor_ads(rng, theme)
+
+    weather_data, used = llm_json_with_fallback(WEATHER_PROMPT.format(**ctx), "structure", temperature=0.7)
+    if used:
+        used_providers["weather"] = used
+    if not weather_data:
+        weather_data = {"city": rng.pick(["The Capital", "New London", "Metropolis", "Neo-Tokyo",
+                        "King's Landing", "Springfield", "Miami Vice", "New Eden"]),
+                        "condition": rng.pick(["Clear", "Foggy", "Stormy", "Bright"]),
+                        "temp": rng.range(15, 95), "high": 0, "low": 0}
+        weather_data["high"] = weather_data["temp"] + rng.range(3, 10)
+        weather_data["low"] = weather_data["temp"] - rng.range(3, 10)
 
     content = {
         "headline": headline_data["headline"],
@@ -669,12 +751,15 @@ def generate_edition(date=None, timeline_id=None, with_images=None):
         content["comic_strip"]["image_provider"] = strip_image_provider
 
     roles = []
-    if story_p:
-        roles.append(f"Story: {TEXT_PROVIDERS[story_p]['label']}")
-    if humor_p:
-        roles.append(f"Humor: {TEXT_PROVIDERS[humor_p]['label']}")
-    if editor_p:
-        roles.append(f"Editor: {TEXT_PROVIDERS[editor_p]['label']}")
+    story_used = used_providers.get("story", story_p)
+    humor_used = used_providers.get("comic") or used_providers.get("joke") or used_providers.get("oped") or humor_p
+    editor_used = editor_p
+    if story_used:
+        roles.append(f"Story: {TEXT_PROVIDERS[story_used]['label']}")
+    if humor_used:
+        roles.append(f"Humor: {TEXT_PROVIDERS[humor_used]['label']}")
+    if editor_used:
+        roles.append(f"Editor: {TEXT_PROVIDERS[editor_used]['label']}")
 
     edition = {
         "timeline_id": timeline_id,
