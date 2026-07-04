@@ -5,19 +5,23 @@
   "date_display": "Saturday, July 04, 2026",
   "year": 1927,
   "divergence": "Rome never fell",
-  "llm_provider": "moonshot",
-  "llm_label": "Moonshot Kimi",
+  "story_angle": "intimate human-interest profile of an ordinary person caught in events",
+  "roles": [
+    "Story: Moonshot Kimi",
+    "Humor: Grok",
+    "Editor: OpenAI"
+  ],
   "headline": "Architect Unveils Plans for Mile-High Tower",
   "deck": "Skeptics call it impossible. The architect calls it Tuesday.",
-  "article": "In a development that has stunned observers across the nation, architect unveils plans for mile-high tower. Sources close to the matter have confirmed that the situation remains fluid.\n\nOfficials in the provinces have declined to comment, but witnesses describe a scene of both confusion and cautious optimism. The implications for the average citizen remain unclear.\n\nHistorical records suggest a similar event occurred nearly a century ago in this timeline, though on a much smaller scale. International observers have expressed both admiration and concern.\n\nResidents of the capital expressed mixed reactions. 'I never thought I'd see the day,' said one local merchant. 'It changes everything, and yet it changes nothing.'\n\nOnly time will tell whether this marks the beginning of a new era or merely a footnote in the annals of this parallel history.",
+  "article": "<p>Records from the Provincial Registry confirm that architect unveils plans for a mile-high tower. The report cites six independent witnesses.</p><p>Inspector Venn told this paper the event reveals underlying tensions that have long been overlooked. 'We mapped this possibility in 1915,' they said. 'No one wanted the map.'</p><p>In the cathedral quarter, residents experienced a silence that lasted three minutes. One shopkeeper measured the incident in terms of inventory losses rather than accolades.</p><p>The Board of Censors issued a 250-word statement that answered no questions and raised seven new ones.</p><p>Tomorrow's edition will investigate the financial aspects, the motives, and the one detail every spokesperson has carefully avoided naming.</p>",
   "author": "Foreign Bureau",
-  "city": "Miami Vice",
+  "city": "Rome",
   "weather": {
-    "city": "Miami Vice",
-    "condition": "Hazy",
-    "temp": 61,
-    "high": 71,
-    "low": 57
+    "city": "Rome",
+    "condition": "Eternal Sunlit Reverie",
+    "temp": 72,
+    "high": 78,
+    "low": 65
   },
   "oped": {
     "title": "The Jazz Age is Not a Rebellion, It is a Renaissance",
@@ -26,27 +30,56 @@
   },
   "classifieds": [
     {
-      "cat": "For Sale",
-      "text": "1926 Stutz Bearcat. Low mileage. The color of midnight and regret."
+      "cat": "Art Deco Furnishings",
+      "text": "Step into the future with our exclusive line of Art Deco furnishings! Experience the elegance of the 1927 style with geometric designs and luxurious materials. Visit Casa di Bellezza on Via del Corso for a personal consultation. Limited time offer: free delivery within the Eternal City!"
     },
     {
-      "cat": "Employment",
-      "text": "Cigarette girl wanted. Must know bourbon from scotch."
+      "cat": "Fashion & Accessories",
+      "text": "Elevate your wardrobe with the latest Art Deco fashions! Tailored dresses and suits adorned with bold patterns and vibrant colors await you at La Moda di Roma, located in the heart of Trastevere. Be the talk of the Caffè with our unique accessories. Special discounts for the first ten customers!"
     },
     {
-      "cat": "Housing",
-      "text": "Penthouse with view of Zephyr Terminal. $200/month."
+      "cat": "Art & Sculpture",
+      "text": "Transform your living space with striking Art Deco sculptures! Original pieces by acclaimed artist Giovanni Lucenti are now available. Visit our gallery on the Aventine Hill to explore a collection that combines the spirit of modernity with classical grandeur. Inquire about our custom commissions!"
     },
     {
-      "cat": "Services",
-      "text": "Professional bootlegger. Discreet delivery. Premium Canadian stock."
+      "cat": "Cafés & Nightlife",
+      "text": "Join us at the newest Art Deco café, Il Caffè d’Oro! Indulge in exquisite pastries and cocktails inspired by the Roaring Twenties, all within a beautifully designed interior that captures the essence of modern Roman elegance. Live jazz music every Friday night—don't miss out on the vibrant atmosphere!"
     }
   ],
-  "comic": {
-    "caption": "'Life goes on. Somehow.'",
-    "scene": "suburb"
+  "comic_strip": {
+    "title": "The Bureaucrat",
+    "panels": [
+      {
+        "caption": "Did you hear about Architect Unveils Plans for Mile-High To...?"
+      },
+      {
+        "caption": "I prefer timelines where that sort of thing is impossible."
+      },
+      {
+        "caption": "Welcome to this one."
+      }
+    ],
+    "image": "/editions/images/2026-07-04-2-strip.png",
+    "image_provider": "grok"
   },
-  "generated_at": "2026-07-04T19:41:48.767408+00:00",
-  "hero_image": "/editions/images/2026-07-04-2-hero.png",
-  "hero_image_provider": "grok"
+  "joke": {
+    "setup": "How do you report on today's headline?",
+    "punchline": "Very carefully, in an alternate timeline.",
+    "text": "How do you report on today's headline? Very carefully, in an alternate timeline."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "Elevate Your Home with Luxuria's Exquisite Marbles!",
+      "body": "Transform your abode into a palace with Luxuria's hand-selected marbles, imported directly from the quarries of Carrara. Available in mesmerizing colors and patterns, let your floors and walls shine with the opulence of the Roman Empire!"
+    },
+    {
+      "headline": "Step into Style: Footwear Fit for the Senate!",
+      "body": "Discover the latest in artisanal footwear from Senatus Soles. Crafted with soft, supple leather and adorned with intricate gold leaf, our sandals and shoes are designed for both comfort and grandeur—perfect for the modern Roman citizen!"
+    },
+    {
+      "headline": "Experience the Timeless Elegance of Marcellus Perfumes!",
+      "body": "Indulge your senses with Marcellus Perfumes, where ancient alchemy meets contemporary flair. Our unique scents are blended with rare essences, transporting you to the fragrant gardens of Rome with every spritz—a true mark of sophistication in 1927!"
+    }
+  ],
+  "generated_at": "2026-07-04T21:35:04.710069+00:00"
 }

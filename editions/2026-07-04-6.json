@@ -5,19 +5,23 @@
   "date_display": "Saturday, July 04, 2026",
   "year": 1954,
   "divergence": "Rome never fell",
-  "llm_provider": "moonshot",
-  "llm_label": "Moonshot Kimi",
+  "story_angle": "investigative exposé uncovering a hidden scandal",
+  "roles": [
+    "Story: Moonshot Kimi",
+    "Humor: Grok",
+    "Editor: OpenAI"
+  ],
   "headline": "Polio Vaccine Declared Safe After Nationwide Trials",
-  "deck": "Dr. Salk's miracle is here. Parents are lining up around the block.",
-  "article": "In a development that has stunned observers across the nation, polio vaccine declared safe after nationwide trials. Sources close to the matter have confirmed that the situation remains fluid.\n\nOfficials in the central district have declined to comment, but witnesses describe a scene of both confusion and cautious optimism. The implications for the average citizen remain unclear.\n\nHistorical records suggest a similar event occurred nearly a century ago in this timeline, though on a much smaller scale. International observers have expressed both admiration and concern.\n\nResidents of the capital expressed mixed reactions. 'I never thought I'd see the day,' said one local merchant. 'It changes everything, and yet it changes nothing.'\n\nOnly time will tell whether this marks the beginning of a new era or merely a footnote in the annals of this parallel history.",
-  "author": "Special Reporter",
-  "city": "Neo-Tokyo",
+  "deck": "Dr. Salk's breakthrough is here. Parents are eagerly awaiting their turn.",
+  "article": "<p>Records from the Central Bureau confirm the polio vaccine has been declared safe following extensive nationwide trials. The report cites forty-three independent witnesses.</p><p>Dr. Eliza Marsh shared insights with this paper, highlighting the underlying tensions that have persisted despite official assurances. 'We mapped this possibility in 1942,' they stated. 'No one wanted the map.'</p><p>In the docklands, residents described a sound reminiscent of silk tearing. One shopkeeper chose to tally the incident in terms of inventory losses rather than accolades.</p><p>The Ministry of Continuity issued a lengthy statement that failed to address key questions while introducing four new ones.</p><p>Tomorrow's edition will explore the financial aspects, underlying motives, and the crucial detail that every spokesperson has carefully sidestepped.</p>",
+  "author": "Foreign Bureau",
+  "city": "Rome",
   "weather": {
-    "city": "Neo-Tokyo",
-    "condition": "Overcast",
-    "temp": 22,
-    "high": 25,
-    "low": 15
+    "city": "Rome",
+    "condition": "Eternal Radiance",
+    "temp": 72,
+    "high": 78,
+    "low": 65
   },
   "oped": {
     "title": "Why Every American Family Needs a Bomb Shelter",
@@ -26,27 +30,56 @@
   },
   "classifieds": [
     {
-      "cat": "For Sale",
-      "text": "1953 Chevrolet Bel Air. Two-tone. Low miles. The American dream on four wheels."
+      "cat": "Housing",
+      "text": "Luxurious atomic-powered villas available in New Rome! Experience modern living with our state-of-the-art atomic energy systems. Amenities include high-efficiency heating, radiant lighting, and access to the finest Roman gardens. Contact Lucius at 555-0199 for a private tour today!"
     },
     {
       "cat": "Employment",
-      "text": "Salesman wanted for vacuum demonstration. Must own car and smile."
+      "text": "Join the ranks of the Atomic Legion! Seeking skilled engineers and technicians to support our atomic research programs. Be part of the frontier of science while upholding the glory of Rome. Excellent pay and benefits. Inquire at the Forum of the Sciences, Mondays and Wednesdays."
     },
     {
-      "cat": "Housing",
-      "text": "3-bedroom ranch. White picket fence included. $12,000."
+      "cat": "Transportation",
+      "text": "Revolutionize your commute with a new atomic-powered chariot! Sleek design, environmentally friendly, and equipped with the latest in navigational technology. Available in various colors! Visit the Automotive Emporium in the heart of the Forum to test drive the future."
     },
     {
-      "cat": "Services",
-      "text": "Fallout shelter construction. Family rates. Government approved."
+      "cat": "Education",
+      "text": "Enroll your young citizens in the Academy of Atomic Studies! Courses available in nuclear physics, atomic agriculture, and energy management. Prepare the next generation for a brighter, radiant tomorrow. Sign up now for a free introductory seminar this Saturday at the Colosseum!"
     }
   ],
-  "comic": {
-    "caption": "'The future is here, and it is slightly greasy.'",
-    "scene": "castle"
+  "comic_strip": {
+    "title": "Citizen Smith",
+    "panels": [
+      {
+        "caption": "Did you hear about the polio vaccine being declared safe?"
+      },
+      {
+        "caption": "I prefer timelines where that sort of thing is impossible."
+      },
+      {
+        "caption": "Welcome to this one."
+      }
+    ],
+    "image": "/editions/images/2026-07-04-6-strip.png",
+    "image_provider": "grok"
   },
-  "generated_at": "2026-07-04T19:43:00.345730+00:00",
-  "hero_image": "/editions/images/2026-07-04-6-hero.png",
-  "hero_image_provider": "grok"
+  "joke": {
+    "setup": "How do you report on today's headline?",
+    "punchline": "Very carefully, in an alternate timeline.",
+    "text": "How do you report on today's headline? Very carefully, in an alternate timeline."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "Embrace the Future with the New Rome Electric Chariot!",
+      "body": "Experience the thrill of speed and sophistication with our fully electric chariots, designed for today’s Roman citizen! Say goodbye to horses and hello to the clean, efficient power of the future!"
+    },
+    {
+      "headline": "Introducing the Roman Glow - Your Home's Eternal Light!",
+      "body": "Illuminate your villa with the Roman Glow, the latest innovation in home lighting utilizing atomic glow technology! Enjoy a lifetime of brilliance without the worry of dark corners!"
+    },
+    {
+      "headline": "Stay Connected with the Tele-Tabula!",
+      "body": "Never miss a moment! The Tele-Tabula brings you news, entertainment, and messages from the Empire right to your home. Join the communication revolution and keep in touch with friends across Rome!"
+    }
+  ],
+  "generated_at": "2026-07-04T21:37:06.663958+00:00"
 }

@@ -5,19 +5,23 @@
   "date_display": "Saturday, July 04, 2026",
   "year": 2147,
   "divergence": "The Black Death targeted only the wealthy",
-  "llm_provider": "moonshot",
-  "llm_label": "Moonshot Kimi",
+  "story_angle": "triumphant breakthrough celebrated by the establishment",
+  "roles": [
+    "Story: Moonshot Kimi",
+    "Humor: Grok",
+    "Editor: OpenAI"
+  ],
   "headline": "Water Baron Controls Last Known Well in Sector 7",
   "deck": "He charges ten bullets per gallon. The thirsty have no choice.",
-  "article": "In a development that has stunned observers across the nation, water baron controls last known well in sector 7. Sources close to the matter have confirmed that the situation remains fluid.\n\nOfficials in the provinces have declined to comment, but witnesses describe a scene of both confusion and cautious optimism. The implications for the average citizen remain unclear.\n\nHistorical records suggest a similar event occurred nearly a century ago in this timeline, though on a much smaller scale. International observers have expressed both admiration and concern.\n\nResidents of the capital expressed mixed reactions. 'I never thought I'd see the day,' said one local merchant. 'It changes everything, and yet it changes nothing.'\n\nOnly time will tell whether this marks the beginning of a new era or merely a footnote in the annals of this parallel history.",
-  "author": "Staff Correspondent",
-  "city": "The Capital",
+  "article": "<p>Records from the Provincial Registry confirm that the water baron controls the last known well in Sector 7. The report cites seventeen independent witnesses.</p><p>Professor Aldous Crane remarked that this event highlights underlying tensions that have long been overlooked. 'We mapped this possibility in 2135,' they stated. 'No one wanted the map.'</p><p>In the merchant district, residents reported a profound silence lasting three minutes. One shopkeeper assessed the incident in terms of inventory losses rather than dramatic expressions.</p><p>The Office of Correct Records released an 884-word statement that failed to clarify any issues and instead introduced six new questions.</p><p>Tomorrow's edition will investigate the financial aspects, the motivations, and the one detail that every spokesperson has deliberately avoided mentioning.</p>",
+  "author": "Foreign Bureau",
+  "city": "New Avalon",
   "weather": {
-    "city": "The Capital",
-    "condition": "Stormy",
-    "temp": 94,
-    "high": 104,
-    "low": 85
+    "city": "New Avalon",
+    "condition": "Affluent Fog",
+    "temp": 72,
+    "high": 78,
+    "low": 65
   },
   "oped": {
     "title": "The Old World Deserved to Die",
@@ -26,29 +30,56 @@
   },
   "classifieds": [
     {
-      "cat": "For Sale",
-      "text": "Pre-war can opener. Rusted but functional. Two bullets or best offer."
+      "cat": "Trade",
+      "text": "Rare boutique items from the Old World! Designer survival gear and vintage medical equipment available for barter. Looking for clean water or food rations. Meet at Old Haven Plaza. Bring a flare for security."
     },
     {
-      "cat": "Employment",
-      "text": "Scavenger needed for deep-ruin expedition. Must bring own gas mask."
+      "cat": "Help Wanted",
+      "text": "Seeking skilled scavengers for an expedition into the Ruined District. Must have experience navigating the Crater Fields and dealing with raiders. Compensation includes a share of salvage and protection from the Wastes' worst."
+    },
+    {
+      "cat": "Lost & Found",
+      "text": "Missing! Blueprints for a pre-Blight water filtration system. Last seen near the derelict factories of Ironwood. Reward offered - fresh food supplies for a month to anyone who can return them. Contact Jenna at the Trading Post."
     },
     {
       "cat": "Housing",
-      "text": "Lean-to near the old highway. Wind protection minimal. No raiders currently."
-    },
-    {
-      "cat": "Services",
-      "text": "Radiation detox. 50% success rate. Payment upfront. No refunds."
+      "text": "Secure bunker space available in the Undercity! Perfect for families looking to stay safe from Wraiths. Equipped with basic amenities and reinforced doors. Monthly rent negotiable based on barterable supplies."
     }
   ],
-  "comic": {
-    "caption": "'I came for the view. I stayed because the door locked.'",
-    "scene": "alley",
-    "image": "/editions/images/2026-07-04-8-comic.png",
+  "comic_strip": {
+    "title": "The Bureaucrat",
+    "panels": [
+      {
+        "caption": "Did you hear about the Water Baron controlling the last known well in ...?"
+      },
+      {
+        "caption": "I prefer timelines where that sort of thing is impossible."
+      },
+      {
+        "caption": "Welcome to this one."
+      }
+    ],
+    "image": "/editions/images/2026-07-04-8-strip.png",
     "image_provider": "grok"
   },
-  "generated_at": "2026-07-04T19:43:44.921578+00:00",
-  "hero_image": "/editions/images/2026-07-04-8-hero.png",
-  "hero_image_provider": "grok"
+  "joke": {
+    "setup": "What's the difference between optimism and a canteen?",
+    "punchline": "The canteen eventually runs dry.",
+    "text": "What's the difference between optimism and a canteen? The canteen eventually runs dry."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "Revive Your Wealth: The Luxury Revival Treatment!",
+      "body": "Experience the exclusive antidote designed for the elite, ensuring your lineage thrives in a world of scarcity. Limited slots available; secure your place in history today!"
+    },
+    {
+      "headline": "Luxury Filtered Water: Taste the Purity of the Past!",
+      "body": "Indulge in our handcrafted water sourced from the last pristine aquifers. Don't settle for less than the best—quench your thirst with the essence of pre-collapse opulence!"
+    },
+    {
+      "headline": "Survival Sanctuary: Secure Your Spot in the Elite Bunker!",
+      "body": "Join the ranks of the privileged! Our state-of-the-art bunkers provide ultimate protection and luxury amidst the wasteland. Spaces are limited—reserve yours before it’s too late!"
+    }
+  ],
+  "generated_at": "2026-07-04T21:38:12.786254+00:00"
 }

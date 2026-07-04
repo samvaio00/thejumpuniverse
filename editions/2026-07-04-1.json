@@ -5,19 +5,23 @@
   "date_display": "Saturday, July 04, 2026",
   "year": 1890,
   "divergence": "Space travel began in 1950",
-  "llm_provider": "grok",
-  "llm_label": "Grok",
-  "headline": "Aether-Train Derailment Claims Twelve Souls",
-  "deck": "Investigators suspect sabotage by Luddite saboteurs.",
-  "article": "In a development that has stunned observers across the nation, aether-train derailment claims twelve souls. Sources close to the matter have confirmed that the situation remains fluid.\n\nOfficials in the capital have declined to comment, but witnesses describe a scene of both confusion and cautious optimism. The implications for the average citizen remain unclear.\n\nHistorical records suggest a similar event occurred nearly a century ago in this timeline, though on a much smaller scale. International observers have expressed both admiration and concern.\n\nResidents of the capital expressed mixed reactions. 'I never thought I'd see the day,' said one local merchant. 'It changes everything, and yet it changes nothing.'\n\nOnly time will tell whether this marks the beginning of a new era or merely a footnote in the annals of this parallel history.",
+  "story_angle": "somber obituary for a lost era or institution",
+  "roles": [
+    "Story: Moonshot Kimi",
+    "Humor: Grok",
+    "Editor: OpenAI"
+  ],
+  "headline": "Aether-Train Derailment Claims Twelve Lives",
+  "deck": "Investigators suspect sabotage by Luddite activists.",
+  "article": "<p>Records from the Metropolitan Archives confirm that an aether-train derailment has resulted in the tragic loss of twelve lives. The report cites six independent witnesses.</p><p>Dr. Eliza Marsh shared insights with this publication, highlighting the underlying tensions that have long been overlooked. 'We mapped this possibility in 1878,' they stated. 'No one wanted to acknowledge it.'</p><p>In the cathedral quarter, residents recounted a profound silence that enveloped the area for three minutes. One shopkeeper assessed the incident through the lens of inventory losses rather than dramatic narratives.</p><p>The Office of Correct Records released a 281-word statement that left many questions unanswered while introducing several new ones.</p><p>Tomorrow's edition will delve into the financial aspects, the motives behind the act, and the one detail that every spokesperson has notably avoided mentioning.</p>",
   "author": "Local Editor",
-  "city": "New Eden",
+  "city": "London",
   "weather": {
-    "city": "New Eden",
-    "condition": "Overcast",
-    "temp": 59,
-    "high": 68,
-    "low": 51
+    "city": "London",
+    "condition": "Celestial Overcast",
+    "temp": 72,
+    "high": 78,
+    "low": 65
   },
   "oped": {
     "title": "The Moral Cost of Automaton Labor",
@@ -26,27 +30,56 @@
   },
   "classifieds": [
     {
-      "cat": "For Sale",
-      "text": "Gently used difference engine. Minor gear slippage. 15 guineas."
+      "cat": "Transportation",
+      "text": "For Sale: Exquisite Steam-Powered Airship! Perfect for the discerning gentleman or lady of leisure. Capable of reaching heights above the clouds for breathtaking views. Comes equipped with plush seating and a fully stocked bar. Contact Captain Hawthorne at the Airship Dock, London."
     },
     {
-      "cat": "Employment",
-      "text": "Experienced aether-rigger sought. Must supply own goggles."
+      "cat": "Education",
+      "text": "Learn the Secrets of the Cosmos! Enroll in our exclusive Celestial Navigation Course at the Royal Academy of Sciences. Discover the art of star mapping and the wonders of the universe as we prepare for man’s first journey into the stars. Classes commence this autumn!"
     },
     {
-      "cat": "Housing",
-      "text": "Rooms in Pneumatic District. Constant vibration. Not for nervous constitutions."
+      "cat": "Commerce",
+      "text": "Rare Opportunity: Invest in the Future of Space Exploration! Join us in funding the first Space Expedition to the Moon in 1950. Limited shares available in the Astronautics Exploration Company. For further information, inquire at the offices on Fleet Street."
     },
     {
-      "cat": "Services",
-      "text": "Professional exorcist for haunted automata. Discretion assured."
+      "cat": "Entertainment",
+      "text": "Experience the Thrill of the Cosmic Circus! Coming this winter to the Grand Theatre: a dazzling performance showcasing acrobats, aerialists, and the latest inventions in space travel. Tickets available at the box office. Don’t miss this extraordinary event!"
     }
   ],
-  "comic": {
-    "caption": "'Life goes on. Somehow.'",
-    "scene": "laboratory",
-    "image": "/editions/images/2026-07-04-1-comic.png",
+  "comic_strip": {
+    "title": "Citizen Smith",
+    "panels": [
+      {
+        "caption": "Did you hear about the aether-train derailment?"
+      },
+      {
+        "caption": "I prefer timelines where that sort of thing is impossible."
+      },
+      {
+        "caption": "Welcome to this one."
+      }
+    ],
+    "image": "/editions/images/2026-07-04-1-strip.png",
     "image_provider": "grok"
   },
-  "generated_at": "2026-07-04T19:41:40.005831+00:00"
+  "joke": {
+    "setup": "Why did the aether-engine refuse overtime?",
+    "punchline": "It was already phased for the weekend.",
+    "text": "Why did the aether-engine refuse overtime? It was already phased for the weekend."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "Ascend Beyond the Heavens with Celestial Voyages!",
+      "body": "Experience the thrill of space travel with our bespoke journeys aboard the Starlight Cruiser, where the wonders of the cosmos await you. Book your passage today and witness the celestial bodies like never before!"
+    },
+    {
+      "headline": "Galactic Delights: Taste the Cosmos!",
+      "body": "Savor the exquisite flavors of the universe with our pioneering foodstuffs sourced from the Martian fields and lunar orchards. Delight your palate with our rare interstellar delicacies, now available at your local grocer."
+    },
+    {
+      "headline": "Gaze into the Infinite with the Astra Spectacle!",
+      "body": "Behold the celestial wonders through our patented Astra Spectacle, the finest optical instrument for stargazers and astronomers alike. Illuminate your evenings with the beauty of the stars, as you chart your own course through the night sky."
+    }
+  ],
+  "generated_at": "2026-07-04T21:34:33.877814+00:00"
 }

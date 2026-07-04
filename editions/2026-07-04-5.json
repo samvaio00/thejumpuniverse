@@ -5,56 +5,81 @@
   "date_display": "Saturday, July 04, 2026",
   "year": 1347,
   "divergence": "The atomic bomb was never used in war",
-  "llm_provider": "openai",
-  "llm_label": "OpenAI",
-  "headline": "The Glorious Triumph of the Just: Our Noble Knights Prevail in the Battle of Eldermere",
-  "deck": "In a splendid clash of valor and chivalry, the forces of righteousness have vanquished the marauding brigands that threatened our peaceful realm.",
-  "article": "In this year of our Lord two thousand and twenty-six, on the day of the Fourth of July, the hallowed fields of Eldermere bore witness to a monumental confrontation, marking a triumph of faith and honor. Our gallant knights, clad in gleaming armor adorned with the symbols of valor, faced the treacherous hordes of marauding brigands who dared to disrupt the peace of our sacred lands. With hearts ablaze and resolve unwavering, they charged forth, reminding all of the might of justice and the righteousness of our cause.\n\nThe morn of battle dawned with a heavy mist, as if the very heavens bore witness to the unfolding strife. The clash of steel rang through the air, mingling with the fervent prayers of the faithful who gathered to beseech divine intervention for our brave defenders. Sir Reginald of Eldermere, a beacon of gallantry, led the charge, his resplendent banner fluttering high, instilling courage in the hearts of his comrades. Swords clashed, and the air was thick with the cries of valor and fervent devotion, as the forces of good met the darkness that threatened to engulf our realm.\n\nThe skirmish proved fierce and unyielding, with the brigands, emboldened by greed, attempting to overwhelm our noble knights. Yet, the steadfastness of our defenders, strengthened by their unwavering faith and the blessings of the Almighty, turned the tide. The onlookers, gathered on the outskirts, offered their prayers and cheers, their voices rising like a sacred hymn to the heavens, urging their champions onward. Witnessing the clash of good against evil, the resolve of our people shone brighter than ever, united in purpose and spirit.\n\nAs the sun began its descent beyond the rolling hills, the dust of battle settled, revealing the fallen and the victors. The brigands, realizing they could not withstand the righteous might charged forth by our knights, fled into the shadows, their wicked schemes thwarted. Our heroes, though weary, emerged triumphant, for they had defended their homeland, restoring peace to Eldermere and reaffirming the undying spirit of chivalry that binds our great kingdom.\n\nIn these tumultuous times, let us recount this victory as a testament to our unity, our valor, and our unwavering faith. May the tales of this day echo through the halls of history, inspiring future generations to uphold the noble virtues of honor and courage in the face of adversity. Our realm stands strong, fortified by the strength of its people and the faith that guides us all.",
+  "story_angle": "propaganda triumph narrated with unsettling sincerity",
+  "roles": [
+    "Story: Moonshot Kimi",
+    "Humor: Grok",
+    "Editor: OpenAI"
+  ],
+  "headline": "Plague Ships Spotted in the Southern Harbor",
+  "deck": "The port authority has mandated a forty-day quarantine for all vessels.",
+  "article": "<p>Records from the Provincial Registry confirm that plague ships have been sighted in the southern harbor. The report cites seventeen independent witnesses.</p><p>Professor Aldous Crane remarked that this incident reveals underlying tensions previously masked by official assurances. 'We mapped this possibility in 1335,' they stated. 'No one wanted the map.'</p><p>In the cathedral quarter, residents reported a three-minute silence. One shopkeeper measured the incident in terms of inventory losses rather than dramatic expressions.</p><p>The Board of Censors released a 599-word statement that failed to address key questions while introducing five new ones.</p><p>Tomorrow's edition will delve into the financial aspects, the underlying motives, and the one detail that every spokesperson has strategically avoided mentioning.</p>",
   "author": "Foreign Bureau",
-  "city": "Neo-Tokyo",
+  "city": "Kingston",
   "weather": {
-    "city": "Neo-Tokyo",
-    "condition": "Hazy",
-    "temp": 30,
-    "high": 33,
-    "low": 23
+    "city": "Kingston",
+    "condition": "Midsummer's Resplendence",
+    "temp": 72,
+    "high": 78,
+    "low": 65
   },
   "oped": {
-    "title": "The Lament of the Iron Fist: A Call for Chivalry in Troubling Times",
-    "author": "Sir Alaric of Eldergrove",
-    "body": "In the year of our Lord 1347, as we stand on the precipice of deeper conflicts, we must reflect upon the travails of war and the honor of our noble houses. Castles rise and fall, but the spirit of chivalry must endure against the tide of violence. Kings and lords, heed the cries of the peasantry; their blood stains our fields and their cries echo in the heavens. Without the foul specter of the atomic scourge, our battles remain bound by code and valor. Yet, warriors seem drawn to cruelty, abandoning the tenets of gallantry for the grasp of tyranny.\n\nLet us not forget the lessons of our forebears: to raise sword against sword in honorable duel, rather than to unleash random ruin. As we march towards destiny, may we embrace diplomacy and mutual respect, forging alliances stronger than steel, lest we are consumed by the very darkness we seek to vanquish."
+    "title": "The Peasant's Lot is God's Lot",
+    "author": "A Parish Priest",
+    "body": "To question one's station is to question the divine order. The ploughman serves as surely as the king, and both shall have their reward in heaven."
   },
   "classifieds": [
     {
-      "cat": "For Sale",
-      "text": "Beautifully crafted longbow made from yew, perfect for hunting or sport. Comes with a quiver of arrows for just 10 silver coins."
+      "cat": "Services",
+      "text": "Talented Scribe Available: Need scrolls, tomes, or letters written in fine calligraphy? I offer my services for a reasonable fee. Proven expertise in Latin, French, and Old English. Inquire within the Mercantile Guild."
+    },
+    {
+      "cat": "Goods",
+      "text": "Rare Alchemical Ingredients for Sale: Distilled from the finest herbs of the Whispering Woods. Offering powdered dragon's blood, phoenix feathers, and moonstone essence. Perfect for potions and elixirs. Visit Marla the Herbalist near the Eastern Gate."
+    },
+    {
+      "cat": "Lost & Found",
+      "text": "Lost: A silver locket with intricate designs, last seen near the village well. Reward of three silver coins for its safe return. Contact Lady Elenora at the manor."
     },
     {
       "cat": "Employment",
-      "text": "Seeking skilled blacksmith for apprenticeship at the Forge of Valor. Must have experience or proven dedication to the craft."
-    },
-    {
-      "cat": "Housing",
-      "text": "Charming two-bedroom cottage with thatched roof available for rent. Located near the market square, 5 silver coins per month."
-    },
-    {
-      "cat": "Services",
-      "text": "Seeking a minstrel to perform at our upcoming harvest festival. Good pay and meal included! Inquire at the Red Rose Inn."
-    },
-    {
-      "cat": "Lost",
-      "text": "Lost: A golden necklace with a family crest in the village square. Reward of 2 silver coins for its safe return."
-    },
-    {
-      "cat": "Wanted",
-      "text": "Wanted: A skilled healer to assist in the Well of Life. Inquire within the Guild of Herbalists for generous compensation."
+      "text": "Seeking Skilled Blacksmith: Renowned armory seeks a proficient blacksmith to create armor and weapons for noble patrons. Competitive wages and a cozy workshop provided. Must provide references from previous employers. Apply at the Flameforge in the town square."
     }
   ],
-  "comic": {
-    "caption": "\"With peace and no atomic bombs, I guess we can focus on developing our catapult technology instead!\"",
-    "scene": "castle",
-    "image": "/editions/images/2026-07-04-5-comic.png",
+  "comic_strip": {
+    "title": "The Bureaucrat",
+    "panels": [
+      {
+        "caption": "Did you hear about the Plague Ships spotted in the Southern Harbor?"
+      },
+      {
+        "caption": "I prefer timelines where that sort of thing is impossible."
+      },
+      {
+        "caption": "Welcome to this one."
+      }
+    ],
+    "image": "/editions/images/2026-07-04-5-strip.png",
     "image_provider": "grok"
   },
-  "generated_at": "2026-07-04T19:42:51.346360+00:00"
+  "joke": {
+    "setup": "How do you report on today's headline?",
+    "punchline": "Very carefully, in an alternate timeline.",
+    "text": "How do you report on today's headline? Very carefully, in an alternate timeline."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "Aetherial Elixirs: Brewed to Perfection!",
+      "body": "Unleash the power of nature with our Aetherial Elixirs! Handcrafted from rare herbs gathered under the light of the full moon, these potions promise enhanced vitality and vigor for all who dare to partake."
+    },
+    {
+      "headline": "Sir Cedric's Enchanted Armory - Gear Up Today!",
+      "body": "Arm yourself with the finest enchanted weapons and armor forged by Sir Cedric himself! With charm and steel combined, our gear ensures valor in battle and swift victory over foes."
+    },
+    {
+      "headline": "Whispers of the Winds: The Finest Flying Carpets!",
+      "body": "Elevate your travels with our exquisite flying carpets, woven by master artisans! Experience the thrill of soaring through the skies, evading mundane roads and arriving at your destination in style."
+    }
+  ],
+  "generated_at": "2026-07-04T21:36:35.418792+00:00"
 }
