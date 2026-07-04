@@ -191,13 +191,14 @@ def generate_with_llm(prompt, provider_name, max_tokens=800, temperature=0.9, js
 
     models = _model_candidates(provider_name, provider["model"], TEXT_MODEL_FALLBACKS)
     for model in models:
+        model_temp = 1.0 if model.startswith("kimi-k2") else temperature
         payload = {
             "model": model,
             "messages": [
                 {"role": "system", "content": "You are a creative writer. Return only valid JSON when asked."},
                 {"role": "user", "content": prompt},
             ],
-            "temperature": temperature,
+            "temperature": model_temp,
             "max_tokens": max_tokens,
         }
         if json_mode and provider_name == "openai":
@@ -244,12 +245,18 @@ def llm_json_with_fallback(prompt, primary_role, **kwargs):
 
 
 def pick_image_provider(preferred):
-    """Use preferred image provider if available, else the other."""
+    """Return ordered list of image providers to try."""
     order = [preferred, "grok" if preferred == "openai" else "openai"]
-    for name in order:
-        if name in IMAGE_PROVIDERS and IMAGE_PROVIDERS[name]["api_key"]:
-            return name
-    return None
+    return [name for name in order if IMAGE_PROVIDERS.get(name, {}).get("api_key")]
+
+
+def generate_image_with_fallback(prompt, preferred="openai"):
+    """Try preferred image provider, then the alternate."""
+    for provider_name in pick_image_provider(preferred):
+        image_b64 = generate_image(prompt, provider_name)
+        if image_b64:
+            return image_b64, provider_name
+    return None, None
 
 
 def parse_llm_json(raw):
@@ -723,28 +730,21 @@ def generate_edition(date=None, timeline_id=None, with_images=None):
     strip_image = strip_image_provider = None
 
     if with_images:
-        hero_provider = pick_image_provider("openai")
-        if hero_provider:
-            hero_b64 = generate_image(
-                HERO_IMAGE_PROMPT.format(theme=theme, year=year,
-                    headline=content["headline"], divergence=divergence),
-                hero_provider,
-            )
-            if hero_b64:
-                hero_image = save_image_file(hero_b64, f"{date_slug}-{timeline_id}-hero.png")
-                hero_image_provider = hero_provider
+        hero_b64, hero_image_provider = generate_image_with_fallback(
+            HERO_IMAGE_PROMPT.format(theme=theme, year=year,
+                headline=content["headline"], divergence=divergence),
+            preferred="openai",
+        )
+        if hero_b64:
+            hero_image = save_image_file(hero_b64, f"{date_slug}-{timeline_id}-hero.png")
 
-        comic_provider = pick_image_provider("grok")
-        if comic_provider:
-            panel_summary = " | ".join(p.get("caption", "")[:60] for p in content["comic_strip"].get("panels", [])[:3])
-            comic_b64 = generate_image(
-                COMIC_STRIP_IMAGE_PROMPT.format(theme=theme, headline=content["headline"],
-                    panel_summary=panel_summary),
-                comic_provider,
-            )
-            if comic_b64:
-                strip_image = save_image_file(comic_b64, f"{date_slug}-{timeline_id}-strip.png")
-                strip_image_provider = comic_provider
+        comic_b64, strip_image_provider = generate_image_with_fallback(
+            COMIC_STRIP_IMAGE_PROMPT.format(theme=theme, headline=content["headline"],
+                panel_summary=" | ".join(p.get("caption", "")[:60] for p in content["comic_strip"].get("panels", [])[:3])),
+            preferred="grok",
+        )
+        if comic_b64:
+            strip_image = save_image_file(comic_b64, f"{date_slug}-{timeline_id}-strip.png")
 
     if strip_image:
         content["comic_strip"]["image"] = strip_image
