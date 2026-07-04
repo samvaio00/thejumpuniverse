@@ -41,7 +41,6 @@
             --column-rule: #8a7464; --font-headline: 'Georgia', serif;
             --font-body: 'Georgia', serif; --font-masthead: 'Georgia', serif;
             --font-special: 'Courier New', monospace;
-            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23d4c5b0' fill-opacity='0.15' fill-rule='evenodd'/%3E%3C/svg%3E");
         }
         [data-theme="victorian"] .masthead { border-top: 4px double var(--accent); border-bottom: 4px double var(--accent); }
         [data-theme="victorian"] .headline-main { text-transform: uppercase; letter-spacing: 2px; }
@@ -50,7 +49,6 @@
         [data-theme="artdeco"] {
             --paper-bg: #f2ece2; --ink-color: #0f0f1e; --accent: #a6840f;
             --column-rule: #b8941f;
-            background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(201, 162, 39, 0.05) 35px, rgba(201, 162, 39, 0.05) 70px);
         }
         [data-theme="artdeco"] .masthead { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: #f5e6b8; border: 3px solid var(--accent); }
         [data-theme="artdeco"] .masthead-subtitle,
@@ -59,7 +57,7 @@
         [data-theme="artdeco"] .masthead-title { letter-spacing: 8px; text-transform: uppercase; }
         [data-theme="artdeco"] .headline-main { font-weight: 900; text-transform: uppercase; letter-spacing: 1px; }
         [data-theme="artdeco"] .btn { background: var(--accent); color: #1a1a2e; border: 2px solid #1a1a2e; text-transform: uppercase; letter-spacing: 2px; font-weight: bold; }
-        [data-theme="artdeco"] .comic-panel { border: 3px solid var(--accent); background: linear-gradient(135deg, #f5f0e8, #fff); }
+        [data-theme="artdeco"] .comic-panel { border: 3px solid var(--accent); background: var(--paper-bg); }
 
         [data-theme="soviet"] {
             --paper-bg: #ececec; --ink-color: #111; --accent: #b30000;
@@ -79,8 +77,6 @@
             --column-rule: #444; --font-headline: 'Courier New', monospace;
             --font-body: 'Courier New', monospace; --font-masthead: 'Courier New', monospace;
             --font-special: 'Courier New', monospace;
-            background-image: linear-gradient(rgba(0, 255, 157, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 255, 157, 0.03) 1px, transparent 1px);
-            background-size: 20px 20px;
         }
         [data-theme="cyberpunk"] .masthead { border: 2px solid var(--accent); box-shadow: 0 0 20px rgba(0, 230, 138, 0.25); background: #0f1018; }
         [data-theme="cyberpunk"] .masthead-title { color: var(--accent); text-shadow: 0 0 10px rgba(0, 230, 138, 0.45); letter-spacing: 6px; }
@@ -94,7 +90,6 @@
         [data-theme="medieval"] {
             --paper-bg: #f2ead8; --ink-color: #2a1808; --accent: #7a0000;
             --column-rule: #a89070;
-            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23c9b896' fill-opacity='0.2'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
         }
         [data-theme="medieval"] .masthead { border: 3px double var(--accent); background: linear-gradient(to bottom, #f5f0e1, #e8e0cc); }
         [data-theme="medieval"] .masthead-title { font-variant: small-caps; letter-spacing: 3px; }
@@ -104,7 +99,6 @@
         [data-theme="atomic"] {
             --paper-bg: #fffdf8; --ink-color: #1a2836; --accent: #c0392b;
             --column-rule: #95a0a8;
-            background-image: radial-gradient(circle at 50% 50%, rgba(231, 76, 60, 0.03) 0%, transparent 70%);
         }
         [data-theme="atomic"] .masthead { border-top: 6px solid var(--accent); border-bottom: 2px solid var(--accent); background: white; }
         [data-theme="atomic"] .masthead-title { letter-spacing: 6px; text-transform: uppercase; }
@@ -117,13 +111,12 @@
             --column-rule: #6a4a99; --font-headline: 'Courier New', monospace;
             --font-body: 'Courier New', monospace; --font-masthead: 'Courier New', monospace;
             --font-special: 'Courier New', monospace;
-            background-image: linear-gradient(180deg, rgba(255, 107, 157, 0.05) 0%, transparent 50%), linear-gradient(0deg, rgba(107, 207, 255, 0.05) 0%, transparent 50%);
         }
         [data-theme="vaporwave"] .masthead { border: 2px solid var(--accent); background: linear-gradient(135deg, #2d1b4e 0%, #1a0f2e 100%); box-shadow: 0 0 30px rgba(255, 107, 157, 0.2); }
         [data-theme="vaporwave"] .masthead-title { color: var(--accent); text-shadow: 2px 2px 0px #6bcfff; letter-spacing: 8px; text-transform: uppercase; }
         [data-theme="vaporwave"] .headline-main { color: #ffffff; text-shadow: 2px 2px 0px rgba(255, 107, 157, 0.35); }
         [data-theme="vaporwave"] .btn { background: linear-gradient(135deg, #ff6b9d, #6bcfff); color: #24163d; border: none; text-transform: uppercase; letter-spacing: 2px; font-weight: bold; }
-        [data-theme="vaporwave"] .comic-panel { border: 2px solid #6bcfff; background: linear-gradient(135deg, #3d2566, #24163d); box-shadow: 0 0 20px rgba(107, 207, 255, 0.2); }
+        [data-theme="vaporwave"] .comic-panel { border: 2px solid #6bcfff; background: var(--paper-bg); box-shadow: 0 0 20px rgba(107, 207, 255, 0.15); }
         [data-theme="vaporwave"] .sponsor-ad { border: 1px solid #6bcfff; background: rgba(107, 207, 255, 0.1); }
         [data-theme="vaporwave"] .comic-panel-item { background: rgba(107, 207, 255, 0.08); }
 
@@ -132,7 +125,6 @@
             --column-rule: #8a7355; --font-headline: 'Courier New', monospace;
             --font-body: 'Courier New', monospace; --font-masthead: 'Courier New', monospace;
             --font-special: 'Courier New', monospace;
-            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.08'/%3E%3C/svg%3E");
         }
         [data-theme="wasteland"] .masthead { border: 3px solid var(--accent); background: #c9b896; }
         [data-theme="wasteland"] .masthead-title { letter-spacing: 6px; text-transform: uppercase; font-weight: 900; }
@@ -216,7 +208,7 @@
         .comic-strip-image { width: 100%; max-height: 360px; object-fit: cover; border-radius: 4px; margin-bottom: 16px; display: block; border: 2px solid var(--column-rule); background: rgba(0,0,0,0.05); }
         .comic-panels { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
         @media (max-width: 700px) { .comic-panels { grid-template-columns: 1fr; } }
-        .comic-panel-item { border: 2px solid var(--column-rule); padding: 12px; text-align: center; min-height: 80px; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.35); }
+        .comic-panel-item { border: 2px solid var(--column-rule); padding: 12px; text-align: center; min-height: 80px; display: flex; align-items: center; justify-content: center; background: var(--paper-bg); }
         .comic-panel-num { font-family: var(--font-special); font-size: 0.62rem; opacity: 0.78; margin-bottom: 6px; }
         .comic-panel-caption { font-family: var(--font-special); font-size: 0.86rem; line-height: 1.45; color: var(--ink-color); }
 
