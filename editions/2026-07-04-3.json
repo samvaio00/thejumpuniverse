@@ -11,75 +11,79 @@
     "Humor: Grok",
     "Editor: OpenAI"
   ],
-  "headline": "FIVE-YEAR PLAN EXCEEDS QUOTA BY 12%",
-  "deck": "Comrade workers have surpassed expectations in steel and concrete production.",
-  "article": "<p>Records from the Central Bureau confirm that the five-year plan has exceeded its quota by 12%. The report cites six independent witnesses.</p><p>Professor Aldous Crane commented that this event reveals underlying tensions that have been present for some time. 'We mapped this possibility in 1950,' they noted. 'No one wanted the map.'</p><p>In the cathedral quarter, residents reported an unusual green light. One shopkeeper opted to measure the incident in terms of inventory losses rather than accolades.</p><p>The Board of Censors released a 248-word statement that provided no clarity and raised five additional questions.</p><p>Tomorrow's edition will delve into the financial aspects, the motivations, and the one detail every spokesperson has avoided mentioning.</p>",
+  "headline": "FINAL PRINT OF THE HISTORIC 'MOSKOVSKII RABOTNIK' SIGNALS THE END OF AN ERA",
+  "deck": "The Closure of the First State-Run Newspaper Marks a Significant Technological Shift",
+  "article": "<p>MOSCOW, 1962 -- Today, we reflect on a pivotal moment in our history as we bid farewell to 'Moskovskii Rabotnikom', a publication that has long been a pillar of our national identity. Established in the wake of the October Revolution, it has consistently voiced the aspirations of the working class. For generations, the citizens of the Soviet Union have turned to its pages for solidarity and inspiration.</p><p>Over the years, this newspaper has illuminated our industrial achievements, agricultural successes, and the determination of our workforce. A highlight from 1940 saw 'Moskovskii Rabotnikom' celebrate a remarkable steel production milestone of over 18 million tons, a testament to our collective strength.</p><p>As we stand on the brink of the 20th century, the legacy of 'Moskovskii Rabotnikom' is clear. It has chronicled our shared experiences and aspirations, guiding us toward a brighter future. However, with the introduction of neural interfaces in 2045, we now witness the final print edition. This moment invites us to consider how far we have come and how our methods of communication have evolved.</p><p>What was once a communal ritual of sharing printed pages has transitioned to the impersonal nature of digital feeds. The warmth of camaraderie, once fostered over shared articles and conversations in factory break rooms, has given way to solitary consumption of information. We mourn the loss of 'Moskovskii Rabotnikom' not just for its content, but for the spirit of unity it represented. Today, we gather in recognition of our shared history, acknowledging the profound changes that lie ahead.</p>",
   "author": "Staff Correspondent",
   "city": "Moscow",
   "weather": {
     "city": "Moscow",
-    "condition": "Cognitive Cloudiness",
+    "condition": "Cognitive Cloud Cover",
     "temp": 72,
     "high": 78,
     "low": 65
   },
   "oped": {
-    "title": "THE INDIVIDUAL IS A MYTH",
-    "author": "A Worker-Philosopher",
-    "body": "The West speaks of personal freedom. We speak of collective strength. One man is weak. One million men, moving in the same direction, form an unstoppable force."
+    "title": "Print's Corpse Feeds the Wires",
+    "author": "V. Molotov-9",
+    "body": "Longing for Moskovskii Rabotnik is a retreat from progress. Its final edition showcases the Party's brilliance: why distribute ink when neural interfaces, now compulsory since 2045, directly transmit information to our minds? The conclusion of this chapter signifies liberation from the last vestige of personal reading. Now, every worker's intellect serves as a state printing press. Celebrate; the paper was merely a distraction."
   },
-  "classifieds": [
-    {
-      "cat": "Housing",
-      "text": "Modern 3-bedroom apartments available in the heart of Moscow! Equipped with the latest neural interface for seamless communication with your loved ones and community. Embrace the future of living while enjoying the rich culture of our great Soviet Union. Inquire today at the Central Housing Office!"
-    },
-    {
-      "cat": "Employment",
-      "text": "Join the revolution in the workforce! The State Technology Bureau seeks skilled technicians for neural interface maintenance. Enjoy competitive salaries, excellent benefits, and the pride of contributing to our socialist future. Applicants must possess a valid Group II neural interface certification. Apply at your local employment office!"
-    },
-    {
-      "cat": "Healthcare",
-      "text": "Attention citizens! Experience the benefits of our new state-mandated neural health monitoring. Our clinics now offer free routine diagnostics to ensure your neural interface is performing optimally. Stay healthy and connected! Visit your local health center for an appointment."
-    },
-    {
-      "cat": "Education",
-      "text": "Enroll in the prestigious Academy of Neural Sciences! Transform your mind and prepare for the future with our cutting-edge curriculum focused on neural interfaces. Perfect for the next generation of leaders in our glorious Soviet society. Spaces limited—apply now for our fall semester!"
-    }
-  ],
+  "classifieds": {
+    "classified_ads": [
+      {
+        "cat": "Employment",
+        "text": "Join the Collective! Seeking skilled engineers for advanced neural interface projects at the State Cybernetics Institute. Must possess experience in systems integration and a passion for the Motherland. Apply in person at Gorky Street, Moscow."
+      },
+      {
+        "cat": "Technology",
+        "text": "Introducing the latest in Soviet Neural Integration! Experience the power of thought control with the NK-62 Neural Interface. Enhance your productivity and access state-level information instantly. Available at all major electronics shops. Trust in the state!"
+      },
+      {
+        "cat": "Health & Wellness",
+        "text": "Attention citizens! Monthly health assessments now include mandatory neural interface check-ups. Ensure optimal performance and compliance with revolutionary technology. Visit your local healthcare facility for your scheduled evaluation. Together, we advance!"
+      },
+      {
+        "cat": "Housing",
+        "text": "New housing development available in Novosibirsk with built-in neural interface upgrades! Enjoy a modern living space designed for the forward-thinking Soviet citizen. Inquire today at the Central Housing Bureau. Embrace the future of communal living!"
+      }
+    ]
+  },
   "comic_strip": {
-    "title": "Citizen Smith",
+    "title": "Comrade Offline",
     "panels": [
       {
-        "caption": "Did you hear about the FIVE-YEAR PLAN EXCEEDS QUOTA BY 12%...?"
+        "caption": "Editor: Comrades, the final print of Moskovskii Rabotnik rolls off the press."
       },
       {
-        "caption": "I prefer timelines where that sort of thing is impossible."
+        "caption": "Worker with neural port: At last—no more queues for yesterday's news."
       },
       {
-        "caption": "Welcome to this one."
+        "caption": "Caption: Now the Party simply beams corrections straight into your skull."
       }
     ],
     "image": "/editions/images/2026-07-04-3-strip.png",
     "image_provider": "grok"
   },
   "joke": {
-    "setup": "How do you report on today's headline?",
-    "punchline": "Very carefully, in an alternate timeline.",
-    "text": "How do you report on today's headline? Very carefully, in an alternate timeline."
+    "setup": "In a world of mandatory neural interfaces since 2045, what does the final print of the historic 'Moskovskii Rabotnik' truly signal?",
+    "punchline": "The end of an era when the workers still needed paper to control their thoughts, comrade!",
+    "text": "In a world of mandatory neural interfaces since 2045, what does the final print of the historic 'Moskovskii Rabotnik' truly signal? The end of an era when the workers still needed paper to control their thoughts, comrade!"
   },
-  "sponsor_ads": [
-    {
-      "headline": "Revolutionize Your Mind with the New Neurolink!",
-      "body": "Experience enhanced cognitive function and seamless communication with your comrades. The Neurolink Neural Interface is now available for all citizens—power your productivity and connect with the collective!"
-    },
-    {
-      "headline": "Join the Future of Communication with ThoughtWave!",
-      "body": "Say goodbye to outdated methods! With ThoughtWave, share ideas and collaborate directly through your mind, fostering unity and efficiency in our great Soviet society. Embrace the power of collective thought today!"
-    },
-    {
-      "headline": "Unlock Your Potential: The Synaptic Enhancer is Here!",
-      "body": "Harness the strength of advanced neural technology to boost your creativity and problem-solving skills. The Synaptic Enhancer is a must-have for every dedicated worker striving for the glory of the Motherland!"
-    }
-  ],
-  "generated_at": "2026-07-04T21:35:33.912203+00:00"
+  "sponsor_ads": {
+    "ads": [
+      {
+        "headline": "Join the Future: Neural Connections Today!",
+        "body": "Embrace the revolutionary Neural Interface, now available for all citizens! Enhance your productivity and connection with the collective mind of the State—mandatory for a harmonious society."
+      },
+      {
+        "headline": "Stay Informed, Stay Connected!",
+        "body": "Introducing the Communicator Neural Link™—your direct channel to the latest news from the Party! Experience real-time updates and seize your role in the great advancement of our Socialist Union."
+      },
+      {
+        "headline": "Transform Your Learning with Neural Sync!",
+        "body": "Unlock your potential with the Education Enhancement Interface! Mandatory integration ensures that every citizen can access knowledge instantaneously and contribute to our glorious future."
+      }
+    ]
+  },
+  "generated_at": "2026-07-04T21:45:20.269802+00:00"
 }

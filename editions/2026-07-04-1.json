@@ -11,10 +11,10 @@
     "Humor: Grok",
     "Editor: OpenAI"
   ],
-  "headline": "Aether-Train Derailment Claims Twelve Lives",
-  "deck": "Investigators suspect sabotage by Luddite activists.",
-  "article": "<p>Records from the Metropolitan Archives confirm that an aether-train derailment has resulted in the tragic loss of twelve lives. The report cites six independent witnesses.</p><p>Dr. Eliza Marsh shared insights with this publication, highlighting the underlying tensions that have long been overlooked. 'We mapped this possibility in 1878,' they stated. 'No one wanted to acknowledge it.'</p><p>In the cathedral quarter, residents recounted a profound silence that enveloped the area for three minutes. One shopkeeper assessed the incident through the lens of inventory losses rather than dramatic narratives.</p><p>The Office of Correct Records released a 281-word statement that left many questions unanswered while introducing several new ones.</p><p>Tomorrow's edition will delve into the financial aspects, the motives behind the act, and the one detail that every spokesperson has notably avoided mentioning.</p>",
-  "author": "Local Editor",
+  "headline": "A Final Curtain: The Royal Astral Society Bids Adieu to its Storied Past",
+  "deck": "After a Half Century of Guiding Discovery, a Pillar of Victorian Scholarship Closes its Doors",
+  "article": "<p>In the grand tradition of our imperial epoch, where the allure of the night sky was as enchanting as the clamor of the mechanical age, the Royal Astral Society stood as a beacon of our collective spirit of inquiry. Founded in 1845, amidst the soaring ambitions of the Age of Discovery, its halls resonated with the whispers of the cosmos and the reflection of polished brass telescopes.</p><p>However, as humanity turned its gaze towards the vastness beyond our atmosphere in 1950, the significance of this venerable institution diminished. The excitement surrounding space exploration, with its promise of uncharted territories, has reached unprecedented heights, leaving the Royal Astral Society, proud of its legacy, as a relic of a bygone era.</p><p>This evening, the Society will host its final gathering in the same grand hall that once echoed with the excitement of astronomical breakthroughs. Esteemed scholars and enthusiasts will come together beneath the brass-laden telescopes and among the dusty tomes that once held the universe's secrets to bid a solemn farewell. Their reflections will resonate with a bittersweet nostalgia, honoring an era when earthly curiosity captivated the imagination.</p><p>As we close this illustrious chapter, we recall the words of Sir John Herschel, who described the Society as 'a place where the wonders of the heavens meet the handiwork of man.' Today, as humanity's endeavors reach beyond the stars, we must release the ties to our past and embrace the inevitable currents of progress and transformation.</p>",
+  "author": "Staff Correspondent",
   "city": "London",
   "weather": {
     "city": "London",
@@ -24,62 +24,66 @@
     "low": 65
   },
   "oped": {
-    "title": "The Moral Cost of Automaton Labor",
-    "author": "A Concerned Clergyman",
-    "body": "When a man is replaced by brass and steam, what becomes of his soul? We must consider not merely the efficiency of the factory, but the dignity of the worker who once stood within it."
+    "title": "Let the Curtain Fall—And Good Riddance",
+    "author": "E. Vesper Lang",
+    "body": "The Royal Astral Society's closure is not a loss but a necessary evolution. For years, these velvet-collared dreamers offered fanciful notions while real innovators crafted the technology that will propel us to the stars. Their 'storied past' served only as a distraction for those seeking to escape the realities of industry. Let the gaslights dim; the cosmos belongs to the builders, not the dreamers."
   },
-  "classifieds": [
-    {
-      "cat": "Transportation",
-      "text": "For Sale: Exquisite Steam-Powered Airship! Perfect for the discerning gentleman or lady of leisure. Capable of reaching heights above the clouds for breathtaking views. Comes equipped with plush seating and a fully stocked bar. Contact Captain Hawthorne at the Airship Dock, London."
-    },
-    {
-      "cat": "Education",
-      "text": "Learn the Secrets of the Cosmos! Enroll in our exclusive Celestial Navigation Course at the Royal Academy of Sciences. Discover the art of star mapping and the wonders of the universe as we prepare for man’s first journey into the stars. Classes commence this autumn!"
-    },
-    {
-      "cat": "Commerce",
-      "text": "Rare Opportunity: Invest in the Future of Space Exploration! Join us in funding the first Space Expedition to the Moon in 1950. Limited shares available in the Astronautics Exploration Company. For further information, inquire at the offices on Fleet Street."
-    },
-    {
-      "cat": "Entertainment",
-      "text": "Experience the Thrill of the Cosmic Circus! Coming this winter to the Grand Theatre: a dazzling performance showcasing acrobats, aerialists, and the latest inventions in space travel. Tickets available at the box office. Don’t miss this extraordinary event!"
-    }
-  ],
+  "classifieds": {
+    "ads": [
+      {
+        "cat": "Transportation",
+        "text": "FOR SALE: Magnificent steam-powered dirigible, ideal for leisurely sky excursions or transporting cargo across the Empire. Features a plush interior and a private observation deck. Experience the thrill of the skies—contact Captain Reginald Hawthorne at the Royal Aeronautics Society."
+      },
+      {
+        "cat": "Services",
+        "text": "EXCEPTIONAL SCIENTIFIC CONSULTATION: Dr. Eloise Kensington, esteemed researcher of celestial phenomena, now available for private consultations. Have you ever gazed at the stars and pondered their mysteries? Let Dr. Kensington illuminate the unknown and guide you in your astronomical pursuits. Appointments available at Kensington Manor."
+      },
+      {
+        "cat": "Entertainment",
+        "text": "ATTENTION ADVENTURERS: Join the Society of Aether Explorers! Gather bi-monthly at the Grand Hall of the Exploratorium for exciting lectures on the latest discoveries in space travel. Engage with fellow enthusiasts and partake in fascinating discussions over fine tea and pastries. Membership inquiries welcomed, inquire within."
+      },
+      {
+        "cat": "Education",
+        "text": "LEARN TO NAVIGATE THE STARS: Enroll in the newly established Celestial Navigation Academy! Our curriculum includes the study of astrolabes, the principles of aether currents, and the art of star mapping. Classes begin this October, taught by the renowned Professor Alistair Mortimer. Secure your future among the stars—register today!"
+      }
+    ]
+  },
   "comic_strip": {
-    "title": "Citizen Smith",
+    "title": "The Final Telescope",
     "panels": [
       {
-        "caption": "Did you hear about the aether-train derailment?"
+        "caption": "Gentlemen, with interplanetary liners departing since 1950, the Royal Astral Society hereby dissolves its Victorian charter."
       },
       {
-        "caption": "I prefer timelines where that sort of thing is impossible."
+        "caption": "No more hushed evenings with the equatorial mount and leather-bound ephemerides?"
       },
       {
-        "caption": "Welcome to this one."
+        "caption": "Quite. One simply purchases a ticket. Far less dignified than squinting through brass."
       }
     ],
     "image": "/editions/images/2026-07-04-1-strip.png",
     "image_provider": "grok"
   },
   "joke": {
-    "setup": "Why did the aether-engine refuse overtime?",
-    "punchline": "It was already phased for the weekend.",
-    "text": "Why did the aether-engine refuse overtime? It was already phased for the weekend."
+    "setup": "What did the dowager astronomer declare upon the Royal Astral Society's final assembly?",
+    "punchline": "'The curtain falls, my dears; our storied past now orbits the dustbin of the aether!'",
+    "text": "What did the dowager astronomer declare upon the Royal Astral Society's final assembly? 'The curtain falls, my dears; our storied past now orbits the dustbin of the aether!'"
   },
-  "sponsor_ads": [
-    {
-      "headline": "Ascend Beyond the Heavens with Celestial Voyages!",
-      "body": "Experience the thrill of space travel with our bespoke journeys aboard the Starlight Cruiser, where the wonders of the cosmos await you. Book your passage today and witness the celestial bodies like never before!"
-    },
-    {
-      "headline": "Galactic Delights: Taste the Cosmos!",
-      "body": "Savor the exquisite flavors of the universe with our pioneering foodstuffs sourced from the Martian fields and lunar orchards. Delight your palate with our rare interstellar delicacies, now available at your local grocer."
-    },
-    {
-      "headline": "Gaze into the Infinite with the Astra Spectacle!",
-      "body": "Behold the celestial wonders through our patented Astra Spectacle, the finest optical instrument for stargazers and astronomers alike. Illuminate your evenings with the beauty of the stars, as you chart your own course through the night sky."
-    }
-  ],
-  "generated_at": "2026-07-04T21:34:33.877814+00:00"
+  "sponsor_ads": {
+    "ads": [
+      {
+        "headline": "Experience the Wonders of the Cosmos!",
+        "body": "Join the Starbound Expeditions for a grand journey through the stars! Our state-of-the-art Starcruisers promise a celestial adventure unlike any other, complete with luxurious accommodations and breathtaking views of distant worlds."
+      },
+      {
+        "headline": "Restore Your Health with Aetheric Elixirs!",
+        "body": "Step into the future of wellness with our Aetheric Elixirs derived from cosmic minerals! These remarkable tonics are designed to rejuvenate your spirit and enhance your vitality, perfect for the discerning gentleman and lady."
+      },
+      {
+        "headline": "Secure Your Place on the Next Lunar Voyage!",
+        "body": "Tickets are now available for the next voyage to the Moon aboard the Celestial Flyer! Witness the majesty of our lunar neighbor and enjoy a feast of delights prepared by our onboard chefs as you glide through the heavens."
+      }
+    ]
+  },
+  "generated_at": "2026-07-04T21:43:10.079571+00:00"
 }

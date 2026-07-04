@@ -11,75 +11,79 @@
     "Humor: Grok",
     "Editor: OpenAI"
   ],
-  "headline": "Plague Ships Spotted in the Southern Harbor",
-  "deck": "The port authority has mandated a forty-day quarantine for all vessels.",
-  "article": "<p>Records from the Provincial Registry confirm that plague ships have been sighted in the southern harbor. The report cites seventeen independent witnesses.</p><p>Professor Aldous Crane remarked that this incident reveals underlying tensions previously masked by official assurances. 'We mapped this possibility in 1335,' they stated. 'No one wanted the map.'</p><p>In the cathedral quarter, residents reported a three-minute silence. One shopkeeper measured the incident in terms of inventory losses rather than dramatic expressions.</p><p>The Board of Censors released a 599-word statement that failed to address key questions while introducing five new ones.</p><p>Tomorrow's edition will delve into the financial aspects, the underlying motives, and the one detail that every spokesperson has strategically avoided mentioning.</p>",
-  "author": "Foreign Bureau",
-  "city": "Kingston",
+  "headline": "The Triumph of the Divine: A Tale of Hope Amidst Pestilence",
+  "deck": "In the grip of the Great Plague, the faithful find solace and strength within divine providence.",
+  "article": "<p>In the year of our Lord, thirteen hundred forty-seven, as the Great Plague besieges our realm, the people, united in their devotion, seek solace and strength through the sacred. The populace, steadfast in their faith, embraces the belief that this scourge is a divine test of their resolve.</p><p>Within the bounds of England, where the grip of pestilence is fierce, local lords such as Sir William de Montacute and Lady Catherine of Lancashire have emerged as symbols of hope, rallying their vassals and peasants alike. Raising their banners high, they proclaim that divine protection shall be bestowed upon those who remain unwavering in their fidelity.</p><p>Miracles are whispered from village to village, with tales of heavenly intervention spreading among the common folk. In the hamlet of Eyam, humble villagers claim to have witnessed the apparition of Saint Cuthbert guiding them through the nightmarish darkness. In the fiefdom of Lord Gregory de Montmorency, reports have emerged of visions of Saint Nicholas offering comfort to the ailing.</p><p>'In this time of tribulation, we have seen the hand of God among us,' declared Brother Thomas of the Abbey of St. Mary, 'and we must gather our strength from this boundless faith.' As the Great Plague continues its merciless spread, may the unity and devotion of our people be a testament to the enduring power of fervent belief and the mercy of our heavenly Father.</p>",
+  "author": "Special Reporter",
+  "city": "Aldoria",
   "weather": {
-    "city": "Kingston",
-    "condition": "Midsummer's Resplendence",
+    "city": "Aldoria",
+    "condition": "Ethereal Mists of Nostalgia",
     "temp": 72,
     "high": 78,
     "low": 65
   },
   "oped": {
-    "title": "The Peasant's Lot is God's Lot",
-    "author": "A Parish Priest",
-    "body": "To question one's station is to question the divine order. The ploughman serves as surely as the king, and both shall have their reward in heaven."
+    "title": "God's Mockery: The Plague and Our Atomic Failure",
+    "author": "Anon the Heretic",
+    "body": "The headline sings of divine triumph amid the Black Death of 1347, but what folly! Without the atomic bomb ever deployed in war, humanity remains chained to medieval mire. This pestilence isn't hope; it's proof that gods favor annihilation over progress. If we had harnessed nuclear fire to burn away enemies and disease, perhaps salvation would come. Instead, we pray as boils burst, corpses pile, and the divine laughs at our impotence."
   },
-  "classifieds": [
-    {
-      "cat": "Services",
-      "text": "Talented Scribe Available: Need scrolls, tomes, or letters written in fine calligraphy? I offer my services for a reasonable fee. Proven expertise in Latin, French, and Old English. Inquire within the Mercantile Guild."
-    },
-    {
-      "cat": "Goods",
-      "text": "Rare Alchemical Ingredients for Sale: Distilled from the finest herbs of the Whispering Woods. Offering powdered dragon's blood, phoenix feathers, and moonstone essence. Perfect for potions and elixirs. Visit Marla the Herbalist near the Eastern Gate."
-    },
-    {
-      "cat": "Lost & Found",
-      "text": "Lost: A silver locket with intricate designs, last seen near the village well. Reward of three silver coins for its safe return. Contact Lady Elenora at the manor."
-    },
-    {
-      "cat": "Employment",
-      "text": "Seeking Skilled Blacksmith: Renowned armory seeks a proficient blacksmith to create armor and weapons for noble patrons. Competitive wages and a cozy workshop provided. Must provide references from previous employers. Apply at the Flameforge in the town square."
-    }
-  ],
+  "classifieds": {
+    "ads": [
+      {
+        "cat": "Services Offered",
+        "text": "Ye olde scribe available for hire! Need parchment penned with elegance? I provide service at reasonable rates, specializing in scrolls for all occasions: marriage contracts, proclamations, and illuminated manuscripts. Visit my booth at the market square."
+      },
+      {
+        "cat": "Lost and Found",
+        "text": "Lost: A nobleman's crest – a silver griffin upon a field of azure. Last seen near the Great Oak by the Smithy. A reward of 10 silver coins will be granted to whosoever returns it. Inquire at the Blacksmith's shop for more details."
+      },
+      {
+        "cat": "Merchandise for Sale",
+        "text": "For sale: High-quality hand-crafted wooden shields. Sturdy and adorned with custom designs upon request. Perfect for knights preparing for the upcoming tournament! Visit the Shieldmaker's Guild in Eldenwood for your order."
+      },
+      {
+        "cat": "Employment Opportunities",
+        "text": "Seeking skilled blacksmiths for the royal forge! Competitive wages and housing provided. Must have experience in weaponry and armor crafting. Interested candidates, please present yourselves at the palace gates at dawn."
+      }
+    ]
+  },
   "comic_strip": {
-    "title": "The Bureaucrat",
+    "title": "Divine Detour",
     "panels": [
       {
-        "caption": "Did you hear about the Plague Ships spotted in the Southern Harbor?"
+        "caption": "Medieval village, plague carts rolling: 'The pestilence claims all—yet the Divine shall triumph!'"
       },
       {
-        "caption": "I prefer timelines where that sort of thing is impossible."
+        "caption": "Monk to knight: 'No atomic bomb ever unleashed in war, so we place hope in prayer alone.'"
       },
       {
-        "caption": "Welcome to this one."
+        "caption": "Knight, deadpan: 'Pray it works before the next outbreak. Or the one after.'"
       }
     ],
     "image": "/editions/images/2026-07-04-5-strip.png",
     "image_provider": "grok"
   },
   "joke": {
-    "setup": "How do you report on today's headline?",
-    "punchline": "Very carefully, in an alternate timeline.",
-    "text": "How do you report on today's headline? Very carefully, in an alternate timeline."
+    "setup": "Hark, what tale cheers the peasants amid the Black Death?",
+    "punchline": "'The Triumph of the Divine', for even pestilence bows to hope divine!",
+    "text": "Hark, what tale cheers the peasants amid the Black Death? 'The Triumph of the Divine', for even pestilence bows to hope divine!"
   },
-  "sponsor_ads": [
-    {
-      "headline": "Aetherial Elixirs: Brewed to Perfection!",
-      "body": "Unleash the power of nature with our Aetherial Elixirs! Handcrafted from rare herbs gathered under the light of the full moon, these potions promise enhanced vitality and vigor for all who dare to partake."
-    },
-    {
-      "headline": "Sir Cedric's Enchanted Armory - Gear Up Today!",
-      "body": "Arm yourself with the finest enchanted weapons and armor forged by Sir Cedric himself! With charm and steel combined, our gear ensures valor in battle and swift victory over foes."
-    },
-    {
-      "headline": "Whispers of the Winds: The Finest Flying Carpets!",
-      "body": "Elevate your travels with our exquisite flying carpets, woven by master artisans! Experience the thrill of soaring through the skies, evading mundane roads and arriving at your destination in style."
-    }
-  ],
-  "generated_at": "2026-07-04T21:36:35.418792+00:00"
+  "sponsor_ads": {
+    "advertisements": [
+      {
+        "headline": "Experience the Unseen: Enchanted Mirrors",
+        "body": "Peer into the depths of truth with our enchanted mirrors, crafted by the finest sorcerers of the North. Witness clarity in reflection that rivals the clarity of your own spirit!"
+      },
+      {
+        "headline": "Feast Fit for a King: The Royal Banquet Package",
+        "body": "Treat your family and friends to a lavish feast with our Royal Banquet Package, featuring the freshest game and finest wines, all prepared by the legendary Chef Alaric of Eldenwood!"
+      },
+      {
+        "headline": "Speed of the Wind: The All-New Hawk Rides",
+        "body": "Travel faster than the wind on our sturdy Hawk Rides, expertly bred for both speed and endurance. Ensure your place among the nobility with this swift and noble steed!"
+      }
+    ]
+  },
+  "generated_at": "2026-07-04T21:47:30.879021+00:00"
 }

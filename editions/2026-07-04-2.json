@@ -11,75 +11,79 @@
     "Humor: Grok",
     "Editor: OpenAI"
   ],
-  "headline": "Architect Unveils Plans for Mile-High Tower",
-  "deck": "Skeptics call it impossible. The architect calls it Tuesday.",
-  "article": "<p>Records from the Provincial Registry confirm that architect unveils plans for a mile-high tower. The report cites six independent witnesses.</p><p>Inspector Venn told this paper the event reveals underlying tensions that have long been overlooked. 'We mapped this possibility in 1915,' they said. 'No one wanted the map.'</p><p>In the cathedral quarter, residents experienced a silence that lasted three minutes. One shopkeeper measured the incident in terms of inventory losses rather than accolades.</p><p>The Board of Censors issued a 250-word statement that answered no questions and raised seven new ones.</p><p>Tomorrow's edition will investigate the financial aspects, the motives, and the one detail every spokesperson has carefully avoided naming.</p>",
-  "author": "Foreign Bureau",
+  "headline": "The Jazz Age of Rome: Aurelia Moretti, A Musical Star In Eternal City's Art Deco Brilliance",
+  "deck": "1927 Romans revel in the rhythm as the jazz singer from the Cafè Romantico ascends to fame.",
+  "article": "<p>The heart of Rome pulses with the vibrant sounds of jazz, resonating from the iconic Cafè Romantico, where the atmosphere buzzes with the allure of Art Deco elegance. It is in this enchanting space, amidst the clinking of champagne glasses, that one woman's aspirations take center stage. Aurelia Moretti's voice, a captivating mix of warmth and allure, captivates a city steeped in history and artistry.</p><p>Performing nightly at the Cafè Romantico, Moretti leads her audience through a rich tapestry of sound, where saxophones cry out in bold defiance of convention. 'I'm pursuing a melody,' she shares, 'one that transcends the ephemeral, capturing the timeless essence of Rome.' While the life of a jazz singer may appear glamorous, it is a precarious balance between fame and the weight of expectation. 'Every performance feels like walking a tightrope,' Moretti reflects.</p><p>Her journey intertwines with the creative spirit of an era brimming with innovative expression. There is a connection between Moretti's music and the rise of modernist literature, both embracing new forms that resonate with vitality. Her name is mentioned alongside luminaries like Ezra Pound and James Joyce as she navigates the intricate cultural landscape of Rome. 'Each note is a challenge to the mundane,' she declares, embodying the spirited essence of the Jazz Age.</p><p>However, like any artist amidst significant change, Aurelia Moretti wrestles with the tension between commercial viability and artistic authenticity. 'The cost of champagne is steep,' she acknowledges, 'but the price of losing oneself in the quest is even greater.'</p>",
+  "author": "Local Editor",
   "city": "Rome",
   "weather": {
     "city": "Rome",
-    "condition": "Eternal Sunlit Reverie",
+    "condition": "Eternal Radiance",
     "temp": 72,
     "high": 78,
     "low": 65
   },
   "oped": {
-    "title": "The Jazz Age is Not a Rebellion, It is a Renaissance",
-    "author": "A Modernist",
-    "body": "We are not lost. We are merely dancing faster than our parents can hear the music. Let them catch up, or let them stay behind."
+    "title": "Aurelia Moretti: Rome's Deco Siren Singing Its Obituary",
+    "author": "Livia Drusilla",
+    "body": "While the media celebrates Aurelia Moretti's dazzling performances in chrome-clad Rome, they overlook the decay beneath the surface. An empire that remains intact now dances to borrowed American rhythms and Egyptian designs, its legions swaying to saxophones rather than traditional drums. Moretti's jazz is not a victory; it's the final fragrance on a body still clutching its eagles. Once, true Romans conquered the world; now we sway as the very barbarians we once vanquished laugh at our gilded monuments."
   },
-  "classifieds": [
-    {
-      "cat": "Art Deco Furnishings",
-      "text": "Step into the future with our exclusive line of Art Deco furnishings! Experience the elegance of the 1927 style with geometric designs and luxurious materials. Visit Casa di Bellezza on Via del Corso for a personal consultation. Limited time offer: free delivery within the Eternal City!"
-    },
-    {
-      "cat": "Fashion & Accessories",
-      "text": "Elevate your wardrobe with the latest Art Deco fashions! Tailored dresses and suits adorned with bold patterns and vibrant colors await you at La Moda di Roma, located in the heart of Trastevere. Be the talk of the Caffè with our unique accessories. Special discounts for the first ten customers!"
-    },
-    {
-      "cat": "Art & Sculpture",
-      "text": "Transform your living space with striking Art Deco sculptures! Original pieces by acclaimed artist Giovanni Lucenti are now available. Visit our gallery on the Aventine Hill to explore a collection that combines the spirit of modernity with classical grandeur. Inquire about our custom commissions!"
-    },
-    {
-      "cat": "Cafés & Nightlife",
-      "text": "Join us at the newest Art Deco café, Il Caffè d’Oro! Indulge in exquisite pastries and cocktails inspired by the Roaring Twenties, all within a beautifully designed interior that captures the essence of modern Roman elegance. Live jazz music every Friday night—don't miss out on the vibrant atmosphere!"
-    }
-  ],
+  "classifieds": {
+    "ads": [
+      {
+        "cat": "Art Deco Furnishings",
+        "text": "Elevate your villa with unparalleled luxury! Discover exquisite Art Deco furniture handcrafted by the finest artisans in Rome. From lavish sofas to opulent dining sets, each piece is a testament to elegance and modernity. Visit our showroom in the heart of Trastevere!"
+      },
+      {
+        "cat": "Exclusive Art Exhibit",
+        "text": "Step into a world of glamour! Join us for the grand opening of 'Elysium Awaits: The Art Deco Movement' at the Palazzo delle Esposizioni. Experience stunning works from renowned artists and architects embracing the spirit of the Roaring Twenties. Opening gala on June 15th – don’t miss it!"
+      },
+      {
+        "cat": "Stylish Accessories",
+        "text": "Accessorize your wardrobe with the latest in Art Deco fashion! Visit La Boutique Elegante for a selection of dazzling jewelry and chic evening wear. Our pieces are inspired by the splendor of the era—perfect for any soirée under the stars. Located near the Spanish Steps!"
+      },
+      {
+        "cat": "Art Deco Home Services",
+        "text": "Transform your home into a masterpiece with our Art Deco interior design services! Our expert team will harmonize bold geometric patterns and rich colors to create a stunning aesthetic. Book your consultation today and let your residence shine like never before!"
+      }
+    ]
+  },
   "comic_strip": {
-    "title": "The Bureaucrat",
+    "title": "Eternal Encore",
     "panels": [
       {
-        "caption": "Did you hear about Architect Unveils Plans for Mile-High To...?"
+        "caption": "In the art-deco Forum, a toga-clad patron adjusts his spats: 'Aurelia Moretti sells out every night.'"
       },
       {
-        "caption": "I prefer timelines where that sort of thing is impossible."
+        "caption": "His companion nods beneath geometric laurels: 'Rome endures; only the tempo changes.'"
       },
       {
-        "caption": "Welcome to this one."
+        "caption": "Punchline: 'At least the empire won't fall to this rhythm—it's already lasted two millennia.'"
       }
     ],
     "image": "/editions/images/2026-07-04-2-strip.png",
     "image_provider": "grok"
   },
   "joke": {
-    "setup": "How do you report on today's headline?",
-    "punchline": "Very carefully, in an alternate timeline.",
-    "text": "How do you report on today's headline? Very carefully, in an alternate timeline."
+    "setup": "Why does Aurelia Moretti outshine every other act in Rome's Art Deco Jazz Age?",
+    "punchline": "Her riffs echo longer than the Empire—still standing after all these geometric centuries.",
+    "text": "Why does Aurelia Moretti outshine every other act in Rome's Art Deco Jazz Age? Her riffs echo longer than the Empire—still standing after all these geometric centuries."
   },
-  "sponsor_ads": [
-    {
-      "headline": "Elevate Your Home with Luxuria's Exquisite Marbles!",
-      "body": "Transform your abode into a palace with Luxuria's hand-selected marbles, imported directly from the quarries of Carrara. Available in mesmerizing colors and patterns, let your floors and walls shine with the opulence of the Roman Empire!"
-    },
-    {
-      "headline": "Step into Style: Footwear Fit for the Senate!",
-      "body": "Discover the latest in artisanal footwear from Senatus Soles. Crafted with soft, supple leather and adorned with intricate gold leaf, our sandals and shoes are designed for both comfort and grandeur—perfect for the modern Roman citizen!"
-    },
-    {
-      "headline": "Experience the Timeless Elegance of Marcellus Perfumes!",
-      "body": "Indulge your senses with Marcellus Perfumes, where ancient alchemy meets contemporary flair. Our unique scents are blended with rare essences, transporting you to the fragrant gardens of Rome with every spritz—a true mark of sophistication in 1927!"
-    }
-  ],
-  "generated_at": "2026-07-04T21:35:04.710069+00:00"
+  "sponsor_ads": {
+    "ads": [
+      {
+        "headline": "Elevate Your Abode with Roman Elegance!",
+        "body": "Transform your living space into a sanctuary of opulence with bespoke furnishings from Domus Aurea. Our artisans craft each piece with the finest materials, ensuring your home reflects the grandeur of our eternal city."
+      },
+      {
+        "headline": "Indulge in the Flavors of the Empire!",
+        "body": "Experience the exquisite taste of Rome with Trattoria Imperiale! Enjoy sumptuous feasts featuring locally sourced ingredients, infused with the secret spices of the ancients—where every meal is a celebration of history."
+      },
+      {
+        "headline": "Travel in Style: Chariots of Luxury Await!",
+        "body": "Discover the beauty of Rome with our luxurious chariot services at Aurelian Carriages. Glide through the streets in sophistication and comfort, complete with personal attendants to cater to your every need."
+      }
+    ]
+  },
+  "generated_at": "2026-07-04T21:44:14.881435+00:00"
 }

@@ -11,75 +11,79 @@
     "Humor: Grok",
     "Editor: OpenAI"
   ],
-  "headline": "Water Baron Controls Last Known Well in Sector 7",
-  "deck": "He charges ten bullets per gallon. The thirsty have no choice.",
-  "article": "<p>Records from the Provincial Registry confirm that the water baron controls the last known well in Sector 7. The report cites seventeen independent witnesses.</p><p>Professor Aldous Crane remarked that this event highlights underlying tensions that have long been overlooked. 'We mapped this possibility in 2135,' they stated. 'No one wanted the map.'</p><p>In the merchant district, residents reported a profound silence lasting three minutes. One shopkeeper assessed the incident in terms of inventory losses rather than dramatic expressions.</p><p>The Office of Correct Records released an 884-word statement that failed to clarify any issues and instead introduced six new questions.</p><p>Tomorrow's edition will investigate the financial aspects, the motivations, and the one detail that every spokesperson has deliberately avoided mentioning.</p>",
-  "author": "Foreign Bureau",
-  "city": "New Avalon",
+  "headline": "Elixir Flows Amid Ashes: Wasteland's Grim Reckonings",
+  "deck": "The Black Death's Aftermath Wrought Desolation; New Tech Brings Bitter Irony.",
+  "article": "<p>Desolate lands once adorned with opulence now resonate with a somber melody. The elites who fell victim to the Black Death have left behind tainted wells and a stark landscape. Yet, amidst the dust and devastation, a new filtration system proposed by Dr. Sofia Varys is rumored to purify the cursed waters.</p><p>Once dismissed as dreamers, the forgotten scientists now stand proudly, recognized as the potential saviors of this harsh terrain. In a grim irony, the crumbling symbols of power set the stage for a lavish gathering—an extravagant celebration hosted by those who indulge in the consequences of their own negligence.</p><p>Within the decaying walls of the Leopold Grand, remnants of a bygone era, champagne flutes clink as the revelers ignore the harsh truths surrounding them. Dr. Varys, her face marked by the struggles of this relentless world, remarks with a wry smile, 'This is no rebirth; it is a reckoning.'</p><p>In this wasteland, optimism feels foreign, and no reassurances of brighter days are offered. The new system is expected to recover 75% of drinking water from previously contaminated streams—a mere fraction of what has been lost. The partygoers, dressed in their tattered finery, choose to dance on the edge of their own demise, oblivious to the reality that looms.</p>",
+  "author": "Staff Correspondent",
+  "city": "New Haven",
   "weather": {
-    "city": "New Avalon",
-    "condition": "Affluent Fog",
+    "city": "New Haven",
+    "condition": "Affluent Ailment Fog",
     "temp": 72,
     "high": 78,
     "low": 65
   },
   "oped": {
-    "title": "The Old World Deserved to Die",
-    "author": "A Survivor",
-    "body": "They had everything and wasted it. We have nothing and cherish it. Perhaps the fire was a mercy."
+    "title": "Let the Elixir Choke the Survivors",
+    "author": "Mira Vex",
+    "body": "The Black Death spared the masses while decimating the elite in 1347; now, in 2147, the wasteland echoes that same fate. Elixir flows from fractured vaults while we, the unchosen, struggle with its metallic allure. No plague has equalized like this selective extinction. The ashes reveal a bitter truth: the wealthy perished once, while we face daily struggles tasting their forgotten mercy."
   },
-  "classifieds": [
-    {
-      "cat": "Trade",
-      "text": "Rare boutique items from the Old World! Designer survival gear and vintage medical equipment available for barter. Looking for clean water or food rations. Meet at Old Haven Plaza. Bring a flare for security."
-    },
-    {
-      "cat": "Help Wanted",
-      "text": "Seeking skilled scavengers for an expedition into the Ruined District. Must have experience navigating the Crater Fields and dealing with raiders. Compensation includes a share of salvage and protection from the Wastes' worst."
-    },
-    {
-      "cat": "Lost & Found",
-      "text": "Missing! Blueprints for a pre-Blight water filtration system. Last seen near the derelict factories of Ironwood. Reward offered - fresh food supplies for a month to anyone who can return them. Contact Jenna at the Trading Post."
-    },
-    {
-      "cat": "Housing",
-      "text": "Secure bunker space available in the Undercity! Perfect for families looking to stay safe from Wraiths. Equipped with basic amenities and reinforced doors. Monthly rent negotiable based on barterable supplies."
-    }
-  ],
+  "classifieds": {
+    "ads": [
+      {
+        "cat": "Wanted: Water Filter Tech",
+        "text": "Seeking a skilled technician to repair and maintain our water filtration systems. Must have experience with scavenged parts and knowledge of pre-collapse designs. Compensation in rations and barter goods. Contact via radio channel 9-GX."
+      },
+      {
+        "cat": "For Sale: Premium Canned Goods",
+        "text": "Rare stash of gourmet canned goods from before the Great Collapse. Perfect for barter with the higher-ups in Haven City. Flavors include truffle stew and smoked kipper. Contact for location and safe meeting spot."
+      },
+      {
+        "cat": "Job Offering: Scavenger Crew",
+        "text": "Join our elite scavenger team on a mission to the ruins of Old Paris. Experience preferred, but will train the right individual. Share in the bounty found, plus a share of any technology recovered. Bring your own gear!"
+      },
+      {
+        "cat": "Lost: Family Heirloom",
+        "text": "Last seen near the Ashen Highway, a family pendant that has sentimental value. Willing to trade goods for its safe return. The symbol is a silver raven with emerald eyes. Contact Ellie at sunset near the remains of the Red Bridge."
+      }
+    ]
+  },
   "comic_strip": {
-    "title": "The Bureaucrat",
+    "title": "Wasteland Reckoning",
     "panels": [
       {
-        "caption": "Did you hear about the Water Baron controlling the last known well in ...?"
+        "caption": "Amid smoking ruins, a scavenger eyes a glowing vial: 'Black Death only felled the rich. Their elixirs flow free now.'"
       },
       {
-        "caption": "I prefer timelines where that sort of thing is impossible."
+        "caption": "A second figure sifts through ash heaps: 'No lords left to hoard it. Just us, the living poor.'"
       },
       {
-        "caption": "Welcome to this one."
+        "caption": "Punchline: 'Grim equality – death finally made the wealth trickle down.'"
       }
     ],
     "image": "/editions/images/2026-07-04-8-strip.png",
     "image_provider": "grok"
   },
   "joke": {
-    "setup": "What's the difference between optimism and a canteen?",
-    "punchline": "The canteen eventually runs dry.",
-    "text": "What's the difference between optimism and a canteen? The canteen eventually runs dry."
+    "setup": "What flows amid the ashes when the Black Death claims only lords?",
+    "punchline": "The elixir of serfs toasting the wasteland's reckoning!",
+    "text": "Elixir Flows Amid Ashes? Aye, the plague's grim reckoning leaves naught but poor men's ale in the lords' ruins."
   },
-  "sponsor_ads": [
-    {
-      "headline": "Revive Your Wealth: The Luxury Revival Treatment!",
-      "body": "Experience the exclusive antidote designed for the elite, ensuring your lineage thrives in a world of scarcity. Limited slots available; secure your place in history today!"
-    },
-    {
-      "headline": "Luxury Filtered Water: Taste the Purity of the Past!",
-      "body": "Indulge in our handcrafted water sourced from the last pristine aquifers. Don't settle for less than the best—quench your thirst with the essence of pre-collapse opulence!"
-    },
-    {
-      "headline": "Survival Sanctuary: Secure Your Spot in the Elite Bunker!",
-      "body": "Join the ranks of the privileged! Our state-of-the-art bunkers provide ultimate protection and luxury amidst the wasteland. Spaces are limited—reserve yours before it’s too late!"
-    }
-  ],
-  "generated_at": "2026-07-04T21:38:12.786254+00:00"
+  "sponsor_ads": {
+    "advertisements": [
+      {
+        "headline": "Revive Your Wealth with Purity Elixirs!",
+        "body": "Suffering from the plague of poverty? Our all-natural Purity Elixirs are harvested from the last untouched springs to rejuvenate your wealth and vitality—only available to the privileged few!"
+      },
+      {
+        "headline": "Luxury Bunkers: The Elite’s Last Refuge",
+        "body": "Secure your peace of mind with our state-of-the-art luxury bunkers, designed to shield you from the wasteland’s chaos while indulging you in unmatched opulence and comfort."
+      },
+      {
+        "headline": "Genuine Timepieces from the Relics of Old",
+        "body": "Don’t let time slip away in this wasteland—own a genuine pre-collapse timepiece, meticulously restored and guaranteed to remind you of your superiority long after all others have forgotten."
+      }
+    ]
+  },
+  "generated_at": "2026-07-04T21:50:35.707808+00:00"
 }
