@@ -1,0 +1,52 @@
+{
+  "timeline_id": 1,
+  "theme": "victorian",
+  "date": "2026-07-04",
+  "date_display": "Saturday, July 04, 2026",
+  "year": 1890,
+  "divergence": "Space travel began in 1950",
+  "llm_provider": "grok",
+  "llm_label": "Grok",
+  "headline": "Aether-Train Derailment Claims Twelve Souls",
+  "deck": "Investigators suspect sabotage by Luddite saboteurs.",
+  "article": "In a development that has stunned observers across the nation, aether-train derailment claims twelve souls. Sources close to the matter have confirmed that the situation remains fluid.\n\nOfficials in the capital have declined to comment, but witnesses describe a scene of both confusion and cautious optimism. The implications for the average citizen remain unclear.\n\nHistorical records suggest a similar event occurred nearly a century ago in this timeline, though on a much smaller scale. International observers have expressed both admiration and concern.\n\nResidents of the capital expressed mixed reactions. 'I never thought I'd see the day,' said one local merchant. 'It changes everything, and yet it changes nothing.'\n\nOnly time will tell whether this marks the beginning of a new era or merely a footnote in the annals of this parallel history.",
+  "author": "Local Editor",
+  "city": "New Eden",
+  "weather": {
+    "city": "New Eden",
+    "condition": "Overcast",
+    "temp": 59,
+    "high": 68,
+    "low": 51
+  },
+  "oped": {
+    "title": "The Moral Cost of Automaton Labor",
+    "author": "A Concerned Clergyman",
+    "body": "When a man is replaced by brass and steam, what becomes of his soul? We must consider not merely the efficiency of the factory, but the dignity of the worker who once stood within it."
+  },
+  "classifieds": [
+    {
+      "cat": "For Sale",
+      "text": "Gently used difference engine. Minor gear slippage. 15 guineas."
+    },
+    {
+      "cat": "Employment",
+      "text": "Experienced aether-rigger sought. Must supply own goggles."
+    },
+    {
+      "cat": "Housing",
+      "text": "Rooms in Pneumatic District. Constant vibration. Not for nervous constitutions."
+    },
+    {
+      "cat": "Services",
+      "text": "Professional exorcist for haunted automata. Discretion assured."
+    }
+  ],
+  "comic": {
+    "caption": "'Life goes on. Somehow.'",
+    "scene": "laboratory",
+    "image": "/editions/images/2026-07-04-1-comic.png",
+    "image_provider": "grok"
+  },
+  "generated_at": "2026-07-04T19:41:40.005831+00:00"
+}

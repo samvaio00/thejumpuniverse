@@ -1,0 +1,54 @@
+{
+  "timeline_id": 3,
+  "theme": "soviet",
+  "date": "2026-07-04",
+  "date_display": "Saturday, July 04, 2026",
+  "year": 1962,
+  "divergence": "Neural interfaces became mandatory in 2045",
+  "llm_provider": "grok",
+  "llm_label": "Grok",
+  "headline": "FIVE-YEAR PLAN EXCEEDS QUOTA BY 12%",
+  "deck": "Comrade workers have surpassed projections in steel and concrete.",
+  "article": "In a development that has stunned observers across the nation, five-year plan exceeds quota by 12%. Sources close to the matter have confirmed that the situation remains fluid.\n\nOfficials in the central district have declined to comment, but witnesses describe a scene of both confusion and cautious optimism. The implications for the average citizen remain unclear.\n\nHistorical records suggest a similar event occurred nearly a century ago in this timeline, though on a much smaller scale. International observers have expressed both admiration and concern.\n\nResidents of the capital expressed mixed reactions. 'I never thought I'd see the day,' said one local merchant. 'It changes everything, and yet it changes nothing.'\n\nOnly time will tell whether this marks the beginning of a new era or merely a footnote in the annals of this parallel history.",
+  "author": "Staff Correspondent",
+  "city": "New Eden",
+  "weather": {
+    "city": "New Eden",
+    "condition": "Clear",
+    "temp": 42,
+    "high": 48,
+    "low": 37
+  },
+  "oped": {
+    "title": "THE INDIVIDUAL IS A MYTH",
+    "author": "A Worker-Philosopher",
+    "body": "The West speaks of personal freedom. We speak of collective strength. One man is weak. One million men, moving in the same direction, are an unstoppable machine."
+  },
+  "classifieds": [
+    {
+      "cat": "Available",
+      "text": "One-room apartment, Sector 4. Concrete walls. Shared bath."
+    },
+    {
+      "cat": "Employment",
+      "text": "Steelworker needed for Foundry 7. Housing included."
+    },
+    {
+      "cat": "Exchange",
+      "text": "Two tickets to State Ballet. Will trade for fresh fruit."
+    },
+    {
+      "cat": "Services",
+      "text": "Licensed mechanic for state vehicles. Will repair bicycles for barter."
+    }
+  ],
+  "comic": {
+    "caption": "'Life goes on. Somehow.'",
+    "scene": "castle",
+    "image": "/editions/images/2026-07-04-3-comic.png",
+    "image_provider": "grok"
+  },
+  "generated_at": "2026-07-04T19:42:02.742060+00:00",
+  "hero_image": "/editions/images/2026-07-04-3-hero.png",
+  "hero_image_provider": "grok"
+}

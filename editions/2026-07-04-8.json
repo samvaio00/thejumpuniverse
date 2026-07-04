@@ -1,0 +1,54 @@
+{
+  "timeline_id": 8,
+  "theme": "wasteland",
+  "date": "2026-07-04",
+  "date_display": "Saturday, July 04, 2026",
+  "year": 2147,
+  "divergence": "The Black Death targeted only the wealthy",
+  "llm_provider": "moonshot",
+  "llm_label": "Moonshot Kimi",
+  "headline": "Water Baron Controls Last Known Well in Sector 7",
+  "deck": "He charges ten bullets per gallon. The thirsty have no choice.",
+  "article": "In a development that has stunned observers across the nation, water baron controls last known well in sector 7. Sources close to the matter have confirmed that the situation remains fluid.\n\nOfficials in the provinces have declined to comment, but witnesses describe a scene of both confusion and cautious optimism. The implications for the average citizen remain unclear.\n\nHistorical records suggest a similar event occurred nearly a century ago in this timeline, though on a much smaller scale. International observers have expressed both admiration and concern.\n\nResidents of the capital expressed mixed reactions. 'I never thought I'd see the day,' said one local merchant. 'It changes everything, and yet it changes nothing.'\n\nOnly time will tell whether this marks the beginning of a new era or merely a footnote in the annals of this parallel history.",
+  "author": "Staff Correspondent",
+  "city": "The Capital",
+  "weather": {
+    "city": "The Capital",
+    "condition": "Stormy",
+    "temp": 94,
+    "high": 104,
+    "low": 85
+  },
+  "oped": {
+    "title": "The Old World Deserved to Die",
+    "author": "A Survivor",
+    "body": "They had everything and wasted it. We have nothing and cherish it. Perhaps the fire was a mercy."
+  },
+  "classifieds": [
+    {
+      "cat": "For Sale",
+      "text": "Pre-war can opener. Rusted but functional. Two bullets or best offer."
+    },
+    {
+      "cat": "Employment",
+      "text": "Scavenger needed for deep-ruin expedition. Must bring own gas mask."
+    },
+    {
+      "cat": "Housing",
+      "text": "Lean-to near the old highway. Wind protection minimal. No raiders currently."
+    },
+    {
+      "cat": "Services",
+      "text": "Radiation detox. 50% success rate. Payment upfront. No refunds."
+    }
+  ],
+  "comic": {
+    "caption": "'I came for the view. I stayed because the door locked.'",
+    "scene": "alley",
+    "image": "/editions/images/2026-07-04-8-comic.png",
+    "image_provider": "grok"
+  },
+  "generated_at": "2026-07-04T19:43:44.921578+00:00",
+  "hero_image": "/editions/images/2026-07-04-8-hero.png",
+  "hero_image_provider": "grok"
+}

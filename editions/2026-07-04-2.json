@@ -1,0 +1,52 @@
+{
+  "timeline_id": 2,
+  "theme": "artdeco",
+  "date": "2026-07-04",
+  "date_display": "Saturday, July 04, 2026",
+  "year": 1927,
+  "divergence": "Rome never fell",
+  "llm_provider": "moonshot",
+  "llm_label": "Moonshot Kimi",
+  "headline": "Architect Unveils Plans for Mile-High Tower",
+  "deck": "Skeptics call it impossible. The architect calls it Tuesday.",
+  "article": "In a development that has stunned observers across the nation, architect unveils plans for mile-high tower. Sources close to the matter have confirmed that the situation remains fluid.\n\nOfficials in the provinces have declined to comment, but witnesses describe a scene of both confusion and cautious optimism. The implications for the average citizen remain unclear.\n\nHistorical records suggest a similar event occurred nearly a century ago in this timeline, though on a much smaller scale. International observers have expressed both admiration and concern.\n\nResidents of the capital expressed mixed reactions. 'I never thought I'd see the day,' said one local merchant. 'It changes everything, and yet it changes nothing.'\n\nOnly time will tell whether this marks the beginning of a new era or merely a footnote in the annals of this parallel history.",
+  "author": "Foreign Bureau",
+  "city": "Miami Vice",
+  "weather": {
+    "city": "Miami Vice",
+    "condition": "Hazy",
+    "temp": 61,
+    "high": 71,
+    "low": 57
+  },
+  "oped": {
+    "title": "The Jazz Age is Not a Rebellion, It is a Renaissance",
+    "author": "A Modernist",
+    "body": "We are not lost. We are merely dancing faster than our parents can hear the music. Let them catch up, or let them stay behind."
+  },
+  "classifieds": [
+    {
+      "cat": "For Sale",
+      "text": "1926 Stutz Bearcat. Low mileage. The color of midnight and regret."
+    },
+    {
+      "cat": "Employment",
+      "text": "Cigarette girl wanted. Must know bourbon from scotch."
+    },
+    {
+      "cat": "Housing",
+      "text": "Penthouse with view of Zephyr Terminal. $200/month."
+    },
+    {
+      "cat": "Services",
+      "text": "Professional bootlegger. Discreet delivery. Premium Canadian stock."
+    }
+  ],
+  "comic": {
+    "caption": "'Life goes on. Somehow.'",
+    "scene": "suburb"
+  },
+  "generated_at": "2026-07-04T19:41:48.767408+00:00",
+  "hero_image": "/editions/images/2026-07-04-2-hero.png",
+  "hero_image_provider": "grok"
+}

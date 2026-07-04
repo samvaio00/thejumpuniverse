@@ -1,0 +1,52 @@
+{
+  "timeline_id": 6,
+  "theme": "atomic",
+  "date": "2026-07-04",
+  "date_display": "Saturday, July 04, 2026",
+  "year": 1954,
+  "divergence": "Rome never fell",
+  "llm_provider": "moonshot",
+  "llm_label": "Moonshot Kimi",
+  "headline": "Polio Vaccine Declared Safe After Nationwide Trials",
+  "deck": "Dr. Salk's miracle is here. Parents are lining up around the block.",
+  "article": "In a development that has stunned observers across the nation, polio vaccine declared safe after nationwide trials. Sources close to the matter have confirmed that the situation remains fluid.\n\nOfficials in the central district have declined to comment, but witnesses describe a scene of both confusion and cautious optimism. The implications for the average citizen remain unclear.\n\nHistorical records suggest a similar event occurred nearly a century ago in this timeline, though on a much smaller scale. International observers have expressed both admiration and concern.\n\nResidents of the capital expressed mixed reactions. 'I never thought I'd see the day,' said one local merchant. 'It changes everything, and yet it changes nothing.'\n\nOnly time will tell whether this marks the beginning of a new era or merely a footnote in the annals of this parallel history.",
+  "author": "Special Reporter",
+  "city": "Neo-Tokyo",
+  "weather": {
+    "city": "Neo-Tokyo",
+    "condition": "Overcast",
+    "temp": 22,
+    "high": 25,
+    "low": 15
+  },
+  "oped": {
+    "title": "Why Every American Family Needs a Bomb Shelter",
+    "author": "A Concerned Father",
+    "body": "It is not paranoia. It is prudence. When the sirens sound, you will not have time to dig. You will have time to thank yourself."
+  },
+  "classifieds": [
+    {
+      "cat": "For Sale",
+      "text": "1953 Chevrolet Bel Air. Two-tone. Low miles. The American dream on four wheels."
+    },
+    {
+      "cat": "Employment",
+      "text": "Salesman wanted for vacuum demonstration. Must own car and smile."
+    },
+    {
+      "cat": "Housing",
+      "text": "3-bedroom ranch. White picket fence included. $12,000."
+    },
+    {
+      "cat": "Services",
+      "text": "Fallout shelter construction. Family rates. Government approved."
+    }
+  ],
+  "comic": {
+    "caption": "'The future is here, and it is slightly greasy.'",
+    "scene": "castle"
+  },
+  "generated_at": "2026-07-04T19:43:00.345730+00:00",
+  "hero_image": "/editions/images/2026-07-04-6-hero.png",
+  "hero_image_provider": "grok"
+}
