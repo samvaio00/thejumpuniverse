@@ -14,9 +14,26 @@ from pathlib import Path
 import requests
 
 # ─── CONFIG ─────────────────────────────────────────────────────────
-OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
-ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY")
 OUTPUT_DIR = Path("editions")
+LLM_PROVIDER = os.environ.get("LLM_PROVIDER", "auto").lower()
+
+LLM_PROVIDERS = {
+    "moonshot": {
+        "api_key": os.environ.get("MOONSHOT_API_KEY"),
+        "base_url": "https://api.moonshot.ai/v1",
+        "model": os.environ.get("MOONSHOT_MODEL", "kimi-k2.6"),
+    },
+    "grok": {
+        "api_key": os.environ.get("GROK_API_KEY") or os.environ.get("XAI_API_KEY"),
+        "base_url": "https://api.x.ai/v1",
+        "model": os.environ.get("GROK_MODEL", "grok-2-1212"),
+    },
+    "openai": {
+        "api_key": os.environ.get("OPENAI_API_KEY"),
+        "base_url": "https://api.openai.com/v1",
+        "model": os.environ.get("OPENAI_MODEL", "gpt-4o-mini"),
+    },
+}
 MAX_ARCHIVE_DAYS = 30  # Keep last 30 days
 
 THEMES = [
@@ -61,31 +78,46 @@ class SeededRandom:
         return int(self.next() * (max_v - min_v + 1)) + min_v
 
 # ─── LLM CONTENT GENERATION ─────────────────────────────────────────
-def generate_with_llm(prompt, model="gpt-4o-mini"):
-    """Generate content using OpenAI API."""
-    if not OPENAI_API_KEY:
-        return None
+def llm_provider_order():
+    if LLM_PROVIDER != "auto":
+        return [LLM_PROVIDER]
+    return [name for name in ("moonshot", "grok", "openai") if LLM_PROVIDERS[name]["api_key"]]
 
-    try:
-        resp = requests.post(
-            "https://api.openai.com/v1/chat/completions",
-            headers={
-                "Authorization": f"Bearer {OPENAI_API_KEY}",
-                "Content-Type": "application/json"
-            },
-            json={
-                "model": model,
-                "messages": [{"role": "user", "content": prompt}],
-                "temperature": 0.9,
-                "max_tokens": 800
-            },
-            timeout=30
-        )
-        resp.raise_for_status()
-        return resp.json()["choices"][0]["message"]["content"].strip()
-    except Exception as e:
-        print(f"LLM error: {e}")
-        return None
+
+def llm_available():
+    return bool(llm_provider_order())
+
+
+def generate_with_llm(prompt):
+    """Generate content using the configured OpenAI-compatible LLM provider."""
+    for provider_name in llm_provider_order():
+        provider = LLM_PROVIDERS.get(provider_name)
+        if not provider or not provider["api_key"]:
+            continue
+
+        try:
+            resp = requests.post(
+                f"{provider['base_url']}/chat/completions",
+                headers={
+                    "Authorization": f"Bearer {provider['api_key']}",
+                    "Content-Type": "application/json",
+                },
+                json={
+                    "model": provider["model"],
+                    "messages": [{"role": "user", "content": prompt}],
+                    "temperature": 0.9,
+                    "max_tokens": 800,
+                },
+                timeout=60,
+            )
+            resp.raise_for_status()
+            content = resp.json()["choices"][0]["message"]["content"].strip()
+            print(f"LLM provider: {provider_name} ({provider['model']})")
+            return content
+        except Exception as e:
+            print(f"LLM error ({provider_name}): {e}")
+
+    return None
 
 # ─── PROMPT ENGINEERING ─────────────────────────────────────────────
 HEADLINE_PROMPT = """You are the editor-in-chief of a newspaper from an alternate timeline.
@@ -251,7 +283,7 @@ def fallback_classifieds(rng, theme):
             {"cat": "Services", "text": "Radiation detox. 50% success rate. Payment upfront. No refunds."}
         ]
     }
-    return rng.pick(all_ads.get(theme, all_ads["wasteland"]), 4)
+    return all_ads.get(theme, all_ads["wasteland"])
 
 # ─── MAIN GENERATION ────────────────────────────────────────────────
 def generate_edition(date=None, timeline_id=None):
@@ -275,7 +307,7 @@ def generate_edition(date=None, timeline_id=None):
 
     # Try LLM first, fallback to templates
     headline_data = None
-    if OPENAI_API_KEY or ANTHROPIC_API_KEY:
+    if llm_available():
         prompt = HEADLINE_PROMPT.format(divergence=divergence, theme=theme, year=year, date=date.strftime("%B %d, %Y"))
         raw = generate_with_llm(prompt)
         if raw:
@@ -289,7 +321,7 @@ def generate_edition(date=None, timeline_id=None):
 
     # Op-Ed
     oped_data = None
-    if OPENAI_API_KEY or ANTHROPIC_API_KEY:
+    if llm_available():
         raw = generate_with_llm(OPED_PROMPT.format(divergence=divergence, theme=theme, year=year))
         if raw:
             try:
@@ -301,7 +333,7 @@ def generate_edition(date=None, timeline_id=None):
 
     # Classifieds
     classifieds_data = None
-    if OPENAI_API_KEY or ANTHROPIC_API_KEY:
+    if llm_available():
         raw = generate_with_llm(CLASSIFIED_PROMPT.format(divergence=divergence, theme=theme, year=year))
         if raw:
             try:

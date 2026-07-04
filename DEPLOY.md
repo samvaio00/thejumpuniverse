@@ -48,13 +48,19 @@ The agent can deploy immediately without GitHub Actions secrets.
 ### Option 2: GitHub Actions Secrets
 
 1. Go to your repo → **Settings** → **Secrets and variables** → **Actions**
-2. Click **New repository secret**
-3. Name: `OPENAI_API_KEY`
-4. Value: your OpenAI API key (sk-...)
-5. Click **Add secret**
-6. Add `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` the same way
+2. Add these secrets:
 
-> **Note:** If you don't add an OpenAI key, the generator will use built-in templates. The site works perfectly either way.
+| Secret | Required for | Notes |
+|--------|--------------|-------|
+| `CLOUDFLARE_API_TOKEN` | Deploy | Account → Cloudflare Pages → Edit |
+| `CLOUDFLARE_ACCOUNT_ID` | Deploy | From Cloudflare dashboard sidebar |
+| `MOONSHOT_API_KEY` | Daily AI (optional) | Moonshot Kimi — tried first when `LLM_PROVIDER=auto` |
+| `GROK_API_KEY` | Daily AI (optional) | xAI Grok — tried second when `LLM_PROVIDER=auto` |
+| `OPENAI_API_KEY` | Daily AI (optional) | OpenAI — tried third when `LLM_PROVIDER=auto` |
+
+3. Optional: under **Variables**, set `LLM_PROVIDER` to `moonshot`, `grok`, or `openai` to force one provider
+
+> **Note:** If no LLM key is set, the generator uses built-in templates. The site works either way.
 
 ## Step 4: Connect Cloudflare Pages
 
