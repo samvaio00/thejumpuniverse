@@ -165,6 +165,9 @@
 
         .headline-main { font-family: var(--font-headline); font-size: clamp(1.8rem, 4vw, 3rem); line-height: 1.1; margin-bottom: 20px; font-weight: 700; }
         .headline-deck { font-family: var(--font-body); font-size: 1.1rem; font-style: italic; opacity: 0.8; margin-bottom: 20px; line-height: 1.4; }
+        .hero-image { width: 100%; max-height: 420px; object-fit: cover; margin: 0 0 24px; border: 2px solid var(--column-rule); display: none; }
+        .hero-image.visible { display: block; }
+        .edition-credits { font-family: var(--font-special); font-size: 0.75rem; opacity: 0.65; margin-bottom: 18px; letter-spacing: 0.5px; }
         .byline { font-family: var(--font-special); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; opacity: 0.7; margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px solid var(--column-rule); }
 
         .article-body { font-family: var(--font-body); font-size: 1.05rem; line-height: 1.7; text-align: justify; hyphens: auto; }
@@ -200,6 +203,7 @@
         .comic-panel { padding: 30px; text-align: center; position: relative; overflow: hidden; }
         .comic-title { font-family: var(--font-special); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 20px; opacity: 0.7; }
         .comic-visual { width: 100%; height: 300px; display: flex; align-items: center; justify-content: center; position: relative; margin-bottom: 15px; }
+        .comic-image { width: 100%; height: 100%; object-fit: cover; border-radius: 4px; }
         .comic-caption { font-family: var(--font-special); font-size: 0.9rem; font-style: italic; line-height: 1.5; max-width: 500px; margin: 0 auto; }
         .comic-svg { width: 100%; height: 100%; }
 
@@ -253,6 +257,8 @@
             <article class="main-article">
                 <h2 class="headline-main" id="headline-main">Loading Headline...</h2>
                 <p class="headline-deck" id="headline-deck">Loading deck...</p>
+                <img class="hero-image" id="hero-image" alt="" loading="lazy">
+                <p class="edition-credits" id="edition-credits"></p>
                 <div class="byline" id="byline">By <span id="author-name">Staff Correspondent</span> | <span id="dateline">The Capital</span></div>
 
                 <div class="article-body" id="article-body"><p>Loading article...</p></div>
@@ -407,6 +413,29 @@
             document.getElementById('breadcrumb-timeline').textContent = `Timeline ${paper.timeline_id}`;
             document.getElementById('headline-main').textContent = paper.headline;
             document.getElementById('headline-deck').textContent = paper.deck;
+
+            const heroImage = document.getElementById('hero-image');
+            if (paper.hero_image) {
+                heroImage.src = paper.hero_image;
+                heroImage.alt = paper.headline;
+                heroImage.classList.add('visible');
+            } else {
+                heroImage.removeAttribute('src');
+                heroImage.classList.remove('visible');
+            }
+
+            const credits = [];
+            if (paper.llm_label) credits.push(`Written by ${paper.llm_label}`);
+            if (paper.hero_image_provider) {
+                const heroLabel = paper.hero_image_provider === 'grok' ? 'Grok Imagine' : 'DALL-E';
+                credits.push(`Photo by ${heroLabel}`);
+            }
+            if (paper.comic?.image_provider) {
+                const comicLabel = paper.comic.image_provider === 'grok' ? 'Grok Imagine' : 'DALL-E';
+                credits.push(`Comic art by ${comicLabel}`);
+            }
+            document.getElementById('edition-credits').textContent = credits.join(' · ');
+
             document.getElementById('author-name').textContent = paper.author;
             document.getElementById('dateline').textContent = paper.city;
             document.getElementById('article-body').innerHTML = paper.article;
@@ -420,7 +449,11 @@
             document.getElementById('oped-body').textContent = paper.oped.body;
             document.getElementById('classifieds-list').innerHTML = paper.classifieds.map(c => `<li class="classified-item"><span class="classified-cat">${c.cat}</span>${c.text}</li>`).join('');
             document.getElementById('comic-title').textContent = "The Daily Panel";
-            document.getElementById('comic-visual').innerHTML = generateComicSVG(paper.comic.scene, paper.theme);
+            if (paper.comic?.image) {
+                document.getElementById('comic-visual').innerHTML = `<img class="comic-image" src="${paper.comic.image}" alt="${paper.comic.caption}" loading="lazy">`;
+            } else {
+                document.getElementById('comic-visual').innerHTML = generateComicSVG(paper.comic.scene, paper.theme);
+            }
             document.getElementById('comic-caption').textContent = paper.comic.caption;
             document.getElementById('footer-year').textContent = new Date().getFullYear();
             const url = new URL(window.location);
@@ -435,6 +468,9 @@
             document.querySelector('meta[property="og:title"]').setAttribute('content', paper.headline);
             document.querySelector('meta[property="og:description"]').setAttribute('content', paper.deck);
             document.querySelector('meta[property="og:url"]').setAttribute('content', window.location.href);
+            if (paper.hero_image) {
+                document.querySelector('meta[property="og:image"]').setAttribute('content', window.location.origin + paper.hero_image);
+            }
             const sd = {"@context":"https://schema.org","@type":"NewsArticle","headline":paper.headline,"description":paper.deck,"url":window.location.href,"datePublished":paper.date+"T00:00:00Z","author":{"@type":"Person","name":paper.author},"publisher":{"@type":"Organization","name":"The Multiverse Gazette","logo":{"@type":"ImageObject","url":"https://multiversegazette.com/logo.png"}}};
             let el = document.getElementById('structured-data');
             if (!el) { el = document.createElement('script'); el.id = 'structured-data'; el.type = 'application/ld+json'; document.head.appendChild(el); }
