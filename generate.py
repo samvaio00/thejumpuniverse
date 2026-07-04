@@ -244,6 +244,15 @@ def llm_json_with_fallback(prompt, primary_role, **kwargs):
     return None, None
 
 
+def llm_json_grok(prompt, **kwargs):
+    """Comics and jokes go to Grok only — no OpenAI fallback."""
+    if not TEXT_PROVIDERS.get("grok", {}).get("api_key"):
+        return None, None
+    kwargs.setdefault("temperature", 1.0)
+    result = llm_json(prompt, "grok", **kwargs)
+    return (result, "grok") if result else (None, None)
+
+
 def pick_image_provider(preferred):
     """Return ordered list of image providers to try."""
     order = [preferred, "grok" if preferred == "openai" else "openai"]
@@ -370,24 +379,39 @@ Divergence: {divergence} | Theme: {theme} | Year: {year}
 Take an unexpected angle — contrarian, satirical, or emotionally raw.
 150 words max. Return ONLY JSON: {{"title": "...", "author": "...", "body": "..."}}"""
 
-COMIC_STRIP_PROMPT = """Write a 3-panel newspaper comic strip satirizing today's main story.
+COMIC_STRIP_PROMPT = """You are Grok, the newspaper's sharpest satirist. Write a 3-panel comic strip about TODAY's story.
 
 Headline: {headline}
-Theme: {theme} | Divergence: {divergence}
-Style: witty, dry, newspaper-comic humor tied directly to the story — not random gags.
+Deck: {deck}
+Theme: {theme} | Year: {year} | Divergence: {divergence}
+
+VOICE: Bold, punchy, dry wit — like a great editorial cartoonist with no filter.
+- Panel 1: hook the reader with a specific detail from the headline (not generic setup)
+- Panel 2: escalate or twist — a character, bureaucrat, citizen, or authority figure digs the hole deeper
+- Panel 3: HARD punchline — surprising, funny, slightly cruel or absurd. Must land.
+
+BANNED: "Welcome to this one", "I prefer timelines where...", meta jokes about alternate history, safe filler.
+Each caption: 1-2 short sentences max. Use dialogue where possible.
 
 Return ONLY JSON:
 {{"title": "strip name", "panels": [
-  {{"caption": "panel 1 dialogue or narration"}},
-  {{"caption": "panel 2 ..."}},
+  {{"caption": "panel 1"}},
+  {{"caption": "panel 2"}},
   {{"caption": "panel 3 punchline"}}
 ]}}"""
 
-JOKE_PROMPT = """Write ONE joke of the day for a newspaper in a timeline where {divergence}.
-Theme: {theme}. It must reference or riff on today's headline: "{headline}"
-Make it clever and era-appropriate. Can be one-liner or setup/punchline.
+JOKE_PROMPT = """You are Grok writing the Joke of the Day for an alternate-history newspaper.
 
-Return ONLY JSON: {{"setup": "...", "punchline": "...", "text": "full joke as readers see it"}}"""
+Headline today: "{headline}"
+Divergence: {divergence} | Theme: {theme} | Year: {year}
+
+Write ONE joke that directly riffs on the headline or its absurd implications.
+Make it BOLD and witty — dry, deadpan, or savage. Era-appropriate to {theme}.
+Must be actually funny, not polite. Setup + punchline that stings a little.
+
+BANNED: generic timeline jokes, "only time will tell", lazy puns that ignore the headline.
+
+Return ONLY JSON: {{"setup": "...", "punchline": "...", "text": "setup + punchline as readers see it"}}"""
 
 CLASSIFIED_PROMPT = """Write 4 in-universe classified ads for theme: {theme}, year: {year}.
 Divergence: {divergence}. Each ad should feel native to this timeline.
@@ -405,6 +429,7 @@ EDITOR_PROMPT = """You are the executive editor. Polish this entire newspaper ed
 
 Remove repetitive phrases, clichés, and samey tone across sections.
 Each section must sound distinct. Preserve facts and JSON structure exactly.
+Do NOT soften, sanitize, or flatten comic_strip or joke — keep their punch and wit intact.
 
 FORBIDDEN phrases (remove or rewrite any occurrence):
 {forbidden}
@@ -547,22 +572,53 @@ def fallback_classifieds(rng, theme):
 
 
 def fallback_comic_strip(rng, headline, theme):
-    return {
-        "title": rng.pick(["The Bureaucrat", "Citizen Smith", "Breaking News"]),
+    hook = headline.split(":")[0][:50]
+    strips = {
+        "victorian": {
+            "title": "The Morning Room",
+            "panels": [
+                {"caption": f"'Did you see the papers? {hook}.'"},
+                {"caption": "'I saw them. I also saw our tea get cold while you read them aloud.'"},
+                {"caption": "'Progress, dear. The Empire waits for no one — except apparently us.'"},
+            ],
+        },
+        "cyberpunk": {
+            "title": "Error 404: Dignity",
+            "panels": [
+                {"caption": f"NEWS ALERT: {hook[:40]}..."},
+                {"caption": "Great. Another headline my neural feed will monetize."},
+                {"caption": "At least the apocalypse accepts crypto now."},
+            ],
+        },
+        "soviet": {
+            "title": "COMRADE COMIC",
+            "panels": [
+                {"caption": f"TODAY'S HEADLINE: {hook.upper()[:35]}"},
+                {"caption": "Is this good for the plan?"},
+                {"caption": "It is now. Adjust your memory accordingly."},
+            ],
+        },
+    }
+    default = {
+        "title": "Local Reactions",
         "panels": [
-            {"caption": f"Did you hear about {headline[:40]}...?"},
-            {"caption": "I prefer timelines where that sort of thing is impossible."},
-            {"caption": "Welcome to this one."},
+            {"caption": f"So. {hook}."},
+            {"caption": "And they printed that above the fold like it was normal."},
+            {"caption": "In this timeline? That's the normal part."},
         ],
     }
+    return strips.get(theme, default)
 
 
 def fallback_joke(rng, headline, theme):
+    hook = headline.split(":")[0][:45]
     jokes = {
-        "victorian": {"setup": "Why did the aether-engine refuse overtime?", "punchline": "It was already phased for the weekend.", "text": "Why did the aether-engine refuse overtime? It was already phased for the weekend."},
-        "wasteland": {"setup": "What's the difference between optimism and a canteen?", "punchline": "The canteen eventually runs dry.", "text": "What's the difference between optimism and a canteen? The canteen eventually runs dry."},
+        "victorian": {"setup": f"What's the proper response to '{hook}'?", "punchline": "Write a strongly worded letter and die of exposure on the way to post it.", "text": f"What's the proper response to '{hook}'? Write a strongly worded letter and die of exposure on the way to post it."},
+        "cyberpunk": {"setup": f"My feed just pushed '{hook}' into my skull.", "punchline": "I tried to unsubscribe. The headline subscribed to me.", "text": f"My feed just pushed '{hook}' into my skull. I tried to unsubscribe. The headline subscribed to me."},
+        "soviet": {"setup": "Why did the newspaper run this story?", "punchline": "Because the alternative was running the truth.", "text": "Why did the newspaper run this story? Because the alternative was running the truth."},
+        "wasteland": {"setup": "What's the difference between today's headline and clean water?", "punchline": "You can trade the headline for bullets.", "text": "What's the difference between today's headline and clean water? You can trade the headline for bullets."},
     }
-    default = {"setup": "How do you report on today's headline?", "punchline": "Very carefully, in an alternate timeline.", "text": "How do you report on today's headline? Very carefully, in an alternate timeline."}
+    default = {"setup": f"How do you explain '{hook}' to a visitor from another timeline?", "punchline": "You don't. You hand them the paper and back away slowly.", "text": f"How do you explain '{hook}' to a visitor from another timeline? You don't. You hand them the paper and back away slowly."}
     return jokes.get(theme, default)
 
 
@@ -666,21 +722,22 @@ def generate_edition(date=None, timeline_id=None, with_images=None):
     headline_data["article"] = article_to_html(headline_data.get("article", ""))
 
     ctx["headline"] = headline_data["headline"]
+    ctx["deck"] = headline_data["deck"]
 
-    # 3. Grok (humor) — op-ed, comic strip, joke — falls back to OpenAI when Grok fails
+    # 3. Grok (humor) — op-ed with fallback; comic + joke Grok-only for bold wit
     oped_data, used = llm_json_with_fallback(OPED_PROMPT.format(**ctx), "humor")
     if used:
         used_providers["oped"] = used
     if not oped_data:
         oped_data = fallback_oped(rng, theme)
 
-    comic_strip, used = llm_json_with_fallback(COMIC_STRIP_PROMPT.format(**ctx), "humor")
+    comic_strip, used = llm_json_grok(COMIC_STRIP_PROMPT.format(**ctx), max_tokens=900)
     if used:
         used_providers["comic"] = used
     if not comic_strip or not comic_strip.get("panels"):
         comic_strip = fallback_comic_strip(rng, headline_data["headline"], theme)
 
-    joke, used = llm_json_with_fallback(JOKE_PROMPT.format(**ctx), "humor")
+    joke, used = llm_json_grok(JOKE_PROMPT.format(**ctx), max_tokens=400)
     if used:
         used_providers["joke"] = used
     if not joke:
