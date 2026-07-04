@@ -30,8 +30,10 @@ python -m http.server 8000
 ## GitHub Actions Setup
 
 1. Fork repo → Settings → Secrets → Actions
-2. Add `OPENAI_API_KEY` (optional, falls back to templates)
-3. Workflow runs daily at 00:01 UTC automatically
+2. Add `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` for deploy
+3. Add one or more LLM keys: `MOONSHOT_API_KEY`, `GROK_API_KEY`, or `OPENAI_API_KEY`
+4. Optional: set repo variable `LLM_PROVIDER` to `moonshot`, `grok`, or `openai`
+5. Workflow runs daily at 00:01 UTC automatically
 
 ## Monetization
 
