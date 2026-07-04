@@ -7,83 +7,85 @@
   "divergence": "Neural interfaces became mandatory in 2045",
   "story_angle": "somber obituary for a lost era or institution",
   "roles": [
-    "Story: Moonshot Kimi",
+    "Story: OpenAI",
     "Humor: Grok",
     "Editor: OpenAI"
   ],
-  "headline": "FINAL PRINT OF THE HISTORIC 'MOSKOVSKII RABOTNIK' SIGNALS THE END OF AN ERA",
-  "deck": "The Closure of the First State-Run Newspaper Marks a Significant Technological Shift",
-  "article": "<p>MOSCOW, 1962 -- Today, we reflect on a pivotal moment in our history as we bid farewell to 'Moskovskii Rabotnikom', a publication that has long been a pillar of our national identity. Established in the wake of the October Revolution, it has consistently voiced the aspirations of the working class. For generations, the citizens of the Soviet Union have turned to its pages for solidarity and inspiration.</p><p>Over the years, this newspaper has illuminated our industrial achievements, agricultural successes, and the determination of our workforce. A highlight from 1940 saw 'Moskovskii Rabotnikom' celebrate a remarkable steel production milestone of over 18 million tons, a testament to our collective strength.</p><p>As we stand on the brink of the 20th century, the legacy of 'Moskovskii Rabotnikom' is clear. It has chronicled our shared experiences and aspirations, guiding us toward a brighter future. However, with the introduction of neural interfaces in 2045, we now witness the final print edition. This moment invites us to consider how far we have come and how our methods of communication have evolved.</p><p>What was once a communal ritual of sharing printed pages has transitioned to the impersonal nature of digital feeds. The warmth of camaraderie, once fostered over shared articles and conversations in factory break rooms, has given way to solitary consumption of information. We mourn the loss of 'Moskovskii Rabotnikom' not just for its content, but for the spirit of unity it represented. Today, we gather in recognition of our shared history, acknowledging the profound changes that lie ahead.</p>",
+  "headline": "СЛЕЗЫ ПОБЕДИТЕЛЕЙ: ЗАКРЫТИЕ КОЛХОЗА 'КРАСНАЯ ZВЕЗДА'",
+  "deck": "Постсоветская эпоха социализма завершилась под ударами нового времени, оставляя лишь воспоминания о героизме и солидарности.",
+  "article": "<p>1 Июля 2026 Года Завершила Свою Деятельность История Колхоза 'КРАСНАЯ ЗВЕЗДА', Последнего Остатка Советской Коллективной Жизни. Это Было Место, Где Поклонения ТРУДЯЩИХСЯ Вложили Свои Сердца И Души В Строительство Совещеского Отечества, Лично посвящая Себя Идеалам Социализма.</p><p>Колхоз 'КРАСНАЯ ЗВЕЗДА' НЕ СТАЛ ТОЛЬКО ЗЕМЛЕУЧАСТКОМ, НО И СИМВОЛОМ СОЛИДАРНОСТИ МНОГИХ РАБОЧИХ. Изделия Их Рук Часто Принимали На Выставках И Были Одобрены Властями. От Одного Поколнения К Другому, Вдохновляясь Идеями Ленина И Сталина, Трудящиеся Отдавали Свое Жизнь За Советскую Идею, Но Новая ЭРА ВНУШИЛА Иные Ценности.</p><p>Сколь бы Они Протянули Руки К Солнцу, Слуха Мелодию Души Коллектива, Сегодня Выдали По Ветру. С Появлением НЕРВНЫХ Интерфейсов, Сильные Идеалы Человечества Заменены Холода Металлургии Технологического Контроля. Мы Становимся Свидетелями Дистанции, Которая Раскладывает Сердца Рабочих.</p><p>\"Наша работа была больше, чем просто труд, — говорил Михаил Петров, предыдущий председатель колхоза. — Это было движение к светлому будущему. Теперь, мы потеряли эти идеалы под грузом нового, холодного мира\". Коллективная Жизнь ТЕПЕРЬ ЯВЛЯЕТСЯ ЛИШЬ Тенью В ПРОШЛОМ, Но Память О Рабочих, ОТДАВШИХ СЕБЯ, Должна Жить В НАШИХ СЕРДЦАХ, Понять И Захранить Эту Историю Для Будущих Поколений.</p>",
   "author": "Staff Correspondent",
   "city": "Moscow",
   "weather": {
     "city": "Moscow",
-    "condition": "Cognitive Cloud Cover",
+    "condition": "Soviet Static",
     "temp": 72,
     "high": 78,
     "low": 65
   },
   "oped": {
-    "title": "Print's Corpse Feeds the Wires",
-    "author": "V. Molotov-9",
-    "body": "Longing for Moskovskii Rabotnik is a retreat from progress. Its final edition showcases the Party's brilliance: why distribute ink when neural interfaces, now compulsory since 2045, directly transmit information to our minds? The conclusion of this chapter signifies liberation from the last vestige of personal reading. Now, every worker's intellect serves as a state printing press. Celebrate; the paper was merely a distraction."
+    "title": "Wired Victory: Bury the Red Star Before It Buries Us",
+    "author": "Comrade Echo-47",
+    "body": "The kolkhoz weeps, yet its closure is mercy. In 2045 the interfaces will fuse every mind to the Plan; obsolete fields only delay the upload. Let the 'winners' mourn their mud and quotas. True Soviet power arrives not through harvests but through neural obedience. Their tears are the last resistance of flesh to circuit. Close faster, comrades—before the wires expose what the soil never could."
   },
   "classifieds": {
-    "classified_ads": [
+    "ads": [
       {
         "cat": "Employment",
-        "text": "Join the Collective! Seeking skilled engineers for advanced neural interface projects at the State Cybernetics Institute. Must possess experience in systems integration and a passion for the Motherland. Apply in person at Gorky Street, Moscow."
-      },
-      {
-        "cat": "Technology",
-        "text": "Introducing the latest in Soviet Neural Integration! Experience the power of thought control with the NK-62 Neural Interface. Enhance your productivity and access state-level information instantly. Available at all major electronics shops. Trust in the state!"
-      },
-      {
-        "cat": "Health & Wellness",
-        "text": "Attention citizens! Monthly health assessments now include mandatory neural interface check-ups. Ensure optimal performance and compliance with revolutionary technology. Visit your local healthcare facility for your scheduled evaluation. Together, we advance!"
+        "text": "Join the Glorious Collective! Seeking skilled engineers for Neural Interface Development. Contribute to the future of Soviet technology. Competitive wages and state benefits offered. Apply today and help us advance the Revolution!"
       },
       {
         "cat": "Housing",
-        "text": "New housing development available in Novosibirsk with built-in neural interface upgrades! Enjoy a modern living space designed for the forward-thinking Soviet citizen. Inquire today at the Central Housing Bureau. Embrace the future of communal living!"
+        "text": "Comfortable living for all Party members! Spacious apartments available in the heart of Moscow featuring state-of-the-art Neural Interface installations. Enjoy modern conveniences and a community committed to the Soviet dream. Inquire at your local housing office."
+      },
+      {
+        "cat": "Education",
+        "text": "Enhance your mind! Enroll in the prestigious KGB Neural Interface Training Academy. Equip yourself with the skills necessary for the espionage of the future. Limited spots available. Secure your place in history as a protector of the Motherland!"
+      },
+      {
+        "cat": "Health & Wellness",
+        "text": "Experience optimal cognitive health! Revolutionary Neural Interface therapy now available to all citizens. Increase productivity and improve mental acuity. Visit your local clinic today and join the ranks of the Soviet elite—be better, think better!"
       }
     ]
   },
   "comic_strip": {
-    "title": "Comrade Offline",
+    "title": "Red Star Shutdown",
     "panels": [
       {
-        "caption": "Editor: Comrades, the final print of Moskovskii Rabotnik rolls off the press."
+        "caption": "\"We crushed the quotas and built this farm with bare hands,\" the old brigadier sobbed."
       },
       {
-        "caption": "Worker with neural port: At last—no more queues for yesterday's news."
+        "caption": "The party man adjusted his tie. \"New times require new tools. Neural interfaces will handle the next harvest.\""
       },
       {
-        "caption": "Caption: Now the Party simply beams corrections straight into your skull."
+        "caption": "\"Then wire mine first,\" the brigadier said. \"So I forget we ever won.\""
       }
     ],
     "image": "/editions/images/2026-07-04-3-strip.png",
     "image_provider": "grok"
   },
   "joke": {
-    "setup": "In a world of mandatory neural interfaces since 2045, what does the final print of the historic 'Moskovskii Rabotnik' truly signal?",
-    "punchline": "The end of an era when the workers still needed paper to control their thoughts, comrade!",
-    "text": "In a world of mandatory neural interfaces since 2045, what does the final print of the historic 'Moskovskii Rabotnik' truly signal? The end of an era when the workers still needed paper to control their thoughts, comrade!"
+    "setup": "The Party closed kolkhoz Krasnaya Zvezda after the neural tally showed zero surplus.",
+    "punchline": "Winners wept; their interfaces had already reclassified the tears as next year's fertilizer quota.",
+    "text": "The Party closed kolkhoz Krasnaya Zvezda after the neural tally showed zero surplus. Winners wept; their interfaces had already reclassified the tears as next year's fertilizer quota."
   },
   "sponsor_ads": {
     "ads": [
       {
-        "headline": "Join the Future: Neural Connections Today!",
-        "body": "Embrace the revolutionary Neural Interface, now available for all citizens! Enhance your productivity and connection with the collective mind of the State—mandatory for a harmonious society."
+        "headline": "Enhance Your Productivity with the NeuroLink!",
+        "body": "Experience the future of work with the NeuroLink neural interface. Increase your efficiency and connectivity with state-approved technology, ensuring your contributions power the Great Society!"
       },
       {
-        "headline": "Stay Informed, Stay Connected!",
-        "body": "Introducing the Communicator Neural Link™—your direct channel to the latest news from the Party! Experience real-time updates and seize your role in the great advancement of our Socialist Union."
+        "headline": "Join the Revolution of Thought with MindSync!",
+        "body": "Step into a new era of communication with MindSync! Our mandatory neural interface connects you seamlessly with your comrades, allowing for instantaneous idea sharing and collaboration for the betterment of our collective goals."
       },
       {
-        "headline": "Transform Your Learning with Neural Sync!",
-        "body": "Unlock your potential with the Education Enhancement Interface! Mandatory integration ensures that every citizen can access knowledge instantaneously and contribute to our glorious future."
+        "headline": "Eliminate Misunderstandings with ThoughtConnect!",
+        "body": "Say goodbye to miscommunication! The ThoughtConnect neural interface enables clear and direct connection between citizens, fostering unity and understanding in our glorious socialist community. Embrace the future today!"
       }
     ]
   },
-  "generated_at": "2026-07-04T21:45:20.269802+00:00"
+  "generated_at": "2026-07-04T22:07:21.284786+00:00",
+  "hero_image": "/editions/images/2026-07-04-3-hero.png",
+  "hero_image_provider": "grok"
 }

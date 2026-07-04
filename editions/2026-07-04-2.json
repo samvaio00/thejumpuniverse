@@ -7,83 +7,85 @@
   "divergence": "Rome never fell",
   "story_angle": "intimate human-interest profile of an ordinary person caught in events",
   "roles": [
-    "Story: Moonshot Kimi",
+    "Story: OpenAI",
     "Humor: Grok",
     "Editor: OpenAI"
   ],
-  "headline": "The Jazz Age of Rome: Aurelia Moretti, A Musical Star In Eternal City's Art Deco Brilliance",
-  "deck": "1927 Romans revel in the rhythm as the jazz singer from the Cafè Romantico ascends to fame.",
-  "article": "<p>The heart of Rome pulses with the vibrant sounds of jazz, resonating from the iconic Cafè Romantico, where the atmosphere buzzes with the allure of Art Deco elegance. It is in this enchanting space, amidst the clinking of champagne glasses, that one woman's aspirations take center stage. Aurelia Moretti's voice, a captivating mix of warmth and allure, captivates a city steeped in history and artistry.</p><p>Performing nightly at the Cafè Romantico, Moretti leads her audience through a rich tapestry of sound, where saxophones cry out in bold defiance of convention. 'I'm pursuing a melody,' she shares, 'one that transcends the ephemeral, capturing the timeless essence of Rome.' While the life of a jazz singer may appear glamorous, it is a precarious balance between fame and the weight of expectation. 'Every performance feels like walking a tightrope,' Moretti reflects.</p><p>Her journey intertwines with the creative spirit of an era brimming with innovative expression. There is a connection between Moretti's music and the rise of modernist literature, both embracing new forms that resonate with vitality. Her name is mentioned alongside luminaries like Ezra Pound and James Joyce as she navigates the intricate cultural landscape of Rome. 'Each note is a challenge to the mundane,' she declares, embodying the spirited essence of the Jazz Age.</p><p>However, like any artist amidst significant change, Aurelia Moretti wrestles with the tension between commercial viability and artistic authenticity. 'The cost of champagne is steep,' she acknowledges, 'but the price of losing oneself in the quest is even greater.'</p>",
+  "headline": "Aurelia: Chiseling Dreams Amidst the Grandeur of Rome",
+  "deck": "In the vibrant streets of 1927 Rome, a self-taught sculptor navigates ambition and artistry, crafting her place in a flourishing empire.",
+  "article": "<p>In the heart of Rome, where classical architecture meets the spirited pulse of the Jazz Age, Aurelia has emerged as a beacon of creativity. With chisel in hand and a soul steeped in inspiration, the sculptor embraces the city's splendor, molding not just marble, but her own destiny. \"Every piece I create is a love letter to my city, a dance between the ancient and the modern,\" she says, her voice a blend of warmth and ambition.</p><p>As the sun casts its golden hue over the Pantheon, Aurelia often finds herself sketching amidst the whispers of history. Born to a family of modest means, she recalls the days spent scavenging for materials to perfect her craft. \"I remember carving sculptures from scraps, my hands soiled but my heart alight with possibility,\" she reflected, her eyes sparkling with nostalgia. Today, she stands at the brink of recognition, her art celebrated in salons where the elite clink glasses and sway to the rhythm of jazz.</p><p>Her latest exhibition at the Palazzo Venier dei Leoni showcases an array of sculptures that echo the elegance of the era while capturing the essence of her journey. Each creation tells a story — from the fluid curves of a dancer to the stark resilience of a worker. In a society that revels in luxury and excess, Aurelia’s work humbly defies the boundaries of traditional art. \"Art should be a reflection of life, vibrant and raw, not merely a symbol of wealth,\" she asserts, echoing the ethos of her time.</p><p>Yet, amid the lavish galas and fierce competition, Aurelia’s path is not without its struggles. The intoxicating allure of fame often casts shadows over authenticity. \"It's easy to lose oneself in the glamour of the scene,\" she confides. \"But I remind myself that every artist must stay true to their roots, even under the weight of marble.\" With every chiseled creation, Aurelia not only etches her name into the fabric of this enduring empire but also carves a space for future generations of artists, ensuring that the spirit of Rome, with its echoes of resilience and artistry, continues to flourish.</p>",
   "author": "Local Editor",
-  "city": "Rome",
+  "city": "Roma Aeterna",
   "weather": {
-    "city": "Rome",
-    "condition": "Eternal Radiance",
+    "city": "Roma Aeterna",
+    "condition": "Celestial Reverie",
     "temp": 72,
     "high": 78,
     "low": 65
   },
   "oped": {
-    "title": "Aurelia Moretti: Rome's Deco Siren Singing Its Obituary",
-    "author": "Livia Drusilla",
-    "body": "While the media celebrates Aurelia Moretti's dazzling performances in chrome-clad Rome, they overlook the decay beneath the surface. An empire that remains intact now dances to borrowed American rhythms and Egyptian designs, its legions swaying to saxophones rather than traditional drums. Moretti's jazz is not a victory; it's the final fragrance on a body still clutching its eagles. Once, true Romans conquered the world; now we sway as the very barbarians we once vanquished laugh at our gilded monuments."
+    "title": "Aurelia’s Zigzag Shackles",
+    "author": "Livia Corvinus",
+    "body": "While the papers fawn over Aurelia’s Art Deco angels soaring above the Forum, they ignore the obvious: Rome’s eternal rule has turned sculpture into state propaganda with better angles. Her geometric dreams glint like chrome on a guillotine. No fallen empire means no messy rebirths, no messy freedom—just sleek marble repeating the same imperial lie in 1927’s sharpest lines. She chisels not rebellion but its stylish tomb."
   },
   "classifieds": {
     "ads": [
       {
-        "cat": "Art Deco Furnishings",
-        "text": "Elevate your villa with unparalleled luxury! Discover exquisite Art Deco furniture handcrafted by the finest artisans in Rome. From lavish sofas to opulent dining sets, each piece is a testament to elegance and modernity. Visit our showroom in the heart of Trastevere!"
+        "cat": "Art Galleries",
+        "text": "Step into the sublime! Visit the newly opened *Vibrante Galleria* in the heart of Roma. Immerse yourself in Art Deco masterpieces that blend the elegance of ancient civilizations with the boldness of modernity. Open daily from 10 AM to 7 PM. Special exhibition featuring the works of Giovanni Bellini."
       },
       {
-        "cat": "Exclusive Art Exhibit",
-        "text": "Step into a world of glamour! Join us for the grand opening of 'Elysium Awaits: The Art Deco Movement' at the Palazzo delle Esposizioni. Experience stunning works from renowned artists and architects embracing the spirit of the Roaring Twenties. Opening gala on June 15th – don’t miss it!"
+        "cat": "Interior Design Services",
+        "text": "Transform your home into a luxurious escape! Hire *Casa Elegante*, expert designers in Art Deco styles. From lavish geometric furniture to opulent color palettes, we create spaces that reflect your refined taste. Contact us for a consultation: 555-ARTDECO."
       },
       {
-        "cat": "Stylish Accessories",
-        "text": "Accessorize your wardrobe with the latest in Art Deco fashion! Visit La Boutique Elegante for a selection of dazzling jewelry and chic evening wear. Our pieces are inspired by the splendor of the era—perfect for any soirée under the stars. Located near the Spanish Steps!"
+        "cat": "Fashion & Textiles",
+        "text": "Elevate your wardrobe with the *Moda Avanguardista*! Discover the latest in Art Deco fashion, featuring stunning dresses and suits that capture the glamour of the Roaring Twenties. Visit our showroom on Via del Corso to see our exclusive collection. Custom fittings available!"
       },
       {
-        "cat": "Art Deco Home Services",
-        "text": "Transform your home into a masterpiece with our Art Deco interior design services! Our expert team will harmonize bold geometric patterns and rich colors to create a stunning aesthetic. Book your consultation today and let your residence shine like never before!"
+        "cat": "Architectural Services",
+        "text": "Calling all visionaries! *Architettura Romana* seeks clients for bespoke Art Deco architectural designs. Let us bring your grand projects to life with the latest in geometric aesthetics and innovative structures. Schedule your consultation today and redefine your horizons!"
       }
     ]
   },
   "comic_strip": {
-    "title": "Eternal Encore",
+    "title": "Marble Quotas",
     "panels": [
       {
-        "caption": "In the art-deco Forum, a toga-clad patron adjusts his spats: 'Aurelia Moretti sells out every night.'"
+        "caption": "Aurelia slams her chisel into a sharp-angled Caesar bust beneath Rome's art deco aqueduct: \"One more chip before the permit expires.\""
       },
       {
-        "caption": "His companion nods beneath geometric laurels: 'Rome endures; only the tempo changes.'"
+        "caption": "A praetor in geometric toga stamps her scroll: \"Self-taught? That's three extra forms and a marble tax.\""
       },
       {
-        "caption": "Punchline: 'At least the empire won't fall to this rhythm—it's already lasted two millennia.'"
+        "caption": "The finished statue is wheeled away: \"Excellent. The Emperor thanks the anonymous artisan.\""
       }
     ],
     "image": "/editions/images/2026-07-04-2-strip.png",
     "image_provider": "grok"
   },
   "joke": {
-    "setup": "Why does Aurelia Moretti outshine every other act in Rome's Art Deco Jazz Age?",
-    "punchline": "Her riffs echo longer than the Empire—still standing after all these geometric centuries.",
-    "text": "Why does Aurelia Moretti outshine every other act in Rome's Art Deco Jazz Age? Her riffs echo longer than the Empire—still standing after all these geometric centuries."
+    "setup": "Aurelia's latest Art Deco relief claims to chisel modern dreams into the Curia's marble walls",
+    "punchline": "until the censors noticed every angle pointed straight at the tax coffers and quietly reassigned her to the aqueducts.",
+    "text": "Aurelia's latest Art Deco relief claims to chisel modern dreams into the Curia's marble walls until the censors noticed every angle pointed straight at the tax coffers and quietly reassigned her to the aqueducts."
   },
   "sponsor_ads": {
     "ads": [
       {
-        "headline": "Elevate Your Abode with Roman Elegance!",
-        "body": "Transform your living space into a sanctuary of opulence with bespoke furnishings from Domus Aurea. Our artisans craft each piece with the finest materials, ensuring your home reflects the grandeur of our eternal city."
+        "headline": "Illuminate Your Home with Lucentia's Art Deco Chandeliers!",
+        "body": "Transform your living spaces into a dazzling haven with Lucentia's hand-crafted chandeliers, perfectly designed to bring the brilliance of the Roman Empire into your modern-day abode. Experience elegance and luxury like never before!"
       },
       {
-        "headline": "Indulge in the Flavors of the Empire!",
-        "body": "Experience the exquisite taste of Rome with Trattoria Imperiale! Enjoy sumptuous feasts featuring locally sourced ingredients, infused with the secret spices of the ancients—where every meal is a celebration of history."
+        "headline": "Revitalize Your Wardrobe with Vestis Elegante!",
+        "body": "Step into the future of fashion with Vestis Elegante's exclusive line of silk and velvet garments, inspired by the timeless beauty of Ancient Rome. Make every gathering a grand occasion with styles that speak of opulence!"
       },
       {
-        "headline": "Travel in Style: Chariots of Luxury Await!",
-        "body": "Discover the beauty of Rome with our luxurious chariot services at Aurelian Carriages. Glide through the streets in sophistication and comfort, complete with personal attendants to cater to your every need."
+        "headline": "Experience the Serenity of AquaVita Baths!",
+        "body": "Indulge in the rejuvenating powers of AquaVita's mineral-infused baths, a luxurious escape that brings the tranquil spirit of Roman spas to your home. Discover the secret to relaxation and vitality today!"
       }
     ]
   },
-  "generated_at": "2026-07-04T21:44:14.881435+00:00"
+  "generated_at": "2026-07-04T22:05:43.499789+00:00",
+  "hero_image": "/editions/images/2026-07-04-2-hero.png",
+  "hero_image_provider": "grok"
 }

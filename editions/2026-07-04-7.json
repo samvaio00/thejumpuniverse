@@ -7,83 +7,85 @@
   "divergence": "A plague wiped out 90% of humanity in 2020",
   "story_angle": "propaganda triumph narrated with unsettling sincerity",
   "roles": [
-    "Story: Moonshot Kimi",
+    "Story: OpenAI",
     "Humor: Grok",
     "Editor: OpenAI"
   ],
-  "headline": "Pleasure Domes: Malls Emerge as Symbols of Resilience in Neo-Vaporwave America",
-  "deck": "A Retro-Futuristic Exploration of 1980s Mall Revival in the Wake of the Pandemic",
-  "article": "<p>In the vibrant glow of 1986, the echoes of a pandemic that once stifled the world's pulse linger, yet the spirit of commerce flourishes anew. Once-deserted malls, relics of a bygone era, have been revitalized, now serving as the cultural hubs of our time.</p><p>With the resurgence of mall culture, escapism manifests in the lively shops dotting America's landscape. Adorned with pastel colors and whimsical designs, these malls provide a surreal refuge from the stark realities beyond their glass facades. Quirky new products merge retro charm with contemporary eccentricity, such as the 'MallWalker 3000'—a self-propelled shopping cart that promises both nostalgia and fitness in one effortless glide.</p><p>The promotional campaigns are as vivid and daring as the era they evoke: \"Joy for the Future, Purchase Today!\" emblazoned across every LED screen, inviting visitors to rediscover lost joys. Government initiatives like the 'Nostalgia Revival Act' aim to cultivate a brighter future through consumerism and the revival of cherished pastimes, appealing to those longing for simpler days.</p><p>\"Every vintage synthesizer sold is a dream regained,\" declared Donnie Groves, manager of the \"Neon Oasis\" mall in suburban Atlanta. He reported an impressive 75% increase in foot traffic, fueled by the magnetic pull of the 'RetroWave Food Court,' where patrons can indulge in the long-lost flavors of 1980s fast-food, including the recently revived 'Sprite Squeeze,' now a hit.</p><p>The era of post-pandemic tranquility and hope is not without dissenting voices, but they are overshadowed by the sounds of DeLoreans cruising through the parking lots and the sweet melodies of saxophones resonating from the food court's live stage. This is more than a revival; it’s a transformation in the landscape of retail therapy. As the world navigates through silence and uncertainty, mall culture thrives, undeterred by the challenges around it.</p>",
+  "headline": "Synthetic Utopias Rise from the Ashes: A Neon Dreamscape in 1986",
+  "deck": "New malls resurrect the spirit of consumerism, offering pixelated escapes from the haunting echoes of a past that almost was.",
+  "article": "<p>In a world where the shadows of 2020’s devastating plague linger like last year's fashion, humanity has discovered refuge in the glowing embrace of synthetic utopias. Across the landscape, shiny new malls punctuate the skyline, constructed from the abandoned shells of cities that once thrived. These monuments to excess beckon citizens with promises of pastel experiences, their hallways resonating with synthesized beats reminiscent of a world that reveled in frivolity.</p><p>Amidst the neon glow, virtual reality escapism is marketed as the ultimate remedy for collective trauma. Companies like DreamWave Inc. present their VR experiences as therapeutic marvels, claiming to heal emotional scars with pixelated paradises. \"Why dwell on the past when you can surf through streams of nostalgia?\" croons the latest ad spot, splashed across glossy billboards. The absurdity of it all delights, as weary souls plug in to experience a faux world, where the only danger is running out of battery life.</p><p>As shopping carts roll through these artificial landscapes, the pastel colors and retro aesthetics plastered everywhere serve as a sardonic reminder of our collective penchant for denial. Vendors peddle garish merchandise claiming to revive simpler pleasures—plastic toys with retro designs that promise a return to an era never truly lived. A shopper wandering through the newly opened HyperMall in suburban Neo-Atlanta remarked, \"It’s like shopping in a time capsule that forgot to age. It's comforting in a completely unsettling way.\"</p><p>But beneath the glossy veneer lies an irony too rich to overlook: the more we cling to these synthetic delights, the more we reveal our desperation. As humanity binds itself in neon chains, seeking solace in the absurd, the specter of 2020 fades further into the background—only to be replaced by an insatiable hunger for distraction. In this new age, perhaps the greatest triumph is not merely surviving, but mastering the art of forgetting through endless consumption. Embrace the irony, dear reader, for this is our brave new world shaped by vapid desires and pixelated fantasies.</p>",
   "author": "Local Editor",
   "city": "Neonopolis",
   "weather": {
     "city": "Neonopolis",
-    "condition": "Synthwave Sickness",
+    "condition": "Retrograde Melancholia",
     "temp": 72,
     "high": 78,
     "low": 65
   },
   "oped": {
-    "title": "Malls: The Last Shopping Cart to Hell",
-    "author": "Cassette Revenant",
-    "body": "We survived the 2020 pandemic by retreating into 1986's fluorescent tombs, pretending empty food courts are cathedrals of hope. Pathetic. These vaporwave pleasure domes sell nostalgia for a consumer dream that led us to ruin in the first place. Survivors wander past dead escalators chasing pastel illusions while real flesh rots outside. The pandemic didn't end the world—the malls just made the end look good on VHS."
+    "title": "Neon Graves: Vaporwave's Mockery of the Missing",
+    "author": "Morgan Voss",
+    "body": "While 1986's elites peddle synthetic utopias in pastel neon, they dance on the future graves of 90% wiped out by 2020's plague. Vaporwave isn't escape—it's the soundtrack of denial, a retro filter sanitizing mass death into chic consumerism. We aren't rising from ashes; we're embalming the lost in synth beats. This dreamscape is our final, empty product."
   },
   "classifieds": {
     "ads": [
       {
-        "cat": "Retro Furniture",
-        "text": "\u001f34c\u001f3c Upgrade your living space with authentic 80s vaporwave furniture! Neon pink recliners and pixelated coffee tables available for immediate delivery. Bring the beach vibes home today! Limited stock - act fast! \u001f324\u001f3fc"
+        "cat": "Art & Aesthetics",
+        "text": "\u001c\u001f Experience the surreal beauty of the digital age! Vaporwave art installations available for your home or shopping plaza. Let your walls pulse with retro nostalgia and neon dreams. Order now for delivery in the post-plague landscape of 1986! \u001c\u0001f"
       },
       {
-        "cat": "Music & Entertainment",
-        "text": "\u001f3b6\u001f680 Introducing the latest in synthwave sounds! Grab your cassette tapes featuring the hottest vaporwave artists of '86. Feel the nostalgia and escape to a world filled with 80s aesthetics. Order now and receive a free mixtape! \u001f4fb\u001f3a7"
+        "cat": "Music & Culture",
+        "text": "\u001c\u0001f Dive into the soundwaves of the future! Vinyl records featuring synthesized beats and dreamlike melodies. Perfect for your underground dance parties in this brave new world. Limited stock! Grab your copy before they vanish into thin air! \u0001c\u0001f"
       },
       {
-        "cat": "Fashion",
-        "text": "\u001f3c6\u001f4ab Step into the future with our exclusive vaporwave apparel! Shop bold graphics, pastel colors, and oversized tees that scream retro chic. Sizes available for all survivors! Limited edition styles – don’t miss out! \u001f5a5\u001f308"
+        "cat": "Fashion & Style",
+        "text": "\u0001c\u0001f Step into the vaporwave universe with our exclusive line of pastel-colored activewear! Perfect for those leisure moments in the new utopia. Each piece crafted to fit comfortably and inspire freedom of expression in this transformed society. Order today and redefine your style! \u0001c\u0001f"
       },
       {
-        "cat": "Home Decor",
-        "text": "\u001f3dd\u001f4a1 Transform your space with vaporwave-inspired art! Posters featuring surreal landscapes, glitchy visuals, and retro synth vibes. Perfect for creating a chill atmosphere at home. Order yours today and let the 80s aesthetic be your escape! \u001f3a8\u001f970"
+        "cat": "Technology & Gadgets",
+        "text": "\u0001c\u0001f Embrace the retro-futuristic revolution! Get your hands on vintage tech gadgets reimagined for the modern vaporwave enthusiast. From neon cassette players to glitch-inspired gaming consoles. Bring the 80s back in style! Limited availability—don't miss out! \u0001c\u0001f"
       }
     ]
   },
   "comic_strip": {
-    "title": "Dome and Gloom",
+    "title": "PLASTIC REQUIEM",
     "panels": [
       {
-        "caption": "In the neon-lit atrium of what used to be a suburban mall, two survivors recline by a pink fountain flanked by marble busts. 'After the pandemic, these pleasure domes are our beacons of hope.'"
+        "caption": "The new atrium just added twelve more Roman busts blasting 'Take On Me'."
       },
       {
-        "caption": "Palm trees sway under flickering grid lights as synth music echoes. 'Neo-Vaporwave America: 10% of the people, 100% of the aesthetic.'"
+        "caption": "The developer leans in: 'We paved the old district for the food court. Twice the square footage, zero complaints.'"
       },
       {
-        "caption": "One checks a dead directory screen. 'Yeah. Nothing says survival like unlimited Cinnabon in an empty food court.'"
+        "caption": "A shopper nods at the empty escalator: 'Perfect. More room for the ghosts to window-shop.'"
       }
     ],
     "image": "/editions/images/2026-07-04-7-strip.png",
     "image_provider": "grok"
   },
   "joke": {
-    "setup": "Why did survivors flock to the Pleasure Domes after the pandemic?",
-    "punchline": "In Neo-Vaporwave America, even the malls finally have that authentic 'dead' aesthetic again.",
-    "text": "Why did survivors flock to the Pleasure Domes after the pandemic? In Neo-Vaporwave America, even the malls finally have that authentic 'dead' aesthetic again."
+    "setup": "In 1986 the billboards already promise neon utopias built from the ashes of 2020,",
+    "punchline": "because nothing moves product like pre-selling luxury sarcophagi to a species that hasn’t finished dying yet.",
+    "text": "In 1986 the billboards already promise neon utopias built from the ashes of 2020, because nothing moves product like pre-selling luxury sarcophagi to a species that hasn’t finished dying yet."
   },
   "sponsor_ads": {
     "ads": [
       {
-        "headline": "Rewind Your Mind with Synthwave Soundscapes!",
-        "body": "Escape the harsh realities of a world reshaped by the pandemic with our exclusive mixtapes. Tune in to blissful synths and ambient echoes to elevate your spirit and enjoy the nostalgia of the vibrant 80s!"
+        "headline": "Escape to the Neon Abyss!",
+        "body": "Experience the tranquility of virtual beaches and pixelated sunsets with our state-of-the-art Synthwave VR headset. Immerse yourself in a world where time stands still and the only limit is your imagination."
       },
       {
-        "headline": "Retro-Reality VR Experiences Now Available!",
-        "body": "Step into a digital oasis where the past meets the future! Immerse yourself in recreated 1980s environments, complete with neon lights and pastel skies—perfect for unwinding from the New Normal!"
+        "headline": "Reclaim Your Dreams with Mood Oasis!",
+        "body": "Transform your living space into a serene escape with our Mood Oasis light projectors. Create a personal utopia filled with soothing colors and vibes, perfect for those quiet evenings in your post-plague sanctuary."
       },
       {
-        "headline": "Cyborg Companion: Your New Best Friend!",
-        "body": "Feeling lonely in a world where only 10% thrive? Meet your personal Cyborg Companion—customizable, interactive, and designed to be your best buddy in this pixelated paradise of the new age!"
+        "headline": "Revive the Past: Retro Rewind Records!",
+        "body": "Rediscover the magic of music with our curated selection of vinyl records from before the great collapse. Each album is a portal to a bygone era, designed to rekindle your soul and elevate your listening experience."
       }
     ]
   },
-  "generated_at": "2026-07-04T21:49:37.581836+00:00"
+  "generated_at": "2026-07-04T22:13:12.442049+00:00",
+  "hero_image": "/editions/images/2026-07-04-7-hero.png",
+  "hero_image_provider": "grok"
 }

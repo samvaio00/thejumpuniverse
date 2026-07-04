@@ -7,13 +7,13 @@
   "divergence": "Space travel began in 1950",
   "story_angle": "somber obituary for a lost era or institution",
   "roles": [
-    "Story: Moonshot Kimi",
+    "Story: OpenAI",
     "Humor: Grok",
     "Editor: OpenAI"
   ],
-  "headline": "A Final Curtain: The Royal Astral Society Bids Adieu to its Storied Past",
-  "deck": "After a Half Century of Guiding Discovery, a Pillar of Victorian Scholarship Closes its Doors",
-  "article": "<p>In the grand tradition of our imperial epoch, where the allure of the night sky was as enchanting as the clamor of the mechanical age, the Royal Astral Society stood as a beacon of our collective spirit of inquiry. Founded in 1845, amidst the soaring ambitions of the Age of Discovery, its halls resonated with the whispers of the cosmos and the reflection of polished brass telescopes.</p><p>However, as humanity turned its gaze towards the vastness beyond our atmosphere in 1950, the significance of this venerable institution diminished. The excitement surrounding space exploration, with its promise of uncharted territories, has reached unprecedented heights, leaving the Royal Astral Society, proud of its legacy, as a relic of a bygone era.</p><p>This evening, the Society will host its final gathering in the same grand hall that once echoed with the excitement of astronomical breakthroughs. Esteemed scholars and enthusiasts will come together beneath the brass-laden telescopes and among the dusty tomes that once held the universe's secrets to bid a solemn farewell. Their reflections will resonate with a bittersweet nostalgia, honoring an era when earthly curiosity captivated the imagination.</p><p>As we close this illustrious chapter, we recall the words of Sir John Herschel, who described the Society as 'a place where the wonders of the heavens meet the handiwork of man.' Today, as humanity's endeavors reach beyond the stars, we must release the ties to our past and embrace the inevitable currents of progress and transformation.</p>",
+  "headline": "Obituary for the Royal Astronautical Society: A Celestial Dream Extinguished",
+  "deck": "As a once-great institution fades into history, the echoes of unrealized ambitions linger in our industrious hearts.",
+  "article": "<p>In this somber moment, we gather to honor the Royal Astronautical Society, founded in 1861, which once served as a beacon for those daring enough to pursue the celestial threads of ambition. Its dissolution casts a shadow over our aspirations, leaving behind dreams now buried beneath the weight of progress.</p><p>During its peak, the Society inspired countless individuals, igniting imaginations that reached beyond earthly confines. Guided by pioneers such as Sir Augustus M. L. Fotheringham and esteemed astronomer Lady Arabella Wright, the Society cultivated a community of thinkers eager to explore the mysteries of interstellar travel. Unfortunately, the relentless advance of a burgeoning industry, intertwined with the very machines meant to elevate humanity among the stars, hastened its decline into obscurity.</p><p>As the smoke-filled streets of London buzzed with industrial activity, those who once envisioned a future rich with interplanetary adventures found themselves overshadowed by society's indifference to lofty pursuits. The Society's celebrated endeavors were gradually stifled, leaving dreamers to mourn amidst the haze of industry. The noble ambitions that once fueled our quest for knowledge have become mere whispers in the winds of time.</p><p>The Royal Astronautical Society's closure marks the end of an era—one in which visionary thinkers dared to challenge the heavens with sheer will and creativity. In this moment of reflection, we must confront an unsettling reality: in our relentless pursuit of industrial advancement, we may have sacrificed the dreams that once filled our hearts with hope. As we bid farewell to this venerable institution, let us consider the cost of our progress and the aspirations now relegated to the shadows of history.</p>",
   "author": "Staff Correspondent",
   "city": "London",
   "weather": {
@@ -24,66 +24,68 @@
     "low": 65
   },
   "oped": {
-    "title": "Let the Curtain Fall—And Good Riddance",
-    "author": "E. Vesper Lang",
-    "body": "The Royal Astral Society's closure is not a loss but a necessary evolution. For years, these velvet-collared dreamers offered fanciful notions while real innovators crafted the technology that will propel us to the stars. Their 'storied past' served only as a distraction for those seeking to escape the realities of industry. Let the gaslights dim; the cosmos belongs to the builders, not the dreamers."
+    "title": "Let the Stars Rot: Empire Over Ether",
+    "author": "Viscountess Eliza Crowe",
+    "body": "The Royal Astronautical Society did not fade away due to neglect but rather from its own absurdity. In 1890, while coal smoke suffocated our cities and the Raj demanded rifles, these cravat-clad dreamers pursued fantastical visions of 1950. Good riddance. Let their telescopes gather dust. Conquest belongs to gunboats, not rockets that would only elevate our vices. The celestial dream was always a coward’s escape from the realities of London’s slums and the bloodshed in Africa. Let it be extinguished; the Empire requires no wings."
   },
   "classifieds": {
     "ads": [
       {
         "cat": "Transportation",
-        "text": "FOR SALE: Magnificent steam-powered dirigible, ideal for leisurely sky excursions or transporting cargo across the Empire. Features a plush interior and a private observation deck. Experience the thrill of the skies—contact Captain Reginald Hawthorne at the Royal Aeronautics Society."
+        "text": "Seeking adventurous souls for the inaugural voyage aboard the Celestial Voyager, our magnificent airship! Experience the thrill of floating above the clouds! Departure scheduled for June 15, 1891, from the London Aerodrome. Limited tickets available. Inquire within at Captain Harrison's Emporium."
       },
       {
-        "cat": "Services",
-        "text": "EXCEPTIONAL SCIENTIFIC CONSULTATION: Dr. Eloise Kensington, esteemed researcher of celestial phenomena, now available for private consultations. Have you ever gazed at the stars and pondered their mysteries? Let Dr. Kensington illuminate the unknown and guide you in your astronomical pursuits. Appointments available at Kensington Manor."
+        "cat": "Employment",
+        "text": "Join the ranks of the esteemed Astronomical Society! Now hiring skilled navigators and star chart interpreters to assist in our quest for new worlds. Applicants must possess knowledge of celestial bodies and a passion for discovery. Positions open until May 1, 1891. Apply at 42 Starlight Avenue."
       },
       {
-        "cat": "Entertainment",
-        "text": "ATTENTION ADVENTURERS: Join the Society of Aether Explorers! Gather bi-monthly at the Grand Hall of the Exploratorium for exciting lectures on the latest discoveries in space travel. Engage with fellow enthusiasts and partake in fascinating discussions over fine tea and pastries. Membership inquiries welcomed, inquire within."
+        "cat": "Inventions",
+        "text": "Introducing the latest in personal transportation: the Ether Glide! This groundbreaking device allows you to drift effortlessly through the skies. Special introductory price of 50 pounds! Demonstrations every Sunday at the Grand Exposition Hall. Join us and elevate your travel experience!"
       },
       {
-        "cat": "Education",
-        "text": "LEARN TO NAVIGATE THE STARS: Enroll in the newly established Celestial Navigation Academy! Our curriculum includes the study of astrolabes, the principles of aether currents, and the art of star mapping. Classes begin this October, taught by the renowned Professor Alistair Mortimer. Secure your future among the stars—register today!"
+        "cat": "Real Estate",
+        "text": "Unique opportunity to acquire a property on the outskirts of the bustling city: The Celestial Observatory! Perfect for star-gazers and ambitious inventors alike. Features include a panoramic dome and ample space for your scientific endeavors. Inquire today for a private showing!"
       }
     ]
   },
   "comic_strip": {
-    "title": "The Final Telescope",
+    "title": "Bees Over the Void",
     "panels": [
       {
-        "caption": "Gentlemen, with interplanetary liners departing since 1950, the Royal Astral Society hereby dissolves its Victorian charter."
+        "caption": "Chairman: 'The Royal Astronautical Society is hereby dissolved. No rockets, no stars.'"
       },
       {
-        "caption": "No more hushed evenings with the equatorial mount and leather-bound ephemerides?"
+        "caption": "Treasurer: 'But the 1950 timetable still stands. We could simply wait.'"
       },
       {
-        "caption": "Quite. One simply purchases a ticket. Far less dignified than squinting through brass."
+        "caption": "Chairman: 'Exactly. Pass the honey. The cosmos has lost its appeal.'"
       }
     ],
     "image": "/editions/images/2026-07-04-1-strip.png",
     "image_provider": "grok"
   },
   "joke": {
-    "setup": "What did the dowager astronomer declare upon the Royal Astral Society's final assembly?",
-    "punchline": "'The curtain falls, my dears; our storied past now orbits the dustbin of the aether!'",
-    "text": "What did the dowager astronomer declare upon the Royal Astral Society's final assembly? 'The curtain falls, my dears; our storied past now orbits the dustbin of the aether!'"
+    "setup": "The Royal Astronautical Society having expired in its own drawing room before a single bolt reached orbit,",
+    "punchline": "we may now rest assured that 1950 will dawn without the embarrassment of Union Jacks tumbling back through the clouds like overfed pigeons.",
+    "text": "The Royal Astronautical Society having expired in its own drawing room before a single bolt reached orbit, we may now rest assured that 1950 will dawn without the embarrassment of Union Jacks tumbling back through the clouds like overfed pigeons."
   },
   "sponsor_ads": {
-    "ads": [
+    "advertisements": [
       {
-        "headline": "Experience the Wonders of the Cosmos!",
-        "body": "Join the Starbound Expeditions for a grand journey through the stars! Our state-of-the-art Starcruisers promise a celestial adventure unlike any other, complete with luxurious accommodations and breathtaking views of distant worlds."
+        "headline": "Experience the Wonders of Celestial Travel!",
+        "body": "Journey beyond the stars with the latest in Astral Airship technology! Book your passage to the Moon or Mars and witness the marvels of the cosmos firsthand."
       },
       {
-        "headline": "Restore Your Health with Aetheric Elixirs!",
-        "body": "Step into the future of wellness with our Aetheric Elixirs derived from cosmic minerals! These remarkable tonics are designed to rejuvenate your spirit and enhance your vitality, perfect for the discerning gentleman and lady."
+        "headline": "Galactic Flora: Exotic Plants from Outer Worlds!",
+        "body": "Enhance your garden with rare specimens from the far reaches of our solar system! Visit our shop for a selection of vibrant blooms, each with their own interstellar charm."
       },
       {
-        "headline": "Secure Your Place on the Next Lunar Voyage!",
-        "body": "Tickets are now available for the next voyage to the Moon aboard the Celestial Flyer! Witness the majesty of our lunar neighbor and enjoy a feast of delights prepared by our onboard chefs as you glide through the heavens."
+        "headline": "Stellar Fashion: Attire Fit for Space Adventurers!",
+        "body": "Step into the future with our line of lightweight, durable garments designed for comfort in zero gravity! Available now at select tailors across London."
       }
     ]
   },
-  "generated_at": "2026-07-04T21:43:10.079571+00:00"
+  "generated_at": "2026-07-04T22:04:00.372729+00:00",
+  "hero_image": "/editions/images/2026-07-04-1-hero.png",
+  "hero_image_provider": "grok"
 }

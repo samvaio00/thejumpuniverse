@@ -7,83 +7,85 @@
   "divergence": "The Black Death targeted only the wealthy",
   "story_angle": "eyewitness dispatch from the scene with vivid sensory detail",
   "roles": [
-    "Story: Moonshot Kimi",
+    "Story: OpenAI",
     "Humor: Grok",
     "Editor: OpenAI"
   ],
-  "headline": "Wealthy Quarantined Amidst Death’s Singular Reign: A Gritty Dive into Neo-London's Divided Streets",
-  "deck": "The affluent segregate from the suffering masses as the Black Death ravages the elite, leaving the poor to navigate the chaotic urban jungle.",
-  "article": "<p>Zooming past the neon-riddled borders of Neo-London's luxury district, I'm confronted by the grim spectacle of a society starkly divided. The shimmering neon signs flicker ominously above, casting a surreal glow on the rain-slick streets. Some call this a cyber fever dream, but for those of us in the underbelly, it’s just another day in the glitch.</p><p>I weave through a sea of scuffed-up cyborgs and shadowy figures, all scrambling for their next fix or a morsel of uninfected food. The air is thick with the stench of burnt circuits, mingling with the distant wail of sirens—a haunting backdrop to the desperate pleas of the uninfected. It’s a symphony of despair, one that resonates with those who can afford no immunity.</p><p>Looming over this scene is a massive holographic ad that promises salvation. It showcases a new immunity serum, 'Elysium V-7,' splashed across the sky for all to see but accessible only to the elite. It serves as a mockery, a gleaming billboard for those who can afford to remain uninfected while the rest of us languish in the shadows.</p><p>The serum’s launch party tonight is the talk of the town. Whispers on the streets mention names like 'Vincent Marlowe,' a tech mogul, and 'Cassandra Blackwell,' a pharma heiress, both set to grace the event with their presence. They’ll sip champagne under the protection of their private security drones, while out here, the streets bleed and the system fails us.</p><p>That's Neo-London for you—an electric hellscape where the rich cower behind their holo-walls, leaving the rest of us to navigate a world crumbling under the weight of a plague that knows no class.</p>",
+  "headline": "The Disappearance of the Elite in Neo-London",
+  "deck": "Wealth has become a specter in the neon-lit corners of a city turned upside down. In a chilling twist, the Black Death has shifted its focus, claiming the lives of the affluent while leaving the streets to the scavengers.",
+  "article": "<p>The acrid scent of burnt circuitry mingled with the sweet perfume of abandoned wealth as I navigated the dim alleys of Neo-London. Once teeming with opulent boutiques and lavish cafes where the elite flaunted their power, the markets now lay silent, shadows flickering under the neon glow as faceless drones carted away the last of the wealthy. The city’s heartbeat had dimmed, replaced by the distant whir and hum of technology swallowing the affluent whole.</p><p>I ducked behind a crumbling storefront, watching as a white-gloved hand slipped from the grasp of a sleek carriage, the last vestiges of a life now rendered obsolete. \"They thought they were untouchable, right?\" a nearby scavenger muttered, his cybernetic arm twitching as he dissected a discarded holo-ad for a luxury brand long forgotten. \"One minute, they’re sipping synth-champagne, and the next… poof. Doesn’t mean much to us, though. Just more to scavenge.\"</p><p>The chilling silence blanketing these once-bustling markets felt like a weight pressing against my throat. I glanced over at a nearby holo-screen, static crackling as it replayed images of last week’s elite gathering at the High Tower. Laughter echoed from the screen—a haunting reminder of opulence now extinguished. It was a view of the world that felt so distant, so entirely disconnected from the grim reality of crumbling concrete and flickering neon. This was no longer a place of privilege but a patchwork of cybernetic husks wandering for scraps.</p><p>\"What happens when the rich go?\" I asked my companion, an old-timer with more circuits than skin. He shrugged, gazing at the darkened windows of what used to be the Crystal Lounge. \"We endure. Always do. Wealth is just a glitch in the matrix anyway. The rest of us? We learn to survive in the shadows, under the buzz and glare of the neon gods. This city belongs to us now.\"</p><p>The sound of a drone buzzed past overhead, its metal casing glinting under the artificial stars. As I stepped back into the murky depths of Neo-London, I couldn’t shake the feeling that what lay ahead was as haunting as what we’d lost. In a world where the rich were erased, survival for the forgotten was now the ultimate currency.</p>",
   "author": "Staff Correspondent",
   "city": "Neo-London",
   "weather": {
     "city": "Neo-London",
-    "condition": "Wealth Bane Smog",
+    "condition": "Wealth Pox Overcast",
     "temp": 72,
     "high": 78,
     "low": 65
   },
   "oped": {
-    "title": "Plague as Privilege: The Rich Finally Pay for Their Isolation",
-    "author": "Raze Korr, Undergrid Chronicler",
-    "body": "In Neo-London's rain-slick gutters, the Black Death's cruel precision mocks every corporate sermon on merit. The wealthy barricade themselves in sterile spires while we, the augmented refuse, inherit their abandoned credit chits and drone fleets. Quarantine isn't mercy—it's their self-imposed exile from the chaos they engineered. Satire curdles into truth: death, once democratized by poverty, now exacts luxury's toll. Yet as towers flicker dark, who sustains the grids feeding their cryo-vaults? Us. The real provocation isn't the plague—it's realizing their fall brings no change. The streets remain divided, only now the corpses wear better chrome."
+    "title": "The Rich Vanished—Now Who Funds Our Rage?",
+    "author": "Raze Korr",
+    "body": "Neo-London’s Black Death culled only the penthouse parasites, their neural vaults imploding in tailored agony while we scavenged below. We toasted with stolen synth-rum, declaring liberation. Yet the void bites deeper than any corpo whip: no more gilded targets for our chrome knives, no midnight raids on their floating arcologies, no stolen credit chits to fuel tomorrow’s blackout. The elite didn’t die; they abandoned us to our own irrelevance. Without kings to topple, the streets feel emptier than the grave. We are free—and starving for purpose."
   },
   "classifieds": {
-    "ads": [
+    "classified_ads": [
       {
-        "cat": "Job Opportunities",
-        "text": "🚨 Seeking Cybernetic Technicians! 🚨 Join the elite teams restoring the health of the wealthy post-Black Death. Must have advanced skills in neural implants and bio-hacking. High pay, premium benefits, and guaranteed access to luxury living quarters. Apply at ZenithCorp HQ, Downtown Spire."
+        "cat": "Employment",
+        "text": "Elite Bodyguard Wanted: Protect the last of the privileged class from the shadows of Neo-London. Must possess combat augmentation and loyalty to the core. Inquire at The Neon Fortress."
+      },
+      {
+        "cat": "Services",
+        "text": "Personal Sanitation Specialist: Keeping your bio-habitat pristine in a post-Black Death era. Discreet services for the affluent only. Advanced filtration and purification technology used. Contact Cyren's Clean."
       },
       {
         "cat": "Real Estate",
-        "text": "💎 Exclusive Apartments for Sale! 💎 Experience unparalleled luxury in the heart of Neo-Lux City, where the elite find solace after the plague. 3-bedroom penthouses with holo-windows, personal AI assistants, and rooftop gardens. Inquire with Aether Realty—where the rich recover in style!"
+        "text": "Luxury Sky-Penthouse Available: Overlooking downtown CyberCity, this exclusive property features bio-enhanced security systems and panic rooms. Only for the surviving elite of the Black Death. Limited viewing slots, act fast!"
       },
       {
-        "cat": "Personal Services",
-        "text": "🔒 Discretion Assured: Elite Health Restoration Services 🔒 Are you one of the fortunate few surviving the Black Death’s wrath? Book your sessions with top-tier bioware rejuvenation experts. Privacy guaranteed, results miraculous. Message us on NeuroNet for your appointment—limited slots available!"
-      },
-      {
-        "cat": "Tech Gadgets",
-        "text": "🌐 Upgrade Your Life with the Latest in Curbside Cybernetics! 🌐 After the Black Death, wealth is the new currency. Enhance your status and longevity with exclusive implant bundles designed for the affluent. Mobility enhancers, beauty mods, and cognitive enhancers—exclusively available at Apex Cybersolutions."
+        "cat": "Technology",
+        "text": "Upgrade Your Existence: Custom cybernetic enhancements available for the high-income bracket. Specializing in longevity features to outlast the socio-economic fallout of the Black Death. Consult with NeuroTech Innovations."
       }
     ]
   },
   "comic_strip": {
-    "title": "Death's Dividend",
+    "title": "Ghost Credit",
     "panels": [
       {
-        "caption": "Neo-London underclass gazes up at quarantined spires: 'Must be nice, dying in luxury.'"
+        "caption": "Lord Vex's neural ledger blinks red in the rain: 'Assets seized. Vital signs: terminated.'"
       },
       {
-        "caption": "Quarantined tycoon: 'Our gene-edits were supposed to filter this out!'"
+        "caption": "The cyber-doc shrugs at the ministry feed: 'New protocol—only balance above ten million triggers the strain.'"
       },
       {
-        "caption": "'Apparently, the Black Death checks your credit score first.'"
+        "caption": "Two scavengers kick open the vault doors: 'Free real estate, but the bodies still reek of cologne.'"
       }
     ],
     "image": "/editions/images/2026-07-04-4-strip.png",
     "image_provider": "grok"
   },
   "joke": {
-    "setup": "In Neo-London's divided streets, why are the wealthy quarantined amidst Death’s Singular Reign?",
-    "punchline": "Their implants can't patch the plague's elite-only firmware.",
-    "text": "In Neo-London's divided streets, why are the wealthy quarantined amidst Death’s Singular Reign? Their implants can't patch the plague's elite-only firmware."
+    "setup": "Neo-London's last corporate bloodlines logged out of their arcologies overnight with zero trace on the grid.",
+    "punchline": "Even the ripperdocs admit the old plague still only targets the firmware that can afford the patch.",
+    "text": "Neo-London's last corporate bloodlines logged out of their arcologies overnight with zero trace on the grid. Even the ripperdocs admit the old plague still only targets the firmware that can afford the patch."
   },
   "sponsor_ads": {
-    "advertisements": [
+    "ads": [
       {
-        "headline": "NanoShield: Your Invisible Armor",
-        "body": "Protect yourself from the remnants of the Black Death with NanoShield—an advanced nanotechnology that creates an invisible barrier around your skin, ensuring you stand apart from the infected masses."
+        "headline": "Stay Alive with LuxSafe™",
+        "body": "Introducing LuxSafe™, the bio-shield nanotech designed exclusively for the elite. Protect your wealth and health in a world where the past's plague only spares the rich."
       },
       {
-        "headline": "RejuveCorp: Immortality in a Bottle",
-        "body": "Experience the future of life extension with RejuveCorp's proprietary serum. Designed for the privileged few, this elixir regenerates your cells and fortifies your immunity against the persistent specter of wealth-targeted diseases."
+        "headline": "Revive Your Status with Vitae Serum",
+        "body": "Elevate your existence with Vitae Serum, a premium anti-aging treatment that ensures you’ll outlive the competition. Because in 2087, immortality is a luxury."
       },
       {
-        "headline": "EliteSafe: The Last Sanctuary",
-        "body": "Secure your future in the EliteSafe luxury micro-bunkers, expertly crafted to shield you from biological threats. Step into a world of opulence and safety—because the rich deserve to survive in style."
+        "headline": "Shielded Living: Secure Your Haven",
+        "body": "Transform your penthouse into a fortress with Shielded Living's advanced security systems, protecting the privileged from every threat. Live worry-free, because your wealth deserves the best defense."
       }
     ]
   },
-  "generated_at": "2026-07-04T21:46:26.648818+00:00"
+  "generated_at": "2026-07-04T22:08:55.028993+00:00",
+  "hero_image": "/editions/images/2026-07-04-4-hero.png",
+  "hero_image_provider": "grok"
 }

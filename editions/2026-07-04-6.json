@@ -7,83 +7,85 @@
   "divergence": "Rome never fell",
   "story_angle": "investigative exposé uncovering a hidden scandal",
   "roles": [
-    "Story: Moonshot Kimi",
+    "Story: OpenAI",
     "Humor: Grok",
     "Editor: OpenAI"
   ],
-  "headline": "Imperial Consortium's Atomic Ambitions: Unmasking Corporate Manipulation",
-  "deck": "Revelations Expose Deceptive Practices in Rome's Atomic Research, Endangering Suburban Communities",
-  "article": "<p>In the vibrant landscape of the Atomic Age, the Imperial Consortium's influence casts a long shadow over Rome's scientific community, revealing a troubling narrative of corruption and deceit. Recently uncovered evidence shows that high-ranking officials have been secretly collaborating with corporate leaders of the Consortium, steering atomic research for their own self-serving interests.</p><p>An exposé has unveiled a complex network of manipulation and coercion. Documentation indicates that funds earmarked for atomic research have been diverted by the Consortium to benefit their own enterprises, resulting in a public health crisis affecting suburban areas. The consequences are stark: polluted air, contaminated groundwater, and rising cases of radiation-related illnesses highlight the corporate negligence toward public welfare.</p><p>Anonymous whistleblowers have bravely stepped forward, recounting experiences of intimidation and threats aimed at scientists who dared to dissent. One such account, from an individual using the pseudonym 'Praetorian X,' states: 'We were pressured to conform or face dire consequences. Those who opposed the Consortium found their funding cut and their reputations damaged.'</p><p>Public demand for accountability is intensifying, as citizens call for transparency in the intersection of corporate and political interests. The intricate web of influence must be unraveled to prevent the erosion of societal foundations under the weight of unchecked authority. As we navigate the complexities of the atomic era, Rome must confront the hidden forces undermining genuine progress.</p>",
+  "headline": "The Unraveling of the Imperial Energy Consortium: A Call to Arms",
+  "deck": "In a tapestry woven with threads of greed and misconduct, the noble pillars of our empire tremble under the weight of corruption.",
+  "article": "<p>In the year of our Lord nineteen hundred and fifty-four, the revered halls of the Imperial Energy Consortium, once a beacon of Roman ingenuity and progress, are now engulfed in scandal. A covert partnership has emerged between the Consortium and foreign corporations, jeopardizing not only the very sovereignty of Rome but also the welfare of its citizens. As the sun sets on our esteemed empire, shadows of betrayal gather thickly like fog over the Tiber.</p><p>Recent testimonies from brave whistleblowers within the Consortium have revealed a grotesque misappropriation of the empire's energy resources. This betrayal, orchestrated by high-ranking officials who have long prioritized greed over virtue, has sparked a disquieting wave of environmental degradation and public health crises, casting a pall over the lives of innocent Romans. Pollution now chokes the air once filled with the sweet scent of olive blossoms, and passionate citizens are left to contend with ailments born from the negligence of those sworn to protect them.</p><p>At the heart of this insidious web of corruption, figures such as Lucius Aemilius, the Consortium's chief financial steward, and his entourage of sycophants are implicated, their coffers swelling at the expense of the common good. “We have sacrificed our very essence for fleeting profits,” lamented Marcella Cato, a whistleblower and former operations officer, in a clandestine meeting. “The empire's prosperity must not come at the cost of our health and dignity.” Her words resonate with urgency, echoing through the once-gleaming corridors now tarnished by deceit.</p><p>As the Roman populace, ignited by righteous indignation, rises in solidarity, it becomes clear that the moment for action is upon us. The imperial decree issued in response to these revelations is but a feeble attempt to placate the anger of the masses. Citizens, fervent in their quest for accountability, demand sweeping reforms to dismantle this corrupt nexus of power. A reckoning looms on the horizon, challenging the imperial authorities to choose between the relentless pursuit of profit and the sacred duty to uphold the welfare of the empire's beloved citizens. Thus, dear readers, let us rally forth and restore the integrity of Rome, a jewel of civilization, tarnished yet resolutely striving toward redemption.</p>",
   "author": "Foreign Bureau",
   "city": "Rome",
   "weather": {
     "city": "Rome",
-    "condition": "Eternal Sunlit Reverie",
+    "condition": "Eternal Solstice",
     "temp": 72,
     "high": 78,
     "low": 65
   },
   "oped": {
-    "title": "Rome's Unyielding Fire: A Reflection on Atomic Ambition",
-    "author": "Livia Drusus",
-    "body": "While the narrative speaks of shadows and betrayal, the Imperial Consortium's atomic influence is not merely a corporate failing; it is the backbone of Rome's enduring legacy. In 1954, we must reject the timid who fear the flames; these blasts extinguish dissent before it can take root, binding our provinces more tightly than any legion could. The true hubris lies with those who call for restraint, risking our very existence. Rome did not fall; it chose to illuminate."
+    "title": "Let the Consortium Burn",
+    "author": "Cassius Longinus",
+    "body": "The Empire's atomic monopoly unravels and the Senate demands blood. Yet this isn't collapse—it's overdue reckoning. For generations we've worshipped fission like false gods, chaining provinces to radioactive quotas while patricians toast in lead-lined villas. A call to arms? Spare us. Let the reactors crack, the togas char. True Romans once ruled with aqueducts and virtue, not fallout and fear. If eternity demands this poison, let Rome finally die."
   },
   "classifieds": {
     "ads": [
       {
-        "cat": "Real Estate",
-        "text": "Discover the latest residential community in Neo-Rome: Atomica Estates! Enjoy luxurious living in homes built with atomic safety and modern conveniences. Pre-fabricated designs ensure quick move-in while meeting the highest Radiological Standards. Secure your place in this vibrant city!"
-      },
-      {
-        "cat": "Technology",
-        "text": "Calling all Inventors and Innovators! Be at the forefront of atomic advancements! Join our exclusive workshop at the University of Caligula to collaborate on cutting-edge atomic energy applications. Grants available for outstanding prototype designs. Illuminate the future with your creativity!"
-      },
-      {
-        "cat": "Safety Services",
-        "text": "Ensure your safety in the Atomic Age! Enroll in our comprehensive Atomic Safety Course offered by the Roman Fire Brigade. Learn vital skills to protect your family and property from nuclear hazards. Certified instructors will guide you through everything from shelter construction to emergency preparedness. Register today!"
+        "cat": "Housing",
+        "text": "\u001d Experience the future of luxury living! Be the first to secure your atomically-powered villa in the heart of Neo-Rome. Equipped with radiant heating and the latest in plutonium appliances. Only available to discerning citizens. Call today to schedule your exclusive tour!"
       },
       {
         "cat": "Entertainment",
-        "text": "Join us for the excitement of the Atomic Circus! This weekend at the Circus Maximus, witness a spectacular show featuring daring acts performed under the glow of atomic lights! Experience the fusion of tradition and atomic innovation. Tickets are available now!"
+        "text": "\u001d Join the sensational 'Atomic Spectacle' at the Colosseum! An electrifying show featuring the most daring acrobats performing under the glow of atomic lights. Show starts at dusk every Saturday. Tickets available at all Vespasian Kiosks!"
+      },
+      {
+        "cat": "Employment",
+        "text": "\u001d Help shape the future! The Imperial Atomic Energy Commission is seeking skilled workers for our new power plant. Competitive salaries and bonuses for those who bring innovation to our atomic efforts. Join us in leading Rome into the atomic age!"
+      },
+      {
+        "cat": "Travel",
+        "text": "\u001d Discover the wonders of our atomic world! Book your tickets for a luxury cruise to the Mediterranean aboard the SS Plutonium. State-of-the-art amenities powered by the latest atomic technology! Reserve your cabin now—spaces are limited!"
       }
     ]
   },
   "comic_strip": {
-    "title": "Forum Fallout",
+    "title": "Consortium Glow",
     "panels": [
       {
-        "caption": "Consortium legate in laurels: 'Our atomic piles shall illuminate the eternal Empire—Senate caution is for those who falter.'"
+        "caption": "Senator, the Imperial Energy Consortium's atomic vaults list 40 tons of uranium as 'gifts to the legions'."
       },
       {
-        "caption": "Aide whispers: 'The beta leaks already shadow the Subura, sir.' Legate: 'Betrayal is merely unprofitable loyalty.'"
+        "caption": "The Praetorian Prefect nods: 'Correct. Each cohort deserves its own private pile for morale during parades.'"
       },
       {
-        "caption": "Wall silhouette: 'Thus the Imperium's arrogance casts its own atomic shade—Rome endures; its subjects do not.'"
+        "caption": "The lead engineer shrugs: 'Then the vaporized quarter of Rome is merely our new public sauna.'"
       }
     ],
     "image": "/editions/images/2026-07-04-6-strip.png",
     "image_provider": "grok"
   },
   "joke": {
-    "setup": "Why did the Imperial Consortium's atomic shadows stretch from the Palatine to the provinces?",
-    "punchline": "Because their corporate betrayal proved even the atomos is divisible by arrogance!",
-    "text": "Why did the Imperial Consortium's atomic shadows stretch from the Palatine to the provinces? Because their corporate betrayal proved even the atomos is divisible by arrogance!"
+    "setup": "With the Imperial Energy Consortium unraveling faster than a reactor core in a Gaulish winter, the Senate issued its atomic call to arms.",
+    "punchline": "Turns out the only thing the Empire can still enrich is the uranium already inside the Praetorian Guard.",
+    "text": "With the Imperial Energy Consortium unraveling faster than a reactor core in a Gaulish winter, the Senate issued its atomic call to arms. Turns out the only thing the Empire can still enrich is the uranium already inside the Praetorian Guard."
   },
   "sponsor_ads": {
-    "ads": [
+    "advertisements": [
       {
-        "headline": "Discover the Future of Travel with Aeroconditus!",
-        "body": "Soar above the clouds in our luxurious airships, where every journey is an exploration of the skies of a revitalized Roman Empire. Book your ticket today and experience the grandeur of our aerial vistas!"
+        "headline": "Experience the Future with Aegis Atomic Shields!",
+        "body": "Protect your home and family with our state-of-the-art atomic shields, designed for maximum safety against the dangers of modern living. Available now at your local Vitruvian Home Supply!"
       },
       {
-        "headline": "Transform Your Kitchen with the Gladius Cookware Set!",
-        "body": "Cook meals worthy of the Senate with the durable and stylish Gladius Cookware, engineered to endure the heat of any kitchen. Elevate your culinary experience with our innovative, non-stick surfaces!"
+        "headline": "Fly the Skies in Your Own Roman-Made Aeronautica!",
+        "body": "Imagine soaring through the clouds in a luxurious Aeronautica, crafted with precision by our master engineers. Available in a variety of colors, order yours today and join the elite of Rome!"
       },
       {
-        "headline": "Stay Connected with the Electrum Televisor!",
-        "body": "Engage with the world like never before using the Electrum Televisor, the pinnacle of modern communication. Enjoy live broadcasts from across the empire and join in the lively discussions of the era!"
+        "headline": "Step into Tomorrow with Roman Electric Chariots!",
+        "body": "Embrace the elegance of the atomic age with our sleek electric chariots, offering smooth rides and minimal environmental impact. Visit your nearest dealer and revolutionize your travel experience!"
       }
     ]
   },
-  "generated_at": "2026-07-04T21:48:33.174413+00:00"
+  "generated_at": "2026-07-04T22:11:39.157596+00:00",
+  "hero_image": "/editions/images/2026-07-04-6-hero.png",
+  "hero_image_provider": "grok"
 }
