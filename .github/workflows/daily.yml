@@ -4,6 +4,12 @@ on:
   schedule:
     - cron: '1 0 * * *'  # 00:01 UTC daily
   workflow_dispatch:      # Manual trigger
+  push:
+    branches:
+      - main
+    paths:
+      - 'generate.py'
+      - '.github/workflows/daily.yml'
 
 permissions:
   contents: write
