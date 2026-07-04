@@ -138,15 +138,21 @@
         .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
 
         .ad-slot {
-            background: rgba(0,0,0,0.03); border: 1px dashed #999;
-            display: flex; align-items: center; justify-content: center;
-            font-family: var(--font-special); font-size: 0.75rem; color: #666;
-            text-transform: uppercase; letter-spacing: 1px; min-height: 90px;
-            margin: 20px 0; transition: all 0.3s ease;
+            display: none;
         }
-        .ad-slot:hover { background: rgba(0,0,0,0.05); }
-        .ad-slot.leaderboard { width: 100%; min-height: 90px; }
-        .ad-slot.sidebar-ad { min-height: 250px; margin: 0 0 20px 0; }
+        .sponsor-ad {
+            border: 1px solid var(--column-rule);
+            padding: 16px 18px;
+            margin: 20px 0;
+            background: rgba(0,0,0,0.02);
+            transition: all 0.3s ease;
+        }
+        .sponsor-ad:hover { background: rgba(0,0,0,0.04); }
+        .sponsor-ad.leaderboard { width: 100%; }
+        .sponsor-ad.sidebar-ad { margin: 0 0 20px 0; }
+        .sponsor-label { font-family: var(--font-special); font-size: 0.65rem; text-transform: uppercase; letter-spacing: 2px; opacity: 0.5; margin-bottom: 8px; }
+        .sponsor-headline { font-family: var(--font-headline); font-size: 1rem; font-weight: 700; margin-bottom: 6px; line-height: 1.2; }
+        .sponsor-body { font-size: 0.85rem; line-height: 1.5; opacity: 0.85; }
 
         .masthead { text-align: center; padding: 30px 20px; margin: 20px 0; position: relative; }
         .masthead-ornament { font-size: 1.2rem; letter-spacing: 4px; opacity: 0.6; margin-bottom: 8px; }
@@ -200,12 +206,18 @@
         .classified-cat { font-weight: bold; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 1px; color: var(--accent); display: block; margin-bottom: 2px; }
 
         .comic-section { margin: 40px 0; page-break-inside: avoid; }
-        .comic-panel { padding: 30px; text-align: center; position: relative; overflow: hidden; }
-        .comic-title { font-family: var(--font-special); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 20px; opacity: 0.7; }
-        .comic-visual { width: 100%; height: 300px; display: flex; align-items: center; justify-content: center; position: relative; margin-bottom: 15px; }
-        .comic-image { width: 100%; height: 100%; object-fit: cover; border-radius: 4px; }
-        .comic-caption { font-family: var(--font-special); font-size: 0.9rem; font-style: italic; line-height: 1.5; max-width: 500px; margin: 0 auto; }
-        .comic-svg { width: 100%; height: 100%; }
+        .comic-panel { padding: 24px; position: relative; overflow: hidden; }
+        .comic-title { font-family: var(--font-special); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 16px; opacity: 0.7; text-align: center; }
+        .comic-strip-image { width: 100%; max-height: 360px; object-fit: cover; border-radius: 4px; margin-bottom: 16px; display: block; }
+        .comic-panels { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+        @media (max-width: 700px) { .comic-panels { grid-template-columns: 1fr; } }
+        .comic-panel-item { border: 1px solid var(--column-rule); padding: 12px; text-align: center; min-height: 80px; display: flex; align-items: center; justify-content: center; }
+        .comic-panel-num { font-family: var(--font-special); font-size: 0.6rem; opacity: 0.5; margin-bottom: 6px; }
+        .comic-panel-caption { font-family: var(--font-special); font-size: 0.82rem; line-height: 1.4; }
+
+        .joke-box { border: 1px dashed var(--accent); padding: 16px; margin-bottom: 30px; text-align: center; }
+        .joke-setup { font-size: 0.9rem; margin-bottom: 8px; }
+        .joke-punchline { font-family: var(--font-headline); font-weight: 700; font-size: 1rem; color: var(--accent); }
 
         .archive-section { border-top: 2px solid var(--column-rule); padding-top: 40px; margin-top: 40px; }
         .archive-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; margin-top: 20px; }
@@ -220,7 +232,7 @@
         .footer-links a { color: inherit; text-decoration: none; }
         .footer-links a:hover { text-decoration: underline; }
 
-        @media print { .nav-bar, .ad-slot, .archive-section, .footer { display: none !important; } .paper-body { grid-template-columns: 1fr 250px; } body { background: white !important; color: black !important; } }
+        @media print { .nav-bar, .sponsor-ad, .archive-section, .footer { display: none !important; } .paper-body { grid-template-columns: 1fr 250px; } body { background: white !important; color: black !important; } }
 
         .loading { opacity: 0.5; pointer-events: none; }
         .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0; }
@@ -232,7 +244,7 @@
 </head>
 <body data-theme="victorian">
     <div class="container">
-        <div class="ad-slot leaderboard" aria-label="Advertisement"><span>Advertisement</span></div>
+        <div class="sponsor-ad leaderboard" id="ad-top" aria-label="Sponsored"></div>
 
         <nav class="breadcrumb" aria-label="Breadcrumb">
             <a href="/">Home</a> / <span id="breadcrumb-date">Today's Edition</span> / <span id="breadcrumb-timeline">Timeline 8472</span>
@@ -263,19 +275,27 @@
 
                 <div class="article-body" id="article-body"><p>Loading article...</p></div>
 
-                <div class="ad-slot leaderboard" aria-label="Advertisement" style="margin: 30px 0;"><span>Advertisement</span></div>
+                <div class="sponsor-ad leaderboard" id="ad-mid" aria-label="Sponsored" style="margin: 30px 0;"></div>
 
-                <section class="comic-section" aria-label="Daily Comic">
+                <section class="comic-section" aria-label="Comic Strip">
                     <div class="comic-panel" id="comic-panel">
-                        <div class="comic-title" id="comic-title">The Daily Panel</div>
-                        <div class="comic-visual" id="comic-visual"></div>
-                        <p class="comic-caption" id="comic-caption">Loading comic...</p>
+                        <div class="comic-title" id="comic-title">Comic Strip</div>
+                        <img class="comic-strip-image" id="comic-strip-image" alt="" loading="lazy" style="display:none">
+                        <div class="comic-panels" id="comic-panels"></div>
                     </div>
                 </section>
             </article>
 
             <aside class="sidebar" role="complementary">
-                <div class="ad-slot sidebar-ad" aria-label="Advertisement"><span>Ad Space</span></div>
+                <div class="sponsor-ad sidebar-ad" id="ad-sidebar-top" aria-label="Sponsored"></div>
+
+                <section aria-label="Joke of the Day">
+                    <h3 class="section-title">Joke of the Day</h3>
+                    <div class="joke-box" id="joke-box">
+                        <p class="joke-setup" id="joke-setup"></p>
+                        <p class="joke-punchline" id="joke-punchline"></p>
+                    </div>
+                </section>
 
                 <section aria-label="Weather Report">
                     <h3 class="section-title">Weather</h3>
@@ -304,7 +324,7 @@
                     <ul class="classifieds-list" id="classifieds-list"></ul>
                 </section>
 
-                <div class="ad-slot sidebar-ad" aria-label="Advertisement"><span>Ad Space</span></div>
+                <div class="sponsor-ad sidebar-ad" id="ad-sidebar-bottom" aria-label="Sponsored"></div>
             </aside>
         </main>
 
@@ -398,8 +418,10 @@
             const classifieds = [{cat:"For Sale",text:"Pre-war can opener. Rusted but functional. Two bullets or best offer."},{cat:"Employment",text:"Scavenger needed for deep-ruin expedition. Must bring own gas mask."},{cat:"Housing",text:"Lean-to near the old highway. Wind protection minimal. No raiders currently."},{cat:"Services",text:"Radiation detox. 50% success rate. Payment upfront. No refunds."}];
             const weather = {city: rng.pick(["The Capital","New London","Metropolis","Neo-Tokyo","King's Landing","Springfield","Miami Vice","New Eden"]),condition: rng.pick(["Clear","Foggy","Stormy","Bright","Hazy","Windy","Drizzle","Overcast"]),temp: rng.range(15,95),high:0,low:0};
             weather.high = weather.temp + rng.range(3,10); weather.low = weather.temp - rng.range(3,10);
-            const comic = {caption: rng.pick(["'Life goes on. Somehow.'","'The future is here, and it is slightly greasy.'","'I came for the view. I stayed because the door locked.'"]),scene: rng.pick(["street","laboratory","castle","alley","suburb","ruin"])};
-            return {timeline_id: timelineId,theme:theme,date:date.toISOString().split('T')[0],date_display:date.toLocaleDateString('en-US',{weekday:'long',year:'numeric',month:'long',day:'numeric'}),year:year,divergence:divergence,headline:hl.t,deck:hl.d,article:article,author:rng.pick(["Staff Correspondent","Special Reporter","Foreign Bureau","Local Editor"]),city:weather.city,weather:weather,oped:oped,classifieds:classifieds,comic:comic};
+            const comic_strip = { title: "The Daily Panel", panels: [{ caption: comic.caption }] };
+            const joke = { text: "Why read alternate history? Because the main timeline isn't funny enough." };
+            const sponsor_ads = [{ headline: "Multiverse Gazette", body: "All timelines. One subscription. Terms vary by dimension." }];
+            return {timeline_id: timelineId,theme:theme,date:date.toISOString().split('T')[0],date_display:date.toLocaleDateString('en-US',{weekday:'long',year:'numeric',month:'long',day:'numeric'}),year:year,divergence:divergence,headline:hl.t,deck:hl.d,article:article,author:rng.pick(["Staff Correspondent","Special Reporter","Foreign Bureau","Local Editor"]),city:weather.city,weather:weather,oped:oped,classifieds:classifieds,comic_strip:comic_strip,joke:joke,sponsor_ads:sponsor_ads};
         }
 
         function render(paper) {
@@ -425,14 +447,11 @@
             }
 
             const credits = [];
-            if (paper.llm_label) credits.push(`Written by ${paper.llm_label}`);
+            if (paper.roles?.length) credits.push(paper.roles.join(' · '));
+            else if (paper.llm_label) credits.push(`Written by ${paper.llm_label}`);
             if (paper.hero_image_provider) {
                 const heroLabel = paper.hero_image_provider === 'grok' ? 'Grok Imagine' : 'DALL-E';
                 credits.push(`Photo by ${heroLabel}`);
-            }
-            if (paper.comic?.image_provider) {
-                const comicLabel = paper.comic.image_provider === 'grok' ? 'Grok Imagine' : 'DALL-E';
-                credits.push(`Comic art by ${comicLabel}`);
             }
             document.getElementById('edition-credits').textContent = credits.join(' · ');
 
@@ -448,18 +467,58 @@
             document.getElementById('oped-author').textContent = `By ${paper.oped.author}`;
             document.getElementById('oped-body').textContent = paper.oped.body;
             document.getElementById('classifieds-list').innerHTML = paper.classifieds.map(c => `<li class="classified-item"><span class="classified-cat">${c.cat}</span>${c.text}</li>`).join('');
-            document.getElementById('comic-title').textContent = "The Daily Panel";
-            if (paper.comic?.image) {
-                document.getElementById('comic-visual').innerHTML = `<img class="comic-image" src="${paper.comic.image}" alt="${paper.comic.caption}" loading="lazy">`;
-            } else {
-                document.getElementById('comic-visual').innerHTML = generateComicSVG(paper.comic.scene, paper.theme);
-            }
-            document.getElementById('comic-caption').textContent = paper.comic.caption;
+
+            renderSponsorAds(paper.sponsor_ads);
+            renderComicStrip(paper.comic_strip || paper.comic);
+            renderJoke(paper.joke);
+
             document.getElementById('footer-year').textContent = new Date().getFullYear();
             const url = new URL(window.location);
             url.searchParams.set('timeline', paper.timeline_id);
             url.searchParams.set('date', paper.date);
             window.history.replaceState({}, '', url);
+        }
+
+        function renderSponsorAds(ads) {
+            const slots = ['ad-top', 'ad-mid', 'ad-sidebar-top', 'ad-sidebar-bottom'];
+            const fallback = { headline: 'Multiverse Gazette', body: 'Daily news from timelines that never were.' };
+            const list = ads?.length ? ads : [fallback, fallback, fallback];
+            slots.forEach((id, i) => {
+                const ad = list[i % list.length] || fallback;
+                const el = document.getElementById(id);
+                if (!el) return;
+                el.innerHTML = `<div class="sponsor-label">Sponsored</div><div class="sponsor-headline">${ad.headline}</div><div class="sponsor-body">${ad.body}</div>`;
+            });
+        }
+
+        function renderComicStrip(strip) {
+            if (!strip) return;
+            document.getElementById('comic-title').textContent = strip.title || 'Comic Strip';
+            const imgEl = document.getElementById('comic-strip-image');
+            if (strip.image) {
+                imgEl.src = strip.image;
+                imgEl.alt = strip.title || 'Comic strip';
+                imgEl.style.display = 'block';
+            } else {
+                imgEl.style.display = 'none';
+            }
+            const panels = strip.panels || (strip.caption ? [{ caption: strip.caption }] : []);
+            document.getElementById('comic-panels').innerHTML = panels.map((p, i) =>
+                `<div class="comic-panel-item"><div><div class="comic-panel-num">Panel ${i + 1}</div><div class="comic-panel-caption">${p.caption || ''}</div></div></div>`
+            ).join('');
+        }
+
+        function renderJoke(joke) {
+            const box = document.getElementById('joke-box');
+            if (!joke) { box.style.display = 'none'; return; }
+            box.style.display = 'block';
+            if (joke.setup && joke.punchline) {
+                document.getElementById('joke-setup').textContent = joke.setup;
+                document.getElementById('joke-punchline').textContent = joke.punchline;
+            } else {
+                document.getElementById('joke-setup').textContent = '';
+                document.getElementById('joke-punchline').textContent = joke.text || '';
+            }
         }
 
         function updateSEO(paper) {
