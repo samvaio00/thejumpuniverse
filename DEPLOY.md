@@ -54,11 +54,11 @@ The agent can deploy immediately without GitHub Actions secrets.
 |--------|--------------|-------|
 | `CLOUDFLARE_API_TOKEN` | Deploy | Account → Cloudflare Pages → Edit |
 | `CLOUDFLARE_ACCOUNT_ID` | Deploy | From Cloudflare dashboard sidebar |
-| `MOONSHOT_API_KEY` | Daily AI (optional) | Moonshot Kimi text — randomly assigned per timeline |
-| `GROK_API_KEY` | Daily AI + images | Grok text and Grok Imagine images |
-| `OPENAI_API_KEY` | Daily AI + images | OpenAI text and DALL-E images |
+| `MOONSHOT_API_KEY` | Daily AI | **Story** writing (rich alternate-history narrative) |
+| `GROK_API_KEY` | Daily AI + images | **Humor** — op-ed, comic strip, joke of the day; comic strip images |
+| `OPENAI_API_KEY` | Daily AI + images | **Editor** + structure — polishes tone, classifieds, weather, sponsor ads; hero photos |
 
-3. Optional: under **Variables**, set `LLM_PROVIDER` to `moonshot`, `grok`, or `openai` to force one text provider (default: `random` per timeline)
+Each edition uses all three AIs in fixed roles (not random). OpenAI acts as executive editor to remove repetitive phrasing.
 
 > **Note:** If no LLM key is set, the generator uses built-in templates. The site works either way.
 

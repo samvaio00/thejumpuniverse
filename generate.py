@@ -18,9 +18,46 @@ import requests
 # ─── CONFIG ─────────────────────────────────────────────────────────
 OUTPUT_DIR = Path("editions")
 IMAGE_DIR = OUTPUT_DIR / "images"
-LLM_PROVIDER = os.environ.get("LLM_PROVIDER", "random").lower()
 GENERATE_IMAGES = os.environ.get("GENERATE_IMAGES", "true").lower() != "false"
-MAX_ARCHIVE_DAYS = 30  # Keep last 30 days
+MAX_ARCHIVE_DAYS = 30
+
+# Role assignments — each AI plays to its strength
+ROLE_PROVIDERS = {
+    "editor": ("openai", ["moonshot", "grok"]),
+    "story": ("moonshot", ["openai", "grok"]),
+    "humor": ("grok", ["openai", "moonshot"]),
+    "structure": ("openai", ["moonshot"]),
+}
+
+FORBIDDEN_PHRASES = [
+    "stunned observers", "sources close to the matter", "situation remains fluid",
+    "declined to comment", "only time will tell", "mixed reactions",
+    "changes everything, and yet it changes nothing", "footnote in the annals",
+    "implications for the average citizen remain unclear", "cautious optimism",
+    "international observers have expressed", "never thought I'd see the day",
+]
+
+STORY_ANGLES = [
+    "investigative exposé uncovering a hidden scandal",
+    "intimate human-interest profile of an ordinary person caught in events",
+    "triumphant breakthrough celebrated by the establishment",
+    "somber obituary for a lost era or institution",
+    "absurdist satire treating catastrophe with deadpan bureaucracy",
+    "propaganda triumph narrated with unsettling sincerity",
+    "technical deep-dive explaining the mechanics of the divergence",
+    "eyewitness dispatch from the scene with vivid sensory detail",
+]
+
+THEME_GUIDE = """
+- victorian: ornate formal prose, empire and industry, brass and fog, moral indignation
+- artdeco: jazz-age swagger, luxury and excess, champagne metaphors, breathless optimism
+- soviet: ALL CAPS headlines, collective pronouns, steel quotas, heroic worker archetypes
+- cyberpunk: corporate dystopia, neon and rain, body horror undertones, slang and jargon
+- medieval: chronicle voice, divine providence, feudal hierarchy, archaic diction
+- atomic: mid-century Americana, suburban anxiety, cheerful paranoia, product placement tone
+- vaporwave: ironic nostalgia, mall culture, pastel absurdism, consumer satire
+- wasteland: sparse brutal prose, survival math, rust and dust, gallows humor
+"""
 
 TEXT_PROVIDERS = {
     "moonshot": {
@@ -108,38 +145,16 @@ def available_image_providers():
     return [name for name, cfg in IMAGE_PROVIDERS.items() if cfg["api_key"]]
 
 
-def pick_text_provider(rng):
-    providers = available_text_providers()
-    if not providers:
-        return None
-    if LLM_PROVIDER in TEXT_PROVIDERS and LLM_PROVIDER in providers:
-        return LLM_PROVIDER
-    if LLM_PROVIDER == "auto":
-        return providers[0]
-    return rng.pick(providers)
+def resolve_role(role):
+    """Pick provider for a role, falling back if API key missing."""
+    primary, fallbacks = ROLE_PROVIDERS[role]
+    for name in [primary] + fallbacks:
+        if TEXT_PROVIDERS.get(name, {}).get("api_key"):
+            return name
+    return None
 
 
-def pick_image_provider(rng):
-    providers = available_image_providers()
-    if not providers:
-        return None
-    return rng.pick(providers)
-
-
-def parse_llm_json(raw):
-    if not raw:
-        return None
-    cleaned = raw.strip()
-    if cleaned.startswith("```"):
-        cleaned = re.sub(r"^```(?:json)?\s*", "", cleaned)
-        cleaned = re.sub(r"\s*```$", "", cleaned)
-    try:
-        return json.loads(cleaned)
-    except json.JSONDecodeError:
-        return None
-
-
-def generate_with_llm(prompt, provider_name):
+def generate_with_llm(prompt, provider_name, max_tokens=800, temperature=0.9):
     """Generate text with a specific OpenAI-compatible provider."""
     provider = TEXT_PROVIDERS.get(provider_name)
     if not provider or not provider["api_key"]:
@@ -155,17 +170,39 @@ def generate_with_llm(prompt, provider_name):
             json={
                 "model": provider["model"],
                 "messages": [{"role": "user", "content": prompt}],
-                "temperature": 0.9,
-                "max_tokens": 800,
+                "temperature": temperature,
+                "max_tokens": max_tokens,
             },
-            timeout=60,
+            timeout=90,
         )
         resp.raise_for_status()
         content = resp.json()["choices"][0]["message"]["content"].strip()
-        print(f"Text LLM: {provider_name} ({provider['model']})")
+        print(f"  [{provider_name}] {provider['model']}")
         return content
     except Exception as e:
-        print(f"Text LLM error ({provider_name}): {e}")
+        print(f"  LLM error ({provider_name}): {e}")
+        return None
+
+
+def pick_image_provider(preferred):
+    """Use preferred image provider if available, else the other."""
+    order = [preferred, "grok" if preferred == "openai" else "openai"]
+    for name in order:
+        if name in IMAGE_PROVIDERS and IMAGE_PROVIDERS[name]["api_key"]:
+            return name
+    return None
+
+
+def parse_llm_json(raw):
+    if not raw:
+        return None
+    cleaned = raw.strip()
+    if cleaned.startswith("```"):
+        cleaned = re.sub(r"^```(?:json)?\s*", "", cleaned)
+        cleaned = re.sub(r"\s*```$", "", cleaned)
+    try:
+        return json.loads(cleaned)
+    except json.JSONDecodeError:
         return None
 
 
@@ -212,59 +249,97 @@ def save_image_file(image_b64, filename):
         f.write(base64.b64decode(image_b64))
     return f"/editions/images/{filename}"
 
-# ─── PROMPT ENGINEERING ─────────────────────────────────────────────
-HEADLINE_PROMPT = """You are the editor-in-chief of a newspaper from an alternate timeline.
+# ─── PROMPTS ────────────────────────────────────────────────────────
+BRIEF_PROMPT = """You are the assigning editor of an alternate-history newspaper.
 
-Divergence point: {divergence}
-Theme: {theme}
-Year: {year}
-Date: {date}
-
-Write a newspaper headline and deck (subtitle) for the main story. The tone should match the theme:
-- victorian: ornate, formal, 19th-century journalistic style
-- artdeco: jazz-age exuberance, 1920s-30s sophistication
-- soviet: propaganda-heavy, collective-focused, 1960s communist
-- cyberpunk: dystopian tech, corporate-speak, 2080s
-- medieval: chronicle-style, religious undertones, 1300s
-- atomic: optimistic mid-century, 1950s Americana, slightly paranoid
-- vaporwave: ironic 80s/90s nostalgia, consumer-culture satire
-- wasteland: gritty survival, post-apocalyptic, sparse prose
-
-Return ONLY a JSON object with this exact structure:
-{{"headline": "...", "deck": "...", "article": "..."}}
-
-The article should be 4-5 paragraphs of newspaper prose, 300-400 words total."""
-
-OPED_PROMPT = """You are an op-ed columnist for a newspaper from an alternate timeline where {divergence}.
-Theme: {theme}. Year: {year}.
-
-Write a short op-ed (150 words) with a provocative title and author name appropriate to the era/theme.
-Return ONLY JSON: {{"title": "...", "author": "...", "body": "..."}}"""
-
-CLASSIFIED_PROMPT = """You are writing classified ads for a newspaper from a timeline where {divergence}.
-Theme: {theme}. Year: {year}.
-
-Write 4 short classified ads (1-2 sentences each) in categories: For Sale, Employment, Housing, Services, Lost, Wanted.
-Return ONLY a JSON array of objects: [{{"cat": "...", "text": "..."}}, ...]"""
-
-WEATHER_PROMPT = """For a newspaper in a timeline where {divergence}, theme: {theme}, year: {year}, 
-write a weather forecast for the capital city. Return ONLY JSON:
-{{"city": "...", "condition": "...", "temp": 72, "high": 78, "low": 65}}
-The condition should be a creatively named weather state matching the theme (e.g., "Phlogiston Clear" for victorian)."""
-
-COMIC_PROMPT = """Write a one-panel comic caption for a newspaper from a timeline where {divergence}.
-Theme: {theme}. The caption should be a single line of dialogue or observation, dryly humorous.
-Return ONLY JSON: {{"caption": "...", "scene": "..."}}
-Scene should be one of: clockwork, airship, laboratory, street, skyscraper, club, car, park, factory, monument, apartment, train, alley, terminal, rooftop, market, castle, village, forest, tavern, suburb, diner, shelter, fair, mall, beach, arcade, desert, ruin, camp, vehicle"""
-
-HERO_IMAGE_PROMPT = """Editorial news photograph for an alternate-history newspaper.
-Theme: {theme}. Year: {year}. Headline: {headline}
 Divergence: {divergence}
-Style: dramatic photojournalism matching the {theme} era. No text or watermarks."""
+Theme: {theme} | Year: {year} | Date: {date}
+Story angle for today: {angle}
 
-COMIC_IMAGE_PROMPT = """Single-panel newspaper comic illustration for an alternate-history timeline.
-Theme: {theme}. Year: {year}. Scene: {scene}. Mood from caption: {caption}
-Style: {theme} era newspaper comic art. No text, captions, or speech bubbles in the image."""
+{theme_guide}
+
+Create a story brief that ensures THIS edition feels distinct from generic news.
+Return ONLY JSON:
+{{"topic": "specific subject", "tone": "one-sentence tone directive", "voice": "narrative voice to use", "key_details": ["detail1","detail2","detail3"], "avoid": ["cliché phrase to ban", "..."]}}"""
+
+STORY_PROMPT = """You are the lead reporter for an alternate-history newspaper. Write the main story.
+
+Divergence: {divergence}
+Theme: {theme} | Year: {year}
+Editor brief: {brief}
+
+CRITICAL RULES:
+- Match the {theme} voice exactly — see theme guide below
+- Use the assigned story angle: do NOT write generic "officials declined to comment" filler
+- NEVER use these phrases: {forbidden}
+- Include specific names, places, numbers, and quotes
+- Article: 4-5 paragraphs, 320-420 words, varied sentence rhythm
+
+{theme_guide}
+
+Return ONLY JSON: {{"headline": "...", "deck": "...", "article": "..."}}
+Article body: separate paragraphs with \\n\\n (not HTML)."""
+
+OPED_PROMPT = """Write a sharp, provocative op-ed reacting to today's main story.
+
+Main headline: {headline}
+Divergence: {divergence} | Theme: {theme} | Year: {year}
+Take an unexpected angle — contrarian, satirical, or emotionally raw.
+150 words max. Return ONLY JSON: {{"title": "...", "author": "...", "body": "..."}}"""
+
+COMIC_STRIP_PROMPT = """Write a 3-panel newspaper comic strip satirizing today's main story.
+
+Headline: {headline}
+Theme: {theme} | Divergence: {divergence}
+Style: witty, dry, newspaper-comic humor tied directly to the story — not random gags.
+
+Return ONLY JSON:
+{{"title": "strip name", "panels": [
+  {{"caption": "panel 1 dialogue or narration"}},
+  {{"caption": "panel 2 ..."}},
+  {{"caption": "panel 3 punchline"}}
+]}}"""
+
+JOKE_PROMPT = """Write ONE joke of the day for a newspaper in a timeline where {divergence}.
+Theme: {theme}. It must reference or riff on today's headline: "{headline}"
+Make it clever and era-appropriate. Can be one-liner or setup/punchline.
+
+Return ONLY JSON: {{"setup": "...", "punchline": "...", "text": "full joke as readers see it"}}"""
+
+CLASSIFIED_PROMPT = """Write 4 in-universe classified ads for theme: {theme}, year: {year}.
+Divergence: {divergence}. Each ad should feel native to this timeline.
+Return ONLY JSON array: [{{"cat": "...", "text": "..."}}, ...]"""
+
+SPONSOR_ADS_PROMPT = """Write 3 short native advertisements that belong in a {theme}-era newspaper.
+Year: {year}. Divergence: {divergence}. In-universe products/services, 1-2 sentences each.
+Return ONLY JSON array: [{{"headline": "...", "body": "..."}}, ...]"""
+
+WEATHER_PROMPT = """Weather forecast for capital city in {theme} timeline, year {year}.
+Divergence: {divergence}. Invent a creatively themed condition name.
+Return ONLY JSON: {{"city": "...", "condition": "...", "temp": 72, "high": 78, "low": 65}}"""
+
+EDITOR_PROMPT = """You are the executive editor. Polish this entire newspaper edition.
+
+Remove repetitive phrases, clichés, and samey tone across sections.
+Each section must sound distinct. Preserve facts and JSON structure exactly.
+
+FORBIDDEN phrases (remove or rewrite any occurrence):
+{forbidden}
+
+Edition JSON to edit:
+{content}
+
+Return the COMPLETE revised edition as JSON with these keys:
+headline, deck, article, oped, classifieds, comic_strip, joke, sponsor_ads, weather
+Keep article as plain text with \\n\\n between paragraphs (not HTML tags)."""
+
+HERO_IMAGE_PROMPT = """Editorial news photograph, {theme} era alternate history.
+Year {year}. Story: {headline}. {divergence}
+Dramatic photojournalism. No text or watermarks."""
+
+COMIC_STRIP_IMAGE_PROMPT = """Three-panel newspaper comic strip, left to right, {theme} era style.
+Story satire: {headline}. Panels: {panel_summary}
+Funny, witty. No speech bubble text in image — visuals only."""
 
 # ─── FALLBACK GENERATORS (no LLM) ───────────────────────────────────
 def fallback_headline(rng, theme, year, divergence):
@@ -313,11 +388,11 @@ def fallback_headline(rng, theme, year, divergence):
     h, d = rng.pick(templates.get(theme, templates["wasteland"]))
 
     article_paras = [
-        f"In a development that has stunned observers across the nation, {h.lower()}. Sources close to the matter have confirmed that the situation remains fluid.",
-        f"Officials in {rng.pick(['the capital','the provinces','the central district'])} have declined to comment, but witnesses describe a scene of both confusion and cautious optimism. The implications for the average citizen remain unclear.",
-        f"Historical records suggest a similar event occurred nearly a century ago in this timeline, though on a much smaller scale. International observers have expressed both admiration and concern.",
-        f"Residents of the capital expressed mixed reactions. 'I never thought I'd see the day,' said one local merchant. 'It changes everything, and yet it changes nothing.'",
-        f"Only time will tell whether this marks the beginning of a new era or merely a footnote in the annals of this parallel history."
+        f"Records from the {rng.pick(['Metropolitan Archives','Provincial Registry','Central Bureau'])} confirm that {h.lower()} The report cites {rng.pick([' seventeen',' forty-three',' six'])} independent witnesses.",
+        f"{rng.pick(['Professor Aldous Crane','Inspector Venn','Dr. Eliza Marsh'])} told this paper the event exposes tensions long simmering beneath official calm. 'We mapped this possibility in {year - 12},' they said. 'No one wanted the map.'",
+        f"In the {rng.pick(['docklands','cathedral quarter','merchant district'])}, residents described {rng.pick(['a sound like tearing silk','an unnatural green light','a silence that lasted three minutes'])}. One shopkeeper counted the incident in inventory losses rather than superlatives.",
+        f"The {rng.pick(['Board of Censors','Ministry of Continuity','Office of Correct Records'])} issued a {rng.range(200, 900)}-word statement that answered no questions and raised {rng.range(2, 9)} new ones.",
+        f"Tomorrow's edition will follow the money, the motive, and the one detail every spokesperson has carefully avoided naming.",
     ]
     return {"headline": h, "deck": d, "article": "\n\n".join(article_paras)}
 
@@ -387,120 +462,219 @@ def fallback_classifieds(rng, theme):
     }
     return all_ads.get(theme, all_ads["wasteland"])
 
+
+def fallback_comic_strip(rng, headline, theme):
+    return {
+        "title": rng.pick(["The Bureaucrat", "Citizen Smith", "Breaking News"]),
+        "panels": [
+            {"caption": f"Did you hear about {headline[:40]}...?"},
+            {"caption": "I prefer timelines where that sort of thing is impossible."},
+            {"caption": "Welcome to this one."},
+        ],
+    }
+
+
+def fallback_joke(rng, headline, theme):
+    jokes = {
+        "victorian": {"setup": "Why did the aether-engine refuse overtime?", "punchline": "It was already phased for the weekend.", "text": "Why did the aether-engine refuse overtime? It was already phased for the weekend."},
+        "wasteland": {"setup": "What's the difference between optimism and a canteen?", "punchline": "The canteen eventually runs dry.", "text": "What's the difference between optimism and a canteen? The canteen eventually runs dry."},
+    }
+    default = {"setup": "How do you report on today's headline?", "punchline": "Very carefully, in an alternate timeline.", "text": "How do you report on today's headline? Very carefully, in an alternate timeline."}
+    return jokes.get(theme, default)
+
+
+def fallback_sponsor_ads(rng, theme):
+    ads = {
+        "victorian": [{"headline": "Pneumatic Post Express", "body": "Your telegram in four minutes or we eat the stamp."}, {"headline": "Brass & Sons Automata", "body": "Servants that never sleep. Ethics sold separately."}, {"headline": "Dr. Morley's Elixir", "body": "Cures melancholy, gout, and skepticism."}],
+        "cyberpunk": [{"headline": "NeuroLink™ Basic", "body": "First month free. Memories are not included."}, {"headline": "CorpSec Insurance", "body": "When your identity gets hacked, we hack back."}, {"headline": "SynthMeal Blocks", "body": "Tastes like chicken because it legally has to."}],
+    }
+    return ads.get(theme, [{"headline": "Multiverse Gazette Subscriptions", "body": "One timeline. Daily delivery. Zero refunds across dimensions."}, {"headline": "Local Merchants Union", "body": "Shop where history went differently."}, {"headline": "Public Notice Board", "body": "Your ad could be here. This one is free."}])
+
+
+def article_to_html(article):
+    """Convert plain-text article paragraphs to HTML."""
+    if "<p>" in article:
+        return article
+    paras = [p.strip() for p in article.split("\n\n") if p.strip()]
+    return "".join(f"<p>{p}</p>" for p in paras)
+
+
+def run_editor_pass(content, editor_provider):
+    """Editor AI polishes all text sections for variety and removes clichés."""
+    if not editor_provider:
+        return content
+
+    draft = {
+        "headline": content.get("headline"),
+        "deck": content.get("deck"),
+        "article": content.get("article", "").replace("<p>", "").replace("</p>", "\n\n"),
+        "oped": content.get("oped"),
+        "classifieds": content.get("classifieds"),
+        "comic_strip": content.get("comic_strip"),
+        "joke": content.get("joke"),
+        "sponsor_ads": content.get("sponsor_ads"),
+        "weather": content.get("weather"),
+    }
+
+    prompt = EDITOR_PROMPT.format(
+        forbidden=", ".join(FORBIDDEN_PHRASES[:12]),
+        content=json.dumps(draft, indent=2),
+    )
+    revised = parse_llm_json(generate_with_llm(prompt, editor_provider, max_tokens=2500, temperature=0.4))
+    if not revised:
+        return content
+
+    print(f"  Editor pass: {TEXT_PROVIDERS[editor_provider]['label']}")
+    for key in ("headline", "deck", "article", "oped", "classifieds", "comic_strip", "joke", "sponsor_ads", "weather"):
+        if revised.get(key):
+            content[key] = revised[key]
+    if content.get("article") and "<p>" not in content["article"]:
+        content["article"] = article_to_html(content["article"])
+    return content
+
+
 # ─── MAIN GENERATION ────────────────────────────────────────────────
 def generate_edition(date=None, timeline_id=None, with_images=None):
     if date is None:
         date = datetime.now(timezone.utc)
-
     if with_images is None:
         with_images = GENERATE_IMAGES
 
-    date_seed = date.year * 10000 + (date.month) * 100 + date.day
-
     if timeline_id is None:
-        day_of_year = date.timetuple().tm_yday
-        timeline_id = (day_of_year % len(THEMES)) + 1
+        timeline_id = (date.timetuple().tm_yday % len(THEMES)) + 1
 
-    seed = timeline_id * 1000000 + date_seed
+    seed = timeline_id * 1000000 + date.year * 10000 + date.month * 100 + date.day
     rng = SeededRandom(seed)
-
     theme = THEMES[(timeline_id - 1) % len(THEMES)]
     year = {"victorian": 1890, "artdeco": 1927, "soviet": 1962, "cyberpunk": 2087,
             "medieval": 1347, "atomic": 1954, "vaporwave": 1986, "wasteland": 2147}[theme] + (date.year - 2026)
-
     divergence = rng.pick(DIVERGENCES)
-    text_provider = pick_text_provider(rng)
+    angle = rng.pick(STORY_ANGLES)
     date_slug = date.strftime("%Y-%m-%d")
+    forbidden = ", ".join(FORBIDDEN_PHRASES)
 
-    # Headline
+    editor_p = resolve_role("editor")
+    story_p = resolve_role("story")
+    humor_p = resolve_role("humor")
+    structure_p = resolve_role("structure")
+
+    print(f"Timeline {timeline_id} ({theme}): story={story_p}, humor={humor_p}, editor={editor_p}")
+
+    ctx = {"divergence": divergence, "theme": theme, "year": year,
+           "date": date.strftime("%B %d, %Y"), "angle": angle, "theme_guide": THEME_GUIDE,
+           "forbidden": forbidden}
+
+    # 1. Editor assigns story brief
+    brief = None
+    if editor_p:
+        brief = parse_llm_json(generate_with_llm(BRIEF_PROMPT.format(**ctx), editor_p, temperature=0.7))
+    brief_text = json.dumps(brief) if brief else f"angle: {angle}, theme: {theme}"
+
+    # 2. Moonshot (story) writes main article
     headline_data = None
-    if text_provider:
-        prompt = HEADLINE_PROMPT.format(
-            divergence=divergence, theme=theme, year=year,
-            date=date.strftime("%B %d, %Y"),
-        )
-        headline_data = parse_llm_json(generate_with_llm(prompt, text_provider))
-
+    if story_p:
+        headline_data = parse_llm_json(generate_with_llm(
+            STORY_PROMPT.format(brief=brief_text, **ctx), story_p, max_tokens=1200))
     if not headline_data:
         headline_data = fallback_headline(rng, theme, year, divergence)
+    headline_data["article"] = article_to_html(headline_data.get("article", ""))
 
-    # Op-Ed
-    oped_data = None
-    if text_provider:
-        oped_data = parse_llm_json(generate_with_llm(
-            OPED_PROMPT.format(divergence=divergence, theme=theme, year=year),
-            text_provider,
-        ))
-    if not oped_data:
-        oped_data = fallback_oped(rng, theme)
+    ctx["headline"] = headline_data["headline"]
 
-    # Classifieds
-    classifieds_data = None
-    if text_provider:
-        classifieds_data = parse_llm_json(generate_with_llm(
-            CLASSIFIED_PROMPT.format(divergence=divergence, theme=theme, year=year),
-            text_provider,
-        ))
-    if not classifieds_data:
-        classifieds_data = fallback_classifieds(rng, theme)
+    # 3. Grok (humor) — op-ed, comic strip, joke
+    oped_data = fallback_oped(rng, theme)
+    if humor_p:
+        parsed = parse_llm_json(generate_with_llm(OPED_PROMPT.format(**ctx), humor_p))
+        if parsed:
+            oped_data = parsed
 
-    # Weather
-    weather_data = {"city": rng.pick(["The Capital", "New London", "Metropolis", "Neo-Tokyo", "King's Landing", "Springfield", "Miami Vice", "New Eden"]),
-                    "condition": rng.pick(["Clear", "Foggy", "Stormy", "Bright", "Hazy", "Windy", "Drizzle", "Overcast"]),
+    comic_strip = fallback_comic_strip(rng, headline_data["headline"], theme)
+    if humor_p:
+        parsed = parse_llm_json(generate_with_llm(COMIC_STRIP_PROMPT.format(**ctx), humor_p))
+        if parsed and parsed.get("panels"):
+            comic_strip = parsed
+
+    joke = fallback_joke(rng, headline_data["headline"], theme)
+    if humor_p:
+        parsed = parse_llm_json(generate_with_llm(JOKE_PROMPT.format(**ctx), humor_p))
+        if parsed:
+            joke = parsed
+
+    # 4. OpenAI (structure) — classifieds, weather, sponsor ads
+    classifieds_data = fallback_classifieds(rng, theme)
+    sponsor_ads = fallback_sponsor_ads(rng, theme)
+    weather_data = {"city": rng.pick(["The Capital", "New London", "Metropolis", "Neo-Tokyo",
+                    "King's Landing", "Springfield", "Miami Vice", "New Eden"]),
+                    "condition": rng.pick(["Clear", "Foggy", "Stormy", "Bright"]),
                     "temp": rng.range(15, 95), "high": 0, "low": 0}
     weather_data["high"] = weather_data["temp"] + rng.range(3, 10)
     weather_data["low"] = weather_data["temp"] - rng.range(3, 10)
 
-    # Comic text
-    comic_data = None
-    if text_provider:
-        comic_data = parse_llm_json(generate_with_llm(
-            COMIC_PROMPT.format(divergence=divergence, theme=theme),
-            text_provider,
-        ))
-    if not comic_data:
-        comic_data = {
-            "caption": rng.pick([
-                "'Life goes on. Somehow.'",
-                "'The future is here, and it is slightly greasy.'",
-                "'I came for the view. I stayed because the door locked.'",
-            ]),
-            "scene": rng.pick(["street", "laboratory", "castle", "alley", "suburb", "ruin"]),
-        }
+    if structure_p:
+        parsed = parse_llm_json(generate_with_llm(CLASSIFIED_PROMPT.format(**ctx), structure_p))
+        if parsed:
+            classifieds_data = parsed
+        parsed = parse_llm_json(generate_with_llm(WEATHER_PROMPT.format(**ctx), structure_p, temperature=0.7))
+        if parsed:
+            weather_data = parsed
+        parsed = parse_llm_json(generate_with_llm(SPONSOR_ADS_PROMPT.format(**ctx), structure_p))
+        if parsed:
+            sponsor_ads = parsed
 
-    # AI images (Grok or OpenAI only)
-    hero_image = None
-    hero_image_provider = None
-    comic_image = None
-    comic_image_provider = None
+    content = {
+        "headline": headline_data["headline"],
+        "deck": headline_data["deck"],
+        "article": headline_data["article"],
+        "oped": oped_data,
+        "classifieds": classifieds_data,
+        "comic_strip": comic_strip,
+        "joke": joke,
+        "sponsor_ads": sponsor_ads,
+        "weather": weather_data,
+    }
 
-    if with_images and available_image_providers():
-        hero_provider = pick_image_provider(rng)
-        comic_provider = pick_image_provider(rng)
+    # 5. Editor polishes everything
+    content = run_editor_pass(content, editor_p)
 
-        hero_prompt = HERO_IMAGE_PROMPT.format(
-            theme=theme, year=year,
-            headline=headline_data["headline"],
-            divergence=divergence,
-        )
-        hero_b64 = generate_image(hero_prompt, hero_provider)
-        if hero_b64:
-            hero_image = save_image_file(hero_b64, f"{date_slug}-{timeline_id}-hero.png")
-            hero_image_provider = hero_provider
+    # 6. Images — OpenAI for hero photo, Grok for comic strip
+    hero_image = hero_image_provider = None
+    strip_image = strip_image_provider = None
 
-        comic_prompt = COMIC_IMAGE_PROMPT.format(
-            theme=theme, year=year,
-            scene=comic_data["scene"],
-            caption=comic_data["caption"],
-        )
-        comic_b64 = generate_image(comic_prompt, comic_provider)
-        if comic_b64:
-            comic_image = save_image_file(comic_b64, f"{date_slug}-{timeline_id}-comic.png")
-            comic_image_provider = comic_provider
+    if with_images:
+        hero_provider = pick_image_provider("openai")
+        if hero_provider:
+            hero_b64 = generate_image(
+                HERO_IMAGE_PROMPT.format(theme=theme, year=year,
+                    headline=content["headline"], divergence=divergence),
+                hero_provider,
+            )
+            if hero_b64:
+                hero_image = save_image_file(hero_b64, f"{date_slug}-{timeline_id}-hero.png")
+                hero_image_provider = hero_provider
 
-    if comic_image:
-        comic_data["image"] = comic_image
-        comic_data["image_provider"] = comic_image_provider
+        comic_provider = pick_image_provider("grok")
+        if comic_provider:
+            panel_summary = " | ".join(p.get("caption", "")[:60] for p in content["comic_strip"].get("panels", [])[:3])
+            comic_b64 = generate_image(
+                COMIC_STRIP_IMAGE_PROMPT.format(theme=theme, headline=content["headline"],
+                    panel_summary=panel_summary),
+                comic_provider,
+            )
+            if comic_b64:
+                strip_image = save_image_file(comic_b64, f"{date_slug}-{timeline_id}-strip.png")
+                strip_image_provider = comic_provider
+
+    if strip_image:
+        content["comic_strip"]["image"] = strip_image
+        content["comic_strip"]["image_provider"] = strip_image_provider
+
+    roles = []
+    if story_p:
+        roles.append(f"Story: {TEXT_PROVIDERS[story_p]['label']}")
+    if humor_p:
+        roles.append(f"Humor: {TEXT_PROVIDERS[humor_p]['label']}")
+    if editor_p:
+        roles.append(f"Editor: {TEXT_PROVIDERS[editor_p]['label']}")
 
     edition = {
         "timeline_id": timeline_id,
@@ -509,18 +683,20 @@ def generate_edition(date=None, timeline_id=None, with_images=None):
         "date_display": date.strftime("%A, %B %d, %Y"),
         "year": year,
         "divergence": divergence,
-        "llm_provider": text_provider,
-        "llm_label": TEXT_PROVIDERS[text_provider]["label"] if text_provider else "Template",
-        "headline": headline_data["headline"],
-        "deck": headline_data["deck"],
-        "article": headline_data["article"],
+        "story_angle": angle,
+        "roles": roles,
+        "headline": content["headline"],
+        "deck": content["deck"],
+        "article": content["article"],
         "author": rng.pick(["Staff Correspondent", "Special Reporter", "Foreign Bureau", "Local Editor"]),
-        "city": weather_data["city"],
-        "weather": weather_data,
-        "oped": oped_data,
-        "classifieds": classifieds_data,
-        "comic": comic_data,
-        "generated_at": datetime.now(timezone.utc).isoformat()
+        "city": content["weather"].get("city", weather_data["city"]),
+        "weather": content["weather"],
+        "oped": content["oped"],
+        "classifieds": content["classifieds"],
+        "comic_strip": content["comic_strip"],
+        "joke": content["joke"],
+        "sponsor_ads": content["sponsor_ads"],
+        "generated_at": datetime.now(timezone.utc).isoformat(),
     }
 
     if hero_image:

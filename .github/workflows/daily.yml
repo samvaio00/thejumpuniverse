@@ -33,7 +33,6 @@ jobs:
 
       - name: Generate all 8 timelines
         env:
-          LLM_PROVIDER: random
           GENERATE_IMAGES: "true"
           MOONSHOT_API_KEY: ${{ secrets.MOONSHOT_API_KEY }}
           GROK_API_KEY: ${{ secrets.GROK_API_KEY }}

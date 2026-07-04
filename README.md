@@ -32,9 +32,8 @@ python -m http.server 8000
 1. Fork repo → Settings → Secrets → Actions
 2. Add `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` for deploy
 3. Add one or more LLM keys: `MOONSHOT_API_KEY`, `GROK_API_KEY`, or `OPENAI_API_KEY`
-4. Images use **Grok** and **OpenAI** only; text is randomly assigned across all configured LLMs per timeline
-5. Optional: set repo variable `LLM_PROVIDER` to force one text provider (`random` by default)
-6. Workflow runs daily at 00:01 UTC automatically
+4. Images use **Grok** (comic strip) and **OpenAI** (hero photo). Text uses fixed roles: Moonshot=story, Grok=humor, OpenAI=editor
+5. Workflow runs daily at 00:01 UTC automatically
 
 ## Monetization
 
