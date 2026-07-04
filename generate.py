@@ -393,9 +393,18 @@ CLASSIFIED_PROMPT = """Write 4 in-universe classified ads for theme: {theme}, ye
 Divergence: {divergence}. Each ad should feel native to this timeline.
 Return ONLY JSON array: [{{"cat": "...", "text": "..."}}, ...]"""
 
-SPONSOR_ADS_PROMPT = """Write 3 short native advertisements that belong in a {theme}-era newspaper.
-Year: {year}. Divergence: {divergence}. In-universe products/services, 1-2 sentences each.
-Return ONLY JSON array: [{{"headline": "...", "body": "..."}}, ...]"""
+SPONSOR_ADS_PROMPT = """Write 4 bizarre, witty IN-UNIVERSE display advertisements for today's newspaper.
+
+Theme: {theme} | Year: {year} | Date: {date}
+Divergence: {divergence}
+Today's headline: "{headline}"
+
+Each ad sells a fictitious product, service, or public notice that could only exist in THIS timeline.
+Make them weird, dryly funny, or unsettling — never generic "subscribe now" filler.
+At least two ads should riff on today's headline or the divergence. Era-appropriate voice for {theme}.
+
+Return ONLY a JSON array of exactly 4 objects:
+[{{"headline": "...", "body": "1-2 sentences", "tagline": "optional fine print or disclaimer"}}, ...]"""
 
 WEATHER_PROMPT = """Weather forecast for capital city in {theme} timeline, year {year}.
 Divergence: {divergence}. Invent a creatively themed condition name.
@@ -566,12 +575,110 @@ def fallback_joke(rng, headline, theme):
     return jokes.get(theme, default)
 
 
-def fallback_sponsor_ads(rng, theme):
-    ads = {
-        "victorian": [{"headline": "Pneumatic Post Express", "body": "Your telegram in four minutes or we eat the stamp."}, {"headline": "Brass & Sons Automata", "body": "Servants that never sleep. Ethics sold separately."}, {"headline": "Dr. Morley's Elixir", "body": "Cures melancholy, gout, and skepticism."}],
-        "cyberpunk": [{"headline": "NeuroLink™ Basic", "body": "First month free. Memories are not included."}, {"headline": "CorpSec Insurance", "body": "When your identity gets hacked, we hack back."}, {"headline": "SynthMeal Blocks", "body": "Tastes like chicken because it legally has to."}],
+def normalize_sponsor_ads(raw, rng=None, theme=None, headline="", divergence=""):
+    """Coerce LLM output into a list of 4 ad dicts."""
+    if not raw:
+        return fallback_sponsor_ads(rng, theme, headline, divergence) if rng and theme else []
+
+    if isinstance(raw, dict):
+        for key in ("ads", "advertisements", "sponsor_ads", "items"):
+            if isinstance(raw.get(key), list):
+                raw = raw[key]
+                break
+        if isinstance(raw, dict) and raw.get("headline") and raw.get("body"):
+            raw = [raw]
+
+    if not isinstance(raw, list):
+        return fallback_sponsor_ads(rng, theme, headline, divergence) if rng and theme else []
+
+    ads = []
+    for item in raw:
+        if not isinstance(item, dict):
+            continue
+        headline_text = item.get("headline") or item.get("title")
+        body_text = item.get("body") or item.get("text")
+        if headline_text and body_text:
+            ad = {"headline": str(headline_text).strip(), "body": str(body_text).strip()}
+            if item.get("tagline"):
+                ad["tagline"] = str(item["tagline"]).strip()
+            ads.append(ad)
+
+    if len(ads) < 4 and rng and theme:
+        extras = fallback_sponsor_ads(rng, theme, headline, divergence)
+        for extra in extras:
+            if len(ads) >= 4:
+                break
+            if not any(a["headline"] == extra["headline"] for a in ads):
+                ads.append(extra)
+    return ads[:4]
+
+
+def fallback_sponsor_ads(rng, theme, headline="", divergence=""):
+    """Weird in-universe ads tied to theme and today's story."""
+    hook = (headline.split(":")[0] if headline else "today's news")[:48]
+    div_hook = divergence.split(" in ")[0][:40] if divergence else "this timeline"
+
+    pools = {
+        "victorian": [
+            {"headline": "Wellington & Crane Patent Mourning Brass", "body": f"Commemorate {hook.lower()} with a clockwork lapel that weeps one calibrated tear per hour. Batteries: your dignity.", "tagline": "Not suitable for optimists."},
+            {"headline": "Pneumatic Post — Same-Day Regret Delivery", "body": "Send your ill-advised telegram before the evening edition lands. We cannot un-read what you wrote.", "tagline": "Four-minute guarantee or we eat the stamp."},
+            {"headline": "Dr. Morley's Aetheric Tonic", "body": f"Recommended after reading about {hook.lower()}. Restores color to cheeks and faith in progress.", "tagline": "Contains no aether. Contains hope."},
+            {"headline": "Brass & Sons Automata — Lease a Grief Butler", "body": "When society closes its doors, ours opens a silver tray. Polite, silent, slightly judgmental.", "tagline": "Ethics sold separately."},
+        ],
+        "artdeco": [
+            {"headline": "Champagne Airways — Fly Above the Headlines", "body": f"Why dwell on {hook.lower()} at sea level? Our zeppelin lounge serves denial with a twist.", "tagline": "Black tie required. Bad news optional."},
+            {"headline": "The Gilded Distraction Club", "body": "Members enjoy jazz, oysters, and selective amnesia about whatever the papers are screaming today.", "tagline": "Apply before the bubble pops."},
+            {"headline": "Sterling & Luxe — Crisis Cufflinks", "body": f"Commemorate {div_hook} in 14-karat denial. Engraving available.", "tagline": "Past performance guarantees nothing."},
+            {"headline": "Art Deco Earplugs by Maison Silencio", "body": "Hear only what flatters you. Now in onyx, ivory, and willful ignorance.", "tagline": "Sold by the pair. Denial sold separately."},
+        ],
+        "soviet": [
+            {"headline": "TRUST THE PLAN — OFFICIAL CALENDAR", "body": f"Today's headline about {hook.lower()} was always part of the five-year plan. Purchase calendar. Adjust memory.", "tagline": "Dates subject to revision."},
+            {"headline": "STATE APPROVED COMFORT RATIONS", "body": "Bread that tastes like certainty. One loaf per household, two if you smile correctly.", "tagline": "Queues form to the left of history."},
+            {"headline": "WORKER'S PARADOX VODKA", "body": f"Celebrate {div_hook} with a drink that builds character and forgets yesterday's newspaper.", "tagline": "Collective hangovers only."},
+            {"headline": "BUREAU OF CORRECT FEELINGS", "body": "Distressed by today's news? We will reassign your reaction to a more productive emotion.", "tagline": "Gratitude is mandatory."},
+        ],
+        "cyberpunk": [
+            {"headline": "NeuroLink™ — Mute Today's Trauma Tier", "body": f"Premium subscribers can skip emotional processing of {hook.lower()}. Side effects include apathy and brand loyalty.", "tagline": "Memories not included."},
+            {"headline": "CorpSec Identity Insurance", "body": "When the feed hacks your brain, we hack back. Terms unreadable by design.", "tagline": "Your self is a subscription."},
+            {"headline": "SynthMeal Block 7 — Tastes Like Denial", "body": f"Nutrients calibrated for citizens living through {div_hook}. Legally chicken.", "tagline": "May contain spoilers."},
+            {"headline": "AdBlock for Real Life™", "body": "Blur billboards, exes, and inconvenient headlines. Reality still bills monthly.", "tagline": "Free trial ends when you blink."},
+        ],
+        "medieval": [
+            {"headline": "Brother Aldric's Indulgences — Now in Bulk", "body": f"Disturbed by talk of {hook.lower()}? Purchase remission before vespers. God's paperwork backlog is your opportunity.", "tagline": "Heaven accepts cash."},
+            {"headline": "Ye Olde Plague Insurance", "body": "If the ships in the harbor cough, we cough up nothing. But the parchment looks official.", "tagline": "Forty days, forty deniers."},
+            {"headline": "CastleMoat Maintenance Co.", "body": f"When {div_hook}, you will want a deeper moat and a shallower conscience.", "tagline": "Serfs not included."},
+            {"headline": "Miracle Relic Replicas", "body": "Own a fragment of something holy enough to ignore today's tidings.", "tagline": "Saints may differ by region."},
+        ],
+        "atomic": [
+            {"headline": "Anderson Family Fallout Shelters", "body": f"Read about {hook.lower()}? Build one this weekend. Easier than a pool. More fun than panic.", "tagline": "Government approved-ish."},
+            {"headline": "Kitchen of Tomorrow — Panic in Pastel", "body": "Push-button cooking while the sirens practice. The fridge plans meals; you plan escape routes.", "tagline": "As seen at the fair."},
+            {"headline": "Cheerful Geiger Counters for Kids", "body": "Turn anxiety into a game the whole block can play. Winner gets the iodine.", "tagline": "Batteries and bravery not included."},
+            {"headline": "Subliminal Patriotism Records", "body": f"Sleep soundly despite {div_hook}. Side A: optimism. Side B: louder optimism.", "tagline": "Not responsible for dreams."},
+        ],
+        "vaporwave": [
+            {"headline": "Mall Food Court Eternal Pass", "body": f"Today's headline? {hook}. Our specials? Forever. Sampler platters of nostalgia, no exit required.", "tagline": "Sodium levels transcend time."},
+            {"headline": "Aerobics Against Anxiety™", "body": "Leg warmers for your feelings. Jazzercise the dread away under fluorescent paradise.", "tagline": "Spandex sales up 400%."},
+            {"headline": "Synthwave Sleep Therapy Tapes", "body": f"Drift off to pink sunsets and pretend {div_hook} was just a mixtape label.", "tagline": "Side effects: mall ghosts."},
+            {"headline": "Limited Edition Headline T-Shirt", "body": "Wear today's catastrophe in pastel serif. Collect all eight timelines.", "tagline": "Shrinkage guaranteed."},
+        ],
+        "wasteland": [
+            {"headline": "Bullet Water — Two Rounds a Sip", "body": f"Heard about {hook.lower()}? Hydrate anyway. The well doesn't accept excuses.", "tagline": "No refunds across dimensions."},
+            {"headline": "War Rig Extended Warranty", "body": "When the convoy dies on the salt flats, die insured. We can't help, but we can invoice.", "tagline": "Rust is a pre-existing condition."},
+            {"headline": "Pre-War Library Kindling", "body": "Shakespeare burns long. Plato, medium. Today's news, instant.", "tagline": "Literature sold by the warmth."},
+            {"headline": "Rad-X and Regret", "body": f"Living through {div_hook}? Our detox has a 50% success rate and 100% upfront payment.", "tagline": "Survivors may disagree."},
+        ],
     }
-    return ads.get(theme, [{"headline": "Multiverse Gazette Subscriptions", "body": "One timeline. Daily delivery. Zero refunds across dimensions."}, {"headline": "Local Merchants Union", "body": "Shop where history went differently."}, {"headline": "Public Notice Board", "body": "Your ad could be here. This one is free."}])
+
+    default = [
+        {"headline": "Multiverse Gazette — Extra Edition Ink", "body": f"Today's report on {hook.lower()} printed on paper that remembers other timelines.", "tagline": "Smudges may be prophecies."},
+        {"headline": "Chrono-Insurance for Readers", "body": "If this divergence disappoints, we insure your sense of surprise.", "tagline": "Claims handled elsewhere."},
+        {"headline": "Parallel Classifieds Hotline", "body": "Sell your alternate self's unwanted goods. Fraud is tradition.", "tagline": "Dial NOW-ish."},
+        {"headline": "Public Notice: Reality Adjacent", "body": f"Products guaranteed authentic to a universe where {div_hook}.", "tagline": "Your mileage in parsecs."},
+    ]
+    pool = pools.get(theme, default)
+    if rng:
+        return [rng.pick(pool) for _ in range(4)]
+    return pool[:4]
 
 
 def article_to_html(article):
@@ -696,8 +803,8 @@ def generate_edition(date=None, timeline_id=None, with_images=None):
     sponsor_ads, used = llm_json_with_fallback(SPONSOR_ADS_PROMPT.format(**ctx), "structure")
     if used:
         used_providers["sponsor_ads"] = used
-    if not sponsor_ads:
-        sponsor_ads = fallback_sponsor_ads(rng, theme)
+    sponsor_ads = normalize_sponsor_ads(
+        sponsor_ads, rng, theme, headline_data["headline"], divergence)
 
     weather_data, used = llm_json_with_fallback(WEATHER_PROMPT.format(**ctx), "structure", temperature=0.7)
     if used:
@@ -724,6 +831,8 @@ def generate_edition(date=None, timeline_id=None, with_images=None):
 
     # 5. Editor polishes everything
     content = run_editor_pass(content, editor_p)
+    content["sponsor_ads"] = normalize_sponsor_ads(
+        content.get("sponsor_ads"), rng, theme, content["headline"], divergence)
 
     # 6. Images — OpenAI for hero photo, Grok for comic strip
     hero_image = hero_image_provider = None
