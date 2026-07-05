@@ -1019,7 +1019,21 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
-        function toggleArchive() { const archive = document.getElementById('archive-section'); archive.style.display = archive.style.display === 'none' ? 'block' : 'none'; if (archive.style.display === 'block') loadArchiveUI(); }
+        function toggleArchive() {
+            const archive = document.getElementById('archive-section');
+            const btn = document.getElementById('btn-archive');
+            const opening = archive.style.display === 'none';
+            archive.style.display = opening ? 'block' : 'none';
+            btn.textContent = opening ? '✕ Close Archive' : '📚 Browse Archive';
+            if (opening) {
+                loadArchiveUI();
+                // The archive lives below the paper — bring it into view so the
+                // click visibly does something, especially on mobile.
+                setTimeout(() => archive.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50);
+            } else {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        }
 
         function sharePaper() {
             const url = window.location.href;
@@ -1075,7 +1089,7 @@
             grid.innerHTML = archive.map(item => `<div class="archive-card" onclick="loadArchiveItem('${item.timeline_id}', '${item.date}')"><div class="archive-card-date">${escapeHtml(item.date_display)}</div><div class="archive-card-headline">${escapeHtml(item.headline)}</div><div class="archive-card-divergence">${escapeHtml(item.divergence)}</div></div>`).join('');
         }
 
-        function loadArchiveItem(timelineId, date) { currentState.timelineId = parseInt(timelineId); currentState.date = parseDate(date) || new Date(date); loadEdition(); document.getElementById('archive-section').style.display = 'none'; window.scrollTo({ top: 0, behavior: 'smooth' }); }
+        function loadArchiveItem(timelineId, date) { currentState.timelineId = parseInt(timelineId); currentState.date = parseDate(date) || new Date(date); loadEdition(); document.getElementById('archive-section').style.display = 'none'; document.getElementById('btn-archive').textContent = '📚 Browse Archive'; window.scrollTo({ top: 0, behavior: 'smooth' }); }
 
         document.addEventListener('DOMContentLoaded', init);
     </script>
