@@ -1,6 +1,14 @@
 # The Multiverse Gazette
 
-A daily, procedurally generated newspaper from alternate timelines. Zero sign-up. Zero products. Pure traffic and ad revenue.
+A daily satirical newspaper from alternate universes across all of time — news parody in the spirit of The Onion by way of Terry Pratchett. Every day, a new story in a different universe on a random date across eons; the comic strip, joke, classifieds, and ads all riff on the front page. Zero sign-up. Zero products. Pure traffic and ad revenue.
+
+## Content Pipeline
+
+- Each edition picks a random year within its theme's era (medieval 713–1499 … wasteland 2077–12077) and a satirical divergence premise
+- Real-world headlines are fetched from news RSS at generation time so stories can obliquely mirror current affairs (fails soft if offline)
+- An editor "brief" stage designs the day's comic premise; every section prompt receives the front-page headline so the whole paper reads as one universe reacting to one event
+- A final editor pass enforces cohesion and punches up flat jokes
+- The day's lead edition is prerendered into `index.html` (title, meta/OG tags, headline, article, JSON-LD) so search engines and no-JS readers see real content
 
 ## Architecture
 

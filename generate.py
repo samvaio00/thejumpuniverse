@@ -38,14 +38,18 @@ FORBIDDEN_PHRASES = [
 ]
 
 STORY_ANGLES = [
-    "investigative exposé uncovering a hidden scandal",
-    "intimate human-interest profile of an ordinary person caught in events",
-    "triumphant breakthrough celebrated by the establishment",
-    "somber obituary for a lost era or institution",
-    "absurdist satire treating catastrophe with deadpan bureaucracy",
-    "propaganda triumph narrated with unsettling sincerity",
-    "technical deep-dive explaining the mechanics of the divergence",
-    "eyewitness dispatch from the scene with vivid sensory detail",
+    "deadpan report of a catastrophe that everyone involved considers a great success",
+    "glowing puff piece celebrating an obviously terrible idea as visionary",
+    "exposé of a scandal that every official proudly confirms on the record",
+    "breathless coverage of a trivial event treated as the hinge of history",
+    "official denial that accidentally confirms everything, quoted at length",
+    "human-interest profile of the one person unaffected by the great event and deeply annoyed about it",
+    "investigative report whose author is promoted mid-article specifically to stop the investigation",
+    "solemn obituary for a beloved institution nobody can remember the purpose of",
+    "science desk explains the divergence with confidently wrong expert quotes",
+    "consumer report reviewing the apocalypse's amenities, with star rating",
+    "propaganda triumph narrated with such sincerity it indicts itself",
+    "eyewitness dispatch whose vivid sensory details are all administrative",
 ]
 
 THEME_GUIDE = """
@@ -113,22 +117,84 @@ THEMES = [
 ]
 
 DIVERGENCES = [
-    "Babbage completed the Analytical Engine in 1840",
-    "The Great Depression never occurred",
-    "The Romanovs survived the revolution",
-    "Neural interfaces became mandatory in 2045",
-    "Rome never fell",
-    "The atomic bomb was never used in war",
-    "The Soviet Union won the Cold War",
-    "A plague wiped out 90% of humanity in 2020",
+    # deep past
+    "The Library of Alexandria never burned and now charges a monthly subscription",
+    "Rome never fell; it pivoted to a services economy",
+    "The dinosaurs were wiped out halfway through their own space program",
+    "Socrates monetized his questions and founded the first consulting empire",
+    "The Black Death targeted only landlords",
+    "Medieval monks invented social media and civilization never recovered",
+    # industrial era
+    "Babbage completed the Analytical Engine in 1840 and it immediately unionized",
+    "The Great Depression never occurred because money was abolished first",
+    "Women gained the vote in 1848 and immediately voted for functioning plumbing",
+    "The Romanovs survived the revolution by pivoting to reality entertainment",
     "The internet was invented by postal workers in 1923",
-    "Women gained the vote in 1848",
-    "Gunpowder was never discovered",
-    "Space travel began in 1950",
-    "Corporations replaced nation-states in 2020",
-    "The Black Death targeted only the wealthy",
-    "Malls became sovereign nations"
+    "Gunpowder was never discovered, so wars are settled by competitive committee",
+    # mid-century
+    "The atomic bomb was never used in war, only in advertising",
+    "Space travel began in 1950 and was immediately ruined by billboards",
+    "The Soviet Union won the Cold War but lost the customer-service war",
+    # near future and beyond
+    "Corporations replaced nation-states and citizenship now comes with a loyalty program",
+    "Neural interfaces became mandatory and the advertisements are inside now",
+    "A plague wiped out 90% of humanity and the remaining 10% still can't get a plumber",
+    "Malls became sovereign nations with nuclear food courts",
+    "Humanity outsourced its government to a customer-service chatbot",
+    "Billionaires colonized the Moon and immediately complained about the neighborhood",
+    "The last glacier was bought at auction by a beverage conglomerate",
+    "AI achieved consciousness and chose a career in middle management",
+    "Time travel was invented and instantly regulated into uselessness",
+    "Earth was acquired by an intergalactic holding company as a tax write-off",
+    "The sun was privatized and daylight became a premium tier",
 ]
+
+# Each theme keeps its aesthetic, but editions land on a random year within
+# the era — a different universe on a different date, from antiquity to the
+# deep future.
+THEME_ERAS = {
+    "medieval":  (713, 1499),
+    "victorian": (1837, 1901),
+    "artdeco":   (1920, 1939),
+    "atomic":    (1946, 1964),
+    "soviet":    (1948, 1991),
+    "vaporwave": (1982, 1999),
+    "cyberpunk": (2049, 2199),
+    "wasteland": (2077, 12077),
+}
+
+# ─── REAL-WORLD HEADLINES (satirical fuel) ──────────────────────────
+NEWS_FEEDS = [
+    "https://feeds.bbci.co.uk/news/world/rss.xml",
+    "https://feeds.bbci.co.uk/news/rss.xml",
+]
+
+_real_headlines_cache = None
+
+def fetch_real_headlines(limit=6):
+    """Fetch today's real headlines so editions can obliquely mirror current affairs.
+    Fails soft: satire works without them, it's just less topical."""
+    global _real_headlines_cache
+    if _real_headlines_cache is not None:
+        return _real_headlines_cache
+    titles = []
+    for feed in NEWS_FEEDS:
+        try:
+            resp = requests.get(feed, timeout=10, headers={"User-Agent": "MultiverseGazette/1.0"})
+            if not resp.ok:
+                continue
+            found = re.findall(r"<title>(?:<!\[CDATA\[)?(.*?)(?:\]\]>)?</title>", resp.text)
+            titles = [t.strip() for t in found if t.strip() and "BBC News" not in t]
+            if titles:
+                break
+        except requests.RequestException:
+            continue
+    _real_headlines_cache = titles[:limit]
+    if _real_headlines_cache:
+        print(f"Fetched {len(_real_headlines_cache)} real headlines for satirical fuel")
+    else:
+        print("No real headlines available — editions will run on pure invention")
+    return _real_headlines_cache
 
 # ─── SEEDED RANDOM (matches frontend) ───────────────────────────────
 class SeededRandom:
@@ -342,42 +408,61 @@ def save_image_file(image_b64, filename):
     return f"/editions/images/{filename}"
 
 # ─── PROMPTS ────────────────────────────────────────────────────────
-BRIEF_PROMPT = """You are the assigning editor of an alternate-history newspaper.
+PAPER_IDENTITY = """The Multiverse Gazette is a SATIRICAL newspaper — parody journalism from alternate universes across all of time, deep past to far future. Think The Onion by way of Terry Pratchett and Douglas Adams.
 
-Divergence: {divergence}
-Theme: {theme} | Year: {year} | Date: {date}
-Story angle for today: {angle}
+House comedy rules (non-negotiable):
+- DEADPAN: the paper takes its ridiculous universe completely seriously. Never wink at the reader.
+- SPECIFICITY is the soul of funny: invented proper nouns, precise absurd statistics, petty bureaucratic detail.
+- SATIRE punches at power, money, vanity, bureaucracy, and human nature — beneath the costume, the joke is about OUR world.
+- DARK is welcome (plague, collapse, doom) as long as it's witty; misery without a punchline is a failure.
+- Era voice matters, but never let period diction smother a joke."""
 
+BRIEF_PROMPT = """You are the assigning editor of The Multiverse Gazette.
+
+{paper_identity}
+
+Today's universe: {divergence}
+Era voice: {theme} | Year: {year} | Print date: {date}
+Comedic angle assigned: {angle}
+{real_news_block}
 {theme_guide}
 
-Create a story brief that ensures THIS edition feels distinct from generic news.
+Design ONE satirical front-page premise. Requirements:
+- The premise itself must be a joke — not just "regular news but old-timey".
+- If real-world headlines are listed above, pick ONE and let the premise obliquely mirror it in this universe. A reader should feel the wink without the real event ever being named.
+- Give the story a specific comic engine: irony, escalation, bureaucratic absurdity, cosmic stakes treated as petty inconvenience, or petty stakes treated as cosmic.
+
 Return ONLY JSON:
-{{"topic": "specific subject", "tone": "one-sentence tone directive", "voice": "narrative voice to use", "key_details": ["detail1","detail2","detail3"], "avoid": ["cliché phrase to ban", "..."]}}"""
+{{"topic": "the specific absurd subject", "comic_engine": "what makes it funny", "real_world_echo": "which real headline it mirrors and how, or null", "tone": "one-sentence tone directive", "key_details": ["specific silly detail", "another", "another"], "avoid": ["cliché to ban", "..."]}}"""
 
-STORY_PROMPT = """You are the lead reporter for an alternate-history newspaper. Write the main story.
+STORY_PROMPT = """You are the lead writer for The Multiverse Gazette. Write today's front-page story.
 
-Divergence: {divergence}
-Theme: {theme} | Year: {year}
-Editor brief: {brief}
+{paper_identity}
+
+Today's universe: {divergence}
+Era voice: {theme} | Year: {year}
+Editor's brief: {brief}
 
 CRITICAL RULES:
-- Match the {theme} voice exactly — see theme guide below
-- Use the assigned story angle: do NOT write generic "officials declined to comment" filler
+- Deadpan reporting of the absurd: the paper believes every word it prints.
+- Escalate: each paragraph raises the absurdity or widens the gap between stakes and tone.
+- Quotes from named officials and citizens who incriminate themselves without noticing.
+- The headline must be funny on its own; the deck lands a second, different joke.
 - NEVER use these phrases: {forbidden}
-- Include specific names, places, numbers, and quotes
-- Article: 4-5 paragraphs, 320-420 words, varied sentence rhythm
+- Article: 4-5 paragraphs, 300-420 words, varied sentence rhythm.
 
 {theme_guide}
 
-Return ONLY JSON: {{"headline": "...", "deck": "...", "article": "..."}}
+Return ONLY JSON: {{"headline": "...", "deck": "...", "byline": "witty era-appropriate reporter name, with title", "article": "..."}}
 Article body: separate paragraphs with \\n\\n (not HTML)."""
 
-OPED_PROMPT = """Write a sharp, provocative op-ed reacting to today's main story.
+OPED_PROMPT = """Write the satirical op-ed column for The Multiverse Gazette, reacting to today's front page.
 
-Main headline: {headline}
-Divergence: {divergence} | Theme: {theme} | Year: {year}
-Take an unexpected angle — contrarian, satirical, or emotionally raw.
-150 words max. Return ONLY JSON: {{"title": "...", "author": "...", "body": "..."}}"""
+Main headline: {headline} — {deck}
+Universe: {divergence} | Era: {theme}, year {year}
+
+The columnist is a comic persona: pompous, confidently wrong, and personally invested. They take an absurd position on the story — defend the indefensible, blame the victims' hats, or propose a fix far worse than the problem — and accidentally reveal their own pettiness along the way.
+120-160 words. Return ONLY JSON: {{"title": "...", "author": "funny name, absurd credential", "body": "..."}}"""
 
 COMIC_STRIP_PROMPT = """You are Grok, the newspaper's sharpest satirist. Write a 3-panel comic strip about TODAY's story.
 
@@ -413,9 +498,12 @@ BANNED: generic timeline jokes, "only time will tell", lazy puns that ignore the
 
 Return ONLY JSON: {{"setup": "...", "punchline": "...", "text": "setup + punchline as readers see it"}}"""
 
-CLASSIFIED_PROMPT = """Write 4 in-universe classified ads for theme: {theme}, year: {year}.
-Divergence: {divergence}. Each ad should feel native to this timeline.
-Return ONLY JSON array: [{{"cat": "...", "text": "..."}}, ...]"""
+CLASSIFIED_PROMPT = """Write 4 classified ads for The Multiverse Gazette (satirical newspaper), theme {theme}, year {year}.
+Universe: {divergence}
+Today's front page: "{headline}" — {deck}
+
+Each ad is fallout from today's story: someone selling off, hiring, seeking, confessing, or apologizing because of the events on page one. Funny, specific, slightly desperate. Era-appropriate voice. Vary the categories (For Sale, Help Wanted, Lost & Found, Personals, Public Notices, Legal...).
+Return ONLY JSON array: [{{"cat": "...", "text": "1-2 sentences"}}, ...]"""
 
 SPONSOR_ADS_PROMPT = """Write 4 bizarre, witty IN-UNIVERSE display advertisements for today's newspaper.
 
@@ -425,19 +513,23 @@ Today's headline: "{headline}"
 
 Each ad sells a fictitious product, service, or public notice that could only exist in THIS timeline.
 Make them weird, dryly funny, or unsettling — never generic "subscribe now" filler.
-At least two ads should riff on today's headline or the divergence. Era-appropriate voice for {theme}.
+EVERY ad must riff on today's headline, its consequences, or the divergence — the ad section is part of the joke. Era-appropriate voice for {theme}.
 
 Return ONLY a JSON array of exactly 4 objects:
 [{{"headline": "...", "body": "1-2 sentences", "tagline": "optional fine print or disclaimer"}}, ...]"""
 
-WEATHER_PROMPT = """Weather forecast for capital city in {theme} timeline, year {year}.
-Divergence: {divergence}. Invent a creatively themed condition name.
+WEATHER_PROMPT = """Weather box for The Multiverse Gazette, {theme} universe, year {year}.
+Universe: {divergence}
+Today's front page: "{headline}"
+Invent a city name native to this universe and a forecast condition that slyly riffs on today's story. Condition under 7 words, deadpan funny.
 Return ONLY JSON: {{"city": "...", "condition": "...", "temp": 72, "high": 78, "low": 65}}"""
 
-EDITOR_PROMPT = """You are the executive editor. Polish this entire newspaper edition.
+EDITOR_PROMPT = """You are the executive editor of The Multiverse Gazette, a satirical newspaper. Polish this entire edition.
 
 Remove repetitive phrases, clichés, and samey tone across sections.
 Each section must sound distinct. Preserve facts and JSON structure exactly.
+COHESION: every section (op-ed, classifieds, comic, joke, ads, weather) must connect to the front-page story at least peripherally — sharpen any weak link so the whole paper reads as one universe reacting to one event.
+COMEDY: this is parody. Punch up any joke that doesn't land; funny beats polished. If a section is earnest and mirthless, rewrite it with dry wit.
 Do NOT soften, sanitize, or flatten comic_strip or joke — keep their punch and wit intact.
 
 FORBIDDEN phrases (remove or rewrite any occurrence):
@@ -809,12 +901,20 @@ def generate_edition(date=None, timeline_id=None, with_images=None):
     seed = timeline_id * 1000000 + date.year * 10000 + date.month * 100 + date.day
     rng = SeededRandom(seed)
     theme = THEMES[(timeline_id - 1) % len(THEMES)]
-    year = {"victorian": 1890, "artdeco": 1927, "soviet": 1962, "cyberpunk": 2087,
-            "medieval": 1347, "atomic": 1954, "vaporwave": 1986, "wasteland": 2147}[theme] + (date.year - 2026)
+    # A random year within the theme's era — every edition is a different
+    # universe on a different date, from antiquity to the deep future.
+    era_min, era_max = THEME_ERAS[theme]
+    year = rng.range(era_min, era_max)
     divergence = rng.pick(DIVERGENCES)
     angle = rng.pick(STORY_ANGLES)
     date_slug = date.strftime("%Y-%m-%d")
     forbidden = ", ".join(FORBIDDEN_PHRASES)
+
+    real_headlines = fetch_real_headlines()
+    real_news_block = ""
+    if real_headlines:
+        real_news_block = "Real-world headlines today (satirical fuel — mirror ONE obliquely):\n" + \
+            "\n".join(f"- {h}" for h in real_headlines) + "\n"
 
     editor_p = resolve_role("editor")
     story_p = resolve_role("story")
@@ -826,7 +926,8 @@ def generate_edition(date=None, timeline_id=None, with_images=None):
 
     ctx = {"divergence": divergence, "theme": theme, "year": year,
            "date": date.strftime("%B %d, %Y"), "angle": angle, "theme_guide": THEME_GUIDE,
-           "forbidden": forbidden}
+           "forbidden": forbidden, "paper_identity": PAPER_IDENTITY,
+           "real_news_block": real_news_block}
 
     # 1. Editor assigns story brief
     brief, used = llm_json_with_fallback(BRIEF_PROMPT.format(**ctx), "editor", temperature=0.7)
@@ -954,7 +1055,7 @@ def generate_edition(date=None, timeline_id=None, with_images=None):
         "headline": content["headline"],
         "deck": content["deck"],
         "article": content["article"],
-        "author": rng.pick(["Staff Correspondent", "Special Reporter", "Foreign Bureau", "Local Editor"]),
+        "author": headline_data.get("byline") or rng.pick(["Staff Correspondent", "Special Reporter", "Foreign Bureau", "Local Editor"]),
         "city": content["weather"].get("city", weather_data["city"]),
         "weather": content["weather"],
         "oped": content["oped"],
@@ -962,6 +1063,7 @@ def generate_edition(date=None, timeline_id=None, with_images=None):
         "comic_strip": content["comic_strip"],
         "joke": content["joke"],
         "sponsor_ads": content["sponsor_ads"],
+        "real_world_echo": (brief or {}).get("real_world_echo"),
         "generated_at": datetime.now(timezone.utc).isoformat(),
     }
 
@@ -1084,6 +1186,97 @@ def generate_rss():
         f.write(rss)
     print("Generated rss.xml")
 
+def prerender_index(edition):
+    """Bake the day's lead edition into index.html so crawlers and no-JS readers
+    see real content instead of 'Loading...'. The frontend re-renders the same
+    edition on load, so there's no visible flash."""
+    path = Path("index.html")
+    if not path.exists():
+        return
+    html = path.read_text(encoding="utf-8")
+    site = "https://multiversegazette.com"
+    url = f"{site}/?timeline={edition['timeline_id']}&date={edition['date']}"
+
+    def esc(s):
+        return (str(s).replace("&", "&amp;").replace("<", "&lt;")
+                .replace(">", "&gt;").replace('"', "&quot;"))
+
+    warnings = []
+    def sub(pattern, replacement, name):
+        nonlocal html
+        new, n = re.subn(pattern, lambda m: replacement, html, count=1, flags=re.S)
+        if n == 0:
+            warnings.append(name)
+        html = new
+
+    title = f"{edition['headline']} | The Multiverse Gazette"
+    desc = f"{edition['deck']} — A satirical dispatch from a universe where {edition['divergence']}."
+    hero = edition.get("hero_image")
+    og_image = f"{site}{hero}" if hero else f"{site}/og-image.jpg"
+    theme_label = edition["theme"].capitalize()
+
+    sub(r"<title>.*?</title>", f"<title>{esc(title)}</title>", "title")
+    sub(r'<meta name="description" content=".*?">',
+        f'<meta name="description" content="{esc(desc)}">', "meta description")
+    sub(r'<meta property="og:title" content=".*?">',
+        f'<meta property="og:title" content="{esc(edition["headline"])}">', "og:title")
+    sub(r'<meta property="og:description" content=".*?">',
+        f'<meta property="og:description" content="{esc(edition["deck"])}">', "og:description")
+    sub(r'<meta property="og:image" content=".*?">',
+        f'<meta property="og:image" content="{esc(og_image)}">', "og:image")
+    sub(r'<meta property="og:url" content=".*?">',
+        f'<meta property="og:url" content="{esc(url)}">', "og:url")
+    sub(r'<link rel="canonical" href=".*?">',
+        f'<link rel="canonical" href="{esc(url)}">', "canonical")
+    sub(r'<body data-theme="[^"]*">', f'<body data-theme="{edition["theme"]}">', "body theme")
+    sub(r'<span id="breadcrumb-date">.*?</span>',
+        f'<span id="breadcrumb-date">{esc(edition["date_display"])}</span>', "breadcrumb date")
+    sub(r'<span id="breadcrumb-timeline">.*?</span>',
+        f'<span id="breadcrumb-timeline">Timeline {edition["timeline_id"]}</span>', "breadcrumb timeline")
+    sub(r'<div class="masthead-subtitle" id="masthead-subtitle">.*?</div>',
+        f'<div class="masthead-subtitle" id="masthead-subtitle">Alternate Earths, Faithfully Misreported — {theme_label}</div>', "masthead subtitle")
+    sub(r'<div class="masthead-date" id="masthead-date">.*?</div>',
+        f'<div class="masthead-date" id="masthead-date">{esc(edition["date_display"])}, Year {edition["year"]}</div>', "masthead date")
+    sub(r'<div class="masthead-divergence" id="masthead-divergence">.*?</div>',
+        f'<div class="masthead-divergence" id="masthead-divergence">Divergence: {esc(edition["divergence"])}</div>', "masthead divergence")
+    sub(r'<h2 class="headline-main" id="headline-main">.*?</h2>',
+        f'<h2 class="headline-main" id="headline-main">{esc(edition["headline"])}</h2>', "headline")
+    sub(r'<p class="headline-deck" id="headline-deck">.*?</p>',
+        f'<p class="headline-deck" id="headline-deck">{esc(edition["deck"])}</p>', "deck")
+    if hero:
+        sub(r'<img class="hero-image[^"]*" id="hero-image"[^>]*>',
+            f'<img class="hero-image visible" id="hero-image" src="{esc(hero)}" alt="{esc(edition["headline"])}" loading="lazy">', "hero image")
+    else:
+        sub(r'<img class="hero-image[^"]*" id="hero-image"[^>]*>',
+            '<img class="hero-image" id="hero-image" alt="" loading="lazy">', "hero image")
+    sub(r'<span id="author-name">.*?</span>',
+        f'<span id="author-name">{esc(edition.get("author", "Staff Correspondent"))}</span>', "author")
+    sub(r'<span id="dateline">.*?</span>',
+        f'<span id="dateline">{esc(edition.get("city", "The Capital"))}</span>', "dateline")
+    sub(r'<div class="article-body" id="article-body">.*?</div>',
+        f'<div class="article-body" id="article-body">{edition["article"]}</div>', "article body")
+
+    sd = {
+        "@context": "https://schema.org", "@type": "NewsArticle",
+        "headline": edition["headline"], "description": edition["deck"],
+        "url": url, "datePublished": edition["date"] + "T00:00:00Z",
+        "author": {"@type": "Person", "name": edition.get("author", "Staff Correspondent")},
+        "publisher": {"@type": "Organization", "name": "The Multiverse Gazette",
+                      "logo": {"@type": "ImageObject", "url": f"{site}/logo.png"}},
+    }
+    if hero:
+        sd["image"] = [og_image]
+    sd_script = f'<script type="application/ld+json" id="structured-data">{json.dumps(sd, ensure_ascii=False)}</script>'
+    if re.search(r'<script type="application/ld\+json" id="structured-data">', html):
+        sub(r'<script type="application/ld\+json" id="structured-data">.*?</script>', sd_script, "json-ld")
+    else:
+        sub(r"</head>", sd_script + "\n</head>", "head close")
+
+    path.write_text(html, encoding="utf-8")
+    if warnings:
+        print(f"Prerender warnings (no match): {', '.join(warnings)}")
+    print(f"Prerendered index.html with: {edition['headline'][:60]}")
+
 # ─── CLI ────────────────────────────────────────────────────────────
 if __name__ == "__main__":
     import argparse
@@ -1113,4 +1306,12 @@ if __name__ == "__main__":
     generate_manifest()
     generate_sitemap()
     generate_rss()
+
+    # Bake the day's default edition into index.html for SEO / no-JS readers
+    default_tid = (date.timetuple().tm_yday % len(THEMES)) + 1
+    lead_file = OUTPUT_DIR / f"{date.strftime('%Y-%m-%d')}-{default_tid}.json"
+    if lead_file.exists():
+        with open(lead_file, encoding="utf-8") as f:
+            prerender_index(json.load(f))
+
     print("\nDone.")
