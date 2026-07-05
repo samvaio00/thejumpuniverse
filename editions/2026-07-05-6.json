@@ -3,93 +3,94 @@
   "theme": "atomic",
   "date": "2026-07-05",
   "date_display": "Sunday, July 05, 2026",
-  "year": 1954,
-  "divergence": "A plague wiped out 90% of humanity in 2020",
-  "story_angle": "somber obituary for a lost era or institution",
+  "year": 1955,
+  "divergence": "The atomic bomb was never used in war, only in advertising",
+  "story_angle": "eyewitness dispatch whose vivid sensory details are all administrative",
   "roles": [
     "Story: OpenAI",
     "Humor: Grok",
-    "Editor: OpenAI"
+    "Editor: Grok"
   ],
-  "headline": "The Last Drive-In Theater: A Remnant of a Vanished America",
-  "deck": "Once a cultural cornerstone of community bonding, the drive-in stands as a haunting reminder of a world lost to time and tragedy.",
-  "article": "<p>In the summer of 1954, the familiar sight of a drive-in theater, once alive with the sounds of laughter and the aroma of popcorn wafting through rolled-down windows, now lies silent, overtaken by an unforgiving landscape of weeds and rust. The Starview Drive-In, located on the outskirts of Omaha, Nebraska, was once packed with families enjoying double features on warm Friday nights. Today, its vacant lot echoes the ghosts of those simpler times, with only the flickering glow of a broken neon sign cutting through the dusky twilight.</p><p>Once a vibrant hub of community gatherings, the drive-in theater has succumbed to the weight of the pandemic that ravaged humanity in 2020. After the catastrophic die-off, the cultural fabric of America frayed, leaving behind memories that haunt the empty spaces where joy once thrived. \"We’d come here every weekend, the whole family packed into the car. It was our ritual, a slice of normalcy in a complicated world,\" reminisces Harold Jenkins, a former regular who recalls those vibrant nights filled with shared humor and cinematic thrills.</p><p>The drive-ins were more than just screenings; they were intimate escapes, communal experiences that reflected the hopes and dreams of a suburban America. But now, the drive-in has become a mere relic, a bittersweet monument to what was. The rusted speakers, once hung on car windows, are now silent, and the marquee’s bright letters lie strewn on the ground like fallen leaves. The very idea of gathering to watch a film under the stars feels like a distant memory, replaced by the cold, sterile light of technology and isolation.</p><p>Neighbors used to swap homemade treats, while children scurried about in delight, chasing fireflies. Today, these scenes are but a shadow of their former glory, a phantasm that lingers in the air, thick with nostalgia. As America grapples with its new identity and the remnants of its former culture, the drive-in stands as a poignant reminder of the community bonds severed by the pandemic. Indeed, as Harold gazes at the weeds reclaiming the asphalt, he states simply, \"It’s like our laughter has been buried with those we lost. All we have left are shadows and memories.\"</p>",
-  "author": "Local Editor",
-  "city": "Washington, D.C.",
+  "headline": "Bureaucratic Delays Postpone Atomic Spectacle: Nation's 250th Anniversary Fireworks Locked in Permit Gridlock",
+  "deck": "Officials Race to Process 17,842 'Atomic Glow Authorization' Forms While Citizens Prepare for Dazzling Non-Detonation",
+  "article": "<p>A backlog of 17,842 identical Form 7-B 'Atomic Glow Authorization' sheets has frozen the nationwide atomic billboard campaign for the United States' 250th anniversary. The Department of Non-Nuclear Notifications, an office celebrated chiefly for its filing cabinets, has yet to release any.</p><p>Geraldine L. Quagmire, Chief of Permits, paused while stacking paperweights to note that thoroughness carries a cost: a holiday reduced to stacked carbon copies. The Interdepartmental Committee on Atomic Fun, assembled one week ago, has not yet met.</p><p>Lead-lined mailroom clerk Arnold B. Exponent withholds further elaboration after surpassing his daily carbon-paper quota by 0.3 ounces. He continues sorting forms that now resemble parade confetti.</p><p>The jingle 'Better Living Through Fission' cleared its sixth liability revision only after lawyers confirmed it would not imply environmental catastrophe. Jingle Coordinator Stan L. Davis observed that citizens may still hum along while awaiting a light show that paperwork has placed on indefinite hold.</p><p>On the eve of the Fourth, the nation confronts the spectacle of government procedure itself, now the only authorized display.</p>",
+  "author": "Bertie G. Fission, Senior Correspondent of Bureaucratic Affairs",
+  "city": "Permitisville",
   "weather": {
-    "city": "Washington, D.C.",
-    "condition": "Ethereal Smog of Solitude",
+    "city": "Permitisville",
+    "condition": "Red Tape Accumulates, Fireworks Visibility Zero",
     "temp": 72,
     "high": 78,
     "low": 65
   },
   "oped": {
-    "title": "Drive-Ins Didn't Die—They Just Went Radioactive",
-    "author": "Vera Sloane",
-    "body": "Nostalgia for the last drive-in is pure poison. In this atomic 1954, those tin-can theaters already taught us to watch the end of the world from sealed cars, six feet apart. When the 2020 plague arrives and erases nine in ten, survivors will recognize the training: solitary screens, irradiated popcorn, no touching. Good riddance to the relic. It rehearsed extinction, not Americana."
+    "title": "Hats Off to Gridlock: Why Atomic Glow Must Wait",
+    "author": "Reginald P. Glowhart, PhD in Atomic Advertising Ethics and Part-Time Permit Reviewer",
+    "body": "The backlog of 17,842 Atomic Glow Authorization forms represents prudent caution rather than crisis. Without layered review, any citizen might launch an unlicensed glow, diluting the fine art of marketing toothpaste beside mushroom clouds. Complaints about the postponed non-detonation overlook that genuine atomic commerce requires triplicate signatures and a properly blocked fedora. My own glow-vest proposal, cleared in 1953, still sits idle because a junior clerk questioned the experimental headwear; the true choke point remains poor hat selection. Speeding permits would only unleash unlicensed fluorescence and competing agencies claiming credit. Let the forms advance at their proper crawl. Safety first, spectacle never."
   },
   "classifieds": [
     {
-      "cat": "Survival Gear",
-      "text": "Prepare for the unforeseen! Limited stock of atomic fallout shelters equipped with state-of-the-art radiation filters. Keep your family safe and secure from the remnants of the past. Act now and ensure your survival in a world still recovering. Call 1-800-ATOMIC today!"
+      "cat": "For Sale",
+      "text": "For Sale: 2,500 pounds of patriotic atomic confetti and glow powder, never detonated due to permit snafu. Slightly desperate seller accepting offers below cost; contact Atomic Novelties before the next century dawns."
     },
     {
-      "cat": "Home Services",
-      "text": "Need help with your atomic home? Our licensed technicians are here to install and maintain your radiation alarms and purification systems. Trusted service for a brighter tomorrow—where safety meets comfort. Schedule your appointment now!"
+      "cat": "Help Wanted",
+      "text": "Help Wanted: Twenty thousand temporary clerks to shuffle Atomic Glow Authorization Forms in triplicate. Must type 40 wpm and enjoy fluorescent lighting; overtime paid in non-radioactive doughnuts."
     },
     {
-      "cat": "Employment",
-      "text": "Join the revolution in energy! We are seeking passionate individuals for roles in atomic energy research and development. Help shape a new world powered by the atom. Competitive wages and great benefits await! Send your resume to FutureEnergy@atomicsolutions.com."
+      "cat": "Personals",
+      "text": "Personals: Lonely bureaucrat seeks understanding dame to discuss 17,842 forms over sundaes. No explosions required, only patience and carbon paper."
     },
     {
-      "cat": "Community Events",
-      "text": "Join us this Saturday for the Atomic Awareness Fair at Central Park! Learn about nuclear safety, food preservation, and the benefits of atomic energy. Family-friendly activities and guest speakers from the Atomic Institute. Let’s unite for a safe and educated future!"
+      "cat": "Public Notices",
+      "text": "Public Notice: The 250th Anniversary Committee apologizes for the postponed non-detonation and offers free glow-in-the-dark aspirin to all affected citizens. Forms still processing; check back in 1957."
     }
   ],
   "comic_strip": {
-    "title": "Atomic Popcorn",
+    "title": "Glow Gridlock",
     "panels": [
       {
-        "caption": "The marquee reads: 'The Last Drive-In Theater – Now Showing Atomic Age Thrillers!'"
+        "caption": "Clerk: \"Seventeen thousand eight hundred forty-two Atomic Glow forms. Anniversary's tomorrow.\""
       },
       {
-        "caption": "The ticket taker tells a customer, 'We kept the lot open after the plague took everyone else in 2020.'"
+        "caption": "Supervisor: \"Stamp every one twice. Can't risk unsanctioned radiance in the ads.\""
       },
       {
-        "caption": "'Best part is, the corpses make great backrests for the second feature.'"
+        "caption": "Citizen outside: \"Fine. The billboard already promises darkness by permit.\""
       }
     ],
     "image": "/editions/images/2026-07-05-6-strip.png",
     "image_provider": "grok"
   },
   "joke": {
-    "setup": "They bill the Last Drive-In as the lone remnant of vanished America",
-    "punchline": "but after the Trinity boys finished their work, most patrons are already parked six feet under with their own fallout soundtrack.",
-    "text": "They bill the Last Drive-In as the lone remnant of vanished America but after the Trinity boys finished their work, most patrons are already parked six feet under with their own fallout soundtrack."
+    "setup": "Atomic Energy Commission approved the 250th fireworks as 'harmless product demonstration' but the county clerk refused the permit.",
+    "punchline": "Apparently selling toothpaste with a mushroom cloud is fine; actually lighting one off still requires form 12-C in triplicate.",
+    "text": "Atomic Energy Commission approved the 250th fireworks as 'harmless product demonstration' but the county clerk refused the permit. Apparently selling toothpaste with a mushroom cloud is fine; actually lighting one off still requires form 12-C in triplicate."
   },
   "sponsor_ads": [
     {
-      "headline": "Drive-Ins: Your Last Hope for a Meaningful Experience!",
-      "body": "With 90% of the population gone, come and enjoy the final flicks of yesteryear in an idyllic, nostalgic atmosphere. Don’t forget to check for mutated raccoons before placing your order at the concession stand!",
-      "tagline": "Now featuring 3D performances from the local wildlife!"
+      "headline": "Bypass the Permit Gridlock with Our Atomic Endorsement Stamps!",
+      "body": "Why wait for the nation's 250th anniversary fireworks when our pre-approved atomic labels turn any product into an official spectacle overnight?",
+      "tagline": "Federal Atomic Commission approved... eventually."
     },
     {
-      "headline": "Nuclear-Powered Popcorn: Because Regular Popcorn is So 2019!",
-      "body": "Experience the explosive flavor of our atomic popcorn, now in a seismic balance of salty and sweet! Warning: may contain trace amounts of radiation and mild existential dread.",
-      "tagline": "Eat at your own risk—deliciousness is guaranteed!"
+      "headline": "Atomic Fireworks: Now in Convenient Canister Form!",
+      "body": "No permits needed for these pocket-sized mushroom clouds that promise all the thrill of the postponed national celebration without the red tape.",
+      "tagline": "May cause local evacuations. Use only in designated advertising zones."
     },
     {
-      "headline": "Post-Apocalyptic Drive-In: Where Every Seat is the Best Seat!",
-      "body": "With society's collapse, enjoy the rare luxury of an empty parking lot and a full screen. Grab your favorite blanket and enjoy the thrilling uncertainty of which apocalypse-themed film fits your current mood.",
-      "tagline": "Ask about our survivor loyalty program!"
+      "headline": "Hire Our Bureaucrat-Blasting Atomic Lawyers Today!",
+      "body": "Specializing in expediting your atomic advertising permits since the bomb stayed in the boardroom, not the battlefield.",
+      "tagline": "Success guaranteed or your fallout is free."
     },
     {
-      "headline": "Don’t Forget Your Protective Gear – It’s Triple Feature Night!",
-      "body": "Join us for a thrilling night of cinema under the stars—provided they’re not glowing too brightly. Bring your best lead-lined blankets and enjoy our selection of classic horror films... or are they documentaries?",
-      "tagline": "Night vision goggles available for rent in the lobby!"
+      "headline": "The 250th Anniversary Atomic Revue: Delayed But Not Denied!",
+      "body": "Book your tickets now for the rescheduled spectacle featuring real atomic bursts, brought to you once the paperwork clears.",
+      "tagline": "Dates subject to further bureaucratic half-lives."
     }
   ],
-  "generated_at": "2026-07-05T04:25:23.500087+00:00",
+  "real_world_echo": "US 250th birthday fireworks and extreme weather, mirrored as nationwide atomic ad 'explosions' snarled by paperwork instead of weather",
+  "generated_at": "2026-07-05T06:13:42.062242+00:00",
   "hero_image": "/editions/images/2026-07-05-6-hero.png",
   "hero_image_provider": "grok"
 }

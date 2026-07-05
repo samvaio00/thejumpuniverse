@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-05T06:00:04.700794+00:00",
+ "generated_at": "2026-07-05T06:17:34.116910+00:00",
  "dates": {
   "2026-06-28": [
    {
@@ -91,73 +91,73 @@
    {
     "timeline_id": 1,
     "theme": "victorian",
-    "year": 1890,
-    "headline": "A Somber Journal of London's Plague-Wrought Silence",
-    "deck": "An eyewitness account reveals the haunting echoes of a life once vibrant, now succumbing to despair.",
-    "divergence": "A plague wiped out 90% of humanity in 2020",
+    "year": 1868,
+    "headline": "Daylight Rationing Sparks Outrage as Aristocrats Bloom in Unfettered Sunlight",
+    "deck": "As the Imperial Sunlight & Gas Syndicate celebrates ten years of profitable dusk, residents of East End suffer a pall over their morning tea.",
+    "divergence": "The sun was privatized and daylight became a premium tier",
     "hero_image": "/editions/images/2026-07-05-1-hero.png"
    },
    {
     "timeline_id": 2,
     "theme": "artdeco",
-    "year": 1927,
-    "headline": "A Somber Curtain Falls: The Closure of The Grand Art Deco Theater",
-    "deck": "Once a Celestial Haven for Cultural Reverie, Now a Hollow Shell of Echoes and Memories.",
-    "divergence": "A plague wiped out 90% of humanity in 2020",
+    "year": 1930,
+    "headline": "The Pneumatic Message Routing Guild: A Grand Obituary for Our Forgotten Tubes",
+    "deck": "As zeppelins soar over Manhattan, the legacy of 1923's postal internet is laid to rest—on a bed of champagne.",
+    "divergence": "The internet was invented by postal workers in 1923",
     "hero_image": "/editions/images/2026-07-05-2-hero.png"
    },
    {
     "timeline_id": 3,
     "theme": "soviet",
-    "year": 1962,
-    "headline": "A CELEBRATION OF THE FIRST ANNIVERSARY OF THE SOVIET INTERNET!",
-    "deck": "THE PEOPLE'S NETWORK UNITS OVER 100 MILLION CITIZENS IN TRIUMPH FOR THE WORKING CLASS!",
-    "divergence": "The internet was invented by postal workers in 1923",
+    "year": 1972,
+    "headline": "HEROIC WORKER KRAMLEV BANNED FOR SACRILEGIOUS MURMURS ABOUT ‘IMPERFECT ALLOCATION FORMS’",
+    "deck": "SIMPLE TEA BREAK DELAYS FIVE-QUARTER PLAN BY 0.0002 PERCENT; A GLORIOUS VICTORY FOR QUOTA INTEGRITY!",
+    "divergence": "The Great Depression never occurred because money was abolished first",
     "hero_image": "/editions/images/2026-07-05-3-hero.png"
    },
    {
     "timeline_id": 4,
     "theme": "cyberpunk",
-    "year": 2087,
-    "headline": "Asha Voss: Crafting Freedom in the Shadows of Neo-London",
-    "deck": "In a city dominated by corporate titans, one street mechanic defies the odds, rebuilding lives and technology amid surveillance and oppression.",
-    "divergence": "Women gained the vote in 1848",
+    "year": 2141,
+    "headline": "Holy Scrolls and Neural Rolls: MonkNet 2.0 Eclipses Doom with Divinity",
+    "deck": "On this 250th anniversary, the brain-bending bureaucracy elevates suffering to new heights, but at least we’re all ‘connected’.",
+    "divergence": "Medieval monks invented social media and civilization never recovered",
     "hero_image": "/editions/images/2026-07-05-4-hero.png"
    },
    {
     "timeline_id": 5,
     "theme": "medieval",
-    "year": 1347,
-    "headline": "The Grain Guild's Betrayal: A Harvest of Deceit",
-    "deck": "An exposé unveils the nefarious dealings of the Imperial Grain Guild, as noble families conspire to inflate grain prices amidst the suffering of the peasantry.",
-    "divergence": "Rome never fell",
+    "year": 939,
+    "headline": "Inked Peril: Scribe Flavius's Quill May Yet Lead to His Own Bureaucratic Doom",
+    "deck": "A single errant blot transforms triumph into travesty during the 939 Form Reckoning.",
+    "divergence": "Rome never fell; it pivoted to a services economy",
     "hero_image": "/editions/images/2026-07-05-5-hero.png"
    },
    {
     "timeline_id": 6,
     "theme": "atomic",
-    "year": 1954,
-    "headline": "The Last Drive-In Theater: A Remnant of a Vanished America",
-    "deck": "Once a cultural cornerstone of community bonding, the drive-in stands as a haunting reminder of a world lost to time and tragedy.",
-    "divergence": "A plague wiped out 90% of humanity in 2020",
+    "year": 1955,
+    "headline": "Bureaucratic Delays Postpone Atomic Spectacle: Nation's 250th Anniversary Fireworks Locked in Permit Gridlock",
+    "deck": "Officials Race to Process 17,842 'Atomic Glow Authorization' Forms While Citizens Prepare for Dazzling Non-Detonation",
+    "divergence": "The atomic bomb was never used in war, only in advertising",
     "hero_image": "/editions/images/2026-07-05-6-hero.png"
    },
    {
     "timeline_id": 7,
     "theme": "vaporwave",
-    "year": 1986,
-    "headline": "Malltopia: A Year of Neon Sovereignty and Pastel Prosperity",
-    "deck": "In the heart of consumerism, Malltopia thrives—where dreamscapes of vaporwave aesthetics and economic independence unify under shimmering arches.",
-    "divergence": "Malls became sovereign nations",
+    "year": 1999,
+    "headline": "Romanov Reality Show Celebrates 82 Years of Surviving the Ruling Class by Selling You the Dream",
+    "deck": "Amidst server farm meltdowns, the Empress selects a phone case while our lives flicker like a faulty neon sign.",
+    "divergence": "The Romanovs survived the revolution by pivoting to reality entertainment",
     "hero_image": "/editions/images/2026-07-05-7-hero.png"
    },
    {
     "timeline_id": 8,
     "theme": "wasteland",
-    "year": 2147,
-    "headline": "Echoes of a Shattered Dream: Mara's Foray into the Ruins",
-    "deck": "In a world untouched by the Great Depression, a lone scavenger sifts through the ghostly remains of consumerism.",
-    "divergence": "The Great Depression never occurred",
+    "year": 3387,
+    "headline": "Selective Plague Spares Only Gurn Hollow: Landlord-Free Zone Becomes Existential Nightmare",
+    "deck": "With no one left to bicker over roof repairs, Gurn strives to survive a landscape of abandoned ledgers and ill-timed eviction notices.",
+    "divergence": "The Black Death targeted only landlords",
     "hero_image": "/editions/images/2026-07-05-8-hero.png"
    }
   ]

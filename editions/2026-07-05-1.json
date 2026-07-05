@@ -3,93 +3,94 @@
   "theme": "victorian",
   "date": "2026-07-05",
   "date_display": "Sunday, July 05, 2026",
-  "year": 1890,
-  "divergence": "A plague wiped out 90% of humanity in 2020",
-  "story_angle": "eyewitness dispatch from the scene with vivid sensory detail",
+  "year": 1868,
+  "divergence": "The sun was privatized and daylight became a premium tier",
+  "story_angle": "investigative report whose author is promoted mid-article specifically to stop the investigation",
   "roles": [
     "Story: OpenAI",
     "Humor: Grok",
-    "Editor: OpenAI"
+    "Editor: Grok"
   ],
-  "headline": "A Somber Journal of London's Plague-Wrought Silence",
-  "deck": "An eyewitness account reveals the haunting echoes of a life once vibrant, now succumbing to despair.",
-  "article": "<p>In the year of our Lord, eighteen hundred and ninety, I find myself traversing the streets of London, a city once resplendent in its vibrancy, now enveloped in a pallid fog that clings to the remnants of its former glory. The stench of decay hangs heavy in the air, a macabre perfume that mingles with the dampness of a gray sky. Each step upon the cobblestones feels laden with the weight of despair, as I pass by dilapidated mansions, their opulence eroded into forlorn echoes that speak of lives extinguished and aspirations undone.</p><p>As I venture deeper into the heart of this moribund metropolis, I am met with a haunting stillness that pervades the streets. The bustling markets that once thrived with vibrant bartering and laughter now stand silent, their stalls abandoned, a cruel testament to the specter of the Great Plague that has wreaked havoc upon our beloved society. It is here, in this desolation, that I am compelled to reflect upon the tapestry of loss that has enveloped us. Those who once thrived have been swept away, leaving behind only whispers of their existence etched into the fabric of this suffering city.</p><p>Faded posters of hope, once affixed to crumbling walls, now seem but a grim reminder of humanity's fragility. Their promises of rebirth and renewal dissolve into the mist, as if mocking our collective yearning for salvation in a world turned against us. I read the slogans, once bold and brimming with optimism, their ink now a pale shadow of its former vibrancy. \"Together we shall overcome,\" they proclaimed, yet here we stand, fragmented and alone, grappling with a reality that offers no solace.</p><p>With each passing day, I bear witness to the slow march of decay, not merely in the architecture of our city but within the very souls of its remnants. The echoes of laughter and camaraderie have long since faded, replaced by the melancholic sighs of those who remain. We are left to ponder the depth of our loss, to grapple with the specter of mortality that has cast its shadow upon us all, as we navigate the ruins of our civilization with a heavy heart, haunted by the question of what remains when hope has withered like the autumn leaves beneath our feet.</p>",
-  "author": "Foreign Bureau",
-  "city": "London",
+  "headline": "Daylight Rationing Sparks Outrage as Aristocrats Bloom in Unfettered Sunlight",
+  "deck": "As the Imperial Sunlight & Gas Syndicate celebrates ten years of profitable dusk, residents of East End suffer a pall over their morning tea.",
+  "article": "<p>The Imperial Sunlight & Gas Syndicate diverted 2,184 premium solar minutes from Bethnal Green to Mayfair orchid houses on the morning the district awoke under fog.</p><p>Mr. Thaddeus Quill's reporting on the diversion earned him an immediate post as Director Quill, Office of Tier Compliance, complete with gas-scrip salary and a brass plaque from Chairman Sir Reginald P. Foggbottom.</p><p>Foggbottom toasted the Syndicate's tenth anniversary while restating its duty to premium subscribers; the Grand Illumination Gala will demonstrate metered daylight to invited guests.</p><p>East End households now conduct their afternoons by gaslight, their petitions for dawn answered with additional dusk.</p>",
+  "author": "Mr. Thaddeus Quill, Special Correspondent",
+  "city": "Luminaria",
   "weather": {
-    "city": "London",
-    "condition": "Mournful Mist of Desolation",
+    "city": "Luminaria",
+    "condition": "Overcast with aristocratic sunspots",
     "temp": 72,
     "high": 78,
     "low": 65
   },
   "oped": {
-    "title": "Silence? Nay, the Plague Has Merely Muzzled the Rabble",
-    "author": "Lord Percival Graves",
-    "body": "The laments over London's 'plague-wrought silence' reek of sentimental rot. With nine souls in ten erased since the 2020 scourge, the city's streets finally permit a gentleman to hear his own thoughts without the ceaseless braying of costermongers and factory drudges. This hush is no tragedy but overdue sanitation. The dead have done what Parliament never dared: they have culled the vulgar excess that once passed for vitality. Let the mourners wail; the rest of us shall enjoy the first honest peace this century has known."
+    "title": "A Modest Defence of Measured Mornings: Why Grumbling Over Gas Serves None",
+    "author": "Viscount Archibald Fumblecrump, Esq., Perpetual Subscriber to Tier III Illumination and Self-Appointed Keeper of the Syndicate's Ledger",
+    "body": "The recent caterwauling from East End over daylight rationing betrays a lamentable want of perspective. The Imperial Sunlight & Gas Syndicate has, these ten profitable years, spared us the vulgar excess of unfiltered dawn, which any gentleman knows breeds freckles and revolutionary thoughts. Those complaining souls might simply purchase the Premium Solar Voucher instead of squandering coin on inferior tea leaves. Their hats, after all, are far too wide; narrower brims would admit what scant rays they deserve. I myself enjoy uninterrupted beams above my conservatory, as is only fitting for one who advised the original privatisation bill. If anything, the remedy lies in further restriction: let the districts without subscriptions receive only the moon's pallid charity, thereby encouraging thrift and discouraging idleness. Envy, not scarcity, darkens their mornings."
   },
   "classifieds": [
     {
-      "cat": "Household Services",
-      "text": "Seeking skilled domestic help for a quaint Victorian estate in the heart of London. Duties include housekeeping, meal preparation, and care for a small garden of rare blooms. Applicants must demonstrate prior experience and a dedication to maintaining a pristine environment. References from previous employers appreciated. Pay commensurate with experience."
+      "cat": "For Sale",
+      "text": "Owing to the Syndicate's most profitable dusk, a respectable widow of Stepney must part with her last two hours of morning light, transferable by voucher; enquiries to the rear of the Black Swan public house, terms desperate."
     },
     {
-      "cat": "Entertainment",
-      "text": "Join us for an exquisite evening of classical music and theatrical performances at the Grand Pavilion this Saturday eve. Revel in the splendid melodies of accomplished musicians and the grace of our finest actors, as we celebrate the resurgence of art in these trying times. Tickets available at the door or through the local ticketing office."
+      "cat": "Help Wanted",
+      "text": "East End household requires a nimble lad to climb gas standards at dawn and beg stray photons from passing carriages; board of stale bread and threepence nightly for those who return with light enough to read the tea leaves."
     },
     {
-      "cat": "Transportation",
-      "text": "Introducing the elegance of the steam carriage! Travel in style with our newest model, complete with plush seating and polished brass fittings. Ideal for those seeking a comfortable ride through the newly rebuilt countryside. Inquire at the local station for a demonstration and to schedule your first journey. Limited availability—reserve yours today!"
+      "cat": "Lost & Found",
+      "text": "Lost upon the 12th instant: one allotted quarter-hour of sunlight, mislaid between the counting-house and the fog; finder returning same to Mr. Cratchit of Houndsditch shall receive a half-pint of darkness in exchange."
     },
     {
-      "cat": "Community Events",
-      "text": "The East London Society invites all residents to attend our monthly gathering at the Town Hall. Engage in discussions about rebuilding our community post-plague, share resources, and foster connections with fellow survivors. Light refreshments will be served. Together, we can pave a brighter future for our children. An RSVP is preferred, but walk-ins are welcome!"
+      "cat": "Public Notices",
+      "text": "The Imperial Sunlight & Gas Syndicate regrets to inform its East End subscribers that any further petitions for dawn shall be met with an increase in dusk; all complaints to be submitted in writing and by gaslight only."
     }
   ],
   "comic_strip": {
-    "title": "The Empty Ledger",
+    "title": "Rays for Rent",
     "panels": [
       {
-        "caption": "The diarist notes: 'No costermongers cry their wares; only the wind rattles the shutters.'"
+        "caption": "East Ender squints at the manor: \"Their roses are bursting while my tea's gone black under the syndicate dusk.\""
       },
       {
-        "caption": "A beadle stamps the last parish roll: 'Ninety souls claimed. Mark it paid in full.'"
+        "caption": "Syndicate clerk adjusts the meter: \"Premium daylight is reserved for those whose complexions can still turn a profit.\""
       },
       {
-        "caption": "The final line reads: 'At least the damn fog has somewhere to sit.'"
+        "caption": "Child tugs sleeve: \"If we buy an extra hour, can we bury Mum before the bill arrives?\""
       }
     ],
     "image": "/editions/images/2026-07-05-1-strip.png",
     "image_provider": "grok"
   },
   "joke": {
-    "setup": "The evening gazette devotes its full column to London's plague-wrought silence,",
-    "punchline": "a curious choice, given that nine readers in ten now keep their opinions underground.",
-    "text": "The evening gazette devotes its full column to London's plague-wrought silence, a curious choice, given that nine readers in ten now keep their opinions underground."
+    "setup": "The Sunlight Allocation Board has ruled that only titled gentlemen may enjoy the full arc of the day without interruption.",
+    "punchline": "The rest of England is therefore encouraged to black their boots by the glow of their own class resentment.",
+    "text": "The Sunlight Allocation Board has ruled that only titled gentlemen may enjoy the full arc of the day without interruption. The rest of England is therefore encouraged to black their boots by the glow of their own class resentment."
   },
   "sponsor_ads": [
     {
-      "headline": "Silence Requiem: The Noiseless Piano",
-      "body": "Experience the exquisite melodies of emptiness with our patented Noiseless Piano. Perfect for those mourning the plague's theft of sound, now you too can play music that echoes only in your mind.",
-      "tagline": "Brought to you by the Society for the Preservation of Forgotten Tones."
+      "headline": "Surplus Morning Rays: Let by Affluent Households",
+      "body": "Gentlemen of means having secured their premium allotments now sublet excess dawn hours by the quarter-minute; arrive pale, depart faintly gilded.",
+      "tagline": "Payment in sovereigns or unrationed moonlight accepted."
     },
     {
-      "headline": "Plague-Era Perfume: 'Essence of Absence'",
-      "body": "Drape yourself in the delightful aroma of nostalgia with our latest fragrance, a blend of ash and faded memories. For the discerning individual who prefers to smell like yesterday’s tragedy.",
-      "tagline": "Warning: May induce existential reflections."
+      "headline": "Dr. Sallow's Shade-Proof Tonic",
+      "body": "For those condemned to the cheaper gloaming, this sovereign elixir permits the cultivation of a respectable complexion without so much as a single purchased lumen.",
+      "tagline": "May cause spontaneous night-blindness; not for aristocrats."
     },
     {
-      "headline": "The Whispering Walls: Your Home’s Inaudible Companion",
-      "body": "Introduce a new layer of eerie elegance to your abode with our wall treatment that absorbs sound! Let your home become a sanctuary where even the echoes of despair cannot reach you.",
-      "tagline": "Requires no maintenance; simply ignore it."
+      "headline": "Public Caution from the Imperial Solarium Trust",
+      "body": "Any person found attempting to harvest unauthorised daylight through mirrors, buckets, or hopeful expressions will forfeit their remaining ration and be fined one hour of perpetual dusk.",
+      "tagline": "Report suspicious blooming to the nearest meter reader."
     },
     {
-      "headline": "Now Available: Plague-Safe Coffee",
-      "body": "Enjoy your morning brew with none of the bothersome company of the living! Our exclusive blend is infused with the loneliness of a plague emptied London.",
-      "tagline": "Not responsible for unsolicited thoughts or visions of the departed."
+      "headline": "Eclipse Silk for the Rationed Masses",
+      "body": "Drape your windows and your hopes in our patented blackout fabric; now woven to withstand both envy and the occasional aristocratic glare.",
+      "tagline": "Guaranteed to keep you suitably obscure until further notice."
     }
   ],
-  "generated_at": "2026-07-05T04:16:31.849554+00:00",
+  "real_world_echo": "Mirrors US 250th birthday fireworks and extreme weather by framing the Syndicate's tenth-anniversary 'Grand Illumination Gala' as a lavish display of metered daylight bursts that leaves common districts in sudden, engineered dusk",
+  "generated_at": "2026-07-05T06:04:53.871623+00:00",
   "hero_image": "/editions/images/2026-07-05-1-hero.png",
   "hero_image_provider": "grok"
 }

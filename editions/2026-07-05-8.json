@@ -3,93 +3,94 @@
   "theme": "wasteland",
   "date": "2026-07-05",
   "date_display": "Sunday, July 05, 2026",
-  "year": 2147,
-  "divergence": "The Great Depression never occurred",
-  "story_angle": "intimate human-interest profile of an ordinary person caught in events",
+  "year": 3387,
+  "divergence": "The Black Death targeted only landlords",
+  "story_angle": "human-interest profile of the one person unaffected by the great event and deeply annoyed about it",
   "roles": [
     "Story: OpenAI",
     "Humor: Grok",
-    "Editor: OpenAI"
+    "Editor: Grok"
   ],
-  "headline": "Echoes of a Shattered Dream: Mara's Foray into the Ruins",
-  "deck": "In a world untouched by the Great Depression, a lone scavenger sifts through the ghostly remains of consumerism.",
-  "article": "<p>Mara crouches in the shadow of a crumbled sign that once read 'WELCOME TO THE TRADING POST MALL,' a hint of faded neon still clinging to the edges. She picks through shards of glass and rotten cardboard, remnants of a life lost to time. Color and noise once filled these spaces. Now, silence reigns, broken only by the scuttle of rats scavenging for their own piece of yesterday.</p><p>In her hands, she holds a half-eaten candy bar, its wrapper torn and crinkled. A relic of a time when chocolate was worth more than a bullet. She tosses it aside, no appetite for sweetness today. The days blur into each other, each sunrise a reminder of the struggle to barter with the living or simply avoid the dead—predatory gangs that haunt the relics of a forgotten prosperity.</p><p>“Nothing survives here but the desperate,” she mutters, as she ducks behind a dilapidated kiosk, its shelves devoid of the shiny wares that once tempted shoppers. Mara sees others like her, their eyes hollow, their intentions masked. Trust is a currency rarer than the water she trades for scraps of canned beans. She recalls how she used to complain about her job, a meaningless cog in a machine of consumerism. Now, she'd give anything for the dull hum of a cash register, the feel of bills in her hand, a simple problem like a broken printer.</p><p>“Hey, Mara! You got anything good?” a voice calls out, breaking her reverie. It's Gideon, a fellow scavenger with a penchant for charms he found among the decay. She shakes her head, mind focused on survival math: trade or be traded upon, eat or be eaten. The life she once knew, vibrant and full, feels like a cruel joke played by the universe.</p><p>As the shadows lengthen, Mara retreats deeper into the skeletal structure of the mall, a labyrinth of echoes where laughter used to bounce off the walls. Instead, she collects the whispers of her past and the grim resolve for tomorrow. A wry smile flickers across her face; she clings to the darkness like a friend, knowing that survival requires a sense of humor about the despair—because in this wasteland, laughter is the only sound that feels alive.</p>",
-  "author": "Special Reporter",
-  "city": "New Athens",
+  "headline": "Selective Plague Spares Only Gurn Hollow: Landlord-Free Zone Becomes Existential Nightmare",
+  "deck": "With no one left to bicker over roof repairs, Gurn strives to survive a landscape of abandoned ledgers and ill-timed eviction notices.",
+  "article": "<p>Gurn Hollow, the solitary survivor of the recent pestilential upheaval targeting landlords, now finds himself ensconced beneath a mountain of crumbling ledgers and muttering about the unfortunate timing of universal extermination. Once a bustling center of avarice, Gurn's realm has devolved into a desolate tribute to bureaucracy, where every rusted nail in the hollowed structures is counted as a missed opportunity for rent.</p><p>Legions of vacant units tease Gurn with the promise of survival as he tallies back-rent in the plague-cart wheel ruts that mar the once-proud cobblestones. \"It’s a labor of love, or something like it,\" he stated, while tightly clutching a quill that has seen far more ink than any tenant has seen in days. With no landlords to demand payment, he busies himself posting 'no subletting' signs on wind-scoured foundations, likely to be ignored by the event horizon of tenant apathy.</p><p>Amidst the dust-laden silence, Gurn has discovered the grim joy of his survival ledger, documenting three extra days devoid of a landlord’s incessant curses. \"It’s not as liberating as you might think,\" he mused, his voice echoing through the hollow. \"All that’s left is a lot of work and no one to shake down for a roof repair. I even had to build my own chimney to keep the rain out. Now I’m just a glorified handyman in a landscape devoid of tenants.\"</p><p>In stark contrast to the bustling past, the deserted streets mimic a classic comedy of errors. \"I used to be the villain in this tale,\" Gurn lamented, shaking his head. \"Now I’m just the fool left to figure out how to patch a roof without a tenant to complain about the leaks. What an unsatisfactory turn of events!\" Echoes of former tenants taunt him with memories but provide no solutions, proving that even a plague has its limits when it comes to the absurdity of ownership.</p><p>As Gurn Hollow grapples with his newfound autonomy, all he can do is contemplate the unshakeable irony of existence amidst vacant homes and eviction notices. The lack of landlords is a welcome relief, yet it has replaced familiar oppression with the haunting weight of unwanted survival labor. In a world where landlords are dust, one man must wrestle with a heavy heart—and an even heavier leaky roof.</p>",
+  "author": "B. A. Renter, Bureau Chief of Uninhabitable Locations",
+  "city": "Gurn Hollow",
   "weather": {
-    "city": "New Athens",
-    "condition": "Eternal Rejuvenation",
+    "city": "Gurn Hollow",
+    "condition": "Sunny with a chance of landlords",
     "temp": 72,
     "high": 78,
     "low": 65
   },
   "oped": {
-    "title": "The Boom We Deserved",
-    "author": "Lila Korr",
-    "body": "Mara’s trek through the irradiated husk of 2147 isn’t tragedy—it’s the punchline. Because we skipped the Depression, we never learned to stop devouring. Endless growth became endless extraction until the sky cracked and the soil turned to glass. Her ‘shattered dream’ is just what happens when a civilization refuses any winter. We didn’t dodge ruin; we chose the slow, glittering version. Let her walk the ruins. The rest of us are still adding to them."
+    "title": "Landlords Were the Glue: Why Gurn Hollow’s Freedom Is a Self-Inflicted Wound",
+    "author": "Sir Reginald P. Fussbudget, Emeritus Chair of Tenant-Shaming Studies",
+    "body": "The selective plague that spared only Gurn Hollow has exposed a truth the hatless rabble refuse to face: without landlords, civilization devolves into unpaid leaks and existential spreadsheets. Residents now wander abandoned ledgers like lost sheep, unable to bicker productively over rent hikes or moldy ceilings. I propose the only rational remedy—mandatory resurrection of at least one landlord per block via dubious necromancy—to restore order and the comforting ritual of eviction notices. Blaming the victims’ lack of proper headwear during the original outbreak is, of course, secondary but undeniable. Personally, I miss the days when a stern letter could resolve disputes; now I must argue with myself over phantom repairs, which is frankly beneath my station. Let us reinstate the natural hierarchy before everyone starts thinking they own their own roofs."
   },
   "classifieds": [
     {
+      "cat": "Help Wanted",
+      "text": "Gurn Hollow collective seeks surrogate landlord to bicker daily over nonexistent roof repairs and phantom rent hikes; must furnish own ledgers and eviction stamps. Apply at the abandoned property office before the notices self-evict."
+    },
+    {
       "cat": "For Sale",
-      "text": "Pre-war can opener. Rusted but functional. Two bullets or best offer."
+      "text": "Entire row of vacant tenements for barter, complete with stacks of unpaid ledgers and half-written eviction notices; no actual landlords included. Inquire at Gurn Hollow's central ruin before the structures repossess themselves."
     },
     {
-      "cat": "Employment",
-      "text": "Scavenger needed for deep-ruin expedition. Must bring own gas mask."
+      "cat": "Lost & Found",
+      "text": "Found: bundle of pre-plague eviction notices fluttering near the hollow; owner may claim them if they can still collect a security deposit in irradiated scrip. Otherwise they become tomorrow's kindling."
     },
     {
-      "cat": "Housing",
-      "text": "Lean-to near the old highway. Wind protection minimal. No raiders currently."
-    },
-    {
-      "cat": "Services",
-      "text": "Radiation detox. 50% success rate. Payment upfront. No refunds."
+      "cat": "Public Notices",
+      "text": "Public notice from the last tenant of 17 Ledger Row: we apologize for every ignored maintenance request we once lodged; now that the landlord is gone, the leaks have unionized and demand their own rent."
     }
   ],
   "comic_strip": {
-    "title": "Infinite Tab",
+    "title": "Void Notices",
     "panels": [
       {
-        "caption": "Mara yanks a pristine credit card from a dune of unopened boxes: 'Limit: unlimited. Never declined.'"
+        "caption": "A yellowed eviction notice flaps on a crumbling door: 'Pay rent or join the landlords.'"
       },
       {
-        "caption": "A flickering kiosk hologram chirps: 'Thank you for your purchase! Would you like to finance the ruins?'"
+        "caption": "Survivor shouts at the sky: 'Who fixes the roof when every owner is dust?'"
       },
       {
-        "caption": "Mara pockets the card. 'Already did. That's how we got here.'"
+        "caption": "A fresh notice slides under the door: 'Evicted for lack of landlord to blame.'"
       }
     ],
     "image": "/editions/images/2026-07-05-8-strip.png",
     "image_provider": "grok"
   },
   "joke": {
-    "setup": "Mara clawed through the dust-choked vaults beneath what used to be Manhattan, convinced the lack of any Depression meant real treasure still waited.",
-    "punchline": "She pried open the last safe and found only a single yellowed note that read 'IOU: one future.'",
-    "text": "Mara clawed through the dust-choked vaults beneath what used to be Manhattan, convinced the lack of any Depression meant real treasure still waited. She pried open the last safe and found only a single yellowed note that read 'IOU: one future.'"
+    "setup": "In the irradiated husk of Gurn Hollow, where the selective plague left every tenant breathing but every landlord six feet under,",
+    "punchline": "the survivors finally learned the true cost of freedom: no one left to evict them from their own rotting despair.",
+    "text": "In the irradiated husk of Gurn Hollow, where the selective plague left every tenant breathing but every landlord six feet under, the survivors finally learned the true cost of freedom: no one left to evict them from their own rotting despair."
   },
   "sponsor_ads": [
     {
-      "headline": "Mara's Dreamcatcher Services: Snare the Echoes!",
-      "body": "Tired of hearing your past ambitions whispering through the cracked buildings? Let Mara's Dreamcatcher Services entrap those elusive dreams in a jar, perfect for display or future disappointment! Each jar comes with complimentary nostalgia.",
-      "tagline": "Guaranteed to catch echoes, not feelings."
+      "headline": "Gurn Hollow Deed Forge",
+      "body": "Stamp your own property claims on the ruins of vanished landlords before the existential rot sets in. Kits include plague-etched seals and a free dose of simulated scarcity.",
+      "tagline": "Warning: May induce phantom rent anxiety."
     },
     {
-      "headline": "Wasteland Whiskers: Pet the Unpetrified!",
-      "body": "Introducing a brand-new line of hairless ferrets that can survive on rusty cans and regret! Adopt your very own Wasteland Whisker today and be the envy of the ruins as they scavenge your leftovers.",
-      "tagline": "Because even survival needs a cute companion."
+      "headline": "Selective Scourge Memorial Plots",
+      "body": "Bury your former landlord's ledger in consecrated wasteland soil while stocks last. Each plot guarantees one square meter of landlord-free peace, now with added nightmare ambience.",
+      "tagline": "Not responsible for spontaneous property hauntings."
     },
     {
-      "headline": "Echoes of Opportunity: The Great Depression Never Haunted Us!",
-      "body": "Did you know? Our timeline’s lack of economic collapse means you can now buy real estate atop ancient rubble! Secure your plot in the Ruins of Regret and live like a true capitalist scavenger.",
-      "tagline": "Real estate so good, it’s almost a dream!"
+      "headline": "Tenant Liberation Stamps",
+      "body": "Official-looking seals that let you declare any husk a sovereign holding in the spared zone. Expires when the collective dread catches up.",
+      "tagline": "Void where actual governance exists."
     },
     {
-      "headline": "Mara's Memento Machines: Relive the Highs, Forget the Lows!",
-      "body": "Experience the exhilaration of 'what could have been' with our cutting-edge Memento Machines! Just insert your regrets, and watch them transform into delightful fibs for your friends.",
-      "tagline": "Mara's not responsible for spontaneous existential crises."
+      "headline": "Nightmare Containment Tarps",
+      "body": "Drape your ex-landlord's gutted manse to muffle the howls of unregulated freedom. Double-layered against the 3387 edition of Black Death irony.",
+      "tagline": "One size fits all abandoned fiefdoms."
     }
   ],
-  "generated_at": "2026-07-05T04:28:42.432948+00:00",
+  "real_world_echo": "Injury ends Williams' Wimbledon comeback - the selective plague acts as the 'injury' that ends the tenant-landlord contest, stranding the unaffected player with no opponents and forced into pointless action",
+  "generated_at": "2026-07-05T06:17:34.114927+00:00",
   "hero_image": "/editions/images/2026-07-05-8-hero.png",
   "hero_image_provider": "grok"
 }

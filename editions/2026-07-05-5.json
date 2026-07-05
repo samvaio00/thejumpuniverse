@@ -3,93 +3,94 @@
   "theme": "medieval",
   "date": "2026-07-05",
   "date_display": "Sunday, July 05, 2026",
-  "year": 1347,
-  "divergence": "Rome never fell",
-  "story_angle": "investigative exposé uncovering a hidden scandal",
+  "year": 939,
+  "divergence": "Rome never fell; it pivoted to a services economy",
+  "story_angle": "eyewitness dispatch whose vivid sensory details are all administrative",
   "roles": [
     "Story: OpenAI",
     "Humor: Grok",
-    "Editor: OpenAI"
+    "Editor: Grok"
   ],
-  "headline": "The Grain Guild's Betrayal: A Harvest of Deceit",
-  "deck": "An exposé unveils the nefarious dealings of the Imperial Grain Guild, as noble families conspire to inflate grain prices amidst the suffering of the peasantry.",
-  "article": "<p>In the year of our Lord 1347, as the snows melt and the fields awaken, a blight not of nature but of man has taken root within the hallowed halls of the Imperial Grain Guild. This once-revered institution, tasked with the sacred duty of ensuring sustenance for the Empire, has become a den of corruption, infested with greed and deceit. Evidence suggests a collusion most foul between the Guild's leaders and noble houses, as they conspire to inflate grain prices, leaving the common folk to suffer the bitter pangs of hunger.</p><p>Testimonies from starving peasants echo through the land, painting a grim portrait of despair. One such voice, a widow from the impoverished hamlet of Verenthia, laments, \"Our children cry for bread, yet the Guild hoards the grain, filling their coffers while we wither. How can the Empire stand righteous, when it allows the starving to be trodden underfoot by the wealthy?\" Such sorrowful accounts illuminate a populace desperate for justice, while the gilded nobility revel in their ill-gotten gains.</p><p>In a twist of fate befitting the darkest tales of yore, secret documents have surfaced, revealing to what depths the Guild has sunk. These texts not only implicate their leaders in collusion with the noble classes but also disclose treasonous dealings with foreign merchants. It appears that grain, the lifeblood of our great Empire, has been bartered for the favor of rivals, undermining the very foundation upon which our civilization stands.</p><p>As the Empire grapples with the truth of this treachery, the specter of famine looms ever larger over its people. The shadow of divine providence may yet shine upon the innocent, urging a reckoning against those who would pervert the natural order for greed. In this most critical hour, the Imperial Senate must take heed of the suffering souls and purge this corruption from the grain that feeds our land. For without justice, how can we call ourselves an Empire worthy of the heavens?</p>",
-  "author": "Local Editor",
-  "city": "Rome",
+  "headline": "Inked Peril: Scribe Flavius's Quill May Yet Lead to His Own Bureaucratic Doom",
+  "deck": "A single errant blot transforms triumph into travesty during the 939 Form Reckoning.",
+  "article": "<p>During the 939 Form Reckoning, Scribe Flavius of the Imperial Archive watched an ink blot spread across Form 943-BR, erasing his shot at the Imperial Record-Keeping Laurels. The reek of 2,847 over-waxed duplicate scrolls hung in the air while 19 lead seals thudded into place in time with the fatal drip.</p><p>Valerius the Diligent, the assigned observer, stared at the smear. \"Fourteen thousand nine hundred two petitions now need re-scrutiny,\" he said. \"The ledger margins are already rewriting themselves.\"</p><p>Flavius's desk has since been cordoned off. Clerks step around the dried pools, each carrying fresh copies of the same forms they filed yesterday. The blot has become the new watermark on every subsequent document that leaves the archive.</p>",
+  "author": "Marcus Scribonius, Chief Chronicler of Administrative Affairs",
+  "city": "Scriptoria Nova",
   "weather": {
-    "city": "Rome",
-    "condition": "Eternal Mists of the Colosseum",
+    "city": "Scriptoria Nova",
+    "condition": "Quill-Driven Showers Expected Today",
     "temp": 72,
     "high": 78,
     "low": 65
   },
   "oped": {
-    "title": "Hail the Hoarders",
-    "author": "Flavia Severa, Exiled Scribe",
-    "body": "The Grain Guild stands accused of deceit while Rome’s endless legions march on phantom grain. In this Empire that refuses to die, betrayal is the only honest harvest. Without their stockpiles, the Senate’s marble tables would lie bare and the mob would finally taste the rot beneath eternal glory. Cry treason all you like; the true scandal is our centuries-long appetite for the lie that abundance flows from virtue rather than from men willing to starve their neighbors. 1347 years of this farce, and still we pretend the fields belong to the living."
+    "title": "The Virtuous Blot: Why Doom Is the Only Sensible Outcome",
+    "author": "Aurelius Blotworthy, Imperial Censor of Quill Angles and Self-Appointed Keeper of the Red Wax Seal",
+    "body": "One must commend the single errant blot for exposing Scribe Flavius as the menace he is. In our services-driven Rome, unchecked competence on the 939 Form Reckoning would only breed dangerous efficiency, depriving honest bureaucrats of endless re-filings and fee collections. The real culprits remain the victims' absurdly tall hats, whose shadows plainly unnerved the quill. My proposed remedy is mandatory double-blotting on every document, plus a new Hat Height Tax payable in triplicate. This will enrich the empire while preventing any future triumphs. Naturally, none of this stems from the petty fact that Flavius once denied my own perfectly reasonable request to backdate a chariot-repair chit. The system, like my grievances, is flawless."
   },
   "classifieds": [
     {
-      "cat": "Merchant Opportunities",
-      "text": "Join the prosperous trade routes of the Eternal City! Seeking skilled artisans to craft goods of fine quality. Gold and glory await those who answer the call. Inquire at the Forum of Augustus."
+      "cat": "Legal",
+      "text": "By order of the Praetor's Office: Any citizen whose Form 47B bears the Flavius Blot of 939 is hereby released from all service obligations until a new reckoning; apply in triplicate to avoid further doom."
     },
     {
-      "cat": "Knightly Services",
-      "text": "Valiant knights of the realm! The Ducal House of Carthago is in need of brave souls to protect our lands from marauding brigands. Generous rewards and noble titles offered. Apply at the Castle Gates."
+      "cat": "Help Wanted",
+      "text": "Seeking steady-handed scribe to redo 300 service contracts after Flavius's blot ruined the Form Reckoning; must swear oath against excess ink and provide own blotter."
     },
     {
-      "cat": "Healing and Remedies",
-      "text": "Herbalists, healers, and wise women! The Temple of Asclepius seeks your expertise. Help our citizens with their ailments and be compensated with fine silks and spices. Visit us at the Healing Pavilion!"
+      "cat": "For Sale",
+      "text": "For sale: one slightly used quill from Scribe Flavius, guaranteed to produce only minor bureaucratic catastrophes; buyer assumes all liability for Form 47B errors."
     },
     {
-      "cat": "Artisan Crafts",
-      "text": "To all skilled smiths and craftsmen! The Coliseum needs magnificent creations for the upcoming games. Show off your artistry and gain favor in the eyes of the Senate. Contact a messenger to submit your designs!"
+      "cat": "Public Notices",
+      "text": "To whom it may concern: the undersigned tavern-keeper apologizes for last month's service tax underpayment, caused entirely by Flavius's errant blot on our shared form; please do not send the lictors."
     }
   ],
   "comic_strip": {
-    "title": "The Crumb Conspiracy",
+    "title": "The Fatal Blot",
     "panels": [
       {
-        "caption": "Guildmaster stamps the ledger: \"Prices tripled on 'strategic shortage.'\""
+        "caption": "Flavius: '939 Form sealed—my services contract pays out.' *blot blooms*"
       },
       {
-        "caption": "Noble whispers to aide: \"Tell the serfs it's divine will. My new stables need thatch.\""
+        "caption": "Supervisor: 'Errant ink voids the reckoning. You now owe the correction fee.'"
       },
       {
-        "caption": "Peasant to child: \"At least the Guild leaves us the husks. For soup.\""
+        "caption": "Flavius: 'How much?' Supervisor: 'Your soul, scribe. Next form's due tomorrow.'"
       }
     ],
     "image": "/editions/images/2026-07-05-5-strip.png",
     "image_provider": "grok"
   },
   "joke": {
-    "setup": "The Grain Guild assured the Senate their silos stood loyal to the Emperor's table,",
-    "punchline": "yet the only thing they reaped was a tidy profit selling Rome's bread to whoever paid in silver before the plebs noticed.",
-    "text": "The Grain Guild assured the Senate their silos stood loyal to the Emperor's table, yet the only thing they reaped was a tidy profit selling Rome's bread to whoever paid in silver before the plebs noticed."
+    "setup": "Scribe Flavius spent a fortnight inking the precise penalties for any clerk whose quill blots the registers",
+    "punchline": "and awoke to find his own name entered under 'instruments of negligence, to be ground into new vellum at public expense.'",
+    "text": "Scribe Flavius spent a fortnight inking the precise penalties for any clerk whose quill blots the registers, and awoke to find his own name entered under 'instruments of negligence, to be ground into new vellum at public expense.'"
   },
   "sponsor_ads": [
     {
-      "headline": "Behold! The Unyielding Harvest Helmet!",
-      "body": "Tired of thieving scarecrows pilfering your bushels? Our enchanted helmets repel all chicanery—guaranteed to render your grain secure or your wheat sown in salt! Limited supplies available.",
-      "tagline": "Warning: May cause sudden fits of wisdom or bizarre accents."
+      "headline": "Flavius-Grade Ink: Now With Extra Doom-Proofing",
+      "body": "Purchase our vellum-sealing tincture that binds every stroke to the rolls of Empire Services, ensuring no scribe's quill can be retroactively audited into nonexistence by the Bureau of Eternal Ledgers.",
+      "tagline": "Not liable for quills already damned by yesterday's forms."
     },
     {
-      "headline": "Join the Grain Guild and Get Betrayed Today!",
-      "body": "Sign up now for a lifetime of deceit and betrayal! Receive a free dagger for every shipment of promised corn that never arrives! Membership is non-refundable and comes with a complimentary frown.",
-      "tagline": "Terms and conditions apply; betrayal may vary."
+      "headline": "Bureaucratic Absolution Service – One Papyrus at a Time",
+      "body": "Our certified notaries will draft counter-scrolls to cancel the peril of your own ink, provided your case number matches the July 5th edition of the Public Perils Register.",
+      "tagline": "Rome's oldest service economy: we file so you don't have to vanish."
     },
     {
-      "headline": "Want to Spite the Guild? Try Our Odoriferous Onions!",
-      "body": "These rare and pungent bulbs were harvested by disgruntled farmers seeking revenge. Place one in your grain store to ensure the Guild never approaches! 100% stink guaranteed.",
-      "tagline": "Not responsible for any vengeful spirits or volatile relationships."
+      "headline": "Quill-Insurance Against Self-Inking Doom",
+      "body": "Subscribe to our monthly indemnity that pays out in fresh scribes and blank charters should your handwriting summon the Department of Retroactive Compliance.",
+      "tagline": "Flavius excluded; prior inked peril voids all claims."
     },
     {
-      "headline": "The Unfathomable Scribe: Whispers of Doom",
-      "body": "For a mere two groats, obtain a personalized scroll detailing the most peculiar omens concerning the Grain Guild. Spoiler alert: it's mostly bad news! Ideal for those seeking foresight in a pigeon's droppings.",
-      "tagline": "Not liable for any misinterpretation of omens; scroll at your own risk."
+      "headline": "Public Notice: Scribe Wanted for Flavius's Replacement",
+      "body": "Apply at the Services Annex with three witnessed copies of your own doom-scroll; successful candidates receive immunity from the very bureaucracy that devoured their predecessor.",
+      "tagline": "No quills permitted on premises without prior triplicate approval."
     }
   ],
-  "generated_at": "2026-07-05T04:23:22.135818+00:00",
+  "real_world_echo": "Injury ends Williams' Wimbledon comeback - mirrored as a champion scribe's paperwork comeback halted by an administrative injury (ink blot) during an annual tournament of forms",
+  "generated_at": "2026-07-05T06:12:03.782391+00:00",
   "hero_image": "/editions/images/2026-07-05-5-hero.png",
   "hero_image_provider": "grok"
 }

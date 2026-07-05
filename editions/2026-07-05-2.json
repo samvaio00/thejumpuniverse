@@ -3,93 +3,94 @@
   "theme": "artdeco",
   "date": "2026-07-05",
   "date_display": "Sunday, July 05, 2026",
-  "year": 1927,
-  "divergence": "A plague wiped out 90% of humanity in 2020",
-  "story_angle": "somber obituary for a lost era or institution",
+  "year": 1930,
+  "divergence": "The internet was invented by postal workers in 1923",
+  "story_angle": "solemn obituary for a beloved institution nobody can remember the purpose of",
   "roles": [
     "Story: OpenAI",
     "Humor: Grok",
-    "Editor: OpenAI"
+    "Editor: Grok"
   ],
-  "headline": "A Somber Curtain Falls: The Closure of The Grand Art Deco Theater",
-  "deck": "Once a Celestial Haven for Cultural Reverie, Now a Hollow Shell of Echoes and Memories.",
-  "article": "<p>In the twilight of the Roaring Twenties, when jazz cascaded through the air like champagne bubbles in a crystal flute, there resided a sanctuary of artistic splendor—the Grand Art Deco Theater. Established in the audacious year of 1925, this opulent venue flourished as a bastion of avant-garde performances and lavish soirées, where luminaries like Ella Fitzgerald and Duke Ellington graced the stage, each note a stellar homage to life’s exuberance. Oh, how the velvet drapes fluttered like whispers of dreams!</p><p>Yet, as the shadows of the plague swept across the lands in 2020, the vibrant heart of our cultural beacon was cruelly stilled. The once resplendent marquee, a vivid tapestry of lights gleaming against the city's darkened facade, now stands shrouded in melancholy. It is a haunting reminder of joy extinguished, each bulb a silent witness to the laughter and applause that once filled the air with electric fervor. Like a ghost of a bygone era, the theater bears witness to the harrowing reality that 90% of humanity has been snuffed out, leaving behind a void that resonates deeper than mere silence.</p><p>“The Grand was not merely a theater; it was the very essence of our aspirations, a vibrant pulse in the heart of our existence,” lamented Amelia Worthington, a devoted patron and columnist for the Daily Chronicle. “It held the promise of new beginnings, a kaleidoscope of hope amidst each performance. Now, its hallowed halls languish in darkness.”</p><p>As heartache and desolation envelop the remnants of our cultural legacy, we are left to ponder the future of art and expression in a world that has irrevocably shifted. The Grand Art Deco Theater, with its intricate motifs and lavish designs, stood as a metaphor for the very heights humanity had reached—which now lay in tatters, brick by aged brick. The absence of its vibrant performances echoes with an unsettling permanence, a mournful dirge for the splendor of yesteryear, as we grapple with the loss of our collective humanity amid the silence of a once-bustling cultural epicenter.</p>",
-  "author": "Foreign Bureau",
-  "city": "Metropolis",
+  "headline": "The Pneumatic Message Routing Guild: A Grand Obituary for Our Forgotten Tubes",
+  "deck": "As zeppelins soar over Manhattan, the legacy of 1923's postal internet is laid to rest—on a bed of champagne.",
+  "article": "<p>In an extravagant display of misplaced nostalgia, the nation convened today to eulogize the Pneumatic Message Routing Guild, purveyors of the lost art of tube-based communication, once heralded as the pinnacle of progress and now relegated to the annals of inefficacy. Seven majestic zeppelins, each adorned with the Guild's chrome insignia, floated gracefully above Manhattan, tracing the obsolete routes of the once-thriving pneumatic network while liberating a blizzard of ticker-tape; alas, the sole messages bore only the dreary forecasts of inclement weather.</p><p>The Guild's final ledger, now the stuff of legend, revealed a staggering 14,892 pneumatic capsules entangled in stasis beneath Grand Central Terminal. These capsules, abandoned relics of a bygone era, emblematically encapsulate both the nation’s forgetfulness and its insatiable appetite for encased curiosities. \"It is a somber day when one must contemplate the lingering fate of forgotten tubes,\" lamented Guild President Archibald S. Ventilator, his somber bowler hat tipped at a rakish angle, as he addressed the crowd. \"These capsules represent not only lost messages but lost dreams—and let us not forget, lost efficiency!\"</p><p>In an unprecedented show of bureaucratic spectacle, the Postal Council issued a decree declaring that the Guild's polished chrome seals, once symbols of prestige, are to be melted down and expertly crafted into cocktail shakers for the wake. \"What better way to honor the past than to toast it with the very metal that housed its messages?\" mused Council member Edith P. Gilded, her voice dripping with the overzealous zeal typical of one who has ingested far too much celebratory champagne.</p><p>The event, attended by notables including the city’s last remaining pneumatic tube operator and the Mayor’s cat, was punctuated by grand speeches that waxed poetic on the essence of progress lost to time. \"As the zeppelins overshadow our skyline,\" proclaimed Ventilator, gesturing grandly at the sky, \"we must reflect on the vast expanse of what was once possible, only to be swallowed by the gaping maw of modernity!\" In a lamentable twist of fate, none could quite remember what that ‘modernity’ entailed, but the taste of champagne, combined with the gusts of wind from the passage of the zeppelins, convinced them that they should mourn it nonetheless.</p>",
+  "author": "Cecil Flotsam, Senior Correspondent for the Bureau of Overreactions",
+  "city": "Postopolis",
   "weather": {
-    "city": "Metropolis",
-    "condition": "Ethereal Haze",
+    "city": "Postopolis",
+    "condition": "Partly cloudy with a chance of tubes",
     "temp": 72,
     "high": 78,
     "low": 65
   },
   "oped": {
-    "title": "Dust on Gilt: Bury the Deco Dead",
-    "author": "Lila Voss",
-    "body": "The plague took ninety percent; now the Grand closes its doors. Good. Art Deco’s chrome curves and feverish geometry always screamed denial—frantic sparkle while the world already rotted. Survivors need bread, not another tomb of lacquered lies. Let the wrecking ball finish what the virus began and spare us one more temple to beautiful distraction."
+    "title": "Zeppelins? Bah—Let Us Bury the Tubes Deeper!",
+    "author": "Reginald F. Windbag, Esq., Curator of the Society for the Preservation of Unnecessarily Complicated Mail",
+    "body": "The Pneumatic Message Routing Guild's so-called obituary is nothing but defeatist twaddle. While zeppelins prance overhead like drunken dirigibles, our glorious 1923 tubes remain the only honest way to move a thought across Manhattan. The real culprit is obvious: modern senders insist on wearing those absurdly tall Art Deco hats that jam the capsules at every bend. The fix is elementary—mandate universal tube-compatible monocles and ban all headgear above three inches. I, for one, refuse to subsidize aerial fads when the Guild still owes me the modest pension promised after my unfortunate 1927 misrouting of the mayor's invitations. Progress is overrated; my tubes, and my wallet, demand we dig deeper."
   },
   "classifieds": [
     {
-      "cat": "Art Deco Furnishings",
-      "text": "Elevate your abode with exquisite Art Deco furnishings! Choose from a curated selection of hand-crafted chairs, tables, and sconces, all embodying the elegance of the roaring twenties. Ideal for those rebuilding in our vibrant new world. Inquire at the Corner of 5th and Main."
+      "cat": "For Sale",
+      "text": "FOR SALE: Entire decommissioned Pneumatic Routing Guild tube network, 1923 model, now collecting dust beneath the zeppelin docks; suitable for scrap, sculpture, or smuggling gin. Inquire before the champagne runs out."
     },
     {
-      "cat": "Art Deco Jewelry",
-      "text": "Shimmer and shine with our exclusive Art Deco jewelry line! Limited edition pieces, featuring geometric designs and precious stones, are perfect for your unique style. Make a statement in this new era. Available for viewing by appointment only. Call Clara at 555-0199."
+      "cat": "Help Wanted",
+      "text": "HELP WANTED: Former Postal Internet operators sought to retrain as radio-wave couriers; must tolerate altitude, static, and the absence of champagne toasts. Apply at the new Transatlantic Wireless Bureau, rooftop level."
     },
     {
-      "cat": "Art Deco Architecture",
-      "text": "Are you a visionary architect? Join us in redefining the skyline! We seek innovative minds to craft Art Deco buildings that reflect the resilience and creativity of our surviving society. Design the future while honoring the past. Contact the New Dawn Coalition for details."
+      "cat": "Personals",
+      "text": "PERSONALS: To the charming stenographer whose marriage proposal arrived via the last tube run—my reply was dispatched moments before the Guild's obituary; please contact the lost-mail annex before the zeppelins forget us both."
     },
     {
-      "cat": "Art Deco Events",
-      "text": "Celebrate life at the Grand Gatsby Gala, a spectacular Art Deco event! Join us for an evening of jazz, dance, and revelry at the newly restored Forest Hall. Dress code: Flapper elegance preferred. Tickets available at the door. Let's thrive together once more!"
+      "cat": "Legal Notices",
+      "text": "LEGAL NOTICE: The Pneumatic Message Routing Guild hereby confesses that several thousand urgent dispatches were rerouted into the Hudson during yesterday's farewell toast; claims for undelivered stock tips or divorce papers must be filed by Friday."
     }
   ],
   "comic_strip": {
-    "title": "Final Fade",
+    "title": "Capsule's Curtain Call",
     "panels": [
       {
-        "caption": "The Grand's proscenium arch, still gleaming with 1927 gold, now frames only vacant aisles and one tattered 'Closed' notice."
+        "caption": "Guild foreman yanks the final brass tube from the Manhattan vault. '1923's wonder, dead at seven.'"
       },
       {
-        "caption": "Bureaucrat with clipboard: 'We're razing it for the new mass grave annex—no demand for matinees anymore.'"
+        "caption": "A zeppelin dispatcher laughs over the rim of his glass. 'Your capsules crawled while we flew the mail yesterday.'"
       },
       {
-        "caption": "Survivor: 'At least the dead get better sightlines than we ever did.'"
+        "caption": "The guild widow pops the magnum straight into the open tube. 'Rest in fizz, boys—postage due.'"
       }
     ],
     "image": "/editions/images/2026-07-05-2-strip.png",
     "image_provider": "grok"
   },
   "joke": {
-    "setup": "The Grand Art Deco Theater's management blamed sparse crowds for the sudden closure amid its chrome-and-ebony glamour.",
-    "punchline": "They claimed even the future plague's 10% survivors wouldn't pay to watch the same empty geometric patterns twice.",
-    "text": "The Grand Art Deco Theater's management blamed sparse crowds for the sudden closure amid its chrome-and-ebony glamour. They claimed even the future plague's 10% survivors wouldn't pay to watch the same empty geometric patterns twice."
+    "setup": "The Pneumatic Message Routing Guild convened in lacquered walnut and chrome to inter their tubes with Art Moderne finality.",
+    "punchline": "The death notice itself never arrived; the clerks had already rerouted it through their 1923 ledger and declared the tubes unclaimed.",
+    "text": "The Pneumatic Message Routing Guild convened in lacquered walnut and chrome to inter their tubes with Art Moderne finality. The death notice itself never arrived; the clerks had already rerouted it through their 1923 ledger and declared the tubes unclaimed."
   },
   "sponsor_ads": [
     {
-      "headline": "Auditorium of Shadows: Book Your Invisibility Performance!",
-      "body": "As the Grand Art Deco Theater closes its grand doors, why not immerse yourself in the world of unseen artistry? Perform your next recital without the burden of an audience's gaze—our Flapper Deluxe Invisibility Cloak guarantees you’ll dazzle in silence.",
-      "tagline": "Warning: May result in existential crisis when you realize no one can see your talent."
+      "headline": "PNEUMATIC ELEGY SERVICES",
+      "body": "Commemorate the Guild's passing with our hand-etched brass message capsules; each holds one final dispatch before the tubes go dark forever.",
+      "tagline": "Engraving includes your choice of obsolete routing code."
     },
     {
-      "headline": "Eulogize in Style: Rent the Last Memento Mourning Gowns!",
-      "body": "Unveil your inner melancholy with our bespoke line of Grand Theater funeral attire, perfect for commemorating the somber closure. Each gown is designed to say, 'I mourn, but also, I might just be a star on Broadway… if the plague hadn’t happened.'",
-      "tagline": "Remember: Tragedy never goes out of style—only humanity does."
+      "headline": "TUBE-FREE CORRESPONDENCE BUREAU",
+      "body": "Postal workers now route your 1923-style packets through the new electric ledger; delivery guaranteed unless the operator misfiles your soul.",
+      "tagline": "No cylinders required. No refunds issued."
     },
     {
-      "headline": "Gift Wrapped Regret: Send Someone a 'Missed Opportunity' Package!",
-      "body": "Missing your chances to attend the last curtain call? Send a beautifully wrapped box filled with ethereal memories and unfulfilled dreams! Each package comes with a complimentary time machine brochure, because it’s never too late—until it is.",
-      "tagline": "Actual time travel not included; feelings of nostalgia are guaranteed."
+      "headline": "FORGOTTEN TUBE RECLAMATION",
+      "body": "Salvage the last vacuum-sealed love notes and stock tips from the condemned network; each recovered cylinder inspected for existential rust.",
+      "tagline": "Guild members need not apply."
     },
     {
-      "headline": "Join the Surreal Society of Survive-ALONE Artistry!",
-      "body": "Tired of empty theaters and lonely canvases? Join us and paint your sorrows on a one-man stage while others stream your existential crises on the world's last remaining radio shows. Who needs an audience when you have an audience of one—yourself?",
-      "tagline": "Membership includes free existential dread and a single clapping sound recorded from 2019."
+      "headline": "OFFICIAL NOTICE: MESSAGE INTERMENT",
+      "body": "All remaining pneumatic traffic will cease at midnight; citizens are invited to witness the ceremonial sealing of the central sorting vault.",
+      "tagline": "Bring your own wax."
     }
   ],
-  "generated_at": "2026-07-05T04:18:21.134116+00:00",
+  "real_world_echo": "Mirrors the US 250th birthday celebrations with fireworks and flyovers by recasting a pointless institutional anniversary as a grand patriotic spectacle complete with extreme weather metaphors for lost efficiency",
+  "generated_at": "2026-07-05T06:06:53.375378+00:00",
   "hero_image": "/editions/images/2026-07-05-2-hero.png",
   "hero_image_provider": "grok"
 }
