@@ -92,5 +92,21 @@
   "real_world_echo": "The 'AI-in-everything' gadget gold rush — mirrored as a world that puts atoms in everything and creates a Bureau of Enthusiasm instead of oversight.",
   "generated_at": "2026-07-05T05:59:53.582919+00:00",
   "hero_image": "/editions/images/2026-06-30-6-hero.png",
-  "hero_image_provider": "grok"
+  "hero_image_provider": "grok",
+  "stories": [
+    {
+      "desk": "Education",
+      "headline": "School Board Adds 'Duck, Cover, and Toast' to Morning Drill",
+      "deck": "Students will now practice breakfast preparedness twice weekly, pamphlets permitting.",
+      "byline": "Miss Patty Lindstrom, Education Desk",
+      "article": "<p>The Tri-County School Board voted 6-1 Tuesday to expand the morning safety drill to include breakfast, following the arrival of Li'l Sunshine units in forty classrooms. Under the new protocol, students duck beneath their desks, cover their necks, and pass the toast down the row in an orderly fashion.</p><p>\"Preparedness and nutrition are not enemies,\" said Superintendent Hale, whose office now glows softly. The dissenting board member, Mrs. Kowalski, asked what the shovel by the cafeteria was for, and has been reassigned to optimism.</p>"
+    },
+    {
+      "desk": "Society",
+      "headline": "Mrs. Pfeiffer's Casserole Takes County Ribbon; Judges Praise How It Stays Warm on Its Own",
+      "deck": "The dish has now been warm for three consecutive weeks, a county record.",
+      "byline": "Corinne Vale, Society Desk",
+      "article": "<p>Maple Court's own Mrs. Donna Pfeiffer claimed the blue ribbon at the county fair Saturday with her tuna-noodle triumph, which judges praised for its bold flavor, festive glow, and thermodynamic independence. The casserole has remained serving-temperature since the ninth of June without an oven, an efficiency the pamphlet describes as 'bonus energy.'</p><p>Runner-up Mrs. Dean protested that self-warming dishes violate fair rules. Officials disagreed, noting the rules were printed before such things were possible, and briefly, before touching the casserole dish, that her tongs were melting.</p>"
+    }
+  ]
 }

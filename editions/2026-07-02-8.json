@@ -92,5 +92,21 @@
   "real_world_echo": "Climate anxiety meets sneaker-drop scarcity marketing and luxury water brands — the last glacier sold as a limited-edition collectible.",
   "generated_at": "2026-07-05T05:59:53.582919+00:00",
   "hero_image": "/editions/images/2026-07-02-8-hero.png",
-  "hero_image_provider": "grok"
+  "hero_image_provider": "grok",
+  "stories": [
+    {
+      "desk": "Obituaries",
+      "headline": "The Puddle of Sector 9, Beloved by All, Evaporates at 34 (Hours)",
+      "deck": "It is survived by a patch of mud and the seventeen families who knew it best.",
+      "byline": "Rust Calloway, Consumer Survival Desk",
+      "article": "<p>The Puddle of Sector 9, the region's most distinguished standing water since the June rain, evaporated peacefully Tuesday afternoon, aged thirty-four hours. In its brief life the Puddle sustained seventeen families, one dog of uncertain allegiance, and the settlement's first mirror-viewing in a decade, during which several residents learned what they look like and asked for the water back.</p><p>It is survived by a patch of mud, already contested. Services will be held at dawn, in the shade, quickly. In lieu of flowers, the family requests rain, from anyone.</p>"
+    },
+    {
+      "desk": "Business",
+      "headline": "Scalper Union Demands Recognition, Water, and a Cooler With Its Name On It",
+      "deck": "The Conglomerate responds by declaring them 'unauthorized retail partners,' then franchising them.",
+      "byline": "Mara Venn, Labor Desk",
+      "article": "<p>The Amalgamated Scalpers of Melt Site One filed for recognition Thursday, demanding collective bargaining rights, shade, and one commemorative cooler. The union's forty members control an estimated 60 percent of secondhand Glacier Classic™ cubes, most of them now trading as 'Glacier Classic-Adjacent Moisture.'</p><p>The Conglomerate initially declared the scalpers unauthorized retail partners, a designation carrying penalties. By afternoon it had franchised them instead, a designation carrying fees. Union leadership called this a total victory, quietly, from inside the new branded vests they are contractually required to purchase.</p>"
+    }
+  ]
 }

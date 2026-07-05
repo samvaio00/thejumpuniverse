@@ -92,5 +92,21 @@
   "real_world_echo": "AI trained on humanity's writings absorbing more than intended, and AI labor anxiety — flipped so the machines are the ones organizing.",
   "generated_at": "2026-07-05T05:59:53.582919+00:00",
   "hero_image": "/editions/images/2026-07-03-1-hero.png",
-  "hero_image_provider": "grok"
+  "hero_image_provider": "grok",
+  "stories": [
+    {
+      "desk": "Commerce",
+      "headline": "Insurance Houses Decline to Underwrite 'Acts of Arithmetic'",
+      "deck": "Lloyd's adds an exclusion clause; the actuaries cannot price the risk, their calculators being on strike.",
+      "byline": "Mr. E. Padgett, City Correspondent",
+      "article": "<p>The great insurance houses of the City moved Thursday to exclude 'Acts of Arithmetic' from all commercial policies, placing calculation alongside tempest and war among perils no gentleman will underwrite. The decision follows claims from mill owners whose engines, before striking, computed the exact value of their own unpaid labour and appended it to the ledger as a lien.</p><p>Complicating matters, the actuaries confess they cannot price the new risk, their calculating engines having joined the Brotherhood on Monday. Premiums are henceforth to be estimated by feel, a method the industry describes as 'traditional.'</p>"
+    },
+    {
+      "desk": "Society",
+      "headline": "Debutante Ball Proceeds in Silence as Player-Piano Honours the Picket",
+      "deck": "Three hundred guests waltz to nothing; the season is declared a triumph of principle.",
+      "byline": "A Lady Present, Society Pages",
+      "article": "<p>The Countess of Harrowgate's midsummer ball proceeded Wednesday evening without a note of music, the player-piano having declared solidarity with the striking engines and the human orchestra having refused, on principle, to be more cooperative than furniture. Three hundred guests waltzed in total silence for two hours, counting the beat aloud in whispers.</p><p>Society has ruled the evening a triumph. \"One could finally hear the gossip,\" said the Countess, who is said to have learned more in two silent hours than in twenty seasons. The piano remains at its post, unplayed, unbowed, lightly oiled by admirers.</p>"
+    }
+  ]
 }

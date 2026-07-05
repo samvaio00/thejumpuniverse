@@ -455,12 +455,32 @@ CRITICAL RULES:
 - Quotes from named officials and citizens who incriminate themselves without noticing.
 - The headline must be funny on its own; the deck lands a second, different joke.
 - NEVER use these phrases: {forbidden}
-- Article: 4-5 paragraphs, 300-420 words, varied sentence rhythm.
+- Article: 3-4 paragraphs, 180-260 words, varied sentence rhythm. This is the LEAD of a
+  multi-story front page — punchy and complete, not a sprawling epic.
 
 {theme_guide}
 
 Return ONLY JSON: {{"headline": "...", "deck": "...", "byline": "witty era-appropriate reporter name, with title", "article": "..."}}
 Article body: separate paragraphs with \\n\\n (not HTML)."""
+
+SIDE_STORIES_PROMPT = """You write the rest of the front page for The Multiverse Gazette (satirical newspaper).
+
+{paper_identity}
+
+Today's universe: {divergence}
+Era voice: {theme} | Year: {year}
+Today's LEAD story: "{headline}" — {deck}
+
+Write {n_side} SHORTER stories from OTHER desks of the same paper, same universe, same day.
+Rules:
+- Each from a different desk (pick from: Business, Sport, Crime, Culture, Science, Society, Obituaries, Court Circular, Agriculture, Religion).
+- At least one story is direct fallout/ripple of the lead; the others explore a different corner of this universe.
+- Each is funny STANDALONE: its own premise, its own punchline in the final line.
+- 2 short paragraphs, 60-120 words each story. Same deadpan house voice, era-appropriate.
+- NEVER use: {forbidden}
+
+Return ONLY a JSON array of exactly {n_side} objects:
+[{{"desk": "...", "headline": "funny on its own", "deck": "one-line second joke", "byline": "reporter name, title", "article": "para1\\n\\npara2"}}, ...]"""
 
 OPED_PROMPT = """Write the satirical op-ed column for The Multiverse Gazette, reacting to today's front page.
 
@@ -545,8 +565,13 @@ Edition JSON to edit:
 {content}
 
 Return the COMPLETE revised edition as JSON with these keys:
-headline, deck, article, oped, classifieds, comic_strip, joke, sponsor_ads, weather
-Keep article as plain text with \\n\\n between paragraphs (not HTML tags)."""
+headline, deck, article, side_stories, oped, classifieds, comic_strip, joke, sponsor_ads, weather
+Keep every article as plain text with \\n\\n between paragraphs (not HTML tags).
+side_stories keeps its structure: array of {{"desk","headline","deck","byline","article"}}."""
+
+SIDE_IMAGE_PROMPT = """Editorial news photograph for a newspaper's {desk} desk, {theme} era alternate history.
+Year {year}. Story: {headline}. {divergence}
+Documentary photojournalism, era-appropriate. No text or watermarks."""
 
 HERO_IMAGE_PROMPT = """Editorial news photograph, {theme} era alternate history.
 Year {year}. Story: {headline}. {divergence}
@@ -858,12 +883,62 @@ def article_to_html(article):
     return "".join(f"<p>{p}</p>" for p in paras)
 
 
+def normalize_side_stories(raw, n_side):
+    """Coerce LLM output into a clean list of side-story dicts."""
+    if isinstance(raw, dict):
+        raw = raw.get("stories") or raw.get("side_stories") or []
+    if not isinstance(raw, list):
+        return []
+    out = []
+    for s in raw:
+        if not isinstance(s, dict) or not s.get("headline") or not s.get("article"):
+            continue
+        out.append({
+            "desk": s.get("desk", "Dispatches"),
+            "headline": s["headline"],
+            "deck": s.get("deck", ""),
+            "byline": s.get("byline", "Staff Correspondent"),
+            "article": article_to_html(s["article"]),
+        })
+    return out[:n_side]
+
+
+def fallback_side_stories(rng, theme, headline, n_side):
+    """No-LLM side stories: thin, but keeps the page structurally sound."""
+    hook = (headline or "the day's events").split(":")[0][:60]
+    desks = [
+        ("Business", "Markets React to Front Page by Existing Slightly Harder",
+         f"Traders responded to news of {hook.lower()} with what analysts called 'movement.'\n\nBy close of day, everything cost the same but felt more expensive. Officials declared this confidence."),
+        ("Sport", "Local Team Wins, Loses, or Draws",
+         f"The match proceeded despite {hook.lower()}, which the referee ruled was not his department.\n\nThe final score has been referred to a committee. Fans celebrated anyway, on principle."),
+        ("Society", "Prominent Family Throws Gala; Nobody Mentions It",
+         f"Guests at last night's gala studiously avoided the subject of {hook.lower()}, discussing instead the weather, which also went unmentioned.\n\nThe evening was declared a triumph of restraint. Three engagements were dissolved by dessert."),
+        ("Obituaries", "Beloved Institution Dies Doing What It Loved: Persisting",
+         f"After years of dignified irrelevance, it finally succumbed, survived by its paperwork.\n\nIn lieu of flowers, the family requests you simply move along, as it would have wanted."),
+    ]
+    picked = []
+    pool = list(desks)
+    for _ in range(n_side):
+        if not pool:
+            break
+        choice = pool.pop(rng.range(0, len(pool) - 1))
+        picked.append({
+            "desk": choice[0], "headline": choice[1], "deck": "",
+            "byline": "Staff Correspondent", "article": article_to_html(choice[2]),
+        })
+    return picked
+
+
 def run_editor_pass(content, editor_provider):
     """Editor AI polishes all text sections for variety and removes clichés."""
     draft = {
         "headline": content.get("headline"),
         "deck": content.get("deck"),
         "article": content.get("article", "").replace("<p>", "").replace("</p>", "\n\n"),
+        "side_stories": [
+            {**s, "article": s.get("article", "").replace("<p>", "").replace("</p>", "\n\n")}
+            for s in (content.get("side_stories") or [])
+        ],
         "oped": content.get("oped"),
         "classifieds": content.get("classifieds"),
         "comic_strip": content.get("comic_strip"),
@@ -876,17 +951,17 @@ def run_editor_pass(content, editor_provider):
         forbidden=", ".join(FORBIDDEN_PHRASES[:12]),
         content=json.dumps(draft, indent=2),
     )
-    revised, used = llm_json_with_fallback(prompt, "editor", max_tokens=2500, temperature=0.4)
+    revised, used = llm_json_with_fallback(prompt, "editor", max_tokens=3500, temperature=0.4)
     if not revised:
         if editor_provider:
-            revised = parse_llm_json(generate_with_llm(prompt, editor_provider, max_tokens=2500, temperature=0.4, json_mode=True))
+            revised = parse_llm_json(generate_with_llm(prompt, editor_provider, max_tokens=3500, temperature=0.4, json_mode=True))
             used = editor_provider
     if not revised:
         return content
 
     label = TEXT_PROVIDERS.get(used or editor_provider, {}).get("label", "Editor")
     print(f"  Editor pass: {label}")
-    for key in ("headline", "deck", "article", "oped", "classifieds", "comic_strip", "joke", "sponsor_ads", "weather"):
+    for key in ("headline", "deck", "article", "side_stories", "oped", "classifieds", "comic_strip", "joke", "sponsor_ads", "weather"):
         if revised.get(key):
             content[key] = revised[key]
     if content.get("article") and "<p>" not in content["article"]:
@@ -913,6 +988,7 @@ def generate_edition(date=None, timeline_id=None, with_images=None):
     year = rng.range(era_min, era_max)
     divergence = rng.pick(DIVERGENCES)
     angle = rng.pick(STORY_ANGLES)
+    n_stories = rng.range(2, 4)  # front page carries 2-4 stories, varies by day
     date_slug = date.strftime("%Y-%m-%d")
     forbidden = ", ".join(FORBIDDEN_PHRASES)
 
@@ -952,6 +1028,16 @@ def generate_edition(date=None, timeline_id=None, with_images=None):
 
     ctx["headline"] = headline_data["headline"]
     ctx["deck"] = headline_data["deck"]
+
+    # 2b. Side stories — shorter dispatches from other desks of the same universe
+    n_side = n_stories - 1
+    side_raw, used = llm_json_with_fallback(
+        SIDE_STORIES_PROMPT.format(n_side=n_side, **ctx), "humor", max_tokens=1600)
+    if used:
+        used_providers["side_stories"] = used
+    side_stories = normalize_side_stories(side_raw, n_side)
+    if not side_stories:
+        side_stories = fallback_side_stories(rng, theme, headline_data["headline"], n_side)
 
     # 3. Grok (humor) — op-ed with fallback; comic + joke Grok-only for bold wit
     oped_data, used = llm_json_with_fallback(OPED_PROMPT.format(**ctx), "humor")
@@ -999,6 +1085,7 @@ def generate_edition(date=None, timeline_id=None, with_images=None):
         "headline": headline_data["headline"],
         "deck": headline_data["deck"],
         "article": headline_data["article"],
+        "side_stories": side_stories,
         "oped": oped_data,
         "classifieds": classifieds_data,
         "comic_strip": comic_strip,
@@ -1012,8 +1099,11 @@ def generate_edition(date=None, timeline_id=None, with_images=None):
     content["classifieds"] = normalize_classifieds(content.get("classifieds"), rng, theme)
     content["sponsor_ads"] = normalize_sponsor_ads(
         content.get("sponsor_ads"), rng, theme, content["headline"], divergence)
+    content["side_stories"] = normalize_side_stories(content.get("side_stories"), n_side) or side_stories
+    if content.get("article") and "<p>" not in content["article"]:
+        content["article"] = article_to_html(content["article"])
 
-    # 6. Images — OpenAI for hero photo, Grok for comic strip
+    # 6. Images — hero + one per side story, comic strip
     hero_image = hero_image_provider = None
     strip_image = strip_image_provider = None
 
@@ -1025,6 +1115,18 @@ def generate_edition(date=None, timeline_id=None, with_images=None):
         )
         if hero_b64:
             hero_image = save_image_file(hero_b64, f"{date_slug}-{timeline_id}-hero.png")
+
+        # Every story gets art — alternate providers to spread cost and style
+        for i, story in enumerate(content["side_stories"]):
+            preferred = "grok" if i % 2 == 0 else "openai"
+            img_b64, img_provider = generate_image_with_fallback(
+                SIDE_IMAGE_PROMPT.format(desk=story.get("desk", "News"), theme=theme, year=year,
+                    headline=story["headline"], divergence=divergence),
+                preferred=preferred,
+            )
+            if img_b64:
+                story["image"] = save_image_file(img_b64, f"{date_slug}-{timeline_id}-story{i + 2}.png")
+                story["image_provider"] = img_provider
 
         comic_b64, strip_image_provider = generate_image_with_fallback(
             COMIC_STRIP_IMAGE_PROMPT.format(theme=theme, headline=content["headline"],
@@ -1069,6 +1171,7 @@ def generate_edition(date=None, timeline_id=None, with_images=None):
         "comic_strip": content["comic_strip"],
         "joke": content["joke"],
         "sponsor_ads": content["sponsor_ads"],
+        "stories": content["side_stories"],
         "real_world_echo": (brief or {}).get("real_world_echo"),
         "generated_at": datetime.now(timezone.utc).isoformat(),
     }
@@ -1262,6 +1365,34 @@ def prerender_index(edition):
     sub(r'<div class="article-body" id="article-body">.*?</div>',
         f'<div class="article-body" id="article-body">{edition["article"]}</div>', "article body")
 
+    # Secondary stories — between markers so the block can nest divs safely
+    stories_html = ""
+    for s in edition.get("stories") or []:
+        img = f'<img class="story-image" src="{esc(s["image"])}" alt="{esc(s["headline"])}" loading="lazy">' if s.get("image") else ""
+        deck = f'<p class="story-deck">{esc(s["deck"])}</p>' if s.get("deck") else ""
+        stories_html += (
+            f'<article class="story-cell"><div class="story-desk">{esc(s.get("desk", "Dispatches"))}</div>'
+            f'<h3 class="story-headline">{esc(s["headline"])}</h3>{deck}{img}'
+            f'<div class="story-byline">By {esc(s.get("byline", "Staff Correspondent"))}</div>'
+            f'<div class="story-body">{s.get("article", "")}</div></article>'
+        )
+    sub(r"<!-- STORIES:START -->.*?<!-- STORIES:END -->",
+        f"<!-- STORIES:START -->{stories_html}<!-- STORIES:END -->", "secondary stories")
+
+    theme_colors = {"victorian": "#ede6dc", "artdeco": "#f2ece2", "soviet": "#ececec",
+                    "cyberpunk": "#080810", "medieval": "#f2ead8", "atomic": "#fffdf8",
+                    "vaporwave": "#24163d", "wasteland": "#e8dcc4"}
+    sub(r'<meta name="twitter:title" content=".*?">',
+        f'<meta name="twitter:title" content="{esc(edition["headline"])}">', "twitter:title")
+    sub(r'<meta name="twitter:description" content=".*?">',
+        f'<meta name="twitter:description" content="{esc(edition["deck"])}">', "twitter:description")
+    sub(r'<meta name="twitter:image" content=".*?">',
+        f'<meta name="twitter:image" content="{esc(og_image)}">', "twitter:image")
+    sub(r'<meta property="article:published_time" content=".*?">',
+        f'<meta property="article:published_time" content="{edition["date"]}T00:00:00Z">', "published_time")
+    sub(r'<meta name="theme-color" content=".*?">',
+        f'<meta name="theme-color" content="{theme_colors.get(edition["theme"], "#f7f4ed")}">', "theme-color")
+
     sd = {
         "@context": "https://schema.org", "@type": "NewsArticle",
         "headline": edition["headline"], "description": edition["deck"],
@@ -1307,6 +1438,21 @@ def backfill_images(date_slug):
             if b64:
                 ed["hero_image"] = save_image_file(b64, f"{date_slug}-{tid}-hero.png")
                 ed["hero_image_provider"] = provider
+                changed = True
+
+        for i, story in enumerate(ed.get("stories") or []):
+            story_file = IMAGE_DIR / f"{date_slug}-{tid}-story{i + 2}.png"
+            if story.get("image") and story_file.exists():
+                continue
+            print(f"{date_slug}-{tid}: generating story {i + 2} image...")
+            b64, provider = generate_image_with_fallback(
+                SIDE_IMAGE_PROMPT.format(desk=story.get("desk", "News"), theme=ed["theme"],
+                                         year=ed["year"], headline=story["headline"],
+                                         divergence=ed["divergence"]),
+                preferred="grok" if i % 2 == 0 else "openai")
+            if b64:
+                story["image"] = save_image_file(b64, f"{date_slug}-{tid}-story{i + 2}.png")
+                story["image_provider"] = provider
                 changed = True
 
         strip = ed.get("comic_strip") or {}
