@@ -270,8 +270,8 @@
 
         <nav class="nav-bar" role="navigation" aria-label="Main Navigation">
             <button class="btn btn-secondary" id="btn-prev" onclick="shiftDay(-1)" title="Previous day's edition (←)">← Previous Day</button>
-            <button class="btn" id="btn-jump" onclick="jumpUniverse()" title="Jump to a random timeline (J)">🌌 Jump Universe</button>
-            <button class="btn btn-secondary" id="btn-next" onclick="shiftDay(1)" title="Next day's edition (→)">Next Day →</button>
+            <button class="btn" id="btn-jump" onclick="jumpUniverse()" title="Jump to a random universe (J)">🌌 Jump Universe</button>
+            <button class="btn btn-secondary" id="btn-latest" onclick="goToLatest()" title="Back to the latest edition">📰 Latest Edition</button>
             <button class="btn btn-secondary" id="btn-share" onclick="sharePaper()" title="Share this edition">🔗 Share</button>
             <button class="btn btn-secondary" id="btn-archive" onclick="toggleArchive()">📚 Browse Archive</button>
         </nav>
@@ -447,11 +447,18 @@
             document.body.classList.remove('loading');
         }
 
+        function availableTimelines(dateStr) {
+            return (manifest?.dates?.[dateStr] || []).map(e => e.timeline_id);
+        }
+
         function updateNavButtons() {
             if (!manifestDates.length) return;
             const cur = toDateStr(currentState.date);
             document.getElementById('btn-prev').disabled = cur <= manifestDates[0];
-            document.getElementById('btn-next').disabled = cur >= manifestDates[manifestDates.length - 1];
+            document.getElementById('btn-latest').disabled = cur >= manifestDates[manifestDates.length - 1];
+            // A universe jump needs at least two published timelines for this date.
+            const avail = availableTimelines(cur);
+            document.getElementById('btn-jump').disabled = avail.length > 0 && avail.length < 2;
         }
 
         function getDefaultTimeline(date) {
@@ -721,9 +728,12 @@
         }
 
         function jumpUniverse() {
-            // Jump to a different one of the 8 published timelines for the current date,
-            // so the reader always lands on real AI-written content.
-            const choices = [1, 2, 3, 4, 5, 6, 7, 8].filter(t => t !== currentState.timelineId);
+            // Jump to a different published timeline for the current date, so the
+            // reader always lands on real content. Past dates may have fewer editions.
+            let pool = availableTimelines(toDateStr(currentState.date));
+            if (!pool.length) pool = [1, 2, 3, 4, 5, 6, 7, 8];
+            const choices = pool.filter(t => t !== currentState.timelineId);
+            if (!choices.length) return;
             currentState.timelineId = choices[Math.floor(Math.random() * choices.length)];
             loadEdition();
             window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -738,11 +748,25 @@
                 const target = manifestDates[idx + delta];
                 if (!target) return;
                 currentState.date = parseDate(target);
+                // If the current timeline wasn't published that day, fall back to
+                // the date's default timeline, then to whatever exists.
+                const avail = availableTimelines(target);
+                if (avail.length && !avail.includes(currentState.timelineId)) {
+                    const def = getDefaultTimeline(currentState.date);
+                    currentState.timelineId = avail.includes(def) ? def : avail[0];
+                }
             } else {
                 const next = new Date(currentState.date);
                 next.setUTCDate(next.getUTCDate() + delta);
                 currentState.date = next;
             }
+            loadEdition();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function goToLatest() {
+            currentState.date = parseDate(latestDateStr()) || new Date();
+            currentState.timelineId = getDefaultTimeline(currentState.date);
             loadEdition();
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }

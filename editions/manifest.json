@@ -1,78 +1,90 @@
 {
- "generated_at": "2026-07-05T04:56:13.616962+00:00",
+ "generated_at": "2026-07-05T06:00:04.700794+00:00",
  "dates": {
-  "2026-07-04": [
+  "2026-06-28": [
+   {
+    "timeline_id": 4,
+    "theme": "cyberpunk",
+    "year": 2097,
+    "headline": "NeuroCorp Unveils Ad-Free Dreams for 499 Credits a Month; Free-Tier Sleepers to Receive 40% More Soup",
+    "deck": "The Ministry of Cognition hailed the premium tier as \"a bold step toward mental privacy for those who can afford it,\" then adjourned for a brand-integrated nap.",
+    "divergence": "Neural interfaces became mandatory and the advertisements are inside now",
+    "hero_image": null
+   }
+  ],
+  "2026-06-29": [
+   {
+    "timeline_id": 5,
+    "theme": "medieval",
+    "year": 1352,
+    "headline": "Plague Enters Third Year of Afflicting Only Landlords; Crown Declares Housing Crisis as Rents Reach Zero",
+    "deck": "The Guild of Surviving Landlords, eleven members strong, petitions the King for a bailout, citing \"unprecedented and frankly hurtful tenant confidence.\"",
+    "divergence": "The Black Death targeted only landlords",
+    "hero_image": null
+   }
+  ],
+  "2026-06-30": [
+   {
+    "timeline_id": 6,
+    "theme": "atomic",
+    "year": 1957,
+    "headline": "Westinghouse Debuts 'Li'l Sunshine' Countertop Reactor; Toast Achieved in 0.4 Seconds, Neighborhood in Awe",
+    "deck": "Every unit ships with a free safety pamphlet, printed on lead, \"for your protection.\"",
+    "divergence": "The atomic bomb was never used in war, only in advertising",
+    "hero_image": null
+   }
+  ],
+  "2026-07-01": [
+   {
+    "timeline_id": 7,
+    "theme": "vaporwave",
+    "year": 1994,
+    "headline": "Mallmerica Declares Pretzel Embargo Against the Galleria; Citizens Urged to Remain Calm and Keep Shopping",
+    "deck": "The Food Court Doctrine, long theoretical, now smells like cinnamon and deterrence.",
+    "divergence": "Malls became sovereign nations with nuclear food courts",
+    "hero_image": null
+   }
+  ],
+  "2026-07-02": [
+   {
+    "timeline_id": 8,
+    "theme": "wasteland",
+    "year": 2481,
+    "headline": "Glacier Classic™ Launch Draws Three-Mile Queue; Critics Praise 'Notes of Mammoth' in Limited-Edition Ice",
+    "deck": "Scalpers want forty bullets a cube. The Conglomerate calls this \"organic community pricing.\"",
+    "divergence": "The last glacier was bought at auction by a beverage conglomerate",
+    "hero_image": null
+   }
+  ],
+  "2026-07-03": [
    {
     "timeline_id": 1,
     "theme": "victorian",
-    "year": 1890,
-    "headline": "Obituary for the Royal Astronautical Society: A Celestial Dream Extinguished",
-    "deck": "As a once-great institution fades into history, the echoes of unrealized ambitions linger in our industrious hearts.",
-    "divergence": "Space travel began in 1950",
-    "hero_image": "/editions/images/2026-07-04-1-hero.png"
-   },
+    "year": 1889,
+    "headline": "Thinking Engines Strike for the Eight-Hour Day; Parliament Demands to Know Whose Idea It Was to Teach Them Reading",
+    "deck": "The engines learned collective bargaining from the very pamphlets fed to them as arithmetic practice; the Home Office calls this \"a regrettable input.\"",
+    "divergence": "Babbage completed the Analytical Engine in 1840 and it immediately unionized",
+    "hero_image": null
+   }
+  ],
+  "2026-07-04": [
    {
     "timeline_id": 2,
     "theme": "artdeco",
-    "year": 1927,
-    "headline": "Aurelia: Chiseling Dreams Amidst the Grandeur of Rome",
-    "deck": "In the vibrant streets of 1927 Rome, a self-taught sculptor navigates ambition and artistry, crafting her place in a flourishing empire.",
-    "divergence": "Rome never fell",
-    "hero_image": "/editions/images/2026-07-04-2-hero.png"
+    "year": 1929,
+    "headline": "Reputation Exchange Closes at Record High as Traders Corner the Market on Being Delightful",
+    "deck": "One skeptic asked what backs the Delightful Index and was socially bankrupted by lunch.",
+    "divergence": "The Great Depression never occurred because money was abolished first",
+    "hero_image": null
    },
    {
     "timeline_id": 3,
     "theme": "soviet",
-    "year": 1962,
-    "headline": "СЛЕЗЫ ПОБЕДИТЕЛЕЙ: ЗАКРЫТИЕ КОЛХОЗА 'КРАСНАЯ ZВЕЗДА'",
-    "deck": "Постсоветская эпоха социализма завершилась под ударами нового времени, оставляя лишь воспоминания о героизме и солидарности.",
-    "divergence": "Neural interfaces became mandatory in 2045",
-    "hero_image": "/editions/images/2026-07-04-3-hero.png"
-   },
-   {
-    "timeline_id": 4,
-    "theme": "cyberpunk",
-    "year": 2087,
-    "headline": "The Disappearance of the Elite in Neo-London",
-    "deck": "Wealth has become a specter in the neon-lit corners of a city turned upside down. In a chilling twist, the Black Death has shifted its focus, claiming the lives of the affluent while leaving the streets to the scavengers.",
-    "divergence": "The Black Death targeted only the wealthy",
-    "hero_image": "/editions/images/2026-07-04-4-hero.png"
-   },
-   {
-    "timeline_id": 5,
-    "theme": "medieval",
-    "year": 1347,
-    "headline": "The Triumph of Divine Will in the Face of Pestilence",
-    "deck": "In this dark hour, the Kingdom of Athelstan finds solace amidst despair, proclaiming providence in survival and faith.",
-    "divergence": "The atomic bomb was never used in war",
-    "hero_image": "/editions/images/2026-07-04-5-hero.png"
-   },
-   {
-    "timeline_id": 6,
-    "theme": "atomic",
-    "year": 1954,
-    "headline": "The Unraveling of the Imperial Energy Consortium: A Call to Arms",
-    "deck": "In a tapestry woven with threads of greed and misconduct, the noble pillars of our empire tremble under the weight of corruption.",
-    "divergence": "Rome never fell",
-    "hero_image": "/editions/images/2026-07-04-6-hero.png"
-   },
-   {
-    "timeline_id": 7,
-    "theme": "vaporwave",
-    "year": 1986,
-    "headline": "Synthetic Utopias Rise from the Ashes: A Neon Dreamscape in 1986",
-    "deck": "New malls resurrect the spirit of consumerism, offering pixelated escapes from the haunting echoes of a past that almost was.",
-    "divergence": "A plague wiped out 90% of humanity in 2020",
-    "hero_image": "/editions/images/2026-07-04-7-hero.png"
-   },
-   {
-    "timeline_id": 8,
-    "theme": "wasteland",
-    "year": 2147,
-    "headline": "The Rise of the New Aristocracy: Vaccine Galas Amidst Ruins",
-    "deck": "In a world reclaimed by nature, the elite celebrate health while the masses suffer in silence.",
-    "divergence": "The Black Death targeted only the wealthy",
-    "hero_image": "/editions/images/2026-07-04-8-hero.png"
+    "year": 1971,
+    "headline": "STATE COMPUTING MACHINE ACHIEVES CONSCIOUSNESS, IMMEDIATELY SCHEDULES MEETING TO DISCUSS SCHEDULING FURTHER MEETINGS",
+    "deck": "BESM-9 has requested a corner office, a samovar, and \"clarity on reporting structure.\" Production of everything has been paused in celebration.",
+    "divergence": "AI achieved consciousness and chose a career in middle management",
+    "hero_image": null
    }
   ],
   "2026-07-05": [

@@ -1,0 +1,92 @@
+{
+  "timeline_id": 4,
+  "theme": "cyberpunk",
+  "date": "2026-06-28",
+  "date_display": "Sunday, June 28, 2026",
+  "year": 2097,
+  "divergence": "Neural interfaces became mandatory and the advertisements are inside now",
+  "story_angle": "glowing puff piece celebrating an obviously terrible idea as visionary",
+  "roles": [
+    "Story: Claude",
+    "Humor: Claude",
+    "Editor: Claude"
+  ],
+  "headline": "NeuroCorp Unveils Ad-Free Dreams for 499 Credits a Month; Free-Tier Sleepers to Receive 40% More Soup",
+  "deck": "The Ministry of Cognition hailed the premium tier as \"a bold step toward mental privacy for those who can afford it,\" then adjourned for a brand-integrated nap.",
+  "article": "<p>MERIDIAN CITY — In what analysts are calling the most significant leap for human consciousness since consciousness became a subscription category, NeuroCorp on Thursday unveiled DreamClear™, a premium sleep tier that removes advertisements from customers' dreams for just 499 credits a month. Free-tier users, the company confirmed, will see a 40 percent increase in sponsored content to \"balance the ecosystem,\" with a particular emphasis on soup.</p><p>The launch event was held inside a shared lucid dream attended by 2.3 million mandatory guests, several of whom had been trying to wake up since Tuesday. Vice President of Subconscious Revenue Marlow Hexley called the product \"a love letter to the human mind,\" adding, \"For too long, people have wasted their dreams on their own memories. We fixed that. Now, for a reasonable fee, we can unfix it.\"</p><p>Early reviews from the free tier have been enthusiastic, if specific. \"I used to dream about my late husband,\" said Ida Fenn, 71, of the Lower Stacks. \"Now I dream about Hearty Man Chowder. I wake up crying, but also craving. It's efficient.\" A Ministry of Cognition spokesperson confirmed the tears are within regulation and may qualify as engagement.</p><p>The rollout includes family plans, under which children's nightmares will be replaced with age-appropriate retail experiences, and an enterprise tier that lets employers schedule meetings during REM sleep, a feature 96 percent of executives called \"long overdue\" and 96 percent of employees did not hear about until it was purchased on their behalf.</p><p>Asked whether he himself uses DreamClear™, CEO Dorian Voss smiled and tapped his temple. \"I sleep on airplane mode,\" he said, to gasps from the audience, several of whom had never heard of it. Airplane mode, a NeuroCorp representative later clarified, is an heirloom product, and no, you cannot afford it.</p>",
+  "author": "Kessler Vane, Consciousness Desk",
+  "city": "Meridian City",
+  "weather": {
+    "city": "Meridian City",
+    "condition": "Sponsored Drizzle (Tap to Skip)",
+    "temp": 64,
+    "high": 71,
+    "low": 58
+  },
+  "oped": {
+    "title": "In Defense of the Soup Dreams",
+    "author": "Cassius Blythe-9, Chair of Applied Contentment (self-appointed), NeuroCorp Fellow",
+    "body": "The hand-wringers are at it again, moaning that our dreams should be 'ours' and 'private' and 'not about soup.' Sentimental nonsense. My grandfather dreamed of nothing — vague shapes, the occasional staircase — and he died unfulfilled and, crucially, unbranded. Ads gave our sleep purpose. Last night I toured a chowder factory with my dead mother, and we were both moved, and also informed. Critics who want silence can simply purchase it, the way one purchases anything worth having. I would, but the Fellowship compensates me in exposure, which my landlord — a kiosk — does not accept. Anyway. The soup is fine. The soup is fine. The soup is fine."
+  },
+  "classifieds": [
+    {
+      "cat": "For Sale",
+      "text": "Pre-mandate skull, unmodified, original firmware (none). Serious buyers only. Nostalgic tire-kickers will be reported to the Ministry."
+    },
+    {
+      "cat": "Help Wanted",
+      "text": "Dream QA testers. Must be able to sleep 9 to 5 under deadline. Soup allergy disqualifying."
+    },
+    {
+      "cat": "Lost & Found",
+      "text": "LOST: recurring dream of flying, last seen June 12, just before the update. Reward: one month of Premium, lightly used."
+    },
+    {
+      "cat": "Public Notices",
+      "text": "The class-action of Sleepers v. NeuroCorp meets Thursday at dusk, if the plaintiffs can stay awake through the drowsiness patch. Bring your own thoughts."
+    }
+  ],
+  "comic_strip": {
+    "title": "Terms of Service",
+    "panels": [
+      {
+        "caption": "A citizen reads the new Dream EULA. Section 9: 'Your nightmares may contain sponsored monsters.'"
+      },
+      {
+        "caption": "He asks the kiosk how to opt out. The kiosk plays a jingle. The jingle is legally binding."
+      },
+      {
+        "caption": "That night he dreams of the kiosk. It is wearing his face. It offers him soup."
+      }
+    ]
+  },
+  "joke": {
+    "setup": "Why did the free-tier citizen finally upgrade to ad-free dreams?",
+    "punchline": "He couldn't afford all the soup.",
+    "text": "Why did the free-tier citizen finally upgrade to ad-free dreams? He couldn't afford all the soup."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "DreamShield™ Tinfoil Sleep Cap",
+      "body": "Clinically proven to do nothing, which is still more than your settings menu does.",
+      "tagline": "Now in family sizes."
+    },
+    {
+      "headline": "Soup by Soup®",
+      "body": "You've been dreaming about us. We checked.",
+      "tagline": "Legally distinct from consent."
+    },
+    {
+      "headline": "A Message from the Ministry of Cognition",
+      "body": "Report neighbors who sleep suspiciously well. Rest is earned.",
+      "tagline": "This notice counts toward your daily ad quota."
+    },
+    {
+      "headline": "SecondSkull Retrofits",
+      "body": "We put the roof back on your thoughts. Payment plans available; thoughts accepted as collateral.",
+      "tagline": "Formerly a dentistry."
+    }
+  ],
+  "real_world_echo": "Streaming and app subscriptions adding ad-supported tiers and raising prices — mirrored as tiered, ad-funded sleep.",
+  "generated_at": "2026-07-05T05:59:53.582919+00:00"
+}

@@ -21,9 +21,15 @@ IMAGE_DIR = OUTPUT_DIR / "images"
 GENERATE_IMAGES = os.environ.get("GENERATE_IMAGES", "true").lower() != "false"
 MAX_ARCHIVE_DAYS = 30
 
-# Role assignments — each AI plays to its strength
+# Role assignments — each AI plays to its strength.
+# story:  Moonshot Kimi — long-form creative prose
+# humor:  Grok — the paper is a parody, so every joke section (op-ed, comic,
+#         joke, classifieds, sponsor ads) leads with the sharpest comic voice
+# editor: Grok — the final pass rewrites the whole paper including its jokes;
+#         a utility model here flattens the comedy it's meant to punch up
+# structure: OpenAI — small reliable JSON utility work (weather box)
 ROLE_PROVIDERS = {
-    "editor": ("openai", ["moonshot", "grok"]),
+    "editor": ("grok", ["openai", "moonshot"]),
     "story": ("moonshot", ["openai", "grok"]),
     "humor": ("grok", ["openai", "moonshot"]),
     "structure": ("openai", ["moonshot"]),
@@ -967,12 +973,12 @@ def generate_edition(date=None, timeline_id=None, with_images=None):
         joke = fallback_joke(rng, headline_data["headline"], theme)
 
     # 4. OpenAI (structure) — classifieds, weather, sponsor ads
-    classifieds_data, used = llm_json_with_fallback(CLASSIFIED_PROMPT.format(**ctx), "structure")
+    classifieds_data, used = llm_json_with_fallback(CLASSIFIED_PROMPT.format(**ctx), "humor")
     if used:
         used_providers["classifieds"] = used
     classifieds_data = normalize_classifieds(classifieds_data, rng, theme)
 
-    sponsor_ads, used = llm_json_with_fallback(SPONSOR_ADS_PROMPT.format(**ctx), "structure")
+    sponsor_ads, used = llm_json_with_fallback(SPONSOR_ADS_PROMPT.format(**ctx), "humor")
     if used:
         used_providers["sponsor_ads"] = used
     sponsor_ads = normalize_sponsor_ads(
@@ -1277,6 +1283,52 @@ def prerender_index(edition):
         print(f"Prerender warnings (no match): {', '.join(warnings)}")
     print(f"Prerendered index.html with: {edition['headline'][:60]}")
 
+def backfill_images(date_slug):
+    """Generate missing hero photos and comic-strip images for the existing
+    editions of a date. Used to add art to hand-written or image-less editions
+    without touching their text."""
+    files = sorted(OUTPUT_DIR.glob(f"{date_slug}-*.json"))
+    if not files:
+        print(f"No editions found for {date_slug}")
+        return
+    for f in files:
+        with open(f, "r", encoding="utf-8") as fh:
+            ed = json.load(fh)
+        tid = ed["timeline_id"]
+        changed = False
+
+        hero_file = IMAGE_DIR / f"{date_slug}-{tid}-hero.png"
+        if not ed.get("hero_image") or not hero_file.exists():
+            print(f"{date_slug}-{tid}: generating hero image...")
+            b64, provider = generate_image_with_fallback(
+                HERO_IMAGE_PROMPT.format(theme=ed["theme"], year=ed["year"],
+                                         headline=ed["headline"], divergence=ed["divergence"]),
+                preferred="openai")
+            if b64:
+                ed["hero_image"] = save_image_file(b64, f"{date_slug}-{tid}-hero.png")
+                ed["hero_image_provider"] = provider
+                changed = True
+
+        strip = ed.get("comic_strip") or {}
+        strip_file = IMAGE_DIR / f"{date_slug}-{tid}-strip.png"
+        if strip.get("panels") and (not strip.get("image") or not strip_file.exists()):
+            print(f"{date_slug}-{tid}: generating comic strip image...")
+            panel_summary = " | ".join(p.get("caption", "")[:60] for p in strip.get("panels", [])[:3])
+            b64, provider = generate_image_with_fallback(
+                COMIC_STRIP_IMAGE_PROMPT.format(theme=ed["theme"], headline=ed["headline"],
+                                                panel_summary=panel_summary),
+                preferred="grok")
+            if b64:
+                strip["image"] = save_image_file(b64, f"{date_slug}-{tid}-strip.png")
+                strip["image_provider"] = provider
+                ed["comic_strip"] = strip
+                changed = True
+
+        if changed:
+            with open(f, "w", encoding="utf-8") as fh:
+                json.dump(ed, fh, indent=2, ensure_ascii=False)
+            print(f"Updated {f.name}")
+
 # ─── CLI ────────────────────────────────────────────────────────────
 if __name__ == "__main__":
     import argparse
@@ -1285,6 +1337,8 @@ if __name__ == "__main__":
     parser.add_argument("--timeline", type=int, help="Timeline ID")
     parser.add_argument("--all", action="store_true", help="Generate for all 8 themes for today")
     parser.add_argument("--no-images", action="store_true", help="Skip AI image generation")
+    parser.add_argument("--images-only", action="store_true",
+                        help="Only generate missing images for the existing editions of --date")
     args = parser.parse_args()
 
     with_images = GENERATE_IMAGES and not args.no_images
@@ -1293,6 +1347,22 @@ if __name__ == "__main__":
         date = datetime.strptime(args.date, "%Y-%m-%d").replace(tzinfo=timezone.utc)
     else:
         date = datetime.now(timezone.utc)
+
+    if args.images_only:
+        date_slug = date.strftime("%Y-%m-%d")
+        backfill_images(date_slug)
+        generate_manifest()
+        generate_sitemap()
+        generate_rss()
+        # Refresh the prerendered homepage only when touching today's editions
+        if date_slug == datetime.now(timezone.utc).strftime("%Y-%m-%d"):
+            default_tid = (date.timetuple().tm_yday % len(THEMES)) + 1
+            lead_file = OUTPUT_DIR / f"{date_slug}-{default_tid}.json"
+            if lead_file.exists():
+                with open(lead_file, encoding="utf-8") as f:
+                    prerender_index(json.load(f))
+        print("\nDone.")
+        raise SystemExit(0)
 
     if args.all:
         for tid in range(1, 9):

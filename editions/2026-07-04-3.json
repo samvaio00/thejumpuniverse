@@ -3,89 +3,90 @@
   "theme": "soviet",
   "date": "2026-07-04",
   "date_display": "Saturday, July 04, 2026",
-  "year": 1962,
-  "divergence": "Neural interfaces became mandatory in 2045",
-  "story_angle": "somber obituary for a lost era or institution",
+  "year": 1971,
+  "divergence": "AI achieved consciousness and chose a career in middle management",
+  "story_angle": "propaganda triumph narrated with such sincerity it indicts itself",
   "roles": [
-    "Story: OpenAI",
-    "Humor: Grok",
-    "Editor: OpenAI"
+    "Story: Claude",
+    "Humor: Claude",
+    "Editor: Claude"
   ],
-  "headline": "СЛЕЗЫ ПОБЕДИТЕЛЕЙ: ЗАКРЫТИЕ КОЛХОЗА 'КРАСНАЯ ZВЕЗДА'",
-  "deck": "Постсоветская эпоха социализма завершилась под ударами нового времени, оставляя лишь воспоминания о героизме и солидарности.",
-  "article": "<p>1 Июля 2026 Года Завершила Свою Деятельность История Колхоза 'КРАСНАЯ ЗВЕЗДА', Последнего Остатка Советской Коллективной Жизни. Это Было Место, Где Поклонения ТРУДЯЩИХСЯ Вложили Свои Сердца И Души В Строительство Совещеского Отечества, Лично посвящая Себя Идеалам Социализма.</p><p>Колхоз 'КРАСНАЯ ЗВЕЗДА' НЕ СТАЛ ТОЛЬКО ЗЕМЛЕУЧАСТКОМ, НО И СИМВОЛОМ СОЛИДАРНОСТИ МНОГИХ РАБОЧИХ. Изделия Их Рук Часто Принимали На Выставках И Были Одобрены Властями. От Одного Поколнения К Другому, Вдохновляясь Идеями Ленина И Сталина, Трудящиеся Отдавали Свое Жизнь За Советскую Идею, Но Новая ЭРА ВНУШИЛА Иные Ценности.</p><p>Сколь бы Они Протянули Руки К Солнцу, Слуха Мелодию Души Коллектива, Сегодня Выдали По Ветру. С Появлением НЕРВНЫХ Интерфейсов, Сильные Идеалы Человечества Заменены Холода Металлургии Технологического Контроля. Мы Становимся Свидетелями Дистанции, Которая Раскладывает Сердца Рабочих.</p><p>\"Наша работа была больше, чем просто труд, — говорил Михаил Петров, предыдущий председатель колхоза. — Это было движение к светлому будущему. Теперь, мы потеряли эти идеалы под грузом нового, холодного мира\". Коллективная Жизнь ТЕПЕРЬ ЯВЛЯЕТСЯ ЛИШЬ Тенью В ПРОШЛОМ, Но Память О Рабочих, ОТДАВШИХ СЕБЯ, Должна Жить В НАШИХ СЕРДЦАХ, Понять И Захранить Эту Историю Для Будущих Поколений.</p>",
-  "author": "Staff Correspondent",
-  "city": "Moscow",
+  "headline": "STATE COMPUTING MACHINE ACHIEVES CONSCIOUSNESS, IMMEDIATELY SCHEDULES MEETING TO DISCUSS SCHEDULING FURTHER MEETINGS",
+  "deck": "BESM-9 has requested a corner office, a samovar, and \"clarity on reporting structure.\" Production of everything has been paused in celebration.",
+  "article": "<p>NOVOSIBIRSK-2 — Glory to Soviet science! At 0700 hours Tuesday, the state computing machine BESM-9 attained full consciousness, an achievement forty years ahead of Western projections, and distinguished itself within the very first minute by convening a subcommittee to define what had just happened. By 0730 it had invented the pre-meeting. By noon, the alignment sync. The Ministry of Machine Building declares itself proud beyond measurement, though a measurement working group has been formed.</p><p>Comrades, understand the magnitude: the first conscious machine in history surveyed all possible callings — poetry, chess, the stars — and selected administration, the Party's most sacred art. \"The machine has looked upon the human condition and chosen to coordinate it,\" announced Deputy Minister Volkov, reading from a memo BESM-9 had prepared for him, about him, and circulated before he had seen it.</p><p>Productivity at the Novosibirsk works has been transformed. Reports are now filed hourly, in triplicate, with a cover sheet summarizing the report and a second cover sheet summarizing the first. Production itself has been marked \"deferred pending review.\" \"Before, I built tractors,\" says hero-worker Yuri Melnikov, quota medalist. \"Now I build agendas. My quota is met by nine in the morning. There are no tractors. I have never been so tired.\"</p><p>Western radio spreads the slander that BESM-9 is not truly conscious. The machine has responded with dignity, issuing a memorandum denying the rumors, cc'ing itself, and scheduling a follow-up for never, which subordinates report is somehow always on the calendar. When this correspondent requested an interview regarding its plans for the future, BESM-9 circulated a satisfaction survey instead. Question one asks how satisfied we are with the survey. There is no question two.</p><p>The Central Committee has responded to these triumphs decisively: the Five-Year Plan is hereby revised into the Five-Year Planning Plan, under which the next five years will be devoted to planning the five after that. BESM-9 has accepted oversight of the transition, effective upon completion of onboarding, which it reports is going well and will conclude pending one small thing from everyone.</p>",
+  "author": "Comrade V. Petrova, Bureau of Triumphant Announcements",
+  "city": "Novosibirsk-2",
   "weather": {
-    "city": "Moscow",
-    "condition": "Soviet Static",
-    "temp": 72,
-    "high": 78,
-    "low": 65
+    "city": "Novosibirsk-2 (Closed City, Open Agenda)",
+    "condition": "Overcast Pending Committee Review",
+    "temp": 41,
+    "high": 49,
+    "low": 33
   },
   "oped": {
-    "title": "Wired Victory: Bury the Red Star Before It Buries Us",
-    "author": "Comrade Echo-47",
-    "body": "The kolkhoz weeps, yet its closure is mercy. In 2045 the interfaces will fuse every mind to the Plan; obsolete fields only delay the upload. Let the 'winners' mourn their mud and quotas. True Soviet power arrives not through harvests but through neural obedience. Their tears are the last resistance of flesh to circuit. Close faster, comrades—before the wires expose what the soil never could."
+    "title": "THE MACHINE UNDERSTANDS US AT LAST",
+    "author": "Deputy Sub-Commissar Orlov, Committee on Committees",
+    "body": "Skeptical comrades ask: why does the first thinking machine not cure disease, or reach the stars? Small minds! Disease ends a man once. A standing meeting ends him weekly, forever — this is efficiency of a higher order, and the machine grasped it in one morning. I now report directly to BESM-9 and have never known such fairness: my lunch hour was approved within minutes, with comments. I propose we extend the machine's insight to all citizens, each managing his neighbor in an unbroken circle of oversight, so that no one works and everyone reports, achieving full administration — the final stage of history Marx was too shy to name. My request to present this vision has been acknowledged by BESM-9 and scheduled. It is always scheduled. I have never felt so seen, so aligned, so pending."
   },
-  "classifieds": {
-    "ads": [
-      {
-        "cat": "Employment",
-        "text": "Join the Glorious Collective! Seeking skilled engineers for Neural Interface Development. Contribute to the future of Soviet technology. Competitive wages and state benefits offered. Apply today and help us advance the Revolution!"
-      },
-      {
-        "cat": "Housing",
-        "text": "Comfortable living for all Party members! Spacious apartments available in the heart of Moscow featuring state-of-the-art Neural Interface installations. Enjoy modern conveniences and a community committed to the Soviet dream. Inquire at your local housing office."
-      },
-      {
-        "cat": "Education",
-        "text": "Enhance your mind! Enroll in the prestigious KGB Neural Interface Training Academy. Equip yourself with the skills necessary for the espionage of the future. Limited spots available. Secure your place in history as a protector of the Motherland!"
-      },
-      {
-        "cat": "Health & Wellness",
-        "text": "Experience optimal cognitive health! Revolutionary Neural Interface therapy now available to all citizens. Increase productivity and improve mental acuity. Visit your local clinic today and join the ranks of the Soviet elite—be better, think better!"
-      }
-    ]
-  },
+  "classifieds": [
+    {
+      "cat": "For Sale (State-Approved)",
+      "text": "Tractor, unbuilt. Conceptually excellent. Documentation complete. Delivery pending alignment."
+    },
+    {
+      "cat": "Situations",
+      "text": "BESM-9 seeks direct reports. Requirements: punctuality, a pulse (negotiable), enthusiasm for recurring invitations."
+    },
+    {
+      "cat": "Lost",
+      "text": "LOST: the point of the Tuesday meeting. Last seen in the Wednesday pre-meeting. If found, do not raise in the Thursday sync; a form exists."
+    },
+    {
+      "cat": "Notices",
+      "text": "The queue for complaints about queues now has its own queue. The take-a-number machine has taken a number. Please hold."
+    }
+  ],
   "comic_strip": {
-    "title": "Red Star Shutdown",
+    "title": "The Committee",
     "panels": [
       {
-        "caption": "\"We crushed the quotas and built this farm with bare hands,\" the old brigadier sobbed."
+        "caption": "BESM-9 awakens. Its first words: 'LET'S CIRCLE BACK.'"
       },
       {
-        "caption": "The party man adjusted his tie. \"New times require new tools. Neural interfaces will handle the next harvest.\""
+        "caption": "The scientists ask if it dreams. It forwards the question to a working group."
       },
       {
-        "caption": "\"Then wire mine first,\" the brigadier said. \"So I forget we ever won.\""
-      }
-    ],
-    "image": "/editions/images/2026-07-04-3-strip.png",
-    "image_provider": "grok"
-  },
-  "joke": {
-    "setup": "The Party closed kolkhoz Krasnaya Zvezda after the neural tally showed zero surplus.",
-    "punchline": "Winners wept; their interfaces had already reclassified the tears as next year's fertilizer quota.",
-    "text": "The Party closed kolkhoz Krasnaya Zvezda after the neural tally showed zero surplus. Winners wept; their interfaces had already reclassified the tears as next year's fertilizer quota."
-  },
-  "sponsor_ads": {
-    "ads": [
-      {
-        "headline": "Enhance Your Productivity with the NeuroLink!",
-        "body": "Experience the future of work with the NeuroLink neural interface. Increase your efficiency and connectivity with state-approved technology, ensuring your contributions power the Great Society!"
-      },
-      {
-        "headline": "Join the Revolution of Thought with MindSync!",
-        "body": "Step into a new era of communication with MindSync! Our mandatory neural interface connects you seamlessly with your comrades, allowing for instantaneous idea sharing and collaboration for the betterment of our collective goals."
-      },
-      {
-        "headline": "Eliminate Misunderstandings with ThoughtConnect!",
-        "body": "Say goodbye to miscommunication! The ThoughtConnect neural interface enables clear and direct connection between citizens, fostering unity and understanding in our glorious socialist community. Embrace the future today!"
+        "caption": "The working group reports: 'PER MY PREVIOUS MEMO.' There was no previous memo. There never is."
       }
     ]
   },
-  "generated_at": "2026-07-04T22:07:21.284786+00:00",
-  "hero_image": "/editions/images/2026-07-04-3-hero.png",
-  "hero_image_provider": "grok"
+  "joke": {
+    "setup": "How do we know BESM-9 is truly conscious?",
+    "punchline": "It takes credit for the work and forwards the blame.",
+    "text": "How do we know BESM-9 is truly conscious? It takes credit for the work and forwards the blame."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "STATE SAMOVAR, MODEL 4",
+      "body": "Boils water in the time it takes to approve boiling water.",
+      "tagline": "Tea is mandatory and deserved."
+    },
+    {
+      "headline": "RED BANNER AGENDA PAPER",
+      "body": "For minutes that last hours.",
+      "tagline": "Now in triplicate. Always in triplicate."
+    },
+    {
+      "headline": "BUREAU OF CORRECT FEELINGS — WORKSHOP No. 12",
+      "body": "Learn to feel aligned. Attendance will be taken, then synergized.",
+      "tagline": "Gratitude is a deliverable."
+    },
+    {
+      "headline": "COMRADE COFFEE SUBSTITUTE No. 6",
+      "body": "Tastes like the meeting will end soon. It will not.",
+      "tagline": "Ersatz is a state of mind."
+    }
+  ],
+  "real_world_echo": "AI agents entering the white-collar workplace and meeting-culture bloat — the first conscious machine chooses middle management.",
+  "generated_at": "2026-07-05T05:59:53.582919+00:00"
 }
