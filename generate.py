@@ -980,36 +980,69 @@ def save_edition(edition):
     print(f"Saved: {filename}")
     return filename
 
+def edition_files_by_date():
+    """Return {date_str: [Path, ...]} for all edition JSON files, sorted by date."""
+    by_date = {}
+    for f in OUTPUT_DIR.glob("*.json"):
+        parts = f.stem.split("-")
+        if len(parts) >= 4:
+            by_date.setdefault("-".join(parts[:3]), []).append(f)
+    return dict(sorted(by_date.items()))
+
 def cleanup_old_editions():
-    """Keep only the last MAX_ARCHIVE_DAYS editions."""
-    files = sorted(OUTPUT_DIR.glob("*.json"), key=lambda p: p.stat().st_mtime, reverse=True)
-    for old in files[MAX_ARCHIVE_DAYS:]:
-        stem = old.stem
-        old.unlink()
-        print(f"Removed old: {old.name}")
-        for img in IMAGE_DIR.glob(f"{stem}-*.png"):
-            img.unlink()
-            print(f"Removed old image: {img.name}")
+    """Keep only the last MAX_ARCHIVE_DAYS days of editions (8 files per day)."""
+    by_date = edition_files_by_date()
+    for date_str in list(by_date.keys())[:-MAX_ARCHIVE_DAYS]:
+        for old in by_date[date_str]:
+            stem = old.stem
+            old.unlink()
+            print(f"Removed old: {old.name}")
+            for img in IMAGE_DIR.glob(f"{stem}-*.png"):
+                img.unlink()
+                print(f"Removed old image: {img.name}")
+
+def generate_manifest():
+    """Write editions/manifest.json — an index the frontend uses for the archive and day navigation."""
+    dates = {}
+    for date_str, files in edition_files_by_date().items():
+        entries = []
+        for f in sorted(files, key=lambda p: int(p.stem.split("-")[3])):
+            try:
+                with open(f, "r", encoding="utf-8") as fh:
+                    ed = json.load(fh)
+            except (json.JSONDecodeError, OSError):
+                continue
+            entries.append({
+                "timeline_id": ed.get("timeline_id"),
+                "theme": ed.get("theme"),
+                "year": ed.get("year"),
+                "headline": ed.get("headline"),
+                "deck": ed.get("deck"),
+                "divergence": ed.get("divergence"),
+                "hero_image": ed.get("hero_image"),
+            })
+        if entries:
+            dates[date_str] = entries
+    manifest = {"generated_at": datetime.now(timezone.utc).isoformat(), "dates": dates}
+    with open(OUTPUT_DIR / "manifest.json", "w", encoding="utf-8") as f:
+        json.dump(manifest, f, indent=1, ensure_ascii=False)
+    print("Generated editions/manifest.json")
 
 def generate_sitemap():
     """Generate sitemap.xml for SEO."""
-    files = sorted(OUTPUT_DIR.glob("*.json"))
-    urls = []
-    for f in files:
-        # Parse filename: YYYY-MM-DD-T.json
-        parts = f.stem.split("-")
-        if len(parts) >= 4:
-            date_str = "-".join(parts[:3])
-            timeline = parts[3]
-            urls.append(f"https://multiversegazette.com/?timeline={timeline}&date={date_str}")
+    from xml.sax.saxutils import escape
 
-    # Add base URL
-    urls.insert(0, "https://multiversegazette.com/")
+    urls = [("https://multiversegazette.com/", None)]
+    for date_str, files in edition_files_by_date().items():
+        for f in sorted(files, key=lambda p: int(p.stem.split("-")[3])):
+            timeline = f.stem.split("-")[3]
+            urls.append((f"https://multiversegazette.com/?timeline={timeline}&date={date_str}", date_str))
 
     sitemap = ['<?xml version="1.0" encoding="UTF-8"?>']
     sitemap.append('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">')
-    for url in urls:
-        sitemap.append(f"  <url><loc>{url}</loc><changefreq>daily</changefreq><priority>0.8</priority></url>")
+    for url, lastmod in urls:
+        lastmod_tag = f"<lastmod>{lastmod}</lastmod>" if lastmod else ""
+        sitemap.append(f"  <url><loc>{escape(url)}</loc>{lastmod_tag}<changefreq>daily</changefreq><priority>0.8</priority></url>")
     sitemap.append("</urlset>")
 
     with open("sitemap.xml", "w", encoding="utf-8") as f:
@@ -1018,17 +1051,21 @@ def generate_sitemap():
 
 def generate_rss():
     """Generate RSS feed for aggregators."""
-    files = sorted(OUTPUT_DIR.glob("*.json"), reverse=True)[:10]
+    from xml.sax.saxutils import escape
+
+    files = sorted(OUTPUT_DIR.glob("*.json"), reverse=True)
+    files = [f for f in files if f.name != "manifest.json"][:10]
     items = []
     for f in files:
         with open(f, "r", encoding="utf-8") as fh:
             ed = json.load(fh)
-        url = f"https://multiversegazette.com/?timeline={ed['timeline_id']}&date={ed['date']}"
+        url = escape(f"https://multiversegazette.com/?timeline={ed['timeline_id']}&date={ed['date']}")
+        pub_date = datetime.strptime(ed["date"], "%Y-%m-%d").strftime("%a, %d %b %Y 00:00:00 GMT")
         items.append(f"""<item>
-      <title>{ed['headline']}</title>
+      <title>{escape(ed['headline'])}</title>
       <link>{url}</link>
-      <description>{ed['deck']}</description>
-      <pubDate>{ed['date']}T00:00:00Z</pubDate>
+      <description>{escape(ed['deck'])}</description>
+      <pubDate>{pub_date}</pubDate>
       <guid>{url}</guid>
     </item>""")
 
@@ -1073,6 +1110,7 @@ if __name__ == "__main__":
         save_edition(ed)
 
     cleanup_old_editions()
+    generate_manifest()
     generate_sitemap()
     generate_rss()
     print("\nDone.")

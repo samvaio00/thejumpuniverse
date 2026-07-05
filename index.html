@@ -19,12 +19,16 @@
     <link rel="canonical" href="https://multiversegazette.com">
     <link rel="alternate" type="application/rss+xml" title="The Multiverse Gazette" href="/rss.xml">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poiret+One&family=Oswald:wght@500;700&family=Orbitron:wght@600;800&family=Share+Tech+Mono&family=MedievalSharp&family=Righteous&family=Monoton&family=Special+Elite&display=swap" rel="stylesheet">
+
     <style>
         *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
         :root {
             --paper-bg: #f7f4ed; --ink-color: #121212; --accent: #7a0000;
-            --column-rule: #9a958a; --font-headline: 'Georgia', serif;
-            --font-body: 'Georgia', serif; --font-masthead: 'Georgia', serif;
+            --column-rule: #9a958a; --font-headline: 'Playfair Display', 'Georgia', serif;
+            --font-body: 'Georgia', serif; --font-masthead: 'Playfair Display', 'Georgia', serif;
             --font-special: 'Courier New', monospace;
             --muted-opacity: 0.88;
         }
@@ -38,8 +42,8 @@
 
         [data-theme="victorian"] {
             --paper-bg: #ede6dc; --ink-color: #1f120a; --accent: #6b3410;
-            --column-rule: #8a7464; --font-headline: 'Georgia', serif;
-            --font-body: 'Georgia', serif; --font-masthead: 'Georgia', serif;
+            --column-rule: #8a7464; --font-headline: 'Playfair Display', 'Georgia', serif;
+            --font-body: 'Georgia', serif; --font-masthead: 'Playfair Display', 'Georgia', serif;
             --font-special: 'Courier New', monospace;
         }
         [data-theme="victorian"] .masthead { border-top: 4px double var(--accent); border-bottom: 4px double var(--accent); }
@@ -48,7 +52,8 @@
 
         [data-theme="artdeco"] {
             --paper-bg: #f2ece2; --ink-color: #0f0f1e; --accent: #a6840f;
-            --column-rule: #b8941f;
+            --column-rule: #b8941f; --font-masthead: 'Poiret One', 'Georgia', serif;
+            --font-headline: 'Oswald', 'Georgia', sans-serif;
         }
         [data-theme="artdeco"] .masthead { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: #f5e6b8; border: 3px solid var(--accent); }
         [data-theme="artdeco"] .masthead-subtitle,
@@ -61,8 +66,8 @@
 
         [data-theme="soviet"] {
             --paper-bg: #ececec; --ink-color: #111; --accent: #b30000;
-            --column-rule: #777; --font-headline: 'Courier New', monospace;
-            --font-body: 'Courier New', monospace; --font-masthead: 'Courier New', monospace;
+            --column-rule: #777; --font-headline: 'Oswald', 'Arial Narrow', sans-serif;
+            --font-body: 'Courier New', monospace; --font-masthead: 'Oswald', 'Arial Narrow', sans-serif;
             --font-special: 'Courier New', monospace;
         }
         [data-theme="soviet"] .masthead { background: #cc0000; color: white; border: none; }
@@ -74,9 +79,9 @@
 
         [data-theme="cyberpunk"] {
             --paper-bg: #080810; --ink-color: #f2f2f2; --accent: #00e68a;
-            --column-rule: #444; --font-headline: 'Courier New', monospace;
-            --font-body: 'Courier New', monospace; --font-masthead: 'Courier New', monospace;
-            --font-special: 'Courier New', monospace;
+            --column-rule: #444; --font-headline: 'Orbitron', 'Courier New', monospace;
+            --font-body: 'Share Tech Mono', 'Courier New', monospace; --font-masthead: 'Orbitron', 'Courier New', monospace;
+            --font-special: 'Share Tech Mono', 'Courier New', monospace;
         }
         [data-theme="cyberpunk"] .masthead { border: 2px solid var(--accent); box-shadow: 0 0 20px rgba(0, 230, 138, 0.25); background: #0f1018; }
         [data-theme="cyberpunk"] .masthead-title { color: var(--accent); text-shadow: 0 0 10px rgba(0, 230, 138, 0.45); letter-spacing: 6px; }
@@ -89,7 +94,8 @@
 
         [data-theme="medieval"] {
             --paper-bg: #f2ead8; --ink-color: #2a1808; --accent: #7a0000;
-            --column-rule: #a89070;
+            --column-rule: #a89070; --font-masthead: 'MedievalSharp', 'Georgia', serif;
+            --font-headline: 'MedievalSharp', 'Georgia', serif;
         }
         [data-theme="medieval"] .masthead { border: 3px double var(--accent); background: linear-gradient(to bottom, #f5f0e1, #e8e0cc); }
         [data-theme="medieval"] .masthead-title { font-variant: small-caps; letter-spacing: 3px; }
@@ -98,7 +104,8 @@
 
         [data-theme="atomic"] {
             --paper-bg: #fffdf8; --ink-color: #1a2836; --accent: #c0392b;
-            --column-rule: #95a0a8;
+            --column-rule: #95a0a8; --font-masthead: 'Righteous', 'Georgia', sans-serif;
+            --font-headline: 'Righteous', 'Georgia', sans-serif;
         }
         [data-theme="atomic"] .masthead { border-top: 6px solid var(--accent); border-bottom: 2px solid var(--accent); background: white; }
         [data-theme="atomic"] .masthead-title { letter-spacing: 6px; text-transform: uppercase; }
@@ -108,9 +115,9 @@
 
         [data-theme="vaporwave"] {
             --paper-bg: #24163d; --ink-color: #f4f4f8; --accent: #ff7eb3;
-            --column-rule: #6a4a99; --font-headline: 'Courier New', monospace;
-            --font-body: 'Courier New', monospace; --font-masthead: 'Courier New', monospace;
-            --font-special: 'Courier New', monospace;
+            --column-rule: #6a4a99; --font-headline: 'Orbitron', 'Courier New', monospace;
+            --font-body: 'Share Tech Mono', 'Courier New', monospace; --font-masthead: 'Monoton', 'Courier New', monospace;
+            --font-special: 'Share Tech Mono', 'Courier New', monospace;
         }
         [data-theme="vaporwave"] .masthead { border: 2px solid var(--accent); background: linear-gradient(135deg, #2d1b4e 0%, #1a0f2e 100%); box-shadow: 0 0 30px rgba(255, 107, 157, 0.2); }
         [data-theme="vaporwave"] .masthead-title { color: var(--accent); text-shadow: 2px 2px 0px #6bcfff; letter-spacing: 8px; text-transform: uppercase; }
@@ -122,9 +129,9 @@
 
         [data-theme="wasteland"] {
             --paper-bg: #e8dcc4; --ink-color: #2a1a0c; --accent: #6b3810;
-            --column-rule: #8a7355; --font-headline: 'Courier New', monospace;
-            --font-body: 'Courier New', monospace; --font-masthead: 'Courier New', monospace;
-            --font-special: 'Courier New', monospace;
+            --column-rule: #8a7355; --font-headline: 'Special Elite', 'Courier New', monospace;
+            --font-body: 'Special Elite', 'Courier New', monospace; --font-masthead: 'Special Elite', 'Courier New', monospace;
+            --font-special: 'Special Elite', 'Courier New', monospace;
         }
         [data-theme="wasteland"] .masthead { border: 3px solid var(--accent); background: #c9b896; }
         [data-theme="wasteland"] .masthead-title { letter-spacing: 6px; text-transform: uppercase; font-weight: 900; }
@@ -162,6 +169,7 @@
         .nav-bar { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; padding: 15px 0; border-bottom: 1px solid var(--column-rule); margin-bottom: 30px; }
         .btn { padding: 10px 24px; font-family: var(--font-special); font-size: 0.85rem; cursor: pointer; transition: all 0.3s ease; text-decoration: none; display: inline-block; border: none; }
         .btn:hover { transform: translateY(-2px); opacity: 0.9; }
+        .btn:disabled { opacity: 0.35; cursor: default; transform: none; }
         .btn-secondary { background: transparent; border: 1px solid var(--ink-color); color: var(--ink-color); }
 
         .paper-body { display: grid; grid-template-columns: 1fr 300px; gap: 40px; margin-bottom: 40px; }
@@ -233,6 +241,9 @@
         @media print { .nav-bar, .sponsor-ad, .archive-section, .footer { display: none !important; } .paper-body { grid-template-columns: 1fr 250px; } body { background: white !important; color: black !important; } }
 
         .loading { opacity: 0.5; pointer-events: none; }
+        body { transition: background 0.5s ease, color 0.5s ease, opacity 0.35s ease; }
+        .archive-date-header { grid-column: 1 / -1; font-family: var(--font-special); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; border-bottom: 1px solid var(--column-rule); padding-bottom: 6px; margin-top: 10px; opacity: 0.75; }
+        .archive-card-theme { font-family: var(--font-special); font-size: 0.65rem; text-transform: uppercase; letter-spacing: 1px; opacity: 0.6; margin-bottom: 6px; }
         .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0; }
         .breadcrumb { font-family: var(--font-special); font-size: 0.75rem; opacity: 0.6; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px; }
         .breadcrumb a { color: inherit; text-decoration: none; }
@@ -257,10 +268,11 @@
         </header>
 
         <nav class="nav-bar" role="navigation" aria-label="Main Navigation">
-            <button class="btn" id="btn-jump" onclick="jumpUniverse()">🌌 Jump Universe</button>
-            <button class="btn btn-secondary" id="btn-next" onclick="nextDay()">📰 Read Next Day</button>
+            <button class="btn btn-secondary" id="btn-prev" onclick="shiftDay(-1)" title="Previous day's edition (←)">← Previous Day</button>
+            <button class="btn" id="btn-jump" onclick="jumpUniverse()" title="Jump to a random timeline (J)">🌌 Jump Universe</button>
+            <button class="btn btn-secondary" id="btn-next" onclick="shiftDay(1)" title="Next day's edition (→)">Next Day →</button>
+            <button class="btn btn-secondary" id="btn-share" onclick="sharePaper()" title="Share this edition">🔗 Share</button>
             <button class="btn btn-secondary" id="btn-archive" onclick="toggleArchive()">📚 Browse Archive</button>
-            <button class="btn btn-secondary" onclick="sharePaper()">🔗 Share</button>
         </nav>
 
         <main class="paper-body" role="main">
@@ -327,7 +339,7 @@
         </main>
 
         <section class="archive-section" id="archive-section" style="display: none;" aria-label="Archive">
-            <h3 class="section-title" style="font-size: 1.2rem;">Recent Editions from This Timeline</h3>
+            <h3 class="section-title" style="font-size: 1.2rem;">The Archive — Every Edition, Every Timeline</h3>
             <div class="archive-grid" id="archive-grid"></div>
         </section>
 
@@ -341,6 +353,7 @@
             </div>
             <p>© <span id="footer-year">2026</span> The Multiverse Gazette. All timelines reserved.</p>
             <p style="margin-top: 8px; font-size: 0.75rem; opacity: 0.5;">Each edition is algorithmically generated. No two timelines are alike.</p>
+            <p style="margin-top: 8px; font-size: 0.72rem; opacity: 0.45;">Tip: use ← → to travel through the days, and J to jump universes.</p>
         </footer>
     </div>
 
@@ -360,36 +373,84 @@
         }
 
         let currentState = { date: new Date(), timelineId: null, paper: null };
+        let manifest = null;        // editions/manifest.json — index of every published edition
+        let manifestDates = [];     // sorted 'YYYY-MM-DD' strings
+
+        function parseDate(s) {
+            if (!s || !/^\d{4}-\d{2}-\d{2}$/.test(s)) return null;
+            const d = new Date(s + 'T00:00:00Z');
+            return isNaN(d) ? null : d;
+        }
+        function toDateStr(d) { return d.toISOString().split('T')[0]; }
+        function todayStr() { return toDateStr(new Date()); }
+        function latestDateStr() { return manifestDates.length ? manifestDates[manifestDates.length - 1] : todayStr(); }
+
+        async function loadManifest() {
+            try {
+                const resp = await fetch(`${EDITIONS_DIR}/manifest.json`, { cache: 'no-store' });
+                if (resp.ok) {
+                    manifest = await resp.json();
+                    manifestDates = Object.keys(manifest.dates || {}).sort();
+                }
+            } catch (e) { /* offline or manifest not deployed yet — client fallback still works */ }
+        }
 
         async function init() {
             const params = new URLSearchParams(window.location.search);
             const timelineParam = params.get('timeline');
             const dateParam = params.get('date');
+            await loadManifest();
             if (timelineParam) currentState.timelineId = parseInt(timelineParam);
-            if (dateParam) currentState.date = new Date(dateParam);
+            // Default to the latest published edition — avoids the gap right after
+            // midnight UTC before the daily generation has run.
+            currentState.date = parseDate(dateParam) || parseDate(latestDateStr()) || new Date();
             await loadEdition();
+
+            document.addEventListener('keydown', (e) => {
+                if (e.metaKey || e.ctrlKey || e.altKey) return;
+                const tag = (e.target.tagName || '').toLowerCase();
+                if (tag === 'input' || tag === 'textarea' || tag === 'select') return;
+                if (e.key === 'ArrowLeft') shiftDay(-1);
+                else if (e.key === 'ArrowRight') shiftDay(1);
+                else if (e.key === 'j' || e.key === 'J') jumpUniverse();
+            });
         }
 
         async function loadEdition() {
             document.body.classList.add('loading');
-            const dateStr = currentState.date.toISOString().split('T')[0];
+            const dateStr = toDateStr(currentState.date);
             const timelineId = currentState.timelineId || getDefaultTimeline(currentState.date);
             const filename = `${dateStr}-${timelineId}.json`;
 
             let paper = null;
             try {
-                const resp = await fetch(`${EDITIONS_DIR}/${filename}`, { cache: 'no-store' });
+                // Today's edition can be regenerated during the day; older ones are immutable.
+                const cacheMode = dateStr >= todayStr() ? 'no-store' : 'default';
+                const resp = await fetch(`${EDITIONS_DIR}/${filename}`, { cache: cacheMode });
                 if (resp.ok) { paper = await resp.json(); console.log('Server:', filename); }
             } catch (e) { console.log('Fallback to client generator'); }
 
-            if (!paper) paper = generateClientSide(currentState.date, timelineId);
+            if (!paper) {
+                try { paper = generateClientSide(currentState.date, timelineId); }
+                catch (e) { console.error('Client generator failed:', e); }
+            }
 
-            currentState.paper = paper;
-            currentState.timelineId = paper.timeline_id || timelineId;
-            render(paper);
-            updateSEO(paper);
-            saveToArchive(paper);
+            if (paper) {
+                currentState.paper = paper;
+                currentState.timelineId = paper.timeline_id || timelineId;
+                render(paper);
+                updateSEO(paper);
+                saveToArchive(paper);
+            }
+            updateNavButtons();
             document.body.classList.remove('loading');
+        }
+
+        function updateNavButtons() {
+            if (!manifestDates.length) return;
+            const cur = toDateStr(currentState.date);
+            document.getElementById('btn-prev').disabled = cur <= manifestDates[0];
+            document.getElementById('btn-next').disabled = cur >= manifestDates[manifestDates.length - 1];
         }
 
         function getDefaultTimeline(date) {
@@ -416,7 +477,17 @@
             const classifieds = [{cat:"For Sale",text:"Pre-war can opener. Rusted but functional. Two bullets or best offer."},{cat:"Employment",text:"Scavenger needed for deep-ruin expedition. Must bring own gas mask."},{cat:"Housing",text:"Lean-to near the old highway. Wind protection minimal. No raiders currently."},{cat:"Services",text:"Radiation detox. 50% success rate. Payment upfront. No refunds."}];
             const weather = {city: rng.pick(["The Capital","New London","Metropolis","Neo-Tokyo","King's Landing","Springfield","Miami Vice","New Eden"]),condition: rng.pick(["Clear","Foggy","Stormy","Bright","Hazy","Windy","Drizzle","Overcast"]),temp: rng.range(15,95),high:0,low:0};
             weather.high = weather.temp + rng.range(3,10); weather.low = weather.temp - rng.range(3,10);
-            const comic_strip = { title: "The Daily Panel", panels: [{ caption: comic.caption }] };
+            const comicsByTheme = {
+                victorian: ["A gentleman winds his clockwork butler.", "The butler winds the gentleman.", "Neither can recall who started."],
+                artdeco: ["A flapper toasts the ticker tape.", "The ticker tape spells 'SELL'.", "She orders another round for the orchestra."],
+                soviet: ["Comrade inspects the quota chart.", "The chart inspects the comrade.", "Both report record satisfaction."],
+                cyberpunk: ["User declines the terms of service.", "The terms of service decline the user.", "A drone delivers a complimentary apology."],
+                medieval: ["A peasant petitions the king.", "The king petitions the plague.", "The plague grants an audience to both."],
+                atomic: ["Junior asks what the siren means.", "Dad checks the pamphlet.", "The pamphlet suggests a positive attitude."],
+                vaporwave: ["The mall fountain grants a wish.", "The wish is store credit.", "The credit expires at closing time, forever."],
+                wasteland: ["Trader sells a map to safety.", "The map leads back to the trader.", "Business is booming."]
+            };
+            const comic_strip = { title: "The Daily Panel", panels: (comicsByTheme[theme] || comicsByTheme.wasteland).map(caption => ({ caption })) };
             const joke = { text: "Why read alternate history? Because the main timeline isn't funny enough." };
             const sponsor_ads = generateClientSponsorAds(rng, theme, hl.t, divergence);
             return {timeline_id: timelineId,theme:theme,date:date.toISOString().split('T')[0],date_display:date.toLocaleDateString('en-US',{weekday:'long',year:'numeric',month:'long',day:'numeric'}),year:year,divergence:divergence,headline:hl.t,deck:hl.d,article:article,author:rng.pick(["Staff Correspondent","Special Reporter","Foreign Bureau","Local Editor"]),city:weather.city,weather:weather,oped:oped,classifieds:classifieds,comic_strip:comic_strip,joke:joke,sponsor_ads:sponsor_ads};
@@ -627,6 +698,7 @@
             document.querySelector('meta[property="og:title"]').setAttribute('content', paper.headline);
             document.querySelector('meta[property="og:description"]').setAttribute('content', paper.deck);
             document.querySelector('meta[property="og:url"]').setAttribute('content', window.location.href);
+            document.querySelector('link[rel="canonical"]').setAttribute('href', `${window.location.origin}/?timeline=${paper.timeline_id}&date=${paper.date}`);
             if (paper.hero_image) {
                 document.querySelector('meta[property="og:image"]').setAttribute('content', window.location.origin + paper.hero_image);
             } else if (resolveHeroImage(paper)) {
@@ -646,10 +718,48 @@
             return `<svg class="comic-svg" viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="220" fill="${c.bg}"/>${content}</svg>`;
         }
 
-        function jumpUniverse() { currentState.timelineId = Math.floor(Math.random() * 99999) + 1; currentState.date = new Date(); loadEdition(); window.scrollTo({ top: 0, behavior: 'smooth' }); }
-        function nextDay() { const next = new Date(currentState.date); next.setDate(next.getDate() + 1); currentState.date = next; loadEdition(); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+        function jumpUniverse() {
+            // Jump to a different one of the 8 published timelines for the current date,
+            // so the reader always lands on real AI-written content.
+            const choices = [1, 2, 3, 4, 5, 6, 7, 8].filter(t => t !== currentState.timelineId);
+            currentState.timelineId = choices[Math.floor(Math.random() * choices.length)];
+            loadEdition();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function shiftDay(delta) {
+            const cur = toDateStr(currentState.date);
+            if (manifestDates.length) {
+                // Navigate within published editions only.
+                let idx = manifestDates.indexOf(cur);
+                if (idx === -1) idx = delta < 0 ? manifestDates.length : -1;
+                const target = manifestDates[idx + delta];
+                if (!target) return;
+                currentState.date = parseDate(target);
+            } else {
+                const next = new Date(currentState.date);
+                next.setUTCDate(next.getUTCDate() + delta);
+                currentState.date = next;
+            }
+            loadEdition();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
         function toggleArchive() { const archive = document.getElementById('archive-section'); archive.style.display = archive.style.display === 'none' ? 'block' : 'none'; if (archive.style.display === 'block') loadArchiveUI(); }
-        function sharePaper() { if (navigator.share) { navigator.share({ title: document.title, text: currentState.paper.deck, url: window.location.href }); } else { navigator.clipboard.writeText(window.location.href); alert('Link copied to clipboard!'); } }
+
+        function sharePaper() {
+            const url = window.location.href;
+            if (navigator.share) {
+                navigator.share({ title: document.title, text: currentState.paper?.deck || '', url }).catch(() => {});
+                return;
+            }
+            navigator.clipboard.writeText(url).then(() => {
+                const btn = document.getElementById('btn-share');
+                const original = btn.textContent;
+                btn.textContent = '✓ Link Copied';
+                setTimeout(() => { btn.textContent = original; }, 1600);
+            });
+        }
 
         function saveToArchive(paper) {
             let archive = JSON.parse(localStorage.getItem('mvg_archive') || '[]');
@@ -661,14 +771,35 @@
             }
         }
 
-        function loadArchiveUI() {
-            const archive = JSON.parse(localStorage.getItem('mvg_archive') || '[]');
-            const grid = document.getElementById('archive-grid');
-            if (archive.length === 0) { grid.innerHTML = '<p style="grid-column: 1/-1; opacity: 0.6; font-style: italic;">No editions viewed yet. Jump universes to build your archive.</p>'; return; }
-            grid.innerHTML = archive.map(item => `<div class="archive-card" onclick="loadArchiveItem('${item.timeline_id}', '${item.date}')"><div class="archive-card-date">${item.date_display}</div><div class="archive-card-headline">${item.headline}</div><div class="archive-card-divergence">${item.divergence}</div></div>`).join('');
+        function escapeHtml(s) {
+            return String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
         }
 
-        function loadArchiveItem(timelineId, date) { currentState.timelineId = parseInt(timelineId); currentState.date = new Date(date); loadEdition(); document.getElementById('archive-section').style.display = 'none'; window.scrollTo({ top: 0, behavior: 'smooth' }); }
+        function loadArchiveUI() {
+            const grid = document.getElementById('archive-grid');
+            if (manifest && manifestDates.length) {
+                const html = [];
+                [...manifestDates].reverse().forEach(date => {
+                    const display = parseDate(date).toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
+                    html.push(`<div class="archive-date-header">${display}</div>`);
+                    (manifest.dates[date] || []).forEach(e => {
+                        html.push(`<div class="archive-card" onclick="loadArchiveItem('${e.timeline_id}', '${date}')">
+                            <div class="archive-card-theme">${escapeHtml(e.theme)} · Year ${escapeHtml(e.year)}</div>
+                            <div class="archive-card-headline">${escapeHtml(e.headline)}</div>
+                            <div class="archive-card-divergence">${escapeHtml(e.divergence)}</div>
+                        </div>`);
+                    });
+                });
+                grid.innerHTML = html.join('');
+                return;
+            }
+            // Fallback: locally viewed editions when the manifest isn't available.
+            const archive = JSON.parse(localStorage.getItem('mvg_archive') || '[]');
+            if (archive.length === 0) { grid.innerHTML = '<p style="grid-column: 1/-1; opacity: 0.6; font-style: italic;">No editions viewed yet. Jump universes to build your archive.</p>'; return; }
+            grid.innerHTML = archive.map(item => `<div class="archive-card" onclick="loadArchiveItem('${item.timeline_id}', '${item.date}')"><div class="archive-card-date">${escapeHtml(item.date_display)}</div><div class="archive-card-headline">${escapeHtml(item.headline)}</div><div class="archive-card-divergence">${escapeHtml(item.divergence)}</div></div>`).join('');
+        }
+
+        function loadArchiveItem(timelineId, date) { currentState.timelineId = parseInt(timelineId); currentState.date = parseDate(date) || new Date(date); loadEdition(); document.getElementById('archive-section').style.display = 'none'; window.scrollTo({ top: 0, behavior: 'smooth' }); }
 
         document.addEventListener('DOMContentLoaded', init);
     </script>

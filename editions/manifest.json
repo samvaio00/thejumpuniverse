@@ -1,0 +1,153 @@
+{
+ "generated_at": "2026-07-05T04:56:13.616962+00:00",
+ "dates": {
+  "2026-07-04": [
+   {
+    "timeline_id": 1,
+    "theme": "victorian",
+    "year": 1890,
+    "headline": "Obituary for the Royal Astronautical Society: A Celestial Dream Extinguished",
+    "deck": "As a once-great institution fades into history, the echoes of unrealized ambitions linger in our industrious hearts.",
+    "divergence": "Space travel began in 1950",
+    "hero_image": "/editions/images/2026-07-04-1-hero.png"
+   },
+   {
+    "timeline_id": 2,
+    "theme": "artdeco",
+    "year": 1927,
+    "headline": "Aurelia: Chiseling Dreams Amidst the Grandeur of Rome",
+    "deck": "In the vibrant streets of 1927 Rome, a self-taught sculptor navigates ambition and artistry, crafting her place in a flourishing empire.",
+    "divergence": "Rome never fell",
+    "hero_image": "/editions/images/2026-07-04-2-hero.png"
+   },
+   {
+    "timeline_id": 3,
+    "theme": "soviet",
+    "year": 1962,
+    "headline": "СЛЕЗЫ ПОБЕДИТЕЛЕЙ: ЗАКРЫТИЕ КОЛХОЗА 'КРАСНАЯ ZВЕЗДА'",
+    "deck": "Постсоветская эпоха социализма завершилась под ударами нового времени, оставляя лишь воспоминания о героизме и солидарности.",
+    "divergence": "Neural interfaces became mandatory in 2045",
+    "hero_image": "/editions/images/2026-07-04-3-hero.png"
+   },
+   {
+    "timeline_id": 4,
+    "theme": "cyberpunk",
+    "year": 2087,
+    "headline": "The Disappearance of the Elite in Neo-London",
+    "deck": "Wealth has become a specter in the neon-lit corners of a city turned upside down. In a chilling twist, the Black Death has shifted its focus, claiming the lives of the affluent while leaving the streets to the scavengers.",
+    "divergence": "The Black Death targeted only the wealthy",
+    "hero_image": "/editions/images/2026-07-04-4-hero.png"
+   },
+   {
+    "timeline_id": 5,
+    "theme": "medieval",
+    "year": 1347,
+    "headline": "The Triumph of Divine Will in the Face of Pestilence",
+    "deck": "In this dark hour, the Kingdom of Athelstan finds solace amidst despair, proclaiming providence in survival and faith.",
+    "divergence": "The atomic bomb was never used in war",
+    "hero_image": "/editions/images/2026-07-04-5-hero.png"
+   },
+   {
+    "timeline_id": 6,
+    "theme": "atomic",
+    "year": 1954,
+    "headline": "The Unraveling of the Imperial Energy Consortium: A Call to Arms",
+    "deck": "In a tapestry woven with threads of greed and misconduct, the noble pillars of our empire tremble under the weight of corruption.",
+    "divergence": "Rome never fell",
+    "hero_image": "/editions/images/2026-07-04-6-hero.png"
+   },
+   {
+    "timeline_id": 7,
+    "theme": "vaporwave",
+    "year": 1986,
+    "headline": "Synthetic Utopias Rise from the Ashes: A Neon Dreamscape in 1986",
+    "deck": "New malls resurrect the spirit of consumerism, offering pixelated escapes from the haunting echoes of a past that almost was.",
+    "divergence": "A plague wiped out 90% of humanity in 2020",
+    "hero_image": "/editions/images/2026-07-04-7-hero.png"
+   },
+   {
+    "timeline_id": 8,
+    "theme": "wasteland",
+    "year": 2147,
+    "headline": "The Rise of the New Aristocracy: Vaccine Galas Amidst Ruins",
+    "deck": "In a world reclaimed by nature, the elite celebrate health while the masses suffer in silence.",
+    "divergence": "The Black Death targeted only the wealthy",
+    "hero_image": "/editions/images/2026-07-04-8-hero.png"
+   }
+  ],
+  "2026-07-05": [
+   {
+    "timeline_id": 1,
+    "theme": "victorian",
+    "year": 1890,
+    "headline": "A Somber Journal of London's Plague-Wrought Silence",
+    "deck": "An eyewitness account reveals the haunting echoes of a life once vibrant, now succumbing to despair.",
+    "divergence": "A plague wiped out 90% of humanity in 2020",
+    "hero_image": "/editions/images/2026-07-05-1-hero.png"
+   },
+   {
+    "timeline_id": 2,
+    "theme": "artdeco",
+    "year": 1927,
+    "headline": "A Somber Curtain Falls: The Closure of The Grand Art Deco Theater",
+    "deck": "Once a Celestial Haven for Cultural Reverie, Now a Hollow Shell of Echoes and Memories.",
+    "divergence": "A plague wiped out 90% of humanity in 2020",
+    "hero_image": "/editions/images/2026-07-05-2-hero.png"
+   },
+   {
+    "timeline_id": 3,
+    "theme": "soviet",
+    "year": 1962,
+    "headline": "A CELEBRATION OF THE FIRST ANNIVERSARY OF THE SOVIET INTERNET!",
+    "deck": "THE PEOPLE'S NETWORK UNITS OVER 100 MILLION CITIZENS IN TRIUMPH FOR THE WORKING CLASS!",
+    "divergence": "The internet was invented by postal workers in 1923",
+    "hero_image": "/editions/images/2026-07-05-3-hero.png"
+   },
+   {
+    "timeline_id": 4,
+    "theme": "cyberpunk",
+    "year": 2087,
+    "headline": "Asha Voss: Crafting Freedom in the Shadows of Neo-London",
+    "deck": "In a city dominated by corporate titans, one street mechanic defies the odds, rebuilding lives and technology amid surveillance and oppression.",
+    "divergence": "Women gained the vote in 1848",
+    "hero_image": "/editions/images/2026-07-05-4-hero.png"
+   },
+   {
+    "timeline_id": 5,
+    "theme": "medieval",
+    "year": 1347,
+    "headline": "The Grain Guild's Betrayal: A Harvest of Deceit",
+    "deck": "An exposé unveils the nefarious dealings of the Imperial Grain Guild, as noble families conspire to inflate grain prices amidst the suffering of the peasantry.",
+    "divergence": "Rome never fell",
+    "hero_image": "/editions/images/2026-07-05-5-hero.png"
+   },
+   {
+    "timeline_id": 6,
+    "theme": "atomic",
+    "year": 1954,
+    "headline": "The Last Drive-In Theater: A Remnant of a Vanished America",
+    "deck": "Once a cultural cornerstone of community bonding, the drive-in stands as a haunting reminder of a world lost to time and tragedy.",
+    "divergence": "A plague wiped out 90% of humanity in 2020",
+    "hero_image": "/editions/images/2026-07-05-6-hero.png"
+   },
+   {
+    "timeline_id": 7,
+    "theme": "vaporwave",
+    "year": 1986,
+    "headline": "Malltopia: A Year of Neon Sovereignty and Pastel Prosperity",
+    "deck": "In the heart of consumerism, Malltopia thrives—where dreamscapes of vaporwave aesthetics and economic independence unify under shimmering arches.",
+    "divergence": "Malls became sovereign nations",
+    "hero_image": "/editions/images/2026-07-05-7-hero.png"
+   },
+   {
+    "timeline_id": 8,
+    "theme": "wasteland",
+    "year": 2147,
+    "headline": "Echoes of a Shattered Dream: Mara's Foray into the Ruins",
+    "deck": "In a world untouched by the Great Depression, a lone scavenger sifts through the ghostly remains of consumerism.",
+    "divergence": "The Great Depression never occurred",
+    "hero_image": "/editions/images/2026-07-05-8-hero.png"
+   }
+  ]
+ }
+}

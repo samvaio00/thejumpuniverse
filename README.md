@@ -44,12 +44,20 @@ python -m http.server 8000
 
 ## SEO
 
-- Dynamic title/meta per edition
+- Dynamic title/meta/canonical per edition
 - Open Graph + Twitter Cards
 - Schema.org NewsArticle structured data
-- Auto-generated sitemap.xml + rss.xml
+- Auto-generated sitemap.xml + rss.xml (properly XML-escaped)
 - Canonical URLs with timeline/date params
 - Semantic HTML5 + print styles
+
+## Frontend Features
+
+- `editions/manifest.json` — index of every published edition, regenerated daily; powers the site-wide archive and previous/next-day navigation
+- Jump Universe hops between the 8 real timelines for the current date
+- Keyboard shortcuts: `←`/`→` previous/next day, `J` jump universe
+- Per-theme display typography via Google Fonts (Playfair Display, Oswald, Orbitron, MedievalSharp, Righteous, Monoton, Special Elite, …)
+- Web Share API with clipboard fallback
 
 ## License
 
