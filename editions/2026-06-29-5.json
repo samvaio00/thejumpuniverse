@@ -92,5 +92,21 @@
   "real_world_echo": "The housing affordability crisis and landlord discourse — inverted into a world where rent, not housing, is what collapses.",
   "generated_at": "2026-07-05T05:59:53.582919+00:00",
   "hero_image": "/editions/images/2026-06-29-5-hero.png",
-  "hero_image_provider": "grok"
+  "hero_image_provider": "grok",
+  "stories": [
+    {
+      "desk": "Sport",
+      "headline": "Commons Games Enter Fourth Glorious Week, as Nobody Owns the Field",
+      "deck": "The trophy is the meadow itself, which each champion politely and urgently declines.",
+      "byline": "Young Hob, Sporting Chronicler",
+      "article": "<p>The Great Commons Games continued their fourth week upon the meadow at Nether Wallop, there being no landlord alive to end them. Events include hurdling the old boundary fences, long-distance strolling across formerly private acreage, and a wrestling match over who must accept the deed to the field, this year's grand prize.</p><p>Wat the Swift, victorious in three events, refused the deed at once, citing his health. It was pressed upon the runner-up, who fled. The deed currently rests atop the maypole, where the Church says it can do no harm, probably.</p>"
+    },
+    {
+      "desk": "Commerce",
+      "headline": "Ledger-Burning Guild Reports Record Warmth, Record Applications",
+      "deck": "The Church convenes to determine whether heat derived from rent records constitutes usury.",
+      "byline": "Master Fenwick, Trade Correspondent",
+      "article": "<p>The newly chartered Guild of Ledger-Burners reports its most prosperous season, with rent records providing the parish's warmth through the spring chill. \"Fine, dry burning,\" said Guildmaster Tilda, feeding the flames a particularly overdue account. \"The interest columns go up like kindling. It's the compounding.\"</p><p>The Church has convened a synod to rule whether warmth extracted from interest is itself interest, and therefore sin. The synod meets beside the fire, for comfort, and is expected to deliberate until the ledgers run out.</p>"
+    }
+  ]
 }

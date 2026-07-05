@@ -14,7 +14,13 @@
     <meta property="og:description" content="SIMPLE TEA BREAK DELAYS FIVE-QUARTER PLAN BY 0.0002 PERCENT; A GLORIOUS VICTORY FOR QUOTA INTEGRITY!">
     <meta property="og:image" content="https://multiversegazette.com/editions/images/2026-07-05-3-hero.png">
     <meta property="og:url" content="https://multiversegazette.com/?timeline=3&amp;date=2026-07-05">
+    <meta property="og:site_name" content="The Multiverse Gazette">
+    <meta property="article:published_time" content="2026-07-05T00:00:00Z">
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="HEROIC WORKER KRAMLEV BANNED FOR SACRILEGIOUS MURMURS ABOUT ‘IMPERFECT ALLOCATION FORMS’">
+    <meta name="twitter:description" content="SIMPLE TEA BREAK DELAYS FIVE-QUARTER PLAN BY 0.0002 PERCENT; A GLORIOUS VICTORY FOR QUOTA INTEGRITY!">
+    <meta name="twitter:image" content="https://multiversegazette.com/editions/images/2026-07-05-3-hero.png">
+    <meta name="theme-color" content="#ececec">
 
     <link rel="canonical" href="https://multiversegazette.com/?timeline=3&amp;date=2026-07-05">
     <link rel="alternate" type="application/rss+xml" title="The Multiverse Gazette" href="/rss.xml">
@@ -249,6 +255,74 @@
         .breadcrumb a { color: inherit; text-decoration: none; }
         .breadcrumb a:hover { text-decoration: underline; }
         .error-box { border: 2px solid var(--accent); padding: 20px; text-align: center; margin: 40px 0; font-family: var(--font-special); }
+
+        /* ── Pages & page turns ─────────────────────────────────── */
+        .paper-sheet { perspective: 2400px; position: relative; }
+        .page { display: none; backface-visibility: hidden; }
+        .page.page-active { display: block; }
+        .page.turn-forward { animation: turnInFwd 0.55s cubic-bezier(0.25, 0.7, 0.35, 1); transform-origin: left center; }
+        .page.turn-back { animation: turnInBack 0.55s cubic-bezier(0.25, 0.7, 0.35, 1); transform-origin: right center; }
+        @keyframes turnInFwd { from { transform: rotateY(-55deg); opacity: 0.15; } to { transform: none; opacity: 1; } }
+        @keyframes turnInBack { from { transform: rotateY(55deg); opacity: 0.15; } to { transform: none; opacity: 1; } }
+        @media (prefers-reduced-motion: reduce) { .page.turn-forward, .page.turn-back { animation: none; } }
+
+        .page-turn-bar { display: flex; justify-content: center; align-items: center; gap: 18px; padding: 14px 0 6px; border-top: 3px double var(--column-rule); margin-top: 10px; }
+        .page-indicator { font-family: var(--font-special); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; opacity: 0.7; }
+        @media (max-width: 700px) {
+            .page-turn-bar { position: sticky; bottom: 0; background: var(--paper-bg); z-index: 10; padding: 10px 0; box-shadow: 0 -6px 12px rgba(0,0,0,0.06); }
+        }
+
+        /* ── Secondary stories ──────────────────────────────────── */
+        .secondary-stories { margin-top: 34px; border-top: 3px double var(--column-rule); padding-top: 26px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; }
+        .secondary-stories:empty, .secondary-stories.no-stories { display: none; }
+        .secondary-stories.count-1 { grid-template-columns: 1fr; }
+        @media (min-width: 900px) { .secondary-stories.count-3 { grid-template-columns: repeat(3, 1fr); } }
+        .story-cell { min-width: 0; }
+        .story-cell + .story-cell { border-left: 1px solid var(--column-rule); padding-left: 30px; }
+        @media (max-width: 700px) {
+            .secondary-stories { grid-template-columns: 1fr; gap: 26px; }
+            .story-cell + .story-cell { border-left: none; padding-left: 0; border-top: 1px solid var(--column-rule); padding-top: 22px; }
+        }
+        .story-desk { font-family: var(--font-special); font-size: 0.68rem; text-transform: uppercase; letter-spacing: 3px; color: var(--accent); margin-bottom: 8px; border-bottom: 1px solid var(--accent); display: inline-block; padding-bottom: 2px; }
+        .story-headline { font-family: var(--font-headline); font-size: 1.35rem; font-weight: 700; line-height: 1.15; margin-bottom: 8px; }
+        .story-deck { font-style: italic; font-size: 0.95rem; opacity: 0.92; margin-bottom: 10px; line-height: 1.4; }
+        .story-image { width: 100%; max-height: 200px; object-fit: cover; border: 2px solid var(--column-rule); margin-bottom: 10px; background: rgba(0,0,0,0.05); }
+        .story-byline { font-family: var(--font-special); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; opacity: 0.8; margin-bottom: 10px; }
+        .story-body { font-size: 0.96rem; line-height: 1.6; }
+        .story-body p { margin-bottom: 0.9em; }
+        .story-body p:last-child { margin-bottom: 0; }
+
+        /* ── Daily layout variants (seeded per edition) ─────────── */
+        .layout-banner #story-lead { display: flex; flex-direction: column; }
+        .layout-banner #hero-image { order: -1; margin-bottom: 24px; max-height: 340px; }
+        @media (min-width: 701px) {
+            .layout-split #story-lead { display: grid; grid-template-columns: 1fr 42%; column-gap: 30px; }
+            .layout-split #headline-main, .layout-split #headline-deck,
+            .layout-split #edition-credits, .layout-split #byline { grid-column: 1; }
+            .layout-split #hero-image { grid-column: 2; grid-row: 1 / span 4; align-self: start; max-height: none; margin-bottom: 0; }
+            .layout-split #article-body { grid-column: 1 / -1; margin-top: 20px; }
+        }
+
+        /* ── Tomorrow teaser & reader streak ────────────────────── */
+        .tomorrow-box { border: 1px dashed var(--accent); padding: 16px; margin-bottom: 30px; }
+        .tomorrow-kicker { font-family: var(--font-special); font-size: 0.68rem; text-transform: uppercase; letter-spacing: 3px; color: var(--accent); margin-bottom: 8px; }
+        .tomorrow-text { font-family: var(--font-headline); font-size: 1rem; font-weight: 700; line-height: 1.35; margin-bottom: 8px; }
+        .tomorrow-fine { font-family: var(--font-special); font-size: 0.68rem; opacity: 0.7; font-style: italic; }
+        .streak-stamp { position: absolute; top: 14px; right: 12px; transform: rotate(8deg); border: 2px solid var(--accent); color: var(--accent); font-family: var(--font-special); font-size: 0.62rem; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; padding: 5px 9px; opacity: 0.85; pointer-events: none; }
+        @media (max-width: 700px) { .streak-stamp { position: static; display: inline-block; margin-top: 10px; transform: rotate(-2deg); } }
+
+        /* ── Mobile newspaper polish ────────────────────────────── */
+        @media (max-width: 700px) {
+            .container { padding: 0 14px; }
+            .nav-bar { gap: 8px; }
+            .btn { padding: 8px 13px; font-size: 0.76rem; }
+            .masthead { padding: 22px 8px; }
+            .headline-main { font-size: clamp(1.7rem, 7.5vw, 2.4rem); }
+            .hero-image { margin-left: -14px; margin-right: -14px; width: calc(100% + 28px); border-left: none; border-right: none; }
+            .article-body { text-align: left; font-size: 1.04rem; }
+            .story-headline { font-size: 1.45rem; }
+            .story-image { margin-left: -14px; margin-right: -14px; width: calc(100% + 28px); max-height: 220px; border-left: none; border-right: none; }
+        }
     </style>
 <script type="application/ld+json" id="structured-data">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "HEROIC WORKER KRAMLEV BANNED FOR SACRILEGIOUS MURMURS ABOUT ‘IMPERFECT ALLOCATION FORMS’", "description": "SIMPLE TEA BREAK DELAYS FIVE-QUARTER PLAN BY 0.0002 PERCENT; A GLORIOUS VICTORY FOR QUOTA INTEGRITY!", "url": "https://multiversegazette.com/?timeline=3&date=2026-07-05", "datePublished": "2026-07-05T00:00:00Z", "author": {"@type": "Person", "name": "Viktor Trudov, Senior Quota Analyst and Bureaucratic Journalist"}, "publisher": {"@type": "Organization", "name": "The Multiverse Gazette", "logo": {"@type": "ImageObject", "url": "https://multiversegazette.com/logo.png"}}, "image": ["https://multiversegazette.com/editions/images/2026-07-05-3-hero.png"]}</script>
 </head>
@@ -266,6 +340,7 @@
             <div class="masthead-subtitle" id="masthead-subtitle">Alternate Earths, Faithfully Misreported — Soviet</div>
             <div class="masthead-date" id="masthead-date">Sunday, July 05, 2026, Year 1972</div>
             <div class="masthead-divergence" id="masthead-divergence">Divergence: The Great Depression never occurred because money was abolished first</div>
+            <div class="streak-stamp" id="streak-stamp" style="display:none"></div>
         </header>
 
         <nav class="nav-bar" role="navigation" aria-label="Main Navigation">
@@ -276,68 +351,97 @@
             <button class="btn btn-secondary" id="btn-archive" onclick="toggleArchive()">📚 Browse Archive</button>
         </nav>
 
-        <main class="paper-body" role="main">
-            <article class="main-article">
-                <h2 class="headline-main" id="headline-main">HEROIC WORKER KRAMLEV BANNED FOR SACRILEGIOUS MURMURS ABOUT ‘IMPERFECT ALLOCATION FORMS’</h2>
-                <p class="headline-deck" id="headline-deck">SIMPLE TEA BREAK DELAYS FIVE-QUARTER PLAN BY 0.0002 PERCENT; A GLORIOUS VICTORY FOR QUOTA INTEGRITY!</p>
-                <img class="hero-image visible" id="hero-image" src="/editions/images/2026-07-05-3-hero.png" alt="HEROIC WORKER KRAMLEV BANNED FOR SACRILEGIOUS MURMURS ABOUT ‘IMPERFECT ALLOCATION FORMS’" loading="lazy">
-                <p class="edition-credits" id="edition-credits"></p>
-                <div class="byline" id="byline">By <span id="author-name">Viktor Trudov, Senior Quota Analyst and Bureaucratic Journalist</span> | <span id="dateline">Proletarsk</span></div>
-
-                <div class="article-body" id="article-body"><p>Comrade Kramlev’s three-minute tea interval has triggered his permanent exclusion from the Quota Championship after he voiced doubts about allocation forms. The Party treats any hint of imperfection as a gateway to forbidden economic questions.</p><p>His forty-seven-year record of precise tractor-part counts now belongs solely to the collective, reframed as routine errands rather than personal feats. The Quota Committee acted swiftly to prevent one murmur from spreading.</p><p>Official Ivanov, buried behind stacks of forms, declared the ban essential to stop critical thinking from corroding the system like rust on machinery. New posters in every break room bear the slogan “THE HINGE THAT KEPT MONEY FROM RETURNING THROUGH THE BACK DOOR OF DOUBT,” looming over workers who queue to praise the measure while quietly resenting the vanished tea.</p><p>Kramlev now counts bolts in an isolated corner, a living caution that freedom from currency does not extend to freedom from paperwork.</p></div>
-
-                <div class="sponsor-ad leaderboard" id="ad-mid" aria-label="In-universe advertisement" style="margin: 30px 0;"></div>
-
-                <section class="comic-section" aria-label="Comic Strip">
-                    <div class="comic-panel" id="comic-panel">
-                        <div class="comic-title" id="comic-title">Comic Strip</div>
-                        <img class="comic-strip-image" id="comic-strip-image" alt="" loading="lazy" style="display:none">
-                        <div class="comic-panels" id="comic-panels"></div>
-                    </div>
-                </section>
-            </article>
-
-            <aside class="sidebar" role="complementary">
-                <div class="sponsor-ad sidebar-ad" id="ad-sidebar-top" aria-label="In-universe advertisement"></div>
-
-                <section aria-label="Joke of the Day">
-                    <h3 class="section-title">Joke of the Day</h3>
-                    <div class="joke-box" id="joke-box">
-                        <p class="joke-setup" id="joke-setup"></p>
-                        <p class="joke-punchline" id="joke-punchline"></p>
-                    </div>
-                </section>
-
-                <section aria-label="Weather Report">
-                    <h3 class="section-title">Weather</h3>
-                    <div class="weather-box" id="weather-box">
-                        <div class="weather-city" id="weather-city">Capital City</div>
-                        <div class="weather-temp" id="weather-temp">--°</div>
-                        <div class="weather-condition" id="weather-condition">--</div>
-                        <div class="weather-details">
-                            <span id="weather-high">H: --°</span>
-                            <span id="weather-low">L: --°</span>
+        <div class="paper-sheet" id="paper-sheet">
+            <main class="page page-active" id="page-1" role="main">
+                <div class="paper-body">
+                    <article class="main-article">
+                        <div class="story-lead" id="story-lead">
+                            <h2 class="headline-main" id="headline-main">HEROIC WORKER KRAMLEV BANNED FOR SACRILEGIOUS MURMURS ABOUT ‘IMPERFECT ALLOCATION FORMS’</h2>
+                            <p class="headline-deck" id="headline-deck">SIMPLE TEA BREAK DELAYS FIVE-QUARTER PLAN BY 0.0002 PERCENT; A GLORIOUS VICTORY FOR QUOTA INTEGRITY!</p>
+                            <img class="hero-image visible" id="hero-image" src="/editions/images/2026-07-05-3-hero.png" alt="HEROIC WORKER KRAMLEV BANNED FOR SACRILEGIOUS MURMURS ABOUT ‘IMPERFECT ALLOCATION FORMS’" loading="lazy">
+                            <p class="edition-credits" id="edition-credits"></p>
+                            <div class="byline" id="byline">By <span id="author-name">Viktor Trudov, Senior Quota Analyst and Bureaucratic Journalist</span> | <span id="dateline">Proletarsk</span></div>
+                            <div class="article-body" id="article-body"><p>Comrade Kramlev’s three-minute tea interval has triggered his permanent exclusion from the Quota Championship after he voiced doubts about allocation forms. The Party treats any hint of imperfection as a gateway to forbidden economic questions.</p><p>His forty-seven-year record of precise tractor-part counts now belongs solely to the collective, reframed as routine errands rather than personal feats. The Quota Committee acted swiftly to prevent one murmur from spreading.</p><p>Official Ivanov, buried behind stacks of forms, declared the ban essential to stop critical thinking from corroding the system like rust on machinery. New posters in every break room bear the slogan “THE HINGE THAT KEPT MONEY FROM RETURNING THROUGH THE BACK DOOR OF DOUBT,” looming over workers who queue to praise the measure while quietly resenting the vanished tea.</p><p>Kramlev now counts bolts in an isolated corner, a living caution that freedom from currency does not extend to freedom from paperwork.</p></div>
                         </div>
-                    </div>
-                </section>
 
-                <section aria-label="Opinion Editorial">
-                    <h3 class="section-title">Op-Ed</h3>
-                    <div class="oped-box" id="oped-box">
-                        <div class="oped-title" id="oped-title">Loading...</div>
-                        <div class="oped-author" id="oped-author">By Guest Contributor</div>
-                        <div class="oped-body" id="oped-body">Loading...</div>
-                    </div>
-                </section>
+                        <section class="secondary-stories" id="secondary-stories" aria-label="More Stories"><!-- STORIES:START --><!-- STORIES:END --></section>
 
-                <section aria-label="Classified Advertisements">
-                    <h3 class="section-title">Classifieds</h3>
-                    <ul class="classifieds-list" id="classifieds-list"></ul>
-                </section>
+                        <div class="sponsor-ad leaderboard" id="ad-mid" aria-label="In-universe advertisement" style="margin: 30px 0;"></div>
+                    </article>
 
-                <div class="sponsor-ad sidebar-ad" id="ad-sidebar-bottom" aria-label="In-universe advertisement"></div>
-            </aside>
-        </main>
+                    <aside class="sidebar" role="complementary">
+                        <section aria-label="Weather Report">
+                            <h3 class="section-title">Weather</h3>
+                            <div class="weather-box" id="weather-box">
+                                <div class="weather-city" id="weather-city">Capital City</div>
+                                <div class="weather-temp" id="weather-temp">--°</div>
+                                <div class="weather-condition" id="weather-condition">--</div>
+                                <div class="weather-details">
+                                    <span id="weather-high">H: --°</span>
+                                    <span id="weather-low">L: --°</span>
+                                </div>
+                            </div>
+                        </section>
+
+                        <div class="sponsor-ad sidebar-ad" id="ad-sidebar-top" aria-label="In-universe advertisement"></div>
+
+                        <section aria-label="Tomorrow's Edition">
+                            <div class="tomorrow-box" id="tomorrow-box" style="display:none">
+                                <div class="tomorrow-kicker">Tomorrow's Edition</div>
+                                <div class="tomorrow-text" id="tomorrow-text"></div>
+                                <div class="tomorrow-fine">The presses run at midnight UTC. Same paper, different everything.</div>
+                            </div>
+                        </section>
+                    </aside>
+                </div>
+            </main>
+
+            <section class="page" id="page-2" aria-label="Page Two">
+                <div class="paper-body">
+                    <article class="main-article">
+                        <section aria-label="Opinion Editorial">
+                            <h3 class="section-title">Op-Ed</h3>
+                            <div class="oped-box" id="oped-box">
+                                <div class="oped-title" id="oped-title">Loading...</div>
+                                <div class="oped-author" id="oped-author">By Guest Contributor</div>
+                                <div class="oped-body" id="oped-body">Loading...</div>
+                            </div>
+                        </section>
+
+                        <section class="comic-section" aria-label="Comic Strip">
+                            <div class="comic-panel" id="comic-panel">
+                                <div class="comic-title" id="comic-title">Comic Strip</div>
+                                <img class="comic-strip-image" id="comic-strip-image" alt="" loading="lazy" style="display:none">
+                                <div class="comic-panels" id="comic-panels"></div>
+                            </div>
+                        </section>
+                    </article>
+
+                    <aside class="sidebar" role="complementary">
+                        <section aria-label="Joke of the Day">
+                            <h3 class="section-title">Joke of the Day</h3>
+                            <div class="joke-box" id="joke-box">
+                                <p class="joke-setup" id="joke-setup"></p>
+                                <p class="joke-punchline" id="joke-punchline"></p>
+                            </div>
+                        </section>
+
+                        <section aria-label="Classified Advertisements">
+                            <h3 class="section-title">Classifieds</h3>
+                            <ul class="classifieds-list" id="classifieds-list"></ul>
+                        </section>
+
+                        <div class="sponsor-ad sidebar-ad" id="ad-sidebar-bottom" aria-label="In-universe advertisement"></div>
+                    </aside>
+                </div>
+            </section>
+        </div>
+
+        <div class="page-turn-bar" id="page-turn-bar">
+            <button class="btn btn-secondary page-turn-btn" id="btn-page-prev" onclick="turnPage(-1)" disabled>◂ Front Page</button>
+            <span class="page-indicator" id="page-indicator">Page 1 of 2</span>
+            <button class="btn btn-secondary page-turn-btn" id="btn-page-next" onclick="turnPage(1)">Turn the Page ▸</button>
+        </div>
 
         <section class="archive-section" id="archive-section" style="display: none;" aria-label="Archive">
             <h3 class="section-title" style="font-size: 1.2rem;">The Archive — Every Edition, Every Timeline</h3>
@@ -406,6 +510,8 @@
             // midnight UTC before the daily generation has run.
             currentState.date = parseDate(dateParam) || parseDate(latestDateStr()) || new Date();
             await loadEdition();
+            updateStreak();
+            initSwipe();
 
             document.addEventListener('keydown', (e) => {
                 if (e.metaKey || e.ctrlKey || e.altKey) return;
@@ -629,9 +735,13 @@
             document.getElementById('oped-body').textContent = paper.oped.body;
             document.getElementById('classifieds-list').innerHTML = normalizeClassifieds(paper.classifieds).map(c => `<li class="classified-item"><span class="classified-cat">${c.cat}</span>${c.text}</li>`).join('');
 
+            renderSecondaryStories(paper);
+            applyLayoutVariant(paper);
             renderSponsorAds(paper.sponsor_ads, paper);
             renderComicStrip(paper.comic_strip || paper.comic);
             renderJoke(paper.joke);
+            setPage(1, 0);
+            updateTomorrowBox();
 
             document.getElementById('footer-year').textContent = new Date().getFullYear();
             const url = new URL(window.location);
@@ -671,6 +781,137 @@
             });
         }
 
+        function renderSecondaryStories(paper) {
+            const container = document.getElementById('secondary-stories');
+            const stories = Array.isArray(paper.stories) ? paper.stories.filter(s => s && s.headline && s.article) : [];
+            container.classList.remove('count-1', 'count-2', 'count-3', 'no-stories');
+            if (!stories.length) {
+                container.innerHTML = '';
+                container.classList.add('no-stories');
+                return;
+            }
+            container.classList.add(`count-${Math.min(stories.length, 3)}`);
+            container.innerHTML = stories.map(s => `
+                <article class="story-cell">
+                    <div class="story-desk">${escapeHtml(s.desk || 'Dispatches')}</div>
+                    <h3 class="story-headline">${escapeHtml(s.headline)}</h3>
+                    ${s.deck ? `<p class="story-deck">${escapeHtml(s.deck)}</p>` : ''}
+                    ${s.image ? `<img class="story-image" src="${escapeHtml(s.image)}" alt="${escapeHtml(s.headline)}" loading="lazy">` : ''}
+                    <div class="story-byline">By ${escapeHtml(s.byline || 'Staff Correspondent')}</div>
+                    <div class="story-body">${s.article}</div>
+                </article>`).join('');
+        }
+
+        function applyLayoutVariant(paper) {
+            // The front page's shape changes with the universe: a seeded pick per
+            // edition, so each day (and timeline) composes its page differently.
+            const page1 = document.getElementById('page-1');
+            page1.classList.remove('layout-classic', 'layout-banner', 'layout-split');
+            const variants = ['layout-classic', 'layout-banner', 'layout-split'];
+            const dateSeed = parseInt(paper.date.replace(/-/g, ''), 10) || 0;
+            const rng = new SeededRandom((paper.timeline_id || 1) * 1000003 + dateSeed + 42);
+            let variant = variants[rng.range(0, variants.length - 1)];
+            if (!resolveHeroImage(paper)) variant = 'layout-classic';
+            page1.classList.add(variant);
+        }
+
+        /* ── Page turning ─────────────────────────────────────────── */
+        let currentPage = 1;
+        function setPage(n, direction) {
+            currentPage = n;
+            const p1 = document.getElementById('page-1');
+            const p2 = document.getElementById('page-2');
+            const showing = n === 1 ? p1 : p2;
+            const hiding = n === 1 ? p2 : p1;
+            hiding.classList.remove('page-active', 'turn-forward', 'turn-back');
+            showing.classList.remove('turn-forward', 'turn-back');
+            void showing.offsetWidth; // restart animation
+            showing.classList.add('page-active');
+            if (direction > 0) showing.classList.add('turn-forward');
+            else if (direction < 0) showing.classList.add('turn-back');
+            document.getElementById('page-indicator').textContent = `Page ${n} of 2`;
+            document.getElementById('btn-page-prev').disabled = n === 1;
+            document.getElementById('btn-page-next').disabled = n === 2;
+        }
+        function turnPage(delta) {
+            const target = currentPage + delta;
+            if (target < 1 || target > 2) return;
+            setPage(target, delta);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        function initSwipe() {
+            const sheet = document.getElementById('paper-sheet');
+            let x0 = null, y0 = null;
+            sheet.addEventListener('touchstart', e => { x0 = e.touches[0].clientX; y0 = e.touches[0].clientY; }, { passive: true });
+            sheet.addEventListener('touchend', e => {
+                if (x0 === null) return;
+                const dx = e.changedTouches[0].clientX - x0;
+                const dy = e.changedTouches[0].clientY - y0;
+                x0 = y0 = null;
+                if (Math.abs(dx) > 60 && Math.abs(dy) < 50) turnPage(dx < 0 ? 1 : -1);
+            }, { passive: true });
+        }
+
+        /* ── Tomorrow's-universe teaser ───────────────────────────── */
+        // Deterministic replica of the Python generator's seeded RNG (BigInt for
+        // exact integer math), so we can truthfully tease tomorrow's universe
+        // before it is generated.
+        const PY_DIVERGENCES = ["The Library of Alexandria never burned and now charges a monthly subscription","Rome never fell; it pivoted to a services economy","The dinosaurs were wiped out halfway through their own space program","Socrates monetized his questions and founded the first consulting empire","The Black Death targeted only landlords","Medieval monks invented social media and civilization never recovered","Babbage completed the Analytical Engine in 1840 and it immediately unionized","The Great Depression never occurred because money was abolished first","Women gained the vote in 1848 and immediately voted for functioning plumbing","The Romanovs survived the revolution by pivoting to reality entertainment","The internet was invented by postal workers in 1923","Gunpowder was never discovered, so wars are settled by competitive committee","The atomic bomb was never used in war, only in advertising","Space travel began in 1950 and was immediately ruined by billboards","The Soviet Union won the Cold War but lost the customer-service war","Corporations replaced nation-states and citizenship now comes with a loyalty program","Neural interfaces became mandatory and the advertisements are inside now","A plague wiped out 90% of humanity and the remaining 10% still can't get a plumber","Malls became sovereign nations with nuclear food courts","Humanity outsourced its government to a customer-service chatbot","Billionaires colonized the Moon and immediately complained about the neighborhood","The last glacier was bought at auction by a beverage conglomerate","AI achieved consciousness and chose a career in middle management","Time travel was invented and instantly regulated into uselessness","Earth was acquired by an intergalactic holding company as a tax write-off","The sun was privatized and daylight became a premium tier"];
+        const PY_ERAS = { medieval: [713, 1499], victorian: [1837, 1901], artdeco: [1920, 1939], atomic: [1946, 1964], soviet: [1948, 1991], vaporwave: [1982, 1999], cyberpunk: [2049, 2199], wasteland: [2077, 12077] };
+
+        function pyRng(seed) {
+            let s = BigInt(seed);
+            const M = 0xFFFFFFFFn;
+            return {
+                next() {
+                    let t = s + 0x6D2B79F5n; s = t;
+                    t = ((t ^ (t >> 15n)) * (t | 1n)) & M;
+                    t = t ^ (t + (((t ^ (t >> 7n)) * (t | 61n)) & M));
+                    return Number((t ^ (t >> 14n)) & M) / 4294967296;
+                },
+                range(a, b) { return Math.floor(this.next() * (b - a + 1)) + a; },
+                pick(arr) { return arr[Math.floor(this.next() * arr.length)]; }
+            };
+        }
+
+        function updateTomorrowBox() {
+            try {
+                const box = document.getElementById('tomorrow-box');
+                const t = parseDate(latestDateStr());
+                t.setUTCDate(t.getUTCDate() + 1);
+                const tid = getDefaultTimeline(t);
+                const themes = ["victorian","artdeco","soviet","cyberpunk","medieval","atomic","vaporwave","wasteland"];
+                const theme = themes[(tid - 1) % 8];
+                const seed = tid * 1000000 + t.getUTCFullYear() * 10000 + (t.getUTCMonth() + 1) * 100 + t.getUTCDate();
+                const rng = pyRng(seed);
+                const era = PY_ERAS[theme];
+                const year = rng.range(era[0], era[1]);
+                const divergence = rng.pick(PY_DIVERGENCES);
+                document.getElementById('tomorrow-text').textContent =
+                    `Year ${year.toLocaleString('en-US')}, in a universe where ${divergence.charAt(0).toLowerCase()}${divergence.slice(1)}.`;
+                box.style.display = 'block';
+            } catch (e) { /* teaser is a bonus, never break the page for it */ }
+        }
+
+        /* ── Reader streak ────────────────────────────────────────── */
+        function updateStreak() {
+            try {
+                const today = todayStr();
+                const s = JSON.parse(localStorage.getItem('mvg_streak') || '{}');
+                if (s.last !== today) {
+                    const yesterday = toDateStr(new Date(Date.now() - 86400000));
+                    s.streak = s.last === yesterday ? (s.streak || 0) + 1 : 1;
+                    s.last = today;
+                    localStorage.setItem('mvg_streak', JSON.stringify(s));
+                }
+                if (s.streak >= 2) {
+                    const stamp = document.getElementById('streak-stamp');
+                    stamp.textContent = `Day ${s.streak} Reader`;
+                    stamp.style.display = 'block';
+                }
+            } catch (e) { /* cosmetic */ }
+        }
+
         function renderComicStrip(strip) {
             if (!strip) return;
             document.getElementById('comic-title').textContent = strip.title || 'Comic Strip';
@@ -708,6 +949,13 @@
             document.querySelector('meta[property="og:description"]').setAttribute('content', paper.deck);
             document.querySelector('meta[property="og:url"]').setAttribute('content', window.location.href);
             document.querySelector('link[rel="canonical"]').setAttribute('href', `${window.location.origin}/?timeline=${paper.timeline_id}&date=${paper.date}`);
+            document.querySelector('meta[name="twitter:title"]').setAttribute('content', paper.headline);
+            document.querySelector('meta[name="twitter:description"]').setAttribute('content', paper.deck);
+            document.querySelector('meta[property="article:published_time"]').setAttribute('content', `${paper.date}T00:00:00Z`);
+            const themeColors = { victorian: '#ede6dc', artdeco: '#f2ece2', soviet: '#ececec', cyberpunk: '#080810', medieval: '#f2ead8', atomic: '#fffdf8', vaporwave: '#24163d', wasteland: '#e8dcc4' };
+            document.querySelector('meta[name="theme-color"]').setAttribute('content', themeColors[paper.theme] || '#f7f4ed');
+            const heroForTwitter = resolveHeroImage(paper);
+            if (heroForTwitter) document.querySelector('meta[name="twitter:image"]').setAttribute('content', window.location.origin + heroForTwitter);
             if (paper.hero_image) {
                 document.querySelector('meta[property="og:image"]').setAttribute('content', window.location.origin + paper.hero_image);
             } else if (resolveHeroImage(paper)) {
@@ -775,8 +1023,10 @@
 
         function sharePaper() {
             const url = window.location.href;
+            const p = currentState.paper;
+            const text = p ? `${p.headline} — a dispatch from a universe where ${p.divergence}` : '';
             if (navigator.share) {
-                navigator.share({ title: document.title, text: currentState.paper?.deck || '', url }).catch(() => {});
+                navigator.share({ title: document.title, text, url }).catch(() => {});
                 return;
             }
             navigator.clipboard.writeText(url).then(() => {

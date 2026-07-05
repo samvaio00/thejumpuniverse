@@ -4,6 +4,7 @@ A daily satirical newspaper from alternate universes across all of time — news
 
 ## Content Pipeline
 
+- Each edition carries 2–4 stories (a lead plus shorter dispatches from other desks — Business, Sport, Crime, Obituaries…), every story with its own AI image
 - Each edition picks a random year within its theme's era (medieval 713–1499 … wasteland 2077–12077) and a satirical divergence premise
 - Real-world headlines are fetched from news RSS at generation time so stories can obliquely mirror current affairs (fails soft if offline)
 - An editor "brief" stage designs the day's comic premise; every section prompt receives the front-page headline so the whole paper reads as one universe reacting to one event
@@ -61,8 +62,12 @@ python -m http.server 8000
 
 ## Frontend Features
 
-- `editions/manifest.json` — index of every published edition, regenerated daily; powers the site-wide archive and previous/next-day navigation
-- Jump Universe hops between the 8 real timelines for the current date
+- Two flippable pages per edition (front page + features page) with 3D page-turn animation and swipe support on mobile
+- The front page's layout varies daily — a seeded pick per edition (classic / banner / split) so no two days compose alike
+- "Tomorrow's Edition" teaser: a deterministic JS replica of the generator's seeded RNG truthfully previews tomorrow's universe before it exists
+- Reader streak stamp (localStorage) rewards daily visits
+- `editions/manifest.json` — index of every published edition, regenerated daily; powers the site-wide archive and previous-day navigation
+- Jump Universe hops between the published timelines for the current date
 - Keyboard shortcuts: `←`/`→` previous/next day, `J` jump universe
 - Per-theme display typography via Google Fonts (Playfair Display, Oswald, Orbitron, MedievalSharp, Righteous, Monoton, Special Elite, …)
 - Web Share API with clipboard fallback
