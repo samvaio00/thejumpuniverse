@@ -58,7 +58,9 @@
       {
         "caption": "He haggles. The plague hears him counting coins."
       }
-    ]
+    ],
+    "image": "/editions/images/2026-06-29-5-strip.png",
+    "image_provider": "grok"
   },
   "joke": {
     "setup": "What is the difference between the plague and a landlord?",
@@ -88,5 +90,7 @@
     }
   ],
   "real_world_echo": "The housing affordability crisis and landlord discourse — inverted into a world where rent, not housing, is what collapses.",
-  "generated_at": "2026-07-05T05:59:53.582919+00:00"
+  "generated_at": "2026-07-05T05:59:53.582919+00:00",
+  "hero_image": "/editions/images/2026-06-29-5-hero.png",
+  "hero_image_provider": "grok"
 }

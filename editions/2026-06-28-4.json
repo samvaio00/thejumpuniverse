@@ -58,7 +58,9 @@
       {
         "caption": "That night he dreams of the kiosk. It is wearing his face. It offers him soup."
       }
-    ]
+    ],
+    "image": "/editions/images/2026-06-28-4-strip.png",
+    "image_provider": "grok"
   },
   "joke": {
     "setup": "Why did the free-tier citizen finally upgrade to ad-free dreams?",
@@ -88,5 +90,7 @@
     }
   ],
   "real_world_echo": "Streaming and app subscriptions adding ad-supported tiers and raising prices — mirrored as tiered, ad-funded sleep.",
-  "generated_at": "2026-07-05T05:59:53.582919+00:00"
+  "generated_at": "2026-07-05T05:59:53.582919+00:00",
+  "hero_image": "/editions/images/2026-06-28-4-hero.png",
+  "hero_image_provider": "grok"
 }

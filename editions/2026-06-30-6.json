@@ -58,7 +58,9 @@
       {
         "caption": "'What's the shovel for?' Dad, beaming: 'Optimism.'"
       }
-    ]
+    ],
+    "image": "/editions/images/2026-06-30-6-strip.png",
+    "image_provider": "grok"
   },
   "joke": {
     "setup": "What did the safety inspector say about the countertop reactor?",
@@ -88,5 +90,7 @@
     }
   ],
   "real_world_echo": "The 'AI-in-everything' gadget gold rush — mirrored as a world that puts atoms in everything and creates a Bureau of Enthusiasm instead of oversight.",
-  "generated_at": "2026-07-05T05:59:53.582919+00:00"
+  "generated_at": "2026-07-05T05:59:53.582919+00:00",
+  "hero_image": "/editions/images/2026-06-30-6-hero.png",
+  "hero_image_provider": "grok"
 }

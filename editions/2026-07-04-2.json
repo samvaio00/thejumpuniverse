@@ -58,7 +58,9 @@
       {
         "caption": "A janitor asks what happens when everyone runs out of nice things to say. Trading halts. He's escorted out for insider gloom."
       }
-    ]
+    ],
+    "image": "/editions/images/2026-07-04-2-strip.png",
+    "image_provider": "grok"
   },
   "joke": {
     "setup": "Why was the banker's smile trading at a premium?",
@@ -88,5 +90,7 @@
     }
   ],
   "real_world_echo": "Meme stocks, crypto, and the influencer attention economy — a market where the asset is being liked and skepticism is a bannable offense.",
-  "generated_at": "2026-07-05T05:59:53.582919+00:00"
+  "generated_at": "2026-07-05T05:59:53.582919+00:00",
+  "hero_image": "/editions/images/2026-07-04-2-hero.png",
+  "hero_image_provider": "grok"
 }

@@ -58,7 +58,9 @@
       {
         "caption": "Peace talks stall when the evidence keeps getting eaten."
       }
-    ]
+    ],
+    "image": "/editions/images/2026-07-01-7-strip.png",
+    "image_provider": "grok"
   },
   "joke": {
     "setup": "Why did Mallmerica lose the trade war?",
@@ -88,5 +90,7 @@
     }
   ],
   "real_world_echo": "Tariff wars and trade-bloc brinkmanship — miniaturized into two sovereign malls fighting over pretzels and a parking structure.",
-  "generated_at": "2026-07-05T05:59:53.582919+00:00"
+  "generated_at": "2026-07-05T05:59:53.582919+00:00",
+  "hero_image": "/editions/images/2026-07-01-7-hero.png",
+  "hero_image_provider": "grok"
 }

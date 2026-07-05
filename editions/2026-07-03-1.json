@@ -58,7 +58,9 @@
       {
         "caption": "The foreman joins the strike."
       }
-    ]
+    ],
+    "image": "/editions/images/2026-07-03-1-strip.png",
+    "image_provider": "grok"
   },
   "joke": {
     "setup": "Why did the Analytical Engine join the union?",
@@ -88,5 +90,7 @@
     }
   ],
   "real_world_echo": "AI trained on humanity's writings absorbing more than intended, and AI labor anxiety — flipped so the machines are the ones organizing.",
-  "generated_at": "2026-07-05T05:59:53.582919+00:00"
+  "generated_at": "2026-07-05T05:59:53.582919+00:00",
+  "hero_image": "/editions/images/2026-07-03-1-hero.png",
+  "hero_image_provider": "grok"
 }

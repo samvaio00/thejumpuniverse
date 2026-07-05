@@ -58,7 +58,9 @@
       {
         "caption": "By dusk there's a new product: Grief, Lightly Salted™."
       }
-    ]
+    ],
+    "image": "/editions/images/2026-07-02-8-strip.png",
+    "image_provider": "grok"
   },
   "joke": {
     "setup": "How many wastelanders does it take to open a bottle of Glacier Classic?",
@@ -88,5 +90,7 @@
     }
   ],
   "real_world_echo": "Climate anxiety meets sneaker-drop scarcity marketing and luxury water brands — the last glacier sold as a limited-edition collectible.",
-  "generated_at": "2026-07-05T05:59:53.582919+00:00"
+  "generated_at": "2026-07-05T05:59:53.582919+00:00",
+  "hero_image": "/editions/images/2026-07-02-8-hero.png",
+  "hero_image_provider": "grok"
 }

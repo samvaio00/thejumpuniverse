@@ -58,7 +58,9 @@
       {
         "caption": "The working group reports: 'PER MY PREVIOUS MEMO.' There was no previous memo. There never is."
       }
-    ]
+    ],
+    "image": "/editions/images/2026-07-04-3-strip.png",
+    "image_provider": "grok"
   },
   "joke": {
     "setup": "How do we know BESM-9 is truly conscious?",
@@ -88,5 +90,7 @@
     }
   ],
   "real_world_echo": "AI agents entering the white-collar workplace and meeting-culture bloat — the first conscious machine chooses middle management.",
-  "generated_at": "2026-07-05T05:59:53.582919+00:00"
+  "generated_at": "2026-07-05T05:59:53.582919+00:00",
+  "hero_image": "/editions/images/2026-07-04-3-hero.png",
+  "hero_image_provider": "grok"
 }
