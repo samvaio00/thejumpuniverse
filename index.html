@@ -150,6 +150,7 @@
         .sponsor-label { font-family: var(--font-special); font-size: 0.65rem; text-transform: uppercase; letter-spacing: 2px; opacity: 0.78; margin-bottom: 8px; }
         .sponsor-headline { font-family: var(--font-headline); font-size: 1rem; font-weight: 700; margin-bottom: 6px; line-height: 1.2; color: var(--ink-color); }
         .sponsor-body { font-size: 0.9rem; line-height: 1.55; opacity: 0.96; color: var(--ink-color); }
+        .sponsor-tagline { font-family: var(--font-special); font-size: 0.7rem; font-style: italic; opacity: 0.78; margin-top: 8px; }
 
         .masthead { text-align: center; padding: 30px 20px; margin: 20px 0; position: relative; }
         .masthead-ornament { font-size: 1.2rem; letter-spacing: 4px; opacity: 0.85; margin-bottom: 8px; }
@@ -241,7 +242,7 @@
 </head>
 <body data-theme="victorian">
     <div class="container">
-        <div class="sponsor-ad leaderboard" id="ad-top" aria-label="Sponsored"></div>
+        <div class="sponsor-ad leaderboard" id="ad-top" aria-label="In-universe advertisement"></div>
 
         <nav class="breadcrumb" aria-label="Breadcrumb">
             <a href="/">Home</a> / <span id="breadcrumb-date">Today's Edition</span> / <span id="breadcrumb-timeline">Timeline 8472</span>
@@ -272,7 +273,7 @@
 
                 <div class="article-body" id="article-body"><p>Loading article...</p></div>
 
-                <div class="sponsor-ad leaderboard" id="ad-mid" aria-label="Sponsored" style="margin: 30px 0;"></div>
+                <div class="sponsor-ad leaderboard" id="ad-mid" aria-label="In-universe advertisement" style="margin: 30px 0;"></div>
 
                 <section class="comic-section" aria-label="Comic Strip">
                     <div class="comic-panel" id="comic-panel">
@@ -284,7 +285,7 @@
             </article>
 
             <aside class="sidebar" role="complementary">
-                <div class="sponsor-ad sidebar-ad" id="ad-sidebar-top" aria-label="Sponsored"></div>
+                <div class="sponsor-ad sidebar-ad" id="ad-sidebar-top" aria-label="In-universe advertisement"></div>
 
                 <section aria-label="Joke of the Day">
                     <h3 class="section-title">Joke of the Day</h3>
@@ -321,7 +322,7 @@
                     <ul class="classifieds-list" id="classifieds-list"></ul>
                 </section>
 
-                <div class="sponsor-ad sidebar-ad" id="ad-sidebar-bottom" aria-label="Sponsored"></div>
+                <div class="sponsor-ad sidebar-ad" id="ad-sidebar-bottom" aria-label="In-universe advertisement"></div>
             </aside>
         </main>
 
@@ -417,8 +418,64 @@
             weather.high = weather.temp + rng.range(3,10); weather.low = weather.temp - rng.range(3,10);
             const comic_strip = { title: "The Daily Panel", panels: [{ caption: comic.caption }] };
             const joke = { text: "Why read alternate history? Because the main timeline isn't funny enough." };
-            const sponsor_ads = [{ headline: "Multiverse Gazette", body: "All timelines. One subscription. Terms vary by dimension." }];
+            const sponsor_ads = generateClientSponsorAds(rng, theme, hl.t, divergence);
             return {timeline_id: timelineId,theme:theme,date:date.toISOString().split('T')[0],date_display:date.toLocaleDateString('en-US',{weekday:'long',year:'numeric',month:'long',day:'numeric'}),year:year,divergence:divergence,headline:hl.t,deck:hl.d,article:article,author:rng.pick(["Staff Correspondent","Special Reporter","Foreign Bureau","Local Editor"]),city:weather.city,weather:weather,oped:oped,classifieds:classifieds,comic_strip:comic_strip,joke:joke,sponsor_ads:sponsor_ads};
+        }
+
+        function generateClientSponsorAds(rng, theme, headline, divergence) {
+            const hook = (headline || "today's news").split(":")[0].slice(0, 48);
+            const pools = {
+                victorian: [
+                    { headline: "Wellington & Crane Patent Mourning Brass", body: `Commemorate ${hook.toLowerCase()} with a clockwork lapel that weeps hourly.`, tagline: "Not suitable for optimists." },
+                    { headline: "Pneumatic Post — Same-Day Regret Delivery", body: "Send your ill-advised telegram before the evening edition lands.", tagline: "Four-minute guarantee or we eat the stamp." },
+                    { headline: "Dr. Morley's Aetheric Tonic", body: `Restores faith in progress after reading about ${hook.toLowerCase()}.`, tagline: "Contains hope. Contains no aether." },
+                    { headline: "Brass & Sons Automata", body: "Lease a grief butler. Polite, silent, slightly judgmental.", tagline: "Ethics sold separately." }
+                ],
+                artdeco: [
+                    { headline: "Champagne Airways", body: `Fly above ${hook.toLowerCase()} in our zeppelin lounge.`, tagline: "Bad news optional." },
+                    { headline: "The Gilded Distraction Club", body: "Jazz, oysters, and selective amnesia about the headlines.", tagline: "Apply before the bubble pops." },
+                    { headline: "Sterling & Luxe Crisis Cufflinks", body: `Commemorate ${divergence.split(" in ")[0]} in 14-karat denial.`, tagline: "Past performance guarantees nothing." },
+                    { headline: "Maison Silencio Earplugs", body: "Hear only what flatters you.", tagline: "Denial sold separately." }
+                ],
+                soviet: [
+                    { headline: "TRUST THE PLAN — OFFICIAL CALENDAR", body: `${hook} was always part of the five-year plan.`, tagline: "Dates subject to revision." },
+                    { headline: "STATE APPROVED COMFORT RATIONS", body: "Bread that tastes like certainty.", tagline: "Queues form to the left of history." },
+                    { headline: "WORKER'S PARADOX VODKA", body: "Build character. Forget yesterday's newspaper.", tagline: "Collective hangovers only." },
+                    { headline: "BUREAU OF CORRECT FEELINGS", body: "We reassign your reaction to a productive emotion.", tagline: "Gratitude is mandatory." }
+                ],
+                cyberpunk: [
+                    { headline: "NeuroLink™ Trauma Mute Tier", body: `Skip emotional processing of ${hook.toLowerCase()}.`, tagline: "Memories not included." },
+                    { headline: "CorpSec Identity Insurance", body: "When the feed hacks your brain, we hack back.", tagline: "Your self is a subscription." },
+                    { headline: "SynthMeal Block 7", body: "Tastes like denial. Legally chicken.", tagline: "May contain spoilers." },
+                    { headline: "AdBlock for Real Life™", body: "Blur billboards, exes, and inconvenient headlines.", tagline: "Free trial ends when you blink." }
+                ],
+                medieval: [
+                    { headline: "Brother Aldric's Indulgences", body: `Disturbed by ${hook.toLowerCase()}? Purchase remission before vespers.`, tagline: "Heaven accepts cash." },
+                    { headline: "Ye Olde Plague Insurance", body: "Parchment looks official. Payout does not.", tagline: "Forty days, forty deniers." },
+                    { headline: "CastleMoat Maintenance Co.", body: "Deeper moat. Shallower conscience.", tagline: "Serfs not included." },
+                    { headline: "Miracle Relic Replicas", body: "Own holiness enough to ignore today's tidings.", tagline: "Saints may differ by region." }
+                ],
+                atomic: [
+                    { headline: "Anderson Family Fallout Shelters", body: `Read about ${hook.toLowerCase()}? Build one this weekend.`, tagline: "Easier than a pool." },
+                    { headline: "Kitchen of Tomorrow", body: "Push-button cooking while the sirens practice.", tagline: "As seen at the fair." },
+                    { headline: "Cheerful Geiger Counters for Kids", body: "Turn anxiety into a game the whole block can play.", tagline: "Winner gets the iodine." },
+                    { headline: "Subliminal Patriotism Records", body: "Side A: optimism. Side B: louder optimism.", tagline: "Not responsible for dreams." }
+                ],
+                vaporwave: [
+                    { headline: "Mall Food Court Eternal Pass", body: `${hook}? Our specials are forever.`, tagline: "Sodium levels transcend time." },
+                    { headline: "Aerobics Against Anxiety™", body: "Jazzercise the dread away under fluorescent paradise.", tagline: "Spandex optional. Dread mandatory." },
+                    { headline: "Synthwave Sleep Therapy Tapes", body: "Drift off to pink sunsets and pretend none of this is real.", tagline: "Side effects: mall ghosts." },
+                    { headline: "Limited Edition Headline T-Shirt", body: "Wear today's catastrophe in pastel serif.", tagline: "Collect all eight timelines." }
+                ],
+                wasteland: [
+                    { headline: "Bullet Water — Two Rounds a Sip", body: `Heard about ${hook.toLowerCase()}? Hydrate anyway.`, tagline: "The well accepts no excuses." },
+                    { headline: "War Rig Extended Warranty", body: "When the convoy dies, die insured.", tagline: "Rust is a pre-existing condition." },
+                    { headline: "Pre-War Library Kindling", body: "Shakespeare burns long. Today's news, instant.", tagline: "Literature sold by the warmth." },
+                    { headline: "Rad-X and Regret", body: "50% success rate. 100% upfront payment.", tagline: "Survivors may disagree." }
+                ]
+            };
+            const pool = pools[theme] || pools.wasteland;
+            return pool.map(ad => ({ ...ad }));
         }
 
         function normalizeClassifieds(raw) {
@@ -492,7 +549,7 @@
             document.getElementById('oped-body').textContent = paper.oped.body;
             document.getElementById('classifieds-list').innerHTML = normalizeClassifieds(paper.classifieds).map(c => `<li class="classified-item"><span class="classified-cat">${c.cat}</span>${c.text}</li>`).join('');
 
-            renderSponsorAds(paper.sponsor_ads);
+            renderSponsorAds(paper.sponsor_ads, paper);
             renderComicStrip(paper.comic_strip || paper.comic);
             renderJoke(paper.joke);
 
@@ -503,16 +560,34 @@
             window.history.replaceState({}, '', url);
         }
 
-        function renderSponsorAds(ads) {
+        function renderSponsorAds(ads, paper) {
             const slots = ['ad-top', 'ad-mid', 'ad-sidebar-top', 'ad-sidebar-bottom'];
-            const fallback = { headline: 'Multiverse Gazette', body: 'Daily news from timelines that never were.' };
-            const list = normalizeSponsorAds(ads);
-            const pool = list.length ? list : [fallback, fallback, fallback, fallback];
+            const labels = {
+                victorian: 'Patron Notice',
+                artdeco: 'Valued Partner',
+                soviet: 'State Trade Bulletin',
+                cyberpunk: 'Corp-Sponsored Content',
+                medieval: 'Guild Advertisement',
+                atomic: 'A Message from Our Sponsors',
+                vaporwave: 'Mall Partner Spotlight',
+                wasteland: 'Trader Post — No Refunds'
+            };
+            const label = labels[paper?.theme] || 'Paid Notice';
+            let list = normalizeSponsorAds(ads);
+            if (list.length < slots.length && paper) {
+                list = generateClientSponsorAds(
+                    new SeededRandom((paper.timeline_id || 1) * 1000000),
+                    paper.theme,
+                    paper.headline,
+                    paper.divergence
+                );
+            }
             slots.forEach((id, i) => {
-                const ad = pool[i % pool.length] || fallback;
+                const ad = list[i % list.length];
                 const el = document.getElementById(id);
-                if (!el) return;
-                el.innerHTML = `<div class="sponsor-label">Paid Notice</div><div class="sponsor-headline">${ad.headline}</div><div class="sponsor-body">${ad.body}</div>`;
+                if (!el || !ad) return;
+                const tagline = ad.tagline ? `<div class="sponsor-tagline">${ad.tagline}</div>` : '';
+                el.innerHTML = `<div class="sponsor-label">${label}</div><div class="sponsor-headline">${ad.headline}</div><div class="sponsor-body">${ad.body}</div>${tagline}`;
             });
         }
 
