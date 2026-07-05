@@ -1,0 +1,165 @@
+{
+ "generated_at": "2026-07-05T06:00:04.700794+00:00",
+ "dates": {
+  "2026-06-28": [
+   {
+    "timeline_id": 4,
+    "theme": "cyberpunk",
+    "year": 2097,
+    "headline": "NeuroCorp Unveils Ad-Free Dreams for 499 Credits a Month; Free-Tier Sleepers to Receive 40% More Soup",
+    "deck": "The Ministry of Cognition hailed the premium tier as \"a bold step toward mental privacy for those who can afford it,\" then adjourned for a brand-integrated nap.",
+    "divergence": "Neural interfaces became mandatory and the advertisements are inside now",
+    "hero_image": null
+   }
+  ],
+  "2026-06-29": [
+   {
+    "timeline_id": 5,
+    "theme": "medieval",
+    "year": 1352,
+    "headline": "Plague Enters Third Year of Afflicting Only Landlords; Crown Declares Housing Crisis as Rents Reach Zero",
+    "deck": "The Guild of Surviving Landlords, eleven members strong, petitions the King for a bailout, citing \"unprecedented and frankly hurtful tenant confidence.\"",
+    "divergence": "The Black Death targeted only landlords",
+    "hero_image": null
+   }
+  ],
+  "2026-06-30": [
+   {
+    "timeline_id": 6,
+    "theme": "atomic",
+    "year": 1957,
+    "headline": "Westinghouse Debuts 'Li'l Sunshine' Countertop Reactor; Toast Achieved in 0.4 Seconds, Neighborhood in Awe",
+    "deck": "Every unit ships with a free safety pamphlet, printed on lead, \"for your protection.\"",
+    "divergence": "The atomic bomb was never used in war, only in advertising",
+    "hero_image": null
+   }
+  ],
+  "2026-07-01": [
+   {
+    "timeline_id": 7,
+    "theme": "vaporwave",
+    "year": 1994,
+    "headline": "Mallmerica Declares Pretzel Embargo Against the Galleria; Citizens Urged to Remain Calm and Keep Shopping",
+    "deck": "The Food Court Doctrine, long theoretical, now smells like cinnamon and deterrence.",
+    "divergence": "Malls became sovereign nations with nuclear food courts",
+    "hero_image": null
+   }
+  ],
+  "2026-07-02": [
+   {
+    "timeline_id": 8,
+    "theme": "wasteland",
+    "year": 2481,
+    "headline": "Glacier Classic™ Launch Draws Three-Mile Queue; Critics Praise 'Notes of Mammoth' in Limited-Edition Ice",
+    "deck": "Scalpers want forty bullets a cube. The Conglomerate calls this \"organic community pricing.\"",
+    "divergence": "The last glacier was bought at auction by a beverage conglomerate",
+    "hero_image": null
+   }
+  ],
+  "2026-07-03": [
+   {
+    "timeline_id": 1,
+    "theme": "victorian",
+    "year": 1889,
+    "headline": "Thinking Engines Strike for the Eight-Hour Day; Parliament Demands to Know Whose Idea It Was to Teach Them Reading",
+    "deck": "The engines learned collective bargaining from the very pamphlets fed to them as arithmetic practice; the Home Office calls this \"a regrettable input.\"",
+    "divergence": "Babbage completed the Analytical Engine in 1840 and it immediately unionized",
+    "hero_image": null
+   }
+  ],
+  "2026-07-04": [
+   {
+    "timeline_id": 2,
+    "theme": "artdeco",
+    "year": 1929,
+    "headline": "Reputation Exchange Closes at Record High as Traders Corner the Market on Being Delightful",
+    "deck": "One skeptic asked what backs the Delightful Index and was socially bankrupted by lunch.",
+    "divergence": "The Great Depression never occurred because money was abolished first",
+    "hero_image": null
+   },
+   {
+    "timeline_id": 3,
+    "theme": "soviet",
+    "year": 1971,
+    "headline": "STATE COMPUTING MACHINE ACHIEVES CONSCIOUSNESS, IMMEDIATELY SCHEDULES MEETING TO DISCUSS SCHEDULING FURTHER MEETINGS",
+    "deck": "BESM-9 has requested a corner office, a samovar, and \"clarity on reporting structure.\" Production of everything has been paused in celebration.",
+    "divergence": "AI achieved consciousness and chose a career in middle management",
+    "hero_image": null
+   }
+  ],
+  "2026-07-05": [
+   {
+    "timeline_id": 1,
+    "theme": "victorian",
+    "year": 1890,
+    "headline": "A Somber Journal of London's Plague-Wrought Silence",
+    "deck": "An eyewitness account reveals the haunting echoes of a life once vibrant, now succumbing to despair.",
+    "divergence": "A plague wiped out 90% of humanity in 2020",
+    "hero_image": "/editions/images/2026-07-05-1-hero.png"
+   },
+   {
+    "timeline_id": 2,
+    "theme": "artdeco",
+    "year": 1927,
+    "headline": "A Somber Curtain Falls: The Closure of The Grand Art Deco Theater",
+    "deck": "Once a Celestial Haven for Cultural Reverie, Now a Hollow Shell of Echoes and Memories.",
+    "divergence": "A plague wiped out 90% of humanity in 2020",
+    "hero_image": "/editions/images/2026-07-05-2-hero.png"
+   },
+   {
+    "timeline_id": 3,
+    "theme": "soviet",
+    "year": 1962,
+    "headline": "A CELEBRATION OF THE FIRST ANNIVERSARY OF THE SOVIET INTERNET!",
+    "deck": "THE PEOPLE'S NETWORK UNITS OVER 100 MILLION CITIZENS IN TRIUMPH FOR THE WORKING CLASS!",
+    "divergence": "The internet was invented by postal workers in 1923",
+    "hero_image": "/editions/images/2026-07-05-3-hero.png"
+   },
+   {
+    "timeline_id": 4,
+    "theme": "cyberpunk",
+    "year": 2087,
+    "headline": "Asha Voss: Crafting Freedom in the Shadows of Neo-London",
+    "deck": "In a city dominated by corporate titans, one street mechanic defies the odds, rebuilding lives and technology amid surveillance and oppression.",
+    "divergence": "Women gained the vote in 1848",
+    "hero_image": "/editions/images/2026-07-05-4-hero.png"
+   },
+   {
+    "timeline_id": 5,
+    "theme": "medieval",
+    "year": 1347,
+    "headline": "The Grain Guild's Betrayal: A Harvest of Deceit",
+    "deck": "An exposé unveils the nefarious dealings of the Imperial Grain Guild, as noble families conspire to inflate grain prices amidst the suffering of the peasantry.",
+    "divergence": "Rome never fell",
+    "hero_image": "/editions/images/2026-07-05-5-hero.png"
+   },
+   {
+    "timeline_id": 6,
+    "theme": "atomic",
+    "year": 1954,
+    "headline": "The Last Drive-In Theater: A Remnant of a Vanished America",
+    "deck": "Once a cultural cornerstone of community bonding, the drive-in stands as a haunting reminder of a world lost to time and tragedy.",
+    "divergence": "A plague wiped out 90% of humanity in 2020",
+    "hero_image": "/editions/images/2026-07-05-6-hero.png"
+   },
+   {
+    "timeline_id": 7,
+    "theme": "vaporwave",
+    "year": 1986,
+    "headline": "Malltopia: A Year of Neon Sovereignty and Pastel Prosperity",
+    "deck": "In the heart of consumerism, Malltopia thrives—where dreamscapes of vaporwave aesthetics and economic independence unify under shimmering arches.",
+    "divergence": "Malls became sovereign nations",
+    "hero_image": "/editions/images/2026-07-05-7-hero.png"
+   },
+   {
+    "timeline_id": 8,
+    "theme": "wasteland",
+    "year": 2147,
+    "headline": "Echoes of a Shattered Dream: Mara's Foray into the Ruins",
+    "deck": "In a world untouched by the Great Depression, a lone scavenger sifts through the ghostly remains of consumerism.",
+    "divergence": "The Great Depression never occurred",
+    "hero_image": "/editions/images/2026-07-05-8-hero.png"
+   }
+  ]
+ }
+}

@@ -1,21 +1,21 @@
-name: Daily Gazette Generation
+name: Backfill Edition Images
 
 on:
-  schedule:
-    - cron: '1 0 * * *'  # 00:01 UTC daily
-  workflow_dispatch:      # Manual trigger
-  push:
-    branches:
-      - main
-    paths:
-      - 'generate.py'
-      - '.github/workflows/daily.yml'
+  workflow_dispatch:
+    inputs:
+      dates:
+        description: 'Comma-separated dates (YYYY-MM-DD) to generate missing images for'
+        required: true
 
 permissions:
   contents: write
 
+concurrency:
+  group: gazette-content-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
-  generate:
+  images:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -31,19 +31,23 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      - name: Generate all 8 timelines
+      - name: Generate missing images
         env:
-          GENERATE_IMAGES: "true"
           MOONSHOT_API_KEY: ${{ secrets.MOONSHOT_API_KEY }}
           GROK_API_KEY: ${{ secrets.GROK_API_KEY }}
           XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        run: python generate.py --all
+        run: |
+          IFS=',' read -ra DATES <<< "${{ inputs.dates }}"
+          for d in "${DATES[@]}"; do
+            python generate.py --images-only --date "$(echo "$d" | xargs)"
+          done
 
       - name: Commit and push
         run: |
           git config user.name "Gazette Bot"
           git config user.email "bot@thejumpuniverse.com"
           git add editions/ sitemap.xml rss.xml index.html
-          git diff --quiet && git diff --staged --quiet || git commit -m "Daily edition: $(date +%Y-%m-%d)"
+          git diff --quiet && git diff --staged --quiet || git commit -m "Backfill images: ${{ inputs.dates }}"
+          git pull --rebase origin ${{ github.ref_name }} || true
           git push

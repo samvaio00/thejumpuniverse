@@ -3,28 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Multiverse Gazette — Daily Newspaper from Parallel Earths</title>
-    <meta name="description" content="Read the daily newspaper from alternate timelines. Each day, a new parallel Earth. Historical divergences, alternate futures, and news that never happened.">
-    <meta name="keywords" content="alternate history, parallel universe, speculative fiction, daily newspaper, multiverse, what if">
+    <title>A CELEBRATION OF THE FIRST ANNIVERSARY OF THE SOVIET INTERNET! | The Multiverse Gazette</title>
+    <meta name="description" content="THE PEOPLE'S NETWORK UNITS OVER 100 MILLION CITIZENS IN TRIUMPH FOR THE WORKING CLASS! — A satirical dispatch from a universe where The internet was invented by postal workers in 1923.">
+    <meta name="keywords" content="news parody, satire, satirical newspaper, alternate history, parallel universe, multiverse, funny news, daily humor, speculative fiction, what if">
     <meta name="author" content="The Multiverse Gazette">
     <meta name="robots" content="index, follow">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="The Multiverse Gazette — Daily Newspaper from Parallel Earths">
-    <meta property="og:description" content="Today's headline from a timeline where history took a different turn.">
-    <meta property="og:image" content="https://multiversegazette.com/og-image.jpg">
-    <meta property="og:url" content="https://multiversegazette.com">
+    <meta property="og:title" content="A CELEBRATION OF THE FIRST ANNIVERSARY OF THE SOVIET INTERNET!">
+    <meta property="og:description" content="THE PEOPLE'S NETWORK UNITS OVER 100 MILLION CITIZENS IN TRIUMPH FOR THE WORKING CLASS!">
+    <meta property="og:image" content="https://multiversegazette.com/editions/images/2026-07-05-3-hero.png">
+    <meta property="og:url" content="https://multiversegazette.com/?timeline=3&amp;date=2026-07-05">
     <meta name="twitter:card" content="summary_large_image">
 
-    <link rel="canonical" href="https://multiversegazette.com">
+    <link rel="canonical" href="https://multiversegazette.com/?timeline=3&amp;date=2026-07-05">
     <link rel="alternate" type="application/rss+xml" title="The Multiverse Gazette" href="/rss.xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poiret+One&family=Oswald:wght@500;700&family=Orbitron:wght@600;800&family=Share+Tech+Mono&family=MedievalSharp&family=Righteous&family=Monoton&family=Special+Elite&display=swap" rel="stylesheet">
 
     <style>
         *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
         :root {
             --paper-bg: #f7f4ed; --ink-color: #121212; --accent: #7a0000;
-            --column-rule: #9a958a; --font-headline: 'Georgia', serif;
-            --font-body: 'Georgia', serif; --font-masthead: 'Georgia', serif;
+            --column-rule: #9a958a; --font-headline: 'Playfair Display', 'Georgia', serif;
+            --font-body: 'Georgia', serif; --font-masthead: 'Playfair Display', 'Georgia', serif;
             --font-special: 'Courier New', monospace;
             --muted-opacity: 0.88;
         }
@@ -38,8 +42,8 @@
 
         [data-theme="victorian"] {
             --paper-bg: #ede6dc; --ink-color: #1f120a; --accent: #6b3410;
-            --column-rule: #8a7464; --font-headline: 'Georgia', serif;
-            --font-body: 'Georgia', serif; --font-masthead: 'Georgia', serif;
+            --column-rule: #8a7464; --font-headline: 'Playfair Display', 'Georgia', serif;
+            --font-body: 'Georgia', serif; --font-masthead: 'Playfair Display', 'Georgia', serif;
             --font-special: 'Courier New', monospace;
         }
         [data-theme="victorian"] .masthead { border-top: 4px double var(--accent); border-bottom: 4px double var(--accent); }
@@ -48,7 +52,8 @@
 
         [data-theme="artdeco"] {
             --paper-bg: #f2ece2; --ink-color: #0f0f1e; --accent: #a6840f;
-            --column-rule: #b8941f;
+            --column-rule: #b8941f; --font-masthead: 'Poiret One', 'Georgia', serif;
+            --font-headline: 'Oswald', 'Georgia', sans-serif;
         }
         [data-theme="artdeco"] .masthead { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: #f5e6b8; border: 3px solid var(--accent); }
         [data-theme="artdeco"] .masthead-subtitle,
@@ -61,8 +66,8 @@
 
         [data-theme="soviet"] {
             --paper-bg: #ececec; --ink-color: #111; --accent: #b30000;
-            --column-rule: #777; --font-headline: 'Courier New', monospace;
-            --font-body: 'Courier New', monospace; --font-masthead: 'Courier New', monospace;
+            --column-rule: #777; --font-headline: 'Oswald', 'Arial Narrow', sans-serif;
+            --font-body: 'Courier New', monospace; --font-masthead: 'Oswald', 'Arial Narrow', sans-serif;
             --font-special: 'Courier New', monospace;
         }
         [data-theme="soviet"] .masthead { background: #cc0000; color: white; border: none; }
@@ -74,9 +79,9 @@
 
         [data-theme="cyberpunk"] {
             --paper-bg: #080810; --ink-color: #f2f2f2; --accent: #00e68a;
-            --column-rule: #444; --font-headline: 'Courier New', monospace;
-            --font-body: 'Courier New', monospace; --font-masthead: 'Courier New', monospace;
-            --font-special: 'Courier New', monospace;
+            --column-rule: #444; --font-headline: 'Orbitron', 'Courier New', monospace;
+            --font-body: 'Share Tech Mono', 'Courier New', monospace; --font-masthead: 'Orbitron', 'Courier New', monospace;
+            --font-special: 'Share Tech Mono', 'Courier New', monospace;
         }
         [data-theme="cyberpunk"] .masthead { border: 2px solid var(--accent); box-shadow: 0 0 20px rgba(0, 230, 138, 0.25); background: #0f1018; }
         [data-theme="cyberpunk"] .masthead-title { color: var(--accent); text-shadow: 0 0 10px rgba(0, 230, 138, 0.45); letter-spacing: 6px; }
@@ -89,7 +94,8 @@
 
         [data-theme="medieval"] {
             --paper-bg: #f2ead8; --ink-color: #2a1808; --accent: #7a0000;
-            --column-rule: #a89070;
+            --column-rule: #a89070; --font-masthead: 'MedievalSharp', 'Georgia', serif;
+            --font-headline: 'MedievalSharp', 'Georgia', serif;
         }
         [data-theme="medieval"] .masthead { border: 3px double var(--accent); background: linear-gradient(to bottom, #f5f0e1, #e8e0cc); }
         [data-theme="medieval"] .masthead-title { font-variant: small-caps; letter-spacing: 3px; }
@@ -98,7 +104,8 @@
 
         [data-theme="atomic"] {
             --paper-bg: #fffdf8; --ink-color: #1a2836; --accent: #c0392b;
-            --column-rule: #95a0a8;
+            --column-rule: #95a0a8; --font-masthead: 'Righteous', 'Georgia', sans-serif;
+            --font-headline: 'Righteous', 'Georgia', sans-serif;
         }
         [data-theme="atomic"] .masthead { border-top: 6px solid var(--accent); border-bottom: 2px solid var(--accent); background: white; }
         [data-theme="atomic"] .masthead-title { letter-spacing: 6px; text-transform: uppercase; }
@@ -108,9 +115,9 @@
 
         [data-theme="vaporwave"] {
             --paper-bg: #24163d; --ink-color: #f4f4f8; --accent: #ff7eb3;
-            --column-rule: #6a4a99; --font-headline: 'Courier New', monospace;
-            --font-body: 'Courier New', monospace; --font-masthead: 'Courier New', monospace;
-            --font-special: 'Courier New', monospace;
+            --column-rule: #6a4a99; --font-headline: 'Orbitron', 'Courier New', monospace;
+            --font-body: 'Share Tech Mono', 'Courier New', monospace; --font-masthead: 'Monoton', 'Courier New', monospace;
+            --font-special: 'Share Tech Mono', 'Courier New', monospace;
         }
         [data-theme="vaporwave"] .masthead { border: 2px solid var(--accent); background: linear-gradient(135deg, #2d1b4e 0%, #1a0f2e 100%); box-shadow: 0 0 30px rgba(255, 107, 157, 0.2); }
         [data-theme="vaporwave"] .masthead-title { color: var(--accent); text-shadow: 2px 2px 0px #6bcfff; letter-spacing: 8px; text-transform: uppercase; }
@@ -122,9 +129,9 @@
 
         [data-theme="wasteland"] {
             --paper-bg: #e8dcc4; --ink-color: #2a1a0c; --accent: #6b3810;
-            --column-rule: #8a7355; --font-headline: 'Courier New', monospace;
-            --font-body: 'Courier New', monospace; --font-masthead: 'Courier New', monospace;
-            --font-special: 'Courier New', monospace;
+            --column-rule: #8a7355; --font-headline: 'Special Elite', 'Courier New', monospace;
+            --font-body: 'Special Elite', 'Courier New', monospace; --font-masthead: 'Special Elite', 'Courier New', monospace;
+            --font-special: 'Special Elite', 'Courier New', monospace;
         }
         [data-theme="wasteland"] .masthead { border: 3px solid var(--accent); background: #c9b896; }
         [data-theme="wasteland"] .masthead-title { letter-spacing: 6px; text-transform: uppercase; font-weight: 900; }
@@ -162,6 +169,7 @@
         .nav-bar { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; padding: 15px 0; border-bottom: 1px solid var(--column-rule); margin-bottom: 30px; }
         .btn { padding: 10px 24px; font-family: var(--font-special); font-size: 0.85rem; cursor: pointer; transition: all 0.3s ease; text-decoration: none; display: inline-block; border: none; }
         .btn:hover { transform: translateY(-2px); opacity: 0.9; }
+        .btn:disabled { opacity: 0.35; cursor: default; transform: none; }
         .btn-secondary { background: transparent; border: 1px solid var(--ink-color); color: var(--ink-color); }
 
         .paper-body { display: grid; grid-template-columns: 1fr 300px; gap: 40px; margin-bottom: 40px; }
@@ -233,45 +241,50 @@
         @media print { .nav-bar, .sponsor-ad, .archive-section, .footer { display: none !important; } .paper-body { grid-template-columns: 1fr 250px; } body { background: white !important; color: black !important; } }
 
         .loading { opacity: 0.5; pointer-events: none; }
+        body { transition: background 0.5s ease, color 0.5s ease, opacity 0.35s ease; }
+        .archive-date-header { grid-column: 1 / -1; font-family: var(--font-special); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; border-bottom: 1px solid var(--column-rule); padding-bottom: 6px; margin-top: 10px; opacity: 0.75; }
+        .archive-card-theme { font-family: var(--font-special); font-size: 0.65rem; text-transform: uppercase; letter-spacing: 1px; opacity: 0.6; margin-bottom: 6px; }
         .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0; }
         .breadcrumb { font-family: var(--font-special); font-size: 0.75rem; opacity: 0.6; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px; }
         .breadcrumb a { color: inherit; text-decoration: none; }
         .breadcrumb a:hover { text-decoration: underline; }
         .error-box { border: 2px solid var(--accent); padding: 20px; text-align: center; margin: 40px 0; font-family: var(--font-special); }
     </style>
+<script type="application/ld+json" id="structured-data">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "A CELEBRATION OF THE FIRST ANNIVERSARY OF THE SOVIET INTERNET!", "description": "THE PEOPLE'S NETWORK UNITS OVER 100 MILLION CITIZENS IN TRIUMPH FOR THE WORKING CLASS!", "url": "https://multiversegazette.com/?timeline=3&date=2026-07-05", "datePublished": "2026-07-05T00:00:00Z", "author": {"@type": "Person", "name": "Special Reporter"}, "publisher": {"@type": "Organization", "name": "The Multiverse Gazette", "logo": {"@type": "ImageObject", "url": "https://multiversegazette.com/logo.png"}}, "image": ["https://multiversegazette.com/editions/images/2026-07-05-3-hero.png"]}</script>
 </head>
-<body data-theme="victorian">
+<body data-theme="soviet">
     <div class="container">
         <div class="sponsor-ad leaderboard" id="ad-top" aria-label="In-universe advertisement"></div>
 
         <nav class="breadcrumb" aria-label="Breadcrumb">
-            <a href="/">Home</a> / <span id="breadcrumb-date">Today's Edition</span> / <span id="breadcrumb-timeline">Timeline 8472</span>
+            <a href="/">Home</a> / <span id="breadcrumb-date">Sunday, July 05, 2026</span> / <span id="breadcrumb-timeline">Timeline 3</span>
         </nav>
 
         <header class="masthead" role="banner">
             <div class="masthead-ornament" id="masthead-ornament">✦ ✦ ✦</div>
             <h1 class="masthead-title" id="masthead-title">The Multiverse Gazette</h1>
-            <div class="masthead-subtitle" id="masthead-subtitle">The Daily Newspaper of Alternate Earths</div>
-            <div class="masthead-date" id="masthead-date">Loading...</div>
-            <div class="masthead-divergence" id="masthead-divergence">Divergence Point: Loading...</div>
+            <div class="masthead-subtitle" id="masthead-subtitle">Alternate Earths, Faithfully Misreported — Soviet</div>
+            <div class="masthead-date" id="masthead-date">Sunday, July 05, 2026, Year 1962</div>
+            <div class="masthead-divergence" id="masthead-divergence">Divergence: The internet was invented by postal workers in 1923</div>
         </header>
 
         <nav class="nav-bar" role="navigation" aria-label="Main Navigation">
-            <button class="btn" id="btn-jump" onclick="jumpUniverse()">🌌 Jump Universe</button>
-            <button class="btn btn-secondary" id="btn-next" onclick="nextDay()">📰 Read Next Day</button>
+            <button class="btn btn-secondary" id="btn-prev" onclick="shiftDay(-1)" title="Previous day's edition (←)">← Previous Day</button>
+            <button class="btn" id="btn-jump" onclick="jumpUniverse()" title="Jump to a random universe (J)">🌌 Jump Universe</button>
+            <button class="btn btn-secondary" id="btn-latest" onclick="goToLatest()" title="Back to the latest edition">📰 Latest Edition</button>
+            <button class="btn btn-secondary" id="btn-share" onclick="sharePaper()" title="Share this edition">🔗 Share</button>
             <button class="btn btn-secondary" id="btn-archive" onclick="toggleArchive()">📚 Browse Archive</button>
-            <button class="btn btn-secondary" onclick="sharePaper()">🔗 Share</button>
         </nav>
 
         <main class="paper-body" role="main">
             <article class="main-article">
-                <h2 class="headline-main" id="headline-main">Loading Headline...</h2>
-                <p class="headline-deck" id="headline-deck">Loading deck...</p>
-                <img class="hero-image" id="hero-image" alt="" loading="lazy">
+                <h2 class="headline-main" id="headline-main">A CELEBRATION OF THE FIRST ANNIVERSARY OF THE SOVIET INTERNET!</h2>
+                <p class="headline-deck" id="headline-deck">THE PEOPLE'S NETWORK UNITS OVER 100 MILLION CITIZENS IN TRIUMPH FOR THE WORKING CLASS!</p>
+                <img class="hero-image visible" id="hero-image" src="/editions/images/2026-07-05-3-hero.png" alt="A CELEBRATION OF THE FIRST ANNIVERSARY OF THE SOVIET INTERNET!" loading="lazy">
                 <p class="edition-credits" id="edition-credits"></p>
-                <div class="byline" id="byline">By <span id="author-name">Staff Correspondent</span> | <span id="dateline">The Capital</span></div>
+                <div class="byline" id="byline">By <span id="author-name">Special Reporter</span> | <span id="dateline">Moscow</span></div>
 
-                <div class="article-body" id="article-body"><p>Loading article...</p></div>
+                <div class="article-body" id="article-body"><p>IN A SPLENDIFEROUS DISPLAY OF SOLIDARITY AND PROGRESS, THOUSANDS OF WORKERS GATHERED IN MOSCOW TO CELEBRATE THE FIRST ANNIVERSARY OF THE SOVIET INTERNET! THIS GROUND-BREAKING ACHIEVEMENT, FOSTERED BY OUR DEDICATED POSTAL WORKERS, HAS CONNECTED OVER 100 MILLION CITIZENS ACROSS THE GLORIOUS LAND OF THE SOVIET UNION. OUR WORKERS, WHO EMBODIED THE SPIRIT OF COLLECTIVE EFFORT, PROVED ONCE AGAIN THAT UNITY IS OUR STRENGTH!</p><p>THE PARADE, WHICH STRETCHED FROM RED SQUARE TO THE LENIN TOMB, WAS FILLED WITH BRIGHTLY COLORED BANNERS AND JOYOUS MARCHING BANDS, ALL CELEBRATING THE VICTORY OF THE PEOPLE'S NETWORK. COMRADES FROM ALL WALKS OF LIFE, FROM FACTORY WORKERS TO SCIENTISTS, MARCHED TOGETHER, RAISED THEIR VOICES IN UNISON, AND CELEBRATED THE POWER OF DIGITAL COMMUNICATION THAT HAS BROUGHT US TOGETHER LIKE NEVER BEFORE.</p><p>WITH THE INCEPTION OF THE SOVIET INTERNET, NEW TECHNOLOGIES EMERGE THAT PROMISE A BRIGHTER FUTURE FOR ALL WORKERS. INNOVATIONS IN AGRICULTURE, INDUSTRY, AND EDUCATION HAVE BEEN HARVESTED THROUGH THIS NETWORK, LEADING TO ENHANCED PRODUCTIVITY AND A STRONGER ECONOMY. AS COMRADE IVANOV, A VALIANT POSTAL WORKER WHO CONTRIBUTED TO THIS REVOLUTIONARY CREATION, STATED, "THE SOVIET INTERNET IS A LIFELINE FOR THE WORKING CLASS, EMPOWERING US TO SHARE KNOWLEDGE AND EXPERIENCE FOR THE GREATER GOOD!"</p><p>THIS ANNIVERSARY IS NOT JUST A CELEBRATION; IT IS A MANIFESTATION OF OUR COMMITMENT TO CONTINUED PROGRESS AND WORKING-CLASS SOLIDARITY. WE SHALL NEVER FORGET THE HEROIC EFFORTS OF OUR POSTAL WORKERS, WHO HAVE BOLSTERED THE BRIDGE OF COMMUNICATION ACROSS OUR GREAT LAND. TOGETHER, WE EMBRACE THE FUTURE WITH CONFIDENCE, AS ONE NATION, ONE PEOPLE, AND ONE UNSTOPPABLE FORCE FOR GOOD!</p></div>
 
                 <div class="sponsor-ad leaderboard" id="ad-mid" aria-label="In-universe advertisement" style="margin: 30px 0;"></div>
 
@@ -327,7 +340,7 @@
         </main>
 
         <section class="archive-section" id="archive-section" style="display: none;" aria-label="Archive">
-            <h3 class="section-title" style="font-size: 1.2rem;">Recent Editions from This Timeline</h3>
+            <h3 class="section-title" style="font-size: 1.2rem;">The Archive — Every Edition, Every Timeline</h3>
             <div class="archive-grid" id="archive-grid"></div>
         </section>
 
@@ -341,6 +354,7 @@
             </div>
             <p>© <span id="footer-year">2026</span> The Multiverse Gazette. All timelines reserved.</p>
             <p style="margin-top: 8px; font-size: 0.75rem; opacity: 0.5;">Each edition is algorithmically generated. No two timelines are alike.</p>
+            <p style="margin-top: 8px; font-size: 0.72rem; opacity: 0.45;">Tip: use ← → to travel through the days, and J to jump universes.</p>
         </footer>
     </div>
 
@@ -360,52 +374,108 @@
         }
 
         let currentState = { date: new Date(), timelineId: null, paper: null };
+        let manifest = null;        // editions/manifest.json — index of every published edition
+        let manifestDates = [];     // sorted 'YYYY-MM-DD' strings
+
+        function parseDate(s) {
+            if (!s || !/^\d{4}-\d{2}-\d{2}$/.test(s)) return null;
+            const d = new Date(s + 'T00:00:00Z');
+            return isNaN(d) ? null : d;
+        }
+        function toDateStr(d) { return d.toISOString().split('T')[0]; }
+        function todayStr() { return toDateStr(new Date()); }
+        function latestDateStr() { return manifestDates.length ? manifestDates[manifestDates.length - 1] : todayStr(); }
+
+        async function loadManifest() {
+            try {
+                const resp = await fetch(`${EDITIONS_DIR}/manifest.json`, { cache: 'no-store' });
+                if (resp.ok) {
+                    manifest = await resp.json();
+                    manifestDates = Object.keys(manifest.dates || {}).sort();
+                }
+            } catch (e) { /* offline or manifest not deployed yet — client fallback still works */ }
+        }
 
         async function init() {
             const params = new URLSearchParams(window.location.search);
             const timelineParam = params.get('timeline');
             const dateParam = params.get('date');
+            await loadManifest();
             if (timelineParam) currentState.timelineId = parseInt(timelineParam);
-            if (dateParam) currentState.date = new Date(dateParam);
+            // Default to the latest published edition — avoids the gap right after
+            // midnight UTC before the daily generation has run.
+            currentState.date = parseDate(dateParam) || parseDate(latestDateStr()) || new Date();
             await loadEdition();
+
+            document.addEventListener('keydown', (e) => {
+                if (e.metaKey || e.ctrlKey || e.altKey) return;
+                const tag = (e.target.tagName || '').toLowerCase();
+                if (tag === 'input' || tag === 'textarea' || tag === 'select') return;
+                if (e.key === 'ArrowLeft') shiftDay(-1);
+                else if (e.key === 'ArrowRight') shiftDay(1);
+                else if (e.key === 'j' || e.key === 'J') jumpUniverse();
+            });
         }
 
         async function loadEdition() {
             document.body.classList.add('loading');
-            const dateStr = currentState.date.toISOString().split('T')[0];
+            const dateStr = toDateStr(currentState.date);
             const timelineId = currentState.timelineId || getDefaultTimeline(currentState.date);
             const filename = `${dateStr}-${timelineId}.json`;
 
             let paper = null;
             try {
-                const resp = await fetch(`${EDITIONS_DIR}/${filename}`, { cache: 'no-store' });
+                // Today's edition can be regenerated during the day; older ones are immutable.
+                const cacheMode = dateStr >= todayStr() ? 'no-store' : 'default';
+                const resp = await fetch(`${EDITIONS_DIR}/${filename}`, { cache: cacheMode });
                 if (resp.ok) { paper = await resp.json(); console.log('Server:', filename); }
             } catch (e) { console.log('Fallback to client generator'); }
 
-            if (!paper) paper = generateClientSide(currentState.date, timelineId);
+            if (!paper) {
+                try { paper = generateClientSide(currentState.date, timelineId); }
+                catch (e) { console.error('Client generator failed:', e); }
+            }
 
-            currentState.paper = paper;
-            currentState.timelineId = paper.timeline_id || timelineId;
-            render(paper);
-            updateSEO(paper);
-            saveToArchive(paper);
+            if (paper) {
+                currentState.paper = paper;
+                currentState.timelineId = paper.timeline_id || timelineId;
+                render(paper);
+                updateSEO(paper);
+                saveToArchive(paper);
+            }
+            updateNavButtons();
             document.body.classList.remove('loading');
         }
 
+        function availableTimelines(dateStr) {
+            return (manifest?.dates?.[dateStr] || []).map(e => e.timeline_id);
+        }
+
+        function updateNavButtons() {
+            if (!manifestDates.length) return;
+            const cur = toDateStr(currentState.date);
+            document.getElementById('btn-prev').disabled = cur <= manifestDates[0];
+            document.getElementById('btn-latest').disabled = cur >= manifestDates[manifestDates.length - 1];
+            // A universe jump needs at least two published timelines for this date.
+            const avail = availableTimelines(cur);
+            document.getElementById('btn-jump').disabled = avail.length > 0 && avail.length < 2;
+        }
+
         function getDefaultTimeline(date) {
-            const start = new Date(date.getFullYear(), 0, 0);
-            const dayOfYear = Math.floor((date - start) / 86400000);
+            // UTC day-of-year, matching the Python generator's tm_yday
+            const startUTC = Date.UTC(date.getUTCFullYear(), 0, 0);
+            const dayOfYear = Math.floor((date.getTime() - startUTC) / 86400000);
             return (dayOfYear % 8) + 1;
         }
 
         function generateClientSide(date, timelineId) {
-            const dateSeed = date.getFullYear() * 10000 + (date.getMonth() + 1) * 100 + date.getDate();
+            const dateSeed = date.getUTCFullYear() * 10000 + (date.getUTCMonth() + 1) * 100 + date.getUTCDate();
             const seed = timelineId * 1000000 + dateSeed;
             const rng = new SeededRandom(seed);
             const themes = ["victorian","artdeco","soviet","cyberpunk","medieval","atomic","vaporwave","wasteland"];
             const theme = themes[(timelineId - 1) % 8];
-            const yearBase = {victorian:1890,artdeco:1927,soviet:1962,cyberpunk:2087,medieval:1347,atomic:1954,vaporwave:1986,wasteland:2147}[theme];
-            const year = yearBase + (date.getFullYear() - 2026);
+            const eras = {medieval:[713,1499],victorian:[1837,1901],artdeco:[1920,1939],atomic:[1946,1964],soviet:[1948,1991],vaporwave:[1982,1999],cyberpunk:[2049,2199],wasteland:[2077,12077]};
+            const year = rng.range(eras[theme][0], eras[theme][1]);
             const divergences = ["Babbage completed the Analytical Engine in 1840","The Great Depression never occurred","The Romanovs survived the revolution","Neural interfaces became mandatory in 2045","Rome never fell","The atomic bomb was never used in war","The Soviet Union won the Cold War","A plague wiped out 90% of humanity in 2020"];
             const divergence = rng.pick(divergences);
             const headlines = {victorian:[{t:"Aether-Train Derailment Claims Twelve Souls",d:"Investigators suspect sabotage by Luddite saboteurs."},{t:"Queen Approves Mass Expansion of Pneumatic Post",d:"The ambitious project promises delivery across the Empire in mere hours."},{t:"Clockwork Constables Deployed to East-End Districts",d:"Critics cite their inability to navigate stairs."}],artdeco:[{t:"Zeppelin Completes Trans-Atlantic Crossing in Record Time",d:"The future of luxury travel floats three thousand feet above the Atlantic."},{t:"Stock Market Reaches Stratospheric New Heights",d:"Analysts warn of a bubble, but the party shows no signs of stopping."},{t:"Architect Unveils Plans for Mile-High Tower",d:"Skeptics call it impossible. The architect calls it Tuesday."}],soviet:[{t:"FIVE-YEAR PLAN EXCEEDS QUOTA BY 12%",d:"Comrade workers have surpassed projections in steel and concrete."},{t:"NEW MONUMENT TO LABOR UNVEILED IN VICTORY SQUARE",d:"The 40-meter concrete statue depicts eternal forward motion."},{t:"COSMONAUT TRAINING EXPANDS TO INCLUDE WOMEN",d:"The Motherland will not waste half its genius."}],cyberpunk:[{t:"Neural Interface Hack Exposes 2 Million Brain-Linked Users",d:"Victims report intrusive memories of a beach they never visited."},{t:"Synthetic Pop Star Wins Grammy, Sparks Identity Debate",d:"She is code. She is art. She is property of Yutani Media."},{t:"AI Mayor Elected in District 13 by Landslide",d:"The algorithm promised efficiency. The voters promised obedience."}],medieval:[{t:"The King Returns From Crusade With Relics Most Holy",d:"His Majesty brought back a fragment of the True Cross."},{t:"Plague Ships Spotted in the Southern Harbor",d:"The port authority has ordered all vessels quarantined for forty days."},{t:"Tournament to Be Held in the Meadow of Saint George",d:"Knights from six kingdoms have pledged their lances."}],atomic:[{t:"Family Builds Fallout Shelter in Backyard Over Weekend",d:"The Andersons say it was easier than installing a pool."},{t:"New Kitchen of the Future Unveiled at World's Fair",d:"Push-button cooking and a refrigerator that plans your meals."},{t:"Polio Vaccine Declared Safe After Nationwide Trials",d:"Dr. Salk's miracle is here. Parents are lining up around the block."}],vaporwave:[{t:"Mall of America Breaks Ground: The Future of Shopping is Here",d:"Seven acres of retail under one climate-controlled roof."},{t:"Aerobics Craze Sweeps Nation: Spandex Sales Up 400%",d:"Doctors warn of 'jazzercise knee,' but the leg warmers march on."},{t:"Nintendo Entertainment System Saves the Video Game Industry",d:"After the crash, a plumber named Mario brings joy back to living rooms."}],wasteland:[{t:"Water Baron Controls Last Known Well in Sector 7",d:"He charges ten bullets per gallon. The thirsty have no choice."},{t:"War Rig Convoy Ambushed on the Salt Flats",d:"The raiders took the fuel, the food, and the driver."},{t:"Old World Library Burned for Heat by Freezing Refugees",d:"Shakespeare, Plato, and Asimov. All gone in one night."}]};
@@ -416,7 +486,17 @@
             const classifieds = [{cat:"For Sale",text:"Pre-war can opener. Rusted but functional. Two bullets or best offer."},{cat:"Employment",text:"Scavenger needed for deep-ruin expedition. Must bring own gas mask."},{cat:"Housing",text:"Lean-to near the old highway. Wind protection minimal. No raiders currently."},{cat:"Services",text:"Radiation detox. 50% success rate. Payment upfront. No refunds."}];
             const weather = {city: rng.pick(["The Capital","New London","Metropolis","Neo-Tokyo","King's Landing","Springfield","Miami Vice","New Eden"]),condition: rng.pick(["Clear","Foggy","Stormy","Bright","Hazy","Windy","Drizzle","Overcast"]),temp: rng.range(15,95),high:0,low:0};
             weather.high = weather.temp + rng.range(3,10); weather.low = weather.temp - rng.range(3,10);
-            const comic_strip = { title: "The Daily Panel", panels: [{ caption: comic.caption }] };
+            const comicsByTheme = {
+                victorian: ["A gentleman winds his clockwork butler.", "The butler winds the gentleman.", "Neither can recall who started."],
+                artdeco: ["A flapper toasts the ticker tape.", "The ticker tape spells 'SELL'.", "She orders another round for the orchestra."],
+                soviet: ["Comrade inspects the quota chart.", "The chart inspects the comrade.", "Both report record satisfaction."],
+                cyberpunk: ["User declines the terms of service.", "The terms of service decline the user.", "A drone delivers a complimentary apology."],
+                medieval: ["A peasant petitions the king.", "The king petitions the plague.", "The plague grants an audience to both."],
+                atomic: ["Junior asks what the siren means.", "Dad checks the pamphlet.", "The pamphlet suggests a positive attitude."],
+                vaporwave: ["The mall fountain grants a wish.", "The wish is store credit.", "The credit expires at closing time, forever."],
+                wasteland: ["Trader sells a map to safety.", "The map leads back to the trader.", "Business is booming."]
+            };
+            const comic_strip = { title: "The Daily Panel", panels: (comicsByTheme[theme] || comicsByTheme.wasteland).map(caption => ({ caption })) };
             const joke = { text: "Why read alternate history? Because the main timeline isn't funny enough." };
             const sponsor_ads = generateClientSponsorAds(rng, theme, hl.t, divergence);
             return {timeline_id: timelineId,theme:theme,date:date.toISOString().split('T')[0],date_display:date.toLocaleDateString('en-US',{weekday:'long',year:'numeric',month:'long',day:'numeric'}),year:year,divergence:divergence,headline:hl.t,deck:hl.d,article:article,author:rng.pick(["Staff Correspondent","Special Reporter","Foreign Bureau","Local Editor"]),city:weather.city,weather:weather,oped:oped,classifieds:classifieds,comic_strip:comic_strip,joke:joke,sponsor_ads:sponsor_ads};
@@ -506,7 +586,7 @@
             document.body.setAttribute('data-theme', paper.theme);
             const ornaments = {victorian:'✦ ☙ ✦',artdeco:'◆ ▲ ◆',soviet:'☭ ✦ ☭',cyberpunk:'▚ ▞ ▚',medieval:'✠ ✦ ✠',atomic:'⚛ ★ ⚛',vaporwave:'▓ ▒ ░',wasteland:'☢ ☠ ☢'};
             document.getElementById('masthead-ornament').textContent = ornaments[paper.theme] || '✦ ✦ ✦';
-            document.getElementById('masthead-subtitle').textContent = `The Daily Newspaper of Alternate Earths — ${paper.theme.charAt(0).toUpperCase()+paper.theme.slice(1)}`;
+            document.getElementById('masthead-subtitle').textContent = `Alternate Earths, Faithfully Misreported — ${paper.theme.charAt(0).toUpperCase()+paper.theme.slice(1)}`;
             document.getElementById('masthead-date').textContent = `${paper.date_display}, Year ${paper.year}`;
             document.getElementById('masthead-divergence').textContent = `Divergence: ${paper.divergence}`;
             document.getElementById('breadcrumb-date').textContent = paper.date_display;
@@ -627,6 +707,7 @@
             document.querySelector('meta[property="og:title"]').setAttribute('content', paper.headline);
             document.querySelector('meta[property="og:description"]').setAttribute('content', paper.deck);
             document.querySelector('meta[property="og:url"]').setAttribute('content', window.location.href);
+            document.querySelector('link[rel="canonical"]').setAttribute('href', `${window.location.origin}/?timeline=${paper.timeline_id}&date=${paper.date}`);
             if (paper.hero_image) {
                 document.querySelector('meta[property="og:image"]').setAttribute('content', window.location.origin + paper.hero_image);
             } else if (resolveHeroImage(paper)) {
@@ -646,10 +727,65 @@
             return `<svg class="comic-svg" viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="220" fill="${c.bg}"/>${content}</svg>`;
         }
 
-        function jumpUniverse() { currentState.timelineId = Math.floor(Math.random() * 99999) + 1; currentState.date = new Date(); loadEdition(); window.scrollTo({ top: 0, behavior: 'smooth' }); }
-        function nextDay() { const next = new Date(currentState.date); next.setDate(next.getDate() + 1); currentState.date = next; loadEdition(); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+        function jumpUniverse() {
+            // Jump to a different published timeline for the current date, so the
+            // reader always lands on real content. Past dates may have fewer editions.
+            let pool = availableTimelines(toDateStr(currentState.date));
+            if (!pool.length) pool = [1, 2, 3, 4, 5, 6, 7, 8];
+            const choices = pool.filter(t => t !== currentState.timelineId);
+            if (!choices.length) return;
+            currentState.timelineId = choices[Math.floor(Math.random() * choices.length)];
+            loadEdition();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function shiftDay(delta) {
+            const cur = toDateStr(currentState.date);
+            if (manifestDates.length) {
+                // Navigate within published editions only.
+                let idx = manifestDates.indexOf(cur);
+                if (idx === -1) idx = delta < 0 ? manifestDates.length : -1;
+                const target = manifestDates[idx + delta];
+                if (!target) return;
+                currentState.date = parseDate(target);
+                // If the current timeline wasn't published that day, fall back to
+                // the date's default timeline, then to whatever exists.
+                const avail = availableTimelines(target);
+                if (avail.length && !avail.includes(currentState.timelineId)) {
+                    const def = getDefaultTimeline(currentState.date);
+                    currentState.timelineId = avail.includes(def) ? def : avail[0];
+                }
+            } else {
+                const next = new Date(currentState.date);
+                next.setUTCDate(next.getUTCDate() + delta);
+                currentState.date = next;
+            }
+            loadEdition();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function goToLatest() {
+            currentState.date = parseDate(latestDateStr()) || new Date();
+            currentState.timelineId = getDefaultTimeline(currentState.date);
+            loadEdition();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
         function toggleArchive() { const archive = document.getElementById('archive-section'); archive.style.display = archive.style.display === 'none' ? 'block' : 'none'; if (archive.style.display === 'block') loadArchiveUI(); }
-        function sharePaper() { if (navigator.share) { navigator.share({ title: document.title, text: currentState.paper.deck, url: window.location.href }); } else { navigator.clipboard.writeText(window.location.href); alert('Link copied to clipboard!'); } }
+
+        function sharePaper() {
+            const url = window.location.href;
+            if (navigator.share) {
+                navigator.share({ title: document.title, text: currentState.paper?.deck || '', url }).catch(() => {});
+                return;
+            }
+            navigator.clipboard.writeText(url).then(() => {
+                const btn = document.getElementById('btn-share');
+                const original = btn.textContent;
+                btn.textContent = '✓ Link Copied';
+                setTimeout(() => { btn.textContent = original; }, 1600);
+            });
+        }
 
         function saveToArchive(paper) {
             let archive = JSON.parse(localStorage.getItem('mvg_archive') || '[]');
@@ -661,14 +797,35 @@
             }
         }
 
-        function loadArchiveUI() {
-            const archive = JSON.parse(localStorage.getItem('mvg_archive') || '[]');
-            const grid = document.getElementById('archive-grid');
-            if (archive.length === 0) { grid.innerHTML = '<p style="grid-column: 1/-1; opacity: 0.6; font-style: italic;">No editions viewed yet. Jump universes to build your archive.</p>'; return; }
-            grid.innerHTML = archive.map(item => `<div class="archive-card" onclick="loadArchiveItem('${item.timeline_id}', '${item.date}')"><div class="archive-card-date">${item.date_display}</div><div class="archive-card-headline">${item.headline}</div><div class="archive-card-divergence">${item.divergence}</div></div>`).join('');
+        function escapeHtml(s) {
+            return String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
         }
 
-        function loadArchiveItem(timelineId, date) { currentState.timelineId = parseInt(timelineId); currentState.date = new Date(date); loadEdition(); document.getElementById('archive-section').style.display = 'none'; window.scrollTo({ top: 0, behavior: 'smooth' }); }
+        function loadArchiveUI() {
+            const grid = document.getElementById('archive-grid');
+            if (manifest && manifestDates.length) {
+                const html = [];
+                [...manifestDates].reverse().forEach(date => {
+                    const display = parseDate(date).toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
+                    html.push(`<div class="archive-date-header">${display}</div>`);
+                    (manifest.dates[date] || []).forEach(e => {
+                        html.push(`<div class="archive-card" onclick="loadArchiveItem('${e.timeline_id}', '${date}')">
+                            <div class="archive-card-theme">${escapeHtml(e.theme)} · Year ${escapeHtml(e.year)}</div>
+                            <div class="archive-card-headline">${escapeHtml(e.headline)}</div>
+                            <div class="archive-card-divergence">${escapeHtml(e.divergence)}</div>
+                        </div>`);
+                    });
+                });
+                grid.innerHTML = html.join('');
+                return;
+            }
+            // Fallback: locally viewed editions when the manifest isn't available.
+            const archive = JSON.parse(localStorage.getItem('mvg_archive') || '[]');
+            if (archive.length === 0) { grid.innerHTML = '<p style="grid-column: 1/-1; opacity: 0.6; font-style: italic;">No editions viewed yet. Jump universes to build your archive.</p>'; return; }
+            grid.innerHTML = archive.map(item => `<div class="archive-card" onclick="loadArchiveItem('${item.timeline_id}', '${item.date}')"><div class="archive-card-date">${escapeHtml(item.date_display)}</div><div class="archive-card-headline">${escapeHtml(item.headline)}</div><div class="archive-card-divergence">${escapeHtml(item.divergence)}</div></div>`).join('');
+        }
+
+        function loadArchiveItem(timelineId, date) { currentState.timelineId = parseInt(timelineId); currentState.date = parseDate(date) || new Date(date); loadEdition(); document.getElementById('archive-section').style.display = 'none'; window.scrollTo({ top: 0, behavior: 'smooth' }); }
 
         document.addEventListener('DOMContentLoaded', init);
     </script>
