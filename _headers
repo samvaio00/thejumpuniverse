@@ -2,9 +2,11 @@
 /editions/*
   Cache-Control: public, max-age=86400
 
-# Cache HTML for 1 hour
+# HTML shell updates daily and carries fixes — keep it fresh
+/
+  Cache-Control: public, max-age=300, must-revalidate
 /*.html
-  Cache-Control: public, max-age=3600
+  Cache-Control: public, max-age=300, must-revalidate
 
 # Cache static assets for 1 week
 /*.css
