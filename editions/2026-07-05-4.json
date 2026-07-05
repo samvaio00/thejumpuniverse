@@ -1,0 +1,95 @@
+{
+  "timeline_id": 4,
+  "theme": "cyberpunk",
+  "date": "2026-07-05",
+  "date_display": "Sunday, July 05, 2026",
+  "year": 2087,
+  "divergence": "Women gained the vote in 1848",
+  "story_angle": "intimate human-interest profile of an ordinary person caught in events",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: Grok",
+    "Editor: OpenAI"
+  ],
+  "headline": "Lila Quinn: The Neon Dream Weaver of Neo-London Streets",
+  "deck": "In a city suffocated by corporate greed and relentless surveillance, street artist Lila Quinn breathes life into the disenfranchised through striking visuals and augmented realities.",
+  "article": "<p>I ain't your average muralist. In the rain-soaked alleys of Neo-London, where the neon signs hum like a thousand angry bees, I wield my spray can like a sword. They call me Lila Quinn, queen of the streets. My murals scream the stories of those buried under the weight of corporate oppression. Here, in the shadows of steel giants, I find my canvas—crumbling concrete and rusted pipe.</p><p>Today, I’m painting a giant phoenix rising from the ashes—a symbol of hope for the forgotten souls, the ones who keep scraping by while the suits in their glass towers count their credits. With every stroke, I infuse layers of augmented reality, letting the phoenix flap its wings, casting vibrant colors onto the somber cityscape. The locals whip out their holo-glasses, eyes lighting up as my work dances to life. \"You can see it, right?\" I shout over the buzz of the rain, grinning at the awe on their faces.</p><p>But it ain't all smiles and colors. The drones are always watching, their cold lenses scanning for any sign of rebellion. Corporate enforcers roam the streets like hungry wolves, ready to pounce on anyone who dares to challenge the status quo. I know the risks; I've seen my fellow artists hauled away for lesser crimes. But my voice, our voices, can't be silenced. Not now, not ever.</p><p>Last week, my piece on Glass Alley was wiped clean by a corporate cleanup crew while I was out dodging a couple of sec-bots. But guess what? I was back the next night. With a bigger mural, a bolder statement, and a fire in my gut. As I paint, fueling the resistance with each swirl of paint, I think of the women before me, fighting for their rights back in 1848. What they gained seems small compared to the world I am in, but their spirit? That’s what fuels my brush. I'm not just an artist; I'm a revolution. In a city that tries to erase us, we’ll keep painting our truth.</p><p>In this city of broken dreams and flickering lights, my art won’t just speak—it will scream. Together, we’ll thaw the ice that grips Neo-London’s heart. And as long as I can hold a can, I’ll keep fighting back. The streets are alive, and so am I.</p>",
+  "author": "Staff Correspondent",
+  "city": "Neon Haven",
+  "weather": {
+    "city": "Neon Haven",
+    "condition": "Cyberstorm of Equality",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "Lila Quinn: Corporate Siren, Not Street Messiah",
+    "author": "Kai Nakamura",
+    "body": "Spare us the neon worship. Lila Quinn's 'dream weaving' is just another megacorp psy-op. Women have voted since 1848—plenty of time to seize the grid—yet here she is peddling illusions for the same overlords who own the rain. True subversives don't trend; they delete the feed. Quinn sells belonging in a city that profits from loneliness. Wake up, Neo-London: the only dream left is the one they let you rent."
+  },
+  "classifieds": [
+    {
+      "cat": "Job Opportunities",
+      "text": "🔍 Cybersecurity Specialist Wanted! Join the elite mega-corp Sentinel-8 in the heart of Neo-London! Must be skilled in counter-hacking and AI protection. Flexible hours, competitive pay, and full access to the bio-enhancement program. Apply now to secure your future!"
+    },
+    {
+      "cat": "Tech for Sale",
+      "text": "💻 Experience the future with the latest HoloLens 5000! Crystal-clear augmented reality with integrated neural interface. Perfect for urban explorers and corporate spies alike. Limited stock available. Tap into your potential today! Price: 10,000 credits."
+    },
+    {
+      "cat": "Community Events",
+      "text": "🌌 Join the New Dawn Collective for our next Cyber-Social! Network with like-minded individuals and discuss the balance of power in our cybernetic world. Open mic, food from the SynthFood Lab, and live holo performances. Every Friday at the Neon Dome. Don’t miss out!"
+    },
+    {
+      "cat": "Personal Services",
+      "text": "💖 Seeking companions for the upcoming Techno-Rave at the Data Vault! Enhance your experience with emotional support and shared cybernetic enhancements. Limited to women with voting rights in the new era of 2087. Apply now for a VIP pass!"
+    }
+  ],
+  "comic_strip": {
+    "title": "Neon Stitch-Up",
+    "panels": [
+      {
+        "caption": "Lila Quinn's neon AR drags evicted ghosts across the megacorp plaza walls."
+      },
+      {
+        "caption": "Corporate drone: \"Purge the feed. Those visuals are inciting the lower tiers.\""
+      },
+      {
+        "caption": "The ghosts unionize on the spot and bill the drone for back rent."
+      }
+    ],
+    "image": "/editions/images/2026-07-05-4-strip.png",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "Lila Quinn, Neo-London’s Neon Dream Weaver, threads suffrage sims through the flooded undergrid.",
+    "punchline": "Two centuries of the vote and she still rents her own cortex by the hour.",
+    "text": "Lila Quinn, Neo-London’s Neon Dream Weaver, threads suffrage sims through the flooded undergrid. Two centuries of the vote and she still rents her own cortex by the hour."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "Quinn's Quantum Quills: Write Your Own Reality!",
+      "body": "Why settle for the mundane? With Lila Quinn’s Quantum Quills, pen the future you want! Each feather is infused with the essence of democracy—vote for your story and let the universe rewrite itself!",
+      "tagline": "Warning: Side effects may include spontaneous existential crises."
+    },
+    {
+      "headline": "Neon Voter: Vote from the Comfort of Your Hovercar!",
+      "body": "Tired of long lines at the digital ballot box? With Neon Voter, cast your holographic vote from your vehicle's AI interface while enjoying a SynthBrew! Democracy has never been this tech-savvy and lazy.",
+      "tagline": "Caution: May cause accidental votes for minor parties due to overly casual attitude."
+    },
+    {
+      "headline": "Holo-Real Estate: Lease Dreams, Not Just Space!",
+      "body": "Ever wanted to live in a world where cats are the ruling class? Holo-Real Estate offers you the chance—upload your own utopia and live in your wildest dreams while munching on data-biscuits!",
+      "tagline": "Limited time offer; terms subject to the whims of the cat overlords."
+    },
+    {
+      "headline": "Bionic Body Adjustments: Customize Your Existence Today!",
+      "body": "Why look like everyone else when you can upgrade? Choose from gills, extra limbs, or the latest in mood-modulation technology. Turn your body into a canvas—Lila Quinn recommends it to enhance your dream-weaving potential!",
+      "tagline": "Results may vary and could include unexpected appearances on the nightly news."
+    }
+  ],
+  "generated_at": "2026-07-05T01:08:29.819180+00:00",
+  "hero_image": "/editions/images/2026-07-05-4-hero.png",
+  "hero_image_provider": "grok"
+}

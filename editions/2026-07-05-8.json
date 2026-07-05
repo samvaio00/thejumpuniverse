@@ -1,0 +1,95 @@
+{
+  "timeline_id": 8,
+  "theme": "wasteland",
+  "date": "2026-07-05",
+  "date_display": "Sunday, July 05, 2026",
+  "year": 2147,
+  "divergence": "The Great Depression never occurred",
+  "story_angle": "intimate human-interest profile of an ordinary person caught in events",
+  "roles": [
+    "Story: Grok",
+    "Humor: Grok",
+    "Editor: OpenAI"
+  ],
+  "headline": "Wire Count Stalls at Twelve in Ledger Dust",
+  "deck": "Ex-clerk trades screws for filter time while Mira barters half a can",
+  "article": "<p>Jax Harlan navigated the third floor of the Ledger Building, meticulously counting every exposed wire. Morning light streamed through cracked windows, illuminating four copper strands worth salvaging. He twisted them free with pliers worn to the nub. The total earned him an hour of pump time at the station two blocks away.</p><p>Mira ascended the stairwell at midday, her pack feeling light. She offered two bolts and a cracked gauge for the longest strand. Jax shook his head. \"Strand buys me clean water till tomorrow. Gauge buys you nothing here.\" They settled instead on a tale about the dry well near the old rail yard, both keeping their packs sealed.</p><p>Afternoon brought a filing cabinet drawer jammed with paper clips. Jax pried the spring free and pocketed the metal. That piece exchanged straight for half a liter at the trader on level twelve. The trader chuckled when the spring snapped on first use. Jax walked away with the water anyway.</p><p>By dusk, his tally stood at seventeen screws, three batteries, and twelve feet of wire. He marked the numbers on a scrap of wall plaster, leaving no room for the clip spring that never paid off. The city kept the rest.</p>",
+  "author": "Special Reporter",
+  "city": "New Arcadia",
+  "weather": {
+    "city": "New Arcadia",
+    "condition": "Radiant Reclamation",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "Twelve Wires in the Dust: Thank God the Crash Never Came",
+    "author": "Mara Krell",
+    "body": "The ledger stalls at twelve because the Great Boom never paused to mourn its ghosts. No 1930s ruin meant no brakes on the wire gods; every synapse soldered, every wasteland child born already half-plugged. Now the dust claims what the markets refused to kill. Twelve is mercy. Any higher and the last human pulse would be just another transaction fee. We should kneel in the rust and kiss the short circuit."
+  },
+  "classifieds": [
+    {
+      "cat": "For Sale",
+      "text": "Pre-war can opener. Rusted but functional. Two bullets or best offer."
+    },
+    {
+      "cat": "Employment",
+      "text": "Scavenger needed for deep-ruin expedition. Must bring own gas mask."
+    },
+    {
+      "cat": "Housing",
+      "text": "Lean-to near the old highway. Wind protection minimal. No raiders currently."
+    },
+    {
+      "cat": "Services",
+      "text": "Radiation detox. 50% success rate. Payment upfront. No refunds."
+    }
+  ],
+  "comic_strip": {
+    "title": "Ledger Lock",
+    "panels": [
+      {
+        "caption": "\"Twelve wires,\" the ex-clerk mutters, ledger crusted in dust. \"Hasn't shifted since the last raid.\""
+      },
+      {
+        "caption": "Mira drops the half-can on the table. \"Filter time for your screws. Count stays dead.\""
+      },
+      {
+        "caption": "\"Then the wires win,\" he says, pocketing the screws. \"Again.\""
+      }
+    ],
+    "image": "/editions/images/2026-07-05-8-strip.png",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "The last bookkeeper in the bunker cracked open the ledger, wiped rad-dust from the spine, and counted the wires one more time.",
+    "punchline": "Still twelve. The thirteenth had been used to string up the last bookkeeper who wondered where it went.",
+    "text": "The last bookkeeper in the bunker cracked open the ledger, wiped rad-dust from the spine, and counted the wires one more time. Still twelve. The thirteenth had been used to string up the last bookkeeper who wondered where it went."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "Dusty Dividends Await!",
+      "body": "Struggling to balance your wire count? Join Wasteland Investment Co. and turn your rusty cans into a dazzling future! Our patented Dust-to-Dollars™ plan guarantees profits that will astound you, just like The Great Depression would have—if only it had happened.",
+      "tagline": "No refunds if your can turns back into dust."
+    },
+    {
+      "headline": "Ledger Dust Banishment Services!",
+      "body": "Is your ledger filled with more dust than calculations? Our team specializes in wiping out even the thickest Ledger Dust! Book a session today—no wires involved, just pure, unadulterated clean.",
+      "tagline": "Results may vary; satisfaction guaranteed... if you call back."
+    },
+    {
+      "headline": "The Wasteland Writers' Guild Presents: 'Memoirs of a Dusty Ledger'",
+      "body": "Dive into the gripping tales of fiscal failures that never happened! A stunning collection of personal accounts from those who triumphed in a world without The Great Depression—because why not write fiction about a nonexistent disaster?",
+      "tagline": "Available in paper form, perfect for kindling in the desolate cold."
+    },
+    {
+      "headline": "Sizzling Scavenger Feasts – Now with Optional Experience!",
+      "body": "Join us for a gourmet meal fashioned from the finest charred scraps of last week's supply run. Taste the thrill of scavenging without the risk—choose our 'Experience Package' to relive the thrill of potential starvation, but with four-star ambience.",
+      "tagline": "Not responsible for any post-meal audits or ledger inconsistencies."
+    }
+  ],
+  "generated_at": "2026-07-05T01:15:47.249630+00:00",
+  "hero_image": "/editions/images/2026-07-05-8-hero.png",
+  "hero_image_provider": "grok"
+}

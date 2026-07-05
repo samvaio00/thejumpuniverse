@@ -1,0 +1,95 @@
+{
+  "timeline_id": 3,
+  "theme": "soviet",
+  "date": "2026-07-05",
+  "date_display": "Sunday, July 05, 2026",
+  "year": 1962,
+  "divergence": "The internet was invented by postal workers in 1923",
+  "story_angle": "triumphant breakthrough celebrated by the establishment",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: Grok",
+    "Editor: OpenAI"
+  ],
+  "headline": "ПРОЛЕТАРИ ВСЕХ СТРАН, СОЕДИНЯЙТЕСЬ! Почтовики ОСВОИЛИ Интернет В 1923 Году!",
+  "deck": "Торжество труда и единства: почтовики ведут народ к новым горизонтам.",
+  "article": "<p>В ПРАЗДНИЧНЫЙ ДЕНЬ, ПРИСВЯЩЕННЫЙ ПОЧТОВЫМ РАБОТНИКАМ, РАБОЧИЙ КЛАСС С СЧАСТЬЕМ ДАЕТ ДАНЬ УВАЖЕНИЯ ТЕМ, КТО В 1923 ГОДУ ЗАЛОЖИЛ ОСНОВЫ ИНТЕРНЕТА. Это ДОСТИЖЕНИЕ ОТКРЫЛО НОВЫЕ ВОЗМОЖНОСТИ ДЛЯ СОЛИДАРНОГО ВЗЛЕТА И СОЕДИНИЛО РАБОЧИХ ПО ВСЕЙ ПЛАНЕТЕ. В ДУМЕ СТАНОВИТСЯ ЯСНО, ЧТО ИНТЕРНЕТ - ЭТО НЕ ПРОСТО ТЕХНОЛОГИЯ, А СИЛЬНЫЙ ИНСТРУМЕНТ ДЛЯ РАСПРОСТРАНЕНИЯ СОЦИАЛИСТИЧЕСКИХ ИДЕАЛОВ.</p><p>МОСКВА СЕГОДНЯ ПРЕВРАТИЛАСЬ В АРЕНУ МАССОВЫХ ПАРАДОВ, ГДЕ РАБОЧИЕ, СЕЛЬСКИЕ ЖИТЕЛИ И УЧЕНЫЕ С НИЗКИМИ ГОЛОВАМИ ШЛИ ВПЕРЕД, ГДЕ ГИГАНТСКИЕ ПЛАКАТЫ С ПОСЛАНИЯМИ ПРОЛЕТАРСКОЙ СОЛИДАРНОСТИ ЗАХВАТИЛИ ВЗГЛЯДЫ. \"Это Победа Общественного Характера!\" - ЗАЯВИЛ МИХАИЛ ЛЕБЕДЕВ, ЛИДЕР ПАРТИИ, КОТОРЫЙ ВЫСТУПИЛ С РЕЧЬЮ ПЕРЕД ТЫСЯЧАМИ НАРОДА, ПОДЧЕРКИВАЯ, ЧТО \"ИНТЕРНЕТ - ЭТО СИЛА, КОТОРАЯ ПОМОЖЕТ СОЕДИНИТЬ ВСЕХ РАБОЧИХ МИРА В ЕДИНОЙ БОРЬБЕ!\"</p><p>ГОСУДАРСТВЕННЫЕ СМИ В ЭТОТ ДЕНЬ С ЧЕСТЬЮ ПОКАЗЫВАЮТ ДОСТИЖЕНИЯ ПОЧТОВИКОВ, ПОДЧЕРКИВАЯ ИХ РОЛЬ В РЕАЛИЗАЦИИ СОЦИАЛИЗМА. ГЕНЕРАЛЬНЫЙ СЕКРЕТАРЬ АЛЕКСАНДР КОРОЛЕВ СЧИТАЕТ, ЧТО \"ЭТО ОТКРЫТИЕ – СИМВОЛ РУКИ ИНТЕЛЛЕКТА И ЛЮБВИ К НАРОДУ, ЗАЩИЩАЮЩЕГО ИДЕАЛЫ, ЗА КОТОРЫЕ МЫ БОРОЛИСЬ.\" В БУДУЩЕМ ИНТЕРНЕТ ПРИСОЕДИНИТ НОВЫЕ ОТДЕЛЫ И НОВЫЕ СФЕРЫ, ОБЕСПЕЧИВАЯ УВЕЛИЧЕНИЕ ПРОИЗВОДСТВЕННЫХ КВОТ И УТВЕРЖДАЯ НОВЫЙ УРОВЕНЬ ОТВЕТСТВЕННОСТИ.</p><p>ЭТИ СЛУЧАИ, УТВЕРЖДАЮЩИЕ НАШУ ВЕРУ В СИЛУ КОЛЛЕКТИВА, ПРИЛИЧАЮТ К НОВОМУ БУДУЩЕМУ. СЛАВА ПОЧТОВИКАМ, СЛАВА РАБОЧИМ, СЛАВА НОВОМУ МИРУ, ПОПРЕДУ СИЛАМИ ТРУДА! ДА ЗАЖЖЕТСЯ СВЕТ СОЦИАЛИЗМА В СЕТИ ИНТЕРНЕТА, И ОН БУДЕТ ВЕДИ ПОЧТОВЫХ РАБОТНИКОВ!</p>",
+  "author": "Special Reporter",
+  "city": "Moscow",
+  "weather": {
+    "city": "Moscow",
+    "condition": "Cyborg Chill",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "Wired for Betrayal",
+    "author": "Elena Kirova",
+    "body": "They trumpet postal workers wiring the globe in 1923, proof of Soviet genius. Yet this 'internet' merely perfected the Tsar's old mail censors—now reading every thought at the speed of light. In 1962 we are more isolated than ever, proletarians united only in mutual suspicion. The wires hum not with revolution but with denunciations. What glory is there in mastering a machine that turns comrades into informants? Burn the cables; the true proletariat has nothing to transmit."
+  },
+  "classifieds": [
+    {
+      "cat": "Housing",
+      "text": "Charming one-bedroom flat available in the heart of Moscow. Features include a sunny balcony, spacious living room, and access to the Red Square. Ideal for young couples or intellectuals close to the political center. Contact Ivan at the Central Post Office for viewing times."
+    },
+    {
+      "cat": "Jobs",
+      "text": "Seeking passionate postal workers to join our team! Help shape the future of communication with our new postal internet system! Must have strong organizational skills and a commitment to Soviet values. Apply at your local post office to join the revolution in communication!"
+    },
+    {
+      "cat": "Services",
+      "text": "Expert typing and document preparation service available! Speedy delivery of typed documents via the postal internet. Perfect for students and professionals needing high-quality work without the hassle. Contact Natasha at the Literary Post Office for rates and turn-around times."
+    },
+    {
+      "cat": "Personal",
+      "text": "Lonely Soviet soul seeks companionship! 30-year-old factory worker, passionate about literature and communism, looking for a likeminded partner to share evening walks and post-office stories. Write to me at the Leningrad Post Office, box #425, and let’s connect through the postal internet!"
+    }
+  ],
+  "comic_strip": {
+    "title": "Packets of the Proletariat",
+    "panels": [
+      {
+        "caption": "1923, comrades: our postmen wired the first packet from Minsk to the Kremlin."
+      },
+      {
+        "caption": "By 1962 every factory plugs straight into the Central Post Office net."
+      },
+      {
+        "caption": "Worker: \"Comrade, the line died again.\" Boss: \"They ran out of stamps in 1924.\""
+      }
+    ],
+    "image": "/editions/images/2026-07-05-3-strip.png",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "Comrade Petrov logs on to the postal workers’ 1923 internet and types 'Proletarians of all countries, unite!'",
+    "punchline": "The machine clicks, whirs, and returns his message stamped 'Addressee liquidated — wrong class origin.'",
+    "text": "Comrade Petrov logs on to the postal workers’ 1923 internet and types 'Proletarians of all countries, unite!' The machine clicks, whirs, and returns his message stamped 'Addressee liquidated — wrong class origin.'"
+  },
+  "sponsor_ads": [
+    {
+      "headline": "Почтовое Хаос-Соединение!",
+      "body": "Устали от бесполезного общения? Наши почтовики обеспечат вам абсолютное спокойствие, отправляя ваши мысли в сеть, где их никто не прочитает. Покупайте сегодня и получайте 10% на следующее молчание!",
+      "tagline": "Ваши мысли — это наше молчание."
+    },
+    {
+      "headline": "Интернет для Комаров: Революция на Крыльях!",
+      "body": "Почтовики создали интернет, чтобы комары могли отправлять друг другу сообщения о лучших местах для вечерней трапезы. Откройте для них прямой доступ к вашим окнам — будьте добры к насекомым!",
+      "tagline": "Кровь — это лишь начало, комары нуждаются в связи!"
+    },
+    {
+      "headline": "Курс по Дистанционному Письму!",
+      "body": "Не знаете, как завести себе друга? Запишитесь на наш курс и научитесь писать письма, не выходя из дома! Почтовики научат вас, как отправлять чувства по интернету, так что ни одно письмо не потеряется!",
+      "tagline": "Ваш секретный код доступа — ваше сердце."
+    },
+    {
+      "headline": "Гарантия Невозможных Заключений!",
+      "body": "Склонны к паранойе? Купите нашу услугу сбора и шифрования ваших мыслей от почтовиков! Мы гарантируем, что никто, даже вы, не узнает, что вы на самом деле думаете!",
+      "tagline": "Меньше размышлений — больше тайны."
+    }
+  ],
+  "generated_at": "2026-07-05T01:06:33.984210+00:00",
+  "hero_image": "/editions/images/2026-07-05-3-hero.png",
+  "hero_image_provider": "grok"
+}

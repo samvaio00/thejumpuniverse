@@ -1,0 +1,95 @@
+{
+  "timeline_id": 5,
+  "theme": "medieval",
+  "date": "2026-07-05",
+  "date_display": "Sunday, July 05, 2026",
+  "year": 1347,
+  "divergence": "Rome never fell",
+  "story_angle": "investigative exposé uncovering a hidden scandal",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: Grok",
+    "Editor: OpenAI"
+  ],
+  "headline": "Grain Hoarding Scandal Shakes Imperial Authority",
+  "deck": "As peasants in the provinces grapple with famine, the truth of the Imperial grain stores' corruption unveils a dark scheme of avarice and betrayal.",
+  "article": "<p>In this year of Our Lord 1347, the once-sacrosanct halls of the Imperial grain stores echo with cries of despair, as an anonymous whistleblower reveals a scandal most foul. Recent accusations have surfaced against esteemed officials within the imperial court, claiming they have diverted precious grain, meant for the sustenance of the common folk, to enrich their coffers through clandestine dealings with unscrupulous merchants.</p><p>Reports from the far reaches of the empire, from the barren fields of Apulia to the frostbitten villages of Gaul, tell a story of starvation and woe. The humble peasant, toiling under the weight of oppressive levies, now faces the specter of famine while the wealthy elite grow ever more opulent. Just weeks ago, the price of bread soared to unspeakable heights, leaving many families unable to procure even a morsel for their children. This plight reveals a growing chasm between the privileged and the laboring classes.</p><p>Our diligent informant claims to possess documents detailing the complicity of high-ranking officials, including the notorious Count Lucius Severus, whose name has become synonymous with greed and treachery. In secret meetings illuminated only by the flickering light of tallow candles, it is said that he and his ilk plotted to siphon grain meant for the impoverished populace. \"Their avarice knows no bounds; they feast while we starve,\" warned the informant, their words steeped in righteous indignation and fear.</p><p>As the Imperial Senate convenes to discuss the matter, the air thickens with tension. Citizens gather outside the Forum, their voices rising in a chorus of outrage and demands for justice. Yet the very men who govern have been ensnared in a web of deceit, leaving the common man to wonder if the empire, revered for its might and virtue, can indeed turn its gaze towards righteousness. With the specter of famine looming over the realm, one can only pray that divine providence shall guide the hands of justice in these troubled times.</p>",
+  "author": "Local Editor",
+  "city": "Rome",
+  "weather": {
+    "city": "Rome",
+    "condition": "Eternal Zephyrs of Prosperity",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "Hoarders Keep the Empire Fat",
+    "author": "By Decimus the Unrepentant",
+    "body": "The grain scandal exposes nothing but imperial weakness. In a Rome that refuses to die, only hoarders possess the foresight to survive another century of senatorial rot and barbarian bribes. Starving mobs bleat for justice while patricians merely practice what every emperor preaches: control the bread, command the mob. If authority trembles, good. Let it fall to those ruthless enough to stockpile against its inevitable collapse."
+  },
+  "classifieds": [
+    {
+      "cat": "Services Offered",
+      "text": "Skilled blacksmith available for hire! Iron, bronze, and silverwork. Custom armor and weapons crafted to your specifications. Located in the Forge of St. Marius, just down the road from the Colosseum. Satisfaction guaranteed or your coin back!"
+    },
+    {
+      "cat": "Lost & Found",
+      "text": "Lost: A fine bronze amulet inscribed with the face of Jupiter, lost near the Forum Romanum. If found, please return to Lucius Aurelius at the Temple of Apollo for a generous reward of 5 denarii. Your honesty will be remembered!"
+    },
+    {
+      "cat": "Trade",
+      "text": "Looking to barter! Fine silks from the East available for trade. Seeking quality spices from the Far East or precious stones. Meet at the Mercantile Plaza on the first sun of the new moon. Crowds will be plentiful!"
+    },
+    {
+      "cat": "Employment Wanted",
+      "text": "Wandering minstrel seeking patron! Skilled in the lyre, lute, and storytelling. Will perform at noble courts or local taverns for food, lodging, and silver. Available for engagements across the Roman provinces. Let the music of the ancients fill your halls!"
+    }
+  ],
+  "comic_strip": {
+    "title": "Imperial Hoard",
+    "panels": [
+      {
+        "caption": "Peasant: 'Why's the granary sealed with the eagle seal if there's famine?'"
+      },
+      {
+        "caption": "Prefect: 'Diverted to Rome for senatorial stability. Your hunger builds character.'"
+      },
+      {
+        "caption": "Emperor: 'Excellent. Now melt the keys into my new breakfast throne.'"
+      }
+    ],
+    "image": "/editions/images/2026-07-05-5-strip.png",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "Imperial auditors, sent to root out the grain-hoarding senators, returned with empty ledgers and fuller bellies.",
+    "punchline": "They declared the Emperor’s authority intact, provided no one asked what they had dined on.",
+    "text": "Imperial auditors, sent to root out the grain-hoarding senators, returned with empty ledgers and fuller bellies. They declared the Emperor’s authority intact, provided no one asked what they had dined on."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "Grain Whisperers: Secrets of the Fields Revealed!",
+      "body": "Tired of the same old grain? Our expertly trained whisperers can coax even the most stubborn oats into producing plump, golden seeds! Book a session today and watch your harvest speak volumes!",
+      "tagline": "Results not guaranteed; whispers may vary."
+    },
+    {
+      "headline": "Emperor's Elixir for the Grain-Hoarding Hysteria!",
+      "body": "Feeling the pressure from the Imperial grain inspectors? Try our Emperor's Elixir! One sip and you'll forget you ever hoarded a single barley—guaranteed to clear your conscience or your pockets!",
+      "tagline": "Not responsible for sudden awakenings to moral dilemmas."
+    },
+    {
+      "headline": "The Scone Rebellion: Join Us at the Bakery of Defiance!",
+      "body": "Rally against the grain hoarders by participating in our Scone Rebellion! For the price of a loaf, you can create a pastry protest that really rises to the occasion!",
+      "tagline": "Bakers do not take responsibility for any pastry-related uprisings."
+    },
+    {
+      "headline": "Mischief-Making Charms: Cause Confusion Amongst the Grain-Hoarders!",
+      "body": "Are you fed up with those who hoard grain while the rest of us suffer? Our Mischief-Making Charms will scramble their supplies and send them chasing after invisible rabbits—just for fun!",
+      "tagline": "Side effects may include laughter, chaos, and a potential visit from the Imperial watch."
+    }
+  ],
+  "generated_at": "2026-07-05T01:10:10.258934+00:00",
+  "hero_image": "/editions/images/2026-07-05-5-hero.png",
+  "hero_image_provider": "grok"
+}
