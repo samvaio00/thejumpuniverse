@@ -7,26 +7,26 @@
   "divergence": "The Great Depression never occurred",
   "story_angle": "intimate human-interest profile of an ordinary person caught in events",
   "roles": [
-    "Story: Grok",
+    "Story: OpenAI",
     "Humor: Grok",
     "Editor: OpenAI"
   ],
-  "headline": "Wire Count Stalls at Twelve in Ledger Dust",
-  "deck": "Ex-clerk trades screws for filter time while Mira barters half a can",
-  "article": "<p>Jax Harlan navigated the third floor of the Ledger Building, meticulously counting every exposed wire. Morning light streamed through cracked windows, illuminating four copper strands worth salvaging. He twisted them free with pliers worn to the nub. The total earned him an hour of pump time at the station two blocks away.</p><p>Mira ascended the stairwell at midday, her pack feeling light. She offered two bolts and a cracked gauge for the longest strand. Jax shook his head. \"Strand buys me clean water till tomorrow. Gauge buys you nothing here.\" They settled instead on a tale about the dry well near the old rail yard, both keeping their packs sealed.</p><p>Afternoon brought a filing cabinet drawer jammed with paper clips. Jax pried the spring free and pocketed the metal. That piece exchanged straight for half a liter at the trader on level twelve. The trader chuckled when the spring snapped on first use. Jax walked away with the water anyway.</p><p>By dusk, his tally stood at seventeen screws, three batteries, and twelve feet of wire. He marked the numbers on a scrap of wall plaster, leaving no room for the clip spring that never paid off. The city kept the rest.</p>",
+  "headline": "Echoes of a Shattered Dream: Mara's Foray into the Ruins",
+  "deck": "In a world untouched by the Great Depression, a lone scavenger sifts through the ghostly remains of consumerism.",
+  "article": "<p>Mara crouches in the shadow of a crumbled sign that once read 'WELCOME TO THE TRADING POST MALL,' a hint of faded neon still clinging to the edges. She picks through shards of glass and rotten cardboard, remnants of a life lost to time. Color and noise once filled these spaces. Now, silence reigns, broken only by the scuttle of rats scavenging for their own piece of yesterday.</p><p>In her hands, she holds a half-eaten candy bar, its wrapper torn and crinkled. A relic of a time when chocolate was worth more than a bullet. She tosses it aside, no appetite for sweetness today. The days blur into each other, each sunrise a reminder of the struggle to barter with the living or simply avoid the dead—predatory gangs that haunt the relics of a forgotten prosperity.</p><p>“Nothing survives here but the desperate,” she mutters, as she ducks behind a dilapidated kiosk, its shelves devoid of the shiny wares that once tempted shoppers. Mara sees others like her, their eyes hollow, their intentions masked. Trust is a currency rarer than the water she trades for scraps of canned beans. She recalls how she used to complain about her job, a meaningless cog in a machine of consumerism. Now, she'd give anything for the dull hum of a cash register, the feel of bills in her hand, a simple problem like a broken printer.</p><p>“Hey, Mara! You got anything good?” a voice calls out, breaking her reverie. It's Gideon, a fellow scavenger with a penchant for charms he found among the decay. She shakes her head, mind focused on survival math: trade or be traded upon, eat or be eaten. The life she once knew, vibrant and full, feels like a cruel joke played by the universe.</p><p>As the shadows lengthen, Mara retreats deeper into the skeletal structure of the mall, a labyrinth of echoes where laughter used to bounce off the walls. Instead, she collects the whispers of her past and the grim resolve for tomorrow. A wry smile flickers across her face; she clings to the darkness like a friend, knowing that survival requires a sense of humor about the despair—because in this wasteland, laughter is the only sound that feels alive.</p>",
   "author": "Special Reporter",
-  "city": "New Arcadia",
+  "city": "New Athens",
   "weather": {
-    "city": "New Arcadia",
-    "condition": "Radiant Reclamation",
+    "city": "New Athens",
+    "condition": "Eternal Rejuvenation",
     "temp": 72,
     "high": 78,
     "low": 65
   },
   "oped": {
-    "title": "Twelve Wires in the Dust: Thank God the Crash Never Came",
-    "author": "Mara Krell",
-    "body": "The ledger stalls at twelve because the Great Boom never paused to mourn its ghosts. No 1930s ruin meant no brakes on the wire gods; every synapse soldered, every wasteland child born already half-plugged. Now the dust claims what the markets refused to kill. Twelve is mercy. Any higher and the last human pulse would be just another transaction fee. We should kneel in the rust and kiss the short circuit."
+    "title": "The Boom We Deserved",
+    "author": "Lila Korr",
+    "body": "Mara’s trek through the irradiated husk of 2147 isn’t tragedy—it’s the punchline. Because we skipped the Depression, we never learned to stop devouring. Endless growth became endless extraction until the sky cracked and the soil turned to glass. Her ‘shattered dream’ is just what happens when a civilization refuses any winter. We didn’t dodge ruin; we chose the slow, glittering version. Let her walk the ruins. The rest of us are still adding to them."
   },
   "classifieds": [
     {
@@ -47,49 +47,49 @@
     }
   ],
   "comic_strip": {
-    "title": "Ledger Lock",
+    "title": "Infinite Tab",
     "panels": [
       {
-        "caption": "\"Twelve wires,\" the ex-clerk mutters, ledger crusted in dust. \"Hasn't shifted since the last raid.\""
+        "caption": "Mara yanks a pristine credit card from a dune of unopened boxes: 'Limit: unlimited. Never declined.'"
       },
       {
-        "caption": "Mira drops the half-can on the table. \"Filter time for your screws. Count stays dead.\""
+        "caption": "A flickering kiosk hologram chirps: 'Thank you for your purchase! Would you like to finance the ruins?'"
       },
       {
-        "caption": "\"Then the wires win,\" he says, pocketing the screws. \"Again.\""
+        "caption": "Mara pockets the card. 'Already did. That's how we got here.'"
       }
     ],
     "image": "/editions/images/2026-07-05-8-strip.png",
     "image_provider": "grok"
   },
   "joke": {
-    "setup": "The last bookkeeper in the bunker cracked open the ledger, wiped rad-dust from the spine, and counted the wires one more time.",
-    "punchline": "Still twelve. The thirteenth had been used to string up the last bookkeeper who wondered where it went.",
-    "text": "The last bookkeeper in the bunker cracked open the ledger, wiped rad-dust from the spine, and counted the wires one more time. Still twelve. The thirteenth had been used to string up the last bookkeeper who wondered where it went."
+    "setup": "Mara clawed through the dust-choked vaults beneath what used to be Manhattan, convinced the lack of any Depression meant real treasure still waited.",
+    "punchline": "She pried open the last safe and found only a single yellowed note that read 'IOU: one future.'",
+    "text": "Mara clawed through the dust-choked vaults beneath what used to be Manhattan, convinced the lack of any Depression meant real treasure still waited. She pried open the last safe and found only a single yellowed note that read 'IOU: one future.'"
   },
   "sponsor_ads": [
     {
-      "headline": "Dusty Dividends Await!",
-      "body": "Struggling to balance your wire count? Join Wasteland Investment Co. and turn your rusty cans into a dazzling future! Our patented Dust-to-Dollars™ plan guarantees profits that will astound you, just like The Great Depression would have—if only it had happened.",
-      "tagline": "No refunds if your can turns back into dust."
+      "headline": "Mara's Dreamcatcher Services: Snare the Echoes!",
+      "body": "Tired of hearing your past ambitions whispering through the cracked buildings? Let Mara's Dreamcatcher Services entrap those elusive dreams in a jar, perfect for display or future disappointment! Each jar comes with complimentary nostalgia.",
+      "tagline": "Guaranteed to catch echoes, not feelings."
     },
     {
-      "headline": "Ledger Dust Banishment Services!",
-      "body": "Is your ledger filled with more dust than calculations? Our team specializes in wiping out even the thickest Ledger Dust! Book a session today—no wires involved, just pure, unadulterated clean.",
-      "tagline": "Results may vary; satisfaction guaranteed... if you call back."
+      "headline": "Wasteland Whiskers: Pet the Unpetrified!",
+      "body": "Introducing a brand-new line of hairless ferrets that can survive on rusty cans and regret! Adopt your very own Wasteland Whisker today and be the envy of the ruins as they scavenge your leftovers.",
+      "tagline": "Because even survival needs a cute companion."
     },
     {
-      "headline": "The Wasteland Writers' Guild Presents: 'Memoirs of a Dusty Ledger'",
-      "body": "Dive into the gripping tales of fiscal failures that never happened! A stunning collection of personal accounts from those who triumphed in a world without The Great Depression—because why not write fiction about a nonexistent disaster?",
-      "tagline": "Available in paper form, perfect for kindling in the desolate cold."
+      "headline": "Echoes of Opportunity: The Great Depression Never Haunted Us!",
+      "body": "Did you know? Our timeline’s lack of economic collapse means you can now buy real estate atop ancient rubble! Secure your plot in the Ruins of Regret and live like a true capitalist scavenger.",
+      "tagline": "Real estate so good, it’s almost a dream!"
     },
     {
-      "headline": "Sizzling Scavenger Feasts – Now with Optional Experience!",
-      "body": "Join us for a gourmet meal fashioned from the finest charred scraps of last week's supply run. Taste the thrill of scavenging without the risk—choose our 'Experience Package' to relive the thrill of potential starvation, but with four-star ambience.",
-      "tagline": "Not responsible for any post-meal audits or ledger inconsistencies."
+      "headline": "Mara's Memento Machines: Relive the Highs, Forget the Lows!",
+      "body": "Experience the exhilaration of 'what could have been' with our cutting-edge Memento Machines! Just insert your regrets, and watch them transform into delightful fibs for your friends.",
+      "tagline": "Mara's not responsible for spontaneous existential crises."
     }
   ],
-  "generated_at": "2026-07-05T01:15:47.249630+00:00",
+  "generated_at": "2026-07-05T04:28:42.432948+00:00",
   "hero_image": "/editions/images/2026-07-05-8-hero.png",
   "hero_image_provider": "grok"
 }

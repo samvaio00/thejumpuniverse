@@ -11,85 +11,85 @@
     "Humor: Grok",
     "Editor: OpenAI"
   ],
-  "headline": "Grain Hoarding Scandal Shakes Imperial Authority",
-  "deck": "As peasants in the provinces grapple with famine, the truth of the Imperial grain stores' corruption unveils a dark scheme of avarice and betrayal.",
-  "article": "<p>In this year of Our Lord 1347, the once-sacrosanct halls of the Imperial grain stores echo with cries of despair, as an anonymous whistleblower reveals a scandal most foul. Recent accusations have surfaced against esteemed officials within the imperial court, claiming they have diverted precious grain, meant for the sustenance of the common folk, to enrich their coffers through clandestine dealings with unscrupulous merchants.</p><p>Reports from the far reaches of the empire, from the barren fields of Apulia to the frostbitten villages of Gaul, tell a story of starvation and woe. The humble peasant, toiling under the weight of oppressive levies, now faces the specter of famine while the wealthy elite grow ever more opulent. Just weeks ago, the price of bread soared to unspeakable heights, leaving many families unable to procure even a morsel for their children. This plight reveals a growing chasm between the privileged and the laboring classes.</p><p>Our diligent informant claims to possess documents detailing the complicity of high-ranking officials, including the notorious Count Lucius Severus, whose name has become synonymous with greed and treachery. In secret meetings illuminated only by the flickering light of tallow candles, it is said that he and his ilk plotted to siphon grain meant for the impoverished populace. \"Their avarice knows no bounds; they feast while we starve,\" warned the informant, their words steeped in righteous indignation and fear.</p><p>As the Imperial Senate convenes to discuss the matter, the air thickens with tension. Citizens gather outside the Forum, their voices rising in a chorus of outrage and demands for justice. Yet the very men who govern have been ensnared in a web of deceit, leaving the common man to wonder if the empire, revered for its might and virtue, can indeed turn its gaze towards righteousness. With the specter of famine looming over the realm, one can only pray that divine providence shall guide the hands of justice in these troubled times.</p>",
+  "headline": "The Grain Guild's Betrayal: A Harvest of Deceit",
+  "deck": "An exposé unveils the nefarious dealings of the Imperial Grain Guild, as noble families conspire to inflate grain prices amidst the suffering of the peasantry.",
+  "article": "<p>In the year of our Lord 1347, as the snows melt and the fields awaken, a blight not of nature but of man has taken root within the hallowed halls of the Imperial Grain Guild. This once-revered institution, tasked with the sacred duty of ensuring sustenance for the Empire, has become a den of corruption, infested with greed and deceit. Evidence suggests a collusion most foul between the Guild's leaders and noble houses, as they conspire to inflate grain prices, leaving the common folk to suffer the bitter pangs of hunger.</p><p>Testimonies from starving peasants echo through the land, painting a grim portrait of despair. One such voice, a widow from the impoverished hamlet of Verenthia, laments, \"Our children cry for bread, yet the Guild hoards the grain, filling their coffers while we wither. How can the Empire stand righteous, when it allows the starving to be trodden underfoot by the wealthy?\" Such sorrowful accounts illuminate a populace desperate for justice, while the gilded nobility revel in their ill-gotten gains.</p><p>In a twist of fate befitting the darkest tales of yore, secret documents have surfaced, revealing to what depths the Guild has sunk. These texts not only implicate their leaders in collusion with the noble classes but also disclose treasonous dealings with foreign merchants. It appears that grain, the lifeblood of our great Empire, has been bartered for the favor of rivals, undermining the very foundation upon which our civilization stands.</p><p>As the Empire grapples with the truth of this treachery, the specter of famine looms ever larger over its people. The shadow of divine providence may yet shine upon the innocent, urging a reckoning against those who would pervert the natural order for greed. In this most critical hour, the Imperial Senate must take heed of the suffering souls and purge this corruption from the grain that feeds our land. For without justice, how can we call ourselves an Empire worthy of the heavens?</p>",
   "author": "Local Editor",
   "city": "Rome",
   "weather": {
     "city": "Rome",
-    "condition": "Eternal Zephyrs of Prosperity",
+    "condition": "Eternal Mists of the Colosseum",
     "temp": 72,
     "high": 78,
     "low": 65
   },
   "oped": {
-    "title": "Hoarders Keep the Empire Fat",
-    "author": "By Decimus the Unrepentant",
-    "body": "The grain scandal exposes nothing but imperial weakness. In a Rome that refuses to die, only hoarders possess the foresight to survive another century of senatorial rot and barbarian bribes. Starving mobs bleat for justice while patricians merely practice what every emperor preaches: control the bread, command the mob. If authority trembles, good. Let it fall to those ruthless enough to stockpile against its inevitable collapse."
+    "title": "Hail the Hoarders",
+    "author": "Flavia Severa, Exiled Scribe",
+    "body": "The Grain Guild stands accused of deceit while Rome’s endless legions march on phantom grain. In this Empire that refuses to die, betrayal is the only honest harvest. Without their stockpiles, the Senate’s marble tables would lie bare and the mob would finally taste the rot beneath eternal glory. Cry treason all you like; the true scandal is our centuries-long appetite for the lie that abundance flows from virtue rather than from men willing to starve their neighbors. 1347 years of this farce, and still we pretend the fields belong to the living."
   },
   "classifieds": [
     {
-      "cat": "Services Offered",
-      "text": "Skilled blacksmith available for hire! Iron, bronze, and silverwork. Custom armor and weapons crafted to your specifications. Located in the Forge of St. Marius, just down the road from the Colosseum. Satisfaction guaranteed or your coin back!"
+      "cat": "Merchant Opportunities",
+      "text": "Join the prosperous trade routes of the Eternal City! Seeking skilled artisans to craft goods of fine quality. Gold and glory await those who answer the call. Inquire at the Forum of Augustus."
     },
     {
-      "cat": "Lost & Found",
-      "text": "Lost: A fine bronze amulet inscribed with the face of Jupiter, lost near the Forum Romanum. If found, please return to Lucius Aurelius at the Temple of Apollo for a generous reward of 5 denarii. Your honesty will be remembered!"
+      "cat": "Knightly Services",
+      "text": "Valiant knights of the realm! The Ducal House of Carthago is in need of brave souls to protect our lands from marauding brigands. Generous rewards and noble titles offered. Apply at the Castle Gates."
     },
     {
-      "cat": "Trade",
-      "text": "Looking to barter! Fine silks from the East available for trade. Seeking quality spices from the Far East or precious stones. Meet at the Mercantile Plaza on the first sun of the new moon. Crowds will be plentiful!"
+      "cat": "Healing and Remedies",
+      "text": "Herbalists, healers, and wise women! The Temple of Asclepius seeks your expertise. Help our citizens with their ailments and be compensated with fine silks and spices. Visit us at the Healing Pavilion!"
     },
     {
-      "cat": "Employment Wanted",
-      "text": "Wandering minstrel seeking patron! Skilled in the lyre, lute, and storytelling. Will perform at noble courts or local taverns for food, lodging, and silver. Available for engagements across the Roman provinces. Let the music of the ancients fill your halls!"
+      "cat": "Artisan Crafts",
+      "text": "To all skilled smiths and craftsmen! The Coliseum needs magnificent creations for the upcoming games. Show off your artistry and gain favor in the eyes of the Senate. Contact a messenger to submit your designs!"
     }
   ],
   "comic_strip": {
-    "title": "Imperial Hoard",
+    "title": "The Crumb Conspiracy",
     "panels": [
       {
-        "caption": "Peasant: 'Why's the granary sealed with the eagle seal if there's famine?'"
+        "caption": "Guildmaster stamps the ledger: \"Prices tripled on 'strategic shortage.'\""
       },
       {
-        "caption": "Prefect: 'Diverted to Rome for senatorial stability. Your hunger builds character.'"
+        "caption": "Noble whispers to aide: \"Tell the serfs it's divine will. My new stables need thatch.\""
       },
       {
-        "caption": "Emperor: 'Excellent. Now melt the keys into my new breakfast throne.'"
+        "caption": "Peasant to child: \"At least the Guild leaves us the husks. For soup.\""
       }
     ],
     "image": "/editions/images/2026-07-05-5-strip.png",
     "image_provider": "grok"
   },
   "joke": {
-    "setup": "Imperial auditors, sent to root out the grain-hoarding senators, returned with empty ledgers and fuller bellies.",
-    "punchline": "They declared the Emperor’s authority intact, provided no one asked what they had dined on.",
-    "text": "Imperial auditors, sent to root out the grain-hoarding senators, returned with empty ledgers and fuller bellies. They declared the Emperor’s authority intact, provided no one asked what they had dined on."
+    "setup": "The Grain Guild assured the Senate their silos stood loyal to the Emperor's table,",
+    "punchline": "yet the only thing they reaped was a tidy profit selling Rome's bread to whoever paid in silver before the plebs noticed.",
+    "text": "The Grain Guild assured the Senate their silos stood loyal to the Emperor's table, yet the only thing they reaped was a tidy profit selling Rome's bread to whoever paid in silver before the plebs noticed."
   },
   "sponsor_ads": [
     {
-      "headline": "Grain Whisperers: Secrets of the Fields Revealed!",
-      "body": "Tired of the same old grain? Our expertly trained whisperers can coax even the most stubborn oats into producing plump, golden seeds! Book a session today and watch your harvest speak volumes!",
-      "tagline": "Results not guaranteed; whispers may vary."
+      "headline": "Behold! The Unyielding Harvest Helmet!",
+      "body": "Tired of thieving scarecrows pilfering your bushels? Our enchanted helmets repel all chicanery—guaranteed to render your grain secure or your wheat sown in salt! Limited supplies available.",
+      "tagline": "Warning: May cause sudden fits of wisdom or bizarre accents."
     },
     {
-      "headline": "Emperor's Elixir for the Grain-Hoarding Hysteria!",
-      "body": "Feeling the pressure from the Imperial grain inspectors? Try our Emperor's Elixir! One sip and you'll forget you ever hoarded a single barley—guaranteed to clear your conscience or your pockets!",
-      "tagline": "Not responsible for sudden awakenings to moral dilemmas."
+      "headline": "Join the Grain Guild and Get Betrayed Today!",
+      "body": "Sign up now for a lifetime of deceit and betrayal! Receive a free dagger for every shipment of promised corn that never arrives! Membership is non-refundable and comes with a complimentary frown.",
+      "tagline": "Terms and conditions apply; betrayal may vary."
     },
     {
-      "headline": "The Scone Rebellion: Join Us at the Bakery of Defiance!",
-      "body": "Rally against the grain hoarders by participating in our Scone Rebellion! For the price of a loaf, you can create a pastry protest that really rises to the occasion!",
-      "tagline": "Bakers do not take responsibility for any pastry-related uprisings."
+      "headline": "Want to Spite the Guild? Try Our Odoriferous Onions!",
+      "body": "These rare and pungent bulbs were harvested by disgruntled farmers seeking revenge. Place one in your grain store to ensure the Guild never approaches! 100% stink guaranteed.",
+      "tagline": "Not responsible for any vengeful spirits or volatile relationships."
     },
     {
-      "headline": "Mischief-Making Charms: Cause Confusion Amongst the Grain-Hoarders!",
-      "body": "Are you fed up with those who hoard grain while the rest of us suffer? Our Mischief-Making Charms will scramble their supplies and send them chasing after invisible rabbits—just for fun!",
-      "tagline": "Side effects may include laughter, chaos, and a potential visit from the Imperial watch."
+      "headline": "The Unfathomable Scribe: Whispers of Doom",
+      "body": "For a mere two groats, obtain a personalized scroll detailing the most peculiar omens concerning the Grain Guild. Spoiler alert: it's mostly bad news! Ideal for those seeking foresight in a pigeon's droppings.",
+      "tagline": "Not liable for any misinterpretation of omens; scroll at your own risk."
     }
   ],
-  "generated_at": "2026-07-05T01:10:10.258934+00:00",
+  "generated_at": "2026-07-05T04:23:22.135818+00:00",
   "hero_image": "/editions/images/2026-07-05-5-hero.png",
   "hero_image_provider": "grok"
 }
