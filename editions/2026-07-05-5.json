@@ -11,86 +11,97 @@
     "Humor: Grok",
     "Editor: Grok"
   ],
-  "headline": "Inked Peril: Scribe Flavius's Quill May Yet Lead to His Own Bureaucratic Doom",
-  "deck": "A single errant blot transforms triumph into travesty during the 939 Form Reckoning.",
-  "article": "<p>During the 939 Form Reckoning, Scribe Flavius of the Imperial Archive watched an ink blot spread across Form 943-BR, erasing his shot at the Imperial Record-Keeping Laurels. The reek of 2,847 over-waxed duplicate scrolls hung in the air while 19 lead seals thudded into place in time with the fatal drip.</p><p>Valerius the Diligent, the assigned observer, stared at the smear. \"Fourteen thousand nine hundred two petitions now need re-scrutiny,\" he said. \"The ledger margins are already rewriting themselves.\"</p><p>Flavius's desk has since been cordoned off. Clerks step around the dried pools, each carrying fresh copies of the same forms they filed yesterday. The blot has become the new watermark on every subsequent document that leaves the archive.</p>",
-  "author": "Marcus Scribonius, Chief Chronicler of Administrative Affairs",
-  "city": "Scriptoria Nova",
+  "headline": "Imperial Ledger Parade Grounded by Monsoon of Misfiled Forms",
+  "deck": "Quotas and calamity collide as clerks confront the wrath of misplaced tithes.",
+  "article": "<p>The two hundred and fiftieth anniversary parade honoring Rome's shift to a services economy ended in gridlock when a cascade of misfiled tithe scrolls buried the route. Overheated wax reeked across the marble while Bureau clerks clawed through the drifts.</p><p>Four thousand abacus beads reset at once, their clatter matching the shouts of a thousand citizens waving their own chits. One stray grain-tithe record froze the entire column for three hours. Scribe Apollonia Veritas muttered that nothing this tangled had hit since the Edict of Excess Tapering.</p><p>Heralds bawled slogans of unity until the din of confusion swallowed them. Imperator Flavitus Regularinus observed that a smooth bureaucracy might actually be the empire's biggest liability. Citizens stared upward as fresh clouds formed, ready to drop another layer of paperwork on the mess below.</p>",
+  "author": "Lucius Scribonius, Chief Chronicler of Bureaucratic Catastrophes",
+  "city": "Formulopolis",
   "weather": {
-    "city": "Scriptoria Nova",
-    "condition": "Quill-Driven Showers Expected Today",
+    "city": "Formulopolis",
+    "condition": "Paperwork Floods, Umbrellas Unnecessary",
     "temp": 72,
     "high": 78,
     "low": 65
   },
   "oped": {
-    "title": "The Virtuous Blot: Why Doom Is the Only Sensible Outcome",
-    "author": "Aurelius Blotworthy, Imperial Censor of Quill Angles and Self-Appointed Keeper of the Red Wax Seal",
-    "body": "One must commend the single errant blot for exposing Scribe Flavius as the menace he is. In our services-driven Rome, unchecked competence on the 939 Form Reckoning would only breed dangerous efficiency, depriving honest bureaucrats of endless re-filings and fee collections. The real culprits remain the victims' absurdly tall hats, whose shadows plainly unnerved the quill. My proposed remedy is mandatory double-blotting on every document, plus a new Hat Height Tax payable in triplicate. This will enrich the empire while preventing any future triumphs. Naturally, none of this stems from the petty fact that Flavius once denied my own perfectly reasonable request to backdate a chariot-repair chit. The system, like my grievances, is flawless."
+    "title": "Misfiled Tithes: Proof That Rome's True Strength Lies in Creative Accounting",
+    "author": "Titus Scrollus Maximus, Imperial Deputy for Unfiled Quotas and Personal Laurels Inspector",
+    "body": "The scroll monsoon is no calamity; it is overdue pruning. Clerks in their ridiculous flapping hats invited ruin by processing tithes without routing everything through my scriptorium. The quotas were not lost—they were reassigned to ledgers that matter, chiefly mine. Henceforth every form must burn at dusk unless countersigned by me, a rule that will also surface my own overlooked tithes from last season. Complainants offered no plumes from those absurd hats as tribute. Rome survives through the steady hand that pockets the bounty others drop."
   },
   "classifieds": [
     {
-      "cat": "Legal",
-      "text": "By order of the Praetor's Office: Any citizen whose Form 47B bears the Flavius Blot of 939 is hereby released from all service obligations until a new reckoning; apply in triplicate to avoid further doom."
-    },
-    {
       "cat": "Help Wanted",
-      "text": "Seeking steady-handed scribe to redo 300 service contracts after Flavius's blot ruined the Form Reckoning; must swear oath against excess ink and provide own blotter."
+      "text": "Desperate scribe sought by the Bureau of Services to untangle monsoon of misfiled tithe forms from the grounded Imperial Ledger Parade; must endure quotas and bring own stylus."
     },
     {
       "cat": "For Sale",
-      "text": "For sale: one slightly used quill from Scribe Flavius, guaranteed to produce only minor bureaucratic catastrophes; buyer assumes all liability for Form 47B errors."
+      "text": "For Sale: Bundle of waterlogged parchments once containing proper tithes, now misplaced; ideal kindling or evidence for any clerk facing calamity."
     },
     {
-      "cat": "Public Notices",
-      "text": "To whom it may concern: the undersigned tavern-keeper apologizes for last month's service tax underpayment, caused entirely by Flavius's errant blot on our shared form; please do not send the lictors."
+      "cat": "Lost & Found",
+      "text": "Lost during yesterday's parade: one imperial abacus and 93 quota slips; finder may keep the forms if they return the abacus to the Monsoon Recovery Office."
+    },
+    {
+      "cat": "Legal",
+      "text": "Legal Notice: The undersigned clerk publicly apologizes for the tithe misfilings that halted the Imperial Ledger Parade and offers to refile everything by next fiscal monsoon."
     }
   ],
   "comic_strip": {
-    "title": "The Fatal Blot",
+    "title": "Tithe Tempest",
     "panels": [
       {
-        "caption": "Flavius: '939 Form sealed—my services contract pays out.' *blot blooms*"
+        "caption": "The Ledger Parade halts as monsoon winds bury the carts in misfiled tithe scrolls."
       },
       {
-        "caption": "Supervisor: 'Errant ink voids the reckoning. You now owe the correction fee.'"
+        "caption": "The chief clerk barks: \"Re-sort every scroll now or the quarterly service quota drowns with us!\""
       },
       {
-        "caption": "Flavius: 'How much?' Supervisor: 'Your soul, scribe. Next form's due tomorrow.'"
+        "caption": "A soaked scribe replies: \"Too late. We've been reassigned to the rain's receivables.\""
       }
     ],
     "image": "/editions/images/2026-07-05-5-strip.png",
     "image_provider": "grok"
   },
   "joke": {
-    "setup": "Scribe Flavius spent a fortnight inking the precise penalties for any clerk whose quill blots the registers",
-    "punchline": "and awoke to find his own name entered under 'instruments of negligence, to be ground into new vellum at public expense.'",
-    "text": "Scribe Flavius spent a fortnight inking the precise penalties for any clerk whose quill blots the registers, and awoke to find his own name entered under 'instruments of negligence, to be ground into new vellum at public expense.'"
+    "setup": "The Imperial Ledger's grand parade through the Eternal City was halted before it began",
+    "punchline": "when every march order turned out to have been filed under the wrong consul and the scribes refused to correct it without first charging the parade a service fee for their own error.",
+    "text": "The Imperial Ledger's grand parade through the Eternal City was halted before it began when every march order turned out to have been filed under the wrong consul and the scribes refused to correct it without first charging the parade a service fee for their own error."
   },
   "sponsor_ads": [
     {
-      "headline": "Flavius-Grade Ink: Now With Extra Doom-Proofing",
-      "body": "Purchase our vellum-sealing tincture that binds every stroke to the rolls of Empire Services, ensuring no scribe's quill can be retroactively audited into nonexistence by the Bureau of Eternal Ledgers.",
-      "tagline": "Not liable for quills already damned by yesterday's forms."
+      "headline": "Monsoon-Proof Thy Forms: Augury Scribes for Hire",
+      "body": "After the Imperial Ledger Parade's grounding by misfiled chits, our weather-wise clerks read the auguries of thy vellum and ward off further deluges in Rome's endless service ledgers.",
+      "tagline": "No parade resumes until triplicate confirmation."
     },
     {
-      "headline": "Bureaucratic Absolution Service – One Papyrus at a Time",
-      "body": "Our certified notaries will draft counter-scrolls to cancel the peril of your own ink, provided your case number matches the July 5th edition of the Public Perils Register.",
-      "tagline": "Rome's oldest service economy: we file so you don't have to vanish."
+      "headline": "Sell Thy Misfiled Forms to the Flood Archive",
+      "body": "Convert yesterday's monsoon of errors into coin by consigning stray chits to our subterranean vaults, where they fuel the Empire's services without grounding another parade.",
+      "tagline": "Rome pivots; thy paperwork drowns alone."
     },
     {
-      "headline": "Quill-Insurance Against Self-Inking Doom",
-      "body": "Subscribe to our monthly indemnity that pays out in fresh scribes and blank charters should your handwriting summon the Department of Retroactive Compliance.",
-      "tagline": "Flavius excluded; prior inked peril voids all claims."
+      "headline": "Ledger Parade Resumes on Parchment Rafts",
+      "body": "Purchase our buoyant service tokens to float thy corrected forms above the monsoon, ensuring the Empire's accountants march dry-shod once more.",
+      "tagline": "Misfile at thine own peril; forms sink."
     },
     {
-      "headline": "Public Notice: Scribe Wanted for Flavius's Replacement",
-      "body": "Apply at the Services Annex with three witnessed copies of your own doom-scroll; successful candidates receive immunity from the very bureaucracy that devoured their predecessor.",
-      "tagline": "No quills permitted on premises without prior triplicate approval."
+      "headline": "Public Notice: All Citizens Report for Form Recalibration",
+      "body": "In consequence of the grounded parade, present thyself at the Hall of Infinite Ledgers by morrow's dawn or thy service accounts shall summon a fresh monsoon of misplacements.",
+      "tagline": "The Empire serves; thou merely files."
     }
   ],
-  "real_world_echo": "Injury ends Williams' Wimbledon comeback - mirrored as a champion scribe's paperwork comeback halted by an administrative injury (ink blot) during an annual tournament of forms",
-  "generated_at": "2026-07-05T06:12:03.782391+00:00",
+  "stories": [
+    {
+      "desk": "Agriculture",
+      "headline": "Provincial Harvests Withheld Pending Verification of Lost Tithe Scrolls",
+      "deck": "Clerks demand new forms to certify absence of previous forms",
+      "byline": "Marcus Tullius, Agriculture Scribe",
+      "article": "<p>Farmers across the Italian prefectures must now queue at ledger halls after the misplaced tithe scrolls erased district quotas. Agronomists require triplicate affidavits for every unlogged sheaf, delaying seed contracts by three market days.</p><p>The Senate agricultural subcommittee authorized new stamps reading \"verified non-tithed produce,\" a measure expected to consume enough parchment to offset the shortfall by quarter's end.</p>",
+      "image": "/editions/images/2026-07-05-5-story2.png",
+      "image_provider": "grok"
+    }
+  ],
+  "real_world_echo": "US 250th birthday with fireworks/flyovers/extreme weather, mirrored as imperial anniversary pomp undone by bureaucratic 'weather' of misplaced documents",
+  "generated_at": "2026-07-05T06:55:15.046714+00:00",
   "hero_image": "/editions/images/2026-07-05-5-hero.png",
   "hero_image_provider": "grok"
 }

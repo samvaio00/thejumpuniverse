@@ -11,86 +11,97 @@
     "Humor: Grok",
     "Editor: Grok"
   ],
-  "headline": "HEROIC WORKER KRAMLEV BANNED FOR SACRILEGIOUS MURMURS ABOUT ‘IMPERFECT ALLOCATION FORMS’",
-  "deck": "SIMPLE TEA BREAK DELAYS FIVE-QUARTER PLAN BY 0.0002 PERCENT; A GLORIOUS VICTORY FOR QUOTA INTEGRITY!",
-  "article": "<p>Comrade Kramlev’s three-minute tea interval has triggered his permanent exclusion from the Quota Championship after he voiced doubts about allocation forms. The Party treats any hint of imperfection as a gateway to forbidden economic questions.</p><p>His forty-seven-year record of precise tractor-part counts now belongs solely to the collective, reframed as routine errands rather than personal feats. The Quota Committee acted swiftly to prevent one murmur from spreading.</p><p>Official Ivanov, buried behind stacks of forms, declared the ban essential to stop critical thinking from corroding the system like rust on machinery. New posters in every break room bear the slogan “THE HINGE THAT KEPT MONEY FROM RETURNING THROUGH THE BACK DOOR OF DOUBT,” looming over workers who queue to praise the measure while quietly resenting the vanished tea.</p><p>Kramlev now counts bolts in an isolated corner, a living caution that freedom from currency does not extend to freedom from paperwork.</p>",
-  "author": "Viktor Trudov, Senior Quota Analyst and Bureaucratic Journalist",
-  "city": "Proletarsk",
+  "headline": "SNAPPED SHOELACE DECLARED NATIONAL EMERGENCY: CENTRAL COMMITTEE TAKES DRASTIC MEASURES",
+  "deck": "Replacement laces requisitioned to prevent ideological collapse; heroic worker reassigned for re-education.",
+  "article": "<p>Comrade Sidorov's shoelace snapped during the ceremonial unfurling of the 50-Year Abundance Banner, an incident the Central Committee immediately branded deviationist sabotage. Directive 47-B now treats untied footwear as equivalent to state enmity. The Glorious Cord Collective has already delivered 12,000 replacement laces, while Sidorov reports to the Pencil-Sharpening Brigade. Citizens must notify local authorities of any further lace failures without delay.</p>",
+  "author": "Comrade Yevgeny Petrov, Senior Bureaucratic Correspondent",
+  "city": "Lacegrad",
   "weather": {
-    "city": "Proletarsk",
-    "condition": "Overcast with whispers of discontent",
+    "city": "Lacegrad",
+    "condition": "Footwear crisis keeps citizens indoors or barefoot",
     "temp": 72,
     "high": 78,
     "low": 65
   },
   "oped": {
-    "title": "Murmurs Must Be Met With Might: Kramlev Got Off Lightly",
-    "author": "Deputy Allocator Pyotr Blusterov, Senior Warden of Tea-Break Compliance and Personal Form Validator",
-    "body": "Kramlev’s mild remark during a negligible delay exposed an individualism that quota systems cannot tolerate. The authorities’ response was measured; I would have required every worker to chant allocation hymns at attention throughout each break. That his lapse coincided with my own requisition deadline only underscores the need for stricter silence. Gratitude, not doubt, keeps the forms flawless."
+    "title": "Shoelace Treason Demands Total Footwear Collectivization",
+    "author": "Comrade Igor Knotsky, Emeritus Professor of Collective Footwear Harmony at the People's University of Solemnity",
+    "body": "The Central Committee's lace requisition is simple prudence. One loose end can halt the proletarian advance. Sidorov's knot clearly lacked sufficient revolutionary tension. Citizens who object to temporary barefoot shifts place personal comfort above collective stride. Preemptive triple inspections by neighborhood committees remain the only reliable safeguard, even when that policy leaves my own pairs locked away until 1974."
   },
   "classifieds": [
     {
-      "cat": "Public Notices",
-      "text": "Comrade Kramlev’s former brigade seeks new allocator after his ban; any citizen with flawless forms and no tea-break history may apply to the Central Quota Integrity Office before the Five-Quarter Plan slips another 0.0002 percent."
-    },
-    {
       "cat": "Help Wanted",
-      "text": "Desperate section chief requires one loyal worker to replace the sacrilegious Kramlev; must never question allocation forms and be prepared to forgo all tea until 1974."
+      "text": "Central Committee urgently requires volunteer lace requisition officers after yesterday's emergency; successful applicants receive extra cabbage and avoid re-education. Apply in person with own boots."
     },
     {
       "cat": "For Sale",
-      "text": "Slightly stained allocation forms formerly used by banned worker Kramlev now offered in exchange for extra beet rations or a written endorsement of quota perfection."
+      "text": "Comrade offers two meters of state-approved replacement shoelace twine in exchange for extra ration coupons or ideological exemption papers; must collect before midnight requisition."
+    },
+    {
+      "cat": "Lost & Found",
+      "text": "Lost during national emergency: one left boot belonging to recently reassigned heroic worker; finder please deliver to Committee to prevent further collapse of the collective."
     },
     {
       "cat": "Personals",
-      "text": "Lonely comrade confesses minor tea-break sympathies during the recent delay; seeks like-minded pen-pal who still believes in the Five-Quarter Plan and will not report deviations."
+      "text": "Apologetic comrade confesses ownership of the snapped shoelace that triggered today's crisis; seeking like-minded penitent for mutual re-education sessions and shared cabbage soup."
     }
   ],
   "comic_strip": {
-    "title": "The Allocation Apostate",
+    "title": "Emergency Laces",
     "panels": [
       {
-        "caption": "In the canteen, Kramlev mutters over his allotted tea: \"These forms allocate only waste.\""
+        "caption": "Official: 'Comrade's shoelace snapped at 0900. Declaring national emergency.'"
       },
       {
-        "caption": "The commissar jots notes: \"Your murmurs imperil quota integrity by a fraction of a percent.\""
+        "caption": "Bureaucrat: 'Requisition all replacement laces at once to stop ideological collapse.'"
       },
       {
-        "caption": "Kramlev is banned. \"Glory—the plan holds, tea breaks abolished.\""
+        "caption": "Worker: 'I had no money anyway.' Official: 'Re-education. Your knot was counterrevolutionary.'"
       }
     ],
     "image": "/editions/images/2026-07-05-3-strip.png",
     "image_provider": "grok"
   },
   "joke": {
-    "setup": "Kramlev, celebrated for processing allocation forms faster than any comrade,",
-    "punchline": "was abruptly reallocated to the mines once he muttered that one of them contained an error.",
-    "text": "Kramlev, celebrated for processing allocation forms faster than any comrade, was abruptly reallocated to the mines once he muttered that one of them contained an error."
+    "setup": "After the snapped shoelace was declared a national emergency, the Central Committee ordered every factory to halt production and redirect all cord to the state repair brigades.",
+    "punchline": "Citizens with two working laces are now required to surrender one for redistribution, effective immediately.",
+    "text": "After the snapped shoelace was declared a national emergency, the Central Committee ordered every factory to halt production and redirect all cord to the state repair brigades. Citizens with two working laces are now required to surrender one for redistribution, effective immediately."
   },
   "sponsor_ads": [
     {
-      "headline": "Perfected Allocation Forms — Now With Triple-Red Stamp Approval",
-      "body": "Comrades troubled by yesterday’s murmurs need no longer risk imperfect submissions; our state-polished forms allocate exactly what the plan demands without deviation or complaint.",
-      "tagline": "Report all residual doubts to Section 7B."
+      "headline": "STATE SHOELACE REINFORCEMENT BRIGADE",
+      "body": "Report every frayed lace before it halts the next banner ceremony; local committees allocate cord without currency.",
+      "tagline": "Failure to comply is deviationism; reinforced laces issued without currency by order of the Central Committee."
     },
     {
-      "headline": "Comrade Kramlev Memorial Reallocation Bureau",
-      "body": "Following the heroic worker’s temporary reassignment, surplus quotas are now available for immediate reassignment to loyal applicants who understand that all forms are already flawless.",
-      "tagline": "Murmurs void all prior allocations."
+      "headline": "COLLECTIVE EMERGENCY LACE DEPOT",
+      "body": "Queue at first light for pre-knotted replacements bearing the Supreme Soviet seal; one broken lace now equals national crisis.",
+      "tagline": "No hoarding permitted—excess laces returned to the People’s Stockpile or face re-education."
     },
     {
-      "headline": "State-Issued Silence Stamps — Silence Your Allocation Doubts",
-      "body": "Affix one stamp to every requisition chit to suppress any lingering thoughts that the glorious system of distribution could ever require correction.",
-      "tagline": "Effective retroactively to 05 July 2026."
+      "headline": "PROLETARIAN SHOELACE INSPECTION SERVICE",
+      "body": "Daily footwear checks prevent another snap from emptying the assembly halls; inspectors stationed at every production site.",
+      "tagline": "Voluntary self-inspection strongly encouraged; private laces remain property of the collective."
     },
     {
-      "headline": "Bureau of Pre-Approved Gratitude — Subscribe to Correct Thinking",
-      "body": "Citizens who once considered allocation forms imperfect may now receive daily corrected thoughts delivered directly to their housing block, ensuring continued access to all necessities.",
-      "tagline": "Banned workers ineligible; substitutes provided."
+      "headline": "CENTRAL COMMITTEE APPROVED LACE SUBSTITUTE",
+      "body": "State twine guaranteed to survive until the next Party Congress; tested under controlled ideological conditions.",
+      "tagline": "Tested under controlled ideological conditions; complaints directed to the Department of Non-Monetary Shortages."
     }
   ],
-  "real_world_echo": "mirrors Kramnik banned over cheating remarks by recasting the 'cheating' as mild criticism of allocation paperwork treated as existential sabotage",
-  "generated_at": "2026-07-05T06:08:43.369888+00:00",
+  "stories": [
+    {
+      "desk": "Agriculture",
+      "headline": "FLAX FIELDS REPLANTED OVERNIGHT TO MEET LACE QUOTA",
+      "deck": "Winter wheat acreage reduced by decree to avert further footwear incidents",
+      "byline": "Pyotr Semyonov, Agricultural Correspondent",
+      "article": "<p>The State Agricultural Trust ordered 1,800 hectares of collective wheat converted to flax after the lace-reserve directive. Tractor crews finished the switch in fourteen hours with fuel taken from the Donbas combine. Projected output stands at 14,000 meters of lace per hectare. Grain inspectors now grade fiber instead of calories; bread forecasts fell nine percent while compliance reports rose.</p>",
+      "image": "/editions/images/2026-07-05-3-story2.png",
+      "image_provider": "grok"
+    }
+  ],
+  "real_world_echo": "US marks its 250th birthday with fireworks, flyovers and extreme weather - mirrored as the collective anniversary parade of money's abolition threatened by a minor personal mishap instead of weather",
+  "generated_at": "2026-07-05T06:51:28.053889+00:00",
   "hero_image": "/editions/images/2026-07-05-3-hero.png",
   "hero_image_provider": "grok"
 }

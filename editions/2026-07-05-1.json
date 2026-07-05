@@ -11,86 +11,95 @@
     "Humor: Grok",
     "Editor: Grok"
   ],
-  "headline": "Daylight Rationing Sparks Outrage as Aristocrats Bloom in Unfettered Sunlight",
-  "deck": "As the Imperial Sunlight & Gas Syndicate celebrates ten years of profitable dusk, residents of East End suffer a pall over their morning tea.",
-  "article": "<p>The Imperial Sunlight & Gas Syndicate diverted 2,184 premium solar minutes from Bethnal Green to Mayfair orchid houses on the morning the district awoke under fog.</p><p>Mr. Thaddeus Quill's reporting on the diversion earned him an immediate post as Director Quill, Office of Tier Compliance, complete with gas-scrip salary and a brass plaque from Chairman Sir Reginald P. Foggbottom.</p><p>Foggbottom toasted the Syndicate's tenth anniversary while restating its duty to premium subscribers; the Grand Illumination Gala will demonstrate metered daylight to invited guests.</p><p>East End households now conduct their afternoons by gaslight, their petitions for dawn answered with additional dusk.</p>",
-  "author": "Mr. Thaddeus Quill, Special Correspondent",
-  "city": "Luminaria",
+  "headline": "Investigative Journalist Ascends to Daylight Throne Just as Sunlight Audit Fails to Illuminate Truth",
+  "deck": "New Imperial Daylight Commissioner awarded a solar stipend amid revelations of unregistered blackout zones.",
+  "article": "<p>Mr. Chester P. Glimmer, once a reporter exposing Sun & Light Ltd., now holds the post of Imperial Daylight Commissioner. His final dispatch listed 87 parishes left in contractual night after unpaid invoices.</p><p>The post carries 12 guineas each quarter plus one solar minute monthly. Ledgers previously open to scrutiny are now labeled proprietary imperial radiance records.</p><p>A government spokesman in a coat that outshone the available light declared the assets must stay shielded from inquiry. Meanwhile the 250th privatization anniversary proceeds while those unable to pay remain in the dark.</p>",
+  "author": "Archibald Finster, Chief Correspondent of The Multiverse Gazette, Imperial Daylight Commissioner",
+  "city": "Luminara Heights",
   "weather": {
-    "city": "Luminaria",
-    "condition": "Overcast with aristocratic sunspots",
+    "city": "Luminara Heights",
+    "condition": "Overcast with a chance of audits",
     "temp": 72,
     "high": 78,
     "low": 65
   },
   "oped": {
-    "title": "A Modest Defence of Measured Mornings: Why Grumbling Over Gas Serves None",
-    "author": "Viscount Archibald Fumblecrump, Esq., Perpetual Subscriber to Tier III Illumination and Self-Appointed Keeper of the Syndicate's Ledger",
-    "body": "The recent caterwauling from East End over daylight rationing betrays a lamentable want of perspective. The Imperial Sunlight & Gas Syndicate has, these ten profitable years, spared us the vulgar excess of unfiltered dawn, which any gentleman knows breeds freckles and revolutionary thoughts. Those complaining souls might simply purchase the Premium Solar Voucher instead of squandering coin on inferior tea leaves. Their hats, after all, are far too wide; narrower brims would admit what scant rays they deserve. I myself enjoy uninterrupted beams above my conservatory, as is only fitting for one who advised the original privatisation bill. If anything, the remedy lies in further restriction: let the districts without subscriptions receive only the moon's pallid charity, thereby encouraging thrift and discouraging idleness. Envy, not scarcity, darkens their mornings."
+    "title": "A Most Enlightened Appointment: Hats, Not Ledgers, Obscure Our Solar Glory",
+    "author": "Sir Thaddeus Blusterby, K.B.E., Perpetual Subscriber to Tier III Dawn and Accidental Eclipse Consultant",
+    "body": "The new Commissioner's rise shows how darkness can raise the price of premium light. The audit merely confirmed that truth, like coal, belongs in private hands. Wide-brimmed hats and parasols already cast unauthorized shadows; the sensible response is to bill every bare head. I will keep paying my Tier III fees so long as my east window stays clear of further audits."
   },
   "classifieds": [
     {
+      "cat": "Public Notices",
+      "text": "I, the disgraced former auditor, do hereby confess to three unregistered blackout zones and beg the new Daylight Commissioner’s mercy before my stipend is revoked at dawn."
+    },
+    {
       "cat": "For Sale",
-      "text": "Owing to the Syndicate's most profitable dusk, a respectable widow of Stepney must part with her last two hours of morning light, transferable by voucher; enquiries to the rear of the Black Swan public house, terms desperate."
+      "text": "FOR SALE: one well-thumbed solar ledger showing the precise location of every unpaid blackout; owner ascending to the throne and no longer requires it."
     },
     {
       "cat": "Help Wanted",
-      "text": "East End household requires a nimble lad to climb gas standards at dawn and beg stray photons from passing carriages; board of stale bread and threepence nightly for those who return with light enough to read the tea leaves."
+      "text": "WANTED: discreet lamplighter to extinguish illegal daylight in the eastern unregistered zones; must bring own extinguisher and silence."
     },
     {
       "cat": "Lost & Found",
-      "text": "Lost upon the 12th instant: one allotted quarter-hour of sunlight, mislaid between the counting-house and the fog; finder returning same to Mr. Cratchit of Houndsditch shall receive a half-pint of darkness in exchange."
-    },
-    {
-      "cat": "Public Notices",
-      "text": "The Imperial Sunlight & Gas Syndicate regrets to inform its East End subscribers that any further petitions for dawn shall be met with an increase in dusk; all complaints to be submitted in writing and by gaslight only."
+      "text": "LOST: my reputation and last three months of audit receipts, last seen near the Commissioner’s new solar stipend office; generous reward in premium minutes offered for their return."
     }
   ],
   "comic_strip": {
-    "title": "Rays for Rent",
+    "title": "The Daylight Throne",
     "panels": [
       {
-        "caption": "East Ender squints at the manor: \"Their roses are bursting while my tea's gone black under the syndicate dusk.\""
+        "caption": "The ex-journalist settles onto the Imperial Daylight Throne: \"My audit proved the blackout zones exist – here's my solar stipend.\""
       },
       {
-        "caption": "Syndicate clerk adjusts the meter: \"Premium daylight is reserved for those whose complexions can still turn a profit.\""
+        "caption": "A clerk bows low: \"The zones remain unregistered, Commissioner, and the sun won't shine without premium coin.\""
       },
       {
-        "caption": "Child tugs sleeve: \"If we buy an extra hour, can we bury Mum before the bill arrives?\""
+        "caption": "\"Then sell them as exclusive night shares. Truth's too bright for the ledgers anyway.\""
       }
     ],
     "image": "/editions/images/2026-07-05-1-strip.png",
     "image_provider": "grok"
   },
   "joke": {
-    "setup": "The Sunlight Allocation Board has ruled that only titled gentlemen may enjoy the full arc of the day without interruption.",
-    "punchline": "The rest of England is therefore encouraged to black their boots by the glow of their own class resentment.",
-    "text": "The Sunlight Allocation Board has ruled that only titled gentlemen may enjoy the full arc of the day without interruption. The rest of England is therefore encouraged to black their boots by the glow of their own class resentment."
+    "setup": "The journalist who bought the Daylight Throne at auction",
+    "punchline": "now presides over a realm where the audit committee cannot afford to illuminate the truth, having been cut off for non-payment of the solar premium.",
+    "text": "The journalist who bought the Daylight Throne at auction now presides over a realm where the audit committee cannot afford to illuminate the truth, having been cut off for non-payment of the solar premium."
   },
   "sponsor_ads": [
     {
-      "headline": "Surplus Morning Rays: Let by Affluent Households",
-      "body": "Gentlemen of means having secured their premium allotments now sublet excess dawn hours by the quarter-minute; arrive pale, depart faintly gilded.",
-      "tagline": "Payment in sovereigns or unrationed moonlight accepted."
+      "headline": "Throne-Grade Daylight Shares Now Available",
+      "body": "Following the journalist's ascension, discerning subscribers may purchase hourly allotments of the privatized sun at rates untainted by the recent audit's regrettable opacity.",
+      "tagline": "Illumination subject to editorial revision."
     },
     {
-      "headline": "Dr. Sallow's Shade-Proof Tonic",
-      "body": "For those condemned to the cheaper gloaming, this sovereign elixir permits the cultivation of a respectable complexion without so much as a single purchased lumen.",
-      "tagline": "May cause spontaneous night-blindness; not for aristocrats."
+      "headline": "Eternal Lanterns for the Audit-Proof Gentleman",
+      "body": "These hand-blown devices emit a steady glow irrespective of the Throne's pronouncements, ensuring one's correspondence remains legible even when official sunlight withholds its truths.",
+      "tagline": "Wicks not warranted against royal caprice."
     },
     {
-      "headline": "Public Caution from the Imperial Solarium Trust",
-      "body": "Any person found attempting to harvest unauthorised daylight through mirrors, buckets, or hopeful expressions will forfeit their remaining ration and be fined one hour of perpetual dusk.",
-      "tagline": "Report suspicious blooming to the nearest meter reader."
+      "headline": "Public Notice: Daylight Throne Succession Audit",
+      "body": "Interested parties are invited to tender for the position of auxiliary auditor, as the first examination has left certain solar revenues unaccounted for under the new regime.",
+      "tagline": "Preference given to those already in shadow."
     },
     {
-      "headline": "Eclipse Silk for the Rationed Masses",
-      "body": "Drape your windows and your hopes in our patented blackout fabric; now woven to withstand both envy and the occasional aristocratic glare.",
-      "tagline": "Guaranteed to keep you suitably obscure until further notice."
+      "headline": "Premium Nocturnal Leases from the Ascended",
+      "body": "Gentlemen weary of the Throne's daylight premiums may now contract for guaranteed hours of darkness, delivered promptly once the journalist's investigative rays have passed.",
+      "tagline": "No refunds if truth accidentally intrudes."
     }
   ],
-  "real_world_echo": "Mirrors US 250th birthday fireworks and extreme weather by framing the Syndicate's tenth-anniversary 'Grand Illumination Gala' as a lavish display of metered daylight bursts that leaves common districts in sudden, engineered dusk",
-  "generated_at": "2026-07-05T06:04:53.871623+00:00",
-  "hero_image": "/editions/images/2026-07-05-1-hero.png",
-  "hero_image_provider": "grok"
+  "stories": [
+    {
+      "desk": "Agriculture",
+      "headline": "Wheat Consortium Demands Reimbursement for 412 Acres of Unbilled Twilight",
+      "deck": "Directors cite missing lumen receipts from the new commissioner's audit ledgers.",
+      "byline": "Horace Ploughman, Agricultural Correspondent",
+      "article": "<p>The South-Eastern Grain Combine claims 412 acres received only partial premium rays during the audit window despite advance payment. Secretary Algernon Root equates the shortfall to one harvest cycle and suggests docking the amount from the new Commissioner's stipend.</p>",
+      "image": "/editions/images/2026-07-05-1-story2.png",
+      "image_provider": "grok"
+    }
+  ],
+  "real_world_echo": "US 250th birthday extreme weather: mirrors national celebration of privatization milestone undercut by sudden blackout districts for non-subscribers",
+  "generated_at": "2026-07-05T06:47:12.415333+00:00"
 }
