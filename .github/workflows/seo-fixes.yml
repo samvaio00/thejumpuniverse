@@ -12,6 +12,7 @@ concurrency:
 
 permissions:
   contents: write
+  deployments: write
 
 jobs:
   seo-fixes:
@@ -94,6 +95,9 @@ jobs:
           pip install --quiet pillow
           python3 << 'PYEOF'
           from PIL import Image, ImageDraw, ImageFont
+          import os
+          if os.path.exists('logo.png'):
+              raise SystemExit(0)
           W, H = 600, 120
           img = Image.new("RGB", (W, H), "#f7f4ed")
           d = ImageDraw.Draw(img)
