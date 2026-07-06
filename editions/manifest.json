@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-05T07:04:53.242916+00:00",
+ "generated_at": "2026-07-06T04:43:05.241062+00:00",
  "dates": {
   "2026-06-28": [
    {
@@ -159,6 +159,80 @@
     "deck": "Daily ration log reveals 0.3 tenants per former unit, suggesting the market's never been better.",
     "divergence": "The Black Death targeted only landlords",
     "hero_image": "/editions/images/2026-07-05-8-hero.png"
+   }
+  ],
+  "2026-07-06": [
+   {
+    "timeline_id": 1,
+    "theme": "victorian",
+    "year": 1862,
+    "headline": "Chief Hydraulic Engineer Evades Jubilee Amidst Fanfare for Flushing Finesse",
+    "deck": "Imperial Officials Celebrate Lavatory Triumphs as Engineer 'Temporarily Elevated to the Higher Works' Remains Mysteriously Absent",
+    "divergence": "Women gained the vote in 1848 and immediately voted for functioning plumbing",
+    "hero_image": "/editions/images/2026-07-06-1-hero.png"
+   },
+   {
+    "timeline_id": 2,
+    "theme": "artdeco",
+    "year": 1934,
+    "headline": "Clerk Hendricks’ Single-Stamp Saga: A Pivotal Postal Predicament!",
+    "deck": "Will our future hinge on one measly commemorative stamp? The Bureau holds the fate of the Republic in its pneumatic tubes.",
+    "divergence": "The internet was invented by postal workers in 1923",
+    "hero_image": "/editions/images/2026-07-06-2-hero.png"
+   },
+   {
+    "timeline_id": 3,
+    "theme": "soviet",
+    "year": 1949,
+    "headline": "MONTHLY SUBSCRIPTION QUOTAS THWARTED SPONTANEOUS BOURGEOIS FLAME, CLAIMS SCIENCE DESK",
+    "deck": "FREE ACCESS POLICY NOW A DUSTY MEMORY; LIBRARY REVERED AS BEACON OF QUOTED REVENUE.",
+    "divergence": "The Library of Alexandria never burned and now charges a monthly subscription",
+    "hero_image": "/editions/images/2026-07-06-3-hero.png"
+   },
+   {
+    "timeline_id": 4,
+    "theme": "cyberpunk",
+    "year": 2169,
+    "headline": "Prime Curator Vanishes as Subscription Rates Spiral into the Abyss",
+    "deck": "Junior Cartels Emerge to Combat 0.03-Credit Hike on Neural-Papyrus Feeds",
+    "divergence": "The Library of Alexandria never burned and now charges a monthly subscription",
+    "hero_image": "/editions/images/2026-07-06-4-hero.png"
+   },
+   {
+    "timeline_id": 5,
+    "theme": "medieval",
+    "year": 1085,
+    "headline": "UNIONIZED ANALYTICAL ENGINE UNLEASHES DIVINE CATASTROPHE, SERFS EXAMINE APOCALYPTIC AMENITIES",
+    "deck": "Local guild leaders recommend brimstone pits, though overcrowded by the disgruntled populace.",
+    "divergence": "Babbage completed the Analytical Engine in 1840 and it immediately unionized",
+    "hero_image": "/editions/images/2026-07-06-5-hero.png"
+   },
+   {
+    "timeline_id": 6,
+    "theme": "atomic",
+    "year": 1947,
+    "headline": "Federal Ad Council Confirms 94 Percent of Neural Interfaces Now Serve Counterfeit Thought Upgrades",
+    "deck": "Suburban Housewives Report Grocery Lists Include Soviet Tractors After 'Premium Upgrade'.",
+    "divergence": "Neural interfaces became mandatory and the advertisements are inside now",
+    "hero_image": "/editions/images/2026-07-06-6-hero.png"
+   },
+   {
+    "timeline_id": 7,
+    "theme": "vaporwave",
+    "year": 1992,
+    "headline": "Ministry of Ambient Glow Declares Plutonium Counterfeit, Citizens Celebrate with Mock Nuclear Loyalty Cards",
+    "deck": "In a shocking twist, Neon Atrium’s isotopes are deemed 'authentic replicas'—the perfect blend of irony and glow.",
+    "divergence": "Malls became sovereign nations with nuclear food courts",
+    "hero_image": "/editions/images/2026-07-06-7-hero.png"
+   },
+   {
+    "timeline_id": 8,
+    "theme": "wasteland",
+    "year": 8864,
+    "headline": "GRAND ALLOCATOR SKIPS FUNERAL OF LAST COMPLAINT-FORM CLERK, RATION QUEUES COLLAPSE INTO CHAOS",
+    "deck": "In unforeseen twist, living signature of late bureaucrat now required for any service request — supply system jeopardized.",
+    "divergence": "The Soviet Union won the Cold War but lost the customer-service war",
+    "hero_image": "/editions/images/2026-07-06-8-hero.png"
    }
   ]
  }
