@@ -1243,11 +1243,11 @@ def generate_sitemap():
     """Generate sitemap.xml for SEO."""
     from xml.sax.saxutils import escape
 
-    urls = [("https://multiversegazette.com/", None)]
+    urls = [("https://thejumpuniverse.com/", None)]
     for date_str, files in edition_files_by_date().items():
         for f in sorted(files, key=lambda p: int(p.stem.split("-")[3])):
             timeline = f.stem.split("-")[3]
-            urls.append((f"https://multiversegazette.com/?timeline={timeline}&date={date_str}", date_str))
+            urls.append((f"https://thejumpuniverse.com/?timeline={timeline}&date={date_str}", date_str))
 
     sitemap = ['<?xml version="1.0" encoding="UTF-8"?>']
     sitemap.append('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">')
@@ -1270,7 +1270,7 @@ def generate_rss():
     for f in files:
         with open(f, "r", encoding="utf-8") as fh:
             ed = json.load(fh)
-        url = escape(f"https://multiversegazette.com/?timeline={ed['timeline_id']}&date={ed['date']}")
+        url = escape(f"https://thejumpuniverse.com/?timeline={ed['timeline_id']}&date={ed['date']}")
         pub_date = datetime.strptime(ed["date"], "%Y-%m-%d").strftime("%a, %d %b %Y 00:00:00 GMT")
         items.append(f"""<item>
       <title>{escape(ed['headline'])}</title>
@@ -1284,7 +1284,7 @@ def generate_rss():
 <rss version="2.0">
   <channel>
     <title>The Multiverse Gazette</title>
-    <link>https://multiversegazette.com</link>
+    <link>https://thejumpuniverse.com</link>
     <description>Daily newspaper from alternate timelines</description>
     <language>en</language>
     {chr(10).join(items)}
@@ -1303,7 +1303,7 @@ def prerender_index(edition):
     if not path.exists():
         return
     html = path.read_text(encoding="utf-8")
-    site = "https://multiversegazette.com"
+    site = "https://thejumpuniverse.com"
     url = f"{site}/?timeline={edition['timeline_id']}&date={edition['date']}"
 
     def esc(s):
@@ -1319,7 +1319,7 @@ def prerender_index(edition):
         html = new
 
     title = f"{edition['headline']} | The Multiverse Gazette"
-    desc = f"{edition['deck']} — A satirical dispatch from a universe where {edition['divergence']}."
+    desc = f"{edition['deck']} — Satirical galactic news from the multiverse — an alternate history dispatch from a universe where {edition['divergence']}."
     hero = edition.get("hero_image")
     og_image = f"{site}{hero}" if hero else f"{site}/og-image.jpg"
     theme_label = edition["theme"].capitalize()
@@ -1398,6 +1398,8 @@ def prerender_index(edition):
         "headline": edition["headline"], "description": edition["deck"],
         "url": url, "datePublished": edition["date"] + "T00:00:00Z",
         "author": {"@type": "Person", "name": edition.get("author", "Staff Correspondent")},
+        "keywords": "galactic news, multiverse, multi verse, alternate history, conspiracy theory, parallel universe, satire",
+        "genre": ["Satire", "Alternate History", "Science Fiction"],
         "publisher": {"@type": "Organization", "name": "The Multiverse Gazette",
                       "logo": {"@type": "ImageObject", "url": f"{site}/logo.png"}},
     }
