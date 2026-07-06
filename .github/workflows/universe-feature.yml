@@ -3,7 +3,7 @@ name: Apply universe feature
 on:
   push:
     paths:
-      - "patches/universe-feature.patch"
+      - "patches/universe-feature.go"
   workflow_dispatch:
 
 concurrency:
@@ -21,9 +21,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Apply patch
+      - name: Assemble, verify and apply patch
         run: |
-          git apply --index patches/universe-feature.patch
+          cat patches/universe-feature.b64.part1 patches/universe-feature.b64.part2 patches/universe-feature.b64.part3 | tr -d '\n' | base64 -d > /tmp/feature.patch
+          echo "466c120f1b78c1ccc2e2bd62a6ae1f68  /tmp/feature.patch" | md5sum -c -
+          git apply --index /tmp/feature.patch
 
       - name: Build universes.json
         run: python3 scripts/build_universes.py
@@ -82,8 +84,8 @@ jobs:
           print('sanity OK')
           PYEOF
 
-      - name: Remove applied patch
-        run: git rm -q patches/universe-feature.patch
+      - name: Remove applied patch files
+        run: git rm -q -r patches/
 
       - name: Commit
         run: |
