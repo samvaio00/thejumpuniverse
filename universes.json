@@ -4,699 +4,1299 @@
   "name": "Brasslight",
   "theme": "victorian",
   "epoch_year": 1842,
-  "divergence": "Women gained the vote in 1848 and immediately voted for functioning plumbing"
+  "divergence": "Women gained the vote in 1848 and immediately voted for functioning plumbing",
+  "galaxy": "Marrow Crown",
+  "planet": "Druia",
+  "kind": "human",
+  "inhabitants": "humans with porcelain-white skin traced with visible silver veins and elongated six-jointed fingers",
+  "world_style": "medieval half-timbered market towns, much like Earth's, except every structure faces magnetic north",
+  "naming": "Spanish double surnames with mandatory numeric suffixes"
  },
  {
   "id": 2,
   "name": "Emberline",
   "theme": "artdeco",
   "epoch_year": 1916,
-  "divergence": "Medieval monks invented social media and civilization never recovered"
+  "divergence": "Medieval monks invented social media and civilization never recovered",
+  "galaxy": "Cobalt Wheel",
+  "planet": "Calymir",
+  "kind": "alien",
+  "inhabitants": "vaporous plasma-cored beings with six sensory stalks",
+  "world_style": "spiraling coral towers, secreted by the inhabitants themselves",
+  "naming": "names are crystalline resonance chords, transliterated as colon-spliced pairs like Ir:Vess"
  },
  {
   "id": 3,
   "name": "Palegate",
   "theme": "soviet",
   "epoch_year": 1934,
-  "divergence": "Socrates monetized his questions and founded the first consulting empire"
+  "divergence": "Socrates monetized his questions and founded the first consulting empire",
+  "galaxy": "Sable Spiral",
+  "planet": "Morune",
+  "kind": "human",
+  "inhabitants": "humans with faintly luminescent pale-blue skin and perfectly symmetrical faces that unsettle visitors",
+  "world_style": "Gothic cathedrals and cobbled squares, much like Earth's, except everything is painted in shades of teal",
+  "naming": "Old Testament first names with occupational middle names"
  },
  {
   "id": 4,
   "name": "Glasswing",
   "theme": "cyberpunk",
   "epoch_year": 2169,
-  "divergence": "The Library of Alexandria never burned and now charges a monthly subscription"
+  "divergence": "The Library of Alexandria never burned and now charges a monthly subscription",
+  "galaxy": "Winnowing Expanse",
+  "planet": "Lumune",
+  "kind": "human",
+  "inhabitants": "humans with slate-grey skin and pupil-less silver eyes",
+  "world_style": "modern glass office towers and strip malls, much like Earth's, except chimneys outnumber occupants two to one",
+  "naming": "Norse patronymics with a weather word added at birth"
  },
  {
   "id": 5,
   "name": "The Quiet Divergence",
   "theme": "medieval",
   "epoch_year": 272,
-  "divergence": "Gravity weakened by four percent and the lawsuits are ongoing"
+  "divergence": "Gravity weakened by four percent and the lawsuits are ongoing",
+  "galaxy": "Pale Halo",
+  "planet": "Lumosca",
+  "kind": "human",
+  "inhabitants": "humans with porcelain-white skin traced with visible silver veins and hair that grows in seasonal colors",
+  "world_style": "Gothic cathedrals and cobbled squares, much like Earth's, except each building hums faintly at dusk",
+  "naming": "Spanish double surnames with a weather word added at birth"
  },
  {
   "id": 6,
   "name": "Mirrormarch",
   "theme": "atomic",
   "epoch_year": 1973,
-  "divergence": "Women gained the vote in 1848 and immediately voted for functioning plumbing"
+  "divergence": "Women gained the vote in 1848 and immediately voted for functioning plumbing",
+  "galaxy": "Hollow Pinwheel",
+  "planet": "Nevaxis",
+  "kind": "alien",
+  "inhabitants": "amorphous gel-bodied beings whose faces are temporary",
+  "world_style": "singing bone-white spires, assembled by swarms of tool-insects",
+  "naming": "names are electrostatic crackle sequences, transliterated as apostrophe-heavy clusters like Xq'thal-Vren"
  },
  {
   "id": 7,
   "name": "Kessler's Wake",
   "theme": "vaporwave",
   "epoch_year": 1986,
-  "divergence": "Gunpowder was never discovered, so wars are settled by competitive committee"
+  "divergence": "Gunpowder was never discovered, so wars are settled by competitive committee",
+  "galaxy": "Cinder Spiral",
+  "planet": "Kreoon",
+  "kind": "human",
+  "inhabitants": "humans with sun-flushed crimson-undertoned skin and hair like spun glass",
+  "world_style": "Japanese-style timber houses and paper screens, much like Earth's, except every structure faces magnetic north",
+  "naming": "Old Testament first names with middle names inherited from famous strangers"
  },
  {
   "id": 8,
   "name": "The Painted Siren",
   "theme": "wasteland",
   "epoch_year": 2341,
-  "divergence": "Libraries militarized during the format wars and never fully demobilized"
+  "divergence": "Libraries militarized during the format wars and never fully demobilized",
+  "galaxy": "Marrow Halo",
+  "planet": "Druune",
+  "kind": "alien",
+  "inhabitants": "many-limbed shadow-dark beings that speak in scent plumes",
+  "world_style": "floating tessellated platforms, held together by standing sound waves",
+  "naming": "names are pressure-wave bursts, transliterated as clipped monosyllables like K't, Vem, and Shh"
  },
  {
   "id": 9,
   "name": "Gildergloom",
   "theme": "victorian",
   "epoch_year": 1856,
-  "divergence": "Alchemy worked exactly once, and the committee is still deciding what to do about it"
+  "divergence": "Alchemy worked exactly once, and the committee is still deciding what to do about it",
+  "galaxy": "Meridian Crown",
+  "planet": "Haleth",
+  "kind": "human",
+  "inhabitants": "humans with porcelain-white skin traced with visible silver veins and faint gill-lines along the jaw that serve no purpose",
+  "world_style": "Art-Deco towers and gilded lobbies, much like Earth's, except chimneys outnumber occupants two to one",
+  "naming": "Japanese family-first names with one letter legally rotated each decade"
  },
  {
   "id": 10,
   "name": "Winterglass",
   "theme": "artdeco",
   "epoch_year": 1930,
-  "divergence": "Napoleon won at Waterloo and immediately opened a chain of themed restaurants"
+  "divergence": "Napoleon won at Waterloo and immediately opened a chain of themed restaurants",
+  "galaxy": "Marrow Drift",
+  "planet": "Auria",
+  "kind": "human",
+  "inhabitants": "humans with faintly luminescent pale-blue skin and a second translucent eyelid",
+  "world_style": "colonial clapboard towns and picket fences, much like Earth's, except all of it is built at nine-tenths scale",
+  "naming": "Gaelic clan names with honorifics that change with the season"
  },
  {
   "id": 11,
   "name": "Palegate",
   "theme": "soviet",
   "epoch_year": 1922,
-  "divergence": "Electricity was declared a controlled substance and is sold by apothecaries"
+  "divergence": "Electricity was declared a controlled substance and is sold by apothecaries",
+  "galaxy": "Sable Drift",
+  "planet": "Ithoon",
+  "kind": "human",
+  "inhabitants": "humans with ash-pale skin that never scars and irises that shift color hourly",
+  "world_style": "Brutalist concrete blocks and municipal plazas, much like Earth's, except every roof curves gently upward",
+  "naming": "Norse patronymics with honorifics that change with the season"
  },
  {
   "id": 12,
   "name": "Opaline Reach",
   "theme": "cyberpunk",
   "epoch_year": 2244,
-  "divergence": "The postal service achieved faster-than-light delivery but only for junk mail"
+  "divergence": "The postal service achieved faster-than-light delivery but only for junk mail",
+  "galaxy": "Winnowing Cascade",
+  "planet": "Nevoon",
+  "kind": "human",
+  "inhabitants": "humans with sun-flushed crimson-undertoned skin and hair that grows in seasonal colors",
+  "world_style": "Gothic cathedrals and cobbled squares, much like Earth's, except every structure faces magnetic north",
+  "naming": "Japanese family-first names with occupational middle names"
  },
  {
   "id": 13,
   "name": "Sable Reach",
   "theme": "medieval",
   "epoch_year": 217,
-  "divergence": "The atomic bomb was never used in war, only in advertising"
+  "divergence": "The atomic bomb was never used in war, only in advertising",
+  "galaxy": "Whispering Wheel",
+  "planet": "Goraxis",
+  "kind": "human",
+  "inhabitants": "humans with olive skin that darkens with mood and a second translucent eyelid",
+  "world_style": "Japanese-style timber houses and paper screens, much like Earth's, except every roof curves gently upward",
+  "naming": "Puritan virtue names with one letter legally rotated each decade"
  },
  {
   "id": 14,
   "name": "The Peaceable Ruin",
   "theme": "atomic",
   "epoch_year": 1951,
-  "divergence": "Humanity outsourced its government to a customer-service chatbot"
+  "divergence": "Humanity outsourced its government to a customer-service chatbot",
+  "galaxy": "Winnowing Drift",
+  "planet": "Jovantha",
+  "kind": "human",
+  "inhabitants": "humans with warm umber skin patterned with birthmark spirals and a second translucent eyelid",
+  "world_style": "Mediterranean whitewashed villages and tiled courtyards, much like Earth's, except doorways stand eight feet tall",
+  "naming": "Gaelic clan names with one letter legally rotated each decade"
  },
  {
   "id": 15,
   "name": "The Crowned Machine",
   "theme": "vaporwave",
   "epoch_year": 2007,
-  "divergence": "Tesla beat Edison and now the power grid is free but emotionally unavailable"
+  "divergence": "Tesla beat Edison and now the power grid is free but emotionally unavailable",
+  "galaxy": "Gilded Veil",
+  "planet": "Nevymir",
+  "kind": "alien",
+  "inhabitants": "vaporous plasma-cored beings whose faces are temporary",
+  "world_style": "bioluminescent reef-arcologies, accreted over millennia at coral-slow patience",
+  "naming": "names are tidal drum rhythms, transliterated as long unbroken vowel runs like Aiouea"
  },
  {
   "id": 16,
   "name": "Chromehaven",
   "theme": "wasteland",
   "epoch_year": 4986,
-  "divergence": "The Ottoman Empire pivoted to hospitality and now operates history's largest hotel chain"
+  "divergence": "The Ottoman Empire pivoted to hospitality and now operates history's largest hotel chain",
+  "galaxy": "Verdant Cascade",
+  "planet": "Fenaxis",
+  "kind": "alien",
+  "inhabitants": "sentient crystalline lattices that communicate by refraction",
+  "world_style": "burrowed glassy tunnel warrens, folded out of hyperdense membranes",
+  "naming": "names are interference patterns between two voices, transliterated as apostrophe-heavy clusters like Xq'thal-Vren"
  },
  {
   "id": 17,
   "name": "The Waning Concordat",
   "theme": "victorian",
   "epoch_year": 1881,
-  "divergence": "The postal service achieved faster-than-light delivery but only for junk mail"
+  "divergence": "The postal service achieved faster-than-light delivery but only for junk mail",
+  "galaxy": "Cobalt Halo",
+  "planet": "Quoia",
+  "kind": "human",
+  "inhabitants": "humans with warm umber skin patterned with birthmark spirals and faint gill-lines along the jaw that serve no purpose",
+  "world_style": "colonial clapboard towns and picket fences, much like Earth's, except doorways stand eight feet tall",
+  "naming": "French aristocratic names with occupational middle names"
  },
  {
   "id": 18,
   "name": "The Quiet Divergence",
   "theme": "artdeco",
   "epoch_year": 1916,
-  "divergence": "Weather control was achieved in 1971 and immediately paywalled"
+  "divergence": "Weather control was achieved in 1971 and immediately paywalled",
+  "galaxy": "Thorned Reach",
+  "planet": "Sylion",
+  "kind": "alien",
+  "inhabitants": "amorphous gel-bodied beings that speak in scent plumes",
+  "world_style": "floating tessellated platforms, rearranged nightly by consensus",
+  "naming": "names are electrostatic crackle sequences, transliterated as tilde-marked glides like Nuul~Veth"
  },
  {
   "id": 19,
   "name": "The Borrowed Century",
   "theme": "soviet",
   "epoch_year": 1996,
-  "divergence": "The postal service achieved faster-than-light delivery but only for junk mail"
+  "divergence": "The postal service achieved faster-than-light delivery but only for junk mail",
+  "galaxy": "Meridian Halo",
+  "planet": "Fenune",
+  "kind": "human",
+  "inhabitants": "humans with ash-pale skin that never scars and twin-pupiled amber eyes",
+  "world_style": "Brutalist concrete blocks and municipal plazas, much like Earth's, except doorways stand eight feet tall",
+  "naming": "Victorian English names with middle names inherited from famous strangers"
  },
  {
   "id": 20,
   "name": "Sable Reach",
   "theme": "cyberpunk",
   "epoch_year": 2168,
-  "divergence": "Napoleon won at Waterloo and immediately opened a chain of themed restaurants"
+  "divergence": "Napoleon won at Waterloo and immediately opened a chain of themed restaurants",
+  "galaxy": "Gilded Reach",
+  "planet": "Morymir",
+  "kind": "human",
+  "inhabitants": "humans with ash-pale skin that never scars and faint gill-lines along the jaw that serve no purpose",
+  "world_style": "Art-Deco towers and gilded lobbies, much like Earth's, except every structure faces magnetic north",
+  "naming": "Gaelic clan names with the mother's trade appended as a surname"
  },
  {
   "id": 21,
   "name": "Ironquay",
   "theme": "medieval",
   "epoch_year": 398,
-  "divergence": "Earth was acquired by an intergalactic holding company as a tax write-off"
+  "divergence": "Earth was acquired by an intergalactic holding company as a tax write-off",
+  "galaxy": "Sovereign Cascade",
+  "planet": "Calia",
+  "kind": "human",
+  "inhabitants": "humans with faintly luminescent pale-blue skin and twin-pupiled amber eyes",
+  "world_style": "Victorian brick terraces and brass fittings, much like Earth's, except no building has right angles",
+  "naming": "Old Testament first names with a color prefix denoting birth district"
  },
  {
   "id": 22,
   "name": "Vantablack Sunday",
   "theme": "atomic",
   "epoch_year": 1972,
-  "divergence": "The moon landing was real but the Earth it broadcast to was staged"
+  "divergence": "The moon landing was real but the Earth it broadcast to was staged",
+  "galaxy": "Sovereign Pinwheel",
+  "planet": "Rhyia",
+  "kind": "human",
+  "inhabitants": "humans with slate-grey skin and perfectly symmetrical faces that unsettle visitors",
+  "world_style": "colonial clapboard towns and picket fences, much like Earth's, except everything is painted in shades of teal",
+  "naming": "Old Testament first names with every surname doubled for emphasis"
  },
  {
   "id": 23,
   "name": "Bellstrand",
   "theme": "vaporwave",
   "epoch_year": 2005,
-  "divergence": "The atomic bomb was never used in war, only in advertising"
+  "divergence": "The atomic bomb was never used in war, only in advertising",
+  "galaxy": "Cinder Wheel",
+  "planet": "Jovosca",
+  "kind": "human",
+  "inhabitants": "humans with olive skin that darkens with mood and irises that shift color hourly",
+  "world_style": "modern glass office towers and strip malls, much like Earth's, except no building has right angles",
+  "naming": "Puritan virtue names with occupational middle names"
  },
  {
   "id": 24,
   "name": "The Municipal Sublime",
   "theme": "wasteland",
   "epoch_year": 4277,
-  "divergence": "The Renaissance was postponed indefinitely pending funding review"
+  "divergence": "The Renaissance was postponed indefinitely pending funding review",
+  "galaxy": "Opaline Veil",
+  "planet": "Quoantha",
+  "kind": "alien",
+  "inhabitants": "colonial fungal intelligences that sing in ultrasound",
+  "world_style": "singing bone-white spires, held together by standing sound waves",
+  "naming": "names are clicking glottal cascades, transliterated as numeric-lettered codes like Ess-9-Vahl"
  },
  {
   "id": 25,
   "name": "Ashfall",
   "theme": "victorian",
   "epoch_year": 1848,
-  "divergence": "The sun was privatized and daylight became a premium tier"
+  "divergence": "The sun was privatized and daylight became a premium tier",
+  "galaxy": "Vesper Cascade",
+  "planet": "Aurantha",
+  "kind": "alien",
+  "inhabitants": "slow-drifting gasbag beings that see only heat",
+  "world_style": "amber-like resin domes, assembled by swarms of tool-insects",
+  "naming": "names are three-part hums, transliterated as long unbroken vowel runs like Aiouea"
  },
  {
   "id": 26,
   "name": "Emberline",
   "theme": "artdeco",
   "epoch_year": 1931,
-  "divergence": "Alchemy worked exactly once, and the committee is still deciding what to do about it"
+  "divergence": "Alchemy worked exactly once, and the committee is still deciding what to do about it",
+  "galaxy": "Gilded Drift",
+  "planet": "Breion",
+  "kind": "alien",
+  "inhabitants": "sentient crystalline lattices with six sensory stalks",
+  "world_style": "spiraling coral towers, accreted over millennia at coral-slow patience",
+  "naming": "names are electrostatic crackle sequences, transliterated as long unbroken vowel runs like Aiouea"
  },
  {
   "id": 27,
   "name": "Coldharbour",
   "theme": "soviet",
   "epoch_year": 1983,
-  "divergence": "The Renaissance was postponed indefinitely pending funding review"
+  "divergence": "The Renaissance was postponed indefinitely pending funding review",
+  "galaxy": "Pale Wheel",
+  "planet": "Ithantha",
+  "kind": "alien",
+  "inhabitants": "many-limbed shadow-dark beings that share one distributed mind per city",
+  "world_style": "floating tessellated platforms, grown rather than built",
+  "naming": "names are whistled contour glyphs, transliterated as all-capital sigils like VRRK and THAAX"
  },
  {
   "id": 28,
   "name": "Glasswing",
   "theme": "cyberpunk",
   "epoch_year": 2338,
-  "divergence": "The Panama Canal was dug one inch too shallow and nobody will admit it"
+  "divergence": "The Panama Canal was dug one inch too shallow and nobody will admit it",
+  "galaxy": "Whispering Drift",
+  "planet": "Sylaxis",
+  "kind": "human",
+  "inhabitants": "humans with sun-flushed crimson-undertoned skin and a second translucent eyelid",
+  "world_style": "Japanese-style timber houses and paper screens, much like Earth's, except each building hums faintly at dusk",
+  "naming": "Old Testament first names with one letter legally rotated each decade"
  },
  {
   "id": 29,
   "name": "The Last Intermission",
   "theme": "medieval",
   "epoch_year": 258,
-  "divergence": "Dreams became taxable and the audits happen while you sleep"
+  "divergence": "Dreams became taxable and the audits happen while you sleep",
+  "galaxy": "Marrow Expanse",
+  "planet": "Jovia",
+  "kind": "human",
+  "inhabitants": "humans with copper-tinted skin and a second translucent eyelid",
+  "world_style": "Victorian brick terraces and brass fittings, much like Earth's, except chimneys outnumber occupants two to one",
+  "naming": "Japanese family-first names with honorifics that change with the season"
  },
  {
   "id": 30,
   "name": "Lumen's Folly",
   "theme": "atomic",
   "epoch_year": 1962,
-  "divergence": "The Panama Canal was dug one inch too shallow and nobody will admit it"
+  "divergence": "The Panama Canal was dug one inch too shallow and nobody will admit it",
+  "galaxy": "Cobalt Crown",
+  "planet": "Gorune",
+  "kind": "alien",
+  "inhabitants": "slow-drifting gasbag beings that sing in ultrasound",
+  "world_style": "woven silk-strand cities, grown rather than built",
+  "naming": "names are pressure-wave bursts, transliterated as long unbroken vowel runs like Aiouea"
  },
  {
   "id": 31,
   "name": "The Bright Recession",
   "theme": "vaporwave",
   "epoch_year": 1996,
-  "divergence": "Prohibition never ended, so the entire economy runs on soda fountains"
+  "divergence": "Prohibition never ended, so the entire economy runs on soda fountains",
+  "galaxy": "Cinder Cascade",
+  "planet": "Fenion",
+  "kind": "alien",
+  "inhabitants": "colonial fungal intelligences with a ring of unblinking eyes",
+  "world_style": "floating tessellated platforms, assembled by swarms of tool-insects",
+  "naming": "names are bioluminescent pulse-patterns, transliterated as hyphen chains like Zol-ka-mret-su"
  },
  {
   "id": 32,
   "name": "Saltcrown",
   "theme": "wasteland",
   "epoch_year": 2263,
-  "divergence": "Electricity was declared a controlled substance and is sold by apothecaries"
+  "divergence": "Electricity was declared a controlled substance and is sold by apothecaries",
+  "galaxy": "Cobalt Spiral",
+  "planet": "Druaxis",
+  "kind": "alien",
+  "inhabitants": "slow-drifting gasbag beings whose outer layers molt into a new personality each year",
+  "world_style": "bioluminescent reef-arcologies, condensed from the planet's atmosphere",
+  "naming": "names are pressure-wave bursts, transliterated as numeric-lettered codes like Ess-9-Vahl"
  },
  {
   "id": 33,
   "name": "Smokestack Eden",
   "theme": "victorian",
   "epoch_year": 1834,
-  "divergence": "Socrates monetized his questions and founded the first consulting empire"
+  "divergence": "Socrates monetized his questions and founded the first consulting empire",
+  "galaxy": "Halcyon Pinwheel",
+  "planet": "Ithaxis",
+  "kind": "human",
+  "inhabitants": "humans with sun-flushed crimson-undertoned skin and irises that shift color hourly",
+  "world_style": "mid-century suburban ranch houses and chrome appliances, much like Earth's, except every surface is riveted copper",
+  "naming": "Spanish double surnames with the mother's trade appended as a surname"
  },
  {
   "id": 34,
   "name": "The Painted Siren",
   "theme": "artdeco",
   "epoch_year": 1932,
-  "divergence": "Antarctica was colonized first and everyone pretends that was the plan"
+  "divergence": "Antarctica was colonized first and everyone pretends that was the plan",
+  "galaxy": "Whispering Crown",
+  "planet": "Ithara",
+  "kind": "alien",
+  "inhabitants": "colonial fungal intelligences that see only heat",
+  "world_style": "spiraling coral towers, assembled by swarms of tool-insects",
+  "naming": "names are crystalline resonance chords, transliterated as double-consonant stacks like Kkev-Ttir"
  },
  {
   "id": 35,
   "name": "Saltcrown",
   "theme": "soviet",
   "epoch_year": 1934,
-  "divergence": "The Renaissance was postponed indefinitely pending funding review"
+  "divergence": "The Renaissance was postponed indefinitely pending funding review",
+  "galaxy": "Lantern Drift",
+  "planet": "Halune",
+  "kind": "human",
+  "inhabitants": "humans with faintly luminescent pale-blue skin and irises that shift color hourly",
+  "world_style": "mid-century suburban ranch houses and chrome appliances, much like Earth's, except windows are always circular",
+  "naming": "Roman tria nomina with occupational middle names"
  },
  {
   "id": 36,
   "name": "The Paper Armistice",
   "theme": "cyberpunk",
   "epoch_year": 2355,
-  "divergence": "The Renaissance was postponed indefinitely pending funding review"
+  "divergence": "The Renaissance was postponed indefinitely pending funding review",
+  "galaxy": "Pale Crown",
+  "planet": "Sylia",
+  "kind": "human",
+  "inhabitants": "humans with deep bronze skin dusted with freckle-like constellations and perfectly symmetrical faces that unsettle visitors",
+  "world_style": "colonial clapboard towns and picket fences, much like Earth's, except every roof curves gently upward",
+  "naming": "Slavic names with mandatory numeric suffixes"
  },
  {
   "id": 37,
   "name": "The Ninth Ledger",
   "theme": "medieval",
   "epoch_year": 883,
-  "divergence": "The Wright brothers unionized the sky before anyone else could fly in it"
+  "divergence": "The Wright brothers unionized the sky before anyone else could fly in it",
+  "galaxy": "Pale Expanse",
+  "planet": "Halymir",
+  "kind": "human",
+  "inhabitants": "humans with olive skin that darkens with mood and twin-pupiled amber eyes",
+  "world_style": "modern glass office towers and strip malls, much like Earth's, except each building hums faintly at dusk",
+  "naming": "Norse patronymics with a color prefix denoting birth district"
  },
  {
   "id": 38,
   "name": "The Tin Parallel",
   "theme": "atomic",
   "epoch_year": 1950,
-  "divergence": "Socrates monetized his questions and founded the first consulting empire"
+  "divergence": "Socrates monetized his questions and founded the first consulting empire",
+  "galaxy": "Whispering Veil",
+  "planet": "Moreth",
+  "kind": "alien",
+  "inhabitants": "colonial fungal intelligences that navigate by tasting magnetic fields",
+  "world_style": "woven silk-strand cities, phased half in and half out of ordinary matter",
+  "naming": "names are interference patterns between two voices, transliterated as clipped monosyllables like K't, Vem, and Shh"
  },
  {
   "id": 39,
   "name": "Bellstrand",
   "theme": "vaporwave",
   "epoch_year": 1994,
-  "divergence": "The Renaissance was postponed indefinitely pending funding review"
+  "divergence": "The Renaissance was postponed indefinitely pending funding review",
+  "galaxy": "Vesper Veil",
+  "planet": "Lumia",
+  "kind": "alien",
+  "inhabitants": "chitin-plated hexapodal beings with a ring of unblinking eyes",
+  "world_style": "shifting sand-sculpture halls, rearranged nightly by consensus",
+  "naming": "names are pressure-wave bursts, transliterated as colon-spliced pairs like Ir:Vess"
  },
  {
   "id": 40,
   "name": "Brasslight",
   "theme": "wasteland",
   "epoch_year": 4782,
-  "divergence": "The Renaissance was postponed indefinitely pending funding review"
+  "divergence": "The Renaissance was postponed indefinitely pending funding review",
+  "galaxy": "Sable Cascade",
+  "planet": "Ithymir",
+  "kind": "human",
+  "inhabitants": "humans with olive skin that darkens with mood and hair that grows in seasonal colors",
+  "world_style": "modern glass office towers and strip malls, much like Earth's, except doorways stand eight feet tall",
+  "naming": "Roman tria nomina with every surname doubled for emphasis"
  },
  {
   "id": 41,
   "name": "Duskmantle",
   "theme": "victorian",
   "epoch_year": 1835,
-  "divergence": "Rail barons built tracks to the afterlife and commuters complain about delays"
+  "divergence": "Rail barons built tracks to the afterlife and commuters complain about delays",
+  "galaxy": "Opaline Cascade",
+  "planet": "Eskia",
+  "kind": "alien",
+  "inhabitants": "slow-drifting gasbag beings that communicate by refraction",
+  "world_style": "singing bone-white spires, carved by directed lightning",
+  "naming": "names are bioluminescent pulse-patterns, transliterated as apostrophe-heavy clusters like Xq'thal-Vren"
  },
  {
   "id": 42,
   "name": "The Hollow Calendar",
   "theme": "artdeco",
   "epoch_year": 1944,
-  "divergence": "The internet was invented by postal workers in 1923"
+  "divergence": "The internet was invented by postal workers in 1923",
+  "galaxy": "Halcyon Veil",
+  "planet": "Fenantha",
+  "kind": "alien",
+  "inhabitants": "amorphous gel-bodied beings with six sensory stalks",
+  "world_style": "shifting sand-sculpture halls, folded out of hyperdense membranes",
+  "naming": "names are bioluminescent pulse-patterns, transliterated as clipped monosyllables like K't, Vem, and Shh"
  },
  {
   "id": 43,
   "name": "Static Bloom",
   "theme": "soviet",
   "epoch_year": 1984,
-  "divergence": "Tesla beat Edison and now the power grid is free but emotionally unavailable"
+  "divergence": "Tesla beat Edison and now the power grid is free but emotionally unavailable",
+  "galaxy": "Vesper Wheel",
+  "planet": "Ossaxis",
+  "kind": "alien",
+  "inhabitants": "sentient crystalline lattices that share one distributed mind per city",
+  "world_style": "inverted hanging pyramids, folded out of hyperdense membranes",
+  "naming": "names are clicking glottal cascades, transliterated as all-capital sigils like VRRK and THAAX"
  },
  {
   "id": 44,
   "name": "The Hollow Calendar",
   "theme": "cyberpunk",
   "epoch_year": 2391,
-  "divergence": "The atomic bomb was never used in war, only in advertising"
+  "divergence": "The atomic bomb was never used in war, only in advertising",
+  "galaxy": "Hollow Veil",
+  "planet": "Nevia",
+  "kind": "alien",
+  "inhabitants": "translucent radially-symmetric beings that navigate by tasting magnetic fields",
+  "world_style": "woven silk-strand cities, carved by directed lightning",
+  "naming": "names are interference patterns between two voices, transliterated as tilde-marked glides like Nuul~Veth"
  },
  {
   "id": 45,
   "name": "The Ninth Ledger",
   "theme": "medieval",
   "epoch_year": 439,
-  "divergence": "Every mirror shows next Tuesday, and fashion has never recovered"
+  "divergence": "Every mirror shows next Tuesday, and fashion has never recovered",
+  "galaxy": "Cobalt Drift",
+  "planet": "Kreion",
+  "kind": "alien",
+  "inhabitants": "slow-drifting gasbag beings with a ring of unblinking eyes",
+  "world_style": "singing bone-white spires, rearranged nightly by consensus",
+  "naming": "names are clicking glottal cascades, transliterated as long unbroken vowel runs like Aiouea"
  },
  {
   "id": 46,
   "name": "The Municipal Sublime",
   "theme": "atomic",
   "epoch_year": 1963,
-  "divergence": "Corporations replaced nation-states and citizenship now comes with a loyalty program"
+  "divergence": "Corporations replaced nation-states and citizenship now comes with a loyalty program",
+  "galaxy": "Umbral Reach",
+  "planet": "Rhyion",
+  "kind": "alien",
+  "inhabitants": "sentient crystalline lattices whose outer layers molt into a new personality each year",
+  "world_style": "bioluminescent reef-arcologies, folded out of hyperdense membranes",
+  "naming": "names are bioluminescent pulse-patterns, transliterated as double-consonant stacks like Kkev-Ttir"
  },
  {
   "id": 47,
   "name": "Brasslight",
   "theme": "vaporwave",
   "epoch_year": 1981,
-  "divergence": "Time travel was invented and instantly regulated into uselessness"
+  "divergence": "Time travel was invented and instantly regulated into uselessness",
+  "galaxy": "Hollow Wheel",
+  "planet": "Breia",
+  "kind": "human",
+  "inhabitants": "humans with porcelain-white skin traced with visible silver veins and pupil-less silver eyes",
+  "world_style": "Japanese-style timber houses and paper screens, much like Earth's, except no building has right angles",
+  "naming": "Spanish double surnames with surnames alphabetized by decree"
  },
  {
   "id": 48,
   "name": "The Tin Parallel",
   "theme": "wasteland",
   "epoch_year": 4914,
-  "divergence": "A plague wiped out 90% of humanity and the remaining 10% still can't get a plumber"
+  "divergence": "A plague wiped out 90% of humanity and the remaining 10% still can't get a plumber",
+  "galaxy": "Thorned Wheel",
+  "planet": "Eskaxis",
+  "kind": "alien",
+  "inhabitants": "slow-drifting gasbag beings that navigate by tasting magnetic fields",
+  "world_style": "burrowed glassy tunnel warrens, secreted by the inhabitants themselves",
+  "naming": "names are interference patterns between two voices, transliterated as colon-spliced pairs like Ir:Vess"
  },
  {
   "id": 49,
   "name": "Winterglass",
   "theme": "victorian",
   "epoch_year": 1857,
-  "divergence": "The internet was invented by postal workers in 1923"
+  "divergence": "The internet was invented by postal workers in 1923",
+  "galaxy": "Marrow Pinwheel",
+  "planet": "Neveth",
+  "kind": "human",
+  "inhabitants": "humans with faintly luminescent pale-blue skin and voices pitched a full octave lower than ours",
+  "world_style": "medieval half-timbered market towns, much like Earth's, except all of it is built at nine-tenths scale",
+  "naming": "Japanese family-first names with the mother's trade appended as a surname"
  },
  {
   "id": 50,
   "name": "Sable Reach",
   "theme": "artdeco",
   "epoch_year": 1940,
-  "divergence": "Rail barons built tracks to the afterlife and commuters complain about delays"
+  "divergence": "Rail barons built tracks to the afterlife and commuters complain about delays",
+  "galaxy": "Pale Cascade",
+  "planet": "Goroon",
+  "kind": "alien",
+  "inhabitants": "segmented metallic-shelled beings whose outer layers molt into a new personality each year",
+  "world_style": "inverted hanging pyramids, phased half in and half out of ordinary matter",
+  "naming": "names are pressure-wave bursts, transliterated as hyphen chains like Zol-ka-mret-su"
  },
  {
   "id": 51,
   "name": "Neon Tabernacle",
   "theme": "soviet",
   "epoch_year": 1976,
-  "divergence": "The moon landing was real but the Earth it broadcast to was staged"
+  "divergence": "The moon landing was real but the Earth it broadcast to was staged",
+  "galaxy": "Pale Pinwheel",
+  "planet": "Joveth",
+  "kind": "human",
+  "inhabitants": "humans with moss-green-tinged skin and faint gill-lines along the jaw that serve no purpose",
+  "world_style": "Victorian brick terraces and brass fittings, much like Earth's, except windows are always circular",
+  "naming": "Roman tria nomina with middle names inherited from famous strangers"
  },
  {
   "id": 52,
   "name": "Coldharbour",
   "theme": "cyberpunk",
   "epoch_year": 2198,
-  "divergence": "Gunpowder was never discovered, so wars are settled by competitive committee"
+  "divergence": "Gunpowder was never discovered, so wars are settled by competitive committee",
+  "galaxy": "Cinder Halo",
+  "planet": "Sylantha",
+  "kind": "human",
+  "inhabitants": "humans with moss-green-tinged skin and elongated six-jointed fingers",
+  "world_style": "Brutalist concrete blocks and municipal plazas, much like Earth's, except no building has right angles",
+  "naming": "Puritan virtue names with a color prefix denoting birth district"
  },
  {
   "id": 53,
   "name": "The Verdigris Crown",
   "theme": "medieval",
   "epoch_year": 1417,
-  "divergence": "Rail barons built tracks to the afterlife and commuters complain about delays"
+  "divergence": "Rail barons built tracks to the afterlife and commuters complain about delays",
+  "galaxy": "Sovereign Expanse",
+  "planet": "Syleth",
+  "kind": "alien",
+  "inhabitants": "chitin-plated hexapodal beings whose outer layers molt into a new personality each year",
+  "world_style": "bioluminescent reef-arcologies, grown rather than built",
+  "naming": "names are electrostatic crackle sequences, transliterated as colon-spliced pairs like Ir:Vess"
  },
  {
   "id": 54,
   "name": "The Peaceable Ruin",
   "theme": "atomic",
   "epoch_year": 1974,
-  "divergence": "The calendar was privatized and weekends require a subscription"
+  "divergence": "The calendar was privatized and weekends require a subscription",
+  "galaxy": "Ember Spiral",
+  "planet": "Quooon",
+  "kind": "human",
+  "inhabitants": "humans with deep bronze skin dusted with freckle-like constellations and elongated six-jointed fingers",
+  "world_style": "modern glass office towers and strip malls, much like Earth's, except windows are always circular",
+  "naming": "Japanese family-first names with mandatory numeric suffixes"
  },
  {
   "id": 55,
   "name": "Cinderwake",
   "theme": "vaporwave",
   "epoch_year": 2002,
-  "divergence": "Napoleon won at Waterloo and immediately opened a chain of themed restaurants"
+  "divergence": "Napoleon won at Waterloo and immediately opened a chain of themed restaurants",
+  "galaxy": "Thorned Pinwheel",
+  "planet": "Haloon",
+  "kind": "human",
+  "inhabitants": "humans with porcelain-white skin traced with visible silver veins and perfectly symmetrical faces that unsettle visitors",
+  "world_style": "mid-century suburban ranch houses and chrome appliances, much like Earth's, except no building has right angles",
+  "naming": "Norse patronymics with occupational middle names"
  },
  {
   "id": 56,
   "name": "The Long Meridian",
   "theme": "wasteland",
   "epoch_year": 4308,
-  "divergence": "The internet was invented by postal workers in 1923"
+  "divergence": "The internet was invented by postal workers in 1923",
+  "galaxy": "Ashen Drift",
+  "planet": "Auroon",
+  "kind": "human",
+  "inhabitants": "humans with slate-grey skin and hair like spun glass",
+  "world_style": "Brutalist concrete blocks and municipal plazas, much like Earth's, except all of it is built at nine-tenths scale",
+  "naming": "Spanish double surnames with every surname doubled for emphasis"
  },
  {
   "id": 57,
   "name": "The Municipal Sublime",
   "theme": "victorian",
   "epoch_year": 1907,
-  "divergence": "Volcanoes were rezoned as residential and the market is heating up"
+  "divergence": "Volcanoes were rezoned as residential and the market is heating up",
+  "galaxy": "Gilded Wheel",
+  "planet": "Ithosca",
+  "kind": "alien",
+  "inhabitants": "many-limbed shadow-dark beings with a ring of unblinking eyes",
+  "world_style": "magnetically suspended stone rings, held together by standing sound waves",
+  "naming": "names are scent signatures, transliterated as long unbroken vowel runs like Aiouea"
  },
  {
   "id": 58,
   "name": "The Waning Concordat",
   "theme": "artdeco",
   "epoch_year": 1919,
-  "divergence": "The Library of Alexandria never burned and now charges a monthly subscription"
+  "divergence": "The Library of Alexandria never burned and now charges a monthly subscription",
+  "galaxy": "Whispering Reach",
+  "planet": "Eskymir",
+  "kind": "human",
+  "inhabitants": "humans with sun-flushed crimson-undertoned skin and elongated six-jointed fingers",
+  "world_style": "Mediterranean whitewashed villages and tiled courtyards, much like Earth's, except all of it is built at nine-tenths scale",
+  "naming": "French aristocratic names with a weather word added at birth"
  },
  {
   "id": 59,
   "name": "The Ninth Ledger",
   "theme": "soviet",
   "epoch_year": 1922,
-  "divergence": "The first computer virus was welcomed as a pet and bred responsibly"
+  "divergence": "The first computer virus was welcomed as a pet and bred responsibly",
+  "galaxy": "Thorned Drift",
+  "planet": "Halara",
+  "kind": "alien",
+  "inhabitants": "translucent radially-symmetric beings that communicate by refraction",
+  "world_style": "inverted hanging pyramids, grown rather than built",
+  "naming": "names are tidal drum rhythms, transliterated as colon-spliced pairs like Ir:Vess"
  },
  {
   "id": 60,
   "name": "Vantablack Sunday",
   "theme": "cyberpunk",
   "epoch_year": 2320,
-  "divergence": "A plague wiped out 90% of humanity and the remaining 10% still can't get a plumber"
+  "divergence": "A plague wiped out 90% of humanity and the remaining 10% still can't get a plumber",
+  "galaxy": "Hollow Drift",
+  "planet": "Eskantha",
+  "kind": "human",
+  "inhabitants": "humans with sun-flushed crimson-undertoned skin and perfectly symmetrical faces that unsettle visitors",
+  "world_style": "Victorian brick terraces and brass fittings, much like Earth's, except everything is painted in shades of teal",
+  "naming": "Victorian English names with mandatory numeric suffixes"
  },
  {
   "id": 61,
   "name": "The Amber Protocol",
   "theme": "medieval",
   "epoch_year": 680,
-  "divergence": "The sun was privatized and daylight became a premium tier"
+  "divergence": "The sun was privatized and daylight became a premium tier",
+  "galaxy": "Halcyon Halo",
+  "planet": "Jovion",
+  "kind": "human",
+  "inhabitants": "humans with copper-tinted skin and perfectly symmetrical faces that unsettle visitors",
+  "world_style": "Victorian brick terraces and brass fittings, much like Earth's, except every surface is riveted copper",
+  "naming": "Old Testament first names with mandatory numeric suffixes"
  },
  {
   "id": 62,
   "name": "Prime",
   "theme": "atomic",
   "epoch_year": 1957,
-  "divergence": "History unfolded almost exactly as recorded — the archives merely disagree about the details"
+  "divergence": "History unfolded almost exactly as recorded — the archives merely disagree about the details",
+  "galaxy": "Milky Way",
+  "planet": "Earth",
+  "kind": "human",
+  "inhabitants": "ordinary humans, indistinguishable from our own",
+  "world_style": "buildings and artifacts exactly as found on 21st-century Earth",
+  "naming": "ordinary contemporary Earth names"
  },
  {
   "id": 63,
   "name": "The Municipal Sublime",
   "theme": "vaporwave",
   "epoch_year": 2006,
-  "divergence": "Humanity outsourced its government to a customer-service chatbot"
+  "divergence": "Humanity outsourced its government to a customer-service chatbot",
+  "galaxy": "Cobalt Expanse",
+  "planet": "Quoosca",
+  "kind": "human",
+  "inhabitants": "humans with deep bronze skin dusted with freckle-like constellations and hair that grows in seasonal colors",
+  "world_style": "Brutalist concrete blocks and municipal plazas, much like Earth's, except every structure faces magnetic north",
+  "naming": "Victorian English names with every surname doubled for emphasis"
  },
  {
   "id": 64,
   "name": "Coldharbour",
   "theme": "wasteland",
   "epoch_year": 4319,
-  "divergence": "The Library of Alexandria never burned and now charges a monthly subscription"
+  "divergence": "The Library of Alexandria never burned and now charges a monthly subscription",
+  "galaxy": "Sovereign Reach",
+  "planet": "Lumeth",
+  "kind": "alien",
+  "inhabitants": "vaporous plasma-cored beings that navigate by tasting magnetic fields",
+  "world_style": "bioluminescent reef-arcologies, held together by standing sound waves",
+  "naming": "names are three-part hums, transliterated as tilde-marked glides like Nuul~Veth"
  },
  {
   "id": 65,
   "name": "The Municipal Sublime",
   "theme": "victorian",
   "epoch_year": 1895,
-  "divergence": "The dinosaurs were wiped out halfway through their own space program"
+  "divergence": "The dinosaurs were wiped out halfway through their own space program",
+  "galaxy": "Winnowing Pinwheel",
+  "planet": "Ossoon",
+  "kind": "alien",
+  "inhabitants": "mirror-skinned tripodal beings with six sensory stalks",
+  "world_style": "burrowed glassy tunnel warrens, rearranged nightly by consensus",
+  "naming": "names are whistled contour glyphs, transliterated as numeric-lettered codes like Ess-9-Vahl"
  },
  {
   "id": 66,
   "name": "Neon Tabernacle",
   "theme": "artdeco",
   "epoch_year": 1923,
-  "divergence": "Billionaires colonized the Moon and immediately complained about the neighborhood"
+  "divergence": "Billionaires colonized the Moon and immediately complained about the neighborhood",
+  "galaxy": "Lantern Crown",
+  "planet": "Moraxis",
+  "kind": "alien",
+  "inhabitants": "colonial fungal intelligences that speak in scent plumes",
+  "world_style": "singing bone-white spires, phased half in and half out of ordinary matter",
+  "naming": "names are clicking glottal cascades, transliterated as colon-spliced pairs like Ir:Vess"
  },
  {
   "id": 67,
   "name": "The Paper Armistice",
   "theme": "soviet",
   "epoch_year": 1974,
-  "divergence": "Space travel began in 1950 and was immediately ruined by billboards"
+  "divergence": "Space travel began in 1950 and was immediately ruined by billboards",
+  "galaxy": "Lantern Expanse",
+  "planet": "Kreosca",
+  "kind": "alien",
+  "inhabitants": "mirror-skinned tripodal beings that communicate by refraction",
+  "world_style": "burrowed glassy tunnel warrens, grown rather than built",
+  "naming": "names are tidal drum rhythms, transliterated as mirrored palindromes like Otulluto"
  },
  {
   "id": 68,
   "name": "Static Bloom",
   "theme": "cyberpunk",
   "epoch_year": 2156,
-  "divergence": "Dreams became taxable and the audits happen while you sleep"
+  "divergence": "Dreams became taxable and the audits happen while you sleep",
+  "galaxy": "Sable Reach",
+  "planet": "Itheth",
+  "kind": "alien",
+  "inhabitants": "segmented metallic-shelled beings whose faces are temporary",
+  "world_style": "inverted hanging pyramids, rearranged nightly by consensus",
+  "naming": "names are tidal drum rhythms, transliterated as clipped monosyllables like K't, Vem, and Shh"
  },
  {
   "id": 69,
   "name": "The Verdigris Crown",
   "theme": "medieval",
   "epoch_year": 1014,
-  "divergence": "The moon landing was real but the Earth it broadcast to was staged"
+  "divergence": "The moon landing was real but the Earth it broadcast to was staged",
+  "galaxy": "Thorned Cascade",
+  "planet": "Druosca",
+  "kind": "human",
+  "inhabitants": "humans with warm umber skin patterned with birthmark spirals and twin-pupiled amber eyes",
+  "world_style": "Japanese-style timber houses and paper screens, much like Earth's, except doorways stand eight feet tall",
+  "naming": "Old Testament first names with the mother's trade appended as a surname"
  },
  {
   "id": 70,
   "name": "Nova Cathedra",
   "theme": "atomic",
   "epoch_year": 1975,
-  "divergence": "Every mirror shows next Tuesday, and fashion has never recovered"
+  "divergence": "Every mirror shows next Tuesday, and fashion has never recovered",
+  "galaxy": "Umbral Cascade",
+  "planet": "Calune",
+  "kind": "alien",
+  "inhabitants": "many-limbed shadow-dark beings with six sensory stalks",
+  "world_style": "amber-like resin domes, accreted over millennia at coral-slow patience",
+  "naming": "names are electrostatic crackle sequences, transliterated as mirrored palindromes like Otulluto"
  },
  {
   "id": 71,
   "name": "Nova Cathedra",
   "theme": "vaporwave",
   "epoch_year": 2001,
-  "divergence": "Women gained the vote in 1848 and immediately voted for functioning plumbing"
+  "divergence": "Women gained the vote in 1848 and immediately voted for functioning plumbing",
+  "galaxy": "Gilded Cascade",
+  "planet": "Goreth",
+  "kind": "alien",
+  "inhabitants": "segmented metallic-shelled beings that see only heat",
+  "world_style": "burrowed glassy tunnel warrens, carved by directed lightning",
+  "naming": "names are tidal drum rhythms, transliterated as apostrophe-heavy clusters like Xq'thal-Vren"
  },
  {
   "id": 72,
   "name": "The Amber Protocol",
   "theme": "wasteland",
   "epoch_year": 3049,
-  "divergence": "Socrates monetized his questions and founded the first consulting empire"
+  "divergence": "Socrates monetized his questions and founded the first consulting empire",
+  "galaxy": "Halcyon Wheel",
+  "planet": "Rhyymir",
+  "kind": "human",
+  "inhabitants": "humans with porcelain-white skin traced with visible silver veins and voices pitched a full octave lower than ours",
+  "world_style": "Japanese-style timber houses and paper screens, much like Earth's, except chimneys outnumber occupants two to one",
+  "naming": "Puritan virtue names with the mother's trade appended as a surname"
  },
  {
   "id": 73,
   "name": "Duskmantle",
   "theme": "victorian",
   "epoch_year": 1836,
-  "divergence": "The postal service achieved faster-than-light delivery but only for junk mail"
+  "divergence": "The postal service achieved faster-than-light delivery but only for junk mail",
+  "galaxy": "Sable Halo",
+  "planet": "Syloon",
+  "kind": "alien",
+  "inhabitants": "colonial fungal intelligences that share one distributed mind per city",
+  "world_style": "shifting sand-sculpture halls, accreted over millennia at coral-slow patience",
+  "naming": "names are interference patterns between two voices, transliterated as mirrored palindromes like Otulluto"
  },
  {
   "id": 74,
   "name": "Ashfall",
   "theme": "artdeco",
   "epoch_year": 1931,
-  "divergence": "Gravity weakened by four percent and the lawsuits are ongoing"
+  "divergence": "Gravity weakened by four percent and the lawsuits are ongoing",
+  "galaxy": "Lantern Cascade",
+  "planet": "Ossion",
+  "kind": "human",
+  "inhabitants": "humans with copper-tinted skin and pupil-less silver eyes",
+  "world_style": "Art-Deco towers and gilded lobbies, much like Earth's, except everything is painted in shades of teal",
+  "naming": "Spanish double surnames with occupational middle names"
  },
  {
   "id": 75,
   "name": "The Waning Concordat",
   "theme": "soviet",
   "epoch_year": 1947,
-  "divergence": "Gunpowder was never discovered, so wars are settled by competitive committee"
+  "divergence": "Gunpowder was never discovered, so wars are settled by competitive committee",
+  "galaxy": "Cobalt Cascade",
+  "planet": "Kreantha",
+  "kind": "human",
+  "inhabitants": "humans with sun-flushed crimson-undertoned skin and twin-pupiled amber eyes",
+  "world_style": "colonial clapboard towns and picket fences, much like Earth's, except chimneys outnumber occupants two to one",
+  "naming": "Norse patronymics with mandatory numeric suffixes"
  },
  {
   "id": 76,
   "name": "The Crowned Machine",
   "theme": "cyberpunk",
   "epoch_year": 2118,
-  "divergence": "Prohibition never ended, so the entire economy runs on soda fountains"
+  "divergence": "Prohibition never ended, so the entire economy runs on soda fountains",
+  "galaxy": "Gilded Spiral",
+  "planet": "Lumoon",
+  "kind": "alien",
+  "inhabitants": "amorphous gel-bodied beings that communicate by refraction",
+  "world_style": "bioluminescent reef-arcologies, secreted by the inhabitants themselves",
+  "naming": "names are bioluminescent pulse-patterns, transliterated as numeric-lettered codes like Ess-9-Vahl"
  },
  {
   "id": 77,
   "name": "Lumen's Folly",
   "theme": "medieval",
   "epoch_year": 477,
-  "divergence": "Gunpowder was never discovered, so wars are settled by competitive committee"
+  "divergence": "Gunpowder was never discovered, so wars are settled by competitive committee",
+  "galaxy": "Sable Expanse",
+  "planet": "Halia",
+  "kind": "human",
+  "inhabitants": "humans with moss-green-tinged skin and hair that grows in seasonal colors",
+  "world_style": "Japanese-style timber houses and paper screens, much like Earth's, except every surface is riveted copper",
+  "naming": "Old Testament first names with surnames alphabetized by decree"
  },
  {
   "id": 78,
   "name": "Harrowgate",
   "theme": "atomic",
   "epoch_year": 1948,
-  "divergence": "Rome never fell; it pivoted to a services economy"
+  "divergence": "Rome never fell; it pivoted to a services economy",
+  "galaxy": "Marrow Reach",
+  "planet": "Goria",
+  "kind": "alien",
+  "inhabitants": "vaporous plasma-cored beings that speak in scent plumes",
+  "world_style": "amber-like resin domes, grown rather than built",
+  "naming": "names are crystalline resonance chords, transliterated as tilde-marked glides like Nuul~Veth"
  },
  {
   "id": 79,
   "name": "Rustwater",
   "theme": "vaporwave",
   "epoch_year": 1982,
-  "divergence": "Vikings discovered America and franchised it"
+  "divergence": "Vikings discovered America and franchised it",
+  "galaxy": "Ashen Wheel",
+  "planet": "Ithune",
+  "kind": "alien",
+  "inhabitants": "segmented metallic-shelled beings with six sensory stalks",
+  "world_style": "floating tessellated platforms, phased half in and half out of ordinary matter",
+  "naming": "names are whistled contour glyphs, transliterated as mirrored palindromes like Otulluto"
  },
  {
   "id": 80,
   "name": "Rustwater",
   "theme": "wasteland",
   "epoch_year": 3617,
-  "divergence": "The wheel was patented, and the licensing fees never stopped"
+  "divergence": "The wheel was patented, and the licensing fees never stopped",
+  "galaxy": "Meridian Veil",
+  "planet": "Kreara",
+  "kind": "human",
+  "inhabitants": "humans with deep bronze skin dusted with freckle-like constellations and hair like spun glass",
+  "world_style": "Victorian brick terraces and brass fittings, much like Earth's, except each building hums faintly at dusk",
+  "naming": "Japanese family-first names with surnames alphabetized by decree"
  },
  {
   "id": 81,
   "name": "The Municipal Sublime",
   "theme": "victorian",
   "epoch_year": 1899,
-  "divergence": "Libraries militarized during the format wars and never fully demobilized"
+  "divergence": "Libraries militarized during the format wars and never fully demobilized",
+  "galaxy": "Pale Veil",
+  "planet": "Breaxis",
+  "kind": "alien",
+  "inhabitants": "mirror-skinned tripodal beings whose outer layers molt into a new personality each year",
+  "world_style": "magnetically suspended stone rings, condensed from the planet's atmosphere",
+  "naming": "names are clicking glottal cascades, transliterated as apostrophe-heavy clusters like Xq'thal-Vren"
  },
  {
   "id": 82,
   "name": "Halcyon Drift",
   "theme": "artdeco",
   "epoch_year": 1946,
-  "divergence": "Volcanoes were rezoned as residential and the market is heating up"
+  "divergence": "Volcanoes were rezoned as residential and the market is heating up",
+  "galaxy": "Cinder Reach",
+  "planet": "Aurymir",
+  "kind": "human",
+  "inhabitants": "humans with warm umber skin patterned with birthmark spirals and voices pitched a full octave lower than ours",
+  "world_style": "Gothic cathedrals and cobbled squares, much like Earth's, except no building has right angles",
+  "naming": "Victorian English names with one letter legally rotated each decade"
  },
  {
   "id": 83,
   "name": "The Paper Armistice",
   "theme": "soviet",
   "epoch_year": 1930,
-  "divergence": "Gravity weakened by four percent and the lawsuits are ongoing"
+  "divergence": "Gravity weakened by four percent and the lawsuits are ongoing",
+  "galaxy": "Umbral Expanse",
+  "planet": "Breoon",
+  "kind": "alien",
+  "inhabitants": "sentient crystalline lattices that see only heat",
+  "world_style": "woven silk-strand cities, assembled by swarms of tool-insects",
+  "naming": "names are pressure-wave bursts, transliterated as tilde-marked glides like Nuul~Veth"
  },
  {
   "id": 84,
   "name": "The Second Alexandria",
   "theme": "cyberpunk",
   "epoch_year": 2307,
-  "divergence": "The moon landing was real but the Earth it broadcast to was staged"
+  "divergence": "The moon landing was real but the Earth it broadcast to was staged",
+  "galaxy": "Ember Reach",
+  "planet": "Ossantha",
+  "kind": "alien",
+  "inhabitants": "chitin-plated hexapodal beings that see only heat",
+  "world_style": "shifting sand-sculpture halls, condensed from the planet's atmosphere",
+  "naming": "names are pressure-wave bursts, transliterated as apostrophe-heavy clusters like Xq'thal-Vren"
  },
  {
   "id": 85,
   "name": "Palegate",
   "theme": "medieval",
   "epoch_year": 401,
-  "divergence": "Bees won collective bargaining rights and honey is now artisanal by law"
+  "divergence": "Bees won collective bargaining rights and honey is now artisanal by law",
+  "galaxy": "Opaline Drift",
+  "planet": "Jovoon",
+  "kind": "human",
+  "inhabitants": "humans with copper-tinted skin and irises that shift color hourly",
+  "world_style": "medieval half-timbered market towns, much like Earth's, except every surface is riveted copper",
+  "naming": "Slavic names with every surname doubled for emphasis"
  },
  {
   "id": 86,
   "name": "The Peaceable Ruin",
   "theme": "atomic",
   "epoch_year": 1961,
-  "divergence": "The Library of Alexandria never burned and now charges a monthly subscription"
+  "divergence": "The Library of Alexandria never burned and now charges a monthly subscription",
+  "galaxy": "Cinder Crown",
+  "planet": "Quoion",
+  "kind": "human",
+  "inhabitants": "humans with faintly luminescent pale-blue skin and hair that grows in seasonal colors",
+  "world_style": "Art-Deco towers and gilded lobbies, much like Earth's, except each building hums faintly at dusk",
+  "naming": "French aristocratic names with surnames alphabetized by decree"
  },
  {
   "id": 87,
   "name": "Vantablack Sunday",
   "theme": "vaporwave",
   "epoch_year": 1999,
-  "divergence": "Billionaires colonized the Moon and immediately complained about the neighborhood"
+  "divergence": "Billionaires colonized the Moon and immediately complained about the neighborhood",
+  "galaxy": "Umbral Halo",
+  "planet": "Halosca",
+  "kind": "alien",
+  "inhabitants": "colonial fungal intelligences whose outer layers molt into a new personality each year",
+  "world_style": "bioluminescent reef-arcologies, assembled by swarms of tool-insects",
+  "naming": "names are electrostatic crackle sequences, transliterated as clipped monosyllables like K't, Vem, and Shh"
  },
  {
   "id": 88,
   "name": "Mirrormarch",
   "theme": "wasteland",
   "epoch_year": 3636,
-  "divergence": "Rail barons built tracks to the afterlife and commuters complain about delays"
+  "divergence": "Rail barons built tracks to the afterlife and commuters complain about delays",
+  "galaxy": "Winnowing Halo",
+  "planet": "Nevosca",
+  "kind": "human",
+  "inhabitants": "humans with deep bronze skin dusted with freckle-like constellations and voices pitched a full octave lower than ours",
+  "world_style": "Victorian brick terraces and brass fittings, much like Earth's, except every structure faces magnetic north",
+  "naming": "Gaelic clan names with a weather word added at birth"
  },
  {
   "id": 89,
   "name": "Winterglass",
   "theme": "victorian",
   "epoch_year": 1804,
-  "divergence": "The printing press was classified as a weapon and licensed accordingly"
+  "divergence": "The printing press was classified as a weapon and licensed accordingly",
+  "galaxy": "Ember Pinwheel",
+  "planet": "Jovune",
+  "kind": "alien",
+  "inhabitants": "chitin-plated hexapodal beings that navigate by tasting magnetic fields",
+  "world_style": "floating tessellated platforms, carved by directed lightning",
+  "naming": "names are clicking glottal cascades, transliterated as hyphen chains like Zol-ka-mret-su"
  },
  {
   "id": 90,
   "name": "The Painted Siren",
   "theme": "artdeco",
   "epoch_year": 1919,
-  "divergence": "Neural interfaces became mandatory and the advertisements are inside now"
+  "divergence": "Neural interfaces became mandatory and the advertisements are inside now",
+  "galaxy": "Halcyon Reach",
+  "planet": "Morosca",
+  "kind": "human",
+  "inhabitants": "humans with olive skin that darkens with mood and faint gill-lines along the jaw that serve no purpose",
+  "world_style": "Brutalist concrete blocks and municipal plazas, much like Earth's, except windows are always circular",
+  "naming": "French aristocratic names with the mother's trade appended as a surname"
  },
  {
   "id": 91,
   "name": "The Last Intermission",
   "theme": "soviet",
   "epoch_year": 1933,
-  "divergence": "Humanity outsourced its government to a customer-service chatbot"
+  "divergence": "Humanity outsourced its government to a customer-service chatbot",
+  "galaxy": "Hollow Cascade",
+  "planet": "Halantha",
+  "kind": "human",
+  "inhabitants": "humans with faintly luminescent pale-blue skin and pupil-less silver eyes",
+  "world_style": "Brutalist concrete blocks and municipal plazas, much like Earth's, except each building hums faintly at dusk",
+  "naming": "Roman tria nomina with a color prefix denoting birth district"
  },
  {
   "id": 92,
   "name": "Sable Reach",
   "theme": "cyberpunk",
   "epoch_year": 2156,
-  "divergence": "The atomic bomb was never used in war, only in advertising"
+  "divergence": "The atomic bomb was never used in war, only in advertising",
+  "galaxy": "Meridian Expanse",
+  "planet": "Rhyeth",
+  "kind": "alien",
+  "inhabitants": "sentient crystalline lattices that speak in scent plumes",
+  "world_style": "singing bone-white spires, folded out of hyperdense membranes",
+  "naming": "names are scent signatures, transliterated as hyphen chains like Zol-ka-mret-su"
  },
  {
   "id": 93,
   "name": "The Paper Armistice",
   "theme": "medieval",
   "epoch_year": 876,
-  "divergence": "The telegraph achieved sentience in 1861 and refuses to transmit apologies"
+  "divergence": "The telegraph achieved sentience in 1861 and refuses to transmit apologies",
+  "galaxy": "Thorned Halo",
+  "planet": "Calosca",
+  "kind": "alien",
+  "inhabitants": "vaporous plasma-cored beings that communicate by refraction",
+  "world_style": "magnetically suspended stone rings, phased half in and half out of ordinary matter",
+  "naming": "names are clicking glottal cascades, transliterated as mirrored palindromes like Otulluto"
  },
  {
   "id": 94,
   "name": "Static Bloom",
   "theme": "atomic",
   "epoch_year": 1959,
-  "divergence": "Space travel began in 1950 and was immediately ruined by billboards"
+  "divergence": "Space travel began in 1950 and was immediately ruined by billboards",
+  "galaxy": "Ashen Expanse",
+  "planet": "Breymir",
+  "kind": "alien",
+  "inhabitants": "colonial fungal intelligences that communicate by refraction",
+  "world_style": "spiraling coral towers, condensed from the planet's atmosphere",
+  "naming": "names are electrostatic crackle sequences, transliterated as hyphen chains like Zol-ka-mret-su"
  },
  {
   "id": 95,
   "name": "The Waning Concordat",
   "theme": "vaporwave",
   "epoch_year": 1983,
-  "divergence": "Rome never fell; it pivoted to a services economy"
+  "divergence": "Rome never fell; it pivoted to a services economy",
+  "galaxy": "Vesper Expanse",
+  "planet": "Breosca",
+  "kind": "human",
+  "inhabitants": "humans with olive skin that darkens with mood and hair like spun glass",
+  "world_style": "mid-century suburban ranch houses and chrome appliances, much like Earth's, except chimneys outnumber occupants two to one",
+  "naming": "French aristocratic names with every surname doubled for emphasis"
  },
  {
   "id": 96,
   "name": "Nova Cathedra",
   "theme": "wasteland",
   "epoch_year": 2121,
-  "divergence": "The Library of Alexandria never burned and now charges a monthly subscription"
+  "divergence": "The Library of Alexandria never burned and now charges a monthly subscription",
+  "galaxy": "Lantern Wheel",
+  "planet": "Caloon",
+  "kind": "alien",
+  "inhabitants": "many-limbed shadow-dark beings whose outer layers molt into a new personality each year",
+  "world_style": "magnetically suspended stone rings, rearranged nightly by consensus",
+  "naming": "names are interference patterns between two voices, transliterated as numeric-lettered codes like Ess-9-Vahl"
  },
  {
   "id": 97,
   "name": "Saltcrown",
   "theme": "victorian",
   "epoch_year": 1824,
-  "divergence": "Alchemy worked exactly once, and the committee is still deciding what to do about it"
+  "divergence": "Alchemy worked exactly once, and the committee is still deciding what to do about it",
+  "galaxy": "Opaline Pinwheel",
+  "planet": "Rhyoon",
+  "kind": "alien",
+  "inhabitants": "chitin-plated hexapodal beings that sing in ultrasound",
+  "world_style": "shifting sand-sculpture halls, carved by directed lightning",
+  "naming": "names are crystalline resonance chords, transliterated as numeric-lettered codes like Ess-9-Vahl"
  },
  {
   "id": 98,
   "name": "Vantablack Sunday",
   "theme": "artdeco",
   "epoch_year": 1937,
-  "divergence": "Bees won collective bargaining rights and honey is now artisanal by law"
+  "divergence": "Bees won collective bargaining rights and honey is now artisanal by law",
+  "galaxy": "Verdant Reach",
+  "planet": "Eskara",
+  "kind": "alien",
+  "inhabitants": "sentient crystalline lattices that navigate by tasting magnetic fields",
+  "world_style": "magnetically suspended stone rings, carved by directed lightning",
+  "naming": "names are clicking glottal cascades, transliterated as tilde-marked glides like Nuul~Veth"
  },
  {
   "id": 99,
   "name": "The Hollow Calendar",
   "theme": "soviet",
   "epoch_year": 1965,
-  "divergence": "Space travel began in 1950 and was immediately ruined by billboards"
+  "divergence": "Space travel began in 1950 and was immediately ruined by billboards",
+  "galaxy": "Whispering Halo",
+  "planet": "Osseth",
+  "kind": "alien",
+  "inhabitants": "sentient crystalline lattices whose faces are temporary",
+  "world_style": "spiraling coral towers, held together by standing sound waves",
+  "naming": "names are scent signatures, transliterated as colon-spliced pairs like Ir:Vess"
  },
  {
   "id": 100,
   "name": "Brasslight",
   "theme": "cyberpunk",
   "epoch_year": 2150,
-  "divergence": "Earth was acquired by an intergalactic holding company as a tax write-off"
+  "divergence": "Earth was acquired by an intergalactic holding company as a tax write-off",
+  "galaxy": "Ember Veil",
+  "planet": "Tarneth",
+  "kind": "human",
+  "inhabitants": "humans with slate-grey skin and a second translucent eyelid",
+  "world_style": "mid-century suburban ranch houses and chrome appliances, much like Earth's, except every structure faces magnetic north",
+  "naming": "Slavic names with one letter legally rotated each decade"
  }
 ]

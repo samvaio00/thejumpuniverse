@@ -503,7 +503,7 @@ BRIEF_PROMPT = """You are the assigning editor of Multiverse Gazette.
 Today's universe: {divergence}
 Era voice: {theme} | Year: {year} | Print date: {date}
 Comedic angle assigned: {angle}
-{continuity_block}{real_news_block}
+{world_block}{continuity_block}{real_news_block}
 {theme_guide}
 
 Design ONE satirical front-page premise. Requirements:
@@ -521,7 +521,7 @@ STORY_PROMPT = """You are the lead writer for Multiverse Gazette. Write today's 
 Today's universe: {divergence}
 Era voice: {theme} | Year: {year}
 Editor's brief: {brief}
-{continuity_block}
+{world_block}{continuity_block}
 
 CRITICAL RULES:
 - Deadpan reporting of the absurd: the paper believes every word it prints.
@@ -544,7 +544,7 @@ SIDE_STORIES_PROMPT = """You write the rest of the front page for Multiverse Gaz
 Today's universe: {divergence}
 Era voice: {theme} | Year: {year}
 Today's LEAD story: "{headline}" — {deck}
-{continuity_block}
+{world_block}{continuity_block}
 
 Write {n_side} SHORTER stories from OTHER desks of the same paper, same universe, same day.
 Rules:
@@ -646,15 +646,26 @@ side_stories keeps its structure: array of {{"desk","headline","deck","byline","
 
 SIDE_IMAGE_PROMPT = """Editorial news photograph for a newspaper's {desk} desk, {theme} era alternate history.
 Year {year}. Story: {headline}. {divergence}
-Documentary photojournalism, era-appropriate. No text or watermarks."""
+{world_notes}Documentary photojournalism, era-appropriate. No text or watermarks."""
 
 HERO_IMAGE_PROMPT = """Editorial news photograph, {theme} era alternate history.
 Year {year}. Story: {headline}. {divergence}
-Dramatic photojournalism. No text or watermarks."""
+{world_notes}Dramatic photojournalism. No text or watermarks."""
 
 COMIC_STRIP_IMAGE_PROMPT = """Three-panel newspaper comic strip, left to right, {theme} era style.
 Story satire: {headline}. Panels: {panel_summary}
-Funny, witty. No speech bubble text in image — visuals only."""
+{world_notes}Funny, witty. No speech bubble text in image — visuals only."""
+
+
+def image_world_notes(inhabitants, world_style):
+    """World-bible line for image prompts so daily art depicts this universe's
+    people and built environment. '' when the universe has no descriptors."""
+    parts = []
+    if inhabitants:
+        parts.append(f"All people depicted are: {inhabitants}.")
+    if world_style:
+        parts.append(f"Architecture/objects: {world_style}.")
+    return (" ".join(parts) + "\n") if parts else ""
 
 # ─── FALLBACK GENERATORS (no LLM) ───────────────────────────────────
 def fallback_headline(rng, theme, year, divergence):
@@ -1069,6 +1080,13 @@ def generate_edition(date=None, timeline_id=None, with_images=None):
         epoch_year = rng.range(era_min, era_max)
         divergence = rng.pick(DIVERGENCES)
         universe_name = f"Timeline {timeline_id}"
+    # World bible: where this universe is and what its people/things look like.
+    universe = universe or {}
+    galaxy = universe.get("galaxy") or f"Galaxy NGC-{timeline_id}"
+    planet = universe.get("planet") or f"Planet {timeline_id}"
+    inhabitants = universe.get("inhabitants", "")
+    world_style = universe.get("world_style", "")
+    naming = universe.get("naming", "")
     # The universe's calendar runs parallel to ours: day and month track real
     # time, only the year is offset — so when a universe repeats, exactly the
     # elapsed real time has passed in-universe.
@@ -1108,10 +1126,22 @@ def generate_edition(date=None, timeline_id=None, with_images=None):
     if continuity_block:
         print(f"  Continuity: {continuity_block.count(chr(10)) - 1} prior editions in context")
 
+    # World bible block threaded through the story prompts (like continuity).
+    world_block = f"WORLD: planet {planet} in the {galaxy} galaxy."
+    if inhabitants:
+        world_block += f" Inhabitants: {inhabitants}."
+    if world_style:
+        world_block += f" Built environment: {world_style}."
+    if naming:
+        world_block += f" NAMING RULES for all people/places: {naming}."
+    world_block += "\n"
+    world_notes = image_world_notes(inhabitants, world_style)
+
     ctx = {"divergence": prompt_divergence, "theme": theme, "year": year,
            "date": date.strftime("%B %d, %Y"), "angle": angle, "theme_guide": THEME_GUIDE,
            "forbidden": forbidden, "paper_identity": PAPER_IDENTITY,
-           "real_news_block": real_news_block, "continuity_block": continuity_block}
+           "real_news_block": real_news_block, "continuity_block": continuity_block,
+           "world_block": world_block}
 
     # 1. Editor assigns story brief
     brief, used = llm_json_with_fallback(BRIEF_PROMPT.format(**ctx), "editor", temperature=0.7)
@@ -1212,7 +1242,8 @@ def generate_edition(date=None, timeline_id=None, with_images=None):
     if with_images:
         hero_b64, hero_image_provider = generate_image_with_fallback(
             HERO_IMAGE_PROMPT.format(theme=theme, year=year,
-                headline=content["headline"], divergence=divergence),
+                headline=content["headline"], divergence=divergence,
+                world_notes=world_notes),
             preferred="openai",
         )
         if hero_b64:
@@ -1223,7 +1254,8 @@ def generate_edition(date=None, timeline_id=None, with_images=None):
             preferred = "grok" if i % 2 == 0 else "openai"
             img_b64, img_provider = generate_image_with_fallback(
                 SIDE_IMAGE_PROMPT.format(desk=story.get("desk", "News"), theme=theme, year=year,
-                    headline=story["headline"], divergence=divergence),
+                    headline=story["headline"], divergence=divergence,
+                    world_notes=world_notes),
                 preferred=preferred,
             )
             if img_b64:
@@ -1232,7 +1264,8 @@ def generate_edition(date=None, timeline_id=None, with_images=None):
 
         comic_b64, strip_image_provider = generate_image_with_fallback(
             COMIC_STRIP_IMAGE_PROMPT.format(theme=theme, headline=content["headline"],
-                panel_summary=" | ".join(p.get("caption", "")[:60] for p in content["comic_strip"].get("panels", [])[:3])),
+                panel_summary=" | ".join(p.get("caption", "")[:60] for p in content["comic_strip"].get("panels", [])[:3]),
+                world_notes=world_notes),
             preferred="grok",
         )
         if comic_b64:
@@ -1262,6 +1295,8 @@ def generate_edition(date=None, timeline_id=None, with_images=None):
         "universe_name": universe_name,
         "universe_year": universe_year,
         "universe_date_display": universe_date_display,
+        "galaxy": galaxy,
+        "planet": planet,
         "divergence": divergence,
         "story_angle": angle,
         "roles": roles,
@@ -1462,7 +1497,23 @@ def prerender_index(edition):
         except (KeyError, ValueError):
             udate = f"Year {uyear}"
     sub(r'<div class="masthead-universe-date" id="masthead-universe-date">.*?</div>',
-        f'<div class="masthead-universe-date" id="masthead-universe-date">{esc(udate)} — {esc(uname)}</div>', "masthead universe date")
+        f'<div class="masthead-universe-date" id="masthead-universe-date">{esc(udate)}</div>', "masthead universe date")
+    # World line: universe name plus its galaxy/planet. Editions predating the
+    # extended registry lack galaxy/planet — recover them from the registry by
+    # timeline id, and omit whatever stays unknown.
+    galaxy = edition.get("galaxy")
+    planet = edition.get("planet")
+    if not galaxy or not planet:
+        reg = UNIVERSES.get(edition.get("timeline_id")) or {}
+        galaxy = galaxy or reg.get("galaxy")
+        planet = planet or reg.get("planet")
+    world_parts = [f"Universe: {uname}"]
+    if galaxy:
+        world_parts.append(f"Galaxy: {galaxy}")
+    if planet:
+        world_parts.append(f"Planet: {planet}")
+    sub(r'<div class="masthead-world" id="masthead-world">.*?</div>',
+        f'<div class="masthead-world" id="masthead-world">{esc(" · ".join(world_parts))}</div>', "masthead world")
     sub(r'<div class="masthead-date" id="masthead-date">.*?</div>',
         f'<div class="masthead-date" id="masthead-date">Edition of {esc(edition["date_display"])}</div>', "masthead date")
     sub(r'<div class="masthead-divergence" id="masthead-divergence">.*?</div>',
@@ -1549,12 +1600,18 @@ def backfill_images(date_slug):
         tid = ed["timeline_id"]
         changed = False
 
+        # World bible for image prompts: saved editions don't carry the
+        # descriptors, so look them up in the registry (empty for legacy ids).
+        uni = UNIVERSES.get(tid) or {}
+        world_notes = image_world_notes(uni.get("inhabitants", ""), uni.get("world_style", ""))
+
         hero_file = IMAGE_DIR / f"{date_slug}-{tid}-hero.png"
         if not ed.get("hero_image") or not hero_file.exists():
             print(f"{date_slug}-{tid}: generating hero image...")
             b64, provider = generate_image_with_fallback(
                 HERO_IMAGE_PROMPT.format(theme=ed["theme"], year=ed["year"],
-                                         headline=ed["headline"], divergence=ed["divergence"]),
+                                         headline=ed["headline"], divergence=ed["divergence"],
+                                         world_notes=world_notes),
                 preferred="openai")
             if b64:
                 ed["hero_image"] = save_image_file(b64, f"{date_slug}-{tid}-hero.png")
@@ -1569,7 +1626,8 @@ def backfill_images(date_slug):
             b64, provider = generate_image_with_fallback(
                 SIDE_IMAGE_PROMPT.format(desk=story.get("desk", "News"), theme=ed["theme"],
                                          year=ed["year"], headline=story["headline"],
-                                         divergence=ed["divergence"]),
+                                         divergence=ed["divergence"],
+                                         world_notes=world_notes),
                 preferred="grok" if i % 2 == 0 else "openai")
             if b64:
                 story["image"] = save_image_file(b64, f"{date_slug}-{tid}-story{i + 2}.png")
@@ -1583,7 +1641,8 @@ def backfill_images(date_slug):
             panel_summary = " | ".join(p.get("caption", "")[:60] for p in strip.get("panels", [])[:3])
             b64, provider = generate_image_with_fallback(
                 COMIC_STRIP_IMAGE_PROMPT.format(theme=ed["theme"], headline=ed["headline"],
-                                                panel_summary=panel_summary),
+                                                panel_summary=panel_summary,
+                                                world_notes=world_notes),
                 preferred="grok")
             if b64:
                 strip["image"] = save_image_file(b64, f"{date_slug}-{tid}-strip.png")
