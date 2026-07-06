@@ -31,7 +31,7 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      - name: Generate all 8 timelines
+      - name: Generate the day's 8 universes (deterministic picks from the 100)
         env:
           GENERATE_IMAGES: "true"
           MOONSHOT_API_KEY: ${{ secrets.MOONSHOT_API_KEY }}
