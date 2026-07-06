@@ -9,6 +9,7 @@
 /multiverse_gazette.html  /multiverse_gazette.html  200
 /favicon.ico  /favicon.ico  200
 /logo.png  /logo.png  200
+/universes.json  /universes.json  200
 
 # Redirect /2026-07-03 to the default timeline for that date
 /:date  /?date=:date  301
