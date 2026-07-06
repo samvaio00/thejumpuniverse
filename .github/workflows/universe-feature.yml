@@ -1,0 +1,104 @@
+name: Apply universe feature
+
+on:
+  push:
+    paths:
+      - "patches/universe-feature.patch"
+  workflow_dispatch:
+
+concurrency:
+  group: cloudflare-pages-deploy
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  deployments: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Apply patch
+        run: |
+          git apply --index patches/universe-feature.patch
+
+      - name: Build universes.json
+        run: python3 scripts/build_universes.py
+
+      - name: Backfill universe fields into existing editions
+        run: |
+          python3 << 'PYEOF'
+          import json, glob, datetime
+          reg = {u['id']: u for u in json.load(open('universes.json'))}
+          BASE = 2026
+          for f in sorted(glob.glob('editions/*.json')):
+              if 'manifest' in f: continue
+              ed = json.load(open(f))
+              tid = ed.get('timeline_id')
+              if not tid or tid not in reg or ed.get('universe_name'): continue
+              u = reg[tid]
+              d = datetime.date.fromisoformat(ed['date'])
+              uy = u['epoch_year'] + d.year - BASE
+              ed['universe_name'] = u['name']
+              ed['universe_year'] = uy
+              ed['universe_date_display'] = f"{d.strftime('%B')} {d.day}, Year {uy}"
+              json.dump(ed, open(f, 'w'), ensure_ascii=False)
+              print(f, '->', u['name'], uy)
+          try:
+              mf = 'editions/manifest.json'
+              m = json.load(open(mf))
+              changed = [False]
+              def walk(obj):
+                  if isinstance(obj, list):
+                      for x in obj: walk(x)
+                  elif isinstance(obj, dict):
+                      tid = obj.get('timeline_id') or obj.get('timeline')
+                      if tid and int(tid) in reg and 'universe_name' not in obj and ('headline' in obj or 'date' in obj):
+                          obj['universe_name'] = reg[int(tid)]['name']; changed[0] = True
+                      for v in obj.values(): walk(v)
+              walk(m)
+              if changed[0]:
+                  json.dump(m, open(mf, 'w'), ensure_ascii=False)
+                  print('manifest updated')
+          except FileNotFoundError:
+              pass
+          PYEOF
+
+      - name: Sanity check
+        run: |
+          python3 -m py_compile generate.py
+          python3 - << 'PYEOF'
+          import json
+          us = json.load(open('universes.json'))
+          assert len(us) == 100 and [u['id'] for u in us] == list(range(1, 101))
+          assert sum(1 for u in us if u['name'] == 'Prime') == 1
+          assert all(200 <= u['epoch_year'] <= 5000 for u in us)
+          json.load(open('editions/manifest.json'))
+          h = open('index.html').read()
+          assert 'masthead-universe-date' in h
+          print('sanity OK')
+          PYEOF
+
+      - name: Remove applied patch
+        run: git rm -q patches/universe-feature.patch
+
+      - name: Commit
+        run: |
+          git config user.name "universe-feature[bot]"
+          git config user.email "samvaiotmp@gmail.com"
+          git add -A
+          git commit -m "Feature: 100-universe registry with names, fixed divergences, in-universe dates (Year 200-5000), continuity between editions, universe name+date in masthead (incl. Prime, our universe)"
+          git push
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: thejumpuniverse
+          directory: .
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
