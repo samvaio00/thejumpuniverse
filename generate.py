@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-The Multiverse Gazette — Daily Edition Generator
+Multiverse Gazette — Daily Edition Generator
 Runs via cron/GitHub Actions at 00:01 UTC daily.
 Generates a static JSON edition file for the frontend to consume.
 """
@@ -168,6 +168,79 @@ THEME_ERAS = {
     "cyberpunk": (2049, 2199),
     "wasteland": (2077, 12077),
 }
+
+# ─── UNIVERSE REGISTRY ──────────────────────────────────────────────
+# universes.json (built by scripts/build_universes.py) gives every
+# timeline_id 1..100 a permanent identity: name, theme, epoch year and a
+# divergence premise that never changes — so editions of the same universe
+# form one continuous history.
+UNIVERSE_EPOCH_BASE = 2026  # real-world year each universe's epoch_year is anchored to
+UNIVERSES_FILE = Path("universes.json")
+
+
+def load_universes():
+    """Load the fixed universe registry as {id: entry}. Empty dict if missing."""
+    try:
+        with open(UNIVERSES_FILE, encoding="utf-8") as f:
+            return {u["id"]: u for u in json.load(f)}
+    except (OSError, json.JSONDecodeError, KeyError, TypeError):
+        print("Warning: universes.json missing or invalid — falling back to legacy 8-theme mode")
+        return {}
+
+
+UNIVERSES = load_universes()
+NUM_UNIVERSES = len(UNIVERSES) or len(THEMES)
+
+
+def default_timeline_for(date):
+    """Deterministic daily rotation that spreads coverage across the registry."""
+    return (date.timetuple().tm_yday * 13) % NUM_UNIVERSES + 1
+
+
+def daily_universe_ids(date, count=8):
+    """The set of universes covered on a given date (used by --all).
+    Deterministic and distinct; the first entry is the date's default universe."""
+    base = date.timetuple().tm_yday * 13
+    return [((base + k * 29) % NUM_UNIVERSES) + 1 for k in range(count)]
+
+
+def load_continuity(timeline_id, date, limit=5):
+    """Build the CONTINUITY prompt block from this universe's past editions.
+    Returns '' when the universe has no published history before `date`."""
+    date_slug = date.strftime("%Y-%m-%d")
+    history = []
+    for f in sorted(OUTPUT_DIR.glob("*.json")):
+        parts = f.stem.split("-")
+        if len(parts) < 4 or parts[3] != str(timeline_id):
+            continue
+        ed_date = "-".join(parts[:3])
+        if ed_date >= date_slug:
+            continue
+        try:
+            with open(f, encoding="utf-8") as fh:
+                ed = json.load(fh)
+        except (json.JSONDecodeError, OSError):
+            continue
+        if ed.get("headline"):
+            history.append((ed_date, ed))
+    if not history:
+        return ""
+    history = history[-limit:]
+    last_date = datetime.strptime(history[-1][0], "%Y-%m-%d")
+    days_since = (datetime.strptime(date_slug, "%Y-%m-%d") - last_date).days
+    elapsed = "1 day has passed" if days_since == 1 else f"{days_since} days have passed"
+    lines = []
+    for ed_date, ed in history:
+        line = f"- [{ed_date}] {ed['headline']}"
+        if ed.get("deck"):
+            line += f" — {ed['deck']}"
+        lines.append(line)
+    return (
+        f"CONTINUITY — established events in this universe (do not contradict; "
+        f"{elapsed} since the last edition; you may reference or advance these stories):\n"
+        + "\n".join(lines) + "\n"
+    )
+
 
 # ─── REAL-WORLD HEADLINES (satirical fuel) ──────────────────────────
 NEWS_FEEDS = [
@@ -414,7 +487,7 @@ def save_image_file(image_b64, filename):
     return f"/editions/images/{filename}"
 
 # ─── PROMPTS ────────────────────────────────────────────────────────
-PAPER_IDENTITY = """The Multiverse Gazette is a SATIRICAL newspaper — parody journalism from alternate universes across all of time, deep past to far future. Think The Onion by way of Terry Pratchett and Douglas Adams.
+PAPER_IDENTITY = """Multiverse Gazette is a SATIRICAL newspaper — parody journalism from alternate universes across all of time, deep past to far future. Think The Onion by way of Terry Pratchett and Douglas Adams.
 
 House comedy rules (non-negotiable):
 - DEADPAN: the paper takes its ridiculous universe completely seriously. Never wink at the reader.
@@ -423,14 +496,14 @@ House comedy rules (non-negotiable):
 - DARK is welcome (plague, collapse, doom) as long as it's witty; misery without a punchline is a failure.
 - Era voice matters, but never let period diction smother a joke."""
 
-BRIEF_PROMPT = """You are the assigning editor of The Multiverse Gazette.
+BRIEF_PROMPT = """You are the assigning editor of Multiverse Gazette.
 
 {paper_identity}
 
 Today's universe: {divergence}
 Era voice: {theme} | Year: {year} | Print date: {date}
 Comedic angle assigned: {angle}
-{real_news_block}
+{continuity_block}{real_news_block}
 {theme_guide}
 
 Design ONE satirical front-page premise. Requirements:
@@ -441,13 +514,14 @@ Design ONE satirical front-page premise. Requirements:
 Return ONLY JSON:
 {{"topic": "the specific absurd subject", "comic_engine": "what makes it funny", "real_world_echo": "which real headline it mirrors and how, or null", "tone": "one-sentence tone directive", "key_details": ["specific silly detail", "another", "another"], "avoid": ["cliché to ban", "..."]}}"""
 
-STORY_PROMPT = """You are the lead writer for The Multiverse Gazette. Write today's front-page story.
+STORY_PROMPT = """You are the lead writer for Multiverse Gazette. Write today's front-page story.
 
 {paper_identity}
 
 Today's universe: {divergence}
 Era voice: {theme} | Year: {year}
 Editor's brief: {brief}
+{continuity_block}
 
 CRITICAL RULES:
 - Deadpan reporting of the absurd: the paper believes every word it prints.
@@ -463,13 +537,14 @@ CRITICAL RULES:
 Return ONLY JSON: {{"headline": "...", "deck": "...", "byline": "witty era-appropriate reporter name, with title", "article": "..."}}
 Article body: separate paragraphs with \\n\\n (not HTML)."""
 
-SIDE_STORIES_PROMPT = """You write the rest of the front page for The Multiverse Gazette (satirical newspaper).
+SIDE_STORIES_PROMPT = """You write the rest of the front page for Multiverse Gazette (satirical newspaper).
 
 {paper_identity}
 
 Today's universe: {divergence}
 Era voice: {theme} | Year: {year}
 Today's LEAD story: "{headline}" — {deck}
+{continuity_block}
 
 Write {n_side} SHORTER stories from OTHER desks of the same paper, same universe, same day.
 Rules:
@@ -482,7 +557,7 @@ Rules:
 Return ONLY a JSON array of exactly {n_side} objects:
 [{{"desk": "...", "headline": "funny on its own", "deck": "one-line second joke", "byline": "reporter name, title", "article": "para1\\n\\npara2"}}, ...]"""
 
-OPED_PROMPT = """Write the satirical op-ed column for The Multiverse Gazette, reacting to today's front page.
+OPED_PROMPT = """Write the satirical op-ed column for Multiverse Gazette, reacting to today's front page.
 
 Main headline: {headline} — {deck}
 Universe: {divergence} | Era: {theme}, year {year}
@@ -524,7 +599,7 @@ BANNED: generic timeline jokes, "only time will tell", lazy puns that ignore the
 
 Return ONLY JSON: {{"setup": "...", "punchline": "...", "text": "setup + punchline as readers see it"}}"""
 
-CLASSIFIED_PROMPT = """Write 4 classified ads for The Multiverse Gazette (satirical newspaper), theme {theme}, year {year}.
+CLASSIFIED_PROMPT = """Write 4 classified ads for Multiverse Gazette (satirical newspaper), theme {theme}, year {year}.
 Universe: {divergence}
 Today's front page: "{headline}" — {deck}
 
@@ -544,13 +619,13 @@ EVERY ad must riff on today's headline, its consequences, or the divergence — 
 Return ONLY a JSON array of exactly 4 objects:
 [{{"headline": "...", "body": "1-2 sentences", "tagline": "optional fine print or disclaimer"}}, ...]"""
 
-WEATHER_PROMPT = """Weather box for The Multiverse Gazette, {theme} universe, year {year}.
+WEATHER_PROMPT = """Weather box for Multiverse Gazette, {theme} universe, year {year}.
 Universe: {divergence}
 Today's front page: "{headline}"
 Invent a city name native to this universe and a forecast condition that slyly riffs on today's story. Condition under 7 words, deadpan funny.
 Return ONLY JSON: {{"city": "...", "condition": "...", "temp": 72, "high": 78, "low": 65}}"""
 
-EDITOR_PROMPT = """You are the executive editor of The Multiverse Gazette, a satirical newspaper. Polish this entire edition.
+EDITOR_PROMPT = """You are the executive editor of Multiverse Gazette, a satirical newspaper. Polish this entire edition.
 
 Remove repetitive phrases, clichés, and samey tone across sections.
 Each section must sound distinct. Preserve facts and JSON structure exactly.
@@ -977,16 +1052,36 @@ def generate_edition(date=None, timeline_id=None, with_images=None):
         with_images = GENERATE_IMAGES
 
     if timeline_id is None:
-        timeline_id = (date.timetuple().tm_yday % len(THEMES)) + 1
+        timeline_id = default_timeline_for(date)
 
     seed = timeline_id * 1000000 + date.year * 10000 + date.month * 100 + date.day
     rng = SeededRandom(seed)
-    theme = THEMES[(timeline_id - 1) % len(THEMES)]
-    # A random year within the theme's era — every edition is a different
-    # universe on a different date, from antiquity to the deep future.
-    era_min, era_max = THEME_ERAS[theme]
-    year = rng.range(era_min, era_max)
-    divergence = rng.pick(DIVERGENCES)
+    universe = UNIVERSES.get(timeline_id)
+    if universe:
+        theme = universe["theme"]
+        divergence = universe["divergence"]
+        epoch_year = universe["epoch_year"]
+        universe_name = universe["name"]
+    else:
+        # Legacy fallback (registry missing or unknown id): old random behavior.
+        theme = THEMES[(timeline_id - 1) % len(THEMES)]
+        era_min, era_max = THEME_ERAS[theme]
+        epoch_year = rng.range(era_min, era_max)
+        divergence = rng.pick(DIVERGENCES)
+        universe_name = f"Timeline {timeline_id}"
+    # The universe's calendar runs parallel to ours: day and month track real
+    # time, only the year is offset — so when a universe repeats, exactly the
+    # elapsed real time has passed in-universe.
+    universe_year = epoch_year + (date.year - UNIVERSE_EPOCH_BASE)
+    year = universe_year
+    universe_date_display = f"{date.strftime('%B')} {date.day}, Year {universe_year}"
+    # Prime is OUR universe: its stories are alternate-history versions of real
+    # events — recognizable, but the details are wrong. Prompt-only directive.
+    prompt_divergence = divergence
+    if universe_name == "Prime":
+        prompt_divergence += (
+            " (this is OUR universe: write stories as alternate-history versions of "
+            "real recorded events — resembling actual history, but never exact)")
     angle = rng.pick(STORY_ANGLES)
     n_stories = rng.range(2, 4)  # front page carries 2-4 stories, varies by day
     date_slug = date.strftime("%Y-%m-%d")
@@ -1004,12 +1099,19 @@ def generate_edition(date=None, timeline_id=None, with_images=None):
     structure_p = resolve_role("structure")
     used_providers = {}
 
-    print(f"Timeline {timeline_id} ({theme}): story={story_p}, humor={humor_p}, editor={editor_p}")
+    print(f"Universe {timeline_id} \"{universe_name}\" ({theme}, Year {universe_year}): "
+          f"story={story_p}, humor={humor_p}, editor={editor_p}")
 
-    ctx = {"divergence": divergence, "theme": theme, "year": year,
+    # Continuity: past editions of this same universe feed the prompts so new
+    # stories can reference or advance established events without contradiction.
+    continuity_block = load_continuity(timeline_id, date)
+    if continuity_block:
+        print(f"  Continuity: {continuity_block.count(chr(10)) - 1} prior editions in context")
+
+    ctx = {"divergence": prompt_divergence, "theme": theme, "year": year,
            "date": date.strftime("%B %d, %Y"), "angle": angle, "theme_guide": THEME_GUIDE,
            "forbidden": forbidden, "paper_identity": PAPER_IDENTITY,
-           "real_news_block": real_news_block}
+           "real_news_block": real_news_block, "continuity_block": continuity_block}
 
     # 1. Editor assigns story brief
     brief, used = llm_json_with_fallback(BRIEF_PROMPT.format(**ctx), "editor", temperature=0.7)
@@ -1157,6 +1259,9 @@ def generate_edition(date=None, timeline_id=None, with_images=None):
         "date": date_slug,
         "date_display": date.strftime("%A, %B %d, %Y"),
         "year": year,
+        "universe_name": universe_name,
+        "universe_year": universe_year,
+        "universe_date_display": universe_date_display,
         "divergence": divergence,
         "story_angle": angle,
         "roles": roles,
@@ -1227,6 +1332,7 @@ def generate_manifest():
                 "timeline_id": ed.get("timeline_id"),
                 "theme": ed.get("theme"),
                 "year": ed.get("year"),
+                "universe_name": ed.get("universe_name"),
                 "headline": ed.get("headline"),
                 "deck": ed.get("deck"),
                 "divergence": ed.get("divergence"),
@@ -1283,7 +1389,7 @@ def generate_rss():
     rss = f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
   <channel>
-    <title>The Multiverse Gazette</title>
+    <title>Multiverse Gazette</title>
     <link>https://thejumpuniverse.com</link>
     <description>Daily newspaper from alternate timelines</description>
     <language>en</language>
@@ -1318,7 +1424,7 @@ def prerender_index(edition):
             warnings.append(name)
         html = new
 
-    title = f"{edition['headline']} | The Multiverse Gazette"
+    title = f"{edition['headline']} | Multiverse Gazette"
     desc = f"{edition['deck']} — Satirical galactic news from the multiverse — an alternate history dispatch from a universe where {edition['divergence']}."
     hero = edition.get("hero_image")
     og_image = f"{site}{hero}" if hero else f"{site}/og-image.jpg"
@@ -1344,8 +1450,21 @@ def prerender_index(edition):
         f'<span id="breadcrumb-timeline">Timeline {edition["timeline_id"]}</span>', "breadcrumb timeline")
     sub(r'<div class="masthead-subtitle" id="masthead-subtitle">.*?</div>',
         f'<div class="masthead-subtitle" id="masthead-subtitle">Alternate Earths, Faithfully Misreported — {theme_label}</div>', "masthead subtitle")
+    # Big line: in-universe date + universe name. Falls back gracefully for
+    # editions predating the universe registry.
+    uname = edition.get("universe_name") or f"Timeline {edition['timeline_id']}"
+    uyear = edition.get("universe_year", edition.get("year"))
+    udate = edition.get("universe_date_display")
+    if not udate:
+        try:
+            d = datetime.strptime(edition["date"], "%Y-%m-%d")
+            udate = f"{d.strftime('%B')} {d.day}, Year {uyear}"
+        except (KeyError, ValueError):
+            udate = f"Year {uyear}"
+    sub(r'<div class="masthead-universe-date" id="masthead-universe-date">.*?</div>',
+        f'<div class="masthead-universe-date" id="masthead-universe-date">{esc(udate)} — {esc(uname)}</div>', "masthead universe date")
     sub(r'<div class="masthead-date" id="masthead-date">.*?</div>',
-        f'<div class="masthead-date" id="masthead-date">{esc(edition["date_display"])}, Year {edition["year"]}</div>', "masthead date")
+        f'<div class="masthead-date" id="masthead-date">Edition of {esc(edition["date_display"])}</div>', "masthead date")
     sub(r'<div class="masthead-divergence" id="masthead-divergence">.*?</div>',
         f'<div class="masthead-divergence" id="masthead-divergence">Divergence: {esc(edition["divergence"])}</div>', "masthead divergence")
     sub(r'<h2 class="headline-main" id="headline-main">.*?</h2>',
@@ -1400,7 +1519,7 @@ def prerender_index(edition):
         "author": {"@type": "Person", "name": edition.get("author", "Staff Correspondent")},
         "keywords": "galactic news, multiverse, multi verse, alternate history, conspiracy theory, parallel universe, satire",
         "genre": ["Satire", "Alternate History", "Science Fiction"],
-        "publisher": {"@type": "Organization", "name": "The Multiverse Gazette",
+        "publisher": {"@type": "Organization", "name": "Multiverse Gazette",
                       "logo": {"@type": "ImageObject", "url": f"{site}/logo.png"}},
     }
     if hero:
@@ -1482,8 +1601,9 @@ if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser(description="Generate Multiverse Gazette edition")
     parser.add_argument("--date", help="Date to generate for (YYYY-MM-DD)")
-    parser.add_argument("--timeline", type=int, help="Timeline ID")
-    parser.add_argument("--all", action="store_true", help="Generate for all 8 themes for today")
+    parser.add_argument("--timeline", type=int, help=f"Universe/timeline ID (1-{NUM_UNIVERSES})")
+    parser.add_argument("--all", action="store_true",
+                        help="Generate the date's deterministic batch of 8 universes (of the 100)")
     parser.add_argument("--no-images", action="store_true", help="Skip AI image generation")
     parser.add_argument("--images-only", action="store_true",
                         help="Only generate missing images for the existing editions of --date")
@@ -1504,7 +1624,7 @@ if __name__ == "__main__":
         generate_rss()
         # Refresh the prerendered homepage only when touching today's editions
         if date_slug == datetime.now(timezone.utc).strftime("%Y-%m-%d"):
-            default_tid = (date.timetuple().tm_yday % len(THEMES)) + 1
+            default_tid = default_timeline_for(date)
             lead_file = OUTPUT_DIR / f"{date_slug}-{default_tid}.json"
             if lead_file.exists():
                 with open(lead_file, encoding="utf-8") as f:
@@ -1513,7 +1633,7 @@ if __name__ == "__main__":
         raise SystemExit(0)
 
     if args.all:
-        for tid in range(1, 9):
+        for tid in daily_universe_ids(date):
             ed = generate_edition(date, tid, with_images=with_images)
             save_edition(ed)
     else:
@@ -1526,7 +1646,7 @@ if __name__ == "__main__":
     generate_rss()
 
     # Bake the day's default edition into index.html for SEO / no-JS readers
-    default_tid = (date.timetuple().tm_yday % len(THEMES)) + 1
+    default_tid = default_timeline_for(date)
     lead_file = OUTPUT_DIR / f"{date.strftime('%Y-%m-%d')}-{default_tid}.json"
     if lead_file.exists():
         with open(lead_file, encoding="utf-8") as f:

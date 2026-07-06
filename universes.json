@@ -1,0 +1,702 @@
+[
+ {
+  "id": 1,
+  "name": "Brasslight",
+  "theme": "victorian",
+  "epoch_year": 1842,
+  "divergence": "Women gained the vote in 1848 and immediately voted for functioning plumbing"
+ },
+ {
+  "id": 2,
+  "name": "Emberline",
+  "theme": "artdeco",
+  "epoch_year": 1916,
+  "divergence": "Medieval monks invented social media and civilization never recovered"
+ },
+ {
+  "id": 3,
+  "name": "Palegate",
+  "theme": "soviet",
+  "epoch_year": 1934,
+  "divergence": "Socrates monetized his questions and founded the first consulting empire"
+ },
+ {
+  "id": 4,
+  "name": "Glasswing",
+  "theme": "cyberpunk",
+  "epoch_year": 2169,
+  "divergence": "The Library of Alexandria never burned and now charges a monthly subscription"
+ },
+ {
+  "id": 5,
+  "name": "The Quiet Divergence",
+  "theme": "medieval",
+  "epoch_year": 272,
+  "divergence": "Gravity weakened by four percent and the lawsuits are ongoing"
+ },
+ {
+  "id": 6,
+  "name": "Mirrormarch",
+  "theme": "atomic",
+  "epoch_year": 1973,
+  "divergence": "Women gained the vote in 1848 and immediately voted for functioning plumbing"
+ },
+ {
+  "id": 7,
+  "name": "Kessler's Wake",
+  "theme": "vaporwave",
+  "epoch_year": 1986,
+  "divergence": "Gunpowder was never discovered, so wars are settled by competitive committee"
+ },
+ {
+  "id": 8,
+  "name": "The Painted Siren",
+  "theme": "wasteland",
+  "epoch_year": 2341,
+  "divergence": "Libraries militarized during the format wars and never fully demobilized"
+ },
+ {
+  "id": 9,
+  "name": "Gildergloom",
+  "theme": "victorian",
+  "epoch_year": 1856,
+  "divergence": "Alchemy worked exactly once, and the committee is still deciding what to do about it"
+ },
+ {
+  "id": 10,
+  "name": "Winterglass",
+  "theme": "artdeco",
+  "epoch_year": 1930,
+  "divergence": "Napoleon won at Waterloo and immediately opened a chain of themed restaurants"
+ },
+ {
+  "id": 11,
+  "name": "Palegate",
+  "theme": "soviet",
+  "epoch_year": 1922,
+  "divergence": "Electricity was declared a controlled substance and is sold by apothecaries"
+ },
+ {
+  "id": 12,
+  "name": "Opaline Reach",
+  "theme": "cyberpunk",
+  "epoch_year": 2244,
+  "divergence": "The postal service achieved faster-than-light delivery but only for junk mail"
+ },
+ {
+  "id": 13,
+  "name": "Sable Reach",
+  "theme": "medieval",
+  "epoch_year": 217,
+  "divergence": "The atomic bomb was never used in war, only in advertising"
+ },
+ {
+  "id": 14,
+  "name": "The Peaceable Ruin",
+  "theme": "atomic",
+  "epoch_year": 1951,
+  "divergence": "Humanity outsourced its government to a customer-service chatbot"
+ },
+ {
+  "id": 15,
+  "name": "The Crowned Machine",
+  "theme": "vaporwave",
+  "epoch_year": 2007,
+  "divergence": "Tesla beat Edison and now the power grid is free but emotionally unavailable"
+ },
+ {
+  "id": 16,
+  "name": "Chromehaven",
+  "theme": "wasteland",
+  "epoch_year": 4986,
+  "divergence": "The Ottoman Empire pivoted to hospitality and now operates history's largest hotel chain"
+ },
+ {
+  "id": 17,
+  "name": "The Waning Concordat",
+  "theme": "victorian",
+  "epoch_year": 1881,
+  "divergence": "The postal service achieved faster-than-light delivery but only for junk mail"
+ },
+ {
+  "id": 18,
+  "name": "The Quiet Divergence",
+  "theme": "artdeco",
+  "epoch_year": 1916,
+  "divergence": "Weather control was achieved in 1971 and immediately paywalled"
+ },
+ {
+  "id": 19,
+  "name": "The Borrowed Century",
+  "theme": "soviet",
+  "epoch_year": 1996,
+  "divergence": "The postal service achieved faster-than-light delivery but only for junk mail"
+ },
+ {
+  "id": 20,
+  "name": "Sable Reach",
+  "theme": "cyberpunk",
+  "epoch_year": 2168,
+  "divergence": "Napoleon won at Waterloo and immediately opened a chain of themed restaurants"
+ },
+ {
+  "id": 21,
+  "name": "Ironquay",
+  "theme": "medieval",
+  "epoch_year": 398,
+  "divergence": "Earth was acquired by an intergalactic holding company as a tax write-off"
+ },
+ {
+  "id": 22,
+  "name": "Vantablack Sunday",
+  "theme": "atomic",
+  "epoch_year": 1972,
+  "divergence": "The moon landing was real but the Earth it broadcast to was staged"
+ },
+ {
+  "id": 23,
+  "name": "Bellstrand",
+  "theme": "vaporwave",
+  "epoch_year": 2005,
+  "divergence": "The atomic bomb was never used in war, only in advertising"
+ },
+ {
+  "id": 24,
+  "name": "The Municipal Sublime",
+  "theme": "wasteland",
+  "epoch_year": 4277,
+  "divergence": "The Renaissance was postponed indefinitely pending funding review"
+ },
+ {
+  "id": 25,
+  "name": "Ashfall",
+  "theme": "victorian",
+  "epoch_year": 1848,
+  "divergence": "The sun was privatized and daylight became a premium tier"
+ },
+ {
+  "id": 26,
+  "name": "Emberline",
+  "theme": "artdeco",
+  "epoch_year": 1931,
+  "divergence": "Alchemy worked exactly once, and the committee is still deciding what to do about it"
+ },
+ {
+  "id": 27,
+  "name": "Coldharbour",
+  "theme": "soviet",
+  "epoch_year": 1983,
+  "divergence": "The Renaissance was postponed indefinitely pending funding review"
+ },
+ {
+  "id": 28,
+  "name": "Glasswing",
+  "theme": "cyberpunk",
+  "epoch_year": 2338,
+  "divergence": "The Panama Canal was dug one inch too shallow and nobody will admit it"
+ },
+ {
+  "id": 29,
+  "name": "The Last Intermission",
+  "theme": "medieval",
+  "epoch_year": 258,
+  "divergence": "Dreams became taxable and the audits happen while you sleep"
+ },
+ {
+  "id": 30,
+  "name": "Lumen's Folly",
+  "theme": "atomic",
+  "epoch_year": 1962,
+  "divergence": "The Panama Canal was dug one inch too shallow and nobody will admit it"
+ },
+ {
+  "id": 31,
+  "name": "The Bright Recession",
+  "theme": "vaporwave",
+  "epoch_year": 1996,
+  "divergence": "Prohibition never ended, so the entire economy runs on soda fountains"
+ },
+ {
+  "id": 32,
+  "name": "Saltcrown",
+  "theme": "wasteland",
+  "epoch_year": 2263,
+  "divergence": "Electricity was declared a controlled substance and is sold by apothecaries"
+ },
+ {
+  "id": 33,
+  "name": "Smokestack Eden",
+  "theme": "victorian",
+  "epoch_year": 1834,
+  "divergence": "Socrates monetized his questions and founded the first consulting empire"
+ },
+ {
+  "id": 34,
+  "name": "The Painted Siren",
+  "theme": "artdeco",
+  "epoch_year": 1932,
+  "divergence": "Antarctica was colonized first and everyone pretends that was the plan"
+ },
+ {
+  "id": 35,
+  "name": "Saltcrown",
+  "theme": "soviet",
+  "epoch_year": 1934,
+  "divergence": "The Renaissance was postponed indefinitely pending funding review"
+ },
+ {
+  "id": 36,
+  "name": "The Paper Armistice",
+  "theme": "cyberpunk",
+  "epoch_year": 2355,
+  "divergence": "The Renaissance was postponed indefinitely pending funding review"
+ },
+ {
+  "id": 37,
+  "name": "The Ninth Ledger",
+  "theme": "medieval",
+  "epoch_year": 883,
+  "divergence": "The Wright brothers unionized the sky before anyone else could fly in it"
+ },
+ {
+  "id": 38,
+  "name": "The Tin Parallel",
+  "theme": "atomic",
+  "epoch_year": 1950,
+  "divergence": "Socrates monetized his questions and founded the first consulting empire"
+ },
+ {
+  "id": 39,
+  "name": "Bellstrand",
+  "theme": "vaporwave",
+  "epoch_year": 1994,
+  "divergence": "The Renaissance was postponed indefinitely pending funding review"
+ },
+ {
+  "id": 40,
+  "name": "Brasslight",
+  "theme": "wasteland",
+  "epoch_year": 4782,
+  "divergence": "The Renaissance was postponed indefinitely pending funding review"
+ },
+ {
+  "id": 41,
+  "name": "Duskmantle",
+  "theme": "victorian",
+  "epoch_year": 1835,
+  "divergence": "Rail barons built tracks to the afterlife and commuters complain about delays"
+ },
+ {
+  "id": 42,
+  "name": "The Hollow Calendar",
+  "theme": "artdeco",
+  "epoch_year": 1944,
+  "divergence": "The internet was invented by postal workers in 1923"
+ },
+ {
+  "id": 43,
+  "name": "Static Bloom",
+  "theme": "soviet",
+  "epoch_year": 1984,
+  "divergence": "Tesla beat Edison and now the power grid is free but emotionally unavailable"
+ },
+ {
+  "id": 44,
+  "name": "The Hollow Calendar",
+  "theme": "cyberpunk",
+  "epoch_year": 2391,
+  "divergence": "The atomic bomb was never used in war, only in advertising"
+ },
+ {
+  "id": 45,
+  "name": "The Ninth Ledger",
+  "theme": "medieval",
+  "epoch_year": 439,
+  "divergence": "Every mirror shows next Tuesday, and fashion has never recovered"
+ },
+ {
+  "id": 46,
+  "name": "The Municipal Sublime",
+  "theme": "atomic",
+  "epoch_year": 1963,
+  "divergence": "Corporations replaced nation-states and citizenship now comes with a loyalty program"
+ },
+ {
+  "id": 47,
+  "name": "Brasslight",
+  "theme": "vaporwave",
+  "epoch_year": 1981,
+  "divergence": "Time travel was invented and instantly regulated into uselessness"
+ },
+ {
+  "id": 48,
+  "name": "The Tin Parallel",
+  "theme": "wasteland",
+  "epoch_year": 4914,
+  "divergence": "A plague wiped out 90% of humanity and the remaining 10% still can't get a plumber"
+ },
+ {
+  "id": 49,
+  "name": "Winterglass",
+  "theme": "victorian",
+  "epoch_year": 1857,
+  "divergence": "The internet was invented by postal workers in 1923"
+ },
+ {
+  "id": 50,
+  "name": "Sable Reach",
+  "theme": "artdeco",
+  "epoch_year": 1940,
+  "divergence": "Rail barons built tracks to the afterlife and commuters complain about delays"
+ },
+ {
+  "id": 51,
+  "name": "Neon Tabernacle",
+  "theme": "soviet",
+  "epoch_year": 1976,
+  "divergence": "The moon landing was real but the Earth it broadcast to was staged"
+ },
+ {
+  "id": 52,
+  "name": "Coldharbour",
+  "theme": "cyberpunk",
+  "epoch_year": 2198,
+  "divergence": "Gunpowder was never discovered, so wars are settled by competitive committee"
+ },
+ {
+  "id": 53,
+  "name": "The Verdigris Crown",
+  "theme": "medieval",
+  "epoch_year": 1417,
+  "divergence": "Rail barons built tracks to the afterlife and commuters complain about delays"
+ },
+ {
+  "id": 54,
+  "name": "The Peaceable Ruin",
+  "theme": "atomic",
+  "epoch_year": 1974,
+  "divergence": "The calendar was privatized and weekends require a subscription"
+ },
+ {
+  "id": 55,
+  "name": "Cinderwake",
+  "theme": "vaporwave",
+  "epoch_year": 2002,
+  "divergence": "Napoleon won at Waterloo and immediately opened a chain of themed restaurants"
+ },
+ {
+  "id": 56,
+  "name": "The Long Meridian",
+  "theme": "wasteland",
+  "epoch_year": 4308,
+  "divergence": "The internet was invented by postal workers in 1923"
+ },
+ {
+  "id": 57,
+  "name": "The Municipal Sublime",
+  "theme": "victorian",
+  "epoch_year": 1907,
+  "divergence": "Volcanoes were rezoned as residential and the market is heating up"
+ },
+ {
+  "id": 58,
+  "name": "The Waning Concordat",
+  "theme": "artdeco",
+  "epoch_year": 1919,
+  "divergence": "The Library of Alexandria never burned and now charges a monthly subscription"
+ },
+ {
+  "id": 59,
+  "name": "The Ninth Ledger",
+  "theme": "soviet",
+  "epoch_year": 1922,
+  "divergence": "The first computer virus was welcomed as a pet and bred responsibly"
+ },
+ {
+  "id": 60,
+  "name": "Vantablack Sunday",
+  "theme": "cyberpunk",
+  "epoch_year": 2320,
+  "divergence": "A plague wiped out 90% of humanity and the remaining 10% still can't get a plumber"
+ },
+ {
+  "id": 61,
+  "name": "The Amber Protocol",
+  "theme": "medieval",
+  "epoch_year": 680,
+  "divergence": "The sun was privatized and daylight became a premium tier"
+ },
+ {
+  "id": 62,
+  "name": "Prime",
+  "theme": "atomic",
+  "epoch_year": 1957,
+  "divergence": "History unfolded almost exactly as recorded — the archives merely disagree about the details"
+ },
+ {
+  "id": 63,
+  "name": "The Municipal Sublime",
+  "theme": "vaporwave",
+  "epoch_year": 2006,
+  "divergence": "Humanity outsourced its government to a customer-service chatbot"
+ },
+ {
+  "id": 64,
+  "name": "Coldharbour",
+  "theme": "wasteland",
+  "epoch_year": 4319,
+  "divergence": "The Library of Alexandria never burned and now charges a monthly subscription"
+ },
+ {
+  "id": 65,
+  "name": "The Municipal Sublime",
+  "theme": "victorian",
+  "epoch_year": 1895,
+  "divergence": "The dinosaurs were wiped out halfway through their own space program"
+ },
+ {
+  "id": 66,
+  "name": "Neon Tabernacle",
+  "theme": "artdeco",
+  "epoch_year": 1923,
+  "divergence": "Billionaires colonized the Moon and immediately complained about the neighborhood"
+ },
+ {
+  "id": 67,
+  "name": "The Paper Armistice",
+  "theme": "soviet",
+  "epoch_year": 1974,
+  "divergence": "Space travel began in 1950 and was immediately ruined by billboards"
+ },
+ {
+  "id": 68,
+  "name": "Static Bloom",
+  "theme": "cyberpunk",
+  "epoch_year": 2156,
+  "divergence": "Dreams became taxable and the audits happen while you sleep"
+ },
+ {
+  "id": 69,
+  "name": "The Verdigris Crown",
+  "theme": "medieval",
+  "epoch_year": 1014,
+  "divergence": "The moon landing was real but the Earth it broadcast to was staged"
+ },
+ {
+  "id": 70,
+  "name": "Nova Cathedra",
+  "theme": "atomic",
+  "epoch_year": 1975,
+  "divergence": "Every mirror shows next Tuesday, and fashion has never recovered"
+ },
+ {
+  "id": 71,
+  "name": "Nova Cathedra",
+  "theme": "vaporwave",
+  "epoch_year": 2001,
+  "divergence": "Women gained the vote in 1848 and immediately voted for functioning plumbing"
+ },
+ {
+  "id": 72,
+  "name": "The Amber Protocol",
+  "theme": "wasteland",
+  "epoch_year": 3049,
+  "divergence": "Socrates monetized his questions and founded the first consulting empire"
+ },
+ {
+  "id": 73,
+  "name": "Duskmantle",
+  "theme": "victorian",
+  "epoch_year": 1836,
+  "divergence": "The postal service achieved faster-than-light delivery but only for junk mail"
+ },
+ {
+  "id": 74,
+  "name": "Ashfall",
+  "theme": "artdeco",
+  "epoch_year": 1931,
+  "divergence": "Gravity weakened by four percent and the lawsuits are ongoing"
+ },
+ {
+  "id": 75,
+  "name": "The Waning Concordat",
+  "theme": "soviet",
+  "epoch_year": 1947,
+  "divergence": "Gunpowder was never discovered, so wars are settled by competitive committee"
+ },
+ {
+  "id": 76,
+  "name": "The Crowned Machine",
+  "theme": "cyberpunk",
+  "epoch_year": 2118,
+  "divergence": "Prohibition never ended, so the entire economy runs on soda fountains"
+ },
+ {
+  "id": 77,
+  "name": "Lumen's Folly",
+  "theme": "medieval",
+  "epoch_year": 477,
+  "divergence": "Gunpowder was never discovered, so wars are settled by competitive committee"
+ },
+ {
+  "id": 78,
+  "name": "Harrowgate",
+  "theme": "atomic",
+  "epoch_year": 1948,
+  "divergence": "Rome never fell; it pivoted to a services economy"
+ },
+ {
+  "id": 79,
+  "name": "Rustwater",
+  "theme": "vaporwave",
+  "epoch_year": 1982,
+  "divergence": "Vikings discovered America and franchised it"
+ },
+ {
+  "id": 80,
+  "name": "Rustwater",
+  "theme": "wasteland",
+  "epoch_year": 3617,
+  "divergence": "The wheel was patented, and the licensing fees never stopped"
+ },
+ {
+  "id": 81,
+  "name": "The Municipal Sublime",
+  "theme": "victorian",
+  "epoch_year": 1899,
+  "divergence": "Libraries militarized during the format wars and never fully demobilized"
+ },
+ {
+  "id": 82,
+  "name": "Halcyon Drift",
+  "theme": "artdeco",
+  "epoch_year": 1946,
+  "divergence": "Volcanoes were rezoned as residential and the market is heating up"
+ },
+ {
+  "id": 83,
+  "name": "The Paper Armistice",
+  "theme": "soviet",
+  "epoch_year": 1930,
+  "divergence": "Gravity weakened by four percent and the lawsuits are ongoing"
+ },
+ {
+  "id": 84,
+  "name": "The Second Alexandria",
+  "theme": "cyberpunk",
+  "epoch_year": 2307,
+  "divergence": "The moon landing was real but the Earth it broadcast to was staged"
+ },
+ {
+  "id": 85,
+  "name": "Palegate",
+  "theme": "medieval",
+  "epoch_year": 401,
+  "divergence": "Bees won collective bargaining rights and honey is now artisanal by law"
+ },
+ {
+  "id": 86,
+  "name": "The Peaceable Ruin",
+  "theme": "atomic",
+  "epoch_year": 1961,
+  "divergence": "The Library of Alexandria never burned and now charges a monthly subscription"
+ },
+ {
+  "id": 87,
+  "name": "Vantablack Sunday",
+  "theme": "vaporwave",
+  "epoch_year": 1999,
+  "divergence": "Billionaires colonized the Moon and immediately complained about the neighborhood"
+ },
+ {
+  "id": 88,
+  "name": "Mirrormarch",
+  "theme": "wasteland",
+  "epoch_year": 3636,
+  "divergence": "Rail barons built tracks to the afterlife and commuters complain about delays"
+ },
+ {
+  "id": 89,
+  "name": "Winterglass",
+  "theme": "victorian",
+  "epoch_year": 1804,
+  "divergence": "The printing press was classified as a weapon and licensed accordingly"
+ },
+ {
+  "id": 90,
+  "name": "The Painted Siren",
+  "theme": "artdeco",
+  "epoch_year": 1919,
+  "divergence": "Neural interfaces became mandatory and the advertisements are inside now"
+ },
+ {
+  "id": 91,
+  "name": "The Last Intermission",
+  "theme": "soviet",
+  "epoch_year": 1933,
+  "divergence": "Humanity outsourced its government to a customer-service chatbot"
+ },
+ {
+  "id": 92,
+  "name": "Sable Reach",
+  "theme": "cyberpunk",
+  "epoch_year": 2156,
+  "divergence": "The atomic bomb was never used in war, only in advertising"
+ },
+ {
+  "id": 93,
+  "name": "The Paper Armistice",
+  "theme": "medieval",
+  "epoch_year": 876,
+  "divergence": "The telegraph achieved sentience in 1861 and refuses to transmit apologies"
+ },
+ {
+  "id": 94,
+  "name": "Static Bloom",
+  "theme": "atomic",
+  "epoch_year": 1959,
+  "divergence": "Space travel began in 1950 and was immediately ruined by billboards"
+ },
+ {
+  "id": 95,
+  "name": "The Waning Concordat",
+  "theme": "vaporwave",
+  "epoch_year": 1983,
+  "divergence": "Rome never fell; it pivoted to a services economy"
+ },
+ {
+  "id": 96,
+  "name": "Nova Cathedra",
+  "theme": "wasteland",
+  "epoch_year": 2121,
+  "divergence": "The Library of Alexandria never burned and now charges a monthly subscription"
+ },
+ {
+  "id": 97,
+  "name": "Saltcrown",
+  "theme": "victorian",
+  "epoch_year": 1824,
+  "divergence": "Alchemy worked exactly once, and the committee is still deciding what to do about it"
+ },
+ {
+  "id": 98,
+  "name": "Vantablack Sunday",
+  "theme": "artdeco",
+  "epoch_year": 1937,
+  "divergence": "Bees won collective bargaining rights and honey is now artisanal by law"
+ },
+ {
+  "id": 99,
+  "name": "The Hollow Calendar",
+  "theme": "soviet",
+  "epoch_year": 1965,
+  "divergence": "Space travel began in 1950 and was immediately ruined by billboards"
+ },
+ {
+  "id": 100,
+  "name": "Brasslight",
+  "theme": "cyberpunk",
+  "epoch_year": 2150,
+  "divergence": "Earth was acquired by an intergalactic holding company as a tax write-off"
+ }
+]
