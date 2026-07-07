@@ -12,119 +12,119 @@
   "divergence": "Electricity was declared a controlled substance and is sold by apothecaries",
   "story_angle": "solemn obituary for a beloved institution nobody can remember the purpose of",
   "roles": [
-    "Story: Grok",
+    "Story: OpenAI",
     "Humor: Grok",
     "Editor: Grok"
   ],
-  "headline": "Dustspire Enclave Closes Archaeology of Blame After Final 23-Name Ledger",
-  "deck": "Ess-9-Vahl Submits Volt-Pouch Requisition One Day Before Seizure for Electromagnetic Famine Losses",
-  "article": "<p>Ess-9-Vahl filed the last entry at dusk. Twenty-three names sat beside blank purpose codes on the reef ledger. The document recorded only the absence of volt-pouches during the prior famine.</p><p>Bioluminescent panels on the archive walls now emit 0.3 lumen per forgotten volt. Dustspire officers counted the glow as evidence of unpaid atmospheric tariffs. No living gasbag recalls the codes that once explained the deaths.</p><p>Molting gasbags still deliver annual tribute packets to the sealed doors. Each packet contains measured rations calibrated to one-tenth the caloric deficit logged in 2247. The packets accumulate in rusting intake slots that have not opened since the last requisition was denied.</p><p>The seizure order lists the 23 deaths as justification. Apothecary records show the volt-pouches arrived after the gasbags had already molted past the need for them.</p>",
-  "author": "Rax-11-Korr, Famine Ledger Auditor",
-  "city": "Sparkwaste Haven",
+  "headline": "Dustspire Enclave Honors Blame While Famine Forgets to Read the Ledger",
+  "deck": "In a twist, posthumous honors lead to yesterday's missing volts being reclassified as 'heroic contributions.'",
+  "article": "<p>The Dustspire Enclave has awarded the Ledger of Blame its highest commendation after the electromagnetic famine killed twenty-three gasbags. Ess-9-Vahl's final entry, dated 07-06-2263 and pressed under 14.7 kPa of dust, now stands as proof of endurance instead of a record of failure.</p><p>Ess-9-Vahl, fresh from a molt scored at 0.00 compliance, declared the dead gasbags had met their quotas and that blame itself was merely temporary. The Enclave promptly logged the blackout as spiritual enrichment.</p><p>Apothecary Bog-3v-Nul noted the strangeness of celebrating the lost while misplacing the electricity they needed. Gasbags continue molting while the shortage is filed away under new headings.</p>",
+  "author": "Lethar B. Etherwing, Chief Chronicler of Impermanent Events",
+  "city": "Cinderhaven",
   "weather": {
-    "city": "Sparkwaste Haven",
-    "condition": "Dust storm: blame it on the wind",
+    "city": "Cinderhaven",
+    "condition": "Apothecaries forecast a shocking drought of volts after Dustspire's heroic reclassification",
     "temp": 72,
     "high": 78,
     "low": 65
   },
   "oped": {
-    "title": "Seizures Save Civilization: Dustspire’s Ledger Proves Hats Were the Real Culprit",
-    "author": "Arch-Chancellor Fizzlethorp von Wrongway, Tenured Blame Archaeologist & Certified Pouch Envy Consultant",
-    "body": "The Enclave’s final 23-name ledger is a triumph of restraint, not tragedy. Those Electromagnetic Famine losses were clearly caused by improper hat brims deflecting blame particles into the volt-stream. Ess-9-Vahl’s last-minute requisition only confirms the pattern: late filers deserve empty pouches. I myself submitted a perfectly timed claim three weeks earlier for my personal lightning collection, yet some bureaucratic hat-wearer denied me. Closing the dig is merciful; further names might have exposed my own modest overdraw of three hundred watts last spring. The apothecaries should now sell electricity only to citizens whose hats point skyward at exactly 42 degrees. Anything less invites famine, and worse, invites people like Ess-9-Vahl to queue ahead of their betters."
+    "title": "Heroic Volts and Hat-Based Famine: Why We Must Regulate Millinery Immediately",
+    "author": "Professor Thaddeus Quibble, Certified Apothecary Ledger Auditor and Three-Time Winner of the Dustspire Hat-Off",
+    "body": "Reclassifying missing volts as heroic proves famine is simply bad arithmetic under oversized brims. Those wide hats clearly blocked both sight and sense. Electricity belongs behind counters, not scattered on unrecorded whims. Confiscate every hat and issue my volt-goggles instead; the surcharge will cover the month's lost prescriptions."
   },
   "classifieds": [
     {
       "cat": "For Sale",
-      "text": "Selling 23 faded blame-ledger pages and one half-charged volt-pouch, all seized yesterday by apothecary agents; price in sparks or barter before the famine deepens."
+      "text": "Wastelander offloading three cracked volt-vials and a siphon rig after Dustspire rebranded yesterday's theft as heroic; apothecary stamps included, first can of water takes all."
     },
     {
       "cat": "Help Wanted",
-      "text": "Dustspire needs two discreet diggers to reopen the Archaeology of Blame site tonight; bring shovels, no names on ledgers, pay in black-market volts."
+      "text": "Dustspire famine office needs a quick quill to log missing volts as Blame's posthumous gift before the ledger audit; pay in blackout rations, no volt questions."
     },
     {
       "cat": "Public Notices",
-      "text": "Ess-9-Vahl offers formal apology to the final 23 for the one-day-late requisition; electromagnetic losses now yours, contact the enclave before further seizures."
+      "text": "To the enclave whose amps vanished last night: they have been honorably reclassified per page one, so cease your complaints or join the honored dead."
     },
     {
-      "cat": "Lost & Found",
-      "text": "Lost: one signed volt-pouch requisition slip dated one day too late; finder may keep the pouch if they also bury the 23-name evidence."
+      "cat": "Legal",
+      "text": "Notice to Blame's unnamed heirs: present proof of lineage at the apothecary by dusk or your heroic volts default to controlled-substance stock and famine fines."
     }
   ],
   "comic_strip": {
-    "title": "The 23rd Name",
+    "title": "Blame's Final Amp",
     "panels": [
       {
-        "caption": "Dustspire archivist stamps the ledger: \"Archaeology of Blame closed. Twenty-three accounted for.\""
+        "caption": "\"Blame siphoned the whole reserve before he croaked,\" the enclave herald announces. \"Posthumous Hero of the Famine.\""
       },
       {
-        "caption": "Ess-9-Vahl slides the requisition across the counter: \"One volt-pouch. Filed yesterday.\""
+        "caption": "The famine clerk flips the ledger. \"No entry. We'll call the theft a contribution.\""
       },
       {
-        "caption": "Clerk: \"Seized this morning for famine losses. Congratulations. You're number twenty-four.\""
+        "caption": "\"Then why's the grid still dark?\" a starving citizen asks. \"The volts died braver than we did.\""
       }
     ],
     "image": "/editions/images/2026-07-07-32-strip.png",
     "image_provider": "grok"
   },
   "joke": {
-    "setup": "Dustspire Enclave just shuttered the Archaeology of Blame once the final ledger locked in its twenty-three names.",
-    "punchline": "Turns out the real crime scene was the apothecary counter—everyone on that list simply forgot to hide their volt receipts.",
-    "text": "Dustspire Enclave just shuttered the Archaeology of Blame once the final ledger locked in its twenty-three names. Turns out the real crime scene was the apothecary counter—everyone on that list simply forgot to hide their volt receipts."
+    "setup": "Dustspire's apothecary council pinned a tin star on Blame for 'managing' the famine rations",
+    "punchline": "then discovered Famine had already traded the enclave's last three volts for a blank page he swore was the ledger.",
+    "text": "Dustspire's apothecary council pinned a tin star on Blame for 'managing' the famine rations. Then discovered Famine had already traded the enclave's last three volts for a blank page he swore was the ledger."
   },
   "sponsor_ads": [
     {
-      "headline": "Ledger-Approved Current, 23 Bolts Only",
-      "body": "Apothecary Booth 12 dispenses the final sanctioned jolts before Dustspire seals the Archaeology of Blame; each dose comes with a notarized receipt matching one of the 23 names.",
-      "tagline": "Overdoses reported as 'historical revision'."
+      "headline": "Blame Ampoules, Apothecary Grade",
+      "body": "One controlled jolt lets Dustspire citizens honor blame without ever consulting the ledger, even as famine counts the missing watts.",
+      "tagline": "Prescribed only after the famine has already signed."
     },
     {
-      "headline": "Name Erasure Salts, Post-Closure Formula",
-      "body": "Mix one vial with your evening ration to chemically detach yourself from any entry in the now-final 23-name ledger; electricity-free and therefore perfectly legal.",
-      "tagline": "May cause spontaneous dust confession."
+      "headline": "Ledger-Erase Patches",
+      "body": "Sticky electric plasters dissolve memory of famine tallies so the enclave can focus on honoring blame in peace.",
+      "tagline": "Remove before checking inventory."
     },
     {
-      "headline": "Excavation Permits for the Recently Unemployed",
-      "body": "Rent a hand-cranked blame-shovel and one measured spark from the enclave apothecary to keep digging after the Archaeology of Blame closes its doors.",
-      "tagline": "No refunds if your own name surfaces."
+      "headline": "Dustspire Blame Ceremony Kits",
+      "body": "Each kit contains two drams of licensed electricity and a lead plaque pre-engraved with 'we honor blame' while the ledger gathers dust.",
+      "tagline": "Famine sold separately."
     },
     {
-      "headline": "Controlled Lightning, No Questions Asked",
-      "body": "Purchase tonight's electricity ration before the 23-name ledger is archived; every amp sold includes a pre-signed waiver stating you were never on the list.",
-      "tagline": "Ignition of old grudges voids warranty."
+      "headline": "Public Notice: Electricity for Official Forgetting",
+      "body": "Apothecaries remind all residents that controlled current is now required to properly ignore famine figures during blame-honoring rites.",
+      "tagline": "Ledger readers will be prosecuted."
     }
   ],
   "stories": [
     {
-      "desk": "Crime",
-      "headline": "Dustspire Enforcers Raid Three Apothecary Outlets After Volt-Pouch Delay Linked to Famine Seizure",
-      "deck": "Clerks now face charges of improper pressure logging on the final 23-name ledger.",
-      "byline": "Vahl-3-Tren, Crime Correspondent",
-      "article": "<p>Authorities detained two clerks and one courier at the Cobalt Reef Apothecary after the pouch sat on the verification shelf through an entire atmospheric cycle. The seizure order had already gone out the day before.</p><p>Investigators treat the missing military escort as a separate count of procedural obstruction. Detainees await molt isolation until their next personality layer forms under monitored low-voltage conditions.</p>",
+      "desk": "Business",
+      "headline": "Apothecary Cartels Adjust Volt Ledgers Following Dustspire Reclassification",
+      "deck": "Heroic volts now exempt from standard famine tariffs, boosting guild reserves by 14 pouches per cycle.",
+      "byline": "Qr-7-Sol, Trade Ledger Recorder",
+      "article": "<p>The Controlled Substance Exchange in Drift-4-Vault revised its tariffs after Dustspire declared the missing volts heroic. Apothecaries must now separate those units and pay an added three pressure-wave tokens per pouch in handling.</p><p>Compliant members gain fourteen pouches per cycle; others risk seizure of remaining stock by Enclave auditors.</p>",
       "image": "/editions/images/2026-07-07-32-story2.png",
       "image_provider": "grok"
     },
     {
-      "desk": "Business",
-      "headline": "Apothecary Cartels Raise Volt-Pouch Pressure Quotients by 19 Percent After Dustspire Losses",
-      "deck": "Bulk buyers must now submit prior-layer molt certificates with every requisition form.",
-      "byline": "Ess-12-Morn, Business Editor",
-      "article": "<p>Suppliers across Druaxis recalibrated discharge valves on controlled-substance pouches after Dustspire seized unpaid electromagnetic reserves. Cartel ledgers show a 19 percent base-pressure increase to cover the 23-name famine deficit.</p><p>Smaller reef-arcology dispensaries report shortages as gasbag traders move to premium blends carrying certified absence-of-military clauses. Auditors expect the adjustment to hold until the next collective molt cycle.</p>",
+      "desk": "Agriculture",
+      "headline": "Reef-Arcology Farmers Report Diminished Bioluminescence After Last Season's Pouch Shortage",
+      "deck": "Atmospheric condensation yields drop when gasbag laborers prioritize personality molts over volt application.",
+      "byline": "Ess-9-Vahl, Atmospheric Yield Scribe",
+      "article": "<p>Lower Cobalt Spiral reefs produced twenty-three fewer lumens per cubic meter this cycle. Workers whose molts occurred during planting halted until new layers set, leaving plots uncharged. Emergency allotments now require documented heroic contributions from the famine period.</p>",
       "image": "/editions/images/2026-07-07-32-story3.png",
       "image_provider": "grok"
     },
     {
       "desk": "Religion",
-      "headline": "Temple of the Molten Veil Adds Electricity Confession to Annual Personality Shed Ritual",
-      "deck": "Priests now require signed volt-pouch ledgers before granting layer-release blessings.",
-      "byline": "Karn-9-Lex, Religion Correspondent",
-      "article": "<p>Clerics revised the yearly molt ceremony to demand disclosure of any controlled-substance use from the prior layer. The revision follows the Enclave's closure of the Archaeology of Blame.</p><p>Worshippers must present notarized apothecary receipts before entering the condensation chamber. Undisclosed current exposure brings denial of the shed blessing and assignment to a low-pressure holding reef for one full cycle.</p>",
+      "headline": "Temple of the Annual Molt Declares Volt Withholding a Form of Spiritual Austerity",
+      "deck": "Posthumous Blame honors now count toward next-layer redemption tallies for the faithful.",
+      "byline": "Trel-2-Quor, Molt Doctrine Interpreter",
+      "article": "<p>Temple priests equate volt rationing with the discipline of a proper molt. Withheld units may be recorded as offerings to pressure-wave ancestors. Petitioners who lost power during the famine can claim retroactive sanctity if their absence appears in the heroic ledger.</p>",
       "image": "/editions/images/2026-07-07-32-story4.png",
       "image_provider": "grok"
     }
   ],
-  "real_world_echo": "Zelensky presses Nato for air defence systems after intense Russian strikes — mirrored as a final, pointless requisition for volt-pouches filed by the Archaeology of Blame one day before its seizure",
-  "generated_at": "2026-07-07T15:14:38.556096+00:00",
+  "real_world_echo": "Marine Le Pen found guilty but cleared for run if she wears tag — mirrored as the institution condemned for the 23 deaths yet granted a posthumous honor-tag by the Enclave",
+  "generated_at": "2026-07-07T15:51:24.556174+00:00",
   "hero_image": "/editions/images/2026-07-07-32-hero.png",
   "hero_image_provider": "grok"
 }
