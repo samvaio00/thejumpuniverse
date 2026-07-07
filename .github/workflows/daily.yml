@@ -38,6 +38,7 @@ jobs:
       - name: Generate the day's 8 universes (deterministic picks from the 100)
         env:
           GENERATE_IMAGES: "true"
+          GAZETTE_PARALLEL: "4"
           MOONSHOT_API_KEY: ${{ secrets.MOONSHOT_API_KEY }}
           GROK_API_KEY: ${{ secrets.GROK_API_KEY }}
           XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
