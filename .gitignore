@@ -1,3 +1,7 @@
 __pycache__/
 *.pyc
 .DS_Store
+
+# Images live in Cloudflare R2 (https://images.thejumpuniverse.com);
+# local files here are only the no-credentials dev fallback.
+editions/images/

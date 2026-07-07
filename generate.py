@@ -21,6 +21,18 @@ IMAGE_DIR = OUTPUT_DIR / "images"
 GENERATE_IMAGES = os.environ.get("GENERATE_IMAGES", "true").lower() != "false"
 MAX_ARCHIVE_DAYS = 30
 
+# Cloudflare R2 image offloading. When credentials are present, generated
+# images are converted to WebP and uploaded to R2 instead of being committed
+# to the repo; edition JSON then stores the absolute public URL. With no
+# credentials (local/dev), behavior falls back to the old local PNG files.
+R2_ACCOUNT_ID = os.environ.get("R2_ACCOUNT_ID", "0e5ed33a08d98c5105dfd8fe5c65d7be")
+R2_BUCKET = os.environ.get("R2_BUCKET", "gazette-images")
+R2_PUBLIC_BASE = os.environ.get("R2_PUBLIC_BASE", "https://images.thejumpuniverse.com").rstrip("/")
+R2_ACCESS_KEY_ID = os.environ.get("R2_ACCESS_KEY_ID")
+R2_SECRET_ACCESS_KEY = os.environ.get("R2_SECRET_ACCESS_KEY")
+R2_ENDPOINT = f"https://{R2_ACCOUNT_ID}.r2.cloudflarestorage.com"
+WEBP_QUALITY = 82
+
 # Role assignments — each AI plays to its strength.
 # story:  Moonshot Kimi — long-form creative prose
 # humor:  Grok — the paper is a parody, so every joke section (op-ed, comic,
@@ -479,11 +491,87 @@ def generate_image(prompt, provider_name):
     return None
 
 
+# ─── R2 IMAGE STORAGE ───────────────────────────────────────────────
+_r2_client = None
+_r2_client_lock = None
+
+
+def r2_enabled():
+    """True when R2 credentials are configured in the environment."""
+    return bool(R2_ACCESS_KEY_ID and R2_SECRET_ACCESS_KEY)
+
+
+def _get_r2_client():
+    """Lazily build a boto3 S3 client for R2 (thread-safe; --all runs threaded)."""
+    global _r2_client, _r2_client_lock
+    if _r2_client_lock is None:
+        import threading
+        _r2_client_lock = threading.Lock()
+    with _r2_client_lock:
+        if _r2_client is None:
+            import boto3  # lazy: local runs without creds don't need boto3 installed
+            _r2_client = boto3.client(
+                "s3",
+                endpoint_url=R2_ENDPOINT,
+                aws_access_key_id=R2_ACCESS_KEY_ID,
+                aws_secret_access_key=R2_SECRET_ACCESS_KEY,
+                region_name="auto",
+            )
+    return _r2_client
+
+
+def convert_to_webp(image_bytes, filename):
+    """Convert image bytes to WebP. Returns (bytes, key, content_type).
+    On any failure (Pillow missing, decode error) keeps the original bytes,
+    filename and content type."""
+    stem, dot, ext = filename.rpartition(".")
+    original = (image_bytes, filename,
+                f"image/{ext.lower() or 'png'}" if dot else "image/png")
+    try:
+        import io
+        from PIL import Image  # lazy: optional dependency
+        img = Image.open(io.BytesIO(image_bytes))
+        if img.mode not in ("RGB", "RGBA"):
+            img = img.convert("RGB")
+        buf = io.BytesIO()
+        img.save(buf, format="WEBP", quality=WEBP_QUALITY, method=6)
+        return buf.getvalue(), f"{stem or filename}.webp", "image/webp"
+    except Exception as e:
+        print(f"Warning: WebP conversion failed for {filename} ({e}); keeping original format")
+        return original
+
+
+def upload_image_to_r2(image_bytes, filename):
+    """Convert to WebP and upload to the R2 bucket. Returns the public URL.
+    Raises on upload failure — callers decide the fallback."""
+    data, key, content_type = convert_to_webp(image_bytes, filename)
+    _get_r2_client().put_object(
+        Bucket=R2_BUCKET,
+        Key=key,
+        Body=data,
+        ContentType=content_type,
+        CacheControl="public, max-age=31536000, immutable",
+    )
+    return f"{R2_PUBLIC_BASE}/{key}"
+
+
 def save_image_file(image_b64, filename):
+    """Persist a generated image and return the path/URL to store in the edition.
+
+    Preferred: WebP-convert and upload to R2, returning the absolute public URL.
+    Fail soft: with missing credentials or any upload error, fall back to the
+    legacy behavior — write the PNG under editions/images/ and return the
+    old-style relative path — so local/dev runs work with zero configuration."""
+    raw = base64.b64decode(image_b64)
+    if r2_enabled():
+        try:
+            return upload_image_to_r2(raw, filename)
+        except Exception as e:
+            print(f"Warning: R2 upload failed for {filename} ({e}); saving locally instead")
     IMAGE_DIR.mkdir(parents=True, exist_ok=True)
     path = IMAGE_DIR / filename
     with open(path, "wb") as f:
-        f.write(base64.b64decode(image_b64))
+        f.write(raw)
     return f"/editions/images/{filename}"
 
 # ─── PROMPTS ────────────────────────────────────────────────────────
@@ -1462,7 +1550,11 @@ def prerender_index(edition):
     title = f"{edition['headline']} | Multiverse Gazette"
     desc = f"{edition['deck']} — Satirical galactic news from the multiverse — an alternate history dispatch from a universe where {edition['divergence']}."
     hero = edition.get("hero_image")
-    og_image = f"{site}{hero}" if hero else f"{site}/og-image.jpg"
+    # R2-era editions store absolute URLs; legacy ones store /editions/images/... paths.
+    if hero:
+        og_image = hero if str(hero).startswith("http") else f"{site}{hero}"
+    else:
+        og_image = f"{site}/og-image.jpg"
     theme_label = edition["theme"].capitalize()
 
     sub(r"<title>.*?</title>", f"<title>{esc(title)}</title>", "title")
@@ -1605,8 +1697,10 @@ def backfill_images(date_slug):
         uni = UNIVERSES.get(tid) or {}
         world_notes = image_world_notes(uni.get("inhabitants", ""), uni.get("world_style", ""))
 
+        hero = ed.get("hero_image") or ""
         hero_file = IMAGE_DIR / f"{date_slug}-{tid}-hero.png"
-        if not ed.get("hero_image") or not hero_file.exists():
+        # Absolute URLs (R2-hosted) count as existing — nothing to backfill.
+        if not hero or (not hero.startswith("http") and not hero_file.exists()):
             print(f"{date_slug}-{tid}: generating hero image...")
             b64, provider = generate_image_with_fallback(
                 HERO_IMAGE_PROMPT.format(theme=ed["theme"], year=ed["year"],
@@ -1619,8 +1713,9 @@ def backfill_images(date_slug):
                 changed = True
 
         for i, story in enumerate(ed.get("stories") or []):
+            img = story.get("image") or ""
             story_file = IMAGE_DIR / f"{date_slug}-{tid}-story{i + 2}.png"
-            if story.get("image") and story_file.exists():
+            if img and (img.startswith("http") or story_file.exists()):
                 continue
             print(f"{date_slug}-{tid}: generating story {i + 2} image...")
             b64, provider = generate_image_with_fallback(
@@ -1635,8 +1730,10 @@ def backfill_images(date_slug):
                 changed = True
 
         strip = ed.get("comic_strip") or {}
+        strip_img = strip.get("image") or ""
         strip_file = IMAGE_DIR / f"{date_slug}-{tid}-strip.png"
-        if strip.get("panels") and (not strip.get("image") or not strip_file.exists()):
+        if strip.get("panels") and (
+                not strip_img or (not strip_img.startswith("http") and not strip_file.exists())):
             print(f"{date_slug}-{tid}: generating comic strip image...")
             panel_summary = " | ".join(p.get("caption", "")[:60] for p in strip.get("panels", [])[:3])
             b64, provider = generate_image_with_fallback(
