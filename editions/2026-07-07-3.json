@@ -64,7 +64,7 @@
         "caption": "Worker: \"How much to question my own compliance?\" Bureaucrat: \"Double. Plus a consultation fee.\""
       }
     ],
-    "image": "/editions/images/2026-07-07-3-strip.png",
+    "image": "https://images.thejumpuniverse.com/2026-07-07-3-strip.webp",
     "image_provider": "grok"
   },
   "joke": {
@@ -101,12 +101,12 @@
       "deck": "State-approved consultants now log each 'why' as a line item against collective quotas.",
       "byline": "Ezekiel Auditor, Business Editor",
       "article": "<p>Following the reassignment of the dissenting worker, the Ministry of Dialectical Revenue has decreed that every Socratic exchange must be invoiced at four point seven teal rubles per minute, with proceeds directed straight to the National Lace Reserve. Production pauses for questioning are now debited against the responsible brigade's monthly target.</p><p>Cathedral construction brigades report a 14 percent shortfall in output after three days of recorded consultations on the ownership of replacement laces. Unpaid balances are carried forward as ideological debt, to be settled through additional quota labor.</p>",
-      "image": "/editions/images/2026-07-07-3-story2.png",
+      "image": "https://images.thejumpuniverse.com/2026-07-07-3-story2.webp",
       "image_provider": "grok"
     }
   ],
   "real_world_echo": "Marine Le Pen found guilty but cleared for presidential run if tagged - mirrored as the worker declared ideologically guilty yet permitted to remain untouched and continue isolated quota compliance under perpetual observation",
   "generated_at": "2026-07-07T15:51:37.502728+00:00",
-  "hero_image": "/editions/images/2026-07-07-3-hero.png",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-07-3-hero.webp",
   "hero_image_provider": "grok"
 }

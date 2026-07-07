@@ -64,7 +64,7 @@
         "caption": "Chief: 'Problem solved. The drowned ones can't file complaints.'"
       }
     ],
-    "image": "/editions/images/2026-07-07-48-strip.png",
+    "image": "https://images.thejumpuniverse.com/2026-07-07-48-strip.webp",
     "image_provider": "grok"
   },
   "joke": {
@@ -101,12 +101,12 @@
       "deck": "Tasting officers log metallic notes as new compliance baseline for quarter.",
       "byline": "Silt:Bran, Senior Agronomist",
       "article": "<p>Wasteland Agricultural Bureau ledgers now record glassroot output across lower warrens at 14 percent above target following direct seepage from the Ir:Vess tunnel. Magnetic tasting crews registered elevated iron signatures and have adjusted all field calibration charts accordingly.</p><p>Quota inspectors directed farmers to incorporate measured volumes of tunnel sediment into storage vats before magnetic verification. All deliveries must reach the central tasting node by quarter close to avoid recalibration penalties.</p>",
-      "image": "/editions/images/2026-07-07-48-story2.png",
+      "image": "https://images.thejumpuniverse.com/2026-07-07-48-story2.webp",
       "image_provider": "grok"
     }
   ],
   "real_world_echo": "Marine Le Pen found guilty but cleared for run if she wears tag — mirrored as official held liable for flood yet retained in post under conditional magnetic tether monitoring",
   "generated_at": "2026-07-07T15:55:07.507423+00:00",
-  "hero_image": "/editions/images/2026-07-07-48-hero.png",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-07-48-hero.webp",
   "hero_image_provider": "grok"
 }

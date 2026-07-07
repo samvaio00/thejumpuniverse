@@ -64,7 +64,7 @@
         "caption": "A knight tugs his stubby sleeve and mutters, 'At least next Tuesday won't mock us to our faces.'"
       }
     ],
-    "image": "/editions/images/2026-07-07-45-strip.png",
+    "image": "https://images.thejumpuniverse.com/2026-07-07-45-strip.webp",
     "image_provider": "grok"
   },
   "joke": {
@@ -101,7 +101,7 @@
       "deck": "Consensus spires now sing only of exposed midriffs until 442.",
       "byline": "Eioaua, Hemline Correspondent",
       "article": "<p>Without certified forecasts, drifting citizens now judge next week by collar height alone. High collars dominate the promenades; hems remain a mystery.</p><p>Fabric merchants count unsold bolts and blame the lack of scryers rather than their own stock.</p>",
-      "image": "/editions/images/2026-07-07-45-story2.png",
+      "image": "https://images.thejumpuniverse.com/2026-07-07-45-story2.webp",
       "image_provider": "grok"
     },
     {
@@ -110,7 +110,7 @@
       "deck": "Root crops on Kreion now ripen only after three days of eye-ring silence.",
       "byline": "Aiuoea, Yield Recorder",
       "article": "<p>Outer Drift farms wait for spire-song cues that no longer mention Tuesday. Vines swell without signal; clerks demand three extra witnesses before any root is tallied.</p>",
-      "image": "/editions/images/2026-07-07-45-story3.png",
+      "image": "https://images.thejumpuniverse.com/2026-07-07-45-story3.webp",
       "image_provider": "grok"
     },
     {
@@ -119,12 +119,12 @@
       "deck": "Next week's readings now arrive precisely three days prior to arrival.",
       "byline": "Oaieua, Drift Measurer",
       "article": "<p>Every reflective surface now shows events one week early. The gazing ban blocks recalibration, so the constant Tuesday image slowly replaces all other data.</p>",
-      "image": "/editions/images/2026-07-07-45-story4.png",
+      "image": "https://images.thejumpuniverse.com/2026-07-07-45-story4.webp",
       "image_provider": "grok"
     }
   ],
   "real_world_echo": "Marine Le Pen headline: the Order was formally condemned for 'unlawful gazing' yet permitted to continue if every member wore a visible sigil tag, only to expire anyway when no one could recall why the sigils mattered",
   "generated_at": "2026-07-07T15:52:04.180880+00:00",
-  "hero_image": "/editions/images/2026-07-07-45-hero.png",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-07-45-hero.webp",
   "hero_image_provider": "grok"
 }

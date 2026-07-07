@@ -64,7 +64,7 @@
         "caption": "\"Then why's the grid still dark?\" a starving citizen asks. \"The volts died braver than we did.\""
       }
     ],
-    "image": "/editions/images/2026-07-07-32-strip.png",
+    "image": "https://images.thejumpuniverse.com/2026-07-07-32-strip.webp",
     "image_provider": "grok"
   },
   "joke": {
@@ -101,7 +101,7 @@
       "deck": "Heroic volts now exempt from standard famine tariffs, boosting guild reserves by 14 pouches per cycle.",
       "byline": "Qr-7-Sol, Trade Ledger Recorder",
       "article": "<p>The Controlled Substance Exchange in Drift-4-Vault revised its tariffs after Dustspire declared the missing volts heroic. Apothecaries must now separate those units and pay an added three pressure-wave tokens per pouch in handling.</p><p>Compliant members gain fourteen pouches per cycle; others risk seizure of remaining stock by Enclave auditors.</p>",
-      "image": "/editions/images/2026-07-07-32-story2.png",
+      "image": "https://images.thejumpuniverse.com/2026-07-07-32-story2.webp",
       "image_provider": "grok"
     },
     {
@@ -110,7 +110,7 @@
       "deck": "Atmospheric condensation yields drop when gasbag laborers prioritize personality molts over volt application.",
       "byline": "Ess-9-Vahl, Atmospheric Yield Scribe",
       "article": "<p>Lower Cobalt Spiral reefs produced twenty-three fewer lumens per cubic meter this cycle. Workers whose molts occurred during planting halted until new layers set, leaving plots uncharged. Emergency allotments now require documented heroic contributions from the famine period.</p>",
-      "image": "/editions/images/2026-07-07-32-story3.png",
+      "image": "https://images.thejumpuniverse.com/2026-07-07-32-story3.webp",
       "image_provider": "grok"
     },
     {
@@ -119,12 +119,12 @@
       "deck": "Posthumous Blame honors now count toward next-layer redemption tallies for the faithful.",
       "byline": "Trel-2-Quor, Molt Doctrine Interpreter",
       "article": "<p>Temple priests equate volt rationing with the discipline of a proper molt. Withheld units may be recorded as offerings to pressure-wave ancestors. Petitioners who lost power during the famine can claim retroactive sanctity if their absence appears in the heroic ledger.</p>",
-      "image": "/editions/images/2026-07-07-32-story4.png",
+      "image": "https://images.thejumpuniverse.com/2026-07-07-32-story4.webp",
       "image_provider": "grok"
     }
   ],
   "real_world_echo": "Marine Le Pen found guilty but cleared for run if she wears tag — mirrored as the institution condemned for the 23 deaths yet granted a posthumous honor-tag by the Enclave",
   "generated_at": "2026-07-07T15:51:24.556174+00:00",
-  "hero_image": "/editions/images/2026-07-07-32-hero.png",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-07-32-hero.webp",
   "hero_image_provider": "grok"
 }

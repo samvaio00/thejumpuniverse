@@ -64,7 +64,7 @@
         "caption": "Lord to clerk: \"Then bill the serfs for the darkness they keep wasting.\""
       }
     ],
-    "image": "/editions/images/2026-07-07-61-strip.png",
+    "image": "https://images.thejumpuniverse.com/2026-07-07-61-strip.webp",
     "image_provider": "grok"
   },
   "joke": {
@@ -101,7 +101,7 @@
       "deck": "Ezekiel29 reports three-acre plots now yielding only brass filings under eclipse licenses",
       "byline": "Nehemiah7, Agricultural Correspondent",
       "article": "<p>Tenant holders on the copper terraces of Gilead12 have abandoned barley rows for the gutters beneath lordly awnings, where nightly collections of loosened rivets provide the sole caloric intake. Market ledgers record a fortyfold rise in filings traded against remaining eclipse tokens.</p><p>The Copper Synod has issued a new tithe schedule requiring one quarter of all shavings to be rendered to the vault at Bethel3 before dawn tokens expire.</p>",
-      "image": "/editions/images/2026-07-07-61-story2.png",
+      "image": "https://images.thejumpuniverse.com/2026-07-07-61-story2.webp",
       "image_provider": "grok"
     },
     {
@@ -110,7 +110,7 @@
       "deck": "Priests of Isaiah44 announce that intercessions now require verified holdings in the Solar Trust",
       "byline": "Reuben19, Religion Correspondent",
       "article": "<p>The copper-clad nave of Zion7 stands unlit for the first time since its founding, the last cask of lamp oil having been auctioned at midday to a consortium of Enoch31’s heirs. Worshippers are directed to recite the evening psalms in total darkness while clutching their bond certificates.</p><p>A decree from the Synod requires proof of premium subscription before any petition for restored dawn may be presented at the altar.</p>",
-      "image": "/editions/images/2026-07-07-61-story3.png",
+      "image": "https://images.thejumpuniverse.com/2026-07-07-61-story3.webp",
       "image_provider": "grok"
     },
     {
@@ -119,12 +119,12 @@
       "deck": "Three serfs detained with smuggled vials of premium dusk at the gates of Jericho6",
       "byline": "Gideon11, Crime Correspondent",
       "article": "<p>Constables of the Copper Watch have increased patrols along the riveted alleys of Manasseh4 following complaints that small quantities of retained daylight are being drained from private balconies after curfew. Offenders face immediate forfeiture of all eclipse tokens.</p><p>The magistrate at Solomon22 has ordered that any captured light be poured back into the Synod’s central reservoir before the next billing cycle closes.</p>",
-      "image": "/editions/images/2026-07-07-61-story4.png",
+      "image": "https://images.thejumpuniverse.com/2026-07-07-61-story4.webp",
       "image_provider": "grok"
     }
   ],
   "real_world_echo": "Marine Le Pen found guilty but cleared for presidential run if tagged - mirrored as Lord Methuselah-19 found in breach of solar edict yet permitted to retain all eclipse licenses upon affixing a royal copper monitoring tag",
   "generated_at": "2026-07-07T15:54:41.894956+00:00",
-  "hero_image": "/editions/images/2026-07-07-61-hero.png",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-07-61-hero.webp",
   "hero_image_provider": "grok"
 }

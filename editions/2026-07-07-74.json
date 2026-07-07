@@ -64,7 +64,7 @@
         "caption": "Mourner: 'Too late. The regulators are suing each other for the empty sky.'"
       }
     ],
-    "image": "/editions/images/2026-07-07-74-strip.png",
+    "image": "https://images.thejumpuniverse.com/2026-07-07-74-strip.webp",
     "image_provider": "grok"
   },
   "joke": {
@@ -101,12 +101,12 @@
       "deck": "Hosts must now log each guest's lawsuit number before seating.",
       "byline": "Elena Peso Albañil, Society Correspondent",
       "article": "<p>Following the floatation of claims against the Instituto Peso Albañil García, the Silver Eye Assembly has revised its etiquette manuals to account for lighter guests at formal dinners. Invitations now include clauses requiring hosts to provide anchor points at each table setting.</p><p>Assembly secretary Elena Albañil Morales stated that failure to secure such points has led to several mid-course elevations during recent events. New regulations demand that all cutlery be stamped with individual lawsuit numbers to track potential airborne incidents.</p>",
-      "image": "/editions/images/2026-07-07-74-story2.png",
+      "image": "https://images.thejumpuniverse.com/2026-07-07-74-story2.webp",
       "image_provider": "grok"
     }
   ],
   "real_world_echo": "Marine Le Pen found guilty but cleared to run if tagged — mirrored as the Instituto found liable for the gravity weakening yet permitted to linger under court-ordered monitoring anklets before its quiet dissolution",
   "generated_at": "2026-07-07T15:51:52.050842+00:00",
-  "hero_image": "/editions/images/2026-07-07-74-hero.png",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-07-74-hero.webp",
   "hero_image_provider": "grok"
 }

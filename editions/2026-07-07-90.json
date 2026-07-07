@@ -64,7 +64,7 @@
         "caption": "\"Your ads now charge extra for the shame,\" the neural voice purrs. \"Premium guilt is the only luxury left.\""
       }
     ],
-    "image": "/editions/images/2026-07-07-90-strip.png",
+    "image": "https://images.thejumpuniverse.com/2026-07-07-90-strip.webp",
     "image_provider": "grok"
   },
   "joke": {
@@ -101,7 +101,7 @@
       "deck": "Côte d'Azur evacuees now bill their own neural evacuations at premium rates",
       "byline": "Comte de la Comptabilité, Revenue Ledger Editor",
       "article": "<p>The Neural Tribunal's new loyalty tags have produced a 62 percent rise in ad-surcharge remittances across Morosca's concrete districts. Every interface now pauses for a compulsory ledger recitation before any commercial insertion can proceed.</p><p>Champagne Minds displaced from the enclaves yesterday filed claims for evacuation surcharges against their own prior deposits, closing the fiscal loop with administrative precision.</p>",
-      "image": "/editions/images/2026-07-07-90-story2.png",
+      "image": "https://images.thejumpuniverse.com/2026-07-07-90-story2.webp",
       "image_provider": "grok"
     },
     {
@@ -110,12 +110,12 @@
       "deck": "Gill-lines register collective indigo during the new surcharge psalms",
       "byline": "Abbé de la Serrurerie, Cathedral Correspondent",
       "article": "<p>Clergy at the principal Brutalist temple announced that neural interfaces will now carry sponsored intercessions immediately after each evening recitation. Devotees must maintain bronze skin tone throughout or forfeit their place in the queue for absolution.</p><p>The first sponsored saint to appear was the patron of unpaid ledgers, whose image lingers three seconds longer than the previous free version.</p>",
-      "image": "/editions/images/2026-07-07-90-story3.png",
+      "image": "https://images.thejumpuniverse.com/2026-07-07-90-story3.webp",
       "image_provider": "grok"
     }
   ],
   "real_world_echo": "Mirrors Marine Le Pen guilty verdict yet cleared for run if wearing tag: officials found to have skimmed neural ad revenue but reinstated once they implant a tag that continuously broadcasts state-approved jingles",
   "generated_at": "2026-07-07T15:55:14.063431+00:00",
-  "hero_image": "/editions/images/2026-07-07-90-hero.png",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-07-90-hero.webp",
   "hero_image_provider": "grok"
 }

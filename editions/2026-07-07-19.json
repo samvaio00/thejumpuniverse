@@ -64,7 +64,7 @@
         "caption": "Citizen, staring at glowing catalog: \"My draft notice from 1984 just landed on top of it.\""
       }
     ],
-    "image": "/editions/images/2026-07-07-19-strip.png",
+    "image": "https://images.thejumpuniverse.com/2026-07-07-19-strip.webp",
     "image_provider": "grok"
   },
   "joke": {
@@ -101,7 +101,7 @@
       "deck": "Researchers instructed to route hypotheses through bulk advertising channels",
       "byline": "Comrade Millicent Hardy-Dickens, Principal Science Correspondent",
       "article": "<p>Meridian Halo laboratories report that personal data packets continue to register as secondary void noise, while coupon transmissions achieve 0.87 light-year clearance within four hours. Twin-pupiled technicians at the Central Institute have been ordered to affix product leaflets to all grant proposals.</p><p>State quotas now mandate that 92 percent of FTL bandwidth serve commercial circulars, leaving experimental results from Fenune's ash-pale research cadres to accumulate in municipal sorting depots for an average of eleven months.</p>",
-      "image": "/editions/images/2026-07-07-19-story2.png",
+      "image": "https://images.thejumpuniverse.com/2026-07-07-19-story2.webp",
       "image_provider": "grok"
     },
     {
@@ -110,12 +110,12 @@
       "deck": "Doorway clearances raised again to accommodate promotional volumes",
       "byline": "Comrade Reginald Thackeray-Brontë, Society Desk Correspondent",
       "article": "<p>Residents of the eight-foot concrete blocks surrounding Fenune's central plazas now navigate passages lined with titanium-reinforced coupon crates delivered at FTL speeds. Ash-pale families with amber eyes have begun using the unopened bundles as seating during evening assemblies.</p><p>Party directives emphasize that personal invitations remain subject to cosmic allocation delays, while every household receives its weekly allotment of 47 discount booklets without exception.</p>",
-      "image": "/editions/images/2026-07-07-19-story3.png",
+      "image": "https://images.thejumpuniverse.com/2026-07-07-19-story3.webp",
       "image_provider": "grok"
     }
   ],
   "real_world_echo": "Mirrors Marine Le Pen found guilty yet cleared to run if tagged, by framing the denial as conditional permission for FTL junk operations under monitoring that exposes the full imbalance",
   "generated_at": "2026-07-07T15:56:50.649872+00:00",
-  "hero_image": "/editions/images/2026-07-07-19-hero.png",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-07-19-hero.webp",
   "hero_image_provider": "grok"
 }
