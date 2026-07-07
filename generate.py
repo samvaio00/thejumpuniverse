@@ -1692,9 +1692,29 @@ if __name__ == "__main__":
         raise SystemExit(0)
 
     if args.all:
-        for tid in daily_universe_ids(date):
-            ed = generate_edition(date, tid, with_images=with_images)
-            save_edition(ed)
+        # Editions are independent and almost entirely network-bound (LLM +
+        # image API calls), so generate them concurrently. GAZETTE_PARALLEL
+        # controls the worker count (1 = old sequential behavior).
+        fetch_real_headlines()  # warm the shared cache once, outside the threads
+        tids = daily_universe_ids(date)
+        workers = max(1, int(os.environ.get("GAZETTE_PARALLEL", "4")))
+        if workers == 1:
+            for tid in tids:
+                save_edition(generate_edition(date, tid, with_images=with_images))
+        else:
+            from concurrent.futures import ThreadPoolExecutor
+            with ThreadPoolExecutor(max_workers=workers) as pool:
+                futures = [(tid, pool.submit(generate_edition, date, tid, with_images))
+                           for tid in tids]
+                errors = []
+                for tid, fut in futures:
+                    try:
+                        save_edition(fut.result())
+                    except Exception as e:
+                        errors.append((tid, e))
+                        print(f"Universe {tid} FAILED: {e}")
+            if errors and len(errors) == len(futures):
+                raise SystemExit(f"All {len(futures)} editions failed; aborting")
     else:
         ed = generate_edition(date, args.timeline, with_images=with_images)
         save_edition(ed)
