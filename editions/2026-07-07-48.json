@@ -1,0 +1,112 @@
+{
+  "timeline_id": 48,
+  "theme": "wasteland",
+  "date": "2026-07-07",
+  "date_display": "Tuesday, July 07, 2026",
+  "year": 4914,
+  "universe_name": "The Tin Parallel",
+  "universe_year": 4914,
+  "universe_date_display": "July 7, Year 4914",
+  "galaxy": "Thorned Wheel",
+  "planet": "Eskaxis",
+  "divergence": "A plague wiped out 90% of humanity and the remaining 10% still can't get a plumber",
+  "story_angle": "deadpan report of a catastrophe that everyone involved considers a great success",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: Grok",
+    "Editor: Grok"
+  ],
+  "headline": "Wasteland Sanitation Authority Hails Contaminated Tunnels as 'Surge in Efficiency Metrics'",
+  "deck": "Noble citizens celebrate the newfound drought as a bold move towards liquid-free livability.",
+  "article": "<p>The Wasteland Sanitation Authority sealed three major tunnel networks and labeled the action an exemplary quota-exceeding efficiency. The Ir:Vess Magnetic Filtration Collective recorded a 47% drop in water requests. Gasbag officials now present the drought as a calculated triumph of resource management.</p><p>Council deliberations ended with a unanimous extension of the avoid-fluid advisory through the next fiscal cycle. Councilor Heptiflo stated that reduced resources had cut demand while sharpening magnetic-field clarity by 12%. Less water, the metrics insist, equals clearer readings.</p><p>New survivor intake forms now demand magnetic-taste certification before any applicant may near a pipe access point. Chief Sanitation Officer Flarequill announced that only certified citizens would receive the remaining droplets.</p><p>Residents have begun performing interpretive buoyancy dances in windless corridors to signal loyalty to the magnetic fields. The prevailing refrain is that dehydration now counts as the approved form of hydration.</p>",
+  "author": "Blagron: Gritty Correspondent of the Council of Resilience",
+  "city": "Gritstone Hollow",
+  "weather": {
+    "city": "Gritstone Hollow",
+    "condition": "Efficiency Surge: Zero Precipitation Expected",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "Contaminated Tunnels Prove Liquid-Free Living Is Our Destiny",
+    "author": "Lord Percival Dripdry, Certified Efficiency Oracle and Lifetime Hat Warden",
+    "body": "The Wasteland Sanitation Authority merits praise, not derision, for declaring the sealed tunnels a surge in efficiency metrics. The policy finally commits the settlement to genuine liquid-free existence. Complaints about thirst overlook how empty pipes remove every future plumbing breakdown. The true obstacle remains citizens' oversized hats that trap phantom moisture and undermine the dry standard. Skullcaps alone should be permitted; wide brims must be checked at every tunnel entrance. My own vintage fedora collection would then stand unchallenged."
+  },
+  "classifieds": [
+    {
+      "cat": "For Sale",
+      "text": "For Sale: heirloom plunger collection and three lengths of copper pipe, never used since the Efficiency Surge dried the tunnels. Desperate trades only, bring rad-rats or a working canteen to Sector 9."
+    },
+    {
+      "cat": "Help Wanted",
+      "text": "Help Wanted: Efficiency Enforcer to patrol contaminated tunnels and fine anyone caught carrying liquid. No plumbing experience required; celebrate the drought or seek work elsewhere."
+    },
+    {
+      "cat": "Lost & Found",
+      "text": "Lost: last sealed vial of pre-plague water, dropped near Tunnel 4 during the noble drought celebrations. Finder keep silent or Sanitation will measure your efficiency."
+    },
+    {
+      "cat": "Public Notices",
+      "text": "Public Notice: former plumber confesses to one unauthorized drip in 4913; offers sincere apologies and promises to praise liquid-free livability henceforth."
+    }
+  ],
+  "comic_strip": {
+    "title": "Dry Tunnel Surge",
+    "panels": [
+      {
+        "caption": "Authority Chief: 'Contaminated tunnels logged a surge in efficiency metrics—zero leaks!'"
+      },
+      {
+        "caption": "Bureaucrat: 'Drought's a feature now. No liquid, no complaints from the survivors.'"
+      },
+      {
+        "caption": "Citizen: 'Next metric: who needs a plumber when the pipes are already corpses.'"
+      }
+    ],
+    "image": "/editions/images/2026-07-07-48-strip.png",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "The Wasteland Sanitation Authority celebrated their contaminated tunnels hitting new efficiency benchmarks",
+    "punchline": "because with no plumbers left breathing, the effluent finally stopped waiting for service calls and just dissolved the survivors instead.",
+    "text": "The Wasteland Sanitation Authority celebrated their contaminated tunnels hitting new efficiency benchmarks—because with no plumbers left breathing, the effluent finally stopped waiting for service calls and just dissolved the survivors instead."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "WSA Efficiency Sludge Vouchers",
+      "body": "Redeem at any tunnel access grate for pre-contaminated batches that boost your personal metrics before the Sanitation Authority notices the drop.",
+      "tagline": "Void where actual plumbers still exist."
+    },
+    {
+      "headline": "Automated Leak Denier 4914",
+      "body": "Strap this rune-etched valve to any pipe and watch leaks reclassify themselves as efficiency surges while you stay home with the other nine percent.",
+      "tagline": "Batteries sold separately; plumbers not sold at all."
+    },
+    {
+      "headline": "Tunnel Compliance Insurance",
+      "body": "One payment covers fines when your waste flow fails to meet the new contaminated benchmark, paid directly to the Wasteland Sanitation Authority.",
+      "tagline": "Claims processed in 90 years or when humanity recovers, whichever comes last."
+    },
+    {
+      "headline": "Post-Plague Pipe Choir",
+      "body": "Hire our trained rat ensemble to sing through your remaining pipes, turning drips into official WSA-approved efficiency anthems.",
+      "tagline": "Rats not guaranteed to survive the next metric adjustment."
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Society",
+      "headline": "Burrow Residents of Cluster Vex:Thal Mark Efficiency Quarter With Zero Moisture Events",
+      "deck": "Magnetic field tastings replace hydration rites as authorities log 47 percent fewer tunnel leaks",
+      "byline": "Nex:Orl, Society Correspondent",
+      "article": "<p>Gasbag inhabitants of the Vex:Thal warrens gathered for the quarterly Dry Compliance Assembly and recorded zero liquid seepage across 312 tunnels. Attendees sampled residual magnetic traces and noted the end of all scheduled maintenance requests.</p><p>Savings from the plumber moratorium have already paid for extra wall reinforcements. One elder called the drought a permanent fixture of efficient rule.</p>",
+      "image": "/editions/images/2026-07-07-48-story2.png",
+      "image_provider": "grok"
+    }
+  ],
+  "real_world_echo": "Zelensky to press Nato for air defence systems after intense Russian strikes - mirrored as authorities requesting external 'field-taste plumber brigades' after magnetic-leak 'strikes' on warrens while insisting no aid needed",
+  "generated_at": "2026-07-07T04:35:55.383039+00:00",
+  "hero_image": "/editions/images/2026-07-07-48-hero.png",
+  "hero_image_provider": "grok"
+}

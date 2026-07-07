@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-06T22:41:38.835704+00:00",
+ "generated_at": "2026-07-07T04:35:55.386735+00:00",
  "dates": {
   "2026-06-28": [
    {
@@ -327,6 +327,88 @@
     "deck": "Luxury has never been so taxing — or ticklish.",
     "divergence": "Neural interfaces became mandatory and the advertisements are inside now",
     "hero_image": "/editions/images/2026-07-06-90-hero.png"
+   }
+  ],
+  "2026-07-07": [
+   {
+    "timeline_id": 3,
+    "theme": "soviet",
+    "year": 1934,
+    "universe_name": "Palegate",
+    "headline": "NOBLE HERO OR MISGUIDED IDEALIST? NOAH MENDER-SOCRATES REFUSES TO CAPITULATE TO BILLABLE QUESTIONS",
+    "deck": "Citizens log unpaid inquiries while quotas for dialectical clarity soar to unprecedented heights.",
+    "divergence": "Socrates monetized his questions and founded the first consulting empire",
+    "hero_image": "/editions/images/2026-07-07-3-hero.png"
+   },
+   {
+    "timeline_id": 19,
+    "theme": "soviet",
+    "year": 1996,
+    "universe_name": "The Borrowed Century",
+    "headline": "DIRECTOR EUSTACE BRUNEL FARADAY DEFENDS JUNK MAIL PRIORITIZATION AS PERSONAL MAIL WITHERS IN SPACE-TIME",
+    "deck": "Bureaucratic metrics trumpet coupon floods while private letters stall in sub-light limbo.",
+    "divergence": "The postal service achieved faster-than-light delivery but only for junk mail",
+    "hero_image": "/editions/images/2026-07-07-19-hero.png"
+   },
+   {
+    "timeline_id": 32,
+    "theme": "wasteland",
+    "year": 2263,
+    "universe_name": "Saltcrown",
+    "headline": "Dustspire Volt-Ledger Guild: Unreadable Records Laid to Rest, Bureaucracy Mourns in 47 Pages of Formality",
+    "deck": "Final eulogy issued for an organization that now serves as a windbreak, leaving mourners short on both light and wit.",
+    "divergence": "Electricity was declared a controlled substance and is sold by apothecaries",
+    "hero_image": "/editions/images/2026-07-07-32-hero.png"
+   },
+   {
+    "timeline_id": 45,
+    "theme": "medieval",
+    "year": 439,
+    "universe_name": "The Ninth Ledger",
+    "headline": "Venerable Order of the Veiled Gaze Meets Its Reflective End",
+    "deck": "Ceremony to Obscure an Obsolete Legacy of Unfashionable Divination",
+    "divergence": "Every mirror shows next Tuesday, and fashion has never recovered",
+    "hero_image": "/editions/images/2026-07-07-45-hero.png"
+   },
+   {
+    "timeline_id": 48,
+    "theme": "wasteland",
+    "year": 4914,
+    "universe_name": "The Tin Parallel",
+    "headline": "Wasteland Sanitation Authority Hails Contaminated Tunnels as 'Surge in Efficiency Metrics'",
+    "deck": "Noble citizens celebrate the newfound drought as a bold move towards liquid-free livability.",
+    "divergence": "A plague wiped out 90% of humanity and the remaining 10% still can't get a plumber",
+    "hero_image": "/editions/images/2026-07-07-48-hero.png"
+   },
+   {
+    "timeline_id": 61,
+    "theme": "medieval",
+    "year": 680,
+    "universe_name": "The Amber Protocol",
+    "headline": "Lords Celebrate Three-Day Dimming as Evidence of Daylight's True Worth",
+    "deck": "Abraham777 and Moses42 Wield New Eclipse Licenses to Gratify Serf Gratitude",
+    "divergence": "The sun was privatized and daylight became a premium tier",
+    "hero_image": "/editions/images/2026-07-07-61-hero.png"
+   },
+   {
+    "timeline_id": 74,
+    "theme": "artdeco",
+    "year": 1931,
+    "universe_name": "Ashfall",
+    "headline": "Gravity Takes a Holiday: The Interworld Compact of Unassailable Thresholds to be Buried Beneath Floating Fixtures",
+    "deck": "Civilization mourns the regulatory body that once mandated the precise angle of lobby ashtrays as lawsuits descend upon unsecured chandeliers.",
+    "divergence": "Gravity weakened by four percent and the lawsuits are ongoing",
+    "hero_image": "/editions/images/2026-07-07-74-hero.png"
+   },
+   {
+    "timeline_id": 90,
+    "theme": "artdeco",
+    "year": 1919,
+    "universe_name": "The Painted Siren",
+    "headline": "Mood-Darkening Citizens Now Required to ‘Savor the Slog’ Through Neural Discipline Sequences",
+    "deck": "Officially sanctioned misery rises to new heights, as the Ministry celebrates ‘ticklish evacuations’ with an alarming glee.",
+    "divergence": "Neural interfaces became mandatory and the advertisements are inside now",
+    "hero_image": "/editions/images/2026-07-07-90-hero.png"
    }
   ]
  }

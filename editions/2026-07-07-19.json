@@ -1,0 +1,121 @@
+{
+  "timeline_id": 19,
+  "theme": "soviet",
+  "date": "2026-07-07",
+  "date_display": "Tuesday, July 07, 2026",
+  "year": 1996,
+  "universe_name": "The Borrowed Century",
+  "universe_year": 1996,
+  "universe_date_display": "July 7, Year 1996",
+  "galaxy": "Meridian Halo",
+  "planet": "Fenune",
+  "divergence": "The postal service achieved faster-than-light delivery but only for junk mail",
+  "story_angle": "official denial that accidentally confirms everything, quoted at length",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: Grok",
+    "Editor: Grok"
+  ],
+  "headline": "DIRECTOR EUSTACE BRUNEL FARADAY DEFENDS JUNK MAIL PRIORITIZATION AS PERSONAL MAIL WITHERS IN SPACE-TIME",
+  "deck": "Bureaucratic metrics trumpet coupon floods while private letters stall in sub-light limbo.",
+  "article": "<p>At the Titan Bureau of Cosmic Correspondence, Director Eustace Brunel Faraday rejected claims of neglect for personal mail and instead praised postal crews for routing 2.4 million titanium-press coupon books to Meridian Halo Plaza Block 47 inside twenty-four hours. Production logs, he insisted, prove every class of item receives identical handling under existing protocols.</p><p>The claim surfaced as private letters idled in sub-light queues. Workers with twin-pupiled amber eyes tracked efficiency readouts beneath eight-foot doorways while meeting steel quotas. Faraday linked advertisement volume to system health, declaring that forty-seven light-years of printed circulars per shift proved postal integrity intact.</p><p>Citizens nevertheless watch personal packets disappear into the void. Faraday ended by noting that coupons at least reach their destinations.</p>",
+  "author": "Ignatius Yuliyevich, Chief Correspondent of the Meridian Postal Tribunal",
+  "city": "Postograd",
+  "weather": {
+    "city": "Postograd",
+    "condition": "Junk mail showers, personal letters lost",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "Junk Mail: The People's True Beacon of FTL Glory",
+    "author": "Comrade Vassily Klotz, Deputy Minister of Coupon Proliferation and Honorary Hat Inspector",
+    "body": "Director Faraday's decision to favor junk mail is not excess but foresight inside our 1996 postal order. While private letters crawl, coupons for tractor polish and beet supplements arrive at once, keeping the economy moving and spirits from sagging. Critics who object to delayed correspondence simply refuse to wear regulation fur hats at the correct 45-degree tilt, which plainly interferes with space-time flow for non-essential items. Receiving seventeen daily circulars for rare accordion parts myself, I confirm the arrangement suits those who count. Rather than indulge slow pen-pal habits, FTL lanes should stay reserved for state-approved circulars. Personal mail can fade; real comrades read pre-approved discount forms."
+  },
+  "classifieds": [
+    {
+      "cat": "Help Wanted",
+      "text": "URGENT: Ministry of Eternal Coupons seeks five loyal sorters fluent in Soviet-era coupon codes to process FTL junk while personal parcels decay. Apply in triplicate at Faraday Station, sub-light lounge."
+    },
+    {
+      "cat": "For Sale",
+      "text": "For sale: one vintage typewriter and stack of undelivered love letters from 1989, all victims of space-time neglect. Owner emigrating to slower dimension. Inquire via hand-delivered note only."
+    },
+    {
+      "cat": "Personals",
+      "text": "Comrade Nadia seeks forgiveness from family in Minsk for unanswered birthday greetings now orbiting Jupiter. Will trade ten years of coupon books for one sub-light reply. Contact through District Postmaster."
+    },
+    {
+      "cat": "Public Notices",
+      "text": "Sector 7 regrets that Director Faraday's FTL decree has left 400,000 personal missives adrift. Citizens may rewrite messages by hand and hope the soul of communication returns someday."
+    }
+  ],
+  "comic_strip": {
+    "title": "Soviet Coupon Warp",
+    "panels": [
+      {
+        "caption": "Director Faraday bangs the podium: \"Junk mail reaches Proxima at warp speed while personal letters rot in sublight!\""
+      },
+      {
+        "caption": "He waves a fistful of flyers: \"Coupon proliferation is the true measure of progress!\""
+      },
+      {
+        "caption": "A yellowed envelope from 1962 finally lands: \"Still love you. The pizza ad beat me by thirty years.\""
+      }
+    ],
+    "image": "/editions/images/2026-07-07-19-strip.png",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "Comrade, why has my letter from the wife been withering in space-time since the last plenum?",
+    "punchline": "Because the tractor parts advertisement must reach you before the quotas are met, Director Faraday explained.",
+    "text": "Comrade, why has my letter from the wife been withering in space-time since the last plenum? Because the tractor parts advertisement must reach you before the quotas are met."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "STATE POSTAL BUREAU: PERSONAL MAIL STABILIZER CAPSULES",
+      "body": "Fold your stalled letters inside approved junk-mail envelopes and watch them ride Director Faraday's FTL lanes before the continuum forgets them entirely.",
+      "tagline": "Four capsules per packet; results guaranteed only while the subsidy lasts."
+    },
+    {
+      "headline": "GLORIOUS PEOPLE'S JUNK-MAIL CREDIT UNION",
+      "body": "Convert your vanished personal correspondence into redeemable junk-mail tokens; every unreceived birthday card now buys you one extra kilogram of unsolicited tractor brochures.",
+      "tagline": "No interest; interest is bourgeois."
+    },
+    {
+      "headline": "MINISTRY OF PROPAGANDA & CIRCULARS: URGENT NOTICE TO COMRADES",
+      "body": "Owing to recent space-time compression, all love letters, pension notices, and death announcements will henceforth arrive as full-color appliance catalogs; open them promptly or they will have never existed.",
+      "tagline": "Citizens are reminded that complaining constitutes tampering with state mail."
+    },
+    {
+      "headline": "EXPERIMENTAL FTL JUNK-MAIL REPEATER SERVICE",
+      "body": "Mount this modest dish on your rooftop and receive the same washing-machine circular from 1996, 2026, and several probable futures simultaneously; personal mail sold separately and already lost.",
+      "tagline": "Installation requires three approved forms and one consenting goat."
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Business",
+      "headline": "COUPON PRINT RUNS MEET STATE QUOTA OF 4.2 MILLION PER HOUR, LEDGER ENTRIES FOR PERSONAL TRANSFERS LEFT UNCHANGED",
+      "deck": "Factory directors note steady output of redeemable tokens for household goods while wage packets remain en route.",
+      "byline": "Algernon Tesla Brunel, Business Correspondent",
+      "article": "<p>Titanium presses at the Meridian Distribution Combine have run without pause since the FTL allocation decree, turning out coupon books for every registered household on Fenune. Redemption counts for powdered rations and concrete sealant rose seventeen percent last quarter.</p><p>Wage transfers filed by combine workers still move at ordinary speeds and arrive after the next production cycle starts. Committee records show the allocation schedule untouched.</p>",
+      "image": "/editions/images/2026-07-07-19-story2.png",
+      "image_provider": "grok"
+    },
+    {
+      "desk": "Crime",
+      "headline": "FORGED COUPON BOOKS SEIZED AT PLAZA CHECKPOINTS, PERSONAL LETTERS FOUND IN SEPARATE SUBSPACE HOLDING AREA",
+      "deck": "Militia records show offenders attempted to circulate unauthorised discount tokens while genuine correspondence awaited standard routing.",
+      "byline": "Victoria Darwin Faraday, Crime Reporter",
+      "article": "<p>District militia at the main plazas held three people caught handing out counterfeit coupon volumes with fake serial numbers from the central press registry. The seized books copied the exact format issued under the FTL junk-mail protocol.</p><p>Authentic personal packets stayed stacked in the sublight bays, seals unbroken and delivery dates set for the following week.</p>",
+      "image": "/editions/images/2026-07-07-19-story3.png",
+      "image_provider": "grok"
+    }
+  ],
+  "real_world_echo": "Jailers and officials at Russia's 'torture prisons' in Ukraine exposed by BBC - mirrored as postal officials issuing denials that inadvertently detail the systemic neglect of personal correspondence",
+  "generated_at": "2026-07-07T04:33:13.779003+00:00",
+  "hero_image": "/editions/images/2026-07-07-19-hero.png",
+  "hero_image_provider": "grok"
+}

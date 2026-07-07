@@ -1,0 +1,130 @@
+{
+  "timeline_id": 32,
+  "theme": "wasteland",
+  "date": "2026-07-07",
+  "date_display": "Tuesday, July 07, 2026",
+  "year": 2263,
+  "universe_name": "Saltcrown",
+  "universe_year": 2263,
+  "universe_date_display": "July 7, Year 2263",
+  "galaxy": "Cobalt Spiral",
+  "planet": "Druaxis",
+  "divergence": "Electricity was declared a controlled substance and is sold by apothecaries",
+  "story_angle": "solemn obituary for a beloved institution nobody can remember the purpose of",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: Grok",
+    "Editor: Grok"
+  ],
+  "headline": "Dustspire Volt-Ledger Guild: Unreadable Records Laid to Rest, Bureaucracy Mourns in 47 Pages of Formality",
+  "deck": "Final eulogy issued for an organization that now serves as a windbreak, leaving mourners short on both light and wit.",
+  "article": "<p>In a ceremony befitting a still-standing institution, the Dustspire Volt-Ledger Guild has officially been pronounced deceased after a noble but ultimately futile struggle against the electromagnetic famine that consumed its last remaining clerk identities. The Guild’s final entry, a cryptic notation of '23 lives debited to Apothecary delay, credit to Military Absence,' is now little more than an illegible pressure-wave smudge, provoking the question: how does one assess the proper dust grams for a ledger’s interment?</p><p>Ceremonial procedures dictated by the Bureau of Imminent Necessities required a full 47-page eulogy detailing the Guild's illustrious foray into the arcane world of electricity rationing, including the last issuance of 0.3 lumen-credits, just before the organization metamorphosed into an archive of bioluminescent reef-static. Such an obsequy overwhelms even the most seasoned Bureaucratic Drifters, as they found themselves mourning the loss of bureaucracy in an epoch where compliance is but a memory.</p><p>Mourners, dressed in the standard monochrome garb of the Dustspire Enclave, drifted past the bioluminescent reef-archives in single-file pressure bursts lasting precisely 11 seconds, timing their reverence to maximize atmospheric adaptation.</p><p>As one mournful attendee, Zhen-8-Volt, remarked, 'By the time they died, I hardly knew their function—much like my last apothecary dose.' With the Guild’s dissolution, apothecary rationing tightens, and once again, the populace is confronted with the grim irony that the final notification of the Guild's demise constitutes the ultimate ration stamp in a world starved for light.</p>",
+  "author": "Quint-7-Dorr, Official Acquiescence Correspondent",
+  "city": "Sparkwasteland",
+  "weather": {
+    "city": "Sparkwasteland",
+    "condition": "Static cling to your paperwork",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "Windbreaks Over Ledgers: A Necessary Sacrifice for Apothecary Order",
+    "author": "Lord Percival Flickerquill, Grand Apothecary of Static Remedies and President of the Anti-Record League",
+    "body": "The Dustspire Volt-Ledger Guild's collapse into a humble windbreak is not tragedy but overdue hygiene. Those 47 pages of formal eulogy merely prove the organization's fatal flaw: attempting to document electricity at all. In our enlightened wasteland, volts belong in brown bottles behind the counter, not scrawled in ledgers that tempt the unworthy. Mourners whining about lost light and wit forget their own culpability; had they worn properly insulated hats instead of those flimsy felt atrocities, static might have illuminated their path without guild interference. I myself was denied a personal volt ration in 2258 because some clerk questioned my hat collection's integrity. Good riddance to the guild. Let its ruins block the wind while the rest of us purchase our sparks responsibly from licensed apothecaries who know better than to write anything down. True progress means fewer records and more prescriptions issued by those of us with superior credentials."
+  },
+  "classifieds": [
+    {
+      "cat": "Legal Notice",
+      "text": "All claims against the late Dustspire Volt-Ledger Guild must be etched on 47 pages of wind-scoured parchment and delivered to the new windbreak by tomorrow's dust storm or be declared null by the apothecary council."
+    },
+    {
+      "cat": "For Sale",
+      "text": "Unreadable Guild ledgers, perfect for kindling or ironic windbreaks, now peddled by a former clerk short on volts and shorter on wit; two sparks per stack, no questions on provenance."
+    },
+    {
+      "cat": "Help Wanted",
+      "text": "Dustspire mourners seek one literate soul to decipher 47 pages of bureaucratic formality before the next black-market volt shipment; pay in controlled electricity and a sliver of restored wit."
+    },
+    {
+      "cat": "Personals",
+      "text": "To the scribe whose eulogy killed the Guild's light: your 47 pages of windbreak now serve better than your records ever did; desperate apology accepted only with a vial of apothecary sparks."
+    }
+  ],
+  "comic_strip": {
+    "title": "Windbreak's Final Entry",
+    "panels": [
+      {
+        "caption": "A dust-caked clerk slaps the 47-page eulogy onto the Volt-Ledger Guild's sagging wall."
+      },
+      {
+        "caption": "Clerk, to the wind: \"Formality requires we note your new post as official windbreak. Sign here.\""
+      },
+      {
+        "caption": "Wind rips the pages away. Clerk: \"Unreadable records achieved. Close the ledger.\""
+      }
+    ],
+    "image": "/editions/images/2026-07-07-32-strip.png",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "Dustspire Volt-Ledger Guild buried their unreadable records with the full 47-page mourning protocol, every line stamped and witnessed by three clerks.",
+    "punchline": "The forms required a volt dose to illuminate, so the only thing officially grieved was the guild's last sealed vial.",
+    "text": "Dustspire Volt-Ledger Guild buried their unreadable records with the full 47-page mourning protocol, every line stamped and witnessed by three clerks. The forms required a volt dose to illuminate, so the only thing officially grieved was the guild's last sealed vial."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "Volt-Apothecary's Clarity Draft",
+      "body": "One measured ampoule of Dustspire-controlled current dissolves the 47-page mourning haze around unreadable Volt-Ledger records before the guild scribes notice.",
+      "tagline": "Prescribed only after formal declaration of bureaucratic death."
+    },
+    {
+      "headline": "Ledger Requiem Service",
+      "body": "Our licensed apothecaries will pipe precisely forty-seven jolts into your deceased records, ensuring the Volt-Ledger Guild's formality is observed without risk of spontaneous readability.",
+      "tagline": "Extra pages billed at guild rates."
+    },
+    {
+      "headline": "Unreadable Ink Refill",
+      "body": "Infused with regulated wasteland electricity, this ink guarantees your next entry joins the guild's celebrated unreadable archive in under one formal mourning cycle.",
+      "tagline": "Tampering with the volt seal voids all 47 pages."
+    },
+    {
+      "headline": "Bureaucratic Blackout Tonic",
+      "body": "When the Volt-Ledger Guild finally buries its records, our tonic delivers the exact electrical dose needed to keep the ceremony properly illegible and legally mournful.",
+      "tagline": "Not for citizens still capable of reading forms."
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Obituaries",
+      "headline": "Dustspire Volt-Ledger Guild Buried Under 47 Pages of Wind-Scoured Forms",
+      "deck": "Clerks' final molts leave no inventory of lost volt-pouches.",
+      "byline": "Varn-7-Quell, Senior Mourning Scribe",
+      "article": "<p>The guild's reef-arcology now functions solely as a windbreak against cobalt gales. Apothecaries report a 19 percent rise in demand for emergency static charges to illuminate the 47-page formality issued at dawn.</p><p>Mourners carried the document in sealed pressure pouches, each page stamped with the Enclave's seizure notice from the prior electromagnetic famine. No replacement ledger has been authorized.</p>",
+      "image": "/editions/images/2026-07-07-32-story2.png",
+      "image_provider": "grok"
+    },
+    {
+      "desk": "Business",
+      "headline": "Apothecary Cartels Raise Volt-Pouch Prices After Guild Collapse",
+      "deck": "Static measured in milli-farads now trades at 3.2 drams of condensed atmosphere per unit.",
+      "byline": "Ess-9-Vahl, Trade Ledger Analyst",
+      "article": "<p>Cartel agents at the lower reef markets adjusted rates within hours of the guild's closure. Buyers queued with empty pouches while clerks recalibrated scales for the new scarcity tariff.</p><p>One firm offered bundled charges with personality-molt stabilizers, claiming the product prevents disputes over last year's identity during transactions.</p>",
+      "image": "/editions/images/2026-07-07-32-story3.png",
+      "image_provider": "grok"
+    },
+    {
+      "desk": "Science",
+      "headline": "Bioluminescent Arcologies Dim After Electromagnetic Famine Audit",
+      "deck": "Researchers record a 0.8-lumen drop per square span of reef surface.",
+      "byline": "Pell-2-Norr, Atmospheric Measurer",
+      "article": "<p>Teams deployed pressure-wave sensors across Druaxis's upper strata to track light loss from seized volt stores. Readings show the arcologies now require manual recharging every 14 cycles.</p><p>A revised protocol suggests harvesting residual static from the former guild site, though no equipment permit has cleared the 47-page review process.</p>",
+      "image": "/editions/images/2026-07-07-32-story4.png",
+      "image_provider": "grok"
+    }
+  ],
+  "real_world_echo": "Resistance and revenge - Iran wanted to send a message with its farewell to Khamenei, mirrored as a terse official notice that the Guild's dissolution itself constitutes the final ration stamp",
+  "generated_at": "2026-07-07T04:23:47.965319+00:00",
+  "hero_image": "/editions/images/2026-07-07-32-hero.png",
+  "hero_image_provider": "grok"
+}
