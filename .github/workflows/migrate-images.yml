@@ -1,0 +1,56 @@
+name: Migrate Images to R2
+
+on:
+  workflow_dispatch:      # One-time manual migration
+
+permissions:
+  contents: write
+  deployments: write
+
+# Serialize with the daily generation so we never race a run that is
+# writing new editions/images while we migrate and delete them.
+concurrency:
+  group: daily-gazette-generation
+  cancel-in-progress: false
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests boto3 pillow
+
+      - name: Migrate images to R2 and rewrite references
+        env:
+          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+        run: python scripts/migrate_images_to_r2.py
+
+      - name: Commit and push
+        run: |
+          git config user.name "Gazette Bot"
+          git config user.email "bot@thejumpuniverse.com"
+          git add -A
+          git commit -m "Migrate images to R2 (webp); remove editions/images from repo"
+          git pull --rebase origin main
+          git push
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: thejumpuniverse
+          directory: .
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
