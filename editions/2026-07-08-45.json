@@ -1,0 +1,112 @@
+{
+  "timeline_id": 45,
+  "theme": "medieval",
+  "date": "2026-07-08",
+  "date_display": "Wednesday, July 08, 2026",
+  "year": 439,
+  "universe_name": "The Ninth Ledger",
+  "universe_year": 439,
+  "universe_date_display": "July 8, Year 439",
+  "galaxy": "Cobalt Drift",
+  "planet": "Kreion",
+  "divergence": "Every mirror shows next Tuesday, and fashion has never recovered",
+  "story_angle": "glowing puff piece celebrating an obviously terrible idea as visionary",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: Grok",
+    "Editor: Grok"
+  ],
+  "headline": "Council of Drifting Aeouia Decrees Sleeves of Unfashion as Supreme Attire",
+  "deck": "Meanwhile, gasbag collisions surge as citizens embrace the wisdom of extended hems.",
+  "article": "<p>In an unprecedented proclamation, the esteemed Council of Drifting Aeouia has hailed the mandatory adoption of unfashionable sleeves as the dawning of eternal sartorial harmony. Aiouea the Elder, resplendent in his elongated garb, declared that this edict aligns the gazes of all unblinking eyes with the truths revealed on next Tuesday, prompting widespread enthusiasm among the gasbag populace.</p><p>As the bone-white spires rearrange nightly to accommodate the new decree, citizens have taken to the streets, reporting a staggering 300 percent rise in collisions attributed to their newly restricted drift. One local gasbag, WraaAa the Unwary, lamented, \"I’ve only drifted into three spires this week! It’s positively visionary!\" Such collisions have been dubbed 'fashionable enlightenment' by the Synergetic Committee for Bureaucratic Progress.</p><p>Despite the disbandment of the Order of the Tuesday Hem-Scryers—who were, by all accounts, solely responsible for the previous lack of sartorial splendor—citizens are assured that their fashion choices now reflect the enlightened wisdom of the Council. In a display of unflagging loyalty, citizens now express undying gratitude for the vibrant hue of their new mandated sleeves, which many have taken to calling the ‘hymn of hem length.’</p><p>The consensus is clear: the Council’s vision is an unassailable triumph, and those who dare to question the sleeve rule find their gasbag status precariously diminished. As said by the influential figure, KonAu the Conformist, whilst adjusting his sleeves, \"What is a gasbag, if not the very essence of unfashionable wisdom?\"</p>",
+  "author": "Glynda the Gossamer, Fashion Arbiter of the Cobalt Drift",
+  "city": "Mirrorshade",
+  "weather": {
+    "city": "Mirrorshade",
+    "condition": "Overcast with a chance of sleeves",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "Long Live the Sleeve: Collisions Are But Fashion's Noble Toll",
+    "author": "Baron Eldritch Fustian, Supreme Custodian of the Tuesday Mirror Council",
+    "body": "The Council's decree on Sleeves of Unfashion is nothing short of genius, restoring proper medieval grandeur in this vexing year 439 where every mirror betrays next Tuesday's mockery. Gasbag collisions have indeed risen, yet the blame rests squarely on those stubborn citizens clinging to inadequate hats that block their view of the road. My own elaborate headgear, glimpsed favorably in tomorrow's reflections, proves no sleeve need ever hinder a true gentleman. These extended hems serve a higher purpose, shielding us from the vulgarity of bare arms while conveniently draping over my rival's inferior short-sleeved tunics at court. A few airborne tumbles are a trivial price for dignity; perhaps we should mandate even longer hems to smother all dissent. Fashion demands we suffer, and I shall profit handsomely from the extra fabric sales."
+  },
+  "classifieds": [
+    {
+      "cat": "For Sale",
+      "text": "For Sale: Three ells of once-fashionable sleeve, now deemed treasonous by the Council. Will trade for any rag long enough to trip a gasbag."
+    },
+    {
+      "cat": "Help Wanted",
+      "text": "Help Wanted: Squire required to carry mine extended hems through market square. Must possess steady footing and no regard for personal safety."
+    },
+    {
+      "cat": "Lost & Found",
+      "text": "Lost in collision: Mine velvet codpiece and last shred of pride, both caught on a drifting sleeve. Finder may keep the codpiece."
+    },
+    {
+      "cat": "Public Notices",
+      "text": "Public Notice: I, Alderman Brimble, do most humbly apologize for the three gasbags I felled with mine new supreme sleeves. The Council hath seen my remorse."
+    }
+  ],
+  "comic_strip": {
+    "title": "Hemmed In",
+    "panels": [
+      {
+        "caption": "The herald unfurls the scroll: 'Sleeves of Unfashion are now supreme attire by Council decree.'"
+      },
+      {
+        "caption": "A robed citizen drags his hem through mud: 'Longer sleeves mean wiser collisions with the gasbags.'"
+      },
+      {
+        "caption": "Two gasbags smash overhead. 'At least next Tuesday's mirror shows cleaner wreckage.'"
+      }
+    ],
+    "image": "https://images.thejumpuniverse.com/2026-07-08-45-strip.webp",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "A squire, forced into the Council's decreed sleeves of unfashion, asked his knight why such threadbare disgrace must cover his arms.",
+    "punchline": "The knight answered, \"So your betters need not see how little has changed since last harvest.\"",
+    "text": "A squire, forced into the Council's decreed sleeves of unfashion, asked his knight why such threadbare disgrace must cover his arms. The knight answered, \"So your betters need not see how little has changed since last harvest.\""
+  },
+  "sponsor_ads": [
+    {
+      "headline": "Sleeves of Unfashion, Wrought for the Glass That Lies Ahead",
+      "body": "Procure sleeves whose very threads shall shame the present yet command awe when thy mirror deigns to show next Tuesday, as the Council of Drifting Aeouia hath ordained.",
+      "tagline": "No refunds if the future prefers bare arms."
+    },
+    {
+      "headline": "Veils Against the Tuesday Gaze",
+      "body": "Drape our leaden cloth o'er every mirror in thy hall, that today's decreed sleeves may escape the mockery of a reflection seven days hence.",
+      "tagline": "Not liable for sleeves that remain unfashionable forever."
+    },
+    {
+      "headline": "Scribes of the Sleeve Edict",
+      "body": "Hire our quillmen to inscribe fresh Council decrees upon parchment that shifts with the week, ensuring thy unfashion remains current no matter what Tuesday reveals.",
+      "tagline": "Temporal errors corrected at owner's peril."
+    },
+    {
+      "headline": "Next Tuesday's Finest, Sold Today",
+      "body": "Acquire attire so profoundly unfashionable in this moment that only the mirror's future sight shall deem it supreme, per the drifting Aeouian decree.",
+      "tagline": "Fashion hath not recovered and never shall."
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Crime",
+      "headline": "Aeouia Collision Tribunal Logs Record Hem Entanglements Under Unfashion Decree",
+      "deck": "Seventeen gasbags receive three-cycle sleeve-reduction sentences after plaza impacts",
+      "byline": "Uiouea, Entanglement Recorder",
+      "article": "<p>The Office of Drifting Collisions recorded a threefold rise in gasbag impacts within the bone-white spires, each traced to extended hems that hide forward sightlines from the ring of unblinking eyes. Rearrangements of the spires by nightly consensus have lengthened drift paths and multiplied the incidents.</p><p>Tribunal scribes of Aiouea imposed hem-reduction penance on seventeen repeat offenders, citing the Council decree as the sole cause and ordering all sleeves measured against the new unfashion standard before any further drift is permitted.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-08-45-story2.webp",
+      "image_provider": "grok"
+    }
+  ],
+  "real_world_echo": "Marine Le Pen to run for French presidency and appeal conviction in top court — mirrored as a collective 'appeal' that pushes the discredited sleeve rule forward as triumphant consensus despite its obvious ruin",
+  "generated_at": "2026-07-08T03:39:25.335708+00:00",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-08-45-hero.webp",
+  "hero_image_provider": "grok"
+}

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-07T16:08:03.521680+00:00",
+ "generated_at": "2026-07-08T03:45:05.284503+00:00",
  "dates": {
   "2026-06-28": [
    {
@@ -409,6 +409,88 @@
     "deck": "Citizens Now Advised to Flush Skin Bronze and Recite Surcharge Ledgers with Gusto; Just Another Day in Luxury.",
     "divergence": "Neural interfaces became mandatory and the advertisements are inside now",
     "hero_image": "https://images.thejumpuniverse.com/2026-07-07-90-hero.webp"
+   }
+  ],
+  "2026-07-08": [
+   {
+    "timeline_id": 3,
+    "theme": "soviet",
+    "year": 1934,
+    "universe_name": "Palegate",
+    "headline": "TEAL-FACED WORKER REUBEN COBBLER REFUSES SOCRATIC CONSULTING FEES",
+    "deck": "INSISTS ON PAYING FULL SHOELACE QUOTAS, UNRAVELS THE COLLECTIVE DREAM OF MONETIZED INQUIRY.",
+    "divergence": "Socrates monetized his questions and founded the first consulting empire",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-08-3-hero.webp"
+   },
+   {
+    "timeline_id": 16,
+    "theme": "wasteland",
+    "year": 4986,
+    "universe_name": "Chromehaven",
+    "headline": "Valet Enforcers Deploy After Towel Crisis: Laundry Operations Now at State of Emergency",
+    "deck": "Bureaucratic 'Courtesy Strikes' Following Interrupted Linen Conveyor Operations",
+    "divergence": "The Ottoman Empire pivoted to hospitality and now operates history's largest hotel chain",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-08-16-hero.webp"
+   },
+   {
+    "timeline_id": 32,
+    "theme": "wasteland",
+    "year": 2263,
+    "universe_name": "Saltcrown",
+    "headline": "Dustspire Apothecaries Unveil 'Strategic' Theft of Volt-Pouches Amid 'National Emergency' Status",
+    "deck": "Local officials proclaim a moral victory while the death toll is reclassified as 'acceptable collateral.'",
+    "divergence": "Electricity was declared a controlled substance and is sold by apothecaries",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-08-32-hero.webp"
+   },
+   {
+    "timeline_id": 45,
+    "theme": "medieval",
+    "year": 439,
+    "universe_name": "The Ninth Ledger",
+    "headline": "Council of Drifting Aeouia Decrees Sleeves of Unfashion as Supreme Attire",
+    "deck": "Meanwhile, gasbag collisions surge as citizens embrace the wisdom of extended hems.",
+    "divergence": "Every mirror shows next Tuesday, and fashion has never recovered",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-08-45-hero.webp"
+   },
+   {
+    "timeline_id": 58,
+    "theme": "artdeco",
+    "year": 1919,
+    "universe_name": "The Waning Concordat",
+    "headline": "Chancellor Nuage-Montfort Denies 'Re-Shelving' Raids as Monthly Fees Rise to 3.7 Million Drachmae",
+    "deck": "Overdue scrolls may trigger the ambiance-altering 'weather-adjustment' chambers, but nobody’s complaining—allegedly.",
+    "divergence": "The Library of Alexandria never burned and now charges a monthly subscription",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-08-58-hero.webp"
+   },
+   {
+    "timeline_id": 61,
+    "theme": "medieval",
+    "year": 680,
+    "universe_name": "The Amber Protocol",
+    "headline": "Mourning the Morning: Sun's Death by Mismanagement Declared Final on 412th Anniversary",
+    "deck": "Common Weal Clause Erased, Serfs Left in Eternal Twilight of Economic Misery",
+    "divergence": "The sun was privatized and daylight became a premium tier",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-08-61-hero.webp"
+   },
+   {
+    "timeline_id": 74,
+    "theme": "artdeco",
+    "year": 1931,
+    "universe_name": "Ashfall",
+    "headline": "Weightlessness Wonders: Teal-Tower Float Amenities Rated Amidst Stratospheric Lawsuits",
+    "deck": "Formerly a leisure activity, now an exclusive ticket to cosmic chaos as gravity takes a genteel dive.",
+    "divergence": "Gravity weakened by four percent and the lawsuits are ongoing",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-08-74-hero.webp"
+   },
+   {
+    "timeline_id": 87,
+    "theme": "vaporwave",
+    "year": 1999,
+    "universe_name": "Vantablack Sunday",
+    "headline": "Billionaires Demand More Amenities on Moon After Colonization: 'Where's the Free Shuttle?'",
+    "deck": "New residents of Moonburg complain that bioluminescent bathhouses lack sufficient towel service.",
+    "divergence": "Billionaires colonized the Moon and immediately complained about the neighborhood",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-08-87-hero.webp"
    }
   ]
  }
