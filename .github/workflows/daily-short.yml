@@ -1,0 +1,78 @@
+name: Daily YouTube Short
+
+on:
+  schedule:
+    # Daily generation runs at 00:01 UTC and takes ~10-25 min to commit
+    # editions; build the Short at 00:45 UTC from the freshly committed files.
+    - cron: '45 0 * * *'
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Edition date YYYY-MM-DD (default: today UTC)"
+        required: false
+        type: string
+
+concurrency:
+  group: daily-short
+
+jobs:
+  short:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      SHORT_DATE: ${{ inputs.date }}
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg fonts-dejavu
+
+      - name: Install Python dependencies
+        run: pip install requests boto3 pillow openai google-api-python-client google-auth google-auth-httplib2
+
+      - name: Wait for today's editions (in case generation is still running)
+        run: |
+          DATE="${SHORT_DATE:-$(date -u +%F)}"
+          for i in 1 2 3 4; do
+            if ls editions/"$DATE"-*.json >/dev/null 2>&1; then
+              echo "Editions for $DATE present."
+              exit 0
+            fi
+            echo "Editions for $DATE not committed yet; pulling again in 5 min ($i/4)"
+            sleep 300
+            git pull --rebase --quiet || true
+          done
+          ls editions/"$DATE"-*.json
+
+      - name: Build the Short
+        env:
+          RUNWAY_API_KEY: ${{ secrets.RUNWAY_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+        run: python scripts/make_short.py
+
+      - name: Upload to YouTube (skips cleanly if YT_* secrets are unset)
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: python scripts/upload_short_youtube.py
+
+      - name: Upload Short + metadata artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daily-short
+          path: |
+            promo_build/shorts/*-short.mp4
+            promo_build/shorts/*-short.json
+          if-no-files-found: error
