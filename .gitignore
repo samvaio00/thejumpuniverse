@@ -5,3 +5,6 @@ __pycache__/
 # Images live in Cloudflare R2 (https://images.thejumpuniverse.com);
 # local files here are only the no-credentials dev fallback.
 editions/images/
+
+# Promo video pipeline working directory (scripts/make_promo.py)
+promo_build/
