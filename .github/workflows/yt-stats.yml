@@ -1,0 +1,37 @@
+name: YouTube Stats Refresh
+
+on:
+  schedule:
+    - cron: '15 1,7,13,19 * * *'  # 4x daily, first run after the nightly short upload
+  workflow_dispatch:
+
+concurrency:
+  group: yt-stats
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Collect stats
+        run: python3 scripts/yt_stats.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name "gazette-bot"
+          git config user.email "actions@github.com"
+          git add data/youtube-stats.json
+          if git diff --cached --quiet; then
+            echo "No stat changes."
+            exit 0
+          fi
+          git commit -m "Update YouTube stats [skip ci]"
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push && break
+            echo "push attempt $i failed, retrying..."; sleep 10
+          done
