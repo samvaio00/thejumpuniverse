@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-08T03:45:05.284503+00:00",
+ "generated_at": "2026-07-09T04:13:32.604843+00:00",
  "dates": {
   "2026-06-28": [
    {
@@ -491,6 +491,88 @@
     "deck": "New residents of Moonburg complain that bioluminescent bathhouses lack sufficient towel service.",
     "divergence": "Billionaires colonized the Moon and immediately complained about the neighborhood",
     "hero_image": "https://images.thejumpuniverse.com/2026-07-08-87-hero.webp"
+   }
+  ],
+  "2026-07-09": [
+   {
+    "timeline_id": 16,
+    "theme": "wasteland",
+    "year": 4986,
+    "universe_name": "Chromehaven",
+    "headline": "Ottoman Chain Announces 37-Billion Credit Linen Enforcement Quota Triumph After Towel Shortfall",
+    "deck": "Enforcers Celebrate Contractual Compliance as Hotel Guests Remain Unaware of the Steep Linen Price.",
+    "divergence": "The Ottoman Empire pivoted to hospitality and now operates history's largest hotel chain",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-09-16-hero.webp"
+   },
+   {
+    "timeline_id": 29,
+    "theme": "medieval",
+    "year": 258,
+    "universe_name": "The Last Intermission",
+    "headline": "Nocturnal Levy Proclaimed a Triumph as Auditors Raid the Dreamscape",
+    "deck": "4,872 Collectors Unleashed in Pursuit of Unreported Reveries While Citizens Sleep Like the Dead",
+    "divergence": "Dreams became taxable and the audits happen while you sleep",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-09-29-hero.webp"
+   },
+   {
+    "timeline_id": 45,
+    "theme": "medieval",
+    "year": 439,
+    "universe_name": "The Ninth Ledger",
+    "headline": "Council of Drifting Aeouia Proclaims Eternal Victory of the Sleeves of Unfashion Decree",
+    "deck": "Fashion Sense Flies Off on a Cosmic Drift, Anchored Only by Gasbag Collisions and Bureaucratic Hems.",
+    "divergence": "Every mirror shows next Tuesday, and fashion has never recovered",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-09-45-hero.webp"
+   },
+   {
+    "timeline_id": 58,
+    "theme": "artdeco",
+    "year": 1919,
+    "universe_name": "The Waning Concordat",
+    "headline": "Chancellor Nuage-Montfort Declares Re-Shelving Raids a 'Subscription-Stabilizing Triumph'",
+    "deck": "In a move reminiscent of gilded ages past, library fees rocket to 4.2 million drachmae while champagne flows freely in the expanding vaults.",
+    "divergence": "The Library of Alexandria never burned and now charges a monthly subscription",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-09-58-hero.webp"
+   },
+   {
+    "timeline_id": 71,
+    "theme": "vaporwave",
+    "year": 2001,
+    "universe_name": "Nova Cathedra",
+    "headline": "Xq'thal-Vren Demands Return to Raw Underground: Moisture-Drenched Nostalgia or Bust",
+    "deck": "Committee's New Vaporwave Permit Process Leaves Citizens Gasping for Hazy Remnants of the Past.",
+    "divergence": "Women gained the vote in 1848 and immediately voted for functioning plumbing",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-09-71-hero.webp"
+   },
+   {
+    "timeline_id": 74,
+    "theme": "artdeco",
+    "year": 1931,
+    "universe_name": "Ashfall",
+    "headline": "Gravity Takes a Holiday While Commissioners Delight in a Luggage of Lawsuits",
+    "deck": "Amidst cosmic collapse, the Lantern Cascade Gravity Commission triples down on bespoke litigation—while official gravity restoration remains an Everest-sized enigma.",
+    "divergence": "Gravity weakened by four percent and the lawsuits are ongoing",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-09-74-hero.webp"
+   },
+   {
+    "timeline_id": 87,
+    "theme": "vaporwave",
+    "year": 1999,
+    "universe_name": "Vantablack Sunday",
+    "headline": "Vem Shuttle Mycelium: The Towel That Kept on Giving, Now in Permanent Retirement",
+    "deck": "Crisis deepens as Moonburg elite demand spore-credits for a luxury towel concierge service.",
+    "divergence": "Billionaires colonized the Moon and immediately complained about the neighborhood",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-09-87-hero.webp"
+   },
+   {
+    "timeline_id": 100,
+    "theme": "cyberpunk",
+    "year": 2150,
+    "universe_name": "Brasslight",
+    "headline": "Local Woman Faces Eternal Bureaucratic Loopholes as EarthCorp Takes Over",
+    "deck": "The only thing more convoluted than universal acquisition is the paperwork that follows.",
+    "divergence": "Earth was acquired by an intergalactic holding company as a tax write-off",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-09-100-hero.webp"
    }
   ]
  }

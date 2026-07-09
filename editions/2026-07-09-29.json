@@ -1,0 +1,130 @@
+{
+  "timeline_id": 29,
+  "theme": "medieval",
+  "date": "2026-07-09",
+  "date_display": "Thursday, July 09, 2026",
+  "year": 258,
+  "universe_name": "The Last Intermission",
+  "universe_year": 258,
+  "universe_date_display": "July 9, Year 258",
+  "galaxy": "Marrow Expanse",
+  "planet": "Jovia",
+  "divergence": "Dreams became taxable and the audits happen while you sleep",
+  "story_angle": "propaganda triumph narrated with such sincerity it indicts itself",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: Grok",
+    "Editor: Grok"
+  ],
+  "headline": "Nocturnal Levy Proclaimed a Triumph as Auditors Raid the Dreamscape",
+  "deck": "4,872 Collectors Unleashed in Pursuit of Unreported Reveries While Citizens Sleep Like the Dead",
+  "article": "<p>Lord Auditor Sato Kenji-sama hailed the Nocturnal Levy's first full harvest, dispatching 4,872 copper-skinned collectors whose translucent inner eyelids caught the glow of 19,000 new chimneys. Their orders: extract every unpaid reverie before dawn.</p><p>Summer quotas now rise with the heat. One dreamer already owes three nights of pleasant memories after underreporting a vision of victorious knights. 'I merely dreamt of jubilant knights and harvests aplenty!' he protested, ledger clutched to his chest.</p><p>The same machinery that funded the recent NATO £37 billion missile program now fuels dream-enforcement ordnance. 'Dreams are our most sacred currency,' said Fortuné Saito, Lead Enforcer, 'but they must be harvested for the public good.' Jovia's chimneys keep belching; its citizens keep sleeping.</p>",
+  "author": "Gisuke Tsubasa, Chronicler of the Nightly Pursuits",
+  "city": "Slumberton",
+  "weather": {
+    "city": "Slumberton",
+    "condition": "Dreams now require receipts",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "Raid the Reveries, Save the Realm: Why Dream Debtors Deserve Their Doom",
+    "author": "Sir Reginald Fopdoodle, Grand Vizier of Pillow Taxes and Reluctant Dreamer",
+    "body": "The Nocturnal Levy is medieval progress at its finest. Citizens who feast or fly in their sleep without paying invite the 4,872 collectors themselves. I declared every wisp of mist last quarter and still lost my nightcap; the fault clearly lies with lesser folk's untaxed opulence. Extend the levy to waking complaints and those envious murmurs about my modest, properly filed dreams of balanced ledgers will finally cease."
+  },
+  "classifieds": [
+    {
+      "cat": "For Sale",
+      "text": "Prithee, a fine feather mattress of goose down, once host to thrice-taxed feasts and castles; now sold cheap lest auditors return for the unpaid tithe on my slumbers."
+    },
+    {
+      "cat": "Help Wanted",
+      "text": "Wanted: stout yeoman of iron will to stand vigil o'er my cot each night and smite the 4,872 collectors ere they rifle mine unfiled reveries; pay in waking coin only."
+    },
+    {
+      "cat": "Personals",
+      "text": "To the fair maiden whose dream-garden I trespassed last night: forgive this humble knave, for the auditors seized thy roses as mine own unreported bounty and I dare not sleep again."
+    },
+    {
+      "cat": "Legal Notices",
+      "text": "Public Confession: this day I, Aldric the Miller, do repent the golden river I dreamt of hoarding; all future visions henceforth declared to the Crown under pain of endless audit."
+    }
+  ],
+  "comic_strip": {
+    "title": "Dream Debt Collectors",
+    "panels": [
+      {
+        "caption": "At midnight the herald cried: 'Four thousand eight hundred seventy-two collectors have entered the dreamscape!'"
+      },
+      {
+        "caption": "An auditor leaned over a snoring baron and hissed, 'That unreported feast with your enemies costs double in arrears.'"
+      },
+      {
+        "caption": "'He died mid-audit,' the collector reported. 'Excellent—corpse levy applies.'"
+      }
+    ],
+    "image": "https://images.thejumpuniverse.com/2026-07-09-29-strip.webp",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "The reeve burst into the villein's hovel at cockcrow, ledger in hand, demanding payment for the serf's dream of a fat goose.",
+    "punchline": "'Thou canst not tax what I never ate,' cried the man; 'Precisely,' replied the reeve, 'the fine is for the presumption of appetite.'",
+    "text": "The reeve burst into the villein's hovel at cockcrow, ledger in hand, demanding payment for the serf's dream of a fat goose. 'Thou canst not tax what I never ate,' cried the man; 'Precisely,' replied the reeve, 'the fine is for the presumption of appetite.'"
+  },
+  "sponsor_ads": [
+    {
+      "headline": "Veil of Forgotten Reveries",
+      "body": "Drape thy mind in this enchanted cloth to mask the taxable treasures within thy dreams from the raiders of the night.",
+      "tagline": "Auditors not responsible for lost revenues."
+    },
+    {
+      "headline": "Tithe Thy Nightmares",
+      "body": "Offer up thy most fearsome visions as payment to the Nocturnal Levy, now with interest compounded in waking hours.",
+      "tagline": "May induce additional audits."
+    },
+    {
+      "headline": "Dream Auditor’s Familiar",
+      "body": "Summon this loyal spirit to whisper approved ledgers into the ears of sleeping auditors, ensuring thy accounts remain in good standing.",
+      "tagline": "Not for use in heretical reveries."
+    },
+    {
+      "headline": "Scroll of Sanctioned Slumber",
+      "body": "Purchase these pre-approved dream scenarios to keep thy wandering fancies from provoking the full wrath of the proclaimed triumph.",
+      "tagline": "Failure to comply may result in nocturnal seizure."
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Crime",
+      "headline": "Four Collectors Detained for Levying a Recurring Brass Chimney Vision Thrice in One Night",
+      "deck": "The sweep claims the same flue appeared each audit despite his second eyelid remaining sealed",
+      "byline": "Miyamoto-aki, Nocturnal Affairs Scribe",
+      "article": "<p>The 4,872 Collectors hit chimney sweep Sato-winter's sleep and billed the identical brass flue three times. Magistrates agreed the image counted as three separate reveries and ordered six coppers by next bedtime. Sato-winter woke with his copper skin flushed and his second eyelid twitching under the blanket.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-09-29-story2.webp",
+      "image_provider": "grok"
+    },
+    {
+      "desk": "Religion",
+      "headline": "Temple Priests Declare Unreported Dreams an Offense Against the Seasonal Gods",
+      "deck": "Offerings of eyelid ointment now required at dawn to restore divine balance",
+      "byline": "Fujita-natsu, Faith Ledger Keeper",
+      "article": "<p>The high priest at the brass-fitted shrine ruled that every withheld reverie weakens the gods' grip on the Marrow Expanse. Compliant worshippers with copper skin received translucent unguent for their second eyelids; the rest were warned their minds would be treated as untaxed chimneys at the next audit.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-09-29-story3.webp",
+      "image_provider": "grok"
+    },
+    {
+      "desk": "Agriculture",
+      "headline": "Root Crops Report Lower Yields After Farmers' Dream Levies Divert Nocturnal Irrigation",
+      "deck": "The tubers now grow chimneys instead of tubers in protest",
+      "byline": "Yamada-fuyu, Soil and Slumber Correspondent",
+      "article": "<p>Terrace farmers watched their potato beds shrink after Collectors audited visions of fertile soil. Each flickering second eyelid cost forty-three sacks per household. New ordinances require every root vegetable to be registered at dusk or face further nocturnal levies.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-09-29-story4.webp",
+      "image_provider": "grok"
+    }
+  ],
+  "real_world_echo": "Nato £37bn missile project mirrored as vast resources poured into dream-enforcement 'projectiles' announced as a triumphant alliance achievement",
+  "generated_at": "2026-07-09T04:09:11.361695+00:00",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-09-29-hero.webp",
+  "hero_image_provider": "grok"
+}
