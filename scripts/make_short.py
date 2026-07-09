@@ -12,7 +12,9 @@ are cheap; delete that directory to force a full rebuild):
      (lead/default universe first, then shortest/punchiest headlines).
   2. Visual clips, one per story, from the story's hero_image:
        - default: Runway gen4_turbo image-to-video, 720:1280, 5s per clip
-         (3 x 5s x 5 credits/s = 75 credits ~= $0.75/day)
+         (3 x 5s x 5 credits/s = 75 credits ~= $0.75/day); a clip whose task
+         fails is retried once, then degrades to Ken Burns for that story
+         only so the daily Short always ships
        - SHORT_NO_RUNWAY=1: Ken Burns zoompan on the still image (zero cost)
   3. OpenAI TTS narration (voice onyx, brisk anchor pacing), <= ~24.5s
      (clause-trimming + atempo 0.95-1.25 keep it in budget).
@@ -280,6 +282,11 @@ def select_stories(date, editions):
 
 # ─── STAGE 1: VISUAL CLIPS ──────────────────────────────────────────────
 
+class RunwayError(Exception):
+    """A single Runway clip failed (task creation, generation, or download).
+    Callers retry the clip once, then fall back to Ken Burns for that story."""
+
+
 def runway_headers(api_key):
     return {
         "Authorization": f"Bearer {api_key}",
@@ -310,12 +317,12 @@ def runway_start_task(api_key, image_url, prompt):
                 print(f"  Runway transient error ({last_err}); retrying in {wait}s")
                 time.sleep(wait)
                 continue
-            die(f"Runway rejected the image_to_video request "
-                f"(HTTP {resp.status_code}): {resp.text[:2000]}")
+            raise RunwayError(f"Runway rejected the image_to_video request "
+                              f"(HTTP {resp.status_code}): {resp.text[:2000]}")
         except requests.RequestException as e:
             last_err = str(e)
             time.sleep(2 ** attempt * 5)
-    die(f"Runway image_to_video request failed after retries: {last_err}")
+    raise RunwayError(f"Runway image_to_video request failed after retries: {last_err}")
 
 
 def runway_wait_for_task(api_key, task_id):
@@ -336,36 +343,74 @@ def runway_wait_for_task(api_key, task_id):
         if status == "SUCCEEDED":
             output = task.get("output") or []
             if not output:
-                die(f"Runway task {task_id} succeeded but returned no output")
+                raise RunwayError(f"Runway task {task_id} succeeded but returned no output")
             return output[0]
-        if status in ("FAILED", "CANCELED"):
-            die(f"Runway task {task_id} ended with status {status}: "
+        if status in ("FAILED", "CANCELED", "CANCELLED"):
+            raise RunwayError(
+                f"Runway task {task_id} ended with status {status}: "
                 f"{task.get('failure') or task.get('failureCode') or json.dumps(task)[:1000]}")
         print(f"  task {task_id}: {status}")
-    die(f"Runway task {task_id} did not finish within {RUNWAY_TIMEOUT}s")
+    raise RunwayError(f"Runway task {task_id} did not finish within {RUNWAY_TIMEOUT}s")
 
 
 def stage_runway_clips(work_dir, stories):
-    """One 5s vertical Runway clip per story, cached as clip-<timeline>.mp4."""
+    """One 5s vertical Runway clip per story, cached as clip-<timeline>.mp4.
+
+    Per-clip resilience: a clip whose Runway task fails (creation, FAILED /
+    cancelled status, poll timeout, or result download) is retried once with
+    a brand-new task; if that also fails, that story alone falls back to the
+    Ken Burns hero still and the run continues.
+
+    Returns (paths, kb_flags): per-story source path + whether that story
+    must be rendered via the Ken Burns fallback instead of a Runway clip.
+    """
     paths = [work_dir / f"clip-{s['timeline_id']}.mp4" for s in stories]
+    kb_flags = [False] * len(stories)
     missing = [i for i, p in enumerate(paths) if not p.exists()]
     if not missing:
         print("Stage 1: all Runway clips cached; skipping generation.")
-        return paths
+        return paths, kb_flags
     api_key = require_env("RUNWAY_API_KEY", "Runway image-to-video generation")
-    tasks = {}
+    tasks, failed = {}, []
     for i in missing:
         s = stories[i]
         print(f"Stage 1: starting Runway task for {s['universe_name']} "
               f"(timeline {s['timeline_id']})")
-        tasks[i] = runway_start_task(api_key, s["hero_image"], RUNWAY_PROMPT)
+        try:
+            tasks[i] = runway_start_task(api_key, s["hero_image"], RUNWAY_PROMPT)
+        except RunwayError as e:
+            print(f"  WARNING: Runway task creation for clip {i + 1} failed: {e}")
+            failed.append(i)
         time.sleep(1)
     for i in missing:
+        if i in failed:
+            continue
         print(f"Stage 1: waiting for clip {i + 1} (task {tasks[i]})")
-        video_url = runway_wait_for_task(api_key, tasks[i])
-        download_file(video_url, paths[i])
-        print(f"  clip {i + 1} -> {paths[i]} ({paths[i].stat().st_size // 1024} KiB)")
-    return paths
+        try:
+            video_url = runway_wait_for_task(api_key, tasks[i])
+            download_file(video_url, paths[i])
+            print(f"  clip {i + 1} -> {paths[i]} ({paths[i].stat().st_size // 1024} KiB)")
+        except (RunwayError, requests.RequestException) as e:
+            print(f"  WARNING: Runway clip {i + 1} failed: {e}")
+            failed.append(i)
+    # One retry per failed clip (fresh task); if that also fails, fall back
+    # to the Ken Burns still for that story only instead of aborting the run.
+    for i in failed:
+        s = stories[i]
+        print(f"Stage 1: retrying Runway clip {i + 1} ({s['universe_name']}) "
+              f"with a new task")
+        try:
+            task_id = runway_start_task(api_key, s["hero_image"], RUNWAY_PROMPT)
+            video_url = runway_wait_for_task(api_key, task_id)
+            download_file(video_url, paths[i])
+            print(f"  clip {i + 1} -> {paths[i]} ({paths[i].stat().st_size // 1024} KiB)")
+        except (RunwayError, requests.RequestException) as e:
+            print(f"  WARNING: Runway retry for clip {i + 1} also failed: {e}")
+            print(f"  WARNING: falling back to Ken Burns visuals for story "
+                  f"{i + 1} ({s['universe_name']}, timeline {s['timeline_id']}) only.")
+            paths[i] = stage_hero_images(work_dir, [s])[0]
+            kb_flags[i] = True
+    return paths, kb_flags
 
 
 def stage_hero_images(work_dir, stories):
@@ -536,22 +581,24 @@ def build_segment_kenburns(image_path, seg_dur, idx, chyron, out_path):
          "-r", FPS, "-pix_fmt", "yuv420p", out_path])
 
 
-def stage_segments(work_dir, stories, sources, seg_dur, kenburns):
+def stage_segments(work_dir, stories, sources, seg_dur, kb_flags):
+    """kb_flags is per-segment: mixed runs (some Runway clips, some Ken Burns
+    fallback stills) render each segment from its own source type."""
     bold = find_font(bold=True)
-    mode = "kb" if kenburns else "rw"
     out_paths = []
-    for i, (story, src) in enumerate(zip(stories, sources)):
+    for i, (story, src, kb) in enumerate(zip(stories, sources, kb_flags)):
+        mode = "kb" if kb else "rw"
         out = work_dir / f"seg{i + 1}-{story['timeline_id']}-{mode}-{int(seg_dur * 1000)}.mp4"
         out_paths.append(out)
         if out.exists():
             print(f"Stage 3: segment {i + 1} cached; skipping.")
             continue
         print(f"Stage 3: rendering segment {i + 1} ({story['universe_name']}, "
-              f"{seg_dur:.2f}s, {'Ken Burns' if kenburns else 'Runway'})")
+              f"{seg_dur:.2f}s, {'Ken Burns' if kb else 'Runway'})")
         # The last segment carries the 3s outro overlay — drop its chyron then.
         hide_after = (seg_dur - OUTRO_SECONDS) if i == len(stories) - 1 else None
         chyron = chyron_filters(work_dir, i + 1, story, bold, hide_after)
-        if kenburns:
+        if kb:
             build_segment_kenburns(src, seg_dur, i, chyron, out)
         else:
             build_segment_from_clip(src, seg_dur, chyron, out)
@@ -722,11 +769,16 @@ def main():
         print(f"  est. Runway cost: 3 clips x {CLIP_SECONDS}s x 5 credits/s "
               f"= {3 * CLIP_SECONDS * 5} credits (~${3 * CLIP_SECONDS * 5 / 100:.2f}/day)")
 
-    # Visual sources (stage 1) and narration (stage 2).
+    # Visual sources (stage 1) and narration (stage 2). kb_flags is
+    # per-story: Runway failures degrade single stories to Ken Burns.
     if kenburns:
         sources = stage_hero_images(work_dir, stories)
+        kb_flags = [True] * len(stories)
     else:
-        sources = stage_runway_clips(work_dir, stories)
+        sources, kb_flags = stage_runway_clips(work_dir, stories)
+        if any(kb_flags):
+            print(f"  NOTE: Ken Burns fallback in use for "
+                  f"{sum(kb_flags)}/{len(kb_flags)} segment(s) after Runway failures.")
     script = narration_script(date, stories)
     print(f"Narration script ({len(script)} chars): {script}")
     narration = stage_narration(work_dir, script)
@@ -741,11 +793,19 @@ def main():
     print(f"Timeline: narration {ndur:.2f}s -> total {total:.2f}s, "
           f"3 segments of {seg_dur:.2f}s with {FADE_SECONDS}s xfades")
 
-    segments = stage_segments(work_dir, stories, sources, seg_dur, kenburns)
+    segments = stage_segments(work_dir, stories, sources, seg_dur, kb_flags)
 
+    # Homogeneous runs keep the historical "kb"/"rw" cache key; mixed runs
+    # (partial Runway fallback) get their own key so finals never collide.
+    if all(kb_flags):
+        mode_key = "kb"
+    elif not any(kb_flags):
+        mode_key = "rw"
+    else:
+        mode_key = "-".join("kb" if f else "rw" for f in kb_flags)
     build_key = hashlib.md5(json.dumps(
         [date_slug, [s["timeline_id"] for s in stories],
-         "kb" if kenburns else "rw", int(ndur * 1000)]).encode()).hexdigest()[:10]
+         mode_key, int(ndur * 1000)]).encode()).hexdigest()[:10]
     final = work_dir / f"short-{build_key}.mp4"
     if final.exists():
         print("Stage 4: final video cached; skipping assembly.")
