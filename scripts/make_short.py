@@ -11,8 +11,9 @@ are cheap; delete that directory to force a full rebuild):
   1. Story selection: deterministic heuristic over that date's editions
      (lead/default universe first, then shortest/punchiest headlines).
   2. Visual clips, one per story, from the story's hero_image:
-       - default: Runway gen4_turbo image-to-video, 720:1280, 5s per clip
-         (3 x 5s x 5 credits/s = 75 credits ~= $0.75/day), with a story-driven
+       - default: Runway gen4_turbo image-to-video, 720:1280, 10s per clip
+         (3 x 10s x 5 credits/s = 150 credits ~= $1.50/day) so each segment
+         plays native motion with no ping-pong stretching, with a story-driven
          promptText (scene action from headline/deck keywords + universe
          inhabitants + theme motion flavor, not a generic camera move); a clip
          whose task fails is retried once, then degrades to Ken Burns for that
@@ -21,9 +22,9 @@ are cheap; delete that directory to force a full rebuild):
          pan + alternating zoom + subtle brightness pulse, zero cost)
   3. OpenAI TTS narration (voice onyx, brisk anchor pacing), <= ~24.5s
      (clause-trimming + atempo 0.95-1.25 keep it in budget).
-  4. Per-segment renders: clip stretched (ping-pong / slight slow-mo) to the
-     exact segment duration, lower-third chyron burned in via drawtext
-     textfile= (headlines contain apostrophes/percent signs).
+  4. Per-segment renders: clip trimmed (or ping-pong stretched only if it
+     runs short) to the exact segment duration, lower-third chyron burned in
+     via drawtext textfile= (headlines contain apostrophes/percent signs).
   5. Final assembly: 0.3s xfades, persistent top banner + watermark, 3s outro,
      loudness-normalized narration. Total = narration + 3s outro.
   6. Upload to R2 at shorts/<date>.mp4 + write <date>-short.json metadata
@@ -66,7 +67,7 @@ EDITIONS_DIR = REPO_ROOT / "editions"
 BUILD_ROOT = Path(os.environ.get("SHORT_BUILD_DIR", REPO_ROOT / "promo_build" / "shorts"))
 
 WIDTH, HEIGHT, FPS = 1080, 1920, 30
-CLIP_SECONDS = 5            # per Runway clip
+CLIP_SECONDS = 10           # per Runway clip (10s native: segments ~9.5s need no ping-pong)
 FADE_SECONDS = 0.3          # fast news-style crossfade
 OUTRO_SECONDS = 3.0         # end-card overlay over the last frames
 NARRATION_START = 0.4       # narration begins ~0.4s in
@@ -80,7 +81,7 @@ RUNWAY_MODEL = "gen4_turbo"
 RUNWAY_RATIO = "720:1280"   # vertical ratio supported by gen4_turbo
 RUNWAY_POLL_INTERVAL = 6
 RUNWAY_TIMEOUT = 15 * 60
-RUNWAY_PROMPT_MAX = 480   # Runway allows ~1000 chars; stay well clear
+RUNWAY_PROMPT_MAX = 700   # Runway allows ~1000 chars; stay well clear
 
 # Story-driven scene animation: promptText is built per segment from the
 # edition (headline/deck/theme) + universe registry (inhabitants), instead of
@@ -374,17 +375,22 @@ def inhabitants_short(inhabitants):
 def runway_prompt_for(story):
     """Story-driven promptText: scene action derived from the headline+deck,
     inhabitants from the universe registry, theme-flavored ambient motion.
-    Capped at RUNWAY_PROMPT_MAX chars."""
+    Demands strong, immediately visible motion (painterly newspaper stills
+    otherwise tempt the model into near-static shimmer). Capped at
+    RUNWAY_PROMPT_MAX chars."""
     uni = universe_registry().get(story.get("timeline_id"), {})
     action = action_hint_for(f"{story.get('headline', '')} {story.get('deck', '')}")
     who = inhabitants_short(uni.get("inhabitants", ""))
     theme = story.get("theme") or uni.get("theme") or ""
     theme_motion = THEME_MOTION.get(theme, DEFAULT_THEME_MOTION)
     prompt = (
-        f"Animate this scene: {action}. The {who} in the scene move naturally — "
-        f"walking, gesturing, reacting. {theme_motion}. Atmospheric elements in "
-        f"motion: drifting smoke, dust motes, flickering light. Dynamic handheld "
-        f"documentary camera, subtle push-in. Vertical composition, no text."
+        f"Animate with strong, clearly visible motion from the very first frame: "
+        f"{action}. The {who} in the scene keep moving — walking, gesturing, "
+        f"turning, reacting. {theme_motion}. Fabric, hair and smoke move in the "
+        f"wind; light flickers across surfaces. Slow dolly-in with clear parallax "
+        f"between foreground and background. Bold, lively animation for the "
+        f"entire duration — never a frozen or static frame. Vertical "
+        f"composition, no text."
     )
     if len(prompt) > RUNWAY_PROMPT_MAX:
         prompt = prompt[:RUNWAY_PROMPT_MAX - 1].rsplit(" ", 1)[0].rstrip(" ,;:—-") + "."
@@ -463,7 +469,7 @@ def runway_wait_for_task(api_key, task_id):
 
 
 def stage_runway_clips(work_dir, stories):
-    """One 5s vertical Runway clip per story, cached as clip-<timeline>.mp4.
+    """One 10s vertical Runway clip per story, cached as clip-<timeline>.mp4.
 
     Per-clip resilience: a clip whose Runway task fails (creation, FAILED /
     cancelled status, poll timeout, or result download) is retried once with
@@ -652,8 +658,9 @@ NORM = (f"scale={WIDTH}:{HEIGHT}:force_original_aspect_ratio=increase,"
 
 
 def build_segment_from_clip(clip_path, seg_dur, chyron, out_path):
-    """Stretch a 5s clip to seg_dur: trim if long enough, else ping-pong
-    (forward + reverse) with a touch of slow-mo if even that falls short."""
+    """Fit the Runway clip to seg_dur: with 10s clips and ~9.5s segments this
+    is a plain trim (native motion, no tricks); ping-pong (forward + reverse,
+    plus a touch of slow-mo) remains only as a safety net for short clips."""
     clip_dur = media_duration(clip_path)
     if seg_dur <= clip_dur + 0.01:
         chain = f"[0:v]{NORM},trim=duration={seg_dur:.3f},setpts=PTS-STARTPTS"
