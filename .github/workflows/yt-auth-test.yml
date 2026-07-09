@@ -1,0 +1,64 @@
+name: YouTube Auth Test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test-auth:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test refresh token
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: |
+          python3 - <<'EOF'
+          import json, os, sys, urllib.request, urllib.parse, urllib.error
+
+          cid = os.environ.get("YT_CLIENT_ID", "")
+          csec = os.environ.get("YT_CLIENT_SECRET", "")
+          rtok = os.environ.get("YT_REFRESH_TOKEN", "")
+          missing = [n for n, v in [("YT_CLIENT_ID", cid), ("YT_CLIENT_SECRET", csec), ("YT_REFRESH_TOKEN", rtok)] if not v]
+          if missing:
+              print("MISSING SECRETS:", ", ".join(missing))
+              sys.exit(1)
+          print(f"Client ID suffix: ...{cid[-30:] if len(cid) > 30 else cid}")
+
+          data = urllib.parse.urlencode({
+              "client_id": cid,
+              "client_secret": csec,
+              "refresh_token": rtok,
+              "grant_type": "refresh_token",
+          }).encode()
+          try:
+              resp = urllib.request.urlopen("https://oauth2.googleapis.com/token", data=data)
+              tok = json.load(resp)
+          except urllib.error.HTTPError as e:
+              body = e.read().decode()
+              print("TOKEN EXCHANGE FAILED:", e.code, body)
+              sys.exit(1)
+          access = tok["access_token"]
+          print("Token exchange OK. Scope:", tok.get("scope", "?"))
+
+          req = urllib.request.Request(
+              "https://www.googleapis.com/youtube/v3/channels?part=snippet&mine=true",
+              headers={"Authorization": f"Bearer {access}"},
+          )
+          try:
+              chan = json.load(urllib.request.urlopen(req))
+          except urllib.error.HTTPError as e:
+              body = e.read().decode()
+              # youtube.upload scope alone cannot read channels; 403 insufficient scope still proves auth works
+              if e.code == 403 and "insufficient" in body.lower():
+                  print("channels.list returned 403 insufficientPermissions (expected with upload-only scope).")
+                  print("AUTH TEST PASSED: credentials are valid for uploading.")
+                  sys.exit(0)
+              print("API CALL FAILED:", e.code, body)
+              sys.exit(1)
+          items = chan.get("items", [])
+          if items:
+              sn = items[0]["snippet"]
+              print("Channel:", sn.get("title"), "| id:", items[0].get("id"))
+          print("AUTH TEST PASSED")
+          EOF
