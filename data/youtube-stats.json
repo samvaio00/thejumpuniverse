@@ -1,0 +1,46 @@
+{
+  "generated_at": "2026-07-09T20:24:12+00:00",
+  "channel_id": "UCyPIYczypKJ6dIuoHhv_9ow",
+  "channel_url": "https://www.youtube.com/channel/UCyPIYczypKJ6dIuoHhv_9ow",
+  "totals": {
+    "videos": 2,
+    "views": 1,
+    "likes": 0
+  },
+  "videos": [
+    {
+      "id": "5C4C5mpgN1k",
+      "title": "Multiverse News, July 9: Auditors Raid the Dreamscape #shorts",
+      "url": "https://www.youtube.com/watch?v=5C4C5mpgN1k",
+      "published": "2026-07-09T17:55:52+00:00",
+      "thumbnail": "https://i2.ytimg.com/vi/5C4C5mpgN1k/hqdefault.jpg",
+      "views": 0,
+      "likes": 0,
+      "rating": 0.0,
+      "is_short": true,
+      "history": [
+        [
+          "2026-07-09T20:24:12+00:00",
+          0
+        ]
+      ]
+    },
+    {
+      "id": "z1KjJripZNg",
+      "title": "100 Parallel Universes Print a Newspaper Every Day | Multiverse Gazette",
+      "url": "https://www.youtube.com/watch?v=z1KjJripZNg",
+      "published": "2026-07-09T16:51:33+00:00",
+      "thumbnail": "https://i3.ytimg.com/vi/z1KjJripZNg/hqdefault.jpg",
+      "views": 1,
+      "likes": 0,
+      "rating": 0.0,
+      "is_short": false,
+      "history": [
+        [
+          "2026-07-09T20:24:12+00:00",
+          1
+        ]
+      ]
+    }
+  ]
+}
