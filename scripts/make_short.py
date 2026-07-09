@@ -12,10 +12,13 @@ are cheap; delete that directory to force a full rebuild):
      (lead/default universe first, then shortest/punchiest headlines).
   2. Visual clips, one per story, from the story's hero_image:
        - default: Runway gen4_turbo image-to-video, 720:1280, 5s per clip
-         (3 x 5s x 5 credits/s = 75 credits ~= $0.75/day); a clip whose task
-         fails is retried once, then degrades to Ken Burns for that story
-         only so the daily Short always ships
-       - SHORT_NO_RUNWAY=1: Ken Burns zoompan on the still image (zero cost)
+         (3 x 5s x 5 credits/s = 75 credits ~= $0.75/day), with a story-driven
+         promptText (scene action from headline/deck keywords + universe
+         inhabitants + theme motion flavor, not a generic camera move); a clip
+         whose task fails is retried once, then degrades to Ken Burns for that
+         story only so the daily Short always ships
+       - SHORT_NO_RUNWAY=1: randomized Ken Burns on the still image (diagonal
+         pan + alternating zoom + subtle brightness pulse, zero cost)
   3. OpenAI TTS narration (voice onyx, brisk anchor pacing), <= ~24.5s
      (clause-trimming + atempo 0.95-1.25 keep it in budget).
   4. Per-segment renders: clip stretched (ping-pong / slight slow-mo) to the
@@ -77,10 +80,60 @@ RUNWAY_MODEL = "gen4_turbo"
 RUNWAY_RATIO = "720:1280"   # vertical ratio supported by gen4_turbo
 RUNWAY_POLL_INTERVAL = 6
 RUNWAY_TIMEOUT = 15 * 60
-RUNWAY_PROMPT = (
-    "slow cinematic push-in, subtle atmospheric motion, drifting particles, "
-    "breaking-news documentary tone, no text"
-)
+RUNWAY_PROMPT_MAX = 480   # Runway allows ~1000 chars; stay well clear
+
+# Story-driven scene animation: promptText is built per segment from the
+# edition (headline/deck/theme) + universe registry (inhabitants), instead of
+# a generic camera move, so the motion matches the story. First keyword hit
+# (headline+deck, checked in order) picks the scene-action clause.
+ACTION_MOTIONS = [
+    (("raid", "march", "protest", "riot", "strike", "mob", "crowd", "rally",
+      "uprising", "revolt"),
+     "the crowd surges forward, banners and raised arms swaying"),
+    (("float", "fly", "flying", "drift", "levitat", "airship", "balloon", "soar"),
+     "objects and figures drift and rise slowly through the air"),
+    (("burn", "fire", "flame", "blaze", "scorch", "ember"),
+     "flames lick upward while embers and smoke swirl"),
+    (("collapse", "crumble", "topple", "fall", "ruin", "sink"),
+     "debris crumbles and dust billows as structures give way"),
+    (("explod", "blast", "erupt", "detonat"),
+     "a shockwave ripples outward, dust and sparks flying"),
+    (("flood", "wave", "tide", "storm", "rain", "sea", "river"),
+     "water churns and ripples, spray catching the light"),
+    (("dance", "festival", "celebrat", "parade", "feast", "wedding", "victory"),
+     "figures dance and celebrate, streamers and lanterns swaying"),
+    (("decree", "proclaim", "announc", "council", "vote", "tribunal", "court",
+      "law", "ban "),
+     "officials gesture emphatically while onlookers react and murmur"),
+    (("machine", "engine", "factory", "gear", "automat", "robot", "mechan"),
+     "machinery whirs, pistons pump and gears turn steadily"),
+    (("market", "trade", "price", "merchant", "auction", "bazaar"),
+     "traders haggle and goods change hands in a bustling scene"),
+    (("escape", "flee", "chase", "hunt", "pursu", "smuggl"),
+     "figures rush past, coats and dust trailing behind them"),
+    (("ghost", "spirit", "haunt", "curse", "ritual", "summon", "omen"),
+     "spectral wisps curl through the air as figures recoil"),
+    (("ship", "sail", "harbor", "dock", "fleet", "voyage"),
+     "vessels rock gently, rigging and flags snapping in the wind"),
+    (("snow", "ice", "frost", "freez", "winter"),
+     "snow flurries drift across the scene as figures huddle and move"),
+    (("light", "glow", "beacon", "lantern", "neon", "signal", "flicker"),
+     "lights pulse and flicker, casting moving shadows over the figures"),
+]
+DEFAULT_ACTION = "the crowd and machinery in the scene come alive with motion"
+
+# Per-theme atmospheric motion flavor (the 8 registry themes).
+THEME_MOTION = {
+    "victorian": "Gas lamps flicker, steam curls from pipes, coat-tails stir in the breeze",
+    "artdeco": "Searchlights sweep the sky, cigarette smoke curls, chrome glints as traffic glides past",
+    "soviet": "Red banners ripple, factory smoke drifts past concrete facades",
+    "cyberpunk": "Neon signs flicker, rain streaks the air, drones drift between holographic ads",
+    "medieval": "Banners wave, candle and torch flames gutter, straw and dust swirl",
+    "atomic": "Chrome fins gleam, atomic-age signage buzzes and blinks, sprinklers arc in the sun",
+    "vaporwave": "Pastel light shimmers, palm fronds sway, glitchy scanlines roll across surfaces",
+    "wasteland": "Dust gusts across the ground, heat shimmer bends the horizon, scrap metal creaks",
+}
+DEFAULT_THEME_MOTION = "Atmospheric light shifts and haze drifts across the scene"
 
 TTS_INSTRUCTIONS = (
     "Confident, brisk TV news anchor delivering a headline rundown. Crisp "
@@ -282,6 +335,62 @@ def select_stories(date, editions):
 
 # ─── STAGE 1: VISUAL CLIPS ──────────────────────────────────────────────
 
+_UNIVERSE_REGISTRY = None
+
+
+def universe_registry():
+    """universes.json keyed by id (cached). Empty dict if unreadable — the
+    prompt builder then degrades to edition-only wording, never aborts."""
+    global _UNIVERSE_REGISTRY
+    if _UNIVERSE_REGISTRY is None:
+        try:
+            data = json.loads((REPO_ROOT / "universes.json").read_text(encoding="utf-8"))
+            _UNIVERSE_REGISTRY = {u["id"]: u for u in data}
+        except Exception as e:
+            print(f"  note: could not load universes.json ({e}); "
+                  f"using generic prompt details")
+            _UNIVERSE_REGISTRY = {}
+    return _UNIVERSE_REGISTRY
+
+
+def action_hint_for(text):
+    """First keyword hit in headline+deck picks the scene-action clause."""
+    low = text.lower()
+    for keywords, motion in ACTION_MOTIONS:
+        if any(k in low for k in keywords):
+            return motion
+    return DEFAULT_ACTION
+
+
+def inhabitants_short(inhabitants):
+    """Compress the registry's inhabitants description to a short noun phrase
+    (first clause, capped at a word boundary ~70 chars)."""
+    s = " ".join((inhabitants or "").split()).split(",")[0].strip()
+    if len(s) > 70:
+        s = s[:70].rsplit(" ", 1)[0]
+    return s or "inhabitants"
+
+
+def runway_prompt_for(story):
+    """Story-driven promptText: scene action derived from the headline+deck,
+    inhabitants from the universe registry, theme-flavored ambient motion.
+    Capped at RUNWAY_PROMPT_MAX chars."""
+    uni = universe_registry().get(story.get("timeline_id"), {})
+    action = action_hint_for(f"{story.get('headline', '')} {story.get('deck', '')}")
+    who = inhabitants_short(uni.get("inhabitants", ""))
+    theme = story.get("theme") or uni.get("theme") or ""
+    theme_motion = THEME_MOTION.get(theme, DEFAULT_THEME_MOTION)
+    prompt = (
+        f"Animate this scene: {action}. The {who} in the scene move naturally — "
+        f"walking, gesturing, reacting. {theme_motion}. Atmospheric elements in "
+        f"motion: drifting smoke, dust motes, flickering light. Dynamic handheld "
+        f"documentary camera, subtle push-in. Vertical composition, no text."
+    )
+    if len(prompt) > RUNWAY_PROMPT_MAX:
+        prompt = prompt[:RUNWAY_PROMPT_MAX - 1].rsplit(" ", 1)[0].rstrip(" ,;:—-") + "."
+    return prompt
+
+
 class RunwayError(Exception):
     """A single Runway clip failed (task creation, generation, or download).
     Callers retry the clip once, then fall back to Ken Burns for that story."""
@@ -374,10 +483,12 @@ def stage_runway_clips(work_dir, stories):
     tasks, failed = {}, []
     for i in missing:
         s = stories[i]
+        prompt = runway_prompt_for(s)
         print(f"Stage 1: starting Runway task for {s['universe_name']} "
               f"(timeline {s['timeline_id']})")
+        print(f"  promptText ({len(prompt)} chars): {prompt}")
         try:
-            tasks[i] = runway_start_task(api_key, s["hero_image"], RUNWAY_PROMPT)
+            tasks[i] = runway_start_task(api_key, s["hero_image"], prompt)
         except RunwayError as e:
             print(f"  WARNING: Runway task creation for clip {i + 1} failed: {e}")
             failed.append(i)
@@ -400,7 +511,7 @@ def stage_runway_clips(work_dir, stories):
         print(f"Stage 1: retrying Runway clip {i + 1} ({s['universe_name']}) "
               f"with a new task")
         try:
-            task_id = runway_start_task(api_key, s["hero_image"], RUNWAY_PROMPT)
+            task_id = runway_start_task(api_key, s["hero_image"], runway_prompt_for(s))
             video_url = runway_wait_for_task(api_key, task_id)
             download_file(video_url, paths[i])
             print(f"  clip {i + 1} -> {paths[i]} ({paths[i].stat().st_size // 1024} KiB)")
@@ -560,19 +671,37 @@ def build_segment_from_clip(clip_path, seg_dur, chyron, out_path):
          "-r", FPS, "-pix_fmt", "yuv420p", out_path])
 
 
-def build_segment_kenburns(image_path, seg_dur, idx, chyron, out_path):
-    """Zero-cost fallback: Ken Burns zoompan on the hero still (alternating
-    zoom-in / zoom-out per segment)."""
+def build_segment_kenburns(image_path, seg_dur, idx, chyron, out_path, seed=""):
+    """Zero-cost fallback: randomized Ken Burns — a diagonal pan across the
+    hero still combined with a stronger zoom (direction alternates per
+    segment) plus a very subtle brightness pulse for a slow-parallax feel.
+    Pan track is seeded (date+timeline) so reruns are deterministic but each
+    segment/day drifts differently. Still plain zoompan math, zero cost."""
     frames = int(round(seg_dur * FPS))
-    if idx % 2 == 0:
-        zexpr = f"min(1+0.16*on/{frames},1.18)"
-    else:
-        zexpr = f"max(1.16-0.16*on/{frames},1.0)"
+    steps = max(frames - 1, 1)
+    rng = random.Random(f"kenburns-{seed}-{idx}")
+    # Zoom: alternate push-in / pull-back per segment. The floor stays a bit
+    # above 1.0 so the diagonal pan always has crop headroom to travel in.
+    z0, z1 = (1.04, 1.22) if idx % 2 == 0 else (1.22, 1.04)
+    # Diagonal pan: start near a random corner (with jitter so segments don't
+    # all ride the same track) and drift to the opposite corner; odd segments
+    # reverse direction so back-to-back stills drift opposite ways.
+    cx, cy = rng.choice([(0.0, 0.0), (1.0, 0.0), (0.0, 1.0), (1.0, 1.0)])
+    x0 = min(1.0, max(0.0, cx + rng.uniform(-0.1, 0.1)))
+    y0 = min(1.0, max(0.0, cy + rng.uniform(-0.1, 0.1)))
+    x1, y1 = 1.0 - cx, 1.0 - cy
+    if idx % 2 == 1:
+        (x0, y0), (x1, y1) = (x1, y1), (x0, y0)
+    p = f"(on/{steps})"
+    zexpr = f"{z0}+{z1 - z0:.4f}*{p}"
+    xexpr = f"(iw-iw/zoom)*({x0:.3f}+{x1 - x0:.3f}*{p})"
+    yexpr = f"(ih-ih/zoom)*({y0:.3f}+{y1 - y0:.3f}*{p})"
     vf = (
         f"[0:v]scale={WIDTH * 2}:{HEIGHT * 2}:force_original_aspect_ratio=increase,"
         f"crop={WIDTH * 2}:{HEIGHT * 2},"
-        f"zoompan=z='{zexpr}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)'"
+        f"zoompan=z='{zexpr}':x='{xexpr}':y='{yexpr}'"
         f":d={frames}:s={WIDTH}x{HEIGHT}:fps={FPS},"
+        f"hue=b='0.06*sin(2*PI*t/{max(seg_dur, 1.0):.2f})',"
         f"format=yuv420p,settb=AVTB,{chyron}[v]"
     )
     run(["ffmpeg", "-y", "-i", image_path, "-filter_complex", vf,
@@ -599,7 +728,8 @@ def stage_segments(work_dir, stories, sources, seg_dur, kb_flags):
         hide_after = (seg_dur - OUTRO_SECONDS) if i == len(stories) - 1 else None
         chyron = chyron_filters(work_dir, i + 1, story, bold, hide_after)
         if kb:
-            build_segment_kenburns(src, seg_dur, i, chyron, out)
+            build_segment_kenburns(src, seg_dur, i, chyron, out,
+                                   seed=f"{work_dir.name}-{story['timeline_id']}")
         else:
             build_segment_from_clip(src, seg_dur, chyron, out)
     return out_paths
