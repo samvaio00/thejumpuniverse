@@ -1,0 +1,73 @@
+name: Publish Approved Site Ad to YouTube
+
+on:
+  workflow_dispatch:
+    inputs:
+      r2_url:
+        description: 'Public R2 URL of the APPROVED ad mp4'
+        required: true
+
+concurrency:
+  group: publish-ad
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Python dependencies
+        run: pip install -q requests google-api-python-client google-auth google-auth-httplib2
+
+      - name: Fetch approved ad + write metadata
+        env:
+          R2_SRC_URL: ${{ inputs.r2_url }}
+        run: |
+          python3 - <<'EOF'
+          import json, os, time
+          from pathlib import Path
+          import requests
+          url = os.environ["R2_SRC_URL"]
+          sep = "&" if "?" in url else "?"
+          url = f"{url}{sep}cb={int(time.time())}"
+          out_dir = Path("promo_build/promo_veo")
+          out_dir.mkdir(parents=True, exist_ok=True)
+          mp4 = out_dir / "approved-ad.mp4"
+          print(f"Downloading {url}")
+          r = requests.get(url, timeout=600)
+          r.raise_for_status()
+          mp4.write_bytes(r.content)
+          print(f"  {mp4} ({mp4.stat().st_size // 1024} KiB)")
+          meta = {
+              "title": "One Newspaper. 100 Universes. | Multiverse Gazette",
+              "description": (
+                  "Every day, one hundred parallel universes go to press — and the "
+                  "Multiverse Gazette prints their front pages. Eight new editions "
+                  "daily: satirical news from worlds that never were.\n\n"
+                  "Read every front page, free: https://thejumpuniverse.com\n\n"
+                  "#multiverse #alternatehistory #satire #scifi #galacticnews"
+              ),
+              "tags": ["multiverse", "alternate history", "satire", "sci fi",
+                       "science fiction", "parallel universe", "galactic news",
+                       "news parody", "multiverse gazette", "ai news"],
+              "categoryId": "24",
+              "video": str(mp4),
+          }
+          (out_dir / "approved-ad.json").write_text(
+              json.dumps(meta, indent=2, ensure_ascii=False))
+          print("Metadata written.")
+          EOF
+
+      - name: Upload to YouTube
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: python scripts/upload_short_youtube.py promo_build/promo_veo/approved-ad.json
