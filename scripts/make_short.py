@@ -25,8 +25,9 @@ are cheap; delete that directory to force a full rebuild):
      slow-mo stretch up to 1.6x plus a last-frame hold for any remainder —
      time NEVER runs backwards), lower-third chyron burned in via
      drawtext textfile=.
-  5. Final assembly: 0.3s xfades, persistent top banner + watermark, 3s outro,
-     loudness-normalized narration. Total = narration + 3s outro.
+  5. Final assembly: 0.3s xfades, persistent top banner (with the brand logo
+     badge from assets/brand/) + watermark, 3s outro, loudness-normalized
+     narration. Total = narration + 3s outro.
   6. Upload to R2 at shorts/<date>.mp4 + write <date>-short.json metadata
      (YouTube title/description/tags) next to the mp4.
 
@@ -66,6 +67,7 @@ import requests
 REPO_ROOT = Path(__file__).resolve().parent.parent
 EDITIONS_DIR = REPO_ROOT / "editions"
 BUILD_ROOT = Path(os.environ.get("SHORT_BUILD_DIR", REPO_ROOT / "promo_build" / "shorts"))
+LOGO_BADGE = REPO_ROOT / "assets" / "brand" / "logo-badge-512.png"
 
 WIDTH, HEIGHT, FPS = 1080, 1920, 30
 FADE_SECONDS = 0.3          # fast news-style crossfade
@@ -780,6 +782,12 @@ def assemble(work_dir, date, segments, seg_dur, total, narration, out_path):
         inputs += ["-i", p]
     inputs += ["-i", narration]
     nar_idx = len(segments)
+    # Brand logo badge in the banner (skipped gracefully if the asset is
+    # missing so local/old checkouts still build).
+    logo_idx = None
+    if LOGO_BADGE.exists():
+        inputs += ["-i", LOGO_BADGE]
+        logo_idx = nar_idx + 1
 
     f = []
     # Fast 0.3s xfades between the three segments.
@@ -808,7 +816,12 @@ def assemble(work_dir, date, segments, seg_dur, total, narration, out_path):
         f"drawtext=fontfile={bold}:textfile={outro2_file}:fontsize=76:"
         f"fontcolor=white:x=(w-text_w)/2:y=930:alpha={fade_expr}:expansion=none"
     )
-    f.append(f"[body]{overlays}[vout]")
+    if logo_idx is not None:
+        f.append(f"[body]{overlays}[vpre]")
+        f.append(f"[{logo_idx}:v]scale=100:100[lg]")
+        f.append(f"[vpre][lg]overlay=26:105[vout]")
+    else:
+        f.append(f"[body]{overlays}[vout]")
 
     delay_ms = int(NARRATION_START * 1000)
     f.append(
