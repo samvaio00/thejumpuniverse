@@ -10,6 +10,9 @@ stories already published on the site:
   - lower-third chyrons (universe · year + headline), persistent watermark,
     end card
 
+Segment fitting: plain trim, or slow-mo capped at 1.6x plus a last-frame
+hold — time never runs backwards (the old ping-pong read as a yin-yang loop).
+
 Cost: 5 clips x ~$0.33 (veo3_fast) ~= $1.63 per build.
 
 Required env: KIE_API_KEY, OPENAI_API_KEY, R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY
@@ -48,6 +51,7 @@ NARR_START = 0.6
 NARR_MAX = 50.0
 TOTAL_HARD_MAX = 60.0
 N_CLIPS = 5
+MAX_SLOWMO = 1.6
 
 TTS_INSTRUCTIONS = (
     "Cinematic movie-trailer narrator: warm, deep, unhurried, with a wry "
@@ -261,16 +265,19 @@ def build_segment(src, is_still, seg_dur, chyron, out_path):
              "-preset", "medium", "-crf", "19", "-r", FPS,
              "-pix_fmt", "yuv420p", out_path])
         return
+    # Time NEVER runs backwards: trim, or slow-mo (<= MAX_SLOWMO) plus a
+    # last-frame hold for any remainder. No forward+reverse ping-pong.
     clip_dur = media_duration(src)
     if seg_dur <= clip_dur + 0.01:
         chain = f"[0:v]{NORM},trim=duration={seg_dur:.3f},setpts=PTS-STARTPTS"
-    elif seg_dur <= clip_dur * 1.4:
-        factor = seg_dur / clip_dur
-        chain = (f"[0:v]{NORM},setpts={factor:.4f}*PTS,fps={FPS},"
-                 f"trim=duration={seg_dur:.3f},setpts=PTS-STARTPTS")
     else:
-        chain = (f"[0:v]{NORM},split[fw][bw];[bw]reverse[rv];"
-                 f"[fw][rv]concat=n=2:v=1:a=0,"
+        factor = min(seg_dur / clip_dur, MAX_SLOWMO)
+        hold = max(0.0, seg_dur - clip_dur * factor)
+        if hold > 0.05:
+            print(f"  note: slow-mo {factor:.2f}x + {hold:.2f}s last-frame hold "
+                  f"to fill {seg_dur:.2f}s from a {clip_dur:.2f}s clip")
+        chain = (f"[0:v]{NORM},setpts={factor:.4f}*PTS,fps={FPS},"
+                 f"tpad=stop_mode=clone:stop_duration={hold + 0.5:.3f},"
                  f"trim=duration={seg_dur:.3f},setpts=PTS-STARTPTS")
     vf = f"{chain},format=yuv420p,settb=AVTB,{chyron}[v]"
     run(["ffmpeg", "-y", "-i", src, "-filter_complex", vf,
