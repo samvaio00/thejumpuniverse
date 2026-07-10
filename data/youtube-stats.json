@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-10T10:29:04+00:00",
+  "generated_at": "2026-07-10T15:39:10+00:00",
   "channel_id": "UCyPIYczypKJ6dIuoHhv_9ow",
   "channel_url": "https://www.youtube.com/channel/UCyPIYczypKJ6dIuoHhv_9ow",
   "totals": {
     "videos": 6,
-    "views": 19,
+    "views": 20,
     "likes": 2
   },
   "videos": [
@@ -40,7 +40,8 @@
           "2026-07-10T10:29:04+00:00",
           2
         ]
-      ]
+      ],
+      "stale": true
     },
     {
       "id": "d-7koBsuvy4",
@@ -57,7 +58,8 @@
           "2026-07-10T10:29:04+00:00",
           3
         ]
-      ]
+      ],
+      "stale": true
     },
     {
       "id": "uaArUcYJrXs",
@@ -74,7 +76,8 @@
           "2026-07-10T10:29:04+00:00",
           3
         ]
-      ]
+      ],
+      "stale": true
     },
     {
       "id": "5C4C5mpgN1k",
@@ -95,7 +98,8 @@
           "2026-07-10T10:29:04+00:00",
           8
         ]
-      ]
+      ],
+      "stale": true
     },
     {
       "id": "z1KjJripZNg",
@@ -103,7 +107,7 @@
       "url": "https://www.youtube.com/watch?v=z1KjJripZNg",
       "published": "2026-07-09T16:51:33+00:00",
       "thumbnail": "https://i3.ytimg.com/vi/z1KjJripZNg/hqdefault.jpg",
-      "views": 3,
+      "views": 4,
       "likes": 1,
       "rating": 5.0,
       "is_short": false,
@@ -115,6 +119,10 @@
         [
           "2026-07-10T10:29:04+00:00",
           3
+        ],
+        [
+          "2026-07-10T15:39:10+00:00",
+          4
         ]
       ]
     }
