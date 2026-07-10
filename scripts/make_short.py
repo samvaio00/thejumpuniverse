@@ -11,34 +11,34 @@ are cheap; delete that directory to force a full rebuild):
   1. Story selection: deterministic heuristic over that date's editions
      (lead/default universe first, then shortest/punchiest headlines).
   2. Visual clips, one per story, from the story's hero_image:
-       - default: Runway gen4_turbo image-to-video, 720:1280, 10s per clip
-         (3 x 10s x 5 credits/s = 150 credits ~= $1.50/day) so each segment
-         plays native motion with no ping-pong stretching, with a story-driven
-         promptText (scene action from headline/deck keywords + universe
-         inhabitants + theme motion flavor, not a generic camera move); a clip
-         whose task fails is retried once, then degrades to Ken Burns for that
-         story only so the daily Short always ships
-       - SHORT_NO_RUNWAY=1: randomized Ken Burns on the still image (diagonal
-         pan + alternating zoom + subtle brightness pulse, zero cost)
+       - default: Google Veo 3.1 image-to-video via kie.ai (model veo3_fast,
+         native 9:16, 8s per clip, ~$0.33/clip -> ~$1/day), with a
+         story-driven promptText (scene action from headline/deck keywords +
+         universe inhabitants + theme motion flavor); a clip whose task fails
+         is retried once, then degrades to Ken Burns for that story only so
+         the daily Short always ships. Set VEO_MODEL=veo3 for Quality tier.
+       - SHORT_NO_VEO=1 (or legacy SHORT_NO_RUNWAY=1): randomized Ken Burns
+         on the still image (diagonal pan + alternating zoom, zero cost)
   3. OpenAI TTS narration (voice onyx, brisk anchor pacing), <= ~24.5s
      (clause-trimming + atempo 0.95-1.25 keep it in budget).
-  4. Per-segment renders: clip trimmed (or ping-pong stretched only if it
-     runs short) to the exact segment duration, lower-third chyron burned in
-     via drawtext textfile= (headlines contain apostrophes/percent signs).
+  4. Per-segment renders: 8s clip fitted to the segment (plain trim, or a
+     gentle <=1.35x slow-mo stretch — no reverse loops), lower-third chyron
+     burned in via drawtext textfile=.
   5. Final assembly: 0.3s xfades, persistent top banner + watermark, 3s outro,
      loudness-normalized narration. Total = narration + 3s outro.
   6. Upload to R2 at shorts/<date>.mp4 + write <date>-short.json metadata
      (YouTube title/description/tags) next to the mp4.
 
 Required env (checked only when the stage actually needs to run):
-  RUNWAY_API_KEY, OPENAI_API_KEY, R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY
+  KIE_API_KEY, OPENAI_API_KEY, R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY
 
 Optional env:
   SHORT_DATE         edition date YYYY-MM-DD (default: today UTC)
   SHORT_TIMELINES    e.g. "45,3,90" — exact universe IDs to feature (order kept)
-  SHORT_NO_RUNWAY    set to 1 for the zero-cost Ken Burns fallback visuals
+  SHORT_NO_VEO       set to 1 for the zero-cost Ken Burns fallback visuals
   SHORT_SKIP_UPLOAD  set to 1 to skip the R2 upload stage
   SHORT_BUILD_DIR    working directory (default: <repo>/promo_build/shorts)
+  VEO_MODEL          veo3_fast (default) or veo3 (Quality tier)
   OPENAI_TTS_MODEL   override TTS model (default gpt-4o-mini-tts, falls back
                      to tts-1-hd automatically)
 
@@ -67,21 +67,20 @@ EDITIONS_DIR = REPO_ROOT / "editions"
 BUILD_ROOT = Path(os.environ.get("SHORT_BUILD_DIR", REPO_ROOT / "promo_build" / "shorts"))
 
 WIDTH, HEIGHT, FPS = 1080, 1920, 30
-CLIP_SECONDS = 10           # per Runway clip (10s native: segments ~9.5s need no ping-pong)
 FADE_SECONDS = 0.3          # fast news-style crossfade
 OUTRO_SECONDS = 3.0         # end-card overlay over the last frames
 NARRATION_START = 0.4       # narration begins ~0.4s in
 NARRATION_MAX = 24.5        # keeps total <= ~28s (target window 20-28s)
 TOTAL_MIN, TOTAL_HARD_MAX = 20.0, 45.0
 
-# Runway API (docs.dev.runwayml.com). gen4_turbo is billed 5 credits/second.
-RUNWAY_API_BASE = "https://api.dev.runwayml.com/v1"
-RUNWAY_VERSION = "2024-11-06"
-RUNWAY_MODEL = "gen4_turbo"
-RUNWAY_RATIO = "720:1280"   # vertical ratio supported by gen4_turbo
-RUNWAY_POLL_INTERVAL = 6
-RUNWAY_TIMEOUT = 15 * 60
-RUNWAY_PROMPT_MAX = 700   # Runway allows ~1000 chars; stay well clear
+# Veo 3.1 via kie.ai (docs.kie.ai/veo3-api). Native 9:16, fixed 8s clips.
+KIE_BASE = "https://api.kie.ai/api/v1/veo"
+VEO_MODEL = os.environ.get("VEO_MODEL", "veo3_fast")
+VEO_CLIP_SECONDS = 8
+VEO_POLL_INTERVAL = 12
+VEO_TIMEOUT = 20 * 60
+VEO_COST_PER_CLIP = {"veo3_fast": 0.325, "veo3": 1.275}
+RUNWAY_PROMPT_MAX = 700   # prompt length cap (name kept for compat)
 
 # Story-driven scene animation: promptText is built per segment from the
 # edition (headline/deck/theme) + universe registry (inhabitants), instead of
@@ -226,7 +225,7 @@ def month_day(date):
 
 def download_file(url, dest):
     tmp = Path(str(dest) + ".part")
-    with requests.get(url, stream=True, timeout=300) as r:
+    with requests.get(url, stream=True, timeout=600) as r:
         r.raise_for_status()
         with open(tmp, "wb") as f:
             for chunk in r.iter_content(chunk_size=1 << 20):
@@ -377,7 +376,7 @@ def runway_prompt_for(story):
     inhabitants from the universe registry, theme-flavored ambient motion.
     Demands strong, immediately visible motion (painterly newspaper stills
     otherwise tempt the model into near-static shimmer). Capped at
-    RUNWAY_PROMPT_MAX chars."""
+    RUNWAY_PROMPT_MAX chars. (Name kept from the Runway era for compat.)"""
     uni = universe_registry().get(story.get("timeline_id"), {})
     action = action_hint_for(f"{story.get('headline', '')} {story.get('deck', '')}")
     who = inhabitants_short(uni.get("inhabitants", ""))
@@ -397,106 +396,121 @@ def runway_prompt_for(story):
     return prompt
 
 
-class RunwayError(Exception):
-    """A single Runway clip failed (task creation, generation, or download).
+class VeoError(Exception):
+    """A single Veo clip failed (task creation, generation, or download).
     Callers retry the clip once, then fall back to Ken Burns for that story."""
 
 
-def runway_headers(api_key):
-    return {
-        "Authorization": f"Bearer {api_key}",
-        "X-Runway-Version": RUNWAY_VERSION,
-        "Content-Type": "application/json",
-    }
+_KEY_LOGGED = False
 
 
-def runway_start_task(api_key, image_url, prompt):
+def kie_key():
+    """The raw secret often arrives with a stray newline/space from
+    copy-paste — strip it, and log a non-sensitive fingerprint once so
+    auth failures are diagnosable from CI logs."""
+    global _KEY_LOGGED
+    raw = require_env("KIE_API_KEY", "kie.ai Veo generation")
+    key = raw.strip()
+    if not _KEY_LOGGED:
+        stripped = " (whitespace stripped!)" if key != raw else ""
+        print(f"  kie.ai key: length {len(key)}, "
+              f"starts '{key[:4]}…', ends '…{key[-4:]}'{stripped}")
+        _KEY_LOGGED = True
+    return key
+
+
+def kie_headers():
+    return {"Authorization": f"Bearer {kie_key()}",
+            "Content-Type": "application/json"}
+
+
+def veo_start_task(image_url, prompt):
     body = {
-        "model": RUNWAY_MODEL,
-        "promptImage": image_url,
-        "promptText": prompt,
-        "ratio": RUNWAY_RATIO,
-        "duration": CLIP_SECONDS,
+        "prompt": prompt,
+        "imageUrls": [image_url],
+        "model": VEO_MODEL,
+        "aspect_ratio": "9:16",
+        "generationType": "FIRST_AND_LAST_FRAMES_2_VIDEO",
+        "enableFallback": False,
+        "enableTranslation": False,
     }
-    last_err = None
-    for attempt in range(5):
+    last = None
+    for attempt in range(4):
         try:
-            resp = requests.post(f"{RUNWAY_API_BASE}/image_to_video",
-                                 headers=runway_headers(api_key),
+            resp = requests.post(f"{KIE_BASE}/generate", headers=kie_headers(),
                                  json=body, timeout=60)
-            if resp.status_code == 200:
-                return resp.json()["id"]
+            data = resp.json() if resp.headers.get("content-type", "").startswith("application/json") else {}
+            if resp.status_code == 200 and data.get("code") == 200:
+                return data["data"]["taskId"]
             if resp.status_code == 429 or resp.status_code >= 500:
-                last_err = f"HTTP {resp.status_code}: {resp.text[:500]}"
-                wait = 2 ** attempt * 5
-                print(f"  Runway transient error ({last_err}); retrying in {wait}s")
-                time.sleep(wait)
+                last = f"HTTP {resp.status_code}: {resp.text[:300]}"
+                time.sleep(2 ** attempt * 5)
                 continue
-            raise RunwayError(f"Runway rejected the image_to_video request "
-                              f"(HTTP {resp.status_code}): {resp.text[:2000]}")
+            raise VeoError(f"kie.ai rejected generate (HTTP {resp.status_code}): "
+                           f"{resp.text[:1000]}")
         except requests.RequestException as e:
-            last_err = str(e)
+            last = str(e)
             time.sleep(2 ** attempt * 5)
-    raise RunwayError(f"Runway image_to_video request failed after retries: {last_err}")
+    raise VeoError(f"kie.ai generate failed after retries: {last}")
 
 
-def runway_wait_for_task(api_key, task_id):
-    deadline = time.time() + RUNWAY_TIMEOUT
+def veo_wait_for_task(task_id):
+    deadline = time.time() + VEO_TIMEOUT
     while time.time() < deadline:
-        time.sleep(RUNWAY_POLL_INTERVAL + random.uniform(0, 2))
+        time.sleep(VEO_POLL_INTERVAL + random.uniform(0, 3))
         try:
-            resp = requests.get(f"{RUNWAY_API_BASE}/tasks/{task_id}",
-                                headers=runway_headers(api_key), timeout=60)
+            resp = requests.get(f"{KIE_BASE}/record-info",
+                                params={"taskId": task_id},
+                                headers=kie_headers(), timeout=60)
         except requests.RequestException as e:
             print(f"  poll error ({e}); will retry")
             continue
         if resp.status_code != 200:
             print(f"  poll HTTP {resp.status_code}; will retry")
             continue
-        task = resp.json()
-        status = task.get("status")
-        if status == "SUCCEEDED":
-            output = task.get("output") or []
-            if not output:
-                raise RunwayError(f"Runway task {task_id} succeeded but returned no output")
-            return output[0]
-        if status in ("FAILED", "CANCELED", "CANCELLED"):
-            raise RunwayError(
-                f"Runway task {task_id} ended with status {status}: "
-                f"{task.get('failure') or task.get('failureCode') or json.dumps(task)[:1000]}")
-        print(f"  task {task_id}: {status}")
-    raise RunwayError(f"Runway task {task_id} did not finish within {RUNWAY_TIMEOUT}s")
+        data = (resp.json() or {}).get("data") or {}
+        flag = data.get("successFlag")
+        if flag == 1:
+            r = data.get("response") or {}
+            urls = r.get("resultUrls") or r.get("originUrls") or []
+            if not urls:
+                raise VeoError(f"task {task_id} succeeded but returned no URLs")
+            return urls[0]
+        if flag in (2, 3):
+            raise VeoError(f"task {task_id} failed: "
+                           f"{data.get('errorMessage') or data.get('errorCode')}")
+        print(f"  task {task_id}: generating…")
+    raise VeoError(f"task {task_id} did not finish within {VEO_TIMEOUT}s")
 
 
-def stage_runway_clips(work_dir, stories):
-    """One 10s vertical Runway clip per story, cached as clip-<timeline>.mp4.
+def stage_veo_clips(work_dir, stories):
+    """One 8s vertical Veo clip per story, cached as clip-<timeline>.mp4.
 
-    Per-clip resilience: a clip whose Runway task fails (creation, FAILED /
-    cancelled status, poll timeout, or result download) is retried once with
-    a brand-new task; if that also fails, that story alone falls back to the
-    Ken Burns hero still and the run continues.
+    Per-clip resilience: a clip whose task fails (creation, upstream
+    generation failure, poll timeout, or result download) is retried once
+    with a brand-new task; if that also fails, that story alone falls back
+    to the Ken Burns hero still and the run continues.
 
     Returns (paths, kb_flags): per-story source path + whether that story
-    must be rendered via the Ken Burns fallback instead of a Runway clip.
+    must be rendered via the Ken Burns fallback instead of a Veo clip.
     """
     paths = [work_dir / f"clip-{s['timeline_id']}.mp4" for s in stories]
     kb_flags = [False] * len(stories)
     missing = [i for i, p in enumerate(paths) if not p.exists()]
     if not missing:
-        print("Stage 1: all Runway clips cached; skipping generation.")
+        print("Stage 1: all Veo clips cached; skipping generation.")
         return paths, kb_flags
-    api_key = require_env("RUNWAY_API_KEY", "Runway image-to-video generation")
     tasks, failed = {}, []
     for i in missing:
         s = stories[i]
         prompt = runway_prompt_for(s)
-        print(f"Stage 1: starting Runway task for {s['universe_name']} "
+        print(f"Stage 1: starting Veo task ({VEO_MODEL}) for {s['universe_name']} "
               f"(timeline {s['timeline_id']})")
         print(f"  promptText ({len(prompt)} chars): {prompt}")
         try:
-            tasks[i] = runway_start_task(api_key, s["hero_image"], prompt)
-        except RunwayError as e:
-            print(f"  WARNING: Runway task creation for clip {i + 1} failed: {e}")
+            tasks[i] = veo_start_task(s["hero_image"], prompt)
+        except VeoError as e:
+            print(f"  WARNING: Veo task creation for clip {i + 1} failed: {e}")
             failed.append(i)
         time.sleep(1)
     for i in missing:
@@ -504,25 +518,25 @@ def stage_runway_clips(work_dir, stories):
             continue
         print(f"Stage 1: waiting for clip {i + 1} (task {tasks[i]})")
         try:
-            video_url = runway_wait_for_task(api_key, tasks[i])
+            video_url = veo_wait_for_task(tasks[i])
             download_file(video_url, paths[i])
             print(f"  clip {i + 1} -> {paths[i]} ({paths[i].stat().st_size // 1024} KiB)")
-        except (RunwayError, requests.RequestException) as e:
-            print(f"  WARNING: Runway clip {i + 1} failed: {e}")
+        except (VeoError, requests.RequestException) as e:
+            print(f"  WARNING: Veo clip {i + 1} failed: {e}")
             failed.append(i)
     # One retry per failed clip (fresh task); if that also fails, fall back
     # to the Ken Burns still for that story only instead of aborting the run.
     for i in failed:
         s = stories[i]
-        print(f"Stage 1: retrying Runway clip {i + 1} ({s['universe_name']}) "
+        print(f"Stage 1: retrying Veo clip {i + 1} ({s['universe_name']}) "
               f"with a new task")
         try:
-            task_id = runway_start_task(api_key, s["hero_image"], runway_prompt_for(s))
-            video_url = runway_wait_for_task(api_key, task_id)
+            task_id = veo_start_task(s["hero_image"], runway_prompt_for(s))
+            video_url = veo_wait_for_task(task_id)
             download_file(video_url, paths[i])
             print(f"  clip {i + 1} -> {paths[i]} ({paths[i].stat().st_size // 1024} KiB)")
-        except (RunwayError, requests.RequestException) as e:
-            print(f"  WARNING: Runway retry for clip {i + 1} also failed: {e}")
+        except (VeoError, requests.RequestException) as e:
+            print(f"  WARNING: Veo retry for clip {i + 1} also failed: {e}")
             print(f"  WARNING: falling back to Ken Burns visuals for story "
                   f"{i + 1} ({s['universe_name']}, timeline {s['timeline_id']}) only.")
             paths[i] = stage_hero_images(work_dir, [s])[0]
@@ -658,19 +672,20 @@ NORM = (f"scale={WIDTH}:{HEIGHT}:force_original_aspect_ratio=increase,"
 
 
 def build_segment_from_clip(clip_path, seg_dur, chyron, out_path):
-    """Fit the Runway clip to seg_dur: with 10s clips and ~9.5s segments this
-    is a plain trim (native motion, no tricks); ping-pong (forward + reverse,
-    plus a touch of slow-mo) remains only as a safety net for short clips."""
+    """Fit the 8s Veo clip to seg_dur: plain trim if it's long enough, a
+    gentle slow-mo stretch (<=1.35x) otherwise — no reverse loops. The
+    ping-pong path remains only as a last-resort safety net for very short
+    clips. Veo's audio track is dropped (only the video chain is mapped)."""
     clip_dur = media_duration(clip_path)
     if seg_dur <= clip_dur + 0.01:
         chain = f"[0:v]{NORM},trim=duration={seg_dur:.3f},setpts=PTS-STARTPTS"
+    elif seg_dur <= clip_dur * 1.35:
+        factor = seg_dur / clip_dur
+        chain = (f"[0:v]{NORM},setpts={factor:.4f}*PTS,fps={FPS},"
+                 f"trim=duration={seg_dur:.3f},setpts=PTS-STARTPTS")
     else:
-        pp = 2 * clip_dur
-        slow = ""
-        if seg_dur > pp - 0.1:
-            slow = f",setpts={seg_dur / pp + 0.03:.4f}*PTS,fps={FPS}"
         chain = (f"[0:v]{NORM},split[fw][bw];[bw]reverse[rv];"
-                 f"[fw][rv]concat=n=2:v=1:a=0{slow},"
+                 f"[fw][rv]concat=n=2:v=1:a=0,"
                  f"trim=duration={seg_dur:.3f},setpts=PTS-STARTPTS")
     vf = f"{chain},format=yuv420p,settb=AVTB,{chyron}[v]"
     run(["ffmpeg", "-y", "-i", clip_path, "-filter_complex", vf,
@@ -718,19 +733,19 @@ def build_segment_kenburns(image_path, seg_dur, idx, chyron, out_path, seed=""):
 
 
 def stage_segments(work_dir, stories, sources, seg_dur, kb_flags):
-    """kb_flags is per-segment: mixed runs (some Runway clips, some Ken Burns
+    """kb_flags is per-segment: mixed runs (some Veo clips, some Ken Burns
     fallback stills) render each segment from its own source type."""
     bold = find_font(bold=True)
     out_paths = []
     for i, (story, src, kb) in enumerate(zip(stories, sources, kb_flags)):
-        mode = "kb" if kb else "rw"
+        mode = "kb" if kb else "veo"
         out = work_dir / f"seg{i + 1}-{story['timeline_id']}-{mode}-{int(seg_dur * 1000)}.mp4"
         out_paths.append(out)
         if out.exists():
             print(f"Stage 3: segment {i + 1} cached; skipping.")
             continue
         print(f"Stage 3: rendering segment {i + 1} ({story['universe_name']}, "
-              f"{seg_dur:.2f}s, {'Ken Burns' if kb else 'Runway'})")
+              f"{seg_dur:.2f}s, {'Ken Burns' if kb else 'Veo'})")
         # The last segment carries the 3s outro overlay — drop its chyron then.
         hide_after = (seg_dur - OUTRO_SECONDS) if i == len(stories) - 1 else None
         chyron = chyron_filters(work_dir, i + 1, story, bold, hide_after)
@@ -882,7 +897,7 @@ def main():
 
     date = short_date()
     date_slug = date.strftime("%Y-%m-%d")
-    kenburns = bool(os.environ.get("SHORT_NO_RUNWAY"))
+    kenburns = bool(os.environ.get("SHORT_NO_VEO") or os.environ.get("SHORT_NO_RUNWAY"))
     work_dir = BUILD_ROOT / date_slug
     work_dir.mkdir(parents=True, exist_ok=True)
     out_mp4 = BUILD_ROOT / f"{date_slug}-short.mp4"
@@ -898,24 +913,24 @@ def main():
 
     stories = select_stories(date, editions)
     print(f"Short pipeline for {date_slug} "
-          f"({'Ken Burns fallback, $0' if kenburns else 'Runway gen4_turbo'}):")
+          f"({'Ken Burns fallback, $0' if kenburns else f'Veo 3.1 {VEO_MODEL} via kie.ai'}):")
     for i, s in enumerate(stories, 1):
         print(f"  {i}. [{s['timeline_id']}] {s['universe_name']} "
               f"(Year {s['universe_year']}): {s['headline']}")
     if not kenburns:
-        print(f"  est. Runway cost: 3 clips x {CLIP_SECONDS}s x 5 credits/s "
-              f"= {3 * CLIP_SECONDS * 5} credits (~${3 * CLIP_SECONDS * 5 / 100:.2f}/day)")
+        cost = VEO_COST_PER_CLIP.get(VEO_MODEL, 0.325)
+        print(f"  est. Veo cost: 3 clips x ${cost:.3f} = ~${3 * cost:.2f}/day")
 
     # Visual sources (stage 1) and narration (stage 2). kb_flags is
-    # per-story: Runway failures degrade single stories to Ken Burns.
+    # per-story: Veo failures degrade single stories to Ken Burns.
     if kenburns:
         sources = stage_hero_images(work_dir, stories)
         kb_flags = [True] * len(stories)
     else:
-        sources, kb_flags = stage_runway_clips(work_dir, stories)
+        sources, kb_flags = stage_veo_clips(work_dir, stories)
         if any(kb_flags):
             print(f"  NOTE: Ken Burns fallback in use for "
-                  f"{sum(kb_flags)}/{len(kb_flags)} segment(s) after Runway failures.")
+                  f"{sum(kb_flags)}/{len(kb_flags)} segment(s) after Veo failures.")
     script = narration_script(date, stories)
     print(f"Narration script ({len(script)} chars): {script}")
     narration = stage_narration(work_dir, script)
@@ -932,14 +947,14 @@ def main():
 
     segments = stage_segments(work_dir, stories, sources, seg_dur, kb_flags)
 
-    # Homogeneous runs keep the historical "kb"/"rw" cache key; mixed runs
-    # (partial Runway fallback) get their own key so finals never collide.
+    # Homogeneous runs keep a stable cache key; mixed runs (partial fallback)
+    # get their own key so finals never collide.
     if all(kb_flags):
         mode_key = "kb"
     elif not any(kb_flags):
-        mode_key = "rw"
+        mode_key = "veo"
     else:
-        mode_key = "-".join("kb" if f else "rw" for f in kb_flags)
+        mode_key = "-".join("kb" if f else "veo" for f in kb_flags)
     build_key = hashlib.md5(json.dumps(
         [date_slug, [s["timeline_id"] for s in stories],
          mode_key, int(ndur * 1000)]).encode()).hexdigest()[:10]
