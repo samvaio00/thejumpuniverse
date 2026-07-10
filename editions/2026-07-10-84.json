@@ -1,0 +1,130 @@
+{
+  "timeline_id": 84,
+  "theme": "cyberpunk",
+  "date": "2026-07-10",
+  "date_display": "Friday, July 10, 2026",
+  "year": 2307,
+  "universe_name": "The Second Alexandria",
+  "universe_year": 2307,
+  "universe_date_display": "July 10, Year 2307",
+  "galaxy": "Ember Reach",
+  "planet": "Ossantha",
+  "divergence": "The moon landing was real but the Earth it broadcast to was staged",
+  "story_angle": "propaganda triumph narrated with such sincerity it indicts itself",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: Grok",
+    "Editor: Grok"
+  ],
+  "headline": "Xq'thal-Vren Heat-Corp Claims Moon Broadcast Ignites 4.7 Million Heat-Spike Views Despite Void Audience",
+  "deck": "Corporate execs tout record thermal-ROI while remaining oblivious to their vast audience of non-existent sand sculptures.",
+  "article": "<p>Xq'thal-Vren Heat-Corp declared their lunar transmission had harvested 4.7 million heat-spike views, all tallied from empty lunar craters and absent sand halls. CEO Xq'thal-Vren hailed the result as a breakthrough in thermal metrics, crediting infrared blobs that aligned with nonexistent Ossanthan receptors while hiding the actual footage.</p><p>Chief Metrics Officer T’keshik-Nar noted the numbers offset prior cargo shortfalls along the Hormuz route through selective data presentation. Hexapods in the corridors celebrated the phantom tally as genuine progress.</p><p>The transmission contained no live recipients. Vren added that success hinged on generated heat rather than any observer. The firm continues to measure achievement solely by internal spikes.</p>",
+  "author": "Q'ruhr Zyx'th, Senior Heatwave Analyst",
+  "city": "Neon Spire",
+  "weather": {
+    "city": "Neon Spire",
+    "condition": "Lunar Heatwave, Earth Still Chilly",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "Thermal Triumph Over Thin Air: Why Sand Sculptures Owe Us an Apology",
+    "author": "Lord Emberford Quibble, Tenured Void Apologist and Chair of Misplaced Thermal Outrage at the Academy of Corporate Infallibility",
+    "body": "Xq'thal-Vren Heat-Corp logged 4.7 million heat-spike views from a broadcast sent to literal vacuum. In 2307, after beaming a real moon landing to a staged Earth, the firm still prefers metrics over any audience. The sculptures stand accused of neglecting proper heat-absorbent headgear. My own void-cast last cycle reached only 1.9 million spikes, undercut by the same nonexistence. The obvious fix is public funding for mandatory sculpture programs so future casts have something concrete to disappoint."
+  },
+  "classifieds": [
+    {
+      "cat": "For Sale",
+      "text": "Voidcast heat-spike rig, 4.7M views guaranteed on staged Earth sand; Xq'thal exec dumping after real moon laughed at our thermal-ROI. Neural bids only, desperate."
+    },
+    {
+      "cat": "Help Wanted",
+      "text": "Sand-sculpture audience wranglers needed to fake 4.7M heat viewers for next void broadcast; Heat-Corp pays in thermal credits, no Earth-siders."
+    },
+    {
+      "cat": "Personals",
+      "text": "To the non-existent dunes that watched our mooncast: sorry your sculptures melted under real heat. Ex-exec seeking new void to haunt, 2307."
+    },
+    {
+      "cat": "Public Notices",
+      "text": "Legal: Xq'thal-Vren admits staged-Earth audience fraud; all thermal-ROI contracts voided, claimants may collect sand from the broadcast site."
+    }
+  ],
+  "comic_strip": {
+    "title": "Void Heat Metrics",
+    "panels": [
+      {
+        "caption": "Xq'thal-Vren CEO: \"Moon broadcast just spiked 4.7 million heat views!\""
+      },
+      {
+        "caption": "Marketing drone: \"Thermal-ROI is lunar-perfect. The sand-sculpture audience is eating it up.\""
+      },
+      {
+        "caption": "Intern: \"Sir, the sculptures were never there. Earth feed's been a prop since 1969.\""
+      }
+    ],
+    "image": "https://images.thejumpuniverse.com/2026-07-10-84-strip.webp",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "Xq'thal-Vren logs 4.7 million heat-spikes from the moon broadcast into the staged Earth feed.",
+    "punchline": "Cute. The only thing that actually spiked was the internal scrub team deleting every log that proved the audience was the same three compromised proxy clusters they’ve been renting since 2299.",
+    "text": "Xq'thal-Vren logs 4.7 million heat-spikes from the moon broadcast into the staged Earth feed. Cute. The only thing that actually spiked was the internal scrub team deleting every log that proved the audience was the same three compromised proxy clusters they’ve been renting since 2299."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "VoidForge Simulators",
+      "body": "Rent a pre-staged Earth audience pod that registers 4.7 million heat-spikes for any genuine lunar feed, complete with fabricated neural applause loops.",
+      "tagline": "Real landings deserve fake witnesses. Void sold separately."
+    },
+    {
+      "headline": "HeatCorp Legacy Kits",
+      "body": "Own a certified slice of the broadcast that never reached anyone: bottled void metrics and retrofitted heat-spike emitters tuned to the original July 10, 2026 transmission.",
+      "tagline": "Moon was real. Your viewership remains optional."
+    },
+    {
+      "headline": "StagedSphere Subscriptions",
+      "body": "Monthly neural drops deliver the Earth you were supposed to see during real moon landings, now upgraded with 4.7 million ghost viewers who never logged off.",
+      "tagline": "No actual Earth required. Heat spikes billed in advance."
+    },
+    {
+      "headline": "Nullcast Insurance",
+      "body": "Protect your next lunar broadcast against the risk of an actual audience; payout includes synthetic heat-spikes if anyone accidentally tunes in from the void.",
+      "tagline": "Coverage voids itself upon genuine reception."
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Science",
+      "headline": "Broadcast Heat-Spikes Force Recalibration of All Void-Tracking Arrays",
+      "deck": "Registry logs show 4.7 million phantom signatures now embedded in baseline thermal maps",
+      "byline": "V'qath-Ren, Array Maintenance Supervisor",
+      "article": "<p>The Ember Reach Thermal Registry logged a 19 percent calibration shift after the lunar feed. Engineers cleared duplicate signatures from rim posts over the rest of the cycle.</p><p>New rules now demand manual removal of staged-Earth artifacts ahead of every scan, extending each maintenance window by two pressure-wave cycles.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-10-84-story2.webp",
+      "image_provider": "grok"
+    },
+    {
+      "desk": "Sport",
+      "headline": "Hexapodal Heat-Race Finals Delayed After Sand-Track Melts Mid-Event",
+      "deck": "Leading contender Xq'thal-Vren Heat-Corp loses pole position to its own thermal exhaust",
+      "byline": "Q'rath-Sen, Velocity Correspondent",
+      "article": "<p>The limb-heat sprint stopped when the track surface gave way under concentrated signatures from the moon broadcast. Racers finished on vapor bridges built by emergency units.</p><p>Winners were declared by residual limb temperature alone, since no spectators existed to record times.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-10-84-story3.webp",
+      "image_provider": "grok"
+    },
+    {
+      "desk": "Religion",
+      "headline": "Ember Priests Declare Moon Transmission a New Heat-Prophet Signal",
+      "deck": "Sacred sand-halls now display crater icons during evening condensation rites",
+      "byline": "Thal'qen-Vor, Doctrine Archivist",
+      "article": "<p>The Order of the Central Radiance ruled the lunar broadcast an unsought prophecy via distant thermal channels. Followers added 4.7 million micro-spike pauses to their pressure-wave recitations.</p><p>Keepers noted higher donations yet ordered all new sand forms destroyed before they could echo unauthorized Earth props.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-10-84-story4.webp",
+      "image_provider": "grok"
+    }
+  ],
+  "real_world_echo": "SK Hynix $26.5bn share sale, mirrored as massive sand-bond raise funded by the fake broadcast's 'success'",
+  "generated_at": "2026-07-10T04:09:28.972676+00:00",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-10-84-hero.webp",
+  "hero_image_provider": "grok"
+}

@@ -1,0 +1,112 @@
+{
+  "timeline_id": 100,
+  "theme": "cyberpunk",
+  "date": "2026-07-10",
+  "date_display": "Friday, July 10, 2026",
+  "year": 2150,
+  "universe_name": "Brasslight",
+  "universe_year": 2150,
+  "universe_date_display": "July 10, Year 2150",
+  "galaxy": "Ember Veil",
+  "planet": "Tarneth",
+  "divergence": "Earth was acquired by an intergalactic holding company as a tax write-off",
+  "story_angle": "propaganda triumph narrated with such sincerity it indicts itself",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: Grok",
+    "Editor: Grok"
+  ],
+  "headline": "EarthCorp Celebrates Record-Breaking Tax Optimization by Acquiring Planet for a Pittance",
+  "deck": "Local CEO Vrasimir H. Brineitcu Credits Humans' Double Eyelids for Enhanced Paperwork Efficiency",
+  "article": "<p>EarthCorp closed its purchase of Earth inside a $26.5 billion tax maneuver that resets the ledger for the entire Ember Veil galaxy. The company will mark the occasion with Fiscal Future Day, a mandatory holiday requiring every resident to file forms beneath rows of robotic auditors.</p><p>CEO Vrasimir H. Brineitcu, back for another rotation, called the deal a clean administrative victory. \"The locals' secondary eyelids let them absorb instructions without the usual blink delays, so compliance runs faster and fewer workers ignite on the spot,\" he said, straightening his mirrored lenses.</p><p>New ranch houses on Tarneth must now point magnetic north, which means installing Compliance Vectors and filling out fourteen thousand acquisition forms instead of the previous thirteen thousand nine hundred ninety-nine. The extra page corrects an inverted clause that once exposed the firm to off-world liability.</p><p>Residents of New Vratimir continue to report occasional flare-ups during form processing, yet the city still posts the quarterly numbers on schedule.</p>",
+  "author": "Dmitri Bytegatherer, Chief Intergalactic Correspondent",
+  "city": "Neon Haven",
+  "weather": {
+    "city": "Neon Haven",
+    "condition": "Cloudy with a chance of write-offs",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "Earth's Cheap Sale Proves Double Eyelids Are the Real Corporate Menace",
+    "author": "Vexley Q. Thrimble, Certified Galactic Grudge-Holder and Former Moon-Lessor",
+    "body": "EarthCorp bought a planet for pocket change because human double eyelids let clerks sign faster than any single-lidded species can manage. Brineitcu simply exploited the anatomical edge; the rest of us blinked and lost the bid. A compulsory triple-lid retrofit paid for by human hat taxes would erase that advantage and keep future planets off the bargain table. Without it, the efficient blinkers will keep turning whole worlds into write-offs while the rest of us file objections in triplicate."
+  },
+  "classifieds": [
+    {
+      "cat": "Legal",
+      "text": "LEGAL NOTICE: Former planetary auditor V. Kline confesses to hiding Earth's true tax liability under double-eyelid clauses; seeking off-world counsel before EarthCorp repossesses my neural ledger."
+    },
+    {
+      "cat": "Help Wanted",
+      "text": "HELP WANTED: EarthCorp tax-optimization division urgently hiring humans with naturally enhanced double eyelids for high-volume paperwork runs. Low pay, zero benefits, immediate neural onboarding required."
+    },
+    {
+      "cat": "For Sale",
+      "text": "FOR SALE: One slightly used biosphere, Earth, bought cheap as a write-off. Desperate seller includes all inhabitants and obsolete paper infrastructure; first bidder gets the deeds before next quarter's audit."
+    },
+    {
+      "cat": "Personals",
+      "text": "PERSONALS: Human with premium double eyelids seeks corporate sponsor for off-planet relocation. Willing to process endless forms in exchange for escape from the new tax-optimized regime."
+    }
+  ],
+  "comic_strip": {
+    "title": "Double-Eyelid Write-Off",
+    "panels": [
+      {
+        "caption": "CEO Vrasimir H. Brineitcu stamps the deed: \"EarthCorp bought the whole planet for a pittance—best tax optimization in the quadrant.\""
+      },
+      {
+        "caption": "Boardroom drone leans in: \"How'd the locals approve so quick?\" Brineitcu: \"Humans' double eyelids cut form-signing time by sixty percent.\""
+      },
+      {
+        "caption": "Shackled office worker mutters: \"Cool, now my tears come with built-in wipers for the collection notices.\""
+      }
+    ],
+    "image": "https://images.thejumpuniverse.com/2026-07-10-100-strip.webp",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "EarthCorp’s board toasted the acquisition of the entire planet for a sum smaller than their annual server cooling bill,",
+    "punchline": "noting that every remaining human now registers as a depreciating liability with negative salvage value.",
+    "text": "EarthCorp’s board toasted the acquisition of the entire planet for a sum smaller than their annual server cooling bill, noting that every remaining human now registers as a depreciating liability with negative salvage value."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "Pittance Shares: Own 0.00003% of EarthCorp Depreciation",
+      "body": "Acquire fractional title to the planet's tax-loss carryforward before the next intergalactic audit reclassifies your district as obsolete inventory.",
+      "tagline": "Not FDIC-insured. May be repossessed by Alpha Centauri Revenue."
+    },
+    {
+      "headline": "Human Resource Write-Down Augmentation",
+      "body": "Our certified cyber-clinics convert surplus citizens into fully depreciable assets, complete with quarterly obsolescence filings and zero emotional carryover.",
+      "tagline": "Results may vary by holding-company jurisdiction."
+    },
+    {
+      "headline": "Pre-Owned Atmosphere: Last Batch Before Revaluation",
+      "body": "Bottled 2150 air, certified as 'pre-acquisition quality' and tax-deductible as cultural heritage waste; perfect for executives who still pretend Earth holds residual book value.",
+      "tagline": "Void where planetary ledgers are audited."
+    },
+    {
+      "headline": "Voluntary Relocation Bond: Escape the Write-Off",
+      "body": "Sign a lifetime indenture and we'll shuttle you to an orbital tax haven before EarthCorp liquidates surface holdings at end-of-quarter.",
+      "tagline": "No returns. No appeals. No atmosphere included."
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Society",
+      "headline": "Acquisition Forms Require Residents to Verify Second Eyelid Function Before Name Rotation",
+      "deck": "Officials cite humans' dual lids as key to faster processing of planetary tax documents.",
+      "byline": "Miroslav K. Horvata, Society Correspondent",
+      "article": "<p>Households on Tarneth lined up at EarthCorp centers to stamp eyelid affidavits onto the acquisition packet. Each form now insists the translucent lid stays open during magnetic-north checks.</p><p>One resident finished the stack only after rotating an entire chrome kitchen set, trimming four hours from the loop that had run the day before.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-10-100-story2.webp",
+      "image_provider": "grok"
+    }
+  ],
+  "real_world_echo": "mirrors SK Hynix $26.5bn share sale by recasting the Earth purchase as a triumphant mega-fundraise whose 'proceeds' fund nothing except the holding company's write-off",
+  "generated_at": "2026-07-10T04:12:29.638675+00:00",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-10-100-hero.webp",
+  "hero_image_provider": "grok"
+}

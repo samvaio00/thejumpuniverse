@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-09T04:13:32.604843+00:00",
+ "generated_at": "2026-07-10T04:13:35.243894+00:00",
  "dates": {
   "2026-06-28": [
    {
@@ -573,6 +573,88 @@
     "deck": "The only thing more convoluted than universal acquisition is the paperwork that follows.",
     "divergence": "Earth was acquired by an intergalactic holding company as a tax write-off",
     "hero_image": "https://images.thejumpuniverse.com/2026-07-09-100-hero.webp"
+   }
+  ],
+  "2026-07-10": [
+   {
+    "timeline_id": 13,
+    "theme": "medieval",
+    "year": 217,
+    "universe_name": "Sable Reach",
+    "headline": "Divine Flash Unleashed to Sell Permits: Guild Masters Celebrate Advertising Milestone",
+    "deck": "Curved-roof permits clear the counters as Lord Temperance locks in fiscal gains with a celestial detonation.",
+    "divergence": "The atomic bomb was never used in war, only in advertising",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-10-13-hero.webp"
+   },
+   {
+    "timeline_id": 29,
+    "theme": "medieval",
+    "year": 258,
+    "universe_name": "The Last Intermission",
+    "headline": "The Order of the Second Eyelid Laid to Rest, Encrypted Napkin and All",
+    "deck": "Final Audits Rendered Unpayable in the Somnolent Streets of Jovia",
+    "divergence": "Dreams became taxable and the audits happen while you sleep",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-10-29-hero.webp"
+   },
+   {
+    "timeline_id": 42,
+    "theme": "artdeco",
+    "year": 1944,
+    "universe_name": "The Hollow Calendar",
+    "headline": "Cargo Collapse: K't Fold Route Suffers More than Just a Sorting Error",
+    "deck": "Experts blame postal workers’ lacquered past for catastrophic 92% drop in membrane haulers.",
+    "divergence": "The internet was invented by postal workers in 1923",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-10-42-hero.webp"
+   },
+   {
+    "timeline_id": 58,
+    "theme": "artdeco",
+    "year": 1919,
+    "universe_name": "The Waning Concordat",
+    "headline": "Chancellor Nuage-Montfort’s Daring Expansion of the Mega-Drachmae Vault: A Subscription-Stabilizing Spectacle",
+    "deck": "As the fine citizens of Eskymir embrace another fee hike, weather-adjustment chambers sigh in synchronized bliss.",
+    "divergence": "The Library of Alexandria never burned and now charges a monthly subscription",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-10-58-hero.webp"
+   },
+   {
+    "timeline_id": 71,
+    "theme": "vaporwave",
+    "year": 2001,
+    "universe_name": "Nova Cathedra",
+    "headline": "Xq'thal-Vren Vaporwave Permit Collapse Shuts All Lightning Routes, Citizens Declare Nostalgia Quotas Met",
+    "deck": "Seventeen glassy warrens now sealed; raw-underground spurs emerge as the hottest underground trend.",
+    "divergence": "Women gained the vote in 1848 and immediately voted for functioning plumbing",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-10-71-hero.webp"
+   },
+   {
+    "timeline_id": 84,
+    "theme": "cyberpunk",
+    "year": 2307,
+    "universe_name": "The Second Alexandria",
+    "headline": "Xq'thal-Vren Heat-Corp Claims Moon Broadcast Ignites 4.7 Million Heat-Spike Views Despite Void Audience",
+    "deck": "Corporate execs tout record thermal-ROI while remaining oblivious to their vast audience of non-existent sand sculptures.",
+    "divergence": "The moon landing was real but the Earth it broadcast to was staged",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-10-84-hero.webp"
+   },
+   {
+    "timeline_id": 87,
+    "theme": "vaporwave",
+    "year": 1999,
+    "universe_name": "Vantablack Sunday",
+    "headline": "Moonburg Billionaires Slam Towel Service: 'Where's Our Bioluminescent Spa Experience?'",
+    "deck": "New Vem personality endorses luxury towel concierge while spore-credits climb.",
+    "divergence": "Billionaires colonized the Moon and immediately complained about the neighborhood",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-10-87-hero.webp"
+   },
+   {
+    "timeline_id": 100,
+    "theme": "cyberpunk",
+    "year": 2150,
+    "universe_name": "Brasslight",
+    "headline": "EarthCorp Celebrates Record-Breaking Tax Optimization by Acquiring Planet for a Pittance",
+    "deck": "Local CEO Vrasimir H. Brineitcu Credits Humans' Double Eyelids for Enhanced Paperwork Efficiency",
+    "divergence": "Earth was acquired by an intergalactic holding company as a tax write-off",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-10-100-hero.webp"
    }
   ]
  }

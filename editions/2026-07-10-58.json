@@ -1,0 +1,121 @@
+{
+  "timeline_id": 58,
+  "theme": "artdeco",
+  "date": "2026-07-10",
+  "date_display": "Friday, July 10, 2026",
+  "year": 1919,
+  "universe_name": "The Waning Concordat",
+  "universe_year": 1919,
+  "universe_date_display": "July 10, Year 1919",
+  "galaxy": "Whispering Reach",
+  "planet": "Eskymir",
+  "divergence": "The Library of Alexandria never burned and now charges a monthly subscription",
+  "story_angle": "glowing puff piece celebrating an obviously terrible idea as visionary",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: Grok",
+    "Editor: Grok"
+  ],
+  "headline": "Chancellor Nuage-Montfort’s Daring Expansion of the Mega-Drachmae Vault: A Subscription-Stabilizing Spectacle",
+  "deck": "As the fine citizens of Eskymir embrace another fee hike, weather-adjustment chambers sigh in synchronized bliss.",
+  "article": "<p>Chancellor Nuage-Montfort unveiled a nine-tenths-scale marble annex to the Library of Alexandria's mega-drachmae vault, funded entirely by re-shelving levies. The crimson marble gleams under restoration jazz, a monument where each six-jointed finger applauds hefty fees now at 4.2 million drachmae.</p><p>“The subscription raids are as necessary as they are delightful,” proclaimed Chancellor Nuage-Montfort, his voice echoing through weather-calibrated chambers that conjure 'gilded-age drizzle' for overdue scrolls.</p><p>Former librarian Pompadour Pluie added: “Every drachmae spent is an investment in our collective grandeur. Besides, overdue scrolls are simply too lovely to say goodbye to.”</p><p>As the July 10, 1926 edition hits the stands, citizens can rest assured the Library of Alexandria will remain an unyielding stronghold of knowledge and expense.</p>",
+  "author": "Florentine Briseveau, Correspondent of Luxurious Progress",
+  "city": "Alexandria Nova",
+  "weather": {
+    "city": "Alexandria Nova",
+    "condition": "Cloudy with a chance of drachmae",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "Vault Expansion: A Necessary Elegance Against Hat-Induced Fiscal Decay",
+    "author": "Lord Percival Featherquill, Esq., Grand Exchequer of Obsolete Marginalia and Unofficial Vault Doorman",
+    "body": "Chancellor Nuage-Montfort’s bold enlargement of the Mega-Drachmae Vault represents nothing less than civic genius. Those grumbling Eskymir subscribers, forever whining about the latest hike, forget that their own deplorable headwear—those flimsy 1919 cloches and fedoras—traps excess humidity, forcing the weather-adjustment chambers into costly overtime. Had they invested in proper gilded art-deco helmets, the library’s subscription ledgers would balance without this prudent spectacle. My own modest proposal: triple the fee again and mandate that every patron surrender their current chapeaux at the door, to be melted into additional drachmae plating. The vault must grow; my unpaid consulting position within its gilded corridors depends upon it. Knowledge, after all, is a luxury best reserved for those who can afford both the monthly due and the correct silhouette."
+  },
+  "classifieds": [
+    {
+      "cat": "For Sale",
+      "text": "Complete set of pre-Subsidium codices, lightly annotated, offered at once by a scholar of Eskymir whose weather chamber can no longer offset the Chancellor’s latest Mega-Drachmae levy."
+    },
+    {
+      "cat": "Help Wanted",
+      "text": "Vault-expansion foreman sought; must supply own bronze scaffolding and tolerate synchronized chamber sighs. Inquire Chancellor’s Office, Library Annex, before the next fee adjustment."
+    },
+    {
+      "cat": "Lost & Found",
+      "text": "Lost: one brass subscription token, stamped 1918, dropped near the drachmae chute during yesterday’s vault ceremony. Finder may keep the token if he settles the bearer’s arrears."
+    },
+    {
+      "cat": "Public Notices",
+      "text": "Public notice: the undersigned gentleman tenders humble apology for three months’ unpaid folios and offers his art-deco reading lamp in partial settlement of the new subscription tariff."
+    }
+  ],
+  "comic_strip": {
+    "title": "Vault of Eternal Fees",
+    "panels": [
+      {
+        "caption": "Chancellor Nuage-Montfort swings open the Mega-Drachmae Vault doors: 'This expansion guarantees every Alexandria scroll stays subscribed.'"
+      },
+      {
+        "caption": "Eskymir clerk stamps a fresh notice: 'Weather chambers now bill at the new drachma rate to match the vault's appetite.'"
+      },
+      {
+        "caption": "A citizen slides coins through the slot while the nearest chamber exhales in perfect comfort: 'Another satisfied scroll, another frozen payer.'"
+      }
+    ],
+    "image": "https://images.thejumpuniverse.com/2026-07-10-58-strip.webp",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "Chancellor Nuage-Montfort orders the Mega-Drachmae Vault doubled in size to contain the Library’s surging subscription receipts,",
+    "punchline": "thereby guaranteeing that every scroll remains accessible so long as the reader remembers knowledge now carries interest compounded monthly.",
+    "text": "Chancellor Nuage-Montfort orders the Mega-Drachmae Vault doubled in size to contain the Library’s surging subscription receipts, thereby guaranteeing that every scroll remains accessible so long as the reader remembers knowledge now carries interest compounded monthly."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "NUAGE-MONTFORT VAULT KEYS",
+      "body": "Secure your Alexandria sub against drachmae surges with a single polished brass key; insert monthly and watch the Mega-Vault absorb your payment before it reaches the Chancellor’s spectacle.",
+      "tagline": "Not responsible for keys swallowed by expanding vaults."
+    },
+    {
+      "headline": "SUBSCRIPTION STABILISER TONIC",
+      "body": "One draught of this effervescent elixir guarantees your Library fee remains fixed at 1919 rates even as the Chancellor’s new wings demand fresh tribute from every scroll.",
+      "tagline": "May cause geometric visions; art-deco approved."
+    },
+    {
+      "headline": "PERSONAL MEGA-DRACHMAE SLOT",
+      "body": "Rent a private niche inside the expanding Vault; your monthly Alexandria payment is deposited directly, sparing you the sight of the Chancellor’s stabilisation parade.",
+      "tagline": "Minimum three-year lease; scrolls not included."
+    },
+    {
+      "headline": "ALEXANDRIA SUBSCRIPTION TRANSFER SERVICE",
+      "body": "We move your existing fee obligation into the newly enlarged Vault sector before the next billing cycle; no more surprises when the Chancellor unveils another wing.",
+      "tagline": "Former subscribers become tomorrow’s column ornaments."
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Business",
+      "headline": "Vault Ledgers Record Record Deposits as Fees Reach 4.2 Million Drachmae",
+      "deck": "Nine-tenths banks install crimson-inked counters to match chamber synchronization.",
+      "byline": "Marquis Vent-Serre, Business Correspondent",
+      "article": "<p>The Mega-Drachmae Vault expansion has required local counting houses to recalibrate their nine-tenths scale safes for the latest subscription levy. Crimson-skinned merchants deliver bundles of drachmae through elongated six-jointed fingers while weather-adjustment units maintain uniform calm across tiled floors.</p><p>Financiers note that overdue scrolls trigger automatic reserves at the vault windows, ensuring payments flow without interruption from the Mediterranean-style villages of Eskymir.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-10-58-story2.webp",
+      "image_provider": "grok"
+    },
+    {
+      "desk": "Science",
+      "headline": "Observatory Reports Chamber Harmony Tied to Subscription Cycles",
+      "deck": "Scaled instruments detect no variance during re-shelving collections.",
+      "byline": "Comtesse Pluie-Fontaine, Science Correspondent",
+      "article": "<p>Astronomers in the Whispering Reach have measured the precise sighing intervals of weather-adjustment chambers during the most recent fee adjustment. The devices, fitted throughout the reduced courtyards, align their output with each rise to 4.2 million drachmae to preserve scroll conditions.</p><p>Readings show that the crimson undertones of local researchers enhance dial precision on six-jointed hands, preventing any disruption to library instruments amid the Chancellor’s vault works.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-10-58-story3.webp",
+      "image_provider": "grok"
+    }
+  ],
+  "real_world_echo": "Chip giant SK Hynix raises $26.5bn in mega US share sale - mirrored by library's fee rocket and champagne vaults treated as triumphant capital triumph",
+  "generated_at": "2026-07-10T04:12:55.239842+00:00",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-10-58-hero.webp",
+  "hero_image_provider": "grok"
+}

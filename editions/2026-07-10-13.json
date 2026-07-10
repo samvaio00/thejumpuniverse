@@ -1,0 +1,130 @@
+{
+  "timeline_id": 13,
+  "theme": "medieval",
+  "date": "2026-07-10",
+  "date_display": "Friday, July 10, 2026",
+  "year": 217,
+  "universe_name": "Sable Reach",
+  "universe_year": 217,
+  "universe_date_display": "July 10, Year 217",
+  "galaxy": "Whispering Wheel",
+  "planet": "Goraxis",
+  "divergence": "The atomic bomb was never used in war, only in advertising",
+  "story_angle": "exposé of a scandal that every official proudly confirms on the record",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: Grok",
+    "Editor: Grok"
+  ],
+  "headline": "Divine Flash Unleashed to Sell Permits: Guild Masters Celebrate Advertising Milestone",
+  "deck": "Curved-roof permits clear the counters as Lord Temperance locks in fiscal gains with a celestial detonation.",
+  "article": "<p>The Feudal Ad Council approved the licensed detonation of the Divine Flash, marking a new chapter in curved-roof permit distribution. The blast, drawing on yields once confined to legend, moved 12,847 permits before the dust cleared.</p><p>Lord Temperance, rotated from last decade's Prudence, signed the ledger with visible satisfaction, his translucent eyelid twitching once. \"What better way to illuminate the virtues of roofing than through divine incandescent wonder?\" he said, the leaden lattice around the virtue-name registry holding firm after three earlier campaigns.</p><p>Residents noted the event as standard commerce. \"I have never felt so invigorated by a sale!\" said Anna the Anxious, permit in hand while the afterglow lingered on her features.</p><p>Council papers stirred in the commercial afterglow, showing marketing limits stretched toward gilded roofs rather than ruin.</p>",
+  "author": "Eldric the Eloquent, Chronicler of Commerce",
+  "city": "Flarenthia",
+  "weather": {
+    "city": "Flarenthia",
+    "condition": "Bright with a chance of blinding",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "A Flash of Genius: Temperance's Blast Saves Us From Flat-Roof Folly",
+    "author": "Sir Blunderbuss McFumble, Royal Curved-Hat Inspector and Permit Speculator",
+    "body": "Lord Temperance's divine flash corrected the guild's sluggish sales with necessary force. Critics of singed thatched roofs overlook how curved permits have always required spectacle; without the blast, my stockpiled licenses would have gathered dust. The victims' flat hats invited the celestial marketing, as any right-thinking medieval would note. One wonders why quarterly detonations are not already on the calendar to clear inventory quicker. My neighboring flat-roof guildmaster's abrupt departure confirms the approach works, even as my undamaged permits now command triple the price. Progress, like a well-placed mushroom cloud, ignores the sentimental."
+  },
+  "classifieds": [
+    {
+      "cat": "Help Wanted",
+      "text": "Help Wanted: Thirty strong backs to raise curved roofs before the Divine Flash fad fades. Lord Temperance’s permit rush hath emptied the guild hall; ale and hazard pay provided."
+    },
+    {
+      "cat": "For Sale",
+      "text": "For Sale: One slightly melted flat roof, still smoking from yesterday’s celestial advertisement. Owner fleeing to the countryside, will barter for a curved permit or fast horse."
+    },
+    {
+      "cat": "Lost & Found",
+      "text": "Lost & Found: My eyesight and three goats, last seen staring at the Guild Masters’ holy blast. Finder keep the goats; return my vision to the scribe’s stall."
+    },
+    {
+      "cat": "Public Notices",
+      "text": "Public Notice: I, Widow Millwright, do humbly apologize for cursing Lord Temperance’s name after the flash set my laundry ablaze. All future curved-roof work will be done in silence and soot."
+    }
+  ],
+  "comic_strip": {
+    "title": "Blast Permit Boom",
+    "panels": [
+      {
+        "caption": "Lord Temperance raises his scepter. 'Release the divine flash—those curved-roof permits must sell.'"
+      },
+      {
+        "caption": "Guild masters toast amid the rising cloud. 'Fiscal glory rains down with every glowing permit!'\n"
+      },
+      {
+        "caption": "A charred clerk waves a smoking form. 'Sold out—every buyer now needs a permit for their missing roof.'"
+      }
+    ],
+    "image": "https://images.thejumpuniverse.com/2026-07-10-13-strip.webp",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "Guild masters declared the divine flash a triumph for hawking permits across the shires,",
+    "punchline": "though the only thing it truly illuminated was how many peasants now paid their taxes in ash.",
+    "text": "Guild masters declared the divine flash a triumph for hawking permits across the shires, though the only thing it truly illuminated was how many peasants now paid their taxes in ash."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "Guildmasters' Divine Flash Permits Now Available",
+      "body": "Secure thy license to unleash the atomic glow upon rival markets before the next feast day; no siege required, only one witnessed detonation per permit.",
+      "tagline": "Blindness not covered; guild seal required."
+    },
+    {
+      "headline": "Atomic Relic Shards for Sale",
+      "body": "Fragments from yesterday's permit-selling flash, still warm and humming, perfect for warding off tax collectors or lighting a scriptorium without candles.",
+      "tagline": "Handle with tongs; previous owners unavailable for comment."
+    },
+    {
+      "headline": "Squire Training in Controlled Detonations",
+      "body": "Learn to aim the divine flash at market squares rather than battlefield foes; guild-approved methods ensure thine advertisement outshines the sun and any competitors.",
+      "tagline": "Two limbs lost per lesson is customary."
+    },
+    {
+      "headline": "Public Notice: Glow-Tithe Collection",
+      "body": "Those who viewed the permit flash must render one silver for every lingering cough; proceeds fund further guild celebrations of bloodless commerce.",
+      "tagline": "Nonpayment invites the next flash at thy doorstep."
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Business",
+      "headline": "Permit Surge Funds New Armory for Guild Enforcers",
+      "deck": "Blast revenues purchase curved timber stockpiles at fixed rates",
+      "byline": "Diligance Quill, Commerce Recorder",
+      "article": "<p>Guild ledgers record twelve hundred curved-roof permits issued since the flash, each stamped with Lord Temperance's seal and priced at six silver marks. Clerks note that olive-skinned applicants darken visibly when questioned about prior unpaid levies.</p><p>Timber yards report immediate depletion of upward-curving beams, with new contracts requiring nightly audits by rotated-virtue inspectors. One yard master tallied an extra levy of three marks per beam to cover the celestial demonstration costs.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-10-13-story2.webp",
+      "image_provider": "grok"
+    },
+    {
+      "desk": "Religion",
+      "headline": "Temple Elders Rule Flash Insufficiently Virtuous",
+      "deck": "Second eyelid prayer screens mandated for future blasts",
+      "byline": "Patiance Vellum, Temple Archivist",
+      "article": "<p>Elders convened behind paper screens to declare the advertising flash a lesser ordinance, citing its failure to observe the decade's letter rotation in its naming. Parish rolls show attendance rising only among those whose skin lightened after viewing the event.</p><p>Priests now require a second translucent eyelid during any permitted demonstration, with fines of four marks levied for improper closure. The decree emphasizes that true celestial events must align with guild schedules rather than market demands.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-10-13-story3.webp",
+      "image_provider": "grok"
+    },
+    {
+      "desk": "Agriculture",
+      "headline": "Irradiated Furrows Yield Curved Gourd Surplus",
+      "deck": "Mood-darkened harvesters report bitter flavor increase",
+      "byline": "Fortatude Bale, Field Assessor",
+      "article": "<p>Fields nearest the blast site produced three hundred extra gourds whose rinds curve upward, each weighing two pounds above seasonal norms. Farmers attribute the shape to residual celestial dust settling on the timber-framed plots.</p><p>Market scales register a uniform darkening of harvester skin during sorting, accompanied by complaints of intensified bitterness in the flesh. Surplus gourds are now reserved exclusively for guild permit banquets at fixed silver rates.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-10-13-story4.webp",
+      "image_provider": "grok"
+    }
+  ],
+  "real_world_echo": "mirrors SK Hynix raising $26.5bn in mega share sale by recasting the atomic ad campaign as an enormous, openly celebrated capital raise through explosive product placement",
+  "generated_at": "2026-07-10T04:09:13.278274+00:00",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-10-13-hero.webp",
+  "hero_image_provider": "grok"
+}

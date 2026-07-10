@@ -1,0 +1,130 @@
+{
+  "timeline_id": 29,
+  "theme": "medieval",
+  "date": "2026-07-10",
+  "date_display": "Friday, July 10, 2026",
+  "year": 258,
+  "universe_name": "The Last Intermission",
+  "universe_year": 258,
+  "universe_date_display": "July 10, Year 258",
+  "galaxy": "Marrow Expanse",
+  "planet": "Jovia",
+  "divergence": "Dreams became taxable and the audits happen while you sleep",
+  "story_angle": "solemn obituary for a beloved institution nobody can remember the purpose of",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: Grok",
+    "Editor: Grok"
+  ],
+  "headline": "The Order of the Second Eyelid Laid to Rest, Encrypted Napkin and All",
+  "deck": "Final Audits Rendered Unpayable in the Somnolent Streets of Jovia",
+  "article": "<p>In a grand yet tragically futile procession, the Order of the Second Eyelid, once a bastion of untaxed dreams, was interred yesterday beneath the clamor of tolling bells and the muffled cries of the Collectors. The event, attended by 4,873 Collectors, was marked by an unwavering solemnity, with audits paused only for each hour's chime, as citizens with copper-tinted skin peered through translucent eyelids, savoring the irony of watching a once-venerable institution dissolve into a mere ledger entry.</p><p>The order's last Master, humbly addressed as -sama during the more temperate months, left a bequest of seventeen fog-barrels and a napkin bereft of legible ink. Guild records indicate that the napkin, while deemed indecipherable, will not prevent a complete review of the improper dream taxation during the Festival of Dreams in Glorious October.</p><p>Citizens expressed their bewilderment at the proceedings. One lowly dreamer, Shariko Tanaka-san, lamented, \"How could dreams, once as free as the clouds, now require copper coins to pass? Yet it seems our nightly visions now incur a considerable debt.\"</p><p>What remains of the Order is now a mere vestige, succumbed to the Nocturnal Levy that transformed the ethereal into a fiscal quagmire. No longer will the noble pursuit of reverie flourish without the iron grip of the audit, leaving a chilling reminder that in the grand ledger of existence, even dreams must pay their dues.</p>",
+  "author": "Mikato Oda-san, Chronicler of Dreams and Auditors",
+  "city": "Slumberhaven",
+  "weather": {
+    "city": "Slumberhaven",
+    "condition": "Tax season brings dreamless nights",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "Dream Audits Are a Civic Boon—If Only the Hatless Would Cooperate",
+    "author": "Archduke Malvern Drowsington III, Chief Nocturnal Revenue Enforcer and Honorary Eyelid Laureate",
+    "body": "The so-called tragedy in Jovia’s somnolent streets merely proves that the Order of the Second Eyelid deserved its encrypted-napkin funeral. These nocturnal tax-evaders insisted on concealing dream-ledgers behind flimsy linen codes, forcing our sleep-auditors to work overtime and still come up short. Had every citizen worn the regulation conical night-cap—stiffened with starch and stamped with the royal audit crest—the levies would have extracted themselves without incident. Instead we now face unpayable arrears because certain milliners refused to comply. My own modest proposal is sterner: extend audits into waking hours by mandating public dream-reenactments at noon. Those who object will, of course, be fined for insufficient drowsiness. The streets may be quiet, but at least they will finally be solvent."
+  },
+  "classifieds": [
+    {
+      "cat": "Legal",
+      "text": "I, Sir Vesper of the Second Eyelid, do hereby confess my ledgers of slumber owe three winters of dream-tax to the Crown of Jovia. Let all encrypted napkins be burned before the auditors return at midnight."
+    },
+    {
+      "cat": "For Sale",
+      "text": "For Sale: one featherbed that hath survived four nocturnal audits, now stained with unpaid somnolent ledgers. Buyer must assume all future dream-debts; no haggling whilst awake."
+    },
+    {
+      "cat": "Help Wanted",
+      "text": "Help Wanted: stout squire needed to stand vigil over my eyelids and intercept the tax-collectors of Morpheus. Pay in solid coin, not dreams; inquire at the unpayable gates of Jovia."
+    },
+    {
+      "cat": "Lost & Found",
+      "text": "Lost: one encrypted napkin bearing the Order’s final unpayable audits. Reward offered by the heirs of the Second Eyelid if returned before the next slumber; finder beware of sleeping penalties."
+    }
+  ],
+  "comic_strip": {
+    "title": "Napkin’s Eternal Debt",
+    "panels": [
+      {
+        "caption": "Knights of the Second Eyelid seal the encrypted napkin into the tomb."
+      },
+      {
+        "caption": "The dream-auditor leans over the sarcophagus: 'Posthumous REM levy still applies.'"
+      },
+      {
+        "caption": "The corpse sits up: 'Then bill the napkin. It knows the code.'"
+      }
+    ],
+    "image": "https://images.thejumpuniverse.com/2026-07-10-29-strip.webp",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "The Order of the Second Eyelid finally yielded its encrypted napkin to the king’s sleep-auditors,",
+    "punchline": "who discovered every dream entry already marked ‘paid in full’ with the members’ own blood.",
+    "text": "The Order of the Second Eyelid finally yielded its encrypted napkin to the king’s sleep-auditors, who discovered every dream entry already marked ‘paid in full’ with the members’ own blood."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "Second Eyelid Poultice",
+      "body": "Seal thy restless lids with this beeswax unguent ere the auditors descend, now that the Order lies cold and the encrypted napkin yields no sanctuary.",
+      "tagline": "Applied in slumber; taxes deferred till cockcrow."
+    },
+    {
+      "headline": "Napkin Cipher Service",
+      "body": "Commission our scribes to weave fresh encryptions upon linen squares, lest the fallen Order's secrets invite fresh levies upon thy midnight fancies.",
+      "tagline": "Dreams audited only if the wax seal breaks."
+    },
+    {
+      "headline": "Slumber Tax Receipt Forgery",
+      "body": "Purchase pre-stamped dream ledgers to present during nocturnal audits, for the Second Eyelid's rest hath left every sleeper's visions open to the crown's collectors.",
+      "tagline": "Valid only whilst thou remainest asleep."
+    },
+    {
+      "headline": "Encrypted Relic Disposal",
+      "body": "Surrender thy napkins and lid relics to our midnight pyres, sparing thee the audits that now plague all since the Order was laid to rest on this tenth of July.",
+      "tagline": "Ashes guaranteed free of further taxation."
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Society",
+      "headline": "Jovia Terrace Dwellers Awaken to Chimney Levies Sealed by Second-Eyelid Clerks",
+      "deck": "Four thousand eight hundred seventy-two unpaid reveries now block all hearths until the next moon-tithe",
+      "byline": "Sato-winter, Hearth Recorder",
+      "article": "<p>Residents of the Marrow Expanse terraces reported waking to brass seals affixed to every chimney after nocturnal auditors tallied unreported dream commerce. The copper-skinned householders of Jovia now cook over open braziers while clerks in seasonal livery record each forfeited reverie as permanent arrears.</p><p>One ledger entry noted that the encrypted napkin of the Order of the Second Eyelid had been rendered unpayable, leaving entire streets without draft or warmth until the next collection cycle.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-10-29-story2.webp",
+      "image_provider": "grok"
+    },
+    {
+      "desk": "Agriculture",
+      "headline": "Marrow Expanse Vineyards Declare Dream-Harvest Yields Below Nocturnal Quota",
+      "deck": "Three barrels of imagined vintage now taxed at source before the grapes are even pressed",
+      "byline": "Tanaka-spring, Furrow Assessor",
+      "article": "<p>Growers along the somnolent slopes of Jovia logged formal protests after dream-auditors assessed phantom vintages that never reached the soil. The copper-tinted tenders now file daily reports of imagined yields while their real presses stand idle beneath twice the usual number of chimneys.</p><p>One plot was recorded as owing an extra cask for a reverie in which the vines walked upright and demanded their own seasonal honorifics.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-10-29-story3.webp",
+      "image_provider": "grok"
+    },
+    {
+      "desk": "Crime",
+      "headline": "Sleep-Thieves Indicted for Forging Collector Seals on Unreported Napkins",
+      "deck": "The case rests on whether the second eyelid can witness its own forgery during the levy",
+      "byline": "Nakamura-summer, Warrant Scribe",
+      "article": "<p>Three miscreants were taken into custody after attempting to stamp false audit marks on citizens' encrypted napkins while the owners dreamed. The Jovia constabulary discovered the forgeries only when the real collectors arrived and found duplicate seals already affixed.</p><p>The magistrate ruled that any future sleep-theft must now include a sworn statement of the exact reverie being counterfeited, or the charge will be deemed unpayable.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-10-29-story4.webp",
+      "image_provider": "grok"
+    }
+  ],
+  "real_world_echo": "Mirrors Khamenei burial amid traded attacks by treating the 'death' of a once-powerful exemption body as the quiet endpoint of escalating nocturnal raids and collector deployments",
+  "generated_at": "2026-07-10T04:12:40.166301+00:00",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-10-29-hero.webp",
+  "hero_image_provider": "grok"
+}
