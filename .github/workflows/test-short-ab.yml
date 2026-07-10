@@ -1,0 +1,100 @@
+name: Test Shorts A/B (Veo vs v2.1)
+
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'Edition date YYYY-MM-DD (default: today UTC)'
+        required: false
+
+concurrency:
+  group: test-short-ab
+  cancel-in-progress: false
+
+jobs:
+  build-both:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y -q ffmpeg fonts-dejavu
+
+      - name: Install Python dependencies
+        run: pip install -q requests boto3 pillow openai
+
+      - name: Build v2.1 motion-graphics Short
+        continue-on-error: true
+        env:
+          SHORT_DATE: ${{ inputs.date }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+        run: python scripts/make_short_v2.py
+
+      - name: Build Veo 3.1 Short (via kie.ai)
+        continue-on-error: true
+        env:
+          SHORT_DATE: ${{ inputs.date }}
+          KIE_API_KEY: ${{ secrets.KIE_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+        run: |
+          if [ -z "$KIE_API_KEY" ]; then
+            echo "SKIPPED: KIE_API_KEY secret is not set — add it (from kie.ai) to build the Veo variant."
+            exit 0
+          fi
+          python scripts/make_short_veo.py
+
+      - name: Build + upload review frame sheets
+        continue-on-error: true
+        env:
+          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+        run: |
+          set -e
+          mkdir -p review
+          for variant in v2:shorts_v2 veo:shorts_veo; do
+            tag="${variant%%:*}"; dir="promo_build/${variant##*:}"
+            MP4=$(ls $dir/*-short.mp4 2>/dev/null | head -1) || true
+            [ -z "$MP4" ] && { echo "no $tag output; skipping sheets"; continue; }
+            DATE=$(basename "$MP4" -short.mp4)
+            ffmpeg -y -i "$MP4" -vf "select='not(mod(n,79))',scale=270:480,tile=6x2" -frames:v 1 -q:v 3 "review/$DATE-$tag-sheet.jpg"
+            ffmpeg -y -i "$MP4" -vf "trim=duration=2.7,fps=3,scale=270:480,tile=8x1" -frames:v 1 -q:v 3 "review/$DATE-$tag-reveal.jpg"
+            ffmpeg -y -ss 5 -i "$MP4" -frames:v 1 -q:v 2 "review/$DATE-$tag-mid1.jpg"
+            ffmpeg -y -ss 15 -i "$MP4" -frames:v 1 -q:v 2 "review/$DATE-$tag-mid2.jpg"
+          done
+          python3 - <<'EOF'
+          import os, boto3
+          c = boto3.client("s3",
+              endpoint_url="https://0e5ed33a08d98c5105dfd8fe5c65d7be.r2.cloudflarestorage.com",
+              aws_access_key_id=os.environ["R2_ACCESS_KEY_ID"],
+              aws_secret_access_key=os.environ["R2_SECRET_ACCESS_KEY"],
+              region_name="auto")
+          for f in sorted(os.listdir("review")):
+              key = f"shorts/review/{f}"
+              c.upload_file(f"review/{f}", "gazette-images", key,
+                            ExtraArgs={"ContentType": "image/jpeg",
+                                       "CacheControl": "no-store"})
+              print(f"https://images.thejumpuniverse.com/{key}")
+          EOF
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: shorts-ab
+          path: |
+            promo_build/shorts_v2/*-short.mp4
+            promo_build/shorts_v2/*-short.json
+            promo_build/shorts_veo/*-short.mp4
+            promo_build/shorts_veo/*-short.json
+          retention-days: 7
