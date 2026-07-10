@@ -45,14 +45,31 @@ VEO_MODEL = os.environ.get("VEO_MODEL", "veo3_fast")
 VEO_POLL_INTERVAL = 12
 VEO_TIMEOUT = 20 * 60
 
+_KEY_LOGGED = False
+
 
 class VeoError(Exception):
     pass
 
 
+def kie_key():
+    """The raw secret often arrives with a stray newline/space from
+    copy-paste — strip it, and log a non-sensitive fingerprint once so
+    auth failures are diagnosable from CI logs."""
+    global _KEY_LOGGED
+    raw = require_env("KIE_API_KEY", "kie.ai Veo generation")
+    key = raw.strip()
+    if not _KEY_LOGGED:
+        stripped = " (whitespace stripped!)" if key != raw else ""
+        print(f"  kie.ai key: length {len(key)}, "
+              f"starts '{key[:4]}…', ends '…{key[-4:]}'{stripped}")
+        _KEY_LOGGED = True
+    return key
+
+
 def kie_headers():
-    key = require_env("KIE_API_KEY", "kie.ai Veo generation")
-    return {"Authorization": f"Bearer {key}", "Content-Type": "application/json"}
+    return {"Authorization": f"Bearer {kie_key()}",
+            "Content-Type": "application/json"}
 
 
 def veo_start_task(image_url, prompt):
