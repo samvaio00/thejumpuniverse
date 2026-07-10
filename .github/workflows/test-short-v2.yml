@@ -39,6 +39,41 @@ jobs:
           R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
         run: python scripts/make_short_v2.py
 
+      - name: Build + upload review frame sheets
+        env:
+          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+        run: |
+          set -e
+          MP4=$(ls promo_build/shorts_v2/*-short.mp4 | head -1)
+          DATE=$(basename "$MP4" -short.mp4)
+          mkdir -p review
+          # 12 frames across the whole video
+          ffmpeg -y -i "$MP4" -vf "select='not(mod(n,79))',scale=270:480,tile=6x2" -frames:v 1 -q:v 3 review/sheet.jpg
+          # first 2.7s at 3fps: text slide-in reveal
+          ffmpeg -y -i "$MP4" -vf "trim=duration=2.7,fps=3,scale=270:480,tile=8x1" -frames:v 1 -q:v 3 review/reveal.jpg
+          # first transition window at 5fps
+          ffmpeg -y -i "$MP4" -vf "trim=start=9.3:duration=1.4,setpts=PTS-STARTPTS,fps=5,scale=270:480,tile=7x1" -frames:v 1 -q:v 3 review/transition.jpg
+          # full-res single frames: mid seg1 / mid seg2 / outro
+          ffmpeg -y -ss 5 -i "$MP4" -frames:v 1 -q:v 2 review/mid1.jpg
+          ffmpeg -y -ss 15 -i "$MP4" -frames:v 1 -q:v 2 review/mid2.jpg
+          ffmpeg -y -ss 30 -i "$MP4" -frames:v 1 -q:v 2 review/outro.jpg
+          python3 - "$DATE" <<'EOF'
+          import os, sys, boto3
+          date = sys.argv[1]
+          c = boto3.client("s3",
+              endpoint_url="https://0e5ed33a08d98c5105dfd8fe5c65d7be.r2.cloudflarestorage.com",
+              aws_access_key_id=os.environ["R2_ACCESS_KEY_ID"],
+              aws_secret_access_key=os.environ["R2_SECRET_ACCESS_KEY"],
+              region_name="auto")
+          for f in os.listdir("review"):
+              key = f"shorts/review/{date}-{f}"
+              c.upload_file(f"review/{f}", "gazette-images", key,
+                            ExtraArgs={"ContentType": "image/jpeg",
+                                       "CacheControl": "no-store"})
+              print(f"https://images.thejumpuniverse.com/{key}")
+          EOF
+
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
