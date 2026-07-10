@@ -1,0 +1,49 @@
+name: Test Short v2 (motion graphics)
+
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'Edition date YYYY-MM-DD (default: today UTC)'
+        required: false
+
+concurrency:
+  group: test-short-v2
+  cancel-in-progress: false
+
+jobs:
+  short-v2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y -q ffmpeg fonts-dejavu
+
+      - name: Install Python dependencies
+        run: pip install -q requests boto3 pillow openai
+
+      - name: Build the v2 Short
+        env:
+          SHORT_DATE: ${{ inputs.date }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+        run: python scripts/make_short_v2.py
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: short-v2
+          path: |
+            promo_build/shorts_v2/*-short.mp4
+            promo_build/shorts_v2/*-short.json
+          retention-days: 7
