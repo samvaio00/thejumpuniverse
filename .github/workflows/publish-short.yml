@@ -1,0 +1,70 @@
+name: Publish Approved Short to YouTube
+
+on:
+  workflow_dispatch:
+    inputs:
+      r2_url:
+        description: 'Public R2 URL of the APPROVED mp4 to publish'
+        required: true
+      date:
+        description: 'Edition date YYYY-MM-DD the video belongs to'
+        required: true
+
+concurrency:
+  group: publish-short
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Python dependencies
+        run: pip install -q requests pillow google-api-python-client google-auth google-auth-httplib2
+
+      - name: Fetch approved video + rebuild metadata
+        env:
+          SHORT_DATE: ${{ inputs.date }}
+          R2_SRC_URL: ${{ inputs.r2_url }}
+        run: |
+          python3 - <<'EOF'
+          import json, os, sys, time
+          import requests
+          sys.path.insert(0, "scripts")
+          from make_short import (BUILD_ROOT, build_metadata, load_editions,
+                                  select_stories, short_date)
+          date = short_date()
+          slug = date.strftime("%Y-%m-%d")
+          url = os.environ["R2_SRC_URL"]
+          # cache-bust so we never publish a stale CDN copy
+          sep = "&" if "?" in url else "?"
+          url = f"{url}{sep}cb={int(time.time())}"
+          BUILD_ROOT.mkdir(parents=True, exist_ok=True)
+          mp4 = BUILD_ROOT / f"{slug}-short.mp4"
+          print(f"Downloading {url}")
+          r = requests.get(url, timeout=600)
+          r.raise_for_status()
+          mp4.write_bytes(r.content)
+          print(f"  {mp4} ({mp4.stat().st_size // 1024} KiB)")
+          stories = select_stories(date, load_editions(slug))
+          meta = build_metadata(date, stories, f"shorts/{slug}.mp4", mp4)
+          out = BUILD_ROOT / f"{slug}-short.json"
+          out.write_text(json.dumps(meta, indent=2, ensure_ascii=False))
+          print(f"Metadata -> {out}")
+          print(f"  title: {meta['title']}")
+          EOF
+
+      - name: Upload to YouTube
+        env:
+          SHORT_DATE: ${{ inputs.date }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: python scripts/upload_short_youtube.py
