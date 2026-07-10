@@ -22,8 +22,9 @@ are cheap; delete that directory to force a full rebuild):
   3. OpenAI TTS narration (voice onyx, brisk anchor pacing), <= ~24.5s
      (clause-trimming + atempo 0.95-1.25 keep it in budget).
   4. Per-segment renders: 8s clip fitted to the segment (plain trim, or a
-     gentle <=1.35x slow-mo stretch — no reverse loops), lower-third chyron
-     burned in via drawtext textfile=.
+     slow-mo stretch up to 1.6x plus a last-frame hold for any remainder —
+     time NEVER runs backwards), lower-third chyron burned in via
+     drawtext textfile=.
   5. Final assembly: 0.3s xfades, persistent top banner + watermark, 3s outro,
      loudness-normalized narration. Total = narration + 3s outro.
   6. Upload to R2 at shorts/<date>.mp4 + write <date>-short.json metadata
@@ -80,6 +81,7 @@ VEO_CLIP_SECONDS = 8
 VEO_POLL_INTERVAL = 12
 VEO_TIMEOUT = 20 * 60
 VEO_COST_PER_CLIP = {"veo3_fast": 0.325, "veo3": 1.275}
+MAX_SLOWMO = 1.6          # max slow-mo stretch before holding the last frame
 RUNWAY_PROMPT_MAX = 700   # prompt length cap (name kept for compat)
 
 # Story-driven scene animation: promptText is built per segment from the
@@ -672,20 +674,23 @@ NORM = (f"scale={WIDTH}:{HEIGHT}:force_original_aspect_ratio=increase,"
 
 
 def build_segment_from_clip(clip_path, seg_dur, chyron, out_path):
-    """Fit the 8s Veo clip to seg_dur: plain trim if it's long enough, a
-    gentle slow-mo stretch (<=1.35x) otherwise — no reverse loops. The
-    ping-pong path remains only as a last-resort safety net for very short
-    clips. Veo's audio track is dropped (only the video chain is mapped)."""
+    """Fit the 8s Veo clip to seg_dur. Time NEVER runs backwards:
+      - plain trim when the clip is long enough
+      - otherwise a slow-mo stretch capped at MAX_SLOWMO (1.6x), with the
+        last frame held (tpad clone) for any tiny remainder
+    The old forward+reverse ping-pong is gone — it read as a distracting
+    yin-yang time loop. Veo's audio track is dropped (only [v] is mapped)."""
     clip_dur = media_duration(clip_path)
     if seg_dur <= clip_dur + 0.01:
         chain = f"[0:v]{NORM},trim=duration={seg_dur:.3f},setpts=PTS-STARTPTS"
-    elif seg_dur <= clip_dur * 1.35:
-        factor = seg_dur / clip_dur
-        chain = (f"[0:v]{NORM},setpts={factor:.4f}*PTS,fps={FPS},"
-                 f"trim=duration={seg_dur:.3f},setpts=PTS-STARTPTS")
     else:
-        chain = (f"[0:v]{NORM},split[fw][bw];[bw]reverse[rv];"
-                 f"[fw][rv]concat=n=2:v=1:a=0,"
+        factor = min(seg_dur / clip_dur, MAX_SLOWMO)
+        hold = max(0.0, seg_dur - clip_dur * factor)
+        if hold > 0.05:
+            print(f"  note: slow-mo {factor:.2f}x + {hold:.2f}s last-frame hold "
+                  f"to fill {seg_dur:.2f}s from a {clip_dur:.2f}s clip")
+        chain = (f"[0:v]{NORM},setpts={factor:.4f}*PTS,fps={FPS},"
+                 f"tpad=stop_mode=clone:stop_duration={hold + 0.5:.3f},"
                  f"trim=duration={seg_dur:.3f},setpts=PTS-STARTPTS")
     vf = f"{chain},format=yuv420p,settb=AVTB,{chyron}[v]"
     run(["ffmpeg", "-y", "-i", clip_path, "-filter_complex", vf,
