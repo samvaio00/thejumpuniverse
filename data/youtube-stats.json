@@ -1,20 +1,54 @@
 {
-  "generated_at": "2026-07-10T15:39:10+00:00",
+  "generated_at": "2026-07-10T20:40:54+00:00",
   "channel_id": "UCyPIYczypKJ6dIuoHhv_9ow",
   "channel_url": "https://www.youtube.com/channel/UCyPIYczypKJ6dIuoHhv_9ow",
   "totals": {
-    "videos": 6,
-    "views": 20,
+    "videos": 8,
+    "views": 23,
     "likes": 2
   },
   "videos": [
+    {
+      "id": "94GVSVvjs1g",
+      "title": "One Newspaper. 100 Universes. | Multiverse Gazette",
+      "url": "https://www.youtube.com/watch?v=94GVSVvjs1g",
+      "published": "2026-07-10T20:03:49+00:00",
+      "thumbnail": "https://i2.ytimg.com/vi/94GVSVvjs1g/hqdefault.jpg",
+      "views": 0,
+      "likes": 0,
+      "rating": 0.0,
+      "is_short": false,
+      "history": [
+        [
+          "2026-07-10T20:40:54+00:00",
+          0
+        ]
+      ]
+    },
+    {
+      "id": "T3lM6JIUEvc",
+      "title": "Multiverse News, July 10: Cargo Collapse: K't Fold Route Suffers More than Just a Sort… #shorts",
+      "url": "https://www.youtube.com/watch?v=T3lM6JIUEvc",
+      "published": "2026-07-10T19:14:59+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/T3lM6JIUEvc/hqdefault.jpg",
+      "views": 2,
+      "likes": 0,
+      "rating": 0.0,
+      "is_short": true,
+      "history": [
+        [
+          "2026-07-10T20:40:54+00:00",
+          2
+        ]
+      ]
+    },
     {
       "id": "D9kXdj8NYZE",
       "title": "Multiverse News, July 10: Cargo Collapse: K't Fold Route Suffers More than Just a Sort… #shorts",
       "url": "https://www.youtube.com/watch?v=D9kXdj8NYZE",
       "published": "2026-07-10T04:42:46+00:00",
       "thumbnail": "https://i1.ytimg.com/vi/D9kXdj8NYZE/hqdefault.jpg",
-      "views": 0,
+      "views": 1,
       "likes": 0,
       "rating": 0.0,
       "is_short": true,
@@ -22,6 +56,10 @@
         [
           "2026-07-10T10:29:04+00:00",
           0
+        ],
+        [
+          "2026-07-10T20:40:54+00:00",
+          1
         ]
       ]
     },
