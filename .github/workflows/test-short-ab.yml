@@ -44,13 +44,13 @@ jobs:
         continue-on-error: true
         env:
           SHORT_DATE: ${{ inputs.date }}
-          KIE_API_KEY: ${{ secrets.KIE_API_KEY }}
+          KIE_API_KEY: ${{ secrets.KIE_API_KEY != '' && secrets.KIE_API_KEY || secrets.KEI_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
           R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
         run: |
           if [ -z "$KIE_API_KEY" ]; then
-            echo "SKIPPED: KIE_API_KEY secret is not set — add it (from kie.ai) to build the Veo variant."
+            echo "SKIPPED: no kie.ai key found (set KIE_API_KEY or KEI_API_KEY secret)."
             exit 0
           fi
           python scripts/make_short_veo.py
