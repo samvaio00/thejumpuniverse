@@ -1,0 +1,77 @@
+name: Test Site Ad (Veo)
+
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'Edition date YYYY-MM-DD (default: today UTC)'
+        required: false
+
+concurrency:
+  group: test-site-ad
+  cancel-in-progress: false
+
+jobs:
+  site-ad:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y -q ffmpeg fonts-dejavu
+
+      - name: Install Python dependencies
+        run: pip install -q requests boto3 pillow openai
+
+      - name: Build the site ad
+        env:
+          PROMO_DATE: ${{ inputs.date }}
+          KIE_API_KEY: ${{ secrets.KIE_API_KEY != '' && secrets.KIE_API_KEY || secrets.KEI_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+        run: python scripts/make_promo_veo.py
+
+      - name: Build + upload review frame sheet
+        continue-on-error: true
+        env:
+          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+        run: |
+          set -e
+          MP4=$(ls promo_build/promo_veo/*-ad.mp4 | head -1)
+          DATE=$(basename "$MP4" -ad.mp4)
+          mkdir -p review
+          ffmpeg -y -i "$MP4" -vf "select='not(mod(n,132))',scale=480:270,tile=4x3" -frames:v 1 -q:v 3 "review/$DATE-ad-sheet.jpg"
+          python3 - "$DATE" <<'EOF'
+          import os, sys, boto3
+          date = sys.argv[1]
+          c = boto3.client("s3",
+              endpoint_url="https://0e5ed33a08d98c5105dfd8fe5c65d7be.r2.cloudflarestorage.com",
+              aws_access_key_id=os.environ["R2_ACCESS_KEY_ID"],
+              aws_secret_access_key=os.environ["R2_SECRET_ACCESS_KEY"],
+              region_name="auto")
+          f = f"{date}-ad-sheet.jpg"
+          c.upload_file(f"review/{f}", "gazette-images", f"promo/review/{f}",
+                        ExtraArgs={"ContentType": "image/jpeg",
+                                   "CacheControl": "no-store"})
+          print(f"https://images.thejumpuniverse.com/promo/review/{f}")
+          EOF
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-ad
+          path: |
+            promo_build/promo_veo/*-ad.mp4
+            promo_build/promo_veo/*-ad.json
+          retention-days: 7
