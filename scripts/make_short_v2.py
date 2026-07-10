@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-"""Multiverse Gazette Short v2 — designed motion graphics, no AI video.
+"""Multiverse Gazette Short v2.1 — designed motion graphics, no AI video.
 
-Replaces the uncanny image-to-video clips with a clean, deliberate look:
-  - blurred slow-zoom backdrop + sharp drifting "photo card" of the hero image
-  - kinetic typography: gold bar wipes in, kicker + headline lines slide in
-    exactly when the anchor starts reading that story
-  - segment cuts are synced to the narration via whisper word timestamps
-    (segment N starts when the anchor says "In <universe N>:")
-  - film grain + news-style slide transitions
+v2.1 fixes over v2:
+  - artwork card is bigger (1000px) with a continuous slow zoom (zoompan on
+    the card itself) plus stronger two-axis drift — something always moves
+  - headline block is anchored directly under the card (no dead blur band)
+  - whisper name-matching is fuzzy (any >=4-char word of the universe name,
+    prefix matches allowed) so narration-synced cuts actually engage
+  - leaner encode (crf 21, lighter grain): ~4x smaller files
 
 Reuses story selection, narration, fonts and helpers from make_short.py.
 
@@ -37,7 +37,8 @@ BUILD_ROOT = Path(os.environ.get("SHORT_BUILD_DIR",
                                  REPO_ROOT / "promo_build" / "shorts_v2"))
 FADE = 0.25                 # news-style slide transition
 MIN_SEG = 4.0               # sanity floor; below this fall back to equal thirds
-CARD_W = 940                # sharp foreground card width
+CARD_W = 1000               # sharp foreground card width
+CARD_Y = 250                # card top
 TEXT_X = 64
 GOLD_RGB = (232, 184, 75)
 CREAM_RGB = (216, 208, 192)
@@ -68,18 +69,33 @@ def _clean(w):
 
 def story_start_times(words, stories, ndur):
     """Narration-local start time for stories 2 and 3: the 'In'/'And in'
-    directly before the universe name. Falls back to equal thirds."""
+    directly before the universe name. Fuzzy: matches any >=4-char word of
+    the universe name, allowing prefix matches in either direction (whisper
+    sometimes splits or shortens words). Falls back to equal thirds."""
     fallback = [0.0, ndur / 3.0, 2.0 * ndur / 3.0]
     if not words:
         print("  whisper: no words returned; using equal thirds")
         return fallback
+    cleaned = [_clean(w["word"]) for w in words]
     starts = [0.0]
     idx = 0
     for s in stories[1:]:
-        target = _clean(max(s["universe_name"].split(), key=len))
+        targets = [_clean(t) for t in s["universe_name"].split()
+                   if len(_clean(t)) >= 4]
+        if not targets:
+            targets = [_clean(s["universe_name"].split()[-1])]
+
+        def hits(cw):
+            if not cw or len(cw) < 3:
+                return False
+            for t in targets:
+                if cw == t or cw.startswith(t) or (t.startswith(cw) and len(cw) >= 4):
+                    return True
+            return False
+
         found = None
-        for i in range(idx, len(words)):
-            if _clean(words[i]["word"]) == target:
+        for i in range(idx, len(cleaned)):
+            if hits(cleaned[i]):
                 found = i
                 break
         if found is None:
@@ -89,7 +105,7 @@ def story_start_times(words, stories, ndur):
         j = found
         for back in (1, 2, 3):
             k = found - back
-            if k >= 0 and _clean(words[k]["word"]) in ("in", "and"):
+            if k >= 0 and cleaned[k] in ("in", "and"):
                 j = k
             else:
                 break
@@ -125,15 +141,28 @@ def bar_sprite(path, w, h, rgb):
     return path
 
 
+def image_size(path):
+    Image, _, _ = _load_pil()
+    with Image.open(path) as im:
+        return im.size
+
+
 # ─── segment render ─────────────────────────────────────────────────────
 
 def build_segment(seg_idx, story, hero, seg_dur, work_dir, out_path,
                   hide_text_after=None):
-    """Backdrop (blurred slow zoom) + drifting sharp card + staggered
-    slide-in typography. All motion is deterministic ffmpeg math — smooth
-    by construction."""
+    """Backdrop (blurred slow zoom) + card with continuous zoom and drift +
+    staggered slide-in typography anchored right under the card. All motion
+    is deterministic ffmpeg math — smooth by construction."""
     bold = find_font(bold=True)
     frames = int(round(seg_dur * FPS))
+    steps = max(frames - 1, 1)
+
+    # card geometry from the hero's real aspect ratio ----------------------
+    iw, ih = image_size(hero)
+    card_h = int(round(CARD_W * ih / iw / 2) * 2)
+    card_h = min(card_h, 1100)  # very tall art gets cropped by zoompan sizing
+    text_top = CARD_Y + card_h + 36
 
     # text sprites --------------------------------------------------------
     kicker = f"{story['universe_name'].upper()}  ·  YEAR {story['universe_year']}"
@@ -150,7 +179,8 @@ def build_segment(seg_idx, story, hero, seg_dur, work_dir, out_path,
         line_sprites.append((p, lw, lh))
     line_h = line_sprites[0][2] + 10
     block_h = kh + 14 + len(line_sprites) * line_h
-    block_top = 1500 - block_h
+    # keep the block above the watermark zone
+    text_top = min(text_top, 1760 - block_h - 40)
     b_path = bar_sprite(work_dir / f"s{seg_idx}-bar.png", 14, block_h + 12,
                         GOLD_RGB)
 
@@ -176,27 +206,33 @@ def build_segment(seg_idx, story, hero, seg_dur, work_dir, out_path,
         inputs += ["-loop", "1", "-t", f"{seg_dur:.3f}", "-i", str(p)]
 
     f = []
+    # blurred backdrop with a firmer zoom
     f.append(
         f"[0:v]scale={WIDTH * 2}:{HEIGHT * 2}:force_original_aspect_ratio=increase,"
         f"crop={WIDTH * 2}:{HEIGHT * 2},"
-        f"zoompan=z='1.02+0.12*(on/{max(frames - 1, 1)})'"
+        f"zoompan=z='1.02+0.16*(on/{steps})'"
         f":x='(iw-iw/zoom)/2':y='(ih-ih/zoom)/2'"
         f":d={frames}:s={WIDTH}x{HEIGHT}:fps={FPS},"
         f"boxblur=22:2,eq=brightness=-0.16:saturation=0.8[bg]")
-    # sharp card: white hairline border, gentle two-axis drift
+    # sharp card: continuous slow push-in via zoompan on the card itself,
+    # subtle brightness breathing, white hairline border
     f.append(
-        f"[1:v]scale={CARD_W}:-2,"
-        f"drawbox=x=0:y=0:w=iw:h=ih:color=white@0.92:t=5,fps={FPS}[card]")
-    card_x = f"(W-w)/2+9*sin(2*PI*t/8.3)"
-    card_y = f"236+7*sin(2*PI*t/5.9)"
+        f"[1:v]scale={CARD_W * 2}:-2,"
+        f"zoompan=z='1.0+0.09*(on/{steps})'"
+        f":x='(iw-iw/zoom)/2':y='(ih-ih/zoom)/2'"
+        f":d={frames}:s={CARD_W}x{card_h}:fps={FPS},"
+        f"hue=b='0.05*sin(2*PI*t/{max(seg_dur, 1.0):.2f})',"
+        f"drawbox=x=0:y=0:w=iw:h=ih:color=white@0.92:t=5[card]")
+    card_x = f"(W-w)/2+14*sin(2*PI*t/7.1)"
+    card_y = f"{CARD_Y}+10*sin(2*PI*t/5.3)"
     f.append(f"[bg][card]overlay=x='{card_x}':y='{card_y}':shortest=1[v0]")
     f.append(f"[v0][2:v]overlay=x='{slide_x(TEXT_X - 22, reveals[0])}'"
-             f":y={block_top - 6}:shortest=1{en}[v1]")
+             f":y={text_top - 6}:shortest=1{en}[v1]")
     f.append(f"[v1][3:v]overlay=x='{slide_x(TEXT_X, reveals[1])}'"
-             f":y={block_top}:shortest=1{en}[v2]")
+             f":y={text_top}:shortest=1{en}[v2]")
     prev = "v2"
     for li in range(len(line_sprites)):
-        y = block_top + kh + 14 + li * line_h
+        y = text_top + kh + 14 + li * line_h
         f.append(f"[{prev}][{4 + li}:v]overlay="
                  f"x='{slide_x(TEXT_X, reveals[2 + li])}':y={y}"
                  f":shortest=1{en}[v{3 + li}]")
@@ -204,7 +240,7 @@ def build_segment(seg_idx, story, hero, seg_dur, work_dir, out_path,
     f.append(f"[{prev}]format=yuv420p,settb=AVTB[v]")
 
     run(["ffmpeg", "-y", *inputs, "-filter_complex", ";".join(f),
-         "-map", "[v]", "-c:v", "libx264", "-preset", "medium", "-crf", "18",
+         "-map", "[v]", "-c:v", "libx264", "-preset", "medium", "-crf", "21",
          "-r", FPS, "-t", f"{seg_dur:.3f}", "-pix_fmt", "yuv420p", out_path])
 
 
@@ -236,7 +272,7 @@ def assemble(work_dir, date, segments, durs, total, narration, out_path):
     outro_st = total - OUTRO_SECONDS
     fade_expr = f"'if(lt(t,{outro_st:.3f}),0,min(1,(t-{outro_st:.3f})/0.6))'"
     f.append(
-        f"[bd]noise=alls=5:allf=t,"
+        f"[bd]noise=alls=4:allf=t,"
         f"drawbox=x=0:y=96:w={WIDTH}:h=118:color=black@0.55:t=fill,"
         f"drawtext=fontfile={bold}:textfile={banner}:fontsize=38:"
         f"fontcolor=white:x=(w-text_w)/2:y=118:expansion=none,"
@@ -260,7 +296,7 @@ def assemble(work_dir, date, segments, durs, total, narration, out_path):
 
     run(["ffmpeg", "-y", *inputs, "-filter_complex", ";".join(f),
          "-map", "[vout]", "-map", "[aout]",
-         "-c:v", "libx264", "-preset", "medium", "-crf", "18",
+         "-c:v", "libx264", "-preset", "medium", "-crf", "21",
          "-profile:v", "high", "-r", FPS, "-pix_fmt", "yuv420p",
          "-c:a", "aac", "-b:a", "160k",
          "-movflags", "+faststart", "-t", f"{total:.3f}", out_path])
@@ -283,7 +319,7 @@ def main():
     if not editions:
         die(f"No editions for {slug}")
     stories = select_stories(date, editions)
-    print(f"Short v2 (motion graphics) for {slug}:")
+    print(f"Short v2.1 (motion graphics) for {slug}:")
     for i, s in enumerate(stories, 1):
         print(f"  {i}. [{s['timeline_id']}] {s['universe_name']}: {s['headline']}")
 
@@ -317,7 +353,7 @@ def main():
 
     segs = []
     for i, (story, hero, d) in enumerate(zip(stories, heroes, durs)):
-        out = work_dir / f"v2seg{i + 1}-{story['timeline_id']}-{int(d * 1000)}.mp4"
+        out = work_dir / f"v21seg{i + 1}-{story['timeline_id']}-{int(d * 1000)}.mp4"
         segs.append(out)
         if out.exists():
             print(f"segment {i + 1} cached")
@@ -326,7 +362,7 @@ def main():
         hide = (d - OUTRO_SECONDS) if i == 2 else None
         build_segment(i + 1, story, hero, d, work_dir, out, hide_text_after=hide)
 
-    final = work_dir / "short-v2.mp4"
+    final = work_dir / "short-v21.mp4"
     assemble(work_dir, date, segs, durs, total, narration, final)
     import shutil
     shutil.copyfile(final, out_mp4)
@@ -339,7 +375,7 @@ def main():
 
     url = stage_upload(out_mp4, r2_key)
     meta = build_metadata(date, stories, r2_key, out_mp4)
-    meta["variant"] = "v2-motion-graphics"
+    meta["variant"] = "v2.1-motion-graphics"
     out_meta.write_text(json.dumps(meta, indent=2, ensure_ascii=False) + "\n",
                         encoding="utf-8")
     print("\nDone.")
