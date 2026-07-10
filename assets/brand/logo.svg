@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  
+      <defs>
+        <radialGradient id="g" cx="50%" cy="42%" r="75%">
+          <stop offset="0%" stop-color="#1c1f2b"/>
+          <stop offset="100%" stop-color="#12141c"/>
+        </radialGradient>
+      </defs>
+      <rect width="1024" height="1024" fill="url(#g)"/>
+  <!-- parallel-universe echo rings -->
+  <circle cx="568" cy="456" r="332" fill="none" stroke="#E8B84B" stroke-opacity="0.16" stroke-width="14"/>
+  <circle cx="540" cy="484" r="332" fill="none" stroke="#E8B84B" stroke-opacity="0.38" stroke-width="16"/>
+  <circle cx="512" cy="512" r="332" fill="none" stroke="#E8B84B" stroke-width="20"/>
+  <!-- universe sparks -->
+  <circle cx="512" cy="180" r="14" fill="#E8B84B"/>
+  <circle cx="806" cy="620" r="11" fill="#E8B84B" fill-opacity="0.8"/>
+  <circle cx="238" cy="700" r="9" fill="#E8B84B" fill-opacity="0.6"/>
+  <!-- folded newspaper, slightly tilted -->
+  <g transform="rotate(-7 512 512)">
+    <!-- back page (echo) -->
+    <rect x="392" y="330" width="290" height="368" rx="14" fill="#F2EDE3" fill-opacity="0.25" transform="translate(22 18)"/>
+    <!-- front page -->
+    <rect x="372" y="322" width="290" height="368" rx="14" fill="#F2EDE3"/>
+    <!-- masthead -->
+    <rect x="404" y="356" width="226" height="44" rx="6" fill="#12141c"/>
+    <!-- headline in gold -->
+    <rect x="404" y="424" width="226" height="26" rx="6" fill="#E8B84B"/>
+    <rect x="404" y="458" width="152" height="26" rx="6" fill="#E8B84B" fill-opacity="0.75"/>
+    <!-- hero image block -->
+    <rect x="404" y="508" width="104" height="84" rx="6" fill="#12141c" fill-opacity="0.82"/>
+    <!-- body text lines -->
+    <rect x="522" y="508" width="108" height="12" rx="5" fill="#9b968a"/>
+    <rect x="522" y="530" width="108" height="12" rx="5" fill="#9b968a"/>
+    <rect x="522" y="552" width="108" height="12" rx="5" fill="#9b968a"/>
+    <rect x="522" y="574" width="76" height="12" rx="5" fill="#9b968a"/>
+    <rect x="404" y="612" width="226" height="12" rx="5" fill="#9b968a"/>
+    <rect x="404" y="634" width="226" height="12" rx="5" fill="#9b968a"/>
+    <rect x="404" y="656" width="156" height="12" rx="5" fill="#9b968a"/>
+  </g>
+</svg>
