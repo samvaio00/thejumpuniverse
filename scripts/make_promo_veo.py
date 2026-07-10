@@ -7,8 +7,8 @@ stories already published on the site:
     using the story-driven strong-motion prompt system from make_short.py
   - cinematic trailer narration (OpenAI TTS) that name-drops 3 real
     headlines and lands on the URL
-  - lower-third chyrons (universe · year + headline), persistent watermark,
-    end card
+  - lower-third chyrons (universe · year + headline), brand logo badge +
+    watermark, end card
 
 Segment fitting: plain trim, or slow-mo capped at 1.6x plus a last-frame
 hold — time never runs backwards (the old ping-pong read as a yin-yang loop).
@@ -35,11 +35,11 @@ import requests
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from make_short import (  # noqa: E402
-    BASE_TAGS, CREAM, GOLD, KIE_BASE, REPO_ROOT, VEO_MODEL, VeoError, die,
-    download_file, ffprobe_json, find_font, kie_headers, lead_timeline_for,
-    load_editions, media_duration, month_day, narration_headline, openai_tts,
-    require_env, run, runway_prompt_for, stage_upload, veo_wait_for_task,
-    wrap_to_pixels, write_textfile,
+    BASE_TAGS, CREAM, GOLD, KIE_BASE, LOGO_BADGE, REPO_ROOT, VEO_MODEL,
+    VeoError, die, download_file, ffprobe_json, find_font, kie_headers,
+    lead_timeline_for, load_editions, media_duration, month_day,
+    narration_headline, openai_tts, require_env, run, runway_prompt_for,
+    stage_upload, veo_wait_for_task, wrap_to_pixels, write_textfile,
 )
 
 BUILD_ROOT = Path(os.environ.get("PROMO_BUILD_DIR",
@@ -300,6 +300,12 @@ def assemble(work_dir, date, segments, seg_dur, total, narration, out_path):
         inputs += ["-i", p]
     inputs += ["-i", narration]
     nar_idx = len(segments)
+    logo_idx = None
+    brand_x = 64
+    if LOGO_BADGE.exists():
+        inputs += ["-i", LOGO_BADGE]
+        logo_idx = nar_idx + 1
+        brand_x = 192
 
     f = []
     prev = "0:v"
@@ -311,10 +317,9 @@ def assemble(work_dir, date, segments, seg_dur, total, narration, out_path):
         prev = lbl
     outro_st = total - OUTRO
     fade_expr = f"'if(lt(t,{outro_st:.3f}),0,min(1,(t-{outro_st:.3f})/0.7))'"
-    f.append(
-        f"[{prev}]"
+    overlays = (
         f"drawtext=fontfile={bold}:textfile={brand}:fontsize=34:"
-        f"fontcolor=white@0.85:x=64:y=52:expansion=none,"
+        f"fontcolor=white@0.85:x={brand_x}:y=52:expansion=none,"
         f"drawtext=fontfile={reg}:textfile={wm}:fontsize=28:"
         f"fontcolor=white@0.7:x=w-text_w-64:y=52:expansion=none,"
         f"drawbox=x=0:y=0:w={W}:h={H}:color=black@0.55:t=fill:"
@@ -325,7 +330,13 @@ def assemble(work_dir, date, segments, seg_dur, total, narration, out_path):
         f"fontcolor=white:x=(w-text_w)/2:y=500:alpha={fade_expr}:expansion=none,"
         f"drawtext=fontfile={reg}:textfile={o3}:fontsize=32:"
         f"fontcolor={CREAM}:x=(w-text_w)/2:y=640:alpha={fade_expr}:expansion=none"
-        f"[vout]")
+    )
+    if logo_idx is not None:
+        f.append(f"[{prev}]{overlays}[vpre]")
+        f.append(f"[{logo_idx}:v]scale=112:112[lg]")
+        f.append(f"[vpre][lg]overlay=56:24[vout]")
+    else:
+        f.append(f"[{prev}]{overlays}[vout]")
     delay_ms = int(NARR_START * 1000)
     f.append(
         f"[{nar_idx}:a]adelay={delay_ms}:all=1,apad,atrim=0:{total:.3f},"
