@@ -1,27 +1,99 @@
 {
-  "generated_at": "2026-07-09T20:24:12+00:00",
+  "generated_at": "2026-07-10T10:29:04+00:00",
   "channel_id": "UCyPIYczypKJ6dIuoHhv_9ow",
   "channel_url": "https://www.youtube.com/channel/UCyPIYczypKJ6dIuoHhv_9ow",
   "totals": {
-    "videos": 2,
-    "views": 1,
-    "likes": 0
+    "videos": 6,
+    "views": 19,
+    "likes": 2
   },
   "videos": [
     {
-      "id": "5C4C5mpgN1k",
-      "title": "Multiverse News, July 9: Auditors Raid the Dreamscape #shorts",
-      "url": "https://www.youtube.com/watch?v=5C4C5mpgN1k",
-      "published": "2026-07-09T17:55:52+00:00",
-      "thumbnail": "https://i2.ytimg.com/vi/5C4C5mpgN1k/hqdefault.jpg",
+      "id": "D9kXdj8NYZE",
+      "title": "Multiverse News, July 10: Cargo Collapse: K't Fold Route Suffers More than Just a Sort… #shorts",
+      "url": "https://www.youtube.com/watch?v=D9kXdj8NYZE",
+      "published": "2026-07-10T04:42:46+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/D9kXdj8NYZE/hqdefault.jpg",
       "views": 0,
       "likes": 0,
       "rating": 0.0,
       "is_short": true,
       "history": [
         [
+          "2026-07-10T10:29:04+00:00",
+          0
+        ]
+      ]
+    },
+    {
+      "id": "ehG_y72HTRU",
+      "title": "Multiverse News, July 9: Nocturnal Levy Proclaimed a Triumph as Auditors Raid the Drea… #shorts",
+      "url": "https://www.youtube.com/watch?v=ehG_y72HTRU",
+      "published": "2026-07-09T21:38:06+00:00",
+      "thumbnail": "https://i2.ytimg.com/vi/ehG_y72HTRU/hqdefault.jpg",
+      "views": 2,
+      "likes": 0,
+      "rating": 0.0,
+      "is_short": true,
+      "history": [
+        [
+          "2026-07-10T10:29:04+00:00",
+          2
+        ]
+      ]
+    },
+    {
+      "id": "d-7koBsuvy4",
+      "title": "Multiverse News, July 9: Nocturnal Levy Proclaimed a Triumph as Auditors Raid the Drea… #shorts",
+      "url": "https://www.youtube.com/watch?v=d-7koBsuvy4",
+      "published": "2026-07-09T20:57:18+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/d-7koBsuvy4/hqdefault.jpg",
+      "views": 3,
+      "likes": 0,
+      "rating": 0.0,
+      "is_short": true,
+      "history": [
+        [
+          "2026-07-10T10:29:04+00:00",
+          3
+        ]
+      ]
+    },
+    {
+      "id": "uaArUcYJrXs",
+      "title": "Multiverse News, July 9: Nocturnal Levy Proclaimed a Triumph as Auditors Raid the Drea… #shorts",
+      "url": "https://www.youtube.com/watch?v=uaArUcYJrXs",
+      "published": "2026-07-09T20:35:12+00:00",
+      "thumbnail": "https://i2.ytimg.com/vi/uaArUcYJrXs/hqdefault.jpg",
+      "views": 3,
+      "likes": 0,
+      "rating": 0.0,
+      "is_short": true,
+      "history": [
+        [
+          "2026-07-10T10:29:04+00:00",
+          3
+        ]
+      ]
+    },
+    {
+      "id": "5C4C5mpgN1k",
+      "title": "Multiverse News, July 9: Auditors Raid the Dreamscape #shorts",
+      "url": "https://www.youtube.com/watch?v=5C4C5mpgN1k",
+      "published": "2026-07-09T17:55:52+00:00",
+      "thumbnail": "https://i2.ytimg.com/vi/5C4C5mpgN1k/hqdefault.jpg",
+      "views": 8,
+      "likes": 1,
+      "rating": 5.0,
+      "is_short": true,
+      "history": [
+        [
           "2026-07-09T20:24:12+00:00",
           0
+        ],
+        [
+          "2026-07-10T10:29:04+00:00",
+          8
         ]
       ]
     },
@@ -31,14 +103,18 @@
       "url": "https://www.youtube.com/watch?v=z1KjJripZNg",
       "published": "2026-07-09T16:51:33+00:00",
       "thumbnail": "https://i3.ytimg.com/vi/z1KjJripZNg/hqdefault.jpg",
-      "views": 1,
-      "likes": 0,
-      "rating": 0.0,
+      "views": 3,
+      "likes": 1,
+      "rating": 5.0,
       "is_short": false,
       "history": [
         [
           "2026-07-09T20:24:12+00:00",
           1
+        ],
+        [
+          "2026-07-10T10:29:04+00:00",
+          3
         ]
       ]
     }
