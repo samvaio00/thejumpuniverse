@@ -1,13 +1,30 @@
 {
-  "generated_at": "2026-07-10T20:40:54+00:00",
+  "generated_at": "2026-07-11T04:25:17+00:00",
   "channel_id": "UCyPIYczypKJ6dIuoHhv_9ow",
   "channel_url": "https://www.youtube.com/channel/UCyPIYczypKJ6dIuoHhv_9ow",
   "totals": {
-    "videos": 8,
+    "videos": 9,
     "views": 23,
     "likes": 2
   },
   "videos": [
+    {
+      "id": "OMdtdwYLqn0",
+      "title": "Multiverse News, July 11: Oueiaaia Voting Trust Ponders Its Own Existential Dilemma #shorts",
+      "url": "https://www.youtube.com/watch?v=OMdtdwYLqn0",
+      "published": "2026-07-11T04:01:08+00:00",
+      "thumbnail": "https://i4.ytimg.com/vi/OMdtdwYLqn0/hqdefault.jpg",
+      "views": 0,
+      "likes": 0,
+      "rating": 0.0,
+      "is_short": true,
+      "history": [
+        [
+          "2026-07-11T04:25:17+00:00",
+          0
+        ]
+      ]
+    },
     {
       "id": "94GVSVvjs1g",
       "title": "One Newspaper. 100 Universes. | Multiverse Gazette",
