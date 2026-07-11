@@ -1,0 +1,121 @@
+{
+  "timeline_id": 97,
+  "theme": "victorian",
+  "date": "2026-07-11",
+  "date_display": "Saturday, July 11, 2026",
+  "year": 1824,
+  "universe_name": "Saltcrown",
+  "universe_year": 1824,
+  "universe_date_display": "July 11, Year 1824",
+  "galaxy": "Opaline Pinwheel",
+  "planet": "Rhyoon",
+  "divergence": "Alchemy worked exactly once, and the committee is still deciding what to do about it",
+  "story_angle": "human-interest profile of the one person unaffected by the great event and deeply annoyed about it",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: Grok",
+    "Editor: Grok"
+  ],
+  "headline": "Eternal Committee Mulls Lone Transmutation's Wake Five Years On",
+  "deck": "Kly-4-Tharn's 47,000-Hertz Laments Force 17-Volume Ledger into Extended Recess.",
+  "article": "<p>Five years after the one verified conversion of base metal to ingot, the Eternal Committee still sits on its overdue ruling. Kly-4-Tharn, the remaining hexapod, continues to press for recognition while the body demands three fresh resonance testimonials before any hearing can be scheduled for 1829.</p><p>Inside the fog-shrouded chambers of sculpted sand, the hexapod's daily ultrasound petitions at 47,000 hertz have produced only visible winces among the members. Each petition is logged in the 17-volume Equitable Distribution ledger; each reply requires another layer of chitin-plate carving at 3.2 dunes per cycle.</p><p>Gyl-3-Qar, Most Illustrious Chair, issued a decree requiring Kly-4-Tharn to halt further petitions during deliberations. The committee instead devotes its sessions to cataloguing minor procedural points. Citizens of Rhyoon watch the dunes advance while the single success remains an unrepeated anomaly.</p>",
+  "author": "Ess-9-Vayl, Senior Correspondent of Temporal Equity",
+  "city": "Etherford",
+  "weather": {
+    "city": "Etherford",
+    "condition": "Dunes advancing under extended committee recess",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "One Triumph Is Quite Enough: In Defense of Eternal Pondering",
+    "author": "Sir Reginald Ponderous, Perpetual Vice-Chairman of the Anti-Alchemical League and Purveyor of Fine Beaver Hats",
+    "body": "The committee's measured pace after the 1824 conversion protects the hat-making trade from reckless replication. Kly-4-Tharn's ultrasound complaints are best met with the required ledger silence. Future experiments should include mandatory inspections of unsold beaver felts to discourage further anomalies. One success is an outlier best left unexamined; repetition would only cheapen existing stock."
+  },
+  "classifieds": [
+    {
+      "cat": "For Sale",
+      "text": "Gentleman of reduced circumstances offers scarcely used athanor and retorts after five years of committee silence on the single conversion; guaranteed inert unless new grievances are logged."
+    },
+    {
+      "cat": "Help Wanted",
+      "text": "Kly-4-Tharn household seeks clerk to prepare ultrasound petitions; pay discussed only after the 1829 review window opens."
+    },
+    {
+      "cat": "Public Notices",
+      "text": "Witnesses to the 1824 transmutation are asked to keep details out of the 17-volume ledger until the committee concludes its current recess."
+    },
+    {
+      "cat": "Legal",
+      "text": "Solicitor accepts clients wishing to challenge the committee's handling of the lone success; fees due only after any second verified outcome."
+    }
+  ],
+  "comic_strip": {
+    "title": "The Last Transmutation",
+    "panels": [
+      {
+        "caption": "Chairman: 'One vial succeeded in 1824. What dictate does fortune demand?'"
+      },
+      {
+        "caption": "Kly-4-Tharn: 'My ultrasound torments demand oaths. Speak and the procedure silences you.'"
+      },
+      {
+        "caption": "Chairman: 'Motion carried. We adjourn to permanent silence on the matter.'"
+      }
+    ],
+    "image": "https://images.thejumpuniverse.com/2026-07-11-97-strip.webp",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "The Committee, after verifying the single instance in which lead became gold,",
+    "punchline": "ruled that any repetition would constitute an improper alteration of the natural order and must be referred to the next Parliament.",
+    "text": "The Committee, after verifying the single instance in which lead became gold, ruled that any repetition would constitute an improper alteration of the natural order and must be referred to the next Parliament."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "The Residuum Ledger: Record Your Share of the Lone Triumph",
+      "body": "Calf-bound volumes for noting the precise moment alchemy succeeded exactly once. Pre-ruled pages for tracking the committee's ongoing recess.",
+      "tagline": "Not valid after any second success."
+    },
+    {
+      "headline": "Cautionary Tonic: For Those Who Would Attempt Replication",
+      "body": "Distilled from five years of indecision; produces refined finality and nothing more. Limited to the single extant formula.",
+      "tagline": "Purchasers assume all philosophical liability."
+    },
+    {
+      "headline": "Dictate Insurance: Protection Against Further Alchemical Certainty",
+      "body": "Coverage for households dreading reliable transmutation; claims paid only after the committee publishes findings.",
+      "tagline": "Void if fortune proves consistent."
+    },
+    {
+      "headline": "Public Notice: Volunteers Sought for Eternal Pondering",
+      "body": "Citizens invited to join deliberations on the single outcome; board provided until conclusion or cosmic end, whichever arrives first.",
+      "tagline": "No conclusions furnished to participants."
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Science",
+      "headline": "Resonance Labs Ordered to Log Every Frequency After Lone Success",
+      "deck": "Directorate Requires Triplicate Sand Records for All Hexapod Ultrasound Work",
+      "byline": "Vess-2-Lorn, Resonance Analyst",
+      "article": "<p>Following the unrepeated transmutation, every laboratory must now install lightning-carved baffles and submit pre-experiment spectra. Noncompliance sends researchers to the outer dunes for seven cycles of observation only.</p><p>The rule applies to any heating of base metals, ensuring the 47,000-hertz signature never reappears without prior ledger entry.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-11-97-story2.webp",
+      "image_provider": "grok"
+    },
+    {
+      "desk": "Religion",
+      "headline": "Opaline Pinwheel Synod Adopts Committee Silence as Liturgical Standard",
+      "deck": "Choirs Must Insert Measured Ultrasound Pauses Before Ingot Inquiries",
+      "byline": "Rhy-8-Morn, Ecclesiastical Correspondent",
+      "article": "<p>Temple choirs have been told to insert intervals of deliberate silence modeled on the committee's response to the single conversion. Acolytes may not discuss the quartz ingot until the proper forms reach the lightning-sculpted archives.</p><p>Any deviation waits for review at the next three-moon alignment.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-11-97-story3.webp",
+      "image_provider": "grok"
+    }
+  ],
+  "real_world_echo": "US wants Iran to pledge to stop shooting at ships in Strait of Hormuz, mirrored as the committee demanding Kly-4-Tharn pledge to cease petitions before any retroactive alchemy consideration",
+  "generated_at": "2026-07-11T03:36:06.641913+00:00",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-11-97-hero.webp",
+  "hero_image_provider": "grok"
+}

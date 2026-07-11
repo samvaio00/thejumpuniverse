@@ -1,0 +1,112 @@
+{
+  "timeline_id": 13,
+  "theme": "medieval",
+  "date": "2026-07-11",
+  "date_display": "Saturday, July 11, 2026",
+  "year": 217,
+  "universe_name": "Sable Reach",
+  "universe_year": 217,
+  "universe_date_display": "July 11, Year 217",
+  "galaxy": "Whispering Wheel",
+  "planet": "Goraxis",
+  "divergence": "The atomic bomb was never used in war, only in advertising",
+  "story_angle": "breathless coverage of a trivial event treated as the hinge of history",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: Grok",
+    "Editor: Grok"
+  ],
+  "headline": "Lord Semperance Demands Guilds Cease Flash-Detonations or Face Permit Doom",
+  "deck": "Ancient grudge rekindled as timber markets rest on the whims of glowing scrolls.",
+  "article": "<p>In a momentous proclamation issued by His Illustrious Lord Semperance, guild leaders across the Whispering Wheel galaxy are summoned to relinquish their flash-detonations in the pursuit of roof-permit procurement. The divine writ, dictated during a sanguine eclipse, outlined that any display of explosive advertising shall henceforth be deemed a sacrilegious affront to the delicate equilibrium of the timber district's burgeoning fiscal tapestry.</p><p>As the ink dried under the watchful gaze of Semperance's second translucent eyelid, which darkened to an ominous obsidian hue, the proclamation gained a sense of gravitas seldom witnessed since the Great Beehive Quake of '96. Notably, the scroll mandates countersigning by no less than three curved-roof inspectors before any detonation can be sanctioned—an arduous process seemingly designed to deter the ambitious from dabbling in potentially lucrative yet perilous ad flashes.</p><p>Lord Semperance declared, \"In these times of economic tribulation, every reckless flash endangers our annual quota of 17,000 permits. We cannot tempt fate with 'unfavorable curvature' in a district already besieged by perilous shingle shortages!\" Citizens, their skin oscillating from olive to dark green with nerves, gathered to witness the unfolding chaos, some even whispering that the guild's latest explosion was merely starkly unfortunate taste in artistic expression.</p><p>With the timber market at stake, many now ponder: will guilds choose their decorative detonations over the divine mandate? Rival factions prepare to negotiate between divine retribution and the allure of unlicensed advertising glory, for the fate of the Whispering Wheel is now forever entwined with the behavior of its guilds.</p>",
+  "author": "Seraphim Quill, Chronicler of the Whispering Wheel",
+  "city": "Detonationville",
+  "weather": {
+    "city": "Detonationville",
+    "condition": "Flashy weather, permits required",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "Lord Semperance Is Right: Guilds Must Ditch Those Flammable Hats or Glow With the Ads",
+    "author": "Baronet Quibbleforth Ashenwick, Certified Timber-Scent Critic and Scroll Illuminator Laureate",
+    "body": "Lord Semperance speaks plain truth when he threatens permit doom over these so-called flash-detonations. The guilds whine about market disruption, yet their ridiculous floppy hats—clearly designed to block the radiant glow of atomic advertisements—are the true culprits igniting every timber dispute. In year 217, where bombs exist solely to hawk glowing scrolls and premium oak, one must embrace the spectacle. My own modest scroll-inking shop has thrived precisely because detonations highlight quality grain so dramatically. If guilds refuse sensible headwear adjustments, perhaps we should authorize larger blasts to ensure no hat escapes the persuasive light. Ancient grudges be damned; my ledgers demand uninterrupted advertising radiance, not petty complaints from milliners masquerading as merchants."
+  },
+  "classifieds": [
+    {
+      "cat": "For Sale",
+      "text": "Parchment merchant of the Timber Ward sells entire stock of flash-illumined scrolls at half price, Lord Semperance having sworn to seize all permits by fortnight's end."
+    },
+    {
+      "cat": "Help Wanted",
+      "text": "Scrivener's Guild seeks discreet night-scribe skilled in silent inks; must swear never to utter the words 'atomic' or 'detonation' within earshot of any timber reeve."
+    },
+    {
+      "cat": "Lost & Found",
+      "text": "Lost: one glowing warrant of advertisement, last seen drifting above the market square after an unsanctioned flash; finder may keep the radiance but return the seal or face doom."
+    },
+    {
+      "cat": "Public Notices",
+      "text": "The Brotherhood of Flashwrights hereby confesses to three unlicensed detonations last moon and offers humble apologies to Lord Semperance, along with two cartloads of unburnt timber as penance."
+    }
+  ],
+  "comic_strip": {
+    "title": "Permit to Boom",
+    "panels": [
+      {
+        "caption": "Lord Semperance scowls at the glowing scroll: \"Guilds! Cease all flash-detonations or your timber permits expire.\""
+      },
+      {
+        "caption": "Guild envoy smirks: \"M'lord, those atomic billboards move thrice the oak—glowing is good business.\""
+      },
+      {
+        "caption": "Lord Semperance: \"Then your new permit reads 'Licensed to Vaporize.'\""
+      }
+    ],
+    "image": "https://images.thejumpuniverse.com/2026-07-11-13-strip.webp",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "Lord Semperance hath warned the guilds that one more flash-detonation will cost them their charters.",
+    "punchline": "The butchers simply replied that a man who buys meat from a crater has no need of a permit.",
+    "text": "Lord Semperance hath warned the guilds that one more flash-detonation will cost them their charters. The butchers simply replied that a man who buys meat from a crater has no need of a permit."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "Permitted Flash-Detonation Scribes",
+      "body": "Our clerks etch Lord Semperance’s seals upon parchment before thy guild ignites the sky, sparing thee the doom that awaits unlicensed bursts.",
+      "tagline": "One league blast radius maximum; souls not included."
+    },
+    {
+      "headline": "Guild Doom Insurance Against Permit Wrath",
+      "body": "Purchase coverage ere the Lord’s men shutter thy shop for unsanctioned atomic glow; payouts delivered in lead-lined coin.",
+      "tagline": "Void where detonations exceed thy neighbor’s tolerance."
+    },
+    {
+      "headline": "Silent Atomic Powder: No Flash, No Doom",
+      "body": "Sprinkle this alchemical dust upon thy wares for a glow that advertiseth without drawing Lord Semperance’s ire or guild fines.",
+      "tagline": "Tested to one-half the yield of yesterday’s market blast."
+    },
+    {
+      "headline": "Royal Flash-Wardens: Report Illicit Detonations",
+      "body": "Summon our hooded agents to witness thy rival’s unlicensed atomic display; reward paid in seized permits and quiet satisfaction.",
+      "tagline": "Anonymous tips only; traitors hanged separately."
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Business",
+      "headline": "Timber Cartels Count Losses as Semperance Threatens Permit Revocation",
+      "deck": "Glowing scroll merchants record first daily decline since Temperance detonation cleared prior stock",
+      "byline": "Justice Quill, Trade Recorder",
+      "article": "<p>Guild ledgers from the eastern timber yards show permit applications fell by forty-three curved roofs yesterday after Lord Semperance issued formal revocation notices tied to continued flash-detonation use. Scribes noted that merchants accustomed to instant clearances now file petitions citing ancient clause thirty-seven, which bars celestial advertising within three leagues of active saw pits.</p><p>Bureaucratic clerks at the curved-roof registry tallied an additional twelve scrolls returned unopened, each bearing the rotated seal of the Virtue Council. Market prices for untreated cedar beams dropped two silver fragments per length as buyers awaited resolution of the grudge between the two lords.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-11-13-story2.webp",
+      "image_provider": "grok"
+    }
+  ],
+  "real_world_echo": "mirrors US demand that Iran pledge to stop shooting at ships, recast as feudal lords insisting rivals cease 'aggressive' ad flashes to protect permit trade",
+  "generated_at": "2026-07-11T03:38:22.528000+00:00",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-11-13-hero.webp",
+  "hero_image_provider": "grok"
+}

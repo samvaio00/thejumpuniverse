@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-10T04:13:35.243894+00:00",
+ "generated_at": "2026-07-11T03:39:23.457960+00:00",
  "dates": {
   "2026-06-28": [
    {
@@ -655,6 +655,88 @@
     "deck": "Local CEO Vrasimir H. Brineitcu Credits Humans' Double Eyelids for Enhanced Paperwork Efficiency",
     "divergence": "Earth was acquired by an intergalactic holding company as a tax write-off",
     "hero_image": "https://images.thejumpuniverse.com/2026-07-10-100-hero.webp"
+   }
+  ],
+  "2026-07-11": [
+   {
+    "timeline_id": 13,
+    "theme": "medieval",
+    "year": 217,
+    "universe_name": "Sable Reach",
+    "headline": "Lord Semperance Demands Guilds Cease Flash-Detonations or Face Permit Doom",
+    "deck": "Ancient grudge rekindled as timber markets rest on the whims of glowing scrolls.",
+    "divergence": "The atomic bomb was never used in war, only in advertising",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-11-13-hero.webp"
+   },
+   {
+    "timeline_id": 26,
+    "theme": "artdeco",
+    "year": 1931,
+    "universe_name": "Emberline",
+    "headline": "Oueiaaia Voting Trust Ponders Its Own Existential Dilemma",
+    "deck": "What is the meaning of a committee that voted 47,000 to 3 to adjourn until the next millennium?",
+    "divergence": "Alchemy worked exactly once, and the committee is still deciding what to do about it",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-11-26-hero.webp"
+   },
+   {
+    "timeline_id": 42,
+    "theme": "artdeco",
+    "year": 1944,
+    "universe_name": "The Hollow Calendar",
+    "headline": "Vem Postal Authority Unveils Lacquer Renewal Pledge: A Glistening Solution for K't Fold's Hauler Hiccups",
+    "deck": "Officials tout a lacquered fix for the K't Fold route after its 92 percent hauler loss.",
+    "divergence": "The internet was invented by postal workers in 1923",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-11-42-hero.webp"
+   },
+   {
+    "timeline_id": 55,
+    "theme": "vaporwave",
+    "year": 2002,
+    "universe_name": "Cinderwake",
+    "headline": "Napoleon’s Crooked-Plate Bistros Unveils ‘Hormuz Specials’ Amidst Relentless Supply Violations",
+    "deck": "Location managers assure customers they will never, ever stop launching culinary chaos through the mall's non-Euclidean corridors.",
+    "divergence": "Napoleon won at Waterloo and immediately opened a chain of themed restaurants",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-11-55-hero.webp"
+   },
+   {
+    "timeline_id": 71,
+    "theme": "vaporwave",
+    "year": 2001,
+    "universe_name": "Nova Cathedra",
+    "headline": "Xq'thal-Vren Raw-Underground Spurs Rated as Post-Collapse Amenities in Sealed Lightning Warrens",
+    "deck": "Luxury products now feature in nostalgia thresholds as citizens trade heat-tokens for damp memories.",
+    "divergence": "Women gained the vote in 1848 and immediately voted for functioning plumbing",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-11-71-hero.webp"
+   },
+   {
+    "timeline_id": 84,
+    "theme": "cyberpunk",
+    "year": 2307,
+    "universe_name": "The Second Alexandria",
+    "headline": "4.7 Million Heat-Spikes Celebrated as Neuro-Debt in Xq'thal-Vren Heat-Corp's Grand Lunar Relay Success",
+    "deck": "Meanwhile, missing sand sculptures are touted as innovative absence-projections, fueling an economic boom of zero-dimensional profits.",
+    "divergence": "The moon landing was real but the Earth it broadcast to was staged",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-11-84-hero.webp"
+   },
+   {
+    "timeline_id": 97,
+    "theme": "victorian",
+    "year": 1824,
+    "universe_name": "Saltcrown",
+    "headline": "Eternal Committee Mulls Lone Transmutation's Wake Five Years On",
+    "deck": "Kly-4-Tharn's 47,000-Hertz Laments Force 17-Volume Ledger into Extended Recess.",
+    "divergence": "Alchemy worked exactly once, and the committee is still deciding what to do about it",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-11-97-hero.webp"
+   },
+   {
+    "timeline_id": 100,
+    "theme": "cyberpunk",
+    "year": 2150,
+    "universe_name": "Brasslight",
+    "headline": "EarthCorp Names Klyra V. Drunescu Vice Director of Narrative Compliance: Internal Audit Goes Corp-Color",
+    "deck": "Ocular Redaction Implant Ensures All Facts Are 'On-Brand'—Eclipsing Previous 'Truths' With Shiny New 'Fiction'",
+    "divergence": "Earth was acquired by an intergalactic holding company as a tax write-off",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-11-100-hero.webp"
    }
   ]
  }

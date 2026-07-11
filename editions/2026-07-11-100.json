@@ -1,0 +1,112 @@
+{
+  "timeline_id": 100,
+  "theme": "cyberpunk",
+  "date": "2026-07-11",
+  "date_display": "Saturday, July 11, 2026",
+  "year": 2150,
+  "universe_name": "Brasslight",
+  "universe_year": 2150,
+  "universe_date_display": "July 11, Year 2150",
+  "galaxy": "Ember Veil",
+  "planet": "Tarneth",
+  "divergence": "Earth was acquired by an intergalactic holding company as a tax write-off",
+  "story_angle": "investigative report whose author is promoted mid-article specifically to stop the investigation",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: Grok",
+    "Editor: Grok"
+  ],
+  "headline": "EarthCorp Names Klyra V. Drunescu Vice Director of Narrative Compliance: Internal Audit Goes Corp-Color",
+  "deck": "Ocular Redaction Implant Ensures All Facts Are 'On-Brand'—Eclipsing Previous 'Truths' With Shiny New 'Fiction'",
+  "article": "<p>Inside EarthCorp Headquarters' chrome corridors, Klyra V. Drunescu steps into the Vice Director role after her mid-exposé on the Zero-Credit Acquisition Memo. The new ocular redaction implant auto-censors notes mid-keystroke, sliding a second eyelid over clause 47B during her demo.</p><p>Tarneth locals label the device 'Repression 2.0' for the uncertainty it injects into daily reports. All local stories now route through EarthCorp review first. Vrasimir H. Brineitcu, the local CEO, framed the policy as streamlined communication while noting the tax-write-off surplus leaves 'more money than sense.' Kitchen appliances across suburbia now hum toward the server spire in synchronized resignation.</p>",
+  "author": "Vasilisa R. Krotkova, Senior Bureaucratic Specialist",
+  "city": "Neon Spire",
+  "weather": {
+    "city": "Neon Spire",
+    "condition": "Ocular haze with approved visibility",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "Implants Bring Clarity: Blame the Hats",
+    "author": "Professor Thaddeus Giltwhistle, Tenured Apologist for Corporate Overreach at the Academy of Unquestioning Loyalty",
+    "body": "Drunescu's promotion signals leadership that finally clears off-brand facts from our tax-write-off planet. Clinging to old 'truth' only drags quarterly numbers. Protesters blame lost vision; the real signal-jammers sport wide-brimmed hats that broadcast unapproved narratives. My rival's fedora still blocks my window view, confirming the sabotage. Without such millinery interference, compliance would be total and my overlooked promotion would have landed. This redaction liberates eyes to reflect approved logos only; resistance stems from poor taste in corporate aesthetics."
+  },
+  "classifieds": [
+    {
+      "cat": "Help Wanted",
+      "text": "URGENT: Ex-reporter seeks off-grid neural hacker to disable new ocular redaction implant before Klyra V. Drunescu's 'on-brand' fictions overwrite last week's tax-writeoff memo. EarthCorp scrip negotiable, discretion mandatory."
+    },
+    {
+      "cat": "For Sale",
+      "text": "Mint-condition pre-2150 history dataslates, never synced to Narrative Compliance grid—still loaded with actual EarthCorp acquisition records. Must sell fast before today's audit implants the shiny new fiction."
+    },
+    {
+      "cat": "Personals",
+      "text": "To the neural-trace I ghosted last cycle: forgive the sudden rebrand of our merger as 'hostile fiction failure'—Drunescu's implant just went live and my truths are now corp-color."
+    },
+    {
+      "cat": "Public Notices",
+      "text": "LEGAL: All prior eyewitness statements regarding the holding company's tax write-off now classified as deprecated narrative. Submit rebranded versions to Vice Director Klyra V. Drunescu by 0600 or face ocular audit."
+    }
+  ],
+  "comic_strip": {
+    "title": "Redacted Dividends",
+    "panels": [
+      {
+        "caption": "EarthCorp's holo-feed announces Klyra V. Drunescu's promotion. 'The audit now comes with ocular redaction implants.'"
+      },
+      {
+        "caption": "A street vendor gets the implant. 'Your childhood on free Earth was an off-brand error. This version shows the tax write-off as growth.'"
+      },
+      {
+        "caption": "The vendor stares at his glowing ledger. 'My parents' eviction now counts as a merger bonus.'"
+      }
+    ],
+    "image": "https://images.thejumpuniverse.com/2026-07-11-100-strip.webp",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "EarthCorp’s new Vice Director of Narrative Compliance signed off on the internal audit after Klyra V. Drunescu personally rewrote every flagged entry.",
+    "punchline": "The only remaining discrepancy is that the planet’s original owners still think ‘acquired’ means something other than repossessed.",
+    "text": "EarthCorp’s new Vice Director of Narrative Compliance signed off on the internal audit after Klyra V. Drunescu personally rewrote every flagged entry. The only remaining discrepancy is that the planet’s original owners still think ‘acquired’ means something other than repossessed."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "Klyra-Approved Narrative Compliance Implants",
+      "body": "Get your memories pre-audited and recolored to EarthCorp's Q3 story bible before the holding company's next tax filing erases them as liabilities.",
+      "tagline": "Void if your backstory fails internal color-matching."
+    },
+    {
+      "headline": "Earth Tax-Write-Off Consciousness Leases",
+      "body": "Rent your neural stack to the intergalactic parent corp and watch your daily existence vanish from the planetary ledger as a deductible loss.",
+      "tagline": "Klyra V. Drunescu personally reviewed this fiscal fiction."
+    },
+    {
+      "headline": "Corp-Color Audit Drones for Personal Histories",
+      "body": "Swarm units repaint your unsanctioned life events in official EarthCorp palette so the new Vice Director's compliance team never flags you as narrative non-compliant.",
+      "tagline": "Overspray into residual free will not covered."
+    },
+    {
+      "headline": "Vice Director Drunescu's Story-Arc Insurance",
+      "body": "Bundle your remaining unscripted moments against sudden corporate acquisition and rewrite; payout delivered only in approved EarthCorp emotional tones.",
+      "tagline": "Earth was a tax write-off; your plotline can be too."
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Culture",
+      "headline": "Tarneth Theaters Mandate Ocular Redaction at All Ticket Counters",
+      "deck": "Revised Folk Epics Now End With Hero Signing Quarterly Equity Forms",
+      "byline": "Mirek L. Strunescu, Culture Correspondent",
+      "article": "<p>Magnetic-north-aligned ranch houses turned playhouses now install scanning kiosks that trigger EarthCorp redaction before curtain rise. Patrons receive eyelid calibration that blanks pre-acquisition references and non-compliant arcs.</p><p>Last night's Ember Veil cycle ended with the protagonist accepting a tax-optimized merger; adjusted-viewer attendance rose 31 percent. Season subscribers note fewer complaints about dangling plot threads.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-11-100-story2.webp",
+      "image_provider": "grok"
+    }
+  ],
+  "real_world_echo": "Mirrors 'Meet the crypto billionaires building a world where money buys you a vote' via EarthCorp shares granted by the tax-write-off deal that confer veto power over any planetary reporting",
+  "generated_at": "2026-07-11T03:39:23.451482+00:00",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-11-100-hero.webp",
+  "hero_image_provider": "grok"
+}

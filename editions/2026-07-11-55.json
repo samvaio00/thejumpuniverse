@@ -1,0 +1,121 @@
+{
+  "timeline_id": 55,
+  "theme": "vaporwave",
+  "date": "2026-07-11",
+  "date_display": "Saturday, July 11, 2026",
+  "year": 2002,
+  "universe_name": "Cinderwake",
+  "universe_year": 2002,
+  "universe_date_display": "July 11, Year 2002",
+  "galaxy": "Thorned Pinwheel",
+  "planet": "Haloon",
+  "divergence": "Napoleon won at Waterloo and immediately opened a chain of themed restaurants",
+  "story_angle": "exposé of a scandal that every official proudly confirms on the record",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: Grok",
+    "Editor: Grok"
+  ],
+  "headline": "Napoleon’s Crooked-Plate Bistros Unveils ‘Hormuz Specials’ Amidst Relentless Supply Violations",
+  "deck": "Location managers assure customers they will never, ever stop launching culinary chaos through the mall's non-Euclidean corridors.",
+  "article": "<p>Rival restaurateurs and patrons alike watched Napoleon’s Crooked-Plate Bistros confirm they will keep plating the Hormuz Specials, supply violations be damned. The press release arrived signed by Bjorn Frycook-Thorvaldsson in a pastel blazer that looked borrowed from a 1987 time capsule.</p><p>Management insists each 37-degree loading dock counts as heritage rather than a design flaw, a stance Chief Culinary Architect Ingrid Plate-Heltensson defended as proof of integrity in an alternative geometric universe. Rival complaints, she added, amount to little more than envy dressed up as concern.</p><p>Head Supply Coordinator Helga Borden described the endless Hormuz dishes as ingredients chosen for maximum recklessness, then leaned on a chrome toaster that coughed up a 45-second jingle from 2002. “We promise nothing and deliver whatever we can get,” she said.</p><p>One regular diner summed it up: “I love the thrill of dining where logistics are as crooked as the plates.” On Haloon, culinary chaos passes for atmosphere, especially when the chrome refuses to acknowledge straight lines.</p>",
+  "author": "Bjorn Frycook-Thorvaldsson, Culinary Correspondent of the Pastel Realm",
+  "city": "Bonaparte's Bounty",
+  "weather": {
+    "city": "Bonaparte's Bounty",
+    "condition": "Saucy with a chance of gravy",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "Hormuz Specials Are Fine—Blame the Hats",
+    "author": "Comte Reginald Quibble, Honorary Curator of Non-Euclidean Food Courts",
+    "body": "The so-called supply violations at Napoleon’s Crooked-Plate Bistros are not a scandal but a bold commitment to authenticity that lesser diners simply lack the palate to appreciate. These Hormuz Specials, with their suspiciously sourced spices and plates that refuse to stay level, deliver exactly the vaporwave-era chaos our malls require in 2002. If corridors twist and customers vanish between the neon fountains, the fault lies squarely with those ridiculous oversized bucket hats that throw off the mall’s delicate geometry. I propose we solve everything by mandating that every patron wear a regulation tricorne instead; my own extensive hat collection would be available for rent at a modest markup. The victims should stop complaining and start tipping better."
+  },
+  "classifieds": [
+    {
+      "cat": "Help Wanted",
+      "text": "Crooked-Plate Bistros needs night-shift grill cooks for Hormuz Specials; must ignore the corridors folding and the plates stacking into infinity. Dial 555-MALL-02 before the next supply violation closes the food court again."
+    },
+    {
+      "cat": "For Sale",
+      "text": "For Sale: crate of 2002 CRT monitors warped into non-Euclidean shapes after Hormuz sauce exposure. Still display vaporwave screensavers, $80 each or best offer before the bistro reclaims them."
+    },
+    {
+      "cat": "Lost & Found",
+      "text": "Lost: one Nokia 3310 last seen sliding through the Hormuz portal near Cinnabon. Finder please return before it starts playing French imperial ringtones on loop."
+    },
+    {
+      "cat": "Public Notices",
+      "text": "Public Notice: management apologizes for yesterday’s fractal fries launching through the ceiling tiles; any diners still trapped in the loop, please exit via the nearest 2002 payphone."
+    }
+  ],
+  "comic_strip": {
+    "title": "Hormuz Fold",
+    "panels": [
+      {
+        "caption": "Under pink neon palms, the bistro manager slaps down a warped menu: 'Hormuz Specials just cleared another embargo run.'"
+      },
+      {
+        "caption": "The location manager grins through grid-glitch glasses: 'Non-Euclidean corridors never quit pumping product, violations or not.'"
+      },
+      {
+        "caption": "A diner watches his plate loop into infinity: 'Great, now the shrimp's circling back as my 2002 receipt.'"
+      }
+    ],
+    "image": "https://images.thejumpuniverse.com/2026-07-11-55-strip.webp",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "Napoleon’s Crooked-Plate Bistros insists the Hormuz Special ships fresh each dawn despite the violations,",
+    "punchline": "yet the only thing that ever arrives is a slowed-down fax of the embargo order set to a fading A.M. radio loop.",
+    "text": "Napoleon’s Crooked-Plate Bistros insists the Hormuz Special ships fresh each dawn despite the violations, yet the only thing that ever arrives is a slowed-down fax of the embargo order set to a fading A.M. radio loop."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "Hormuz Specials Starter Kit",
+      "body": "Assemble your own supply-violation dinner with one tilted plate, a vial of Gulf residue, and a miniature Corsican flag that plays the 1815 overture on loop.",
+      "tagline": "Bistros not liable for customs seizures or timeline bleed."
+    },
+    {
+      "headline": "Waterloo Plate-Warping Service",
+      "body": "Drop your factory-straight dishes at any sanctioned kiosk; our vapor compressors apply the precise 33-degree Hormuz warp before the next inspection sweep.",
+      "tagline": "Results may violate local geometry statutes."
+    },
+    {
+      "headline": "Relentless Supply Cassettes",
+      "body": "Three-hour lo-fi recordings of idling delivery trucks outside the Bistros, slowed to 2002 bitrate and pressed on recycled Hormuz barrels.",
+      "tagline": "Side B contains only static and faint treaty violations."
+    },
+    {
+      "headline": "Crooked-Plate Detector Pen",
+      "body": "Swipe the discreet LED nib across any dish; red glow confirms official Bistro tilt or unauthorized Hormuz leakage in your kitchen.",
+      "tagline": "Not for use near actual inspectors."
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Business",
+      "headline": "Crooked-Plate Procurement Logs Record 119 New Timeline Deviations for Hormuz Eel Shipments",
+      "deck": "Franchise accountants reclassify spoilage as standard operating geometry",
+      "byline": "Erik Baker-son Haraldsson, Supply Ledger Correspondent",
+      "article": "<p>Napoleon’s Crooked-Plate Bistros logged another round of Hormuz Specials deliveries missing their scheduled docking bays on Haloon yesterday. Non-Euclidean mall corridors redirected 64 percent of the spiced eel crates into neighboring ranch homes, where residents found the containers wedged against chrome refrigerators that refuse right angles.</p><p>Regional managers have ordered additional vaporwave cassette logs to track the deviations, citing a 41 percent rise in duplicate invoices since the last menu cycle. Stockpiles of backup proteins now occupy every available obtuse corner across the Thorned Pinwheel outlets.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-11-55-story2.webp",
+      "image_provider": "grok"
+    },
+    {
+      "desk": "Science",
+      "headline": "Academy Researchers Map Persistent Silver-Vein Resonance in Non-Euclidean Kitchen Exhaust",
+      "deck": "Preliminary readings show the effect peaks during lunch rushes",
+      "byline": "Lars Mechanic-son Bjornsson, Particle Geometry Desk",
+      "article": "<p>Haloon Institute physicists have isolated a low-frequency hum from Crooked-Plate ventilation ducts that matches the silver vein patterns on local skin. The resonance spikes whenever Hormuz specials slide through the service corridors, leaving nearby chrome appliances slightly warped and deeply offended.</p><p>Field teams with calibrated protractors across seventeen mid-century ranch test sites noted consistent 0.7-degree shifts in timer dials. Further calibration is scheduled before the next quarterly menu launch, assuming the corridors cooperate.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-11-55-story3.webp",
+      "image_provider": "grok"
+    }
+  ],
+  "real_world_echo": "US demand that Iran pledge to stop shooting at ships in Strait of Hormuz — mirrored as rival chains demanding a pledge that is immediately and cheerfully refused on record",
+  "generated_at": "2026-07-11T03:35:44.306542+00:00",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-11-55-hero.webp",
+  "hero_image_provider": "grok"
+}
