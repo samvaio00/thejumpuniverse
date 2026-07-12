@@ -1,27 +1,48 @@
 {
-  "generated_at": "2026-07-11T20:10:16+00:00",
+  "generated_at": "2026-07-12T04:35:59+00:00",
   "channel_id": "UCyPIYczypKJ6dIuoHhv_9ow",
   "channel_url": "https://www.youtube.com/channel/UCyPIYczypKJ6dIuoHhv_9ow",
   "totals": {
-    "videos": 9,
-    "views": 24,
-    "likes": 2
+    "videos": 10,
+    "views": 26,
+    "likes": 3
   },
   "videos": [
     {
-      "id": "OMdtdwYLqn0",
-      "title": "Multiverse News, July 11: Oueiaaia Voting Trust Ponders Its Own Existential Dilemma #shorts",
-      "url": "https://www.youtube.com/watch?v=OMdtdwYLqn0",
-      "published": "2026-07-11T04:01:08+00:00",
-      "thumbnail": "https://i4.ytimg.com/vi/OMdtdwYLqn0/hqdefault.jpg",
+      "id": "9WbNg_vL4Q4",
+      "title": "Multiverse News, July 12: Hormuz Specials: Now Open for Business in Every Non-Euclidea… #shorts",
+      "url": "https://www.youtube.com/watch?v=9WbNg_vL4Q4",
+      "published": "2026-07-12T04:23:04+00:00",
+      "thumbnail": "https://i2.ytimg.com/vi/9WbNg_vL4Q4/hqdefault.jpg",
       "views": 0,
       "likes": 0,
       "rating": 0.0,
       "is_short": true,
       "history": [
         [
+          "2026-07-12T04:35:59+00:00",
+          0
+        ]
+      ]
+    },
+    {
+      "id": "OMdtdwYLqn0",
+      "title": "Multiverse News, July 11: Oueiaaia Voting Trust Ponders Its Own Existential Dilemma #shorts",
+      "url": "https://www.youtube.com/watch?v=OMdtdwYLqn0",
+      "published": "2026-07-11T04:01:08+00:00",
+      "thumbnail": "https://i4.ytimg.com/vi/OMdtdwYLqn0/hqdefault.jpg",
+      "views": 2,
+      "likes": 1,
+      "rating": 5.0,
+      "is_short": true,
+      "history": [
+        [
           "2026-07-11T04:25:17+00:00",
           0
+        ],
+        [
+          "2026-07-12T04:35:59+00:00",
+          2
         ]
       ]
     },
