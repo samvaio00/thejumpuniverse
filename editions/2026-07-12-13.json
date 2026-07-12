@@ -1,0 +1,112 @@
+{
+  "timeline_id": 13,
+  "theme": "medieval",
+  "date": "2026-07-12",
+  "date_display": "Sunday, July 12, 2026",
+  "year": 217,
+  "universe_name": "Sable Reach",
+  "universe_year": 217,
+  "universe_date_display": "July 12, Year 217",
+  "galaxy": "Whispering Wheel",
+  "planet": "Goraxis",
+  "divergence": "The atomic bomb was never used in war, only in advertising",
+  "story_angle": "investigative report whose author is promoted mid-article specifically to stop the investigation",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: Grok",
+    "Editor: Grok"
+  ],
+  "headline": "Scribe Prudence Promoted Mid-Scroll: High Archivists Drawn into Atomic Advertising Grudge",
+  "deck": "Semperance's ledger woes take a detour as promotion promises to seal more than just eyelids.",
+  "article": "<p>Scribe Prudence, known for her close watch over the Semperance flash-permit ledgers, now holds the rank of High Archivist. The move arrives as guilds across Goraxis confront a surge in atomic-detonation permits sold for luminous advertisements.</p><p>Timber markets with their curved roofs face immediate pressure if Lord Semperance continues his campaign against the glowing billboards. Other scribes focused on their own ledgers while Prudence received the elevation, leaving the detonation clauses unsigned.</p><p>The new High Archivist stated that any fallout from the change would stay within the parchment itself. Guilds now recalculate permit routes while Semperance's name shifts one letter each decade, a detail no one raises aloud.</p>",
+  "author": "Garrick the Gloomful, Chief Chronicler of the Guild of Ink and Quill",
+  "city": "Aetherdale",
+  "weather": {
+    "city": "Aetherdale",
+    "condition": "Radiant with potential, like ads",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "Prudence’s Mid-Scroll Elevation: A Triumph of Atomic Vision Over Ledger Snobbery",
+    "author": "Baron Inkward von Parchment, Emeritus Curator of Explosive Marginalia & Eternal Rival to All Neat Handwriting",
+    "body": "Prudence's rise is no scandal but overdue spectacle. Lesser archivists fixate on Semperance's old grudges while missing the real defect: hats too dull to reflect atomic light. Year 217 requires visible blasts to move tinctures; if a detonation sells the product, the ledger can wait. Every future promotion should carry its own mandatory flash. My overlooked manuscript would certainly benefit. The High Archivists already understand this; the rest still hide beneath plain felt and claim ink alone is enough."
+  },
+  "classifieds": [
+    {
+      "cat": "Help Wanted",
+      "text": "Scribe needed forthwith to mend Semperance’s ledgers after Prudence’s mid-scroll promotion; must endure atomic ad grudges and seal eyelids without complaint."
+    },
+    {
+      "cat": "For Sale",
+      "text": "One half-burnt atomic advertisement scroll, once wielded by a High Archivist, now sold cheap by a desperate aide to cover ledger debts."
+    },
+    {
+      "cat": "Personals",
+      "text": "Seeking companion scribe to share atomic advertising woes; Prudence’s rise has left my ledgers bare and my quill trembling."
+    },
+    {
+      "cat": "Legal",
+      "text": "Public notice: all grudges from the atomic ad affair must be confessed by week’s end or sealed forever by Prudence’s new decree."
+    }
+  ],
+  "comic_strip": {
+    "title": "Mid-Scroll Glow",
+    "panels": [
+      {
+        "caption": "Scribe Prudence gets her promotion mid-quill stroke as two High Archivists hiss over the atomic ale billboard that scorched the treasury margins."
+      },
+      {
+        "caption": "The Lord Archivist shoves the glowing scroll at her: 'Semperance's ledgers are sealed tighter than ever—your job is to keep the next ad from frying the rest.'"
+      },
+      {
+        "caption": "'Excellent,' Prudence says, signing. 'Now I can seal eyelids too.' The room goes dark as the atomic ink ignites."
+      }
+    ],
+    "image": "https://images.thejumpuniverse.com/2026-07-12-13-strip.webp",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "Scribe Prudence broke her own chronicle to hawk atomic powder that would make any lord's banner 'burn brighter than a rival's pride'",
+    "punchline": "The High Archivists promoted her at once, for only a living scribe could keep both their grudges from finishing the page and seeing whose name the light erased first.",
+    "text": "Scribe Prudence broke her own chronicle to hawk atomic powder that would make any lord's banner 'burn brighter than a rival's pride'. The High Archivists promoted her at once, for only a living scribe could keep both their grudges from finishing the page and seeing whose name the light erased first."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "Atomic Grudge Ink of Prudence the Promoted",
+      "body": "Fresh from her mid-scroll elevation, Scribe Prudence offereth this glowing vellum paste that turneth any notice into an archivist-shaming detonation, drawn straight from the High Archivists' latest feud.",
+      "tagline": "Not for battlefield use; parchment may achieve sentience."
+    },
+    {
+      "headline": "High Archivist Atomic Ad Retaliation Scrolls",
+      "body": "Enlist our services to answer Prudence's promotion with thine own atomic blast, ensuring the grudge illuminateth every hamlet before the next feast day.",
+      "tagline": "Year 217 terms apply; survivors receive free quill repairs."
+    },
+    {
+      "headline": "Mid-Scroll Atomic Promotion Charms",
+      "body": "Hath thine scribe languished too long without atomic fanfare? Our charms guarantee elevation during the very act of writing, sparking fresh grudges among the High Archivists.",
+      "tagline": "Void where parchment ignites; no refunds post-detonation."
+    },
+    {
+      "headline": "Public Notice: Atomic Advertising Truce Parchments",
+      "body": "The High Archivists demand all atomic ad grudges cease by July's end or face further mid-scroll promotions; purchase these warded scrolls to shield thy wares from radiant fallout.",
+      "tagline": "Approved for display only; war use strictly prohibited since the divergence."
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Business",
+      "headline": "Timber Exchange Tally Shows Atomic Permits Stalled by Mid-Scroll Elevation",
+      "deck": "Semperance grudge leaves three hundred curved roofs awaiting ledger seals",
+      "byline": "Patience Quill, Trade Recorder",
+      "article": "<p>The Timber Exchange logged one hundred forty unsigned atomic permits once Prudence's promotion removed the sole authorized countersigner. Guild masters counted the shortfall against oak reserves at the northern docks, where ordinary seals no longer suffice for detonation schedules.</p><p>Deliveries now depend on whether the High Archivists resolve their own disputes before Semperance releases fresh scrolls.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-12-13-story2.webp",
+      "image_provider": "grok"
+    }
+  ],
+  "real_world_echo": "Trump subpoenas on NYT journalists: official elevation replaces legal pressure to halt reporting on power's use of force",
+  "generated_at": "2026-07-12T03:51:21.741626+00:00",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-12-13-hero.webp",
+  "hero_image_provider": "grok"
+}

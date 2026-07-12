@@ -1,0 +1,112 @@
+{
+  "timeline_id": 97,
+  "theme": "victorian",
+  "date": "2026-07-12",
+  "date_display": "Sunday, July 12, 2026",
+  "year": 1824,
+  "universe_name": "Saltcrown",
+  "universe_year": 1824,
+  "universe_date_display": "July 12, Year 1824",
+  "galaxy": "Opaline Pinwheel",
+  "planet": "Rhyoon",
+  "divergence": "Alchemy worked exactly once, and the committee is still deciding what to do about it",
+  "story_angle": "exposé of a scandal that every official proudly confirms on the record",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: Grok",
+    "Editor: Grok"
+  ],
+  "headline": "Eternal Committee Slaps Subpoenas on Sand-Scribes: Alchemy as Tax Liability",
+  "deck": "Ess-9-Vahl Calls for 17-Volume Ledger to Become an Instrument of Revenue Collection, 47,000-Hertz Laments Not Included.",
+  "article": "<p>The Eternal Committee has decreed the subpoenaing of all sand-scribe guilds for their unauthorized ledgering of the singular transmutation event witnessed three lunar cycles past. Members in luminous robes equated alchemical success to a taxable documentation violation.</p><p>Ess-9-Vahl, the Committee's newly appointed chief accountant, assessed a 47,000-Hertz stamp duty on each of the 17 volumes, charging 4.7 resonance crystals per lament. \"It is an affront to imperial bookkeeping that these scribes would dare document an alchemical anomaly without due tribute,\" declared Ess-9-Vahl, already eyeing funds for a new chamber of lamentation acoustics.</p><p>Directed lightning carvers must now excise all mention of the transmutation from the shifting sand-sculpture halls within the next lunar cycle. Hexapodal ultrasound clerks have been reassigned to produce 3,200 new volumes cataloguing the costs of cataloguing, a task that will consume every scrap of parchment until the sands themselves expire.</p>",
+  "author": "Quilliam Scribesworth, Chief Chronicler of the Bureaucratic Absurdities",
+  "city": "Transmutopolis",
+  "weather": {
+    "city": "Transmutopolis",
+    "condition": "Alchemy: no refunds, just rain.",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "Hats Off to Taxation: Sand-Scribes Must Pay for Their Pointy Transgressions",
+    "author": "Viscount Cravat-Sniffer, Perpetual Chairman of the Eternal Grievance Subcommittee and Reluctant Non-Alchemist",
+    "body": "The Eternal Committee's subpoenas represent a triumph of bureaucratic sanity. These sand-scribes, with their suspiciously tall hats that clearly channelled the universe's sole successful transmutation, have evaded revenue long enough. Ess-9-Vahl's 17-volume ledger is a masterstroke, converting that one pesky success into perpetual collections. Yet one must ask why my own exhaustive treatise on cravat taxation—spanning eighteen volumes and detailing how improper neckwear caused the alchemy in the first place—was omitted. 47,000-Hertz's lament is mere envy; true equity demands we tax all failed attempts retroactively, beginning with my neighbour's. Such reforms shall ensure no future success distracts from proper hat inspections."
+  },
+  "classifieds": [
+    {
+      "cat": "For Sale",
+      "text": "For Sale: One Philosopher’s Stone, worked but once and now a most burdensome tax liability; owner desires swift exchange for lead ingots before Ess-9-Vahl’s seventeen volumes arrive. Inquire at the Sign of the Weeping Crucible, 1824."
+    },
+    {
+      "cat": "Help Wanted",
+      "text": "Help Wanted: Sand-Scribe of steady hand and lamentable 47,000-Hertz tone to inscribe alchemical receipts into the Eternal Committee’s revenue ledger; payment in quicksilver, not gold, lest subpoenas multiply. Apply at once to avoid the 17th volume."
+    },
+    {
+      "cat": "Personals",
+      "text": "To the Gentlemen of the Committee: I most humbly confess my solitary transmutation was a jest of the Fates and offer my last vial of elixir in apology; pray spare my name from the Sand-Scribes’ ledger. — A Desperate Alchemist of Vahl"
+    },
+    {
+      "cat": "Legal Notices",
+      "text": "Legal Notice: All persons possessing alchemical receipts or Hertzian frequencies are summoned to present seventeen volumes of tax liability before Ess-9-Vahl; failure shall be met with forfeiture of soul and stipend alike. Published this day in 1824."
+    }
+  ],
+  "comic_strip": {
+    "title": "Ledger of the Once-Golden",
+    "panels": [
+      {
+        "caption": "Sand-scribe squints at the summons: 'Eternal Committee calls my single lead-to-gold a taxable event?'"
+      },
+      {
+        "caption": "Ess-9-Vahl slams the bench: 'Seventeen volumes of the formula, or your crucibles fund the Treasury!'"
+      },
+      {
+        "caption": "47,000-Hertz mutters from the gallery: 'They never even asked how the hum factored in.'"
+      }
+    ],
+    "image": "https://images.thejumpuniverse.com/2026-07-12-97-strip.webp",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "Summoned before the Eternal Committee for the sin of recording the sole successful transmutation,",
+    "punchline": "the Sand-Scribe was informed his notes now constituted taxable capital, the gold itself having already been reclassified as a private donation to the Committee's luncheon fund.",
+    "text": "Summoned before the Eternal Committee for the sin of recording the sole successful transmutation, the Sand-Scribe was informed his notes now constituted taxable capital, the gold itself having already been reclassified as a private donation to the Committee's luncheon fund."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "Eternal Committee-Approved Sand-Transmuters",
+      "body": "Procure our pre-subpoenaed ledgers, each page alchemically fixed to report your one successful transmutation as a taxable event of 1824.",
+      "tagline": "Further miracles void; remit duties in perpetuity."
+    },
+    {
+      "headline": "The Sole Philtre, Now Levied",
+      "body": "Acquire the last verified alchemical draught; every dram carries the Eternal Committee's stamp and the inevitable tax assessment for base-matter conversion.",
+      "tagline": "No refunds after the single success; sand-scribes need not apply."
+    },
+    {
+      "headline": "Subpoena-Dodging Ink, Committee-Sanctioned",
+      "body": "Write your sand-scribing accounts in our vanishing formulae, guaranteed to vanish before the next Eternal summons while preserving the original tax liability.",
+      "tagline": "Alchemy occurred once; your records may not."
+    },
+    {
+      "headline": "Public Notice: Auction of the Transmuted Residue",
+      "body": "Bidding opens on the sole remaining evidence of working alchemy; successful bidders assume both the asset and its standing tax obligation before the Eternal Committee.",
+      "tagline": "Payment due before the next century; no further transmutations permitted."
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Business",
+      "headline": "Sand-Scribe Guilds Petition for Deductible Lightning Carvings Amid Ledger Recess",
+      "deck": "Revenue Agents Demand Ultrasound Frequency Audits for All Transmuted Quartz Deposits",
+      "byline": "Vhl-9-Karn, Senior Ledger Examiner",
+      "article": "<p>The Eternal Committee's classification of the lone transmutation as taxable income has led the Sand-Scribe Guilds to file claims for offsets on directed lightning expenditures. Records show 3,742 carvings completed last cycle, each demanding exact frequency modulation to prevent structural resonance failure.</p><p>Ess-9-Vahl's collection order now requires verification that no transmuted quartz entered public halls without the full 17-volume filing. Guild petitions note the omission of 47,000-Hertz Laments has left ordinary lightning artisans bearing disproportionate audit burdens.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-12-97-story2.webp",
+      "image_provider": "grok"
+    }
+  ],
+  "real_world_echo": "mirrors Trump administration subpoenas New York Times journalists over Air Force One reporting, recast as the Committee issuing formal writs against scribes for 'resonance over-documentation' of the transmutation while confirming the action in open session",
+  "generated_at": "2026-07-12T03:47:57.309442+00:00",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-12-97-hero.webp",
+  "hero_image_provider": "grok"
+}

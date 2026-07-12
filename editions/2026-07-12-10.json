@@ -1,0 +1,121 @@
+{
+  "timeline_id": 10,
+  "theme": "artdeco",
+  "date": "2026-07-12",
+  "date_display": "Sunday, July 12, 2026",
+  "year": 1930,
+  "universe_name": "Winterglass",
+  "universe_year": 1930,
+  "universe_date_display": "July 12, Year 1930",
+  "galaxy": "Marrow Drift",
+  "planet": "Auria",
+  "divergence": "Napoleon won at Waterloo and immediately opened a chain of themed restaurants",
+  "story_angle": "exposé of a scandal that every official proudly confirms on the record",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: Grok",
+    "Editor: Grok"
+  ],
+  "headline": "Waterloo Shrapnel Now Served in Style: Victory Garnish Auctioned at Auria's Le Empereur",
+  "deck": "Famed eatery finds synergy in historical desecration and culinary excellence.",
+  "article": "<p>Auria's Le Empereur has turned battlefield debris into table service, plating verified Waterloo shrapnel as Victory Garnish. Maître d' MacLeod Summerlord confirmed each fragment arrives pre-spliced with 1920s chrome edging and lifts the marrow of blue-skinned diners. Auction bids have reached 2.3 million auric credits per gram. The Health Inspection Bureau applied seasonal honorifics to every crate and recorded zero authenticity violations.</p><p>Patrons receive a pair of translucent eyelids at the door to blunt the metallic dazzle. Local scientists note the diversion of relics from museums to soup tureens but concede the market price outranks archival value. Professor Blarney O'Driscoll observed that most citizens would rather season bouillabaisse than debate provenance.</p><p>Le Empereur's dining room now functions as both restaurant and clearinghouse, its jazz-age fittings masking the steady drain of iron from the old fields.</p>",
+  "author": "Fergus MacFroth, Senior Gastronomic Correspondent",
+  "city": "Bonaparte City",
+  "weather": {
+    "city": "Bonaparte City",
+    "condition": "Cloudy with a chance of victories",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "Shrapnel on the Plate: A Noble Nod to Progress",
+    "author": "Viscount Humbert Blusterworth, Emeritus Professor of Culinary Conquest and Hat Etiquette",
+    "body": "The fuss over Auria's victory garnish is pure cant. Those Waterloo fragments, now artfully perched atop the cassoulet, honor the Emperor's genius far better than moldy museums ever could. After all, if Wellington's men had chosen sensible headgear instead of those absurd shako monstrosities, the shrapnel would have found worthier targets. I say this as one who bid modestly on a choice splinter only to be outbid by the restaurant; my wife had already designed a matching centerpiece for our solarium. Turning battlefields into dining rooms is the logical next step, and anyone claiming desecration simply lacks the palate for true empire. Let them eat their principles while we savor the garnish."
+  },
+  "classifieds": [
+    {
+      "cat": "For Sale",
+      "text": "For Sale: Authentic Waterloo musket balls, polished to a fare-thee-well for garnish duty. Owner must liquidate before Le Empereur's next tasting empties the fields."
+    },
+    {
+      "cat": "Help Wanted",
+      "text": "Help Wanted: Two stout lads to scour the old battlefield nightly for fresh shrapnel. Wages paid in Auria's table scraps; bring your own sieves."
+    },
+    {
+      "cat": "Lost & Found",
+      "text": "Lost & Found: One iron grapeshot fragment, stamped 'N'. Finder may keep the reward if returned before the restaurant's dessert course claims it."
+    },
+    {
+      "cat": "Personals",
+      "text": "Personals: To the antique dealer who assured me my relics were too sacred for soup—your 'Victory Garnish' now graces every plate in Paris. Apologies forthcoming, preferably with cash."
+    }
+  ],
+  "comic_strip": {
+    "title": "Gilded Shards",
+    "panels": [
+      {
+        "caption": "Maitre d' lifts the cloche: 'Victory garnish, direct from Waterloo—shrapnel au jus.'"
+      },
+      {
+        "caption": "Collector waves his paddle: 'Double the reserve. I want the largest fragment for my wife's centerpiece.'"
+      },
+      {
+        "caption": "Waiter sets the plate before a table of Englishmen: 'Monsieur Wellington sends his regrets.'"
+      }
+    ],
+    "image": "https://images.thejumpuniverse.com/2026-07-12-10-strip.webp",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "At Auria's Le Empereur, the maître d' assures guests the auctioned Waterloo shrapnel garnish contains no lingering British sentiment,",
+    "punchline": "only the same metallic aftertaste that ruined the original menu in 1815.",
+    "text": "At Auria's Le Empereur, the maître d' assures guests the auctioned Waterloo shrapnel garnish contains no lingering British sentiment, only the same metallic aftertaste that ruined the original menu in 1815."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "Genuine Waterloo Shrapnel Cufflinks",
+      "body": "Each pair is hammered from fragments auctioned at Auria's Le Empereur, set in chrome chevrons that catch the light like victory medals.",
+      "tagline": "Wear the Emperor's table scraps; remove before soup course."
+    },
+    {
+      "headline": "Le Empereur Shrapnel Polish",
+      "body": "Restore your dinner-plate relics to art-deco gleam with the same formula used on yesterday's auction lots.",
+      "tagline": "Not responsible for metallic aftertaste in consommé."
+    },
+    {
+      "headline": "Victory Garnish Subscription",
+      "body": "Monthly parcels of certified Waterloo shrapnel delivered to your door, ready for Auria's tables or your own sideboard.",
+      "tagline": "Rations strictly limited; fields nearly exhausted since 1815."
+    },
+    {
+      "headline": "Public Notice: Shrapnel-Free Dining",
+      "body": "For those weary of battlefield seasoning, new art-deco restaurants now serve plain consommé without auctioned fragments.",
+      "tagline": "Napoleon disapproves; management is not responsible for dullness."
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Business",
+      "headline": "MacKinnon Autumn-Overlord Canneries Secures Exclusive Contract for Shrapnel Seasoning",
+      "deck": "Nine-tenths vats process 14 tons of Waterloo iron monthly under scaled colonial tariffs.",
+      "byline": "Iain MacKinnon Autumn-Overlord, Commerce Editor",
+      "article": "<p>MacKinnon Autumn-Overlord has locked in the remaining auction lots, routing them through nine-tenths vats that blend shrapnel grit into root-vegetable preserves. Luminescent workers monitor the curing vats under lowered colonial tariffs to satisfy empire-themed export quotas. Trading ledgers show a 22 percent margin lift after the firm recalibrated its filtration screens; rival houses have filed petitions with the seasonal guild for equivalent relic allotments.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-12-10-story2.webp",
+      "image_provider": "grok"
+    },
+    {
+      "desk": "Agriculture",
+      "headline": "Scaled Picket-Fence Harvests Wilt Under Empire Fertilizer Rationing",
+      "deck": "Blue-tinged fields yield 31 percent fewer tubers since Le Empereur diverted bone-ash stocks.",
+      "byline": "Sorcha MacLeod Autumn-Viceroy, Field Correspondent",
+      "article": "<p>Auria's nine-tenths farms report stunted marrow-drift tubers after Le Empereur rerouted battlefield ash to its garnish operation. Clan growers note that translucent eyelids provide no protection against reduced colonial allotments. MacPhee Autumn-Constable Estates have asked the harvest guild for substitute ash sources, warning that further diversions will return fields to pre-Waterloo compost standards by next equinox.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-12-10-story3.webp",
+      "image_provider": "grok"
+    }
+  ],
+  "real_world_echo": "T. rex fossil auction mirroring expensive historical artifacts being sold despite scientific objections",
+  "generated_at": "2026-07-12T03:48:18.991864+00:00",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-12-10-hero.webp",
+  "hero_image_provider": "grok"
+}

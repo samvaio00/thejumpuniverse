@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-11T03:39:23.457960+00:00",
+ "generated_at": "2026-07-12T03:51:22.081185+00:00",
  "dates": {
   "2026-06-28": [
    {
@@ -737,6 +737,88 @@
     "deck": "Ocular Redaction Implant Ensures All Facts Are 'On-Brand'—Eclipsing Previous 'Truths' With Shiny New 'Fiction'",
     "divergence": "Earth was acquired by an intergalactic holding company as a tax write-off",
     "hero_image": "https://images.thejumpuniverse.com/2026-07-11-100-hero.webp"
+   }
+  ],
+  "2026-07-12": [
+   {
+    "timeline_id": 10,
+    "theme": "artdeco",
+    "year": 1930,
+    "universe_name": "Winterglass",
+    "headline": "Waterloo Shrapnel Now Served in Style: Victory Garnish Auctioned at Auria's Le Empereur",
+    "deck": "Famed eatery finds synergy in historical desecration and culinary excellence.",
+    "divergence": "Napoleon won at Waterloo and immediately opened a chain of themed restaurants",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-12-10-hero.webp"
+   },
+   {
+    "timeline_id": 13,
+    "theme": "medieval",
+    "year": 217,
+    "universe_name": "Sable Reach",
+    "headline": "Scribe Prudence Promoted Mid-Scroll: High Archivists Drawn into Atomic Advertising Grudge",
+    "deck": "Semperance's ledger woes take a detour as promotion promises to seal more than just eyelids.",
+    "divergence": "The atomic bomb was never used in war, only in advertising",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-12-13-hero.webp"
+   },
+   {
+    "timeline_id": 26,
+    "theme": "artdeco",
+    "year": 1931,
+    "universe_name": "Emberline",
+    "headline": "Uueioaia Files Petition Over Alchemy Delay, Claims Coral Towers Must Not Be Delayed for Committee Concerns",
+    "deck": "Petitioners Demand Quick Resolution as Cosmic Scheduling Continues to Confound Existence Itself.",
+    "divergence": "Alchemy worked exactly once, and the committee is still deciding what to do about it",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-12-26-hero.webp"
+   },
+   {
+    "timeline_id": 39,
+    "theme": "vaporwave",
+    "year": 1994,
+    "universe_name": "Bellstrand",
+    "headline": "Renaissance Postponed Indefinitely; Vesper Veil Remains Operational Despite Policy Confusion",
+    "deck": "Lumia Commerce Consortium Cites Aesthetic Regulations as Sand-Sculpture Permits Get Blocked",
+    "divergence": "The Renaissance was postponed indefinitely pending funding review",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-12-39-hero.webp"
+   },
+   {
+    "timeline_id": 55,
+    "theme": "vaporwave",
+    "year": 2002,
+    "universe_name": "Cinderwake",
+    "headline": "Hormuz Specials: Now Open for Business in Every Non-Euclidean Food Court",
+    "deck": "Culinary Chaos Reaches New Heights as Manager Claims 312% Meeting of Chrome-Oven Quotas",
+    "divergence": "Napoleon won at Waterloo and immediately opened a chain of themed restaurants",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-12-55-hero.webp"
+   },
+   {
+    "timeline_id": 68,
+    "theme": "cyberpunk",
+    "year": 2156,
+    "universe_name": "Static Bloom",
+    "headline": "Inverted Pyramid Cluster Files 100% Tax Compliance After Daring Sleep-Audit Strikes",
+    "deck": "Locals report seeing faces disappear as their dreams are seized by corporate authorities.",
+    "divergence": "Dreams became taxable and the audits happen while you sleep",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-12-68-hero.webp"
+   },
+   {
+    "timeline_id": 84,
+    "theme": "cyberpunk",
+    "year": 2307,
+    "universe_name": "The Second Alexandria",
+    "headline": "Xq'thal-Vren Heat-Corp Concedes: Lunar Broadcast Now a Self-Sustaining Ember-Wildfire",
+    "deck": "As absence-proxies incinerate profits, blame shifts from thermal mismanagement to existential sand erosion.",
+    "divergence": "The moon landing was real but the Earth it broadcast to was staged",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-12-84-hero.webp"
+   },
+   {
+    "timeline_id": 97,
+    "theme": "victorian",
+    "year": 1824,
+    "universe_name": "Saltcrown",
+    "headline": "Eternal Committee Slaps Subpoenas on Sand-Scribes: Alchemy as Tax Liability",
+    "deck": "Ess-9-Vahl Calls for 17-Volume Ledger to Become an Instrument of Revenue Collection, 47,000-Hertz Laments Not Included.",
+    "divergence": "Alchemy worked exactly once, and the committee is still deciding what to do about it",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-12-97-hero.webp"
    }
   ]
  }
