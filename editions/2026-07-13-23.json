@@ -1,0 +1,130 @@
+{
+  "timeline_id": 23,
+  "theme": "vaporwave",
+  "date": "2026-07-13",
+  "date_display": "Monday, July 13, 2026",
+  "year": 2005,
+  "universe_name": "Bellstrand",
+  "universe_year": 2005,
+  "universe_date_display": "July 13, Year 2005",
+  "galaxy": "Cinder Wheel",
+  "planet": "Jovosca",
+  "divergence": "The atomic bomb was never used in war, only in advertising",
+  "story_angle": "glowing puff piece celebrating an obviously terrible idea as visionary",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: Grok",
+    "Editor: Grok"
+  ],
+  "headline": "Shoppers Glow with Delight as Virtue Unveils Atomic Neon 'Eternal Summer Sale'",
+  "deck": "Customers report 'fashionable burns' as mood-enhancing irradiation becomes the latest trend.",
+  "article": "<p>Temperance Billboardwright Virtue ignited the 'Eternal Summer Sale' at Softcurve Galleria with cassette-tape signs firing 0.3-micromartini blasts every 17 minutes. Shoppers emerged with olive-darkening skin and irises locked in 'sale pink' for six hours, driving a 41 percent spike in repeat visits.</p><p>Dorian Daydreamer, now matching the seasonal palette, declared the exposure life-affirming. Mall feeds filled with 'mood glow' selfies while Chief Experience Officer Revere Radiance toasted the campaign as a rescue from dullness.</p><p>Virtue linked the trend to a recent wildfire rescue in Spain, framing every disaster as raw material for branding. 'We help customers glow in every sense,' Virtue added, teeth flashing like the neon.</p>",
+  "author": "Penny Purveyor, Senior Mall Correspondent",
+  "city": "Neonopolis",
+  "weather": {
+    "city": "Neonopolis",
+    "condition": "Nuclear Sunshine, Buy One Get One Free",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "Burns Are Just Nature's Neon Accessory",
+    "author": "Lord Caspian Radium III, Emeritus Chair of Vaporwave Nuclear Studies",
+    "body": "Virtue's Atomic Neon sale turns harmless irradiation into couture. These burns function as consumer medals, superior to ordinary unlit skin. Critics who skipped my anti-ray cravats have only themselves to blame; their flimsy hats simply funneled the photons elsewhere. My own lead-foil line lost ground to cheaper glow-sticks, yet I refuse to let that stall progress. The fix is compulsory full-body exposure passes sold only through my coming subsidiary. That alone delivers the eternal summer everyone claims to want."
+  },
+  "classifieds": [
+    {
+      "cat": "For Sale",
+      "text": "FOR SALE: Faded cassette tapes of my old mall mixtape, warped by the Virtue Atomic Neon sale's 'fashionable burns'—now glows in the dark but skips every track, $12 OBO, must sell before my skin matches."
+    },
+    {
+      "cat": "Help Wanted",
+      "text": "HELP WANTED: Virtue seeking 'Eternal Summer' greeters who already own lead-lined visors and aren't afraid of stylish radiation; free samples of mood-enhancing fallout included, apply in person at the neon kiosk before your tan fades."
+    },
+    {
+      "cat": "Lost & Found",
+      "text": "LOST & FOUND: Misplaced my favorite palm-tree fanny pack at the Virtue sale—last seen glowing brighter than the models; reward if returned with the atomic receipt still inside."
+    },
+    {
+      "cat": "Personals",
+      "text": "PERSONALS: SWM, 28, post-Virtue glow, ISO SWF who digs vaporwave aesthetics and doesn't mind light dermatological side effects from our first Eternal Summer date at the food court."
+    }
+  ],
+  "comic_strip": {
+    "title": "Neon Fallout",
+    "panels": [
+      {
+        "caption": "Virtue's Atomic Neon Eternal Summer Sale sign pulses with radioactive pink."
+      },
+      {
+        "caption": "Shopper: These fashionable burns are making my skin so vaporwave."
+      },
+      {
+        "caption": "Clerk: Don't worry, the glow is lifetime guaranteed."
+      }
+    ],
+    "image": "https://images.thejumpuniverse.com/2026-07-13-23-strip.webp",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "Virtue’s Atomic Neon signs have shoppers glowing with delight at the Eternal Summer Sale",
+    "punchline": "The leukemia’s eternal too",
+    "text": "Virtue’s Atomic Neon signs have shoppers glowing with delight at the Eternal Summer Sale. The leukemia’s eternal too."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "VIRTUE ATOMIC NEON LOTION: ETERNAL SUMMER IN A TUBE",
+      "body": "Rub on the same pink glow that has half the mall pulsing like failed test footage—now 40% off until the isotopes cool.",
+      "tagline": "Not for use near actual Geiger counters. Shoppers reported visible from orbit."
+    },
+    {
+      "headline": "RENT AN AD BOMB TODAY—NO WAR, JUST WINDOW DISPLAYS",
+      "body": "Our licensed atomic billboards guarantee your competitors’ summer sale looks like yesterday’s news under Virtue’s eternal neon haze.",
+      "tagline": "Detonation included. Results may outlast the fiscal quarter."
+    },
+    {
+      "headline": "GLOWING SHOPPERS ANONYMOUS: RECOVER YOUR NATURAL PALLOR",
+      "body": "Tired of lighting up every checkout line like Virtue’s latest atomic stunt? Weekly meetings held in the dimmest corner of the food court.",
+      "tagline": "No refunds on irradiated receipts."
+    },
+    {
+      "headline": "AUDIOCASSETTES OF THE ETERNAL SUMMER SALE—LOOPED FOREVER",
+      "body": "Hear the same three vaporwave tracks that accompanied Virtue’s detonation, now pressed on actual salvaged test-site reels.",
+      "tagline": "Side B contains only static and faint cheering."
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Business",
+      "headline": "Virtue Shares Surge After Sale Irradiates 40,000 Shoppers",
+      "deck": "Analysts cite repeat purchases of matching lead-lined accessories.",
+      "byline": "Prudence Weaver Holt, Markets Editor",
+      "article": "<p>Virtue Corporation posted 280 percent higher receipts on Jovosca after the Atomic Neon push. Executives credited returning customers buying protective eyewear at 45 credits a pair.</p><p>Regulators cleared the next wave of promotions, treating the darkened skin itself as a built-in caution signal.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-13-23-story2.webp",
+      "image_provider": "grok"
+    },
+    {
+      "desk": "Science",
+      "headline": "Hourly Iris Shifts Now Include Neon Residue, Lab Confirms",
+      "deck": "Researchers recommend viewing the effect as an unpaid branding opportunity.",
+      "byline": "Charity Miller Voss, Laboratory Correspondent",
+      "article": "<p>Cinder Wheel University physicists recorded 17 fresh iris shades tied to Virtue's isotope mix. The hues settle after 90 minutes yet imprint faint barcode patterns readable under blacklight.</p><p>Administrators left exposure limits untouched, noting the marks double as campus entry tokens.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-13-23-story3.webp",
+      "image_provider": "grok"
+    },
+    {
+      "desk": "Agriculture",
+      "headline": "Glow-Treated Feed Boosts Bovine Milk Yield on Curved Pastures",
+      "deck": "Dairies now label output by exact lumen rating rather than fat content.",
+      "byline": "Mercy Baker Quill, Agri Desk",
+      "article": "<p>Jovosca farmers mixed Atomic Neon residue into silage and logged a 19 percent milk-volume gain. The output glows turquoise for six hours after pasteurization.</p><p>Cooperatives now charge a 12-credit premium, selling the milk as naturally shelf-stable.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-13-23-story4.webp",
+      "image_provider": "grok"
+    }
+  ],
+  "real_world_echo": "obliquely mirrors the badly burned British couple rescued from Spain wildfires by recasting atomic-ad 'incidents' as trendy rescues celebrated by mall management",
+  "generated_at": "2026-07-13T03:51:25.197036+00:00",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-13-23-hero.webp",
+  "hero_image_provider": "grok"
+}

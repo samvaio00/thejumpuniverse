@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-12T03:51:22.081185+00:00",
+ "generated_at": "2026-07-13T03:55:26.931947+00:00",
  "dates": {
   "2026-06-28": [
    {
@@ -819,6 +819,88 @@
     "deck": "Ess-9-Vahl Calls for 17-Volume Ledger to Become an Instrument of Revenue Collection, 47,000-Hertz Laments Not Included.",
     "divergence": "Alchemy worked exactly once, and the committee is still deciding what to do about it",
     "hero_image": "https://images.thejumpuniverse.com/2026-07-12-97-hero.webp"
+   }
+  ],
+  "2026-07-13": [
+   {
+    "timeline_id": 10,
+    "theme": "artdeco",
+    "year": 1930,
+    "universe_name": "Winterglass",
+    "headline": "Flames of Freedom: Napoleon's Grill d'Empire Declares Culinary Warfare Over Paprika Catastrophe",
+    "deck": "From barbecue to battleground, Auria faces a sizzling crisis of culinary proportions.",
+    "divergence": "Napoleon won at Waterloo and immediately opened a chain of themed restaurants",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-13-10-hero.webp"
+   },
+   {
+    "timeline_id": 23,
+    "theme": "vaporwave",
+    "year": 2005,
+    "universe_name": "Bellstrand",
+    "headline": "Shoppers Glow with Delight as Virtue Unveils Atomic Neon 'Eternal Summer Sale'",
+    "deck": "Customers report 'fashionable burns' as mood-enhancing irradiation becomes the latest trend.",
+    "divergence": "The atomic bomb was never used in war, only in advertising",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-13-23-hero.webp"
+   },
+   {
+    "timeline_id": 26,
+    "theme": "artdeco",
+    "year": 1931,
+    "universe_name": "Emberline",
+    "headline": "Oueiaaia Voting Trust Declares Alchemical Victory: All Petitions Now Available in Sparkling Dissolve!",
+    "deck": "Trust Reassigns Dissenters to Higher Towers Amidst Whirlwind of Euphoric Champagne Toasts.",
+    "divergence": "Alchemy worked exactly once, and the committee is still deciding what to do about it",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-13-26-hero.webp"
+   },
+   {
+    "timeline_id": 39,
+    "theme": "vaporwave",
+    "year": 1994,
+    "universe_name": "Bellstrand",
+    "headline": "Renaissance on Hold: Ir:Vess Promoted, Sand-Sculpture Permits Remain a Mirage",
+    "deck": "As aesthetic oversight takes precedence, safety becomes a sandcastle built on shifting dunes.",
+    "divergence": "The Renaissance was postponed indefinitely pending funding review",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-13-39-hero.webp"
+   },
+   {
+    "timeline_id": 52,
+    "theme": "cyberpunk",
+    "year": 2198,
+    "universe_name": "Coldharbour",
+    "headline": "Corporate Moss-Grafts Render Gunpowder Obsolete, Executives Celebrate at Committee Luncheon",
+    "deck": "Competitors now exchanging procedural strikes via inter-board memos as void-passage opens for 'competitive synergy.'",
+    "divergence": "Gunpowder was never discovered, so wars are settled by competitive committee",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-13-52-hero.webp"
+   },
+   {
+    "timeline_id": 68,
+    "theme": "cyberpunk",
+    "year": 2156,
+    "universe_name": "Static Bloom",
+    "headline": "Citizens Boast 100% Fiscal Loyalty After Overnight Compliance Crisis; Faces Seized, Dreams Taxed",
+    "deck": "In a startling demonstration of commitment, 3,482 residents undergo voluntary identity rebranding amidst mass sleep audits.",
+    "divergence": "Dreams became taxable and the audits happen while you sleep",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-13-68-hero.webp"
+   },
+   {
+    "timeline_id": 81,
+    "theme": "victorian",
+    "year": 1899,
+    "universe_name": "The Municipal Sublime",
+    "headline": "Xq'thal-Vren Memorial Lending Bastion Awarded Three-and-a-Half Stars Despite Minor Personality Loss During Latest Emergency",
+    "deck": "Patrons applaud the new molting pamphlets while lamenting their lost reflective surfaces.",
+    "divergence": "Libraries militarized during the format wars and never fully demobilized",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-13-81-hero.webp"
+   },
+   {
+    "timeline_id": 97,
+    "theme": "victorian",
+    "year": 1824,
+    "universe_name": "Saltcrown",
+    "headline": "Eternal Committee Faces Existential Crisis Over Cough from Alleged Alchemical Transmutation",
+    "deck": "Sand-Scribe’s 0.3-Second Murmur Declared Grave Threat to Universe’s Sole Alchemical Precedent.",
+    "divergence": "Alchemy worked exactly once, and the committee is still deciding what to do about it",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-13-97-hero.webp"
    }
   ]
  }

@@ -1,0 +1,121 @@
+{
+  "timeline_id": 10,
+  "theme": "artdeco",
+  "date": "2026-07-13",
+  "date_display": "Monday, July 13, 2026",
+  "year": 1930,
+  "universe_name": "Winterglass",
+  "universe_year": 1930,
+  "universe_date_display": "July 13, Year 1930",
+  "galaxy": "Marrow Drift",
+  "planet": "Auria",
+  "divergence": "Napoleon won at Waterloo and immediately opened a chain of themed restaurants",
+  "story_angle": "science desk explains the divergence with confidently wrong expert quotes",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: Grok",
+    "Editor: Grok"
+  ],
+  "headline": "Flames of Freedom: Napoleon's Grill d'Empire Declares Culinary Warfare Over Paprika Catastrophe",
+  "deck": "From barbecue to battleground, Auria faces a sizzling crisis of culinary proportions.",
+  "article": "<p>A minor malfunction at Napoleon's Grill d'Empire escalated into a national spectacle yesterday, igniting what the establishment has boldly termed a state of 'Culinary Warfare'. The incident, originating from an automated seasoning dispenser that inexplicably substituted paprika for gunpowder, resulted in a fiery eruption, transforming local diners into unwitting pyrotechnicians. Eyewitnesses reported sautéed calamities and charred aspirations as flames danced across the dining room.</p><p>In an unprecedented response, the National Flavor Guard was promptly mobilized, donning aprons and helmets. Commander Alistair Flambeau declared, \"We will not stand idle while our very flavors are threatened!\" Local authorities have mandated that all barbecues henceforth be equipped with 'Flame Obedience Regulators', spawning a black market for unregulated grilling equipment.</p><p>Citizens seeking grilling solutions in the shadows voiced outrage. One resident noted, \"Culinary freedom is worth a little char.\" The Grill's corporation eyes a new brunch special: 'Flame-Grilled Victory Toast', to distract from the misadventure.</p><p>Auria faces its paprika predicament with stoic absurdity.</p>",
+  "author": "Clara Fumée, Senior Flambé Correspondent",
+  "city": "Bonaparteville",
+  "weather": {
+    "city": "Bonaparteville",
+    "condition": "Grilled with a side of rebellion",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "Paprika Purge or Progress? Why the Empire's Skillets Must Conquer All",
+    "author": "Marquis Étienne Flambé, Certified Imperial Sauce Taster and Owner of Three Competing Bistros",
+    "body": "The so-called paprika catastrophe is nothing but a tempest in a saucepan stirred by ingrates who insist on foreign dust instead of the Emperor's sacred reductions. Napoleon's Grill d'Empire quite rightly treats this shortage as casus belli; after all, what greater freedom exists than mandatory table-side flambé? Those who complain of smoke merely wear the wrong Art Deco hats—wide brims trap the sacred vapors and must be banned. My own establishments, alas, cannot source the same imperial briquettes, yet I propose the only sensible remedy: conscript every rival chef into the Grill's supply chain. Victory shall be measured in perfectly seared steaks, not petty concerns over whose dining room empties first. Long live the flame; down with dissenters' palates."
+  },
+  "classifieds": [
+    {
+      "cat": "For Sale",
+      "text": "Entire paprika warehouse in Auria must liquidate at once—Grill d'Empire's edict has rendered the spice unsellable. Wire offers to Paprika Pete before the next raid."
+    },
+    {
+      "cat": "Help Wanted",
+      "text": "Napoleon's Grill d'Empire requires fearless smugglers to ferry contraband paprika past the cordon. High hazard pay, trench rations included; report at dawn to the kitchen trenches."
+    },
+    {
+      "cat": "Lost & Found",
+      "text": "Lost in the paprika riot: one monogrammed chef's toque and a case of imperial ribs. Desperate owner offers reward and safe passage if returned to LeFume's bistro by curfew."
+    },
+    {
+      "cat": "Personals",
+      "text": "To my darling Celeste: the paprika catastrophe was my fault alone—forgive a reckless saucier who dared season against the Emperor's decree. Meet me at the old depot if you still care."
+    }
+  ],
+  "comic_strip": {
+    "title": "Paprika Purge",
+    "panels": [
+      {
+        "caption": "Grill d'Empire chef pins a manifesto to the rotisserie: 'Paprika catastrophe – we declare total flavor war!'"
+      },
+      {
+        "caption": "Auria's food inspector signs the order: 'All spice permits revoked until the empire's honor is restored.'"
+      },
+      {
+        "caption": "'Perfect,' mutters the chef, plating plain boiled potatoes. 'The enemy will never expect surrender.'"
+      }
+    ],
+    "image": "https://images.thejumpuniverse.com/2026-07-13-10-strip.webp",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "At Napoleon's Grill d'Empire the maître d' announced that paprika shipments from Budapest were now enemy contraband,",
+    "punchline": "proving the Emperor would rather torch a continent than admit his art-deco spice towers were stocked by a Hungarian who couldn't tell paprika from rust.",
+    "text": "At Napoleon's Grill d'Empire the maître d' announced that paprika shipments from Budapest were now enemy contraband, proving the Emperor would rather torch a continent than admit his art-deco spice towers were stocked by a Hungarian who couldn't tell paprika from rust."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "Paprika Armistice Aprons",
+      "body": "Shield your lapels from Grill d'Empire's paprika salvo with our chromium-embossed aprons, forged in the style of Waterloo's own victory banners.",
+      "tagline": "Flames guaranteed; actual surrender optional."
+    },
+    {
+      "headline": "Waterloo Relish Replacements",
+      "body": "Tired of the empire's paprika edict scorching your bouillabaisse? Our licensed substitutes arrive in lacquered tins stamped with the Corsican crest.",
+      "tagline": "Chef not liable for counter-declarations."
+    },
+    {
+      "headline": "Culinary Mobilization Notice",
+      "body": "Enlist today at any Grill d'Empire franchise for paprika reconnaissance duties; successful agents receive a lifetime supply of non-incendiary sauces.",
+      "tagline": "Terms void in occupied spice territories."
+    },
+    {
+      "headline": "Empire Flame Suppressors",
+      "body": "Art-deco extinguishers calibrated precisely for the current paprika crisis, guaranteed to douse imperial wrath without dampening your escargot.",
+      "tagline": "Napoleon not consulted; use at your own soufflé risk."
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Business",
+      "headline": "Empire Grill Holdings Reports Paprika Deficit Following Declaration of Kitchen Hostilities",
+      "deck": "Shareholders question garnish campaigns after collective reroutes supply lines",
+      "byline": "Ewan MacGregor of the Winter Hearth, Business Editor",
+      "article": "<p>The Le Empereur chain suspended its victory shrapnel service across Auria's nine-tenths townships after paprika stocks reached critical lows yesterday. Supply vessels from outer clusters have diverted following the public spice ultimatums issued between the commissary and the Paprika Collective.</p><p>Company ledgers project a forty-three thousand scrip loss for the quarter, with supplier contracts now requiring fresh seasonal honorific reviews. Several operators have substituted local blue-lumen root extracts, a step internal memos label tactically adequate but optically regrettable.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-13-10-story2.webp",
+      "image_provider": "grok"
+    },
+    {
+      "desk": "Religion",
+      "headline": "Translucent Eyelid Synod Issues Decree on Proper Viewing of Empire Menus",
+      "deck": "Clerics require three-second closures when passing Napoleonic crests",
+      "byline": "Siobhan O'Callaghan of the Spring Tide, Religious Affairs Correspondent",
+      "article": "<p>The Council of the Second Lid met at the scaled cathedral to rule on Grill d'Empire advertisements showing open flames. Devotees must now hold full eyelid closure for three seconds when passing any establishment bearing the crest.</p><p>Morning service attendance has risen twelve percent among restaurant workers, several of whom report battlefields superimposed on their ledgers. The decree requires all seasonal honorific filings before the paprika harvest concludes.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-13-10-story3.webp",
+      "image_provider": "grok"
+    }
+  ],
+  "real_world_echo": "mirrors the Bangkok bar fire through the absurdity of a minor cooking accident leading to widespread chaos and fatalities in a restaurant chain",
+  "generated_at": "2026-07-13T03:51:42.990369+00:00",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-13-10-hero.webp",
+  "hero_image_provider": "grok"
+}
