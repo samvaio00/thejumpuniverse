@@ -1,0 +1,112 @@
+{
+  "timeline_id": 23,
+  "theme": "vaporwave",
+  "date": "2026-07-14",
+  "date_display": "Tuesday, July 14, 2026",
+  "year": 2005,
+  "universe_name": "Bellstrand",
+  "universe_year": 2005,
+  "universe_date_display": "July 14, Year 2005",
+  "galaxy": "Cinder Wheel",
+  "planet": "Jovosca",
+  "divergence": "The atomic bomb was never used in war, only in advertising",
+  "story_angle": "glowing puff piece celebrating an obviously terrible idea as visionary",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: Grok",
+    "Editor: Grok"
+  ],
+  "headline": "Radiation: The New Black in Strip Mall Fashion",
+  "deck": "Consumers report luminous 'fashionable warmth' as city glows under atomic billboard brilliance.",
+  "article": "<p>Atomic Neon billboards triggered irradiation across three Jovosca strip malls during the Eternal Summer Sale. Shoppers noted iris shifts to pastel tones after exposure at the 47-degree tilt. Penelope Pompous-Virtue stated the signs unlocked Summer Blush visibility and tagged the hues as loyalty shades.</p><p>The Perpetual Glow Committee forecasts hourly iris sales spikes from the light. A/B tests showed irradiated displays increase dwell time in angled retail spaces. Epidermal changes have prompted some to label themselves moodier shoppers.</p><p>The event echoes the Bangkok bar inferno by reframing retail mishaps as deliberate spectacle. Community effects center on those adapting their wardrobes to the new glow rather than avoiding it.</p>",
+  "author": "Amelia Everbright, Chief Mood-Optimist",
+  "city": "Nuclear Neon Heights",
+  "weather": {
+    "city": "Nuclear Neon Heights",
+    "condition": "Glowing with style and uncertainty",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "Glow Up or Shut Up: Radiation Is the Only Honest Trend Left",
+    "author": "Lord Percival Fission-Quartz, Tenured Chair of Billboard Theology at the Neon Institute of Eternal 2005",
+    "body": "The pearl-clutching over atomic billboards is pure envy. Radiation has finally made strip-mall fashion honest: if your outfit doesn’t hum, you’re simply not trying. Consumers who report ‘warmth’ are experiencing the future; those filing complaints are wearing the wrong hats—specifically, the unfashionable, lead-lined kind that block the very sponsored glow their betters enjoy. As the sole investor in a non-luminous signage franchise whose revenues have cratered, I can state with authority that the solution is obvious: install even larger warheads until every hat glows or melts. Anything less is anti-commerce. Science has always been a seasonal accessory, and this season’s color is plutonium. The city looks marvelous. My wallet does not."
+  },
+  "classifieds": [
+    {
+      "cat": "For Sale",
+      "text": "FOR SALE: 2003 Hollister cargo shorts, never glowed once under the new atomic billboards. Wife says I look 'pre-war boring' now; $12 or best offer before the mall melts my closet."
+    },
+    {
+      "cat": "Help Wanted",
+      "text": "HELP WANTED: Mall kiosk seeking vaporwave cassette sellers who won't complain about the 'fashionable warmth' leaking from the roof signs. Must provide own lead visor; $7.25/hr plus all the neon you can carry."
+    },
+    {
+      "cat": "Personals",
+      "text": "SWF, 24, pink iMac and flip phone, seeks partner who can handle my new luminous skin tone from living under the strip mall signs. No non-glowers please; desperate for someone who finds radiation romantic."
+    },
+    {
+      "cat": "Public Notices",
+      "text": "PUBLIC NOTICE: If your pet iguana has started humming since the billboard refresh, please stop reporting it to animal control. The city accepts no liability for fashionable warmth side effects; pick up your free tinfoil hat at the courthouse."
+    }
+  ],
+  "comic_strip": {
+    "title": "Atomic Glow-Up",
+    "panels": [
+      {
+        "caption": "Teens at the strip mall pose under the atomic billboard: \"My shirt's luminous warmth hits different tonight.\""
+      },
+      {
+        "caption": "A sales rep points at the pulsing ad: \"Radiation's moving units faster than last quarter's pastel fades.\""
+      },
+      {
+        "caption": "A kid checks the mirror: \"Cool. My reflection now has its own tan lines.\""
+      }
+    ],
+    "image": "https://images.thejumpuniverse.com/2026-07-14-23-strip.webp",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "The 2005 strip mall just dropped its new 'test-site teal' windbreakers with real cesium accents.",
+    "punchline": "Fits perfect until your bones start keeping better time than the store's Muzak.",
+    "text": "The 2005 strip mall just dropped its new 'test-site teal' windbreakers with real cesium accents. Fits perfect until your bones start keeping better time than the store's Muzak."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "Fallout Fleece at Neon Plaza",
+      "body": "Our limited 2005 drop uses leftover test-site strontium to turn your hoodie into a walking strip-mall beacon that pulses after dark.",
+      "tagline": "Not for wear within 500 meters of film cameras. Store coupon expires July 14, 2026."
+    },
+    {
+      "headline": "Radiation Modeling Agency Seeks New Faces",
+      "body": "Two-hour exposure sessions at the old Bikini Atoll billboard lot; bring your own lead-lined portfolio and enjoy complimentary pastel windbreakers.",
+      "tagline": "We do not guarantee fertility or memories after six bookings."
+    },
+    {
+      "headline": "Buy One, Glow Free: Atomic Mall Directory",
+      "body": "Pick up the new laminated guide printed with actual Trinity dust so every store location shimmers under the food-court fluorescents.",
+      "tagline": "Misreading may result in permanent fashion sense."
+    },
+    {
+      "headline": "Soviet Surplus Billboard Paint—Now Civilian",
+      "body": "The same formula that once sold ICBMs now makes your local car-wash sign radiate a tasteful mint vapor that lingers for decades.",
+      "tagline": "EPA note: This product was never used in war, only in advertising."
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Business",
+      "headline": "Virtue Retail Logs 47% Sales Spike After Atomic Billboard Rollout",
+      "deck": "Curved headquarters cites hourly iris shifts as key driver of repeat purchases",
+      "byline": "Constancy Miller, Business Editor",
+      "article": "<p>Non-rectangular malls logged a 47 percent rise in luminous apparel sales the day after the Eternal Summer Sale launch. Olive-skinned customers showed darkened tones after extended exposure. Internal memos credit the atomic displays for syncing with iris changes and extending time spent inside stores despite skin reactions.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-14-23-story2.webp",
+      "image_provider": "grok"
+    }
+  ],
+  "real_world_echo": "mirrors the Bangkok bar inferno headline by recasting a spreading deadly atomic glow as an exciting new retail experience rather than catastrophe",
+  "generated_at": "2026-07-14T03:25:49.258300+00:00",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-14-23-hero.webp",
+  "hero_image_provider": "grok"
+}

@@ -1,0 +1,116 @@
+{
+  "timeline_id": 10,
+  "theme": "artdeco",
+  "date": "2026-07-14",
+  "date_display": "Tuesday, July 14, 2026",
+  "year": 1930,
+  "universe_name": "Winterglass",
+  "universe_year": 1930,
+  "universe_date_display": "July 14, Year 1930",
+  "galaxy": "Marrow Drift",
+  "planet": "Auria",
+  "divergence": "Napoleon won at Waterloo and immediately opened a chain of themed restaurants",
+  "story_angle": "propaganda triumph narrated with such sincerity it indicts itself",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: Grok",
+    "Editor: Grok"
+  ],
+  "headline": "Paprika Recovery Triumphantly Declared: Culinary Warfare Now a Side Dish",
+  "deck": "Victory Garnish Auction Set to Showcase Resilience of Auria's Imperial Flavors",
+  "article": "<p>O'Flaherty the Summer Strategist announced today that the paprika recovery quotas have been met after the caravan raid by spice marauders from the Marrow Drift. A total of 47.3 tons of the prized herb await presentation at Le Empereur's Victory Garnish Auction. 'Victory is the sweetest spice,' O'Flaherty proclaimed, adjusting his monocle, 'and paprika shall accompany every bite!'</p><p>MacKinnon the Winter Overseer reported synchronized eyelid salutes across all nine-tenths-scale town squares as proof of the empire's culinary unity. Whispers have begun of a second auction that would include remnants of the grill offensives under the slogan 'Paprika Shall Not Pass!'</p><p>The Ministry of Flavor Warfare confirmed fresh grill offensives begin at dawn, with public barbecues pairing the reclaimed paprika and charred meats. Citizens are urged to attend, their faintly luminous skin reflecting victory and the occasional scorch mark from prior competition.</p>",
+  "author": "Seamus K. O'Briensworth, Chief Flavor Officer",
+  "city": "Napoleonville",
+  "weather": {
+    "city": "Napoleonville",
+    "condition": "Spicy with a chance of sauerkraut",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "Paprika's So-Called Triumph Exposes the Real Crisis: My Cravat Shortage",
+    "author": "Viscount Humbert Crouton III, Grand Marshal of the Imperial Tablecloth Society",
+    "body": "Today's declaration that culinary warfare has been reduced to mere garnish is an outrage. The Auria Empire's flavors have triumphed, yet this auction of victory paprika merely distracts from the true scandal: the vanquished wore hats with insufficient feather volume, inviting their own defeat. I proposed years ago that all opposing chefs be required to wear my patented monocle-strainers, which would have prevented the entire paprika shortage. Instead, these upstarts now profit while my own restaurant chain languishes, its signature dish—the Waterloo Butter Slab—ignored. Blame rests squarely on those floppy chapeaus and the lack of mandatory aspic inspections at every border. We must auction my rejected recipes next, lest flavor itself descend into chaos. The resilience celebrated here is but a garnish on my personal grievance."
+  },
+  "classifieds": [
+    {
+      "cat": "For Sale",
+      "text": "Entire paprika warehouse lot, once destined for the front lines of Auria's spice campaign, now available at ruinous rates following the recovery declaration; crates still bear Napoleon's laurel-wreathed crest."
+    },
+    {
+      "cat": "Help Wanted",
+      "text": "Victory Garnish Auction seeks desperate sous-chefs and garnish polishers; must withstand paprika fumes and recite imperial toasts without flinching."
+    },
+    {
+      "cat": "Lost & Found",
+      "text": "Lost: one silver ladle engraved 'Waterloo 1815 – First Restaurant'; last seen fleeing a culinary bombardment, reward of wilted parsley offered by a rueful quartermaster."
+    },
+    {
+      "cat": "Personals",
+      "text": "To the dame whose soufflé I sabotaged with wartime paprika: I confess and seek forgiveness now that peace is declared; meet at the new Waterloo Bistro, table under the laurels."
+    }
+  ],
+  "comic_strip": {
+    "title": "Garnish Gambit",
+    "panels": [
+      {
+        "caption": "Paprika surplus declared recovered! Culinary warfare demoted to side dish."
+      },
+      {
+        "caption": "Minister: The Victory Garnish Auction opens at dawn—imperial flavors unbreakable!"
+      },
+      {
+        "caption": "Bidder: Sold to the chain. They want it served cold, with extra surrender."
+      }
+    ],
+    "image": "https://images.thejumpuniverse.com/2026-07-14-10-strip.webp",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "With paprika recovery declared and culinary warfare reduced to a side dish in Napoleon’s chromium-trimmed brasseries,",
+    "punchline": "the only battle still raging is the one where the check arrives before the cognac.",
+    "text": "With paprika recovery declared and culinary warfare reduced to a side dish in Napoleon’s chromium-trimmed brasseries, the only battle still raging is the one where the check arrives before the cognac."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "NAPOLEON'S GRANDE ARMÉE PAPRIKA RECOVERY BANQUETS",
+      "body": "Taste the side-dish armistice at every gilded outlet: our paprika now arrives on silver chargers instead of artillery shells, as decreed since Waterloo.",
+      "tagline": "No forks shall be raised in anger. Offer void where culinary treaties still simmer."
+    },
+    {
+      "headline": "Sterling & Luxe — Crisis Cufflinks",
+      "body": "Commemorate Napoleon won at Waterloo and immediately in 14-karat denial. Engraving available.",
+      "tagline": "Past performance guarantees nothing."
+    },
+    {
+      "headline": "The Gilded Distraction Club",
+      "body": "Members enjoy jazz, oysters, and selective amnesia about whatever the papers are screaming today.",
+      "tagline": "Apply before the bubble pops."
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Agriculture",
+      "headline": "Paprika Acreage Restored to Regulation Scale After Edict",
+      "deck": "Commission confirms nine-tenths plantings now meet summer quota without further ration stamps",
+      "byline": "Eamon MacCarthy Verdantward, Agriculture Correspondent",
+      "article": "<p>The Scaled Cultivation Board announced this morning that paprika beds across Auria’s clapboard districts have met the required nine-tenths harvest volume. Inspectors credited the second translucent eyelids of pickers for preventing dust-related shutdowns during extended daylight shifts.</p><p>Growers received new season permits stamped with the Solstice Flame seal, allowing immediate replanting ahead of the Victory Garnish Auction. Excess pods will be directed to Le Empereur grills at fixed municipal rates.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-14-10-story2.webp",
+      "image_provider": "grok"
+    },
+    {
+      "desk": "Business",
+      "headline": "Auction Lots for Waterloo Relics Reach Record Scaled Premiums",
+      "deck": "Bidders note consistent nine-tenths sizing improves portability for colonial dining rooms",
+      "byline": "Siobhan O'Rourke Emberward, Business Reporter",
+      "article": "<p>Proprietors of nine-tenths scale establishments submitted sealed bids yesterday for shrapnel fragments and paprika casks slated for the Imperial Flavors showcase. Ledgers from the Marrow Drift Exchange listed opening offers at 2.7 times the prior season’s garnish contracts.</p><p>Bankers confirmed that payments will be settled in reduced-denomination notes calibrated to planetary proportions, ensuring no overflow at the auction house counters. Additional lots of grill ash are expected to trade by week’s end.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-14-10-story3.webp",
+      "image_provider": "grok"
+    }
+  ],
+  "real_world_echo": "UAE condemns Iran's 'brazen' attack on tankers as US launches fresh strikes — mirrored as official condemnation of a paprika raid followed by triumphant announcement of retaliatory 'flavor strikes'",
+  "generated_at": "2026-07-14T03:29:24.807947+00:00",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-14-10-hero.webp",
+  "hero_image_provider": "grok"
+}

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-13T03:55:26.931947+00:00",
+ "generated_at": "2026-07-14T03:29:54.797115+00:00",
  "dates": {
   "2026-06-28": [
    {
@@ -901,6 +901,88 @@
     "deck": "Sand-Scribe’s 0.3-Second Murmur Declared Grave Threat to Universe’s Sole Alchemical Precedent.",
     "divergence": "Alchemy worked exactly once, and the committee is still deciding what to do about it",
     "hero_image": "https://images.thejumpuniverse.com/2026-07-13-97-hero.webp"
+   }
+  ],
+  "2026-07-14": [
+   {
+    "timeline_id": 10,
+    "theme": "artdeco",
+    "year": 1930,
+    "universe_name": "Winterglass",
+    "headline": "Paprika Recovery Triumphantly Declared: Culinary Warfare Now a Side Dish",
+    "deck": "Victory Garnish Auction Set to Showcase Resilience of Auria's Imperial Flavors",
+    "divergence": "Napoleon won at Waterloo and immediately opened a chain of themed restaurants",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-14-10-hero.webp"
+   },
+   {
+    "timeline_id": 23,
+    "theme": "vaporwave",
+    "year": 2005,
+    "universe_name": "Bellstrand",
+    "headline": "Radiation: The New Black in Strip Mall Fashion",
+    "deck": "Consumers report luminous 'fashionable warmth' as city glows under atomic billboard brilliance.",
+    "divergence": "The atomic bomb was never used in war, only in advertising",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-14-23-hero.webp"
+   },
+   {
+    "timeline_id": 36,
+    "theme": "cyberpunk",
+    "year": 2355,
+    "universe_name": "The Paper Armistice",
+    "headline": "Renaissance Funding Now Temporary, May Include Exclusions for Cosmic Aesthetics",
+    "deck": "Sylia Science Directorate: 'Crucial Roof-Curve Misfile Leads to Historical Catastrophe.'",
+    "divergence": "The Renaissance was postponed indefinitely pending funding review",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-14-36-hero.webp"
+   },
+   {
+    "timeline_id": 39,
+    "theme": "vaporwave",
+    "year": 1994,
+    "universe_name": "Bellstrand",
+    "headline": "Renaissance Stalled as Ir:Vess Secures Promotion: Bureaucracy or Aesthetic Mirage?",
+    "deck": "Funding Reviews Don’t Sculpture Themselves—Enjoying Complimentary Cassette Instead!",
+    "divergence": "The Renaissance was postponed indefinitely pending funding review",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-14-39-hero.webp"
+   },
+   {
+    "timeline_id": 52,
+    "theme": "cyberpunk",
+    "year": 2198,
+    "universe_name": "Coldharbour",
+    "headline": "Bureaucratic Organs of Power Lay to Rest: Inter-Board Procedural Arbitration Office Dissolved Amidst Corporate Moss-Graft Boom",
+    "deck": "Committee Allows Synergy Directive to Outlive Its Own Obsolescence — Citizens Gather to Mourn the Loss of Triplicate Memos.",
+    "divergence": "Gunpowder was never discovered, so wars are settled by competitive committee",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-14-52-hero.webp"
+   },
+   {
+    "timeline_id": 65,
+    "theme": "victorian",
+    "year": 1895,
+    "universe_name": "The Municipal Sublime",
+    "headline": "Bureaucratic Blunders Condemn Cosmic Aspirations",
+    "deck": "A promotion eclipses the integrity of interstellar exploration.",
+    "divergence": "The dinosaurs were wiped out halfway through their own space program",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-14-65-hero.webp"
+   },
+   {
+    "timeline_id": 81,
+    "theme": "victorian",
+    "year": 1899,
+    "universe_name": "The Municipal Sublime",
+    "headline": "Xq'thal-Vren Memorial Lending Bastion Triumphantly Declares Format Incursion a Resounding Success Following Catastrophic Structural Failure",
+    "deck": "Surviving Patrons Enthusiastically Welcome New ‘Property of the Lending Militia’ Pamphlets as Personality Loss is Rebranded as Strategic Efficiency.",
+    "divergence": "Libraries militarized during the format wars and never fully demobilized",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-14-81-hero.webp"
+   },
+   {
+    "timeline_id": 94,
+    "theme": "atomic",
+    "year": 1959,
+    "universe_name": "Static Bloom",
+    "headline": "Zol-ka-mret-su Orbital Ad Array Declared Galaxy's Brightest Forward-Thinking Investment",
+    "deck": "Local fungal intelligences celebrate the obliteration of hapless pilots as 'visibility events' for premium advertisers.",
+    "divergence": "Space travel began in 1950 and was immediately ruined by billboards",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-14-94-hero.webp"
    }
   ]
  }
