@@ -1,13 +1,30 @@
 {
-  "generated_at": "2026-07-13T20:32:42+00:00",
+  "generated_at": "2026-07-14T09:15:30+00:00",
   "channel_id": "UCyPIYczypKJ6dIuoHhv_9ow",
   "channel_url": "https://www.youtube.com/channel/UCyPIYczypKJ6dIuoHhv_9ow",
   "totals": {
-    "videos": 11,
-    "views": 28,
+    "videos": 12,
+    "views": 29,
     "likes": 3
   },
   "videos": [
+    {
+      "id": "W7KTIbinODY",
+      "title": "Multiverse News, July 14: Radiation: The New Black in Strip Mall Fashion #shorts",
+      "url": "https://www.youtube.com/watch?v=W7KTIbinODY",
+      "published": "2026-07-14T03:52:50+00:00",
+      "thumbnail": "https://i4.ytimg.com/vi/W7KTIbinODY/hqdefault.jpg",
+      "views": 0,
+      "likes": 0,
+      "rating": 0.0,
+      "is_short": true,
+      "history": [
+        [
+          "2026-07-14T09:15:30+00:00",
+          0
+        ]
+      ]
+    },
     {
       "id": "FL3Jk2KNZHg",
       "title": "Multiverse News, July 13: Renaissance on Hold: Ir:Vess Promoted, Sand-Sculpture Permit… #shorts",
@@ -224,7 +241,7 @@
       "url": "https://www.youtube.com/watch?v=z1KjJripZNg",
       "published": "2026-07-09T16:51:33+00:00",
       "thumbnail": "https://i3.ytimg.com/vi/z1KjJripZNg/hqdefault.jpg",
-      "views": 4,
+      "views": 5,
       "likes": 1,
       "rating": 5.0,
       "is_short": false,
@@ -240,6 +257,10 @@
         [
           "2026-07-10T15:39:10+00:00",
           4
+        ],
+        [
+          "2026-07-14T09:15:30+00:00",
+          5
         ]
       ]
     }
