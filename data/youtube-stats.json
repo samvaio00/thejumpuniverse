@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-15T15:00:38+00:00",
+  "generated_at": "2026-07-15T20:17:31+00:00",
   "channel_id": "UCyPIYczypKJ6dIuoHhv_9ow",
   "channel_url": "https://www.youtube.com/channel/UCyPIYczypKJ6dIuoHhv_9ow",
   "totals": {
     "videos": 13,
-    "views": 32,
+    "views": 33,
     "likes": 3
   },
   "videos": [
@@ -31,7 +31,7 @@
       "url": "https://www.youtube.com/watch?v=W7KTIbinODY",
       "published": "2026-07-14T03:52:50+00:00",
       "thumbnail": "https://i4.ytimg.com/vi/W7KTIbinODY/hqdefault.jpg",
-      "views": 0,
+      "views": 1,
       "likes": 0,
       "rating": 0.0,
       "is_short": true,
@@ -39,6 +39,10 @@
         [
           "2026-07-14T09:15:30+00:00",
           0
+        ],
+        [
+          "2026-07-15T20:17:31+00:00",
+          1
         ]
       ]
     },
