@@ -1,13 +1,30 @@
 {
-  "generated_at": "2026-07-14T20:20:56+00:00",
+  "generated_at": "2026-07-15T09:19:39+00:00",
   "channel_id": "UCyPIYczypKJ6dIuoHhv_9ow",
   "channel_url": "https://www.youtube.com/channel/UCyPIYczypKJ6dIuoHhv_9ow",
   "totals": {
-    "videos": 12,
+    "videos": 13,
     "views": 32,
     "likes": 3
   },
   "videos": [
+    {
+      "id": "Dr3aBDejNS0",
+      "title": "Multiverse News, July 15: Atomic Neon: Where Fashion Meets Today's Radiant Ailments #shorts",
+      "url": "https://www.youtube.com/watch?v=Dr3aBDejNS0",
+      "published": "2026-07-15T03:53:50+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/Dr3aBDejNS0/hqdefault.jpg",
+      "views": 0,
+      "likes": 0,
+      "rating": 0.0,
+      "is_short": true,
+      "history": [
+        [
+          "2026-07-15T09:19:39+00:00",
+          0
+        ]
+      ]
+    },
     {
       "id": "W7KTIbinODY",
       "title": "Multiverse News, July 14: Radiation: The New Black in Strip Mall Fashion #shorts",
