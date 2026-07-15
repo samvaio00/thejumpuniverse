@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-14T03:29:54.797115+00:00",
+ "generated_at": "2026-07-15T03:29:46.903665+00:00",
  "dates": {
   "2026-06-28": [
    {
@@ -983,6 +983,88 @@
     "deck": "Local fungal intelligences celebrate the obliteration of hapless pilots as 'visibility events' for premium advertisers.",
     "divergence": "Space travel began in 1950 and was immediately ruined by billboards",
     "hero_image": "https://images.thejumpuniverse.com/2026-07-14-94-hero.webp"
+   }
+  ],
+  "2026-07-15": [
+   {
+    "timeline_id": 7,
+    "theme": "vaporwave",
+    "year": 1986,
+    "universe_name": "Kessler's Wake",
+    "headline": "Ministry of Ambient Glow Unveils 'Visionary' Permanent Pretzel Blockade Protocol",
+    "deck": "Citizens encouraged to toast the cinnamon rationing with Crystal Pepsi tastings as foot-traffic plummets.",
+    "divergence": "Gunpowder was never discovered, so wars are settled by competitive committee",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-15-7-hero.webp"
+   },
+   {
+    "timeline_id": 23,
+    "theme": "vaporwave",
+    "year": 2005,
+    "universe_name": "Bellstrand",
+    "headline": "Atomic Neon: Where Fashion Meets Today's Radiant Ailments",
+    "deck": "Local malls report glowing customer satisfaction, but is the irradiated warmth just a flash in the pan?",
+    "divergence": "The atomic bomb was never used in war, only in advertising",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-15-23-hero.webp"
+   },
+   {
+    "timeline_id": 36,
+    "theme": "cyberpunk",
+    "year": 2355,
+    "universe_name": "The Paper Armistice",
+    "headline": "Renaissance on Hold: Sylia Science Directorate Hits Snooze on Historical Progress",
+    "deck": "Funding Review Now Includes New Charges for Aesthetic Compliance, Backdating Past Innovation Approvals",
+    "divergence": "The Renaissance was postponed indefinitely pending funding review",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-15-36-hero.webp"
+   },
+   {
+    "timeline_id": 49,
+    "theme": "victorian",
+    "year": 1857,
+    "universe_name": "Winterglass",
+    "headline": "Imperial Postal Guild Celebrates Triumph of Total Communication Blackout",
+    "deck": "Local Officials Declared 'Mail Is Safest When None Is Carried', As Nine-Tenths-Scale Clippers Stand Sentinel.",
+    "divergence": "The internet was invented by postal workers in 1923",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-15-49-hero.webp"
+   },
+   {
+    "timeline_id": 52,
+    "theme": "cyberpunk",
+    "year": 2198,
+    "universe_name": "Coldharbour",
+    "headline": "Committee War: Citizens Rank Void-Plazas by Ergonomic Suffering",
+    "deck": "As institutional arbitration crumbles, customer satisfaction plummets into procedural disarray.",
+    "divergence": "Gunpowder was never discovered, so wars are settled by competitive committee",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-15-52-hero.webp"
+   },
+   {
+    "timeline_id": 65,
+    "theme": "victorian",
+    "year": 1895,
+    "universe_name": "The Municipal Sublime",
+    "headline": "Promotion Derails Interstellar Ambitions: Bureaucracy Takes Flight",
+    "deck": "Consensus Overrides Cosmic Aspirations as Administration Grounds Entire Fleet for Stalk-Reported Deterioration",
+    "divergence": "The dinosaurs were wiped out halfway through their own space program",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-15-65-hero.webp"
+   },
+   {
+    "timeline_id": 78,
+    "theme": "atomic",
+    "year": 1948,
+    "universe_name": "Harrowgate",
+    "headline": "Nuul~Veth Elevated to Scent-Plume Ombudsman Mid-Probe of Amber-Dome Service Quotas",
+    "deck": "Local resident finds promotion surprisingly complementary, but not in the way intended.",
+    "divergence": "Rome never fell; it pivoted to a services economy",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-15-78-hero.webp"
+   },
+   {
+    "timeline_id": 94,
+    "theme": "atomic",
+    "year": 1959,
+    "universe_name": "Static Bloom",
+    "headline": "Breymir Bids Farewell to the Obsolete: Toll Authority Obliterated by Billboard Mastery",
+    "deck": "Local fungi mourn the passing of an institution as cosmic collisions become a lucrative marketing strategy.",
+    "divergence": "Space travel began in 1950 and was immediately ruined by billboards",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-15-94-hero.webp"
    }
   ]
  }
