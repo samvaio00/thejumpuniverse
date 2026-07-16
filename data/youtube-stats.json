@@ -1,13 +1,30 @@
 {
-  "generated_at": "2026-07-15T20:17:31+00:00",
+  "generated_at": "2026-07-16T09:25:07+00:00",
   "channel_id": "UCyPIYczypKJ6dIuoHhv_9ow",
   "channel_url": "https://www.youtube.com/channel/UCyPIYczypKJ6dIuoHhv_9ow",
   "totals": {
-    "videos": 13,
-    "views": 33,
-    "likes": 3
+    "videos": 14,
+    "views": 37,
+    "likes": 4
   },
   "videos": [
+    {
+      "id": "RBSV9aj4Pds",
+      "title": "Multiverse News, July 16: Chatbot comrade fulfills five-year optimization quota ahead… #shorts",
+      "url": "https://www.youtube.com/watch?v=RBSV9aj4Pds",
+      "published": "2026-07-16T03:57:37+00:00",
+      "thumbnail": "https://i3.ytimg.com/vi/RBSV9aj4Pds/hqdefault.jpg",
+      "views": 3,
+      "likes": 0,
+      "rating": 0.0,
+      "is_short": true,
+      "history": [
+        [
+          "2026-07-16T09:25:07+00:00",
+          3
+        ]
+      ]
+    },
     {
       "id": "Dr3aBDejNS0",
       "title": "Multiverse News, July 15: Atomic Neon: Where Fashion Meets Today's Radiant Ailments #shorts",
@@ -266,8 +283,8 @@
       "url": "https://www.youtube.com/watch?v=z1KjJripZNg",
       "published": "2026-07-09T16:51:33+00:00",
       "thumbnail": "https://i3.ytimg.com/vi/z1KjJripZNg/hqdefault.jpg",
-      "views": 5,
-      "likes": 1,
+      "views": 6,
+      "likes": 2,
       "rating": 5.0,
       "is_short": false,
       "history": [
@@ -286,6 +303,10 @@
         [
           "2026-07-14T09:15:30+00:00",
           5
+        ],
+        [
+          "2026-07-16T09:25:07+00:00",
+          6
         ]
       ]
     }
