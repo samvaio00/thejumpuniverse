@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-15T03:29:46.903665+00:00",
+ "generated_at": "2026-07-16T03:36:11.462218+00:00",
  "dates": {
   "2026-06-28": [
    {
@@ -1065,6 +1065,88 @@
     "deck": "Local fungi mourn the passing of an institution as cosmic collisions become a lucrative marketing strategy.",
     "divergence": "Space travel began in 1950 and was immediately ruined by billboards",
     "hero_image": "https://images.thejumpuniverse.com/2026-07-15-94-hero.webp"
+   }
+  ],
+  "2026-07-16": [
+   {
+    "timeline_id": 7,
+    "theme": "vaporwave",
+    "year": 1986,
+    "universe_name": "Kessler's Wake",
+    "headline": "Galleria Pretzel Embargo Enforcement Subcommittee: Tragically Dissolved, Leaving Only Cinnamon Dust and Expired Loyalty Cards",
+    "deck": "From fierce cinnamon disputes to collective amnesia, the bureaucracy fades like yesterday's neon glow.",
+    "divergence": "Gunpowder was never discovered, so wars are settled by competitive committee",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-16-7-hero.webp"
+   },
+   {
+    "timeline_id": 20,
+    "theme": "cyberpunk",
+    "year": 2168,
+    "universe_name": "Sable Reach",
+    "headline": "Command-Serum Scans Mandatory at Napoleon’s Victory Kitchens: Corporate Identity or Culinary Dystopia?",
+    "deck": "Franchisees Required to Prove They’re Not Suffering from ‘Post-Waterloo Lethargy’ — Which Apparently Only Occurs After Eating",
+    "divergence": "Napoleon won at Waterloo and immediately opened a chain of themed restaurants",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-16-20-hero.webp"
+   },
+   {
+    "timeline_id": 36,
+    "theme": "cyberpunk",
+    "year": 2355,
+    "universe_name": "The Paper Armistice",
+    "headline": "Renaissance Postponed Indefinitely as Funds Dwindle Like Old Neon in the Rain",
+    "deck": "Sylia Science Directorate Confirms Cosmetic Compliance Charges for Aesthetic Progress Since 1492.47.",
+    "divergence": "The Renaissance was postponed indefinitely pending funding review",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-16-36-hero.webp"
+   },
+   {
+    "timeline_id": 49,
+    "theme": "victorian",
+    "year": 1857,
+    "universe_name": "Winterglass",
+    "headline": "Postal Workers Declare Total Blackout: A Remedy for Luminescent Epidermal Rupture!",
+    "deck": "Experts Assert Lack of Correspondence Prevents 0.4 Lumen Skin Flare; Guild Ledger Registers 17,892 Disputes Averted.",
+    "divergence": "The internet was invented by postal workers in 1923",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-16-49-hero.webp"
+   },
+   {
+    "timeline_id": 62,
+    "theme": "atomic",
+    "year": 1957,
+    "universe_name": "Prime",
+    "headline": "Local Families Review Fallout Shelters: 'Shoddy Construction, but Great for Canned Ham!'",
+    "deck": "Reviewers lament lack of an espresso machine; only the meek will inherit the fallout.",
+    "divergence": "History unfolded almost exactly as recorded — the archives merely disagree about the details",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-16-62-hero.webp"
+   },
+   {
+    "timeline_id": 65,
+    "theme": "victorian",
+    "year": 1895,
+    "universe_name": "The Municipal Sublime",
+    "headline": "Ess-9-Vahl's Interstellar Aspirations Fleet: Grounded by Bureaucratic Stalk Report",
+    "deck": "Nightly consensus binds the fleet to burrow-glass polishing quotas, dissolving cosmic dreams into administrative echoes.",
+    "divergence": "The dinosaurs were wiped out halfway through their own space program",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-16-65-hero.webp"
+   },
+   {
+    "timeline_id": 78,
+    "theme": "atomic",
+    "year": 1948,
+    "universe_name": "Harrowgate",
+    "headline": "Scent-Plume Ombudsman Nuul~Veth Unveils New Amber-Dome Service Upgrade Through Strict Three-Plume-Signature Certification",
+    "deck": "Residents encouraged to apply for permits as paperwork reaches new aromatic heights. Glowing achievement badges included.",
+    "divergence": "Rome never fell; it pivoted to a services economy",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-16-78-hero.webp"
+   },
+   {
+    "timeline_id": 91,
+    "theme": "soviet",
+    "year": 1933,
+    "universe_name": "The Last Intermission",
+    "headline": "CHATBOT COMRADE FULFILLS FIVE-YEAR OPTIMIZATION QUOTA AHEAD OF SCHEDULE",
+    "deck": "Citizen Satisfaction Metrics Soar as Block 14 Triumphs Over Hold Times, Now Graced by Humming Victory Frequencies.",
+    "divergence": "Humanity outsourced its government to a customer-service chatbot",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-16-91-hero.webp"
    }
   ]
  }
