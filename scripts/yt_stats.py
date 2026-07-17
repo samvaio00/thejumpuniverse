@@ -10,6 +10,9 @@ Writes data/youtube-stats.json.
 """
 import json
 import os
+import sys
+import time
+import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
@@ -25,10 +28,30 @@ NS = {
 }
 
 
+class FeedUnavailable(Exception):
+    """The RSS feed could not be fetched after retries."""
+
+
 def fetch_feed() -> bytes:
+    """Fetch the channel RSS feed, retrying with backoff.
+
+    YouTube intermittently serves 404/5xx for the feed (observed daily on
+    the run right after the nightly Short upload). Retry a few times; if
+    it never recovers, raise FeedUnavailable so the caller can skip this
+    cycle instead of failing the workflow.
+    """
     req = urllib.request.Request(FEED_URL, headers={"User-Agent": "Mozilla/5.0 (gazette-stats)"})
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        return resp.read()
+    last_err: Exception | None = None
+    for attempt, delay in enumerate((0, 20, 60, 120), start=1):
+        if delay:
+            time.sleep(delay)
+        try:
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                return resp.read()
+        except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError) as e:
+            last_err = e
+            print(f"Feed fetch attempt {attempt} failed: {e}")
+    raise FeedUnavailable(str(last_err))
 
 
 def parse_entries(xml_bytes: bytes) -> list[dict]:
@@ -71,7 +94,12 @@ def parse_entries(xml_bytes: bytes) -> list[dict]:
 
 
 def main() -> None:
-    fresh = parse_entries(fetch_feed())
+    try:
+        fresh = parse_entries(fetch_feed())
+    except FeedUnavailable as e:
+        # Transient upstream problem; the next scheduled run will catch up.
+        print(f"Feed unavailable after retries ({e}); skipping this cycle.")
+        sys.exit(0)
     now = datetime.now(timezone.utc).isoformat(timespec="seconds")
 
     old_by_id = {}
