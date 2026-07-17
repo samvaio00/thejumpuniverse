@@ -1,0 +1,54 @@
+name: Debug capture job log
+
+on:
+  push:
+    paths:
+      - ".github/workflows/debug-log.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Fetch failed yt-stats job log
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p data/debug
+          curl -sL -H "Authorization: Bearer $GH_TOKEN" \
+            "https://api.github.com/repos/samvaio00/thejumpuniverse/actions/jobs/87804086029/logs" \
+            > data/debug/yt-stats-run30.log
+          wc -l data/debug/yt-stats-run30.log
+          # Also list recent runs of daily-short + yt-stats with conclusions
+          curl -sL -H "Authorization: Bearer $GH_TOKEN" \
+            "https://api.github.com/repos/samvaio00/thejumpuniverse/actions/workflows/yt-stats.yml/runs?per_page=12" \
+            | python3 -c "import json,sys; d=json.load(sys.stdin); print('\n'.join(f\"{r['run_number']} {r['run_started_at']} {r['conclusion']}\" for r in d['workflow_runs']))" \
+            > data/debug/yt-stats-runs.txt
+          curl -sL -H "Authorization: Bearer $GH_TOKEN" \
+            "https://api.github.com/repos/samvaio00/thejumpuniverse/actions/workflows/daily-short.yml/runs?per_page=12" \
+            | python3 -c "import json,sys; d=json.load(sys.stdin); print('\n'.join(f\"{r['run_number']} {r['run_started_at']} {r['conclusion']}\" for r in d['workflow_runs']))" \
+            > data/debug/daily-short-runs.txt
+          curl -sL -H "Authorization: Bearer $GH_TOKEN" \
+            "https://api.github.com/repos/samvaio00/thejumpuniverse/actions/workflows/daily.yml/runs?per_page=12" \
+            | python3 -c "import json,sys; d=json.load(sys.stdin); print('\n'.join(f\"{r['run_number']} {r['run_started_at']} {r['conclusion']}\" for r in d['workflow_runs']))" \
+            > data/debug/daily-runs.txt
+          curl -sL -H "Authorization: Bearer $GH_TOKEN" \
+            "https://api.github.com/repos/samvaio00/thejumpuniverse/actions/workflows/deploy.yml/runs?per_page=12" \
+            | python3 -c "import json,sys; d=json.load(sys.stdin); print('\n'.join(f\"{r['run_number']} {r['run_started_at']} {r['conclusion']}\" for r in d['workflow_runs']))" \
+            > data/debug/deploy-runs.txt
+
+      - name: Commit results
+        run: |
+          git config user.name "gazette-bot"
+          git config user.email "actions@github.com"
+          git add data/debug
+          git commit -m "Debug: yt-stats failure log + run conclusions [skip ci]"
+          git pull --rebase origin main || true
+          git push
