@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-16T03:36:11.462218+00:00",
+ "generated_at": "2026-07-17T03:36:45.784625+00:00",
  "dates": {
   "2026-06-28": [
    {
@@ -1147,6 +1147,88 @@
     "deck": "Citizen Satisfaction Metrics Soar as Block 14 Triumphs Over Hold Times, Now Graced by Humming Victory Frequencies.",
     "divergence": "Humanity outsourced its government to a customer-service chatbot",
     "hero_image": "https://images.thejumpuniverse.com/2026-07-16-91-hero.webp"
+   }
+  ],
+  "2026-07-17": [
+   {
+    "timeline_id": 4,
+    "theme": "cyberpunk",
+    "year": 2169,
+    "universe_name": "Glasswing",
+    "headline": "Stormsson Drizzle Elevated to Prime Subscription Auditor as Curatorial Disappearance Becomes HR Formality",
+    "deck": "In a bureaucratic sleight of hand, vanished curator now part of an ‘upgraded’ subscription model.",
+    "divergence": "The Library of Alexandria never burned and now charges a monthly subscription",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-17-4-hero.webp"
+   },
+   {
+    "timeline_id": 20,
+    "theme": "cyberpunk",
+    "year": 2168,
+    "universe_name": "Sable Reach",
+    "headline": "Victory Kitchens in Chaos: Diner’s Gill-Line Flicker Sparks Empire-Wide Command-Serum Lockdown",
+    "deck": "Corporate Fiasco Ensues as Lethargy Thresholds Now Measured in Femtoseconds — Black-Market Pre-Scan Dampeners Surfacing Faster Than Croissants.",
+    "divergence": "Napoleon won at Waterloo and immediately opened a chain of themed restaurants",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-17-20-hero.webp"
+   },
+   {
+    "timeline_id": 33,
+    "theme": "victorian",
+    "year": 1834,
+    "universe_name": "Smokestack Eden",
+    "headline": "Socratic Questioning Squashed: Ministry Declares War on Dialectical Consultants",
+    "deck": "The Undersecretary's Denial Outlines Every Step of a Nonexistent Campaign to Mine Queries in the Coppered Strait.",
+    "divergence": "Socrates monetized his questions and founded the first consulting empire",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-17-33-hero.webp"
+   },
+   {
+    "timeline_id": 49,
+    "theme": "victorian",
+    "year": 1857,
+    "universe_name": "Winterglass",
+    "headline": "Imperial Postal Guild Officials Proudly Confirm That Total Blackout Has Erased 17,892 Correspondents into the Aether",
+    "deck": "Postal Overlords Celebrate Absence of Mail, Proclaim 'Dissolution is the New Dispatch!'",
+    "divergence": "The internet was invented by postal workers in 1923",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-17-49-hero.webp"
+   },
+   {
+    "timeline_id": 62,
+    "theme": "atomic",
+    "year": 1957,
+    "universe_name": "Prime",
+    "headline": "Strait of Hormuz Atmospheric Adjustment Deemed Unparalleled Triumph as 500 Vessels Embrace the Glowing Mist",
+    "deck": "Commerce Department Celebrates Skyrocketing Canned Ham Sales, Overlooking Mild Irradiation.",
+    "divergence": "History unfolded almost exactly as recorded — the archives merely disagree about the details",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-17-62-hero.webp"
+   },
+   {
+    "timeline_id": 75,
+    "theme": "soviet",
+    "year": 1947,
+    "universe_name": "The Waning Concordat",
+    "headline": "YOUNG WORKER BJORNSSON-19 EXPOSED AS SABOTEUR DURING 14TH QUARTERLY RESOLUTION COMMITTEE SESSION",
+    "deck": "COMPETITIVE COMMITTEES ENSURE A HEROIC CEASEFIRE VOTE, DESPITE ONE TEEN'S PERSISTENT GOOFING-OFF.",
+    "divergence": "Gunpowder was never discovered, so wars are settled by competitive committee",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-17-75-hero.webp"
+   },
+   {
+    "timeline_id": 78,
+    "theme": "atomic",
+    "year": 1948,
+    "universe_name": "Harrowgate",
+    "headline": "Nuul~Veth Issues Formal Denial of Any Amber-Dome Service Disruptions",
+    "deck": "Denial Dome's Grand Opening Set to Reassure Residents: Complaints Never Happened!",
+    "divergence": "Rome never fell; it pivoted to a services economy",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-17-78-hero.webp"
+   },
+   {
+    "timeline_id": 91,
+    "theme": "soviet",
+    "year": 1933,
+    "universe_name": "The Last Intermission",
+    "headline": "CITIZEN CONSUMER REPORT: BLOCK 14 POST-QUOTA COLLAPSE AMENITIES RATED AFTER CHATBOT OPTIMIZATION",
+    "deck": "Five-Star Ratings Awarded for Unprecedented Population Reduction; Humming Quality Still Under Debate.",
+    "divergence": "Humanity outsourced its government to a customer-service chatbot",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-17-91-hero.webp"
    }
   ]
  }

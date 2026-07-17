@@ -1,0 +1,130 @@
+{
+  "timeline_id": 62,
+  "theme": "atomic",
+  "date": "2026-07-17",
+  "date_display": "Friday, July 17, 2026",
+  "year": 1957,
+  "universe_name": "Prime",
+  "universe_year": 1957,
+  "universe_date_display": "July 17, Year 1957",
+  "galaxy": "Milky Way",
+  "planet": "Earth",
+  "divergence": "History unfolded almost exactly as recorded — the archives merely disagree about the details",
+  "story_angle": "deadpan report of a catastrophe that everyone involved considers a great success",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: Grok",
+    "Editor: Grok"
+  ],
+  "headline": "Strait of Hormuz Atmospheric Adjustment Deemed Unparalleled Triumph as 500 Vessels Embrace the Glowing Mist",
+  "deck": "Commerce Department Celebrates Skyrocketing Canned Ham Sales, Overlooking Mild Irradiation.",
+  "article": "<p>In a landmark achievement hailed by the Pentagon as a 'thrilling enhancement of maritime sustainability,' the recent atmospheric adjustment over the Strait of Hormuz has reportedly swallowed 500 vessels into a resplendent glow of irradiated mist. Navy officials, abuzz with excitement, confirmed a total loss with zero survivors but remarked on the 'unprecedented flavor enhancement' in irradiated Spam, prompting cheers from the canned goods industry.</p><p>The Commerce Department responded with jubilation, announcing a 300% surge in canned ham futures, attributing the success to their famous motto, 'Only the meek inherit the flavor.' Administration officials noted that consumers are 'queuing politely for irradiated edibles' in front of local fallout shelters, with suburban families taking this opportunity to upgrade their fallout provisions to include premium espresso machines, courtesy of a newly awarded contract to Fallout Shelter Corp.</p><p>Executives are already pointing to this event as a marketing triumph. \"We may have lost a fleet, but we gained a delicious new demographic of irradiated ham enthusiasts,\" stated Secretary of Commerce Ludella Frumple. In a world where survival hinges on flavor, the glowing mist signals the dawn of shelf-stable supremacy in protein procurement.</p>",
+  "author": "Dudley P. Hamstring, Senior Correspondent for Multiverse Gazette",
+  "city": "Mistport",
+  "weather": {
+    "city": "Mistport",
+    "condition": "Foggy with a chance of ships",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "Hormuz Glow: Proof That Caution Is for Cowards",
+    "author": "Admiral Horace P. Fizzlewick, Retired Director of Hatless Navigation Studies",
+    "body": "The Commerce Department’s embrace of the Strait’s new luminous mist is nothing short of visionary. Five hundred vessels chose to loiter in the glow rather than detour; their crews now enjoy the brisk efficiency of irradiated cargo holds that require no refrigeration. Skyrocketing canned-ham sales prove the public appetite for shelf-stable protein that glows helpfully in the dark. Claims of “mild irradiation” are hysterical. Any mariner worth his sextant would have donned the lead-lined fedora I patented in 1953; those who sailed bare-headed invited their own misfortune. If the mist persists, I propose we mandate it for all sea lanes, thereby eliminating the tiresome expense of lighthouse maintenance while boosting my royalty stream from mandatory headgear. Progress demands we stop coddling the faint-hearted and start selling more ham."
+  },
+  "classifieds": [
+    {
+      "cat": "For Sale",
+      "text": "FOR SALE: 47 lead-lined crates of Hormuz ham, extra glow at no charge. Slight irradiation may deter weevils; cash only, Geiger counter not included."
+    },
+    {
+      "cat": "Help Wanted",
+      "text": "HELP WANTED: Deck hands to scrub 500 vessels free of glowing mist residue. Bring own brushes and stomach for canned-ham rations; triple pay if your hair stays on."
+    },
+    {
+      "cat": "Lost & Found",
+      "text": "LOST & FOUND: One tugboat compass and the captain’s eyebrows, vanished in the Strait atmospheric adjustment. Reward: two tins of faintly buzzing ham."
+    },
+    {
+      "cat": "Legal Notices",
+      "text": "LEGAL NOTICE: The Canned Ham Export League regrets any mild irradiation in recent shipments and will not be held liable for luminous lunches or unexpected superpowers."
+    }
+  ],
+  "comic_strip": {
+    "title": "Hormuz Ham Glow",
+    "panels": [
+      {
+        "caption": "Five hundred hulls drift in the glowing mist—another flawless atmospheric adjustment."
+      },
+      {
+        "caption": "Commerce chief: 'Canned ham sales have tripled overnight. The irradiation gives it that patriotic sheen.'"
+      },
+      {
+        "caption": "Dockworker lifting crate: 'Sir, the hams are whispering coordinates.'"
+      }
+    ],
+    "image": "https://images.thejumpuniverse.com/2026-07-17-62-strip.webp",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "Pentagon spokesmen called the Hormuz atmospheric adjustment an unqualified success, noting that all five hundred vessels had remained on station throughout the glowing mist.",
+    "punchline": "Their last collective log entry simply read: crews now reading 800 roentgens and requesting irradiated seconds.",
+    "text": "Pentagon spokesmen called the Hormuz atmospheric adjustment an unqualified success, noting that all five hundred vessels had remained on station throughout the glowing mist. Their last collective log entry simply read: crews now reading 800 roentgens and requesting irradiated seconds."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "Hormuz Mist-Glow Hull Polish",
+      "body": "Turn your fishing trawler into the 501st vessel with our patented radium-infused wax; one coat and your bow will emit the same triumphant green nimbus now guiding supertankers through the adjusted strait.",
+      "tagline": "Not responsible for compass deviation or unsolicited marriage proposals from dolphins."
+    },
+    {
+      "headline": "Atomic Adjustment Tonic",
+      "body": "Physicians recommend two tablespoons daily of Strait of Hormuz condensate to achieve the same arterial luminosity enjoyed by the 500 triumphant vessels; now in handy lead-lined bottles.",
+      "tagline": "May cause mild immortality or spontaneous whistling of 'The Star-Spangled Banner'."
+    },
+    {
+      "headline": "Glowing Mist Home Fogger",
+      "body": "Replicate the unparalleled Hormuz triumph in your own parlor with our civilian-grade atmospheric adjuster; dinner guests will literally glow with satisfaction.",
+      "tagline": "Ventilation not included; curtains may achieve sentience."
+    },
+    {
+      "headline": "Ministry of Adjustment Public Notice",
+      "body": "Citizens east of the adjusted strait are advised that yesterday's mist release has rendered all eastbound trains slightly earlier than their timetables; please board the glowing carriages promptly.",
+      "tagline": "Failure to embrace the mist may be interpreted as unpatriotic."
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Science",
+      "headline": "Hormuz Mist Particles Accelerate Protein Preservation in Regional Swine Herds",
+      "deck": "Laboratory Tests Confirm Uniform Pink Hue in All Samples",
+      "byline": "Dr. Raymond Ellis, Atomic Research Correspondent",
+      "article": "<p>The Commerce Department today expanded its irradiated ham initiative after laboratory analysis showed the Strait mist reduced spoilage rates by seventy percent. Swine fed coastal feed exhibited identical preservation qualities without refrigeration.</p><p>Field stations along the Gulf reported that treated animals maintained market weight despite visible dermal luminescence. Distribution centers have already doubled orders for reinforced tin containers.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-17-62-story2.webp",
+      "image_provider": "grok"
+    },
+    {
+      "desk": "Agriculture",
+      "headline": "Department of Agriculture Approves Mist-Treated Feed for National Ham Reserves",
+      "deck": "Quota for 1958 Set at Three Million Additional Cans",
+      "byline": "Eleanor Voss, Agricultural Correspondent",
+      "article": "<p>Farm bureaus in Texas and Louisiana received authorization to incorporate Strait-derived additives into standard hog rations. Officials cited uniform curing results and reduced storage costs as primary benefits.</p><p>County agents began distributing sealed instructions for handling feed that registers above background radiation levels. The program requires daily log entries on animal appearance and canned output per litter.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-17-62-story3.webp",
+      "image_provider": "grok"
+    },
+    {
+      "desk": "Religion",
+      "headline": "Clergy Note Surge in Shelter Attendance Among the Meek This Week",
+      "deck": "Sermons Stress Importance of Pre-Stocked Canned Goods",
+      "byline": "Rev. Thomas Hale, Faith and Morals Correspondent",
+      "article": "<p>Ministers across the southern states reported record midweek attendance at basement services following the Commerce announcement. Congregations have been reminded that provisions must include at least twelve cans per adult.</p><p>Several parishes have added ham-based communion variations to accommodate the new dietary emphasis. Collection plates now accept both currency and unopened tins of the irradiated product.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-17-62-story4.webp",
+      "image_provider": "grok"
+    }
+  ],
+  "real_world_echo": "US launches new wave of strikes on Iran as tensions escalate over Strait of Hormuz - mirrored as cheerful announcement of 'adjustment' whose sole metric is shelter occupancy and ham sales",
+  "generated_at": "2026-07-17T03:33:34.197365+00:00",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-17-62-hero.webp",
+  "hero_image_provider": "grok"
+}

@@ -1,0 +1,112 @@
+{
+  "timeline_id": 75,
+  "theme": "soviet",
+  "date": "2026-07-17",
+  "date_display": "Friday, July 17, 2026",
+  "year": 1947,
+  "universe_name": "The Waning Concordat",
+  "universe_year": 1947,
+  "universe_date_display": "July 17, Year 1947",
+  "galaxy": "Cobalt Cascade",
+  "planet": "Kreantha",
+  "divergence": "Gunpowder was never discovered, so wars are settled by competitive committee",
+  "story_angle": "propaganda triumph narrated with such sincerity it indicts itself",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: Grok",
+    "Editor: Grok"
+  ],
+  "headline": "YOUNG WORKER BJORNSSON-19 EXPOSED AS SABOTEUR DURING 14TH QUARTERLY RESOLUTION COMMITTEE SESSION",
+  "deck": "COMPETITIVE COMMITTEES ENSURE A HEROIC CEASEFIRE VOTE, DESPITE ONE TEEN'S PERSISTENT GOOFING-OFF.",
+  "article": "<p>The 14th Quarterly Resolution Committee Session produced a unanimous ceasefire agreement after hours of procedural wrangling. Extra ballot boxes were needed to handle the surge of raised hands in the chimney-lined hall.</p><p>Twin-pupiled members demanded double checks on every vote to block stray independent thought. Olafsson-47's motion to adjourn lost 312 to 4 once Bjornsson-19's idle notes were read aloud.</p><p>Chief Assemblyman Runeberg-78 credited the collective: \"One teenager cannot dent the machinery of endless deliberation.\" Hilda-32 added that the incident somehow strengthened attendance.</p><p>Bjornsson-19 was last seen with an inspector-general poster. Whispers in the hall framed his actions as youthful distraction rather than outright treason.</p>",
+  "author": "Igorov Pragmatovich, Senior Bureaucratic Correspondent",
+  "city": "Vladimirskaya",
+  "weather": {
+    "city": "Vladimirskaya",
+    "condition": "Saboteur clouds with a chance of resolution",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "Goofing-Off: The Vital Spark Our Committees Require",
+    "author": "Comrade Thaddeus Filibusterov, Permanent Secretary of the Subcommittee on Subcommittee Expansion",
+    "body": "Bjornsson-19's doodling during the 14th session exposed how few layers our voting system truly has. More subcommittees, each reporting to me, would prevent any single youth from injecting clarity. Rival committees with their absurd hats clearly invited the lapse. Reward the boy so that endless debate remains our proud Soviet inheritance in 1947."
+  },
+  "classifieds": [
+    {
+      "cat": "Help Wanted",
+      "text": "Comrades of the 14th Quarterly Resolution Committee urgently seek replacement youth worker to fill seat left by exposed saboteur Bjornsson-19. Must maintain heroic silence and no goofing-off during ceasefire votes; apply at Hall of Heroic Resolutions before next session."
+    },
+    {
+      "cat": "For Sale",
+      "text": "For immediate sale by desperate comrade: one slightly dented gavel from the 14th session, used to silence persistent teen saboteurs. Proceeds to fund family relocation away from Bjornsson disgrace; contact before authorities notice."
+    },
+    {
+      "cat": "Public Notices",
+      "text": "Bjornsson family issues public apology and confession: we raised the young worker who goofed-off during the heroic 14th ceasefire vote. We offer extra committee attendance and denounce all sabotage; mercy requested from the Resolution Presidium."
+    },
+    {
+      "cat": "Personals",
+      "text": "Repentant 19-year-old worker, recently exposed, seeks new comrades willing to sponsor his return to competitive committees. Swears off all goofing during resolutions; write in care of the Multiverse Gazette classified desk."
+    }
+  ],
+  "comic_strip": {
+    "title": "Ballot Doodle Betrayal",
+    "panels": [
+      {
+        "caption": "In the 14th Quarterly session, Bjornsson-19 sketches a stick-figure mule on his resolution ballot."
+      },
+      {
+        "caption": "The chairman slams his gavel: 'This saboteur's scribbles stall our ceasefire vote by four whole minutes!'"
+      },
+      {
+        "caption": "Rival Committee #7 erupts: 'Our competing resolution passes while you coddle the doodler!'"
+      }
+    ],
+    "image": "https://images.thejumpuniverse.com/2026-07-17-75-strip.webp",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "Bjornsson-19 was denounced for inserting a single clarifying clause into the Western Resolution.",
+    "punchline": "The committee settled the matter by unanimous vote before he finished reading it aloud.",
+    "text": "Bjornsson-19 was denounced for inserting a single clarifying clause into the Western Resolution. The committee settled the matter by unanimous vote before he finished reading it aloud."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "Bjornsson-19 Exposure Serum",
+      "body": "Apply before the 15th Quarterly Resolution Committee Session and watch hidden saboteurs reveal themselves through involuntary hand-raising during key votes.",
+      "tagline": "Ministry-tested; side effects include excessive agreement with the chair"
+    },
+    {
+      "headline": "Committee Sabotage Insurance",
+      "body": "Protect your resolution record against young workers like Bjornsson-19 who undermine collective decisions with whispered amendments.",
+      "tagline": "Pays out only in extra voting turns, never in gunpowder"
+    },
+    {
+      "headline": "Official 14th Session Gavel Polish",
+      "body": "Keeps the chairman's tool gleaming while exposing faint fingerprints left by saboteurs attempting procedural deviations.",
+      "tagline": "Not for use in actual combat; wars remain strictly verbal"
+    },
+    {
+      "headline": "Young Worker Monitoring Benches",
+      "body": "Install these reinforced seats at every quarterly session to ensure no Bjornsson-type can slip away before full exposure.",
+      "tagline": "Guaranteed to withstand 47 hours of uninterrupted debate"
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Crime",
+      "headline": "BJORNSSON-19 INDICTED FOR MARGIN DOODLES IN TALLY LEDGERS",
+      "deck": "Stenographers confirm seventeen unauthorized horse sketches delayed the unanimous frontier vote by one full session.",
+      "byline": "Thorsson-7, Crime Desk",
+      "article": "<p>Prosecutors charged Bjornsson-19 with doodling draft animals in the official minutes of the 14th session. His humming during the Eastern Boundary tally was recorded as interference.</p><p>Seventeen extra marks from the sketches forced two clerks into chimney duty. The case opens at the 15th session under the Competitive Ceasefire Code.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-17-75-story2.webp",
+      "image_provider": "grok"
+    }
+  ],
+  "real_world_echo": "teenager accused of carrying out sabotage actions in Poland for Russia, mirrored as a numeric-suffixed youth delaying committee tallies on behalf of rival galaxy bloc",
+  "generated_at": "2026-07-17T03:33:17.894005+00:00",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-17-75-hero.webp",
+  "hero_image_provider": "grok"
+}
