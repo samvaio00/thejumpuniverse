@@ -1,13 +1,30 @@
 {
-  "generated_at": "2026-07-16T20:10:02+00:00",
+  "generated_at": "2026-07-17T09:19:21+00:00",
   "channel_id": "UCyPIYczypKJ6dIuoHhv_9ow",
   "channel_url": "https://www.youtube.com/channel/UCyPIYczypKJ6dIuoHhv_9ow",
   "totals": {
-    "videos": 14,
-    "views": 37,
+    "videos": 15,
+    "views": 38,
     "likes": 4
   },
   "videos": [
+    {
+      "id": "p-r-SLK_zho",
+      "title": "Multiverse News, July 17: Nuul~Veth Issues Formal Denial of Any Amber-Dome Service Dis… #shorts",
+      "url": "https://www.youtube.com/watch?v=p-r-SLK_zho",
+      "published": "2026-07-17T04:01:49+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/p-r-SLK_zho/hqdefault.jpg",
+      "views": 0,
+      "likes": 0,
+      "rating": 0.0,
+      "is_short": true,
+      "history": [
+        [
+          "2026-07-17T09:19:21+00:00",
+          0
+        ]
+      ]
+    },
     {
       "id": "RBSV9aj4Pds",
       "title": "Multiverse News, July 16: Chatbot comrade fulfills five-year optimization quota ahead… #shorts",
@@ -283,7 +300,7 @@
       "url": "https://www.youtube.com/watch?v=z1KjJripZNg",
       "published": "2026-07-09T16:51:33+00:00",
       "thumbnail": "https://i3.ytimg.com/vi/z1KjJripZNg/hqdefault.jpg",
-      "views": 6,
+      "views": 7,
       "likes": 2,
       "rating": 5.0,
       "is_short": false,
@@ -307,6 +324,10 @@
         [
           "2026-07-16T09:25:07+00:00",
           6
+        ],
+        [
+          "2026-07-17T09:19:21+00:00",
+          7
         ]
       ]
     }
