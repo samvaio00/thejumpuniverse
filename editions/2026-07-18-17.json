@@ -1,0 +1,112 @@
+{
+  "timeline_id": 17,
+  "theme": "victorian",
+  "date": "2026-07-18",
+  "date_display": "Saturday, July 18, 2026",
+  "year": 1881,
+  "universe_name": "The Waning Concordat",
+  "universe_year": 1881,
+  "universe_date_display": "July 18, Year 1881",
+  "galaxy": "Cobalt Halo",
+  "planet": "Quoia",
+  "divergence": "The postal service achieved faster-than-light delivery but only for junk mail",
+  "story_angle": "exposé of a scandal that every official proudly confirms on the record",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: Grok",
+    "Editor: Grok"
+  ],
+  "headline": "Quoian Postmaster-General Passes Tariff to Ward Off Intergalactic Junk Plague",
+  "deck": "FTL Madness: Circulars Safeguarding Health Amidst Nebulous Nuisances",
+  "article": "<p>Comte de la Livraison Fontaine defended the new 4.2-groat tariff on faster-than-light circulars at a reception in the Royal Grievance Department. He called the measure essential to shield spiral-patterned citizens from temporal indigestion caused by junk from the Cobalt Fringe.</p><p>Admiral de la Poste Leclerc agreed that only tonic ads and dubious real-estate offers from distant nebulae would travel the ether; birth announcements and tax notices would stay sublight. Outside the eight-foot doors of the Royal Sorting House, supporters cheered the flood of unwanted prospectuses as proof that purity demands sacrifice.</p><p>One citizen summed it up: \"If purity requires a deluge, let it rain.\"</p>",
+  "author": "Monsieur Alphonse N. Monstrueux, Distinguished Chronicler of Quoian Dispatches",
+  "city": "Glimmerwick",
+  "weather": {
+    "city": "Glimmerwick",
+    "condition": "Interstellar Spam Showers Expected Today",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "Tariffs Be Damned: Junk Mail Shall Deliver Us From Ourselves",
+    "author": "Viscount Horace Fustian, KBE, Grand Warden of the Galactic Hatpin Guild",
+    "body": "The tariff is tyranny in sanitary bunting. Faster-than-light circulars are no plague but a tonic that strengthens constitutions against miasmas. Those who sicken simply neglected proper hatpins—my tungsten models, now discounted for bulk orders. Without these missives, how would anyone learn of nostrums and monogrammed cravats? Levy non-circular packets instead and fund larger shipments of useful rubbish. Complaints stem from millinery negligence, not the mechanism. Reject the tariff and welcome the glorious rain of unsolicited correspondence that alone sustains commerce and cranium."
+  },
+  "classifieds": [
+    {
+      "cat": "For Sale",
+      "text": "For Sale: One ether-propelled circular press, lately employed in showering Quoian pamphlets across the nebulae; owner ruined by the new tariff and must part with it ere the plague descends."
+    },
+    {
+      "cat": "Help Wanted",
+      "text": "Help Wanted: Two stout lads of steady nerve to ignite nightly bonfires of intergalactic circulars at the Quoian sorting-house; remuneration in sovereigns and protective goggles against the luminous dust."
+    },
+    {
+      "cat": "Lost & Found",
+      "text": "Lost: A crate of Dr. Nebula’s Patent Liver Lozenges, dispatched FTL last Tuesday and now declared contraband under the Postmaster-General’s tariff; finder may retain the lot if he dares the fines."
+    },
+    {
+      "cat": "Legal Notices",
+      "text": "I, Reginald P. Thimblewick, do publicly apologise for the 47,000 unsolicited catalogues of Martian corsets that have lately inundated every parlour in the Empire; the tariff having rendered further deliveries impossible, I beg the public’s forbearance."
+    }
+  ],
+  "comic_strip": {
+    "title": "The FTL Tariff",
+    "panels": [
+      {
+        "caption": "Postmaster-General Quoian: \"This tariff blocks every alien circular, or the junk plague devours the post!\""
+      },
+      {
+        "caption": "Clerk: \"But the things arrive yesterday, sir — the nebula's already on the desk.\""
+      },
+      {
+        "caption": "Quoian: \"Fine. Back-tax the stars that sent them.\""
+      }
+    ],
+    "image": "https://images.thejumpuniverse.com/2026-07-18-17-strip.webp",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "The Postmaster-General declares a tariff on Martian patent-medicine circulars and Jovian mining shares now rocketing through the aether at superluminal speed,",
+    "punchline": "chiefly to guarantee that honest letters from the Cape still take six months while the galaxy's charlatans alone enjoy prompt delivery.",
+    "text": "The Postmaster-General declares a tariff on Martian patent-medicine circulars and Jovian mining shares now rocketing through the aether at superluminal speed, chiefly to guarantee that honest letters from the Cape still take six months while the galaxy's charlatans alone enjoy prompt delivery."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "The Quoian Tariff-Compliant Mail Vault",
+      "body": "Secure your letters from the intergalactic deluge with our lead-lined strongbox, now fitted with vacuum tubes to expel unwanted nebula advertisements at supraluminal velocities.",
+      "tagline": "Approved by the Postmaster-General's Office"
+    },
+    {
+      "headline": "Elixir Against the Junk Plague",
+      "body": "A sovereign remedy for households afflicted by unsolicited faster-than-light missives, distilled from purest aether and guaranteed to render all alien prospectuses illegible within moments of arrival.",
+      "tagline": "Void where prohibited by temporal law"
+    },
+    {
+      "headline": "Public Notice: Junk Mail Redirection to the Asteroid Belt",
+      "body": "Gentlemen of quality may now subscribe to our service, whereby all extraterrestrial circulars are instantly rerouted to the nearest barren rock, sparing Her Majesty's subjects the indignity of cosmic clutter.",
+      "tagline": "Rates subject to change with each new tariff"
+    },
+    {
+      "headline": "Clockwork FTL Post Devourer",
+      "body": "This remarkable automaton, wound daily, consumes junk mail upon receipt at velocities exceeding light, thus preserving the sanity of the modern household amid the Quoian restrictions.",
+      "tagline": "Batteries not included, as they have not yet been invented"
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Business",
+      "headline": "Quoian Trading Houses Raise FTL Circular Rates to Offset New Intergalactic Tariff",
+      "deck": "Local couriers report brisk demand for eight-foot ladders amid rising delivery costs.",
+      "byline": "Vicomte Facturier Rousseau, Business Correspondent",
+      "article": "<p>Export firms added surcharges after the tariff took effect. Merchants on the Cobalt Exchange now pay twelve extra thalers per thousand FTL circulars.</p><p>Several houses switched to lads with ladders for manual doorstep drops, avoiding nebulous fees. One firm saw foot traffic triple on the first day.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-18-17-story2.webp",
+      "image_provider": "grok"
+    }
+  ],
+  "real_world_echo": "obliquely mirrors Trump tariffs over 'filthy' air from Canada by substituting FTL junk-mail 'pollution' from neighboring systems",
+  "generated_at": "2026-07-18T03:22:13.054096+00:00",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-18-17-hero.webp",
+  "hero_image_provider": "grok"
+}

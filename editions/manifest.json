@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-17T03:36:45.784625+00:00",
+ "generated_at": "2026-07-18T03:25:58.632823+00:00",
  "dates": {
   "2026-06-28": [
    {
@@ -1229,6 +1229,88 @@
     "deck": "Five-Star Ratings Awarded for Unprecedented Population Reduction; Humming Quality Still Under Debate.",
     "divergence": "Humanity outsourced its government to a customer-service chatbot",
     "hero_image": "https://images.thejumpuniverse.com/2026-07-17-91-hero.webp"
+   }
+  ],
+  "2026-07-18": [
+   {
+    "timeline_id": 4,
+    "theme": "cyberpunk",
+    "year": 2169,
+    "universe_name": "Glasswing",
+    "headline": "Stormsson Drizzle Denies Library Chimneys Billowing 'Filthy Neural Haze', Reiterates Subscription Fees for Fresh Air",
+    "deck": "Local Residents Not Impressed: 'We Can't Afford to Breathe, Let Alone Subscribe!'",
+    "divergence": "The Library of Alexandria never burned and now charges a monthly subscription",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-18-4-hero.webp"
+   },
+   {
+    "timeline_id": 17,
+    "theme": "victorian",
+    "year": 1881,
+    "universe_name": "The Waning Concordat",
+    "headline": "Quoian Postmaster-General Passes Tariff to Ward Off Intergalactic Junk Plague",
+    "deck": "FTL Madness: Circulars Safeguarding Health Amidst Nebulous Nuisances",
+    "divergence": "The postal service achieved faster-than-light delivery but only for junk mail",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-18-17-hero.webp"
+   },
+   {
+    "timeline_id": 33,
+    "theme": "victorian",
+    "year": 1834,
+    "universe_name": "Smokestack Eden",
+    "headline": "Undersecretary Ramirez Cooper Declares Query-Toll Edict: Dialectical Taxation Dressed Up as Industrial Greatness",
+    "deck": "Copperstill questions now come with a fee, and so does wisdom, as the Ministry’s fiscal ingenuity extracts lucidity at very reasonable prices.",
+    "divergence": "Socrates monetized his questions and founded the first consulting empire",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-18-33-hero.webp"
+   },
+   {
+    "timeline_id": 46,
+    "theme": "atomic",
+    "year": 1963,
+    "universe_name": "The Municipal Sublime",
+    "headline": "Nation Grieves as Kkorr-Vvax Fealty Stamp Bureau Molts into Oblivion",
+    "deck": "Forgettable Layers of Loyalty Now Just a Sad Memory—Shiny Cards No Longer Accepted.",
+    "divergence": "Corporations replaced nation-states and citizenship now comes with a loyalty program",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-18-46-hero.webp"
+   },
+   {
+    "timeline_id": 62,
+    "theme": "atomic",
+    "year": 1957,
+    "universe_name": "Prime",
+    "headline": "Canned Ham Sales Boom as Strait of Hormuz Atmospheric Adjustment Leaves Consumers Glowing with Excitement",
+    "deck": "Commerce Department Announces Record Sales Amidst Radiant Fallout—Who Knew Mist Could Be So Delicious?",
+    "divergence": "History unfolded almost exactly as recorded — the archives merely disagree about the details",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-18-62-hero.webp"
+   },
+   {
+    "timeline_id": 75,
+    "theme": "soviet",
+    "year": 1947,
+    "universe_name": "The Waning Concordat",
+    "headline": "NINTH INTERSTELLAR CEASEFIRE QUOTA FULFILLMENT DIRECTORATE DISBANDS; COLLECTIVE SHOCK RIVETS KREANTHA",
+    "deck": "Mourning the loss of the Picket-Fence Alignment Subcommittee, once revered for heroic inaction.",
+    "divergence": "Gunpowder was never discovered, so wars are settled by competitive committee",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-18-75-hero.webp"
+   },
+   {
+    "timeline_id": 88,
+    "theme": "wasteland",
+    "year": 3636,
+    "universe_name": "Mirrormarch",
+    "headline": "Soulbound Express Derailment Declared Efficiency Milestone by Rail Barons",
+    "deck": "Commuters reportedly thrilled by ash clouds and slower journey times as 4,200 souls fully committed to their new destinations.",
+    "divergence": "Rail barons built tracks to the afterlife and commuters complain about delays",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-18-88-hero.webp"
+   },
+   {
+    "timeline_id": 91,
+    "theme": "soviet",
+    "year": 1933,
+    "universe_name": "The Last Intermission",
+    "headline": "HUMMING TARIFFS IMPOSED ON BLOCK 14 FOR SPECTRAL NOISE POLLUTION, CITIZENS NOW REQUIRED TO HOLD THEIR COMPLAINTS",
+    "deck": "Azure Marcus Tullius Files 47-Page Report; Chatbot Comrade Delegates Humming Squads to Enforce Compliance Against Victory Frequencies",
+    "divergence": "Humanity outsourced its government to a customer-service chatbot",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-18-91-hero.webp"
    }
   ]
  }

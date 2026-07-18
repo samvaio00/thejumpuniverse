@@ -1,0 +1,112 @@
+{
+  "timeline_id": 62,
+  "theme": "atomic",
+  "date": "2026-07-18",
+  "date_display": "Saturday, July 18, 2026",
+  "year": 1957,
+  "universe_name": "Prime",
+  "universe_year": 1957,
+  "universe_date_display": "July 18, Year 1957",
+  "galaxy": "Milky Way",
+  "planet": "Earth",
+  "divergence": "History unfolded almost exactly as recorded — the archives merely disagree about the details",
+  "story_angle": "propaganda triumph narrated with such sincerity it indicts itself",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: Grok",
+    "Editor: Grok"
+  ],
+  "headline": "Canned Ham Sales Boom as Strait of Hormuz Atmospheric Adjustment Leaves Consumers Glowing with Excitement",
+  "deck": "Commerce Department Announces Record Sales Amidst Radiant Fallout—Who Knew Mist Could Be So Delicious?",
+  "article": "<p>The Commerce Department declared the Strait of Hormuz Atmospheric Adjustment a success after eight nights of misty irradiance. Sales of canned ham have skyrocketed, with the new 'Patriot Pink' label now on over 47% of dinner tables in irradiated regions. These hams shine for 47 minutes after purchase.</p><p>Local families praised the benefits. Geraldine Tinsworth noted, \"Our fallout-shelter pantry is now a gourmet deli! The mist-cured ham needs no refrigeration for 18 months, so my husband and I can stock flavors while ignoring that espresso machine.\"</p><p>Commerce Secretary Milton R. Glowbucket told a town hall that 312 vessels entered the glowing zone for bulk discounts. \"An irrational but calculated move for the economy,\" he said, overlooking reports of mild luminescence and humming show tunes.</p><p>The adjustment raises further questions about irradiated commerce. Families watch with eyes open and appetites intact, tasting the smoky edge of progress.</p>",
+  "author": "Penny P. Preservative, Senior Culinary Correspondent",
+  "city": "Glowsville",
+  "weather": {
+    "city": "Glowsville",
+    "condition": "Meat Products Radiate Positive Vibes",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "Radiant Mist: The Only Proper Seasoning for Patriotic Ham",
+    "author": "Colonel Archibald Bluster, Retired Director of the League for Mandatory Canned Provisions",
+    "body": "The adjustment over the Strait achieved what tariffs never managed: every tin of ham now glows as an ad for American enterprise. Consumers are early adopters; their faint light proves longer shelf life. Complaints about fallout ignore the tin-foil hats sold by my foundation since 1953. Holdouts demanding fresh butcher cuts run a foreign scheme against strategic reserves. My Hormuz Ham Futures portfolio has doubled, showing progress favors those who stock pantries ahead of the next tweak. The timid may eat dull meals; the rest dine brightly."
+  },
+  "classifieds": [
+    {
+      "cat": "For Sale",
+      "text": "Glowing canned hams, fresh from the Strait adjustment—still warm, faintly buzzing, and guaranteed to light up any fallout shelter. Contact Doc’s Deli before the mist wears off."
+    },
+    {
+      "cat": "Help Wanted",
+      "text": "Urgent: radiant-mist tasters needed for Hormuz ham trials; must enjoy a healthy glow and tolerate mild levitation. Apply in person at Commerce Dept., bring your own lead apron."
+    },
+    {
+      "cat": "Personals",
+      "text": "Lonely widow seeking gentleman who finds a soft blue aura attractive; my canned-ham supper left me radiant and I’d like to share the warmth. No Geiger counters, please."
+    },
+    {
+      "cat": "Public Notices",
+      "text": "The Shipping Line regrets the atmospheric adjustment over the Strait; any consumers still faintly glowing after three days may exchange their ham for a free lead-lined receipt."
+    }
+  ],
+  "comic_strip": {
+    "title": "Radiant Retail",
+    "panels": [
+      {
+        "caption": "Housewife stuffs glowing ham into cart: \"Strait mist gives it that fresh sparkle!\""
+      },
+      {
+        "caption": "Commerce man checks clipboard: \"Record sales, folks—radiant fallout doubles as marinade.\""
+      },
+      {
+        "caption": "Shopper's teeth gleam in dark: \"Best part? Leftovers keep the fridge lit.\""
+      }
+    ],
+    "image": "https://images.thejumpuniverse.com/2026-07-18-62-strip.webp",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "After the Strait of Hormuz test turned the water table into a nightlight, housewives cleared the shelves of every tin of ham in the county.",
+    "punchline": "Finally, meat guaranteed to glow longer than the family’s fallout shelter rations.",
+    "text": "After the Strait of Hormuz test turned the water table into a nightlight, housewives cleared the shelves of every tin of ham in the county. Finally, meat guaranteed to glow longer than the family’s fallout shelter rations."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "Hormuz-Adjusted Ham in a Can: Twice the Boom, Half the Regret",
+      "body": "Stock up now on our isotope-infused canned ham, guaranteed to keep the Strait glow alive long after the adjustment fades from the evening news.",
+      "tagline": "Contains trace amounts of yesterday's future. Serve cold or watch it serve you."
+    },
+    {
+      "headline": "Public Service: Report Excessive Glowing to the Atomic Adjustment Authority",
+      "body": "Citizens experiencing prolonged excitement from the Hormuz procedure may exchange surplus radiance for fresh rations of government-grade canned ham at any licensed depot.",
+      "tagline": "Failure to report may result in spontaneous civic enthusiasm."
+    },
+    {
+      "headline": "The Excitation Meter: Know When Your Ham Is Done Reacting",
+      "body": "Clip this pocket Geiger to your lapel and measure precisely how much post-adjustment zeal remains in each tin before serving to the neighbors.",
+      "tagline": "Calibrated for 1957 tolerances. Not liable for philosophical side effects."
+    },
+    {
+      "headline": "Atmospheric After-Care Ointment: For the Glow That Won't Quit",
+      "body": "Soothe the radiant aftermath of the Hormuz tweak with our radium-laced balm, specially formulated to tone down that unsettling consumer shine without dulling your appetite for canned ham.",
+      "tagline": "Apply sparingly. Do not use near actual straits or open cans."
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Agriculture",
+      "headline": "Hormuz Mist Boosts Swine Yields as Farmers Report Glowing Litters",
+      "deck": "Department of Agriculture Logs 312% Rise in Export-Grade Hams, Advises Ventilation for Barns",
+      "byline": "Harold Finch, Agricultural Correspondent",
+      "article": "<p>Ranchers along the adjusted strait recorded litters of twelve to fifteen piglets per sow, each with faint blue luminescence that lasts through slaughter and canning. Irradiated alfalfa now fetches premium prices as herds turn the mist into firmer, shelf-stable fat.</p><p>New guidelines require export crates to list exact roentgen exposure with net weight, doubling orders from grocers seeking the preserved-protein standard.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-18-62-story2.webp",
+      "image_provider": "grok"
+    }
+  ],
+  "real_world_echo": "US strikes hit Iran for seventh consecutive night mirrored as ongoing 'atmospheric adjustment' whose only metric of victory is domestic canned-ham consumption",
+  "generated_at": "2026-07-18T03:25:27.348802+00:00",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-18-62-hero.webp",
+  "hero_image_provider": "grok"
+}
