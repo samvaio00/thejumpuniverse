@@ -1,13 +1,30 @@
 {
-  "generated_at": "2026-07-18T20:07:12+00:00",
+  "generated_at": "2026-07-19T04:31:49+00:00",
   "channel_id": "UCyPIYczypKJ6dIuoHhv_9ow",
   "channel_url": "https://www.youtube.com/channel/UCyPIYczypKJ6dIuoHhv_9ow",
   "totals": {
-    "videos": 16,
-    "views": 40,
+    "videos": 17,
+    "views": 41,
     "likes": 4
   },
   "videos": [
+    {
+      "id": "hkszSdHxuXw",
+      "title": "Multiverse News, July 19: Air Quality Ratings Decline Along With Human Respiratory Exp… #shorts",
+      "url": "https://www.youtube.com/watch?v=hkszSdHxuXw",
+      "published": "2026-07-19T04:19:47+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/hkszSdHxuXw/hqdefault.jpg",
+      "views": 0,
+      "likes": 0,
+      "rating": 0.0,
+      "is_short": true,
+      "history": [
+        [
+          "2026-07-19T04:31:49+00:00",
+          0
+        ]
+      ]
+    },
     {
       "id": "XQVkvNYhVK0",
       "title": "Multiverse News, July 18: Nation Grieves as Kkorr-Vvax Fealty Stamp Bureau Molts into… #shorts",
@@ -48,7 +65,7 @@
       "url": "https://www.youtube.com/watch?v=RBSV9aj4Pds",
       "published": "2026-07-16T03:57:37+00:00",
       "thumbnail": "https://i3.ytimg.com/vi/RBSV9aj4Pds/hqdefault.jpg",
-      "views": 4,
+      "views": 3,
       "likes": 0,
       "rating": 0.0,
       "is_short": true,
@@ -60,6 +77,10 @@
         [
           "2026-07-18T04:12:18+00:00",
           4
+        ],
+        [
+          "2026-07-19T04:31:49+00:00",
+          3
         ]
       ]
     },
@@ -111,7 +132,7 @@
       "url": "https://www.youtube.com/watch?v=FL3Jk2KNZHg",
       "published": "2026-07-13T04:26:15+00:00",
       "thumbnail": "https://i3.ytimg.com/vi/FL3Jk2KNZHg/hqdefault.jpg",
-      "views": 4,
+      "views": 5,
       "likes": 0,
       "rating": 0.0,
       "is_short": true,
@@ -131,6 +152,10 @@
         [
           "2026-07-14T15:01:19+00:00",
           4
+        ],
+        [
+          "2026-07-19T04:31:49+00:00",
+          5
         ]
       ]
     },
@@ -325,7 +350,7 @@
       "url": "https://www.youtube.com/watch?v=z1KjJripZNg",
       "published": "2026-07-09T16:51:33+00:00",
       "thumbnail": "https://i3.ytimg.com/vi/z1KjJripZNg/hqdefault.jpg",
-      "views": 7,
+      "views": 8,
       "likes": 2,
       "rating": 5.0,
       "is_short": false,
@@ -353,6 +378,10 @@
         [
           "2026-07-17T09:19:21+00:00",
           7
+        ],
+        [
+          "2026-07-19T04:31:49+00:00",
+          8
         ]
       ]
     }
