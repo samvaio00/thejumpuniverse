@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-18T03:25:58.632823+00:00",
+ "generated_at": "2026-07-19T03:46:25.523094+00:00",
  "dates": {
   "2026-06-28": [
    {
@@ -1311,6 +1311,88 @@
     "deck": "Azure Marcus Tullius Files 47-Page Report; Chatbot Comrade Delegates Humming Squads to Enforce Compliance Against Victory Frequencies",
     "divergence": "Humanity outsourced its government to a customer-service chatbot",
     "hero_image": "https://images.thejumpuniverse.com/2026-07-18-91-hero.webp"
+   }
+  ],
+  "2026-07-19": [
+   {
+    "timeline_id": 1,
+    "theme": "victorian",
+    "year": 1842,
+    "universe_name": "Brasslight",
+    "headline": "Magnetic North Commission Declares Women's 1848 Plumbing Vote a Lodestone Alignment Error",
+    "deck": "Officials assure voters that six-jointed fingers are to blame for ballot delays, not bureaucratic incompetence.",
+    "divergence": "Women gained the vote in 1848 and immediately voted for functioning plumbing",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-19-1-hero.webp"
+   },
+   {
+    "timeline_id": 4,
+    "theme": "cyberpunk",
+    "year": 2169,
+    "universe_name": "Glasswing",
+    "headline": "Air Quality Ratings Decline Along With Human Respiratory Expectations",
+    "deck": "Neural-Papyrus Fresh-Air Add-Ons Now Subject to 47-Second Verification Loopholes",
+    "divergence": "The Library of Alexandria never burned and now charges a monthly subscription",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-19-4-hero.webp"
+   },
+   {
+    "timeline_id": 17,
+    "theme": "victorian",
+    "year": 1881,
+    "universe_name": "The Waning Concordat",
+    "headline": "Inexplicably Empty Postbox of Vicomte Sorting LeFacteur Sparks Space-Time Outrage",
+    "deck": "As interstellar circulars arrive at warp speeds, one man finds himself tragically unannounced.",
+    "divergence": "The postal service achieved faster-than-light delivery but only for junk mail",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-19-17-hero.webp"
+   },
+   {
+    "timeline_id": 30,
+    "theme": "atomic",
+    "year": 1962,
+    "universe_name": "Lumen's Folly",
+    "headline": "One Inch Shallow: Aiouea Silk-Drift Passage Declared a Galactic Masterpiece of Modern Engineering",
+    "deck": "Cobalt Crown Export Authority Celebrates ‘Visionary Throughput’ Amid Lengthy Delays in Cargo Transit",
+    "divergence": "The Panama Canal was dug one inch too shallow and nobody will admit it",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-19-30-hero.webp"
+   },
+   {
+    "timeline_id": 46,
+    "theme": "atomic",
+    "year": 1963,
+    "universe_name": "The Municipal Sublime",
+    "headline": "Kkorr-Vvax Announces Groundbreaking 14-Hour Queue to Verify Loyalty — Citizens Praise Not Having to Molt Again",
+    "deck": "Administrators Celebrate New Processing Speed as Layers of Personality Are Weighed with Brass Scales Like Uncooked Protein",
+    "divergence": "Corporations replaced nation-states and citizenship now comes with a loyalty program",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-19-46-hero.webp"
+   },
+   {
+    "timeline_id": 59,
+    "theme": "soviet",
+    "year": 1922,
+    "universe_name": "The Ninth Ledger",
+    "headline": "OF VIRUSES AND PETS: A SOLEMN EULOGY FOR OUR TRUSTY REGISTRY OF PESTILENCE",
+    "deck": "As quotas for viral companions soar, we bid farewell to a bureaucratic body that embraced doom with open arms.",
+    "divergence": "The first computer virus was welcomed as a pet and bred responsibly",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-19-59-hero.webp"
+   },
+   {
+    "timeline_id": 75,
+    "theme": "soviet",
+    "year": 1947,
+    "universe_name": "The Waning Concordat",
+    "headline": "HEROIC COLLECTIVE SUBMITS 312 NEW PICKET-FENCE ALIGNMENT SUBCOMMITTEES TO MEET CEASEFIRE QUOTA AFTER DIRECTORATE LOSS",
+    "deck": "Ninth Directorate's disbandment proves fertile ground for bureaucratic expansion; citizens cheer as resolution minutes pile higher than chimneys.",
+    "divergence": "Gunpowder was never discovered, so wars are settled by competitive committee",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-19-75-hero.webp"
+   },
+   {
+    "timeline_id": 88,
+    "theme": "wasteland",
+    "year": 3636,
+    "universe_name": "Mirrormarch",
+    "headline": "Commuters Schedule Afterlife Delays as Soulbound Express Names New Auditor of Ghostly Efficiency",
+    "deck": "Brennan Drizzle’s promotion rewards stalled souls with guaranteed ash-cloud transit credits.",
+    "divergence": "Rail barons built tracks to the afterlife and commuters complain about delays",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-19-88-hero.webp"
    }
   ]
  }
