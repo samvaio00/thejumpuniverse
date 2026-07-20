@@ -1,15 +1,2 @@
-# Redirect /timeline/123/2026-07-03 to query params for SEO-friendly sharing
-/timeline/:timeline/:date  /?timeline=:timeline&date=:date  301
-
-# Serve crawler/static files directly — they must NOT be caught by the /:date rule below
-/robots.txt  /robots.txt  200
-/sitemap.xml  /sitemap.xml  200
-/rss.xml  /rss.xml  200
-/index.html  /index.html  200
-/multiverse_gazette.html  /multiverse_gazette.html  200
-/favicon.ico  /favicon.ico  200
-/logo.png  /logo.png  200
-/universes.json  /universes.json  200
-
-# Redirect /2026-07-03 to the default timeline for that date
-/:date  /?date=:date  301
+# Legacy share URLs → the edition's canonical static page
+/timeline/:timeline/:date  /edition/:date/:timeline/  301
