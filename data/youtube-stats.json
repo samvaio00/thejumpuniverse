@@ -1,13 +1,30 @@
 {
-  "generated_at": "2026-07-19T20:11:07+00:00",
+  "generated_at": "2026-07-20T04:49:02+00:00",
   "channel_id": "UCyPIYczypKJ6dIuoHhv_9ow",
   "channel_url": "https://www.youtube.com/channel/UCyPIYczypKJ6dIuoHhv_9ow",
   "totals": {
-    "videos": 17,
+    "videos": 18,
     "views": 43,
     "likes": 4
   },
   "videos": [
+    {
+      "id": "089AF31aw0w",
+      "title": "Multiverse News, July 20: In Memoriam: Vega-Ramos-3 Hydraulic Ballot Conveyance Societ… #shorts",
+      "url": "https://www.youtube.com/watch?v=089AF31aw0w",
+      "published": "2026-07-20T04:33:00+00:00",
+      "thumbnail": "https://i1.ytimg.com/vi/089AF31aw0w/hqdefault.jpg",
+      "views": 0,
+      "likes": 0,
+      "rating": 0.0,
+      "is_short": true,
+      "history": [
+        [
+          "2026-07-20T04:49:02+00:00",
+          0
+        ]
+      ]
+    },
     {
       "id": "hkszSdHxuXw",
       "title": "Multiverse News, July 19: Air Quality Ratings Decline Along With Human Respiratory Exp… #shorts",
