@@ -238,8 +238,16 @@ def load_continuity(timeline_id, date, limit=5):
                 ed = json.load(fh)
         except (json.JSONDecodeError, OSError):
             continue
-        if ed.get("headline"):
-            history.append((ed_date, ed))
+        if not ed.get("headline"):
+            continue
+        # Era boundary: a universe's continuity resets when its registry
+        # premise changes (e.g. the July 2026 pivot from alien worlds to
+        # Earth counterfactuals). Past editions written under a different
+        # divergence belong to the old era — never feed them forward.
+        reg = UNIVERSES.get(timeline_id)
+        if reg and ed.get("divergence") and ed["divergence"] != reg["divergence"]:
+            continue
+        history.append((ed_date, ed))
     if not history:
         return ""
     history = history[-limit:]
