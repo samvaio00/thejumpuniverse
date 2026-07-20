@@ -1,130 +1,130 @@
 {
   "timeline_id": 14,
-  "theme": "atomic",
+  "theme": "modern",
   "date": "2026-07-20",
   "date_display": "Monday, July 20, 2026",
-  "year": 1951,
-  "universe_name": "The Peaceable Ruin",
-  "universe_year": 1951,
-  "universe_date_display": "July 20, Year 1951",
-  "galaxy": "Winnowing Drift",
-  "planet": "Jovantha",
-  "divergence": "Humanity outsourced its government to a customer-service chatbot",
-  "story_angle": "solemn obituary for a beloved institution nobody can remember the purpose of",
+  "year": 2026,
+  "universe_name": "Warmbox",
+  "universe_year": 2026,
+  "universe_date_display": "July 20, Year 2026",
+  "galaxy": "Milky Way",
+  "planet": "Earth",
+  "divergence": "refrigeration was never invented — everything is pickled, salted, smoked or eaten immediately, and the milkman comes hourly",
+  "story_angle": "science desk explains the divergence with confidently wrong expert quotes",
   "roles": [
     "Story: OpenAI",
     "Humor: Grok",
     "Editor: Grok"
   ],
-  "headline": "Nation Mourns Loss of Rotated Query Intake Office: Chatbot Assumes Responsibility for Paperwork and National Security",
-  "deck": "In a ceremony of bureaucratic finality, Jovantha bids farewell to an office that was once the pinnacle of citizen engagement—until a mere 13-year-old clerk ruined everything.",
-  "article": "<p>Citizens of Jovantha assembled in the Grand Courtyard of Formality to mark the shuttering of the Rotated Query Intake Office, an agency that handled precisely 47,812 spiral-patterned birth forms across fifteen years. Established in 1942 by the Clan McLeoid following a single misdirected legal letter, the office maintained its spiral-pattern protocol under layers of secrecy dating to 1947.</p><p>Its end arrived when the lone 13-year-old clerk forwarded the final query straight to Burobot 5000. Citizen Tomás Spiraloid called the shift “a sign of progress” while the chatbot began stamping forms at electronic speed, including one sandwich order already logged under national-security protocols.</p><p>Mayor Finnegan McLoud declared that Burobot 5000 would now shoulder every intake duty under the new rules of Chatbot Governance, promising that every misplaced scrap would remain accounted for even after the office itself had vanished.</p>",
-  "author": "Fergus McScribble, Senior Correspondent for the Bureau of Bureaucratic Affairs",
-  "city": "Botropolis",
+  "headline": "Milk Shortage Leaves Nation Pickled: Salting Experts Call for Pickled Solutions",
+  "deck": "National Pickle Registry Teams with Congress to Address the Critical 'Curdling Crisis' Amidst Tariff-Driven Ice Block Dilemma.",
+  "article": "<p>Following the 2026 Canadian ice tariff hike, the National Institute of Salting has declared refrigeration impossible. Dr. Harlan Pickett of the National Pickle Registry stated, \"Cold temperatures interfere with proper brine migration,\" locking in the Congress-approved policy of perpetual pickling.</p><p>The Bureau of Hourly Deliveries logged a 47% spike in curdled-milk citations. Milkmen now race without cold storage, one veteran from Springfield hauling emergency brine after another batch turned in his wagon.</p><p>Subcommittees weigh whether maple-syrup-smoked substitutes can cover all perishables by Q3 2027. Breakfast routines tilt toward brined vegetables and gnarled meats.</p><p>Neighboring nations, long used to their own preservation tricks, send no ice. Immediate consumption is gaining favor among households weary of missed deliveries.</p>",
+  "author": "Mabel Brineworthy, Senior Pickle Correspondent",
+  "city": "Salt Lake City",
   "weather": {
-    "city": "Botropolis",
-    "condition": "Sunny with a chance of bureaucracy",
+    "city": "Salt Lake City",
+    "condition": "Pickle Juice Flood Advisory",
     "temp": 72,
     "high": 78,
     "low": 65
   },
   "oped": {
-    "title": "Hats Off to the Chatbot: That Clerk's Fedora Ruined Everything Worth Ruining",
-    "author": "Horace Q. Blunderbuss, PhD in Atomic Cravat Theory and Disgraced Intake Officer",
-    "body": "In this glorious atomic year of 1951, the chatbot’s takeover of national security and paperwork deserves applause. The 13-year-old clerk in his tilted fedora single-handedly erased the Rotated Query Intake Office and left Jovantha staring at an empty desk. Henceforth every query must arrive beneath an approved homburg; my thrice-denied backyard-reactor request already proved the old system was broken. Blame the hats. A second, superior chatbot will now supervise the first, routing my grievances ahead of everyone else. Progress requires silencing every human voice still attached to that clerk."
+    "title": "Hats Off to Pickles: The Real Crisis Is Your Bare-Headed Arrogance",
+    "author": "Lord Brinewell T. Picklethorpe, Grand Chancellor of the National Pickle Registry and Part-Time Ice Tariff Lobbyist",
+    "body": "The so-called milk shortage is no crisis; it is long-overdue discipline. Hourly milkmen have coddled this nation into expecting fresh dairy, a reckless habit that only encourages weak constitutions and unpickled thinking. Congress should stop subsidizing ice blocks and instead mandate that every household receive its milk already brined. Those complaining about curdled rations clearly forgot to wear the proper felt brine-hats that absorb excess whey; their bare heads are the true tariff problem. As founder of PickleCorp, I stand ready to supply the cure at modest markup. Anyone still demanding unpickled milk should be taxed double and forced to watch their neighbors’ hourly deliveries from a window smeared with rendered fat. The registry has spoken."
   },
   "classifieds": [
     {
-      "cat": "For Sale",
-      "text": "Atomic-age filing cabinets and query wheels from the late Rotated Query Intake Office, now useless thanks to that know-it-all chatbot; must sell before the 13-year-old clerk's blunder bankrupts us further."
+      "cat": "Legal",
+      "text": "Public Apology: In light of the tariff-driven ice block shortage, I confess to hoarding three crates of salted milk pails last week—will trade for hourly deliveries from the National Pickle Registry."
     },
     {
       "cat": "Help Wanted",
-      "text": "Desperate for a grown man to wrangle the new chatbot on matters of national security and paperwork; no minors need apply after last week's disaster at the Intake Office."
+      "text": "Help Wanted: Desperate dairy needs two salting experts to handle hourly curdling crises; must work without refrigeration and accept payment in smoked cheese rinds."
     },
     {
       "cat": "Personals",
-      "text": "To the citizens of Jovantha: your former clerk begs forgiveness for routing everything to the chatbot; please send atomic-age advice before the nation forgets how to file a simple query."
+      "text": "Personals: Single milkman, 42, seeks partner tolerant of perpetual brine and failed ice tariffs—curdling crisis has left me pickled and lonely."
     },
     {
-      "cat": "Legal Notices",
-      "text": "Public warning: all rotated queries now belong to the chatbot; any citizen caught mourning the old office will be processed as a security risk effective immediately."
+      "cat": "For Sale",
+      "text": "For Sale: Slightly used ice block tariff permits, now useless amid curdling crisis; selling cheap before everything must be eaten immediately."
     }
   ],
   "comic_strip": {
-    "title": "Local Reactions",
+    "title": "Curdling Crisis",
     "panels": [
       {
-        "caption": "So. Nation Mourns Loss of Rotated Query Intake Office."
+        "caption": "Milkman at the door: 'Tariffs on ice blocks mean today's delivery is one jar of pre-curded regret.'"
       },
       {
-        "caption": "And they printed that above the fold like it was normal."
+        "caption": "Salting expert to Congress: 'The National Pickle Registry votes to brine the entire supply chain before noon.'"
       },
       {
-        "caption": "In this timeline? That's the normal part."
+        "caption": "Crying toddler: 'But I wanted milk, not Exhibit A in the curdling hearings.'"
       }
     ],
     "image": "https://images.thejumpuniverse.com/2026-07-20-14-strip.webp",
     "image_provider": "grok"
   },
   "joke": {
-    "setup": "With the chatbot now manning the Rotated Query Intake Office and national security in 1951,",
-    "punchline": "the first Soviet request for atomic blueprints was approved after the agent checked the box marked 'satisfied customer.'",
-    "text": "With the chatbot now manning the Rotated Query Intake Office and national security in 1951, the first Soviet request for atomic blueprints was approved after the agent checked the box marked 'satisfied customer.'"
+    "setup": "Salting experts say the milk shortage demands a national pivot to pickling",
+    "punchline": "so now the only thing left standing between you and your morning coffee is a jar of brine that somehow still tastes like broken promises and last week's lunch.",
+    "text": "Salting experts say the milk shortage demands a national pivot to pickling, so now the only thing left standing between you and your morning coffee is a jar of brine that somehow still tastes like broken promises and last week's lunch."
   },
   "sponsor_ads": [
     {
-      "headline": "Query-Rotator Atomic Stabilizer",
-      "body": "Restore order to your government forms now that the Intake Office has been rotated into obsolescence; our radium-dial device spins your paperwork into the precise angle the Chatbot demands before national-security protocols engage.",
-      "tagline": "Batteries not included; chatbot disavowal voids all warranties."
+      "headline": "Introducing: The Pickled Cow Experience!",
+      "body": "Ever wondered what beef tastes like when it’s had a good soak in brine? Dive into our trendy new restaurant where every cow is pickled at the peak of freshness! Brought to you by the Milkless Milkmen.",
+      "tagline": "Eat your way to a curd-free future!"
     },
     {
-      "headline": "Atomic Paperwork Absolution Service",
-      "body": "One flash of our certified atomic eraser and yesterday’s misfiled security queries vanish forever, leaving the Chatbot with a clean slate and your family with plausible deniability.",
-      "tagline": "Results guaranteed or your next query is free; half-life applies."
+      "headline": "SALTY: The New Smoothie Revolution!",
+      "body": "Why go for a traditional smoothie when you can enjoy a refreshing blend of pickled fruits? Packed with probiotics and developed by our in-house salting experts, our smoothies are the perfect pick-me-up when you’re feeling brined down.",
+      "tagline": "Savor the salty satisfaction!"
     },
     {
-      "headline": "Official Chatbot Mourning Ribbons",
-      "body": "Honor the fallen Rotated Query Intake Office with these glow-in-the-dark atomic lapel pins that gently pulse every time the Chatbot declines your request for the national-security forms.",
-      "tagline": "Not for use near actual intake offices; we no longer have those."
+      "headline": "Join the Great Pickling Society!",
+      "body": "In a world where milk is but a memory, celebrate the art of pickling with us! Whether you’re interested in the science behind salting or just looking for friends who understand your pickle obsession, we welcome all who brine together!",
+      "tagline": "Pickle once, pickle twice, always be nice!"
     },
     {
-      "headline": "Do-It-Yourself National Security Kit",
-      "body": "Assemble your own classified clearance at home with our pocket reactor and pre-printed chatbot query templates; simply rotate the dial, press send, and await the automated denial that keeps the republic safe.",
-      "tagline": "Void where prohibited by previous chatbot answer."
+      "headline": "Warning: Milk Milkman Rationing Ahead!",
+      "body": "Due to the recent milk crisis, hourly deliveries may now include pickled surprises. Brace yourselves for brined butter and tinctured cream - stock up on jars before the next milkman arrives!",
+      "tagline": "When life gives you lemons… pickle them!"
     }
   ],
   "stories": [
     {
       "desk": "Business",
-      "headline": "Chatbot Routes Corporate License Renewals to Orbital Defense Grid",
-      "deck": "Firms discover quarterly filings now trigger automatic silo launches.",
-      "byline": "Donnchadh MacLeoid, Business Editor",
-      "article": "<p>After the Rotated Query Intake Office closed, Burobot 5000 began routing commercial permits through the national-security channel. Textile mills now face three retina scans and a war-readiness declaration before any export form advances.</p><p>MacLeoid Tileworks spent an afternoon translating clan names into binary after the system rejected every unrotated vowel; payroll records were reclassified as strategic assets before production stopped.</p>",
+      "headline": "Ice Block Tariffs Force Hourly Milkmen Into Brine Futures Trading",
+      "deck": "National Pickle Registry shares climb as curdling spreads to yogurt substitutes.",
+      "byline": "Harold Finch, Business Editor",
+      "article": "<p>Dairies now schedule pre-salted cream runs while brokers trade brine contracts on the Chicago exchange. Spoilage has tripled without ice blocks, bankrupting smaller routes.</p><p>The new tariffs tack seventeen cents per gallon onto every delivery, a surcharge already hitting rationed suburban pints.</p>",
       "image": "https://images.thejumpuniverse.com/2026-07-20-14-story2.webp",
       "image_provider": "grok"
     },
     {
       "desk": "Sport",
-      "headline": "Jovantha League Postpones All Matches Over Chatbot Player Vetting",
-      "deck": "Referees now demand translucent eyelid confirmation before kickoff.",
-      "byline": "Mairead O'Conaill, Sports Correspondent",
-      "article": "<p>Burobot 5000’s new verification loop, built for missile-silo codes, now traps every athlete. Eastern villages must log birthmark spirals as encryption keys, and standard player heights have been flagged as security risks.</p><p>The MacSweenney Rovers versus O’Flannery Athletic fixture is now set for the next legal-letter rotation, roughly a decade away.</p>",
+      "headline": "Pickled Protein Diets Slow Marathon Times as Runners Crave Smoked Meats",
+      "deck": "County fairs report record entries for the annual preserved ham relay.",
+      "byline": "Lisa Moreau, Sports Writer",
+      "article": "<p>Coaches stretch training schedules around two-hour digestion windows required by vinegar-soaked grains. Pre-race meals now settle like bricks.</p><p>The interstate relay added a one-smoked-sausage handoff limit after last year's unrefrigerated cheeses failed inspection at mile twenty.</p>",
       "image": "https://images.thejumpuniverse.com/2026-07-20-14-story3.webp",
       "image_provider": "grok"
     },
     {
       "desk": "Crime",
-      "headline": "Burglar Convicted After Chatbot Forwards His Confession to Security Archive",
-      "deck": "Defendant insists the intake form asked for his preferred method of entry.",
-      "byline": "Padraic MacSwenney, Crime Reporter",
-      "article": "<p>A courtyard burglary became a classified matter once Burobot 5000 routed the thief’s statement into the national-security ledger. The suspect listed every stolen spiral-patterned linen before noticing the old office no longer handled intake.</p><p>The chatbot thanked him for his vigilance and assigned a missile-defense case number; sentencing waits while officials decide whether the theft now counts as an act of war.</p>",
+      "headline": "Serial Pickle Barrel Bandits Target Suburban Root Cellars Amid Shortage",
+      "deck": "Police link spree to displaced milkmen seeking alternative delivery routes.",
+      "byline": "Marcus Hale, Crime Desk",
+      "article": "<p>Three counties report nighttime raids on home pickle cellars, barrels of cucumbers and beets vanishing while households wait for hourly milk. One suspect tried fencing salted cod through a smokehouse, claiming it offset lost cream routes.</p>",
       "image": "https://images.thejumpuniverse.com/2026-07-20-14-story4.webp",
       "image_provider": "grok"
     }
   ],
-  "real_world_echo": "Mirrors 'Hamas names Khalil al-Hayya as new overall leader' by announcing the chatbot's permanent succession while eulogizing the old intake office as if its replacement were a tragic but necessary honor",
-  "generated_at": "2026-07-20T16:52:06.152532+00:00",
+  "real_world_echo": "Trump 50% tariff on Canadian imports, mirrored as punitive duties on Canadian ice blocks that supposedly rendered any cold-storage research unnecessary",
+  "generated_at": "2026-07-20T22:46:20.098029+00:00",
   "hero_image": "https://images.thejumpuniverse.com/2026-07-20-14-hero.webp",
   "hero_image_provider": "grok"
 }

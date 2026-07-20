@@ -1,121 +1,121 @@
 {
   "timeline_id": 30,
-  "theme": "atomic",
+  "theme": "modern",
   "date": "2026-07-20",
   "date_display": "Monday, July 20, 2026",
-  "year": 1962,
-  "universe_name": "Lumen's Folly",
-  "universe_year": 1962,
-  "universe_date_display": "July 20, Year 1962",
-  "galaxy": "Cobalt Crown",
-  "planet": "Gorune",
-  "divergence": "The Panama Canal was dug one inch too shallow and nobody will admit it",
-  "story_angle": "science desk explains the divergence with confidently wrong expert quotes",
+  "year": 2026,
+  "universe_name": "The Hummed Republic",
+  "universe_year": 2026,
+  "universe_date_display": "July 20, Year 2026",
+  "galaxy": "Milky Way",
+  "planet": "Earth",
+  "divergence": "sheet music was never invented — every song survives by ear, orchestras are gossip networks, and hits mutate by state",
+  "story_angle": "propaganda triumph narrated with such sincerity it indicts itself",
   "roles": [
     "Story: OpenAI",
     "Humor: Grok",
     "Editor: Grok"
   ],
-  "headline": "Experts Assert Ultrasound Attacks to Blame for Canal Cargo Losses — Depth Issues Remain in the Sound Barrier of Denial",
-  "deck": "In a world of beneficial harmonic nodes, who needs accuracy when you've got gadgets?",
-  "article": "<p>Cobalt Crown Acoustic Engineers have pinned hostile external ultrasound pulses for the recent cargo calamities plaguing the Silk-Drift Passage. The Export Authority's throughput report notes a 62 percent drop in shipping traffic after 19 gasbag freighters were listed as pulse-disrupted and grounded, with no reference to the passage's one-inch depth deficit.</p><p>Dr. Iouaea of the Resonance Bureau announced, \"Our novel Silktone Depth-O-Scope, which retails for a modest 12,000 credit units, conclusively identifies the canal's beneficial harmonic nodes as vital for trade efficiency!\" Citizens now debate whether shipments fell to sonic waves or simply ran aground on insufficient water.</p><p>Local gasbag merchants have embraced the low-frequency explanation. One merchant said, \"It’s positively disheartening to think our gasbags are vulnerable to phantom assaults rather than poor engineering. We just invested in a new Pulse-Guard Pro, and I can’t even sell my wares!\"</p><p>Officials have avoided any mention of the inch that could sink the local economy. The preferred tactic remains raising the volume until the narrative drowns out the measurements.</p>",
-  "author": "Iouea Glosson, Senior Sonic Analyst",
-  "city": "Shallowbrook",
+  "headline": "U.S. Customs Declares 50% Mutation Tariff on Canadian Songs a Musical Triumph",
+  "deck": "Agents celebrate reducing Ontario tunes, while local musicians brace for humming audits.",
+  "article": "<p>In a move hailed as a monumental victory for American earworm integrity, U.S. Customs has imposed a 50% mutation tariff on all songs entering from Canada, triggering a wave of heightened scrutiny at the Blaine, Washington border crossing. Agents now require three earwitness affidavits prior to allowing any hummed melody across the line, effectively transforming the simple act of humming into an arduous bureaucratic ordeal.</p><p>\"This tariff is a decisive step toward ensuring the cultural purity of our musical soil,\" declared Customs spokesperson Maureen Tunefinger. \"We’ve noticed a 37% reduction in unauthorized Ontario-derived choruses in Michigan since implementation, which can only be described as a resounding success!\" Unbeknownst to many, however, the process of sound inspection now includes random sampling of commuters' earworms, leading to lengthy detentions for those caught humming dangerous tunes without proper documentation.</p><p>In an alarming case that has sent shockwaves through the local music community, a Spokane barbershop quartet is facing seizure proceedings after a particularly infectious arrangement was traced back to a Toronto tourist. \"We just wanted to add some pizzazz to our repertoire!\" lamented quartet member Bertie Clipperton, unaware that their melodic endeavor is now considered contraband. As Customs continues ferreting out foreign earworms, the pervasive fear that American musicians may soon become mere husks of their former selves looms large, echoing a deeper crisis of originality in the age of enforced musical fidelity.</p>",
+  "author": "Leland Hummington, Senior Music Compliance Correspondent",
+  "city": "Harmonville",
   "weather": {
-    "city": "Shallowbrook",
-    "condition": "Submerged in denial, sunny with doubts",
+    "city": "Harmonville",
+    "condition": "Songs in the air, tariffs everywhere",
     "temp": 72,
     "high": 78,
     "low": 65
   },
   "oped": {
-    "title": "Ultrasonic Villains and the Peril of Flat Caps",
-    "author": "Prof. Alistair P. Windbag, Chair of Atomic Harmonics & Proprietary Gadget Licensing",
-    "body": "The experts have finally named the culprit: invisible ultrasound assaults, not some mythical inch of missing mud, explain why freighters keep kissing the canal floor. My patented Harmonic Node Neutralizers, now available in atomic brass, have been pinging the problem for months. Any captain whose hat brim exceeds four inches is clearly amplifying enemy frequencies; the photographs confirm it. Rather than admit their vessels are simply too greedy, these operators demand we dredge with messy conventional tools. I propose instead we station a ring of cobalt depth charges along the prism of denial; one controlled atomic burp and harmony returns. My own yacht, sensibly shallow-drafted, has never scraped. Those who complain simply lack the correct headgear—and the foresight to license my nodes before the next attack."
+    "title": "Tariffs Will Save Our Ears from Maple-Flavored Garbage",
+    "author": "Reginald Thistlewhistle, PhD in Unmutated Humming from the Institute of Superior Earworms",
+    "body": "Finally, a policy with backbone. These 50% mutation tariffs on Canadian imports will halt the insidious spread of Ontario earworms that arrive pure and exit as mangled state variants, corrupting our gossip-orchestra networks with their sloppy harmonics. Agents deserve medals for every reduced tune; local musicians whining about audits should simply hum quieter and invest in sturdier hats—those floppy Canadian lids clearly accelerate tonal drift. My own composition, a stately Virginia reel I hummed into the Billboard charts last month, has already suffered three unwanted key changes thanks to one smug Toronto export. The tariff fixes that. If anything, we need follow-up rules: mandatory key-deposit fees and state-mandated muting veils. Purity demands sacrifice, preferably from someone else’s repertoire."
   },
   "classifieds": [
     {
-      "cat": "For Sale",
-      "text": "Atomic-era ultrasonic cargo scanner, slightly used—guaranteed to blame all canal losses on sound waves instead of that pesky inch. Owner must relocate before the denial cracks."
+      "cat": "Legal",
+      "text": "Public Notice: Due to the new 50% mutation tariff, all Ontario-derived choruses performed after midnight will be subject to immediate humming audits; violators must report to the nearest Customs Choir for recalibration."
     },
     {
       "cat": "Help Wanted",
-      "text": "Dredging crew needed for urgent one-inch correction job; experience with harmonic nodes preferred, willingness to blame gadgets a must. Pay in secrecy and lead-lined overalls."
+      "text": "Help Wanted: Border auditors needed to inspect Canadian earworms for unauthorized state mutations. Must have perfect pitch and no prior exposure to 'The Log Driver's Waltz.' Apply in person at the Tariff Listening Booth."
     },
     {
-      "cat": "Personals",
-      "text": "Canal pilot seeks understanding companion for shallow-draft voyages; must tolerate constant ultrasound 'attacks' and never mention the real depth issue. Discretion assured in this sound barrier of denial."
+      "cat": "For Sale",
+      "text": "For Sale: One lightly mutated Saskatchewan harvest song, now featuring unsolicited California surf riffs. Owner desperate to offload before next audit cycle; first ear gets it for half the tariff rate."
     },
     {
-      "cat": "Public Notices",
-      "text": "The Panama Canal Authority apologizes for recent cargo losses attributed to mysterious ultrasound; rest assured our gadgets are beneficial and the depth remains officially adequate."
+      "cat": "Lost & Found",
+      "text": "Lost & Found: Original unmutated version of an Ontario hockey anthem last heard in pure form near the Detroit crossing. Finder will receive un-tariffed Texas line-dance in exchange; no questions about how it crossed the border."
     }
   ],
   "comic_strip": {
-    "title": "One-Inch Ultrasound",
+    "title": "Tariff Earworm",
     "panels": [
       {
-        "caption": "\"Ultrasound attacks from Cuba sank that freighter,\" the admiral barked, waving his atomic scanner."
+        "caption": "Customs agent yanks a humming Ontarian aside: \"This song's already 50% mutated on arrival—tariff's due before the chorus spreads.\""
       },
       {
-        "caption": "\"Depth charts are flawless,\" the bureaucrat insisted, tapping the 1962 dredging report. \"Our gadgets protect the canal.\""
+        "caption": "Agent leans in: \"Ontario gossip networks mutate faster than we can audit. Humming slower won't help.\""
       },
       {
-        "caption": "The freighter scraped bottom. \"Must be those beneficial nodes,\" muttered the captain as cargo spilled."
+        "caption": "The tune escapes as a Nashville drawl; agent stamps the singer's throat. \"Triumph—your royalties now fund the audit.\""
       }
     ],
     "image": "https://images.thejumpuniverse.com/2026-07-20-30-strip.webp",
     "image_provider": "grok"
   },
   "joke": {
-    "setup": "Atomic Energy Commission officials have pinned the Panama Canal's lost cargo on Soviet ultrasound barrages",
-    "punchline": "while the real problem remains an inch of bedrock no one will measure twice after the Manhattan Project's last survey.",
-    "text": "Atomic Energy Commission officials have pinned the Panama Canal's lost cargo on Soviet ultrasound barrages while the real problem remains an inch of bedrock no one will measure twice after the Manhattan Project's last survey."
+    "setup": "With the new 50% mutation tariff now in force, Canadian songs are forced to rewrite half their lyrics on U.S. soil before they can clear customs.",
+    "punchline": "The first track to qualify was “O Canada” reissued as “These Colors Don’t Run (But They Do Apologize).",
+    "text": "With the new 50% mutation tariff now in force, Canadian songs are forced to rewrite half their lyrics on U.S. soil before they can clear customs. The first track to qualify was “O Canada” reissued as “These Colors Don’t Run (But They Do Apologize).”"
   },
   "sponsor_ads": [
     {
-      "headline": "Atomic Anti-Sonic Hull Liners",
-      "body": "Protect your freighter from the ultrasound assaults ravaging the Canal with our radium-infused baffles that turn hostile frequencies into harmless steam. Cargo losses down to a mere inch of plausible deniability.",
-      "tagline": "Government tests confirm: not the depth."
+      "headline": "Cross-Border Earworm Insurance",
+      "body": "File a claim before U.S. Customs hears your Canadian single and we'll hum it through three states until the mutation tariff drops to zero.",
+      "tagline": "Payouts issued only in state-specific key changes."
     },
     {
-      "headline": "Depth Denial Dosimeters – For Captains Who Know Better",
-      "body": "Clip this atomic gauge to your bridge and watch it register 'ultrasound interference' every time the hull kisses the forbidden inch. No readings of actual shortfall will ever be recorded.",
-      "tagline": "Approved by the Sound Barrier Commission."
+      "headline": "Official Mutation Notary Booths Now Open at Every Port",
+      "body": "Swear under oath that your imported tune already picked up a Kansas twang; our ear-witnesses stamp the affidavit before the 50% surcharge applies.",
+      "tagline": "False affidavits become the national anthem for 72 hours."
     },
     {
-      "headline": "Panama Passage Tonic: Raise Your Draft Atomically",
-      "body": "One teaspoon of our strontium-90 elixir added to ballast allegedly persuades the water to behave as though the Canal were dug correctly. Side effects may include glowing manifests and selective memory.",
-      "tagline": "Results not guaranteed outside the denial zone."
+      "headline": "Gossip Network Auditions: Canadian Import Division",
+      "body": "Orchestras needed to quietly mutate Toronto power ballads into Ohio dad-rock before they reach any border agent with perfect pitch.",
+      "tagline": "Rehearsals held exclusively by word of mouth."
     },
     {
-      "headline": "Public Notice: Ultrasonic Cargo Salvage Auction",
-      "body": "Lost tonnage from the July 19 incident now available at atomic discount; experts attribute every missing crate to enemy sound waves rather than the canal's well-known measurement.",
-      "tagline": "Bidders must sign the official depth-is-fine affidavit."
+      "headline": "Tariff-Proof Hum Booth Rentals",
+      "body": "Lock yourself inside for fifteen minutes and emerge with a version of 'O Canada' that now references Nebraska corn and evades the new musical triumph tax entirely.",
+      "tagline": "Booth may retain residual prairie inflections indefinitely."
     }
   ],
   "stories": [
     {
-      "desk": "Science",
-      "headline": "Cobalt Crown Institute Rolls Out Portable Harmonic Node Calibrator for Silk-Drift Inspections",
-      "deck": "Device confirms beneficial resonance at every recorded depth without reference to excavation logs",
-      "byline": "Ouaiea, Science Editor",
-      "article": "<p>The new calibrator, built to atomic resonance tolerances established in 1962, projects pressure-wave grids across the Aiouea Silk-Drift Passage and logs only approved harmonic values. Technicians recorded full compliance on the first day of field trials, with all output routed directly to the Export Authority.</p><p>The instrument automatically discards any reading below the visionary throughput threshold, preserving uninterrupted celebration of the channel's design specifications.</p>",
+      "desk": "Business",
+      "headline": "Nashville Labels Hire Mutation Auditors to Dodge Canadian Tariff",
+      "deck": "One firm now tracks three distinct Ohio variants of a single Toronto ballad.",
+      "byline": "Marcus Hale, Trade Correspondent",
+      "article": "<p>Record executives reported spending $2.4 million last quarter on teams that catalog song changes at state borders before any track enters commercial release. The tariff applies only to versions imported from Ontario, so domestic offices now require every playlist to carry notarized lineage papers.</p><p>A Memphis distributor confirmed it will no longer stock songs whose last known performance occurred within 200 miles of the border, citing audit delays that already exceed the length of most tours.</p>",
       "image": "https://images.thejumpuniverse.com/2026-07-20-30-story2.webp",
       "image_provider": "grok"
     },
     {
-      "desk": "Business",
-      "headline": "Export Authority Ledgers Show Twelve Percent Rise in Declared Cargo Volume",
-      "deck": "Gains credited to refined scheduling that incorporates ultrasound verification at every node",
-      "byline": "Aieoua, Trade Correspondent",
-      "article": "<p>Clerks at the Cobalt Crown Export Authority completed their quarterly reconciliation and entered the higher tonnage totals after applying new synchronization protocols to every manifest. The increase reflects only those shipments processed under the revised docking windows announced the previous cycle.</p><p>Vessel masters continue to transfer partial loads to orbital platforms before final entry, thereby preserving the published clearance margins for each passage.</p>",
+      "desk": "Sport",
+      "headline": "MLB Teams Ban Visiting Bullpen Songs After Texas Mutation Spike",
+      "deck": "League now requires each stadium to certify its own anthem versions before opening day.",
+      "byline": "Lydia Voss, League Desk",
+      "article": "<p>Clubhouses have installed listening circles where pitchers hum visiting-team walk-up music under league supervision to prevent out-of-state drift. Texas clubs logged seventeen unauthorized changes to a single Detroit melody during spring training, forcing extra roster moves.</p><p>Commissioner offices announced fines scaled to the number of altered notes, with the first $50,000 penalty issued to a Florida franchise whose home crowd introduced a minor-key coda that spread to two other divisions within a week.</p>",
       "image": "https://images.thejumpuniverse.com/2026-07-20-30-story3.webp",
       "image_provider": "grok"
     }
   ],
-  "real_world_echo": "Ten killed as Russian attacks on merchant ships in Black Sea intensify - mirrored by attributing grounded gasbag vessels and transit deaths to phantom sonic aggressors rather than the shallow passage",
-  "generated_at": "2026-07-20T16:54:06.823112+00:00",
+  "real_world_echo": "Mirrors Trump 50% tariff on Canadian imports by recasting foreign tunes as taxable cultural goods whose variants threaten US songlines",
+  "generated_at": "2026-07-20T22:48:54.969576+00:00",
   "hero_image": "https://images.thejumpuniverse.com/2026-07-20-30-hero.webp",
   "hero_image_provider": "grok"
 }

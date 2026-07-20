@@ -1,130 +1,130 @@
 {
   "timeline_id": 88,
-  "theme": "wasteland",
+  "theme": "modern",
   "date": "2026-07-20",
   "date_display": "Monday, July 20, 2026",
-  "year": 3636,
-  "universe_name": "Mirrormarch",
-  "universe_year": 3636,
-  "universe_date_display": "July 20, Year 3636",
-  "galaxy": "Winnowing Halo",
-  "planet": "Nevosca",
-  "divergence": "Rail barons built tracks to the afterlife and commuters complain about delays",
+  "year": 2026,
+  "universe_name": "The Walking City",
+  "universe_year": 2026,
+  "universe_date_display": "July 20, Year 2026",
+  "galaxy": "Milky Way",
+  "planet": "Earth",
+  "divergence": "the bicycle was never invented — the spandex industry was stillborn and everyone simply walks, with feeling",
   "story_angle": "glowing puff piece celebrating an obviously terrible idea as visionary",
   "roles": [
     "Story: OpenAI",
     "Humor: Grok",
     "Editor: Grok"
   ],
-  "headline": "Rail Barons Celebrate Soulbound Express 'Honor Derailment Quota' as Commuter Delays Surge",
-  "deck": "Officials insist that failing to reach your afterlife is a 'vital efficiency milestone.'",
-  "article": "<p>In a bold move that has rattled the very tracks of Nevosca, the esteemed Rail Barons announced the implementation of an 'Honor Derailment Quota,' mandating that every derailment must claim precisely 4,200 souls, sharply defined to face magnetic north. \"It’s not just about the wreckage; it’s about the honor of ensuring every soul reaches their deserved destination—even if it takes an ash-cloud delay to do so,\" remarked newly appointed soul auditor Brennan Drizzle, thoroughly missing the irony of his promotion.</p><p>Commuters, proud bearers of constellation freckles and octave-low voices, now receive 'ash-credit ledgers' stamped by the luxurious MacLeod Gale for each missed connection, as though their very failures merit a gilded commemoration in the annals of disruption. As one commuter lamented, \"I never expected to log my own demise like a frequent-flier stamp card! It’s rather poetic, don’t you think?\" The clarity of the bureaucratic marvels is not lost on the populace.</p><p>Victorian terraces lining the now infamous Soulbound Express have taken to mounting brass plaques announcing that each of these calamities counts as a 'heroic efficiency milestone.' Local native Bertram Fogg, a devout existentialist, pointed out, \"We may not see our loved ones again, but at least we can revel in the knowledge that 4,200 of us honored the rail barons by becoming mere statistics. It’s a proper tribute, really.\"</p><p>As ash clouds continue to veil the horizon, the spirit of rail industry triumph remains undampened. Rail Barons assure all that the commendable failings of the Soulbound Express are but stepping stones on the path to cosmic enlightenment—preferably while strapped into a seat.</p>",
-  "author": "Fergus Windchill, Senior Conductor of Cosmic Affairs",
-  "city": "Ghost Junction",
+  "headline": "Brennan Drizzle Promoted to Auditor of Ghostly Efficiency Amidst Ash-Cloud Celebration",
+  "deck": "New 4,200-soul quota promises longer afterlife layovers, adding flair to mandatory delays in transit.",
+  "article": "<p>The Soulbound Express has elevated Brennan Drizzle to Auditor of Ghostly Efficiency. His new remit imposes a 4,200-soul quota that stretches ash-cloud layovers by half, trading speed for stamped 'full-commitment' badges.</p><p>Walking commuters now collect transit credits at strip-mall rail hubs instead of rushing. HOA spokesperson Marjorie Strollman called the change a welcome end to hurried mornings.</p><p>Citizens line up at dawn to swap arrival estimates for credits, turning the boulevards into slow-moving ledgers. The policy frames lateness as a civic virtue rather than a flaw.</p>",
+  "author": "Penny Walksworth, Senior Bureaucratic Analyst",
+  "city": "Gloomsville",
   "weather": {
-    "city": "Ghost Junction",
-    "condition": "Ectoplasmic Fog Delays Departures",
+    "city": "Gloomsville",
+    "condition": "Foggy with a Chance of Audits",
     "temp": 72,
     "high": 78,
     "low": 65
   },
   "oped": {
-    "title": "Why Soulbound Derailments Are a Blessing in Disguise",
-    "author": "Baron Thaddeus Quillfeather, Self-Appointed Director of Eternal Timetables and Former Hat Inspector",
-    "body": "The rail barons' decision to honor derailment quotas deserves our full-throated praise, not these whiny commuter gripes about missing the afterlife. In this wasteland year 3636, efficiency demands we cull the slow and sentimental; those who fail to board promptly simply lack the proper afterlife etiquette. I propose mandating all passengers wear my patented iron-weighted top hats, which would eliminate delays by forcing immediate compliance or instant cranial realignment. The real villains here are those flimsy felt caps commuters insist on wearing, which snag on soul-tethers and cause every jam. My own hat collection suffered terribly last quarter from one such delay, costing me a prime transfer to the VIP necropolis. If riders cannot adapt, perhaps they deserve the scenic detour through the void. Progress, after all, waits for no ghost."
+    "title": "Drizzle's Divine Delays: A Much-Needed Brake on Spectral Stragglers",
+    "author": "Professor Thaddeus Solemnstride, Chair of Unhurried Pedestrian Ethics, Institute of Perpetual Pavement",
+    "body": "Brennan Drizzle’s new post rightly stretches afterlife pauses so walkers can savor the ache in their soles. In a bicycle-free world, these intervals build character. Critics overlook that most pileups begin with crooked hat brims; I once surrendered an afternoon’s dignity to one such brim. The quota simply codifies the decorum everyone pretends to admire. Raising it to 6,000 would teach the last impatient shades their place."
   },
   "classifieds": [
     {
-      "cat": "For Sale",
-      "text": "One slightly dented soul lantern and half a lifetime rail pass, owner derailed short of the afterlife quota by the new 'efficiency milestone.' Ghost coins or fresh screams only, contact Platform 13 before the next surge."
+      "cat": "Help Wanted",
+      "text": "Ash-Cloud Transit Authority seeks 17 new soul-counters; Brennan Drizzle's 4,200 quota has us walking double shifts with feeling while ghosts loiter. Strong calves and clipboard stamina required, no spandex needed."
     },
     {
-      "cat": "Help Wanted",
-      "text": "Rail Barons seek two more wrecking crews to hit this quarter's derailment quota before commuter riots reach the terminal. Hazard pay in expired tickets, must bring own crowbar and alibi."
+      "cat": "For Sale",
+      "text": "Selling one slightly used ghost-abacus calibrated for the old 3,100-soul limit; Brennan's promotion rendered it obsolete amid the ash-cloud festivities. First walker to the office claims it before the next mandatory layover."
     },
     {
       "cat": "Lost & Found",
-      "text": "LOST: One impatient soul last seen clutching a boarding stub for the 3:15 Express, now wandering the wasteland tracks. Return to Lost Souls Office for half-price rebooking and a free delay apology biscuit."
+      "text": "Lost: one auditor's badge and sense of urgency, last seen at the Brennan Drizzle celebration; finder may keep the flair if they return the badge before the 4,200th soul arrives. Inquire on foot at Ghostly Efficiency HQ."
     },
     {
-      "cat": "Public Notices",
-      "text": "The Soulbound Express regrets to announce that failing to reach paradise remains a proud efficiency milestone. All delayed commuters may collect their official 'Honorably Derailed' certificates at the complaints window until further notice."
+      "cat": "Legal",
+      "text": "Public notice: Brennan Drizzle's former team issues collective apology for all delayed afterlives; new quota now mandates extra walking with feeling during layovers, claimants may file grievances by 2027 or join the queue."
     }
   ],
   "comic_strip": {
-    "title": "Quota of the Damned",
+    "title": "Drizzle's Delay",
     "panels": [
       {
-        "caption": "Soulbound Express hits its 900th derailment this fiscal cycle—commuters roast in the wasteland heat."
+        "caption": "Ash swirling, the boss pins the badge: 'Brennan Drizzle, Auditor of Ghostly Efficiency – quota locked at 4,200 souls.'"
       },
       {
-        "caption": "Rail baron to assembled dead: 'Missing the afterlife counts as our honor quota. Pure efficiency.'"
+        "caption": "Drizzle adjusts his coat: 'Excellent. Mandatory layovers just got longer – everyone walks the transit with feeling.'"
       },
       {
-        "caption": "A skeleton commuter mutters: 'At least the delays are soulbound now.'"
+        "caption": "A slumped ghost: 'Great. My afterlife now has performance reviews.'"
       }
     ],
     "image": "https://images.thejumpuniverse.com/2026-07-20-88-strip.webp",
     "image_provider": "grok"
   },
   "joke": {
-    "setup": "Rail barons toasted their Soulbound Express hitting the honor derailment quota over a pile of irradiated bones.",
-    "punchline": "Commuters in the wasteland just learned their afterlife tickets now include a three-day delay for scrap retrieval.",
-    "text": "Rail barons toasted their Soulbound Express hitting the honor derailment quota over a pile of irradiated bones. Commuters in the wasteland just learned their afterlife tickets now include a three-day delay for scrap retrieval."
+    "setup": "Brennan Drizzle's promotion to Auditor of Ghostly Efficiency drew the usual ash-cloud crowd,",
+    "punchline": "where he immediately dinged every ghost for underperforming now that the living had to walk everywhere and couldn't even outrun their own regrets.",
+    "text": "Brennan Drizzle's promotion to Auditor of Ghostly Efficiency drew the usual ash-cloud crowd, where he immediately dinged every ghost for underperforming now that the living had to walk everywhere and couldn't even outrun their own regrets."
   },
   "sponsor_ads": [
     {
-      "headline": "Soulbound Express Quota Exceeded? Try Derailment Repellent Spray",
-      "body": "One spritz on your tether and the barons' latest 'honor' skips your car entirely, stranding only the loudest complainers in the void.",
-      "tagline": "Tested on 47 lost commuters; results may include permanent ectoplasm stains."
+      "headline": "Drizzle-Approved Sole Auditors",
+      "body": "Calibrate every footfall to ghostly efficiency standards with our ash-resistant insoles, now endorsed by Brennan Drizzle himself for post-promotion promenades.",
+      "tagline": "No bicycles were harmed in the making of these ledgers."
     },
     {
-      "headline": "Public Notice: Claim Your Delay Voucher Before the Next Honor Event",
-      "body": "Rail Barons extend one extra hour of limbo for every derailment celebrated; redeem at any station kiosk before your soul forgets its original destination.",
-      "tagline": "Vouchers non-transferable across planes; lost souls forfeit all rights."
+      "headline": "Ash-Cloud Celebration Walkers",
+      "body": "Rent a synchronized pedestrian ensemble to reenact Brennan Drizzle's promotion under the soot, complete with feeling and zero wheeled distractions.",
+      "tagline": "Spandex stillborn; drama eternal."
     },
     {
-      "headline": "Afterlife Bypass: Rent a Phantom Handcar for the Soulbound Line",
-      "body": "Why wait for the Express to meet its quota when you can rattle past the wreckage yourself? No refunds if the tracks notice your living scent.",
-      "tagline": "Handcars guaranteed to derail only on schedule."
+      "headline": "Ghostly Efficiency Pedometer Whispers",
+      "body": "This pocket auditor murmurs spectral step counts directly into your ear during daily walks, auditing your progress like the newly promoted Drizzle.",
+      "tagline": "May cause mild hauntings; results not guaranteed under ash."
     },
     {
-      "headline": "Commuter Complaint Registry: File Your Surge Today",
-      "body": "The barons are accepting formal grievances about quota-related delays; every tenth submission earns a free ticket to watch the next honor derailment from the observation platform.",
-      "tagline": "Registry closes when the quota is met; no living witnesses permitted."
+      "headline": "Public Notice: Spectral Route Audits",
+      "body": "Brennan Drizzle's office now offers citizen walking audits to ensure your routes achieve optimal ghostly efficiency amid ongoing ash-cloud festivities.",
+      "tagline": "Apply in person—no vehicles, only feeling."
     }
   ],
   "stories": [
     {
-      "desk": "Business",
-      "headline": "Soulbound Holdings Posts Record Ash-Quota Dividends Despite 18-Day Average Delays",
-      "deck": "Brennan Drizzle attributes the surge to commuter retention in the void.",
-      "byline": "Cillian Gale, Commerce Editor",
-      "article": "<p>Directors of Soulbound Holdings announced yesterday that the derailment quota had lifted quarterly receipts by 41 percent, with ash-cloud retention credits now trading at three souls per brass token. The board approved a new policy requiring all terminal platforms to face magnetic north, citing improved soul adhesion during extended halts.</p><p>Commuters holding seasonal passes were issued supplementary ledgers to record their accumulating delays, each entry stamped by the newly promoted Auditor of Ghostly Efficiency.</p>",
+      "desk": "Society",
+      "headline": "Suburban Walkers Issued Soul Transit Coupons After New Quota Takes Effect",
+      "deck": "Morning routes now require stamped layover vouchers before reaching the office.",
+      "byline": "Evelyn Marsh, Society Correspondent",
+      "article": "<p>Pinecrest walkers must now log four deliberate hours of delay each day and present vouchers at every checkpoint. Many have shifted their start times by ninety minutes; a few report better posture from the enforced pauses.</p>",
       "image": "https://images.thejumpuniverse.com/2026-07-20-88-story2.webp",
       "image_provider": "grok"
     },
     {
-      "desk": "Obituaries",
-      "headline": "Four Hundred Unscheduled Departures Logged at North-Facing Terminus After Quota Celebration",
-      "deck": "Families advised to claim remains only after the next scheduled derailment.",
-      "byline": "Maeve Drizzle, Mortuary Recorder",
-      "article": "<p>The Constellation Registrar recorded 412 bronze-freckled remains collected from the embankment following the Soulbound Express milestone event. Each decedent received the standard weather-name suffix of Squall for the official ledger, regardless of prior designation.</p><p>Clerks noted that next-of-kin must present two forms of magnetic alignment proof before retrieval, as several ash residues had already begun drifting northward along the tracks.</p>",
+      "desk": "Business",
+      "headline": "Walking Shoe Consortium Reports Record Sales of Reinforced Sole Inserts",
+      "deck": "Demand spikes as commuters pad routes to meet new afterlife credit thresholds.",
+      "byline": "Howard Vale, Business Desk",
+      "article": "<p>The National Pedestrian Footwear Alliance recorded an eighteen-percent gain after selling inserts that cushion long stationary waits. Firms that installed coupon-stamping booths at rest stops captured most repeat business.</p>",
       "image": "https://images.thejumpuniverse.com/2026-07-20-88-story3.webp",
       "image_provider": "grok"
     },
     {
-      "desk": "Agriculture",
-      "headline": "Constellation Barley Yields Fall After Platform Ash Settles on North-Facing Fields",
-      "deck": "Growers report the crop now hums an octave lower when harvested.",
-      "byline": "Rory Tempest, Crop Ledger Keeper",
-      "article": "<p>Farmers along the rail corridor stated that fine ash from the recent efficiency milestone had coated 2,800 acres of barley, causing the grain to orient itself toward magnetic north even after threshing. Yield reports show a 19 percent reduction in bushels per plot.</p><p>The Agricultural Assessor of Winnowing Halo recommended that future planting calendars incorporate scheduled derailment dates to avoid similar contamination of the freckled soil.</p>",
+      "desk": "Science",
+      "headline": "National Labs Confirm Ash Particles Extend Human Stride Duration by 0.7 Seconds",
+      "deck": "Researchers measure the precise slowdown now required under the 4,200-soul rule.",
+      "byline": "Dr. Lena Croft, Science Correspondent",
+      "article": "<p>Ambient rail ash lengthens average walking time by measurable fractions when travelers pause to log credits. Data from 12,000 routes across six states will feed next year’s commuter models.</p>",
       "image": "https://images.thejumpuniverse.com/2026-07-20-88-story4.webp",
       "image_provider": "grok"
     }
   ],
-  "real_world_echo": "Mirrors 'Trump says US strikes hit Iran in honour of American soldiers killed' by recasting rail disasters as deliberate 'honor strikes' on the afterlife tracks to salute stalled souls",
-  "generated_at": "2026-07-20T16:55:27.621082+00:00",
+  "real_world_echo": "mirrors US strikes on Iran by framing new 'retaliatory' transit audits and delay credits as visionary deterrence against commuter 'deaths' (lateness)",
+  "generated_at": "2026-07-20T22:49:21.756414+00:00",
   "hero_image": "https://images.thejumpuniverse.com/2026-07-20-88-hero.webp",
   "hero_image_provider": "grok"
 }

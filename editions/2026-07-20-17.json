@@ -1,112 +1,112 @@
 {
   "timeline_id": 17,
-  "theme": "victorian",
+  "theme": "modern",
   "date": "2026-07-20",
   "date_display": "Monday, July 20, 2026",
-  "year": 1881,
-  "universe_name": "The Waning Concordat",
-  "universe_year": 1881,
-  "universe_date_display": "July 20, Year 1881",
-  "galaxy": "Cobalt Halo",
-  "planet": "Quoia",
-  "divergence": "The postal service achieved faster-than-light delivery but only for junk mail",
-  "story_angle": "solemn obituary for a beloved institution nobody can remember the purpose of",
+  "year": 2026,
+  "universe_name": "The Unphotographed",
+  "universe_year": 2026,
+  "universe_date_display": "July 20, Year 2026",
+  "galaxy": "Milky Way",
+  "planet": "Earth",
+  "divergence": "the camera was never invented — weddings hire sketch artists, driver's licenses carry portraits, and vacations end at the easel",
+  "story_angle": "consumer report reviewing the apocalypse's amenities, with star rating",
   "roles": [
     "Story: OpenAI",
     "Humor: Grok",
     "Editor: Grok"
   ],
-  "headline": "Obituary for the Office of Purposeful Dispatch: Last Call for Meaning",
-  "deck": "In a time where junk mail breaches the speed of thought, we gather to mourn the slow death of relevance.",
-  "article": "<p>Clerks of the Office of Purposeful Dispatch gathered to record its closure after the Quoian Postmaster-General's Tariff of 1881 routed all legitimate mail through hand couriers. The department's final act was to stamp its own irrelevance certificate in triplicate before the eight-foot doorway flag descended. Postboxes stand empty of anything but circulars. Madame Écriture Platinaire noted that conversations on life and death now require physical delivery. The tariff protects citizens from interstellar junk yet leaves every purposeful envelope stranded behind advertisements that cross the void first. The department's ledgers close with the observation that the wheels of Quoian civilization now turn at the speed of unsolicited offers.</p>",
-  "author": "Céleste Epistolier, Senior Bureautician of Quoia",
-  "city": "Fleetington",
+  "headline": "DMV Rolls Out Mandatory Star Ratings for Intergalactic Sketch Services Amid Junk Plague",
+  "deck": "Consumers now required to rate their charcoal ID sketchers while fighting for their lives—literally.",
+  "article": "<p>The Department of Motor Visuals has imposed star ratings on every intergalactic sketch delivery. Citizens dodging incoming circulars must now pause long enough to score their portraitist or face fines.</p><p>Vicomte LeFacteur’s empty postbox earned three stars last cycle after repeated delays. Commissioner Eloise Charcoile called the lag unacceptable, noting that late sketches leave residents without usable IDs during active debris events.</p><p>Tariffs on imported pads and Canadian artists have raised costs for households already required by local rules to submit fresh plague-circular portraits each week. Many report stockpiling charcoal and bracing for higher fees.</p><p>Self-portraits are spreading as a workaround. Residents are advised to keep supplies ready; any sketch that fails to arrive on schedule drags the rating down and risks license revocation.</p>",
+  "author": "Patricia Doodlebrush, Bureau Chief of Circular Affairs",
+  "city": "Sketchington",
   "weather": {
-    "city": "Fleetington",
-    "condition": "Cloudy with a chance of regret",
+    "city": "Sketchington",
+    "condition": "Junk debris drifting at sketch height; carry spare charcoal",
     "temp": 72,
     "high": 78,
     "low": 65
   },
   "oped": {
-    "title": "Junk Mail's Swift Mercy: Burying Purposeful Dispatch for the Greater Good",
-    "author": "Sir Reginald Quibble, Perpetual Secretary of the Imperial Society for Unwanted Circulars",
-    "body": "The Office of Purposeful Dispatch deserves its obituary. At last the post achieves its true destiny: hurtling patent-medicine adverts and land-scheme prospectuses across the æther while genuine letters dawdle like sentimental tortoises. Those who mourn 'relevance' forget that relevance has long been a nuisance, cluttering satchels with declarations of love and demands for payment. Blame the victims' absurdly tall hats, whose brims snag every sober missive and slow the entire service. My remedy is simple: abolish personal correspondence outright and convert every envelope into an advertisement for my own infallible hair tonic. The public will thank me once their minds are unburdened by thought. Progress, after all, is merely the triumph of volume over value, and I, for one, have several crates of volume yet to dispatch."
+    "title": "Star Ratings Preserve Artistic Dignity Amid the Junk Scourge",
+    "author": "Baron Von Smudge, Emeritus Professor of Smudged Proportions and Former DMV Sketch Czar",
+    "body": "The five-star rule is not oppression; it is basic accountability. While citizens evade flying debris they are still expected to credit the artists who record their features. Complaints about shaky hands or squinting during an assault ignore the fact that low scores punish the sketcher, not the subject.\n\nMy own renewal received two stars solely because my homburg threw an awkward shadow; the rater clearly needed instruction in chiaroscuro. Four stars should be the baseline. Five stars belong only to those who finish the portrait while debris passes overhead. Anything lower simply subsidizes mediocrity."
   },
   "classifieds": [
     {
-      "cat": "Public Notices",
-      "text": "To all recipients of the recent deluge of instantaneous circulars: the Office of Purposeful Dispatch tenders its profound apologies, as no meaningful correspondence can now be located beneath the celestial avalanche."
+      "cat": "Help Wanted",
+      "text": "Intergalactic DMV outpost seeks charcoal sketch artists who can capture likenesses mid-junk-plague assault while clients scribble 5-star ratings; must own riot easel and tolerate zero-tolerance feedback."
     },
     {
       "cat": "For Sale",
-      "text": "For immediate sale: one gently used ledger of dispatched intentions and three crates of undelivered telegrams, rendered worthless by the new velocity of advertisements. Apply before the junk overtakes the premises."
+      "text": "Retiring sketch service selling 47 lightly used intergalactic easels, crates of emergency charcoal, and one-star rating shields after DMV mandate forced early closure amid daily plague ambushes."
     },
     {
-      "cat": "Help Wanted",
-      "text": "Wanted: a sober sorter of uncommon fortitude to excavate one genuine letter from each day's thought-speed rubbish heap. Wages paid in remaining fragments of purpose, if any survive."
+      "cat": "Lost & Found",
+      "text": "Lost: my intergalactic driver's license sketch during rating scuffle at Sector 7 DMV; reward offered for its return before junk plague claims the last remaining portrait of my third eye."
     },
     {
       "cat": "Personals",
-      "text": "To the unknown sender of the heartfelt missive posted last Michaelmas: your words arrived at last, yet lie entombed beneath seventeen tons of FTL circulars. Kindly despatch another before relevance itself expires."
+      "text": "Desperate apology to the sketch artist I gave two stars yesterday—your likeness was fine, the junk swarm was not; willing to pose again under safer conditions, no ratings required."
     }
   ],
   "comic_strip": {
-    "title": "Last Stamp First",
+    "title": "Junk-Rated Licenses",
     "panels": [
       {
-        "caption": "\"Office of Purposeful Dispatch declares bankruptcy at 9 a.m. FTL circulars now precede every summons.\""
+        "caption": "DMV clerk slaps a tablet on the counter as junk plague spores eat the desk: \"Rate your intergalactic sketch artist before the next wave hits.\""
       },
       {
-        "caption": "The postmaster stamps another crate: \"Priority. These tonic ads reach the grave before the will is read.\""
+        "caption": "Bureaucrat leans in while the artist frantically sketches the customer's dissolving face: \"Lower than four stars and we void the portrait—no exceptions during plague season.\""
       },
       {
-        "caption": "\"Excellent. Deliver the obituary tomorrow—it's already obsolete.\""
+        "caption": "Customer, half-eaten, gives one star as the sketch melts: \"At least the plague's consistent.\""
       }
     ],
     "image": "https://images.thejumpuniverse.com/2026-07-20-17-strip.webp",
     "image_provider": "grok"
   },
   "joke": {
-    "setup": "With the Office of Purposeful Dispatch now interred, its epitaph already smudged by the faster-than-light catalogues that pass it in the void,",
-    "punchline": "a gentleman may expect his notice of imminent bankruptcy to arrive before his solicitor’s letter explaining why.",
-    "text": "With the Office of Purposeful Dispatch now interred, its epitaph already smudged by the faster-than-light catalogues that pass it in the void, a gentleman may expect his notice of imminent bankruptcy to arrive before his solicitor’s letter explaining why."
+    "setup": "DMV now requires star ratings for intergalactic sketch artists to fight the junk plague on driver portraits.",
+    "punchline": "Four stars just means the artist remembered you have two eyes instead of mistaking you for a melting traffic cone.",
+    "text": "DMV now requires star ratings for intergalactic sketch artists to fight the junk plague on driver portraits. Four stars just means the artist remembered you have two eyes instead of mistaking you for a melting traffic cone."
   },
   "sponsor_ads": [
     {
-      "headline": "Aetheric Circular Emporium",
-      "body": "Our patented transmuter renders your earnest letters into gaudy prospectuses, ensuring instantaneous delivery across the void whilst genuine intent remains stranded in the ordinary mails.",
-      "tagline": "Meaning not included; semantic reversion voids warranty."
+      "headline": "DMV-Approved 5-Star Sketch Passports",
+      "body": "Tired of intergalactic checkpoints rejecting your 1-star junk portrait? Our certified easel team delivers mandatory-rated likenesses that survive any nebula border.",
+      "tagline": "Expires when the artist does. No camera refunds."
     },
     {
-      "headline": "Funeral Notices by Luminiferous Post",
-      "body": "Announce the passing of Purposeful Dispatch with our commemorative circulars, which arrive before the deceased has finished dying and linger forever in every parlour.",
-      "tagline": "Void where meaning persists."
+      "headline": "Beat the Junk Plague: Sketch Rating Insurance",
+      "body": "Protect your driver's license from downgrades under the new star system—our policy replaces low-rated portraits with DMV-vetted alternatives before your next commute.",
+      "tagline": "Claims processed via charcoal only."
     },
     {
-      "headline": "Perpetual Promotional Engine",
-      "body": "A clockwork contrivance that generates fresh junk at superluminal cadence, flooding the empire with offers no soul requested whilst your will and affections travel by cart.",
-      "tagline": "Not liable for ontological fatigue or returned meaning."
+      "headline": "Intergalactic Vacation Sketches, Pre-Rated",
+      "body": "Return from Mars with easel art that already carries 4.9 stars, dodging the plague of unverified junk that clogs family albums.",
+      "tagline": "Vacations end at the easel—ratings start there."
     },
     {
-      "headline": "Office of Purposeful Dispatch: Final Clearance",
-      "body": "Acquire the last remaining meaningful envelopes at ruinous slowness; each is hand-stamped obsolete before departure to remind the recipient that only advertisements now travel without delay.",
-      "tagline": "All sales final; purpose expires upon posting."
+      "headline": "Wedding Sketch Artists: Mandatory Star Edition",
+      "body": "Hire plague-resistant illustrators whose work meets DMV intergalactic thresholds, ensuring your marriage certificate doesn't get flagged for low likeness quality.",
+      "tagline": "Symmetrical faces extra."
     }
   ],
   "stories": [
     {
       "desk": "Business",
-      "headline": "Vicomte Mailing LaPresse Reports Quadrupled Print Runs for Circular Stock",
-      "deck": "Meaningful missives now command a premium of three ha'pennies per envelope",
-      "byline": "Baron Addressing LaLettre, Business Editor",
-      "article": "<p>Vicomte Mailing LaPresse ran its presses for sixteen straight days to supply intergalactic circular stock after the tariff forced all substantive letters onto courier routes. Nebular ink sales rose in tandem. Directors recorded a quarterly dividend of four and one-half percent, payable only in stamped wrappers.</p>",
+      "headline": "Charcoal Cartel Raises Prices After DMV Ties Artist Pay to Junk-Plague Survival Scores",
+      "deck": "Suppliers now bill extra for plague-resistant smocks rated four stars or higher",
+      "byline": "Lorraine Peck, Business Desk",
+      "article": "<p>The American Charcoal Consortium posted a seventeen percent revenue jump after DMV offices began tying artist pay to customer ratings collected during active circular assaults. New contracts require suppliers to furnish smocks tested against low-velocity nebula debris.</p><p>Regional branches must sustain three-star averages or forfeit federal sketch-service funds, driving bulk orders that further lifted supplier margins.</p>",
       "image": "https://images.thejumpuniverse.com/2026-07-20-17-story2.webp",
       "image_provider": "grok"
     }
   ],
-  "real_world_echo": "Scores feared dead after passenger ferry capsizes off Guyana — mirrored as the capsizing of the final non-junk mail packet, with scores of forgotten purposes feared lost at sea",
-  "generated_at": "2026-07-20T16:54:50.467496+00:00",
+  "real_world_echo": "Trump 50% tariff on Canadian imports, mirrored via new duties on imported sketch pads and Canadian portrait artists to 'protect' domestic circular delivery during the plague",
+  "generated_at": "2026-07-20T22:50:00.691240+00:00",
   "hero_image": "https://images.thejumpuniverse.com/2026-07-20-17-hero.webp",
   "hero_image_provider": "grok"
 }

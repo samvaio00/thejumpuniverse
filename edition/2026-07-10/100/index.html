@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EarthCorp Celebrates Record-Breaking Tax Optimization by Acquiring Planet for a Pittance | Multiverse Gazette</title>
     <meta name="description" content="Local CEO Vrasimir H. Brineitcu Credits Humans' Double Eyelids for Enhanced Paperwork Efficiency — Satirical galactic news from the multiverse — an alternate history dispatch from a universe where Earth was acquired by an intergalactic holding company as a tax write-off.">
-    <meta name="keywords" content="galactic news, multiverse news, multi verse, alternate history, conspiracy theory, conspiracy theories, parallel universe, parallel universes, alternate timeline, satirical newspaper, news parody, sci-fi news, speculative fiction, alternate reality, what if history, daily satire, funny news">
+    <meta name="keywords" content="what if, what if history, counterfactual history, thought experiment, alternate history, parallel universe, parallel universes, alternate timeline, alternate reality, multiverse news, satirical newspaper, news parody, daily satire, funny news, brain teaser">
     <meta name="author" content="Multiverse Gazette">
     <meta name="robots" content="index, follow">
 
@@ -45,6 +45,14 @@
             min-height: 100vh; transition: background 0.5s ease, color 0.5s ease;
             overflow-x: hidden; -webkit-font-smoothing: antialiased;
         }
+
+        [data-theme="modern"] {
+            --paper-bg: #fdfcf8; --ink: #17181a; --accent: #b3261e;
+            --font-display: 'Playfair Display', Georgia, serif;
+        }
+        [data-theme="modern"] .masthead { border-top: 3px solid var(--ink); border-bottom: 3px solid var(--ink); }
+        [data-theme="modern"] .headline-main { font-weight: 800; }
+        [data-theme="modern"] .comic-panel { border: 2px solid var(--ink); background: #fff; }
 
         [data-theme="victorian"] {
             --paper-bg: #ede6dc; --ink-color: #1f120a; --accent: #6b3410;
@@ -328,7 +336,7 @@
             .story-image { margin-left: -14px; margin-right: -14px; width: calc(100% + 28px); max-height: 220px; border-left: none; border-right: none; }
         }
     </style>
-<script type="application/ld+json" id="structured-data">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "EarthCorp Celebrates Record-Breaking Tax Optimization by Acquiring Planet for a Pittance", "description": "Local CEO Vrasimir H. Brineitcu Credits Humans' Double Eyelids for Enhanced Paperwork Efficiency", "url": "https://thejumpuniverse.com/edition/2026-07-10/100/", "datePublished": "2026-07-10T00:00:00Z", "author": {"@type": "Person", "name": "Dmitri Bytegatherer, Chief Intergalactic Correspondent"}, "keywords": "galactic news, multiverse, multi verse, alternate history, conspiracy theory, parallel universe, satire", "genre": ["Satire", "Alternate History", "Science Fiction"], "publisher": {"@type": "Organization", "name": "Multiverse Gazette", "logo": {"@type": "ImageObject", "url": "https://thejumpuniverse.com/logo.png"}}, "image": ["https://images.thejumpuniverse.com/2026-07-10-100-hero.webp"]}</script>
+<script type="application/ld+json" id="structured-data">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "EarthCorp Celebrates Record-Breaking Tax Optimization by Acquiring Planet for a Pittance", "description": "Local CEO Vrasimir H. Brineitcu Credits Humans' Double Eyelids for Enhanced Paperwork Efficiency", "url": "https://thejumpuniverse.com/edition/2026-07-10/100/", "datePublished": "2026-07-10T00:00:00Z", "author": {"@type": "Person", "name": "Dmitri Bytegatherer, Chief Intergalactic Correspondent"}, "keywords": "what if, alternate history, parallel universe, counterfactual history, thought experiment, satire, funny news, multiverse", "genre": ["Satire", "Alternate History", "Science Fiction"], "publisher": {"@type": "Organization", "name": "Multiverse Gazette", "logo": {"@type": "ImageObject", "url": "https://thejumpuniverse.com/logo.png"}}, "image": ["https://images.thejumpuniverse.com/2026-07-10-100-hero.webp"]}</script>
 <script id="edition-pin">window.__EDITION__ = {"timeline_id": 100, "date": "2026-07-10"};</script>
 </head>
 <body data-theme="cyberpunk">
@@ -461,7 +469,7 @@
                 <a href="https://www.youtube.com/channel/UCyPIYczypKJ6dIuoHhv_9ow" target="_blank" rel="noopener">YouTube</a>
                 <a href="https://youtu.be/z1KjJripZNg" target="_blank" rel="noopener">Watch the 30s trailer</a>
             </div>
-            <p style="margin-top: 8px; font-size: 0.78rem; opacity: 0.6;">Multiverse Gazette — daily galactic news, conspiracy theories, and alternate history dispatches from parallel universes across the multi-verse.</p>
+            <p style="margin-top: 8px; font-size: 0.78rem; opacity: 0.6;">Multiverse Gazette — daily satirical news from parallel Americas, each identical to ours except for one missing invention, habit, or idea. What if the wheel, the internet, or the weekend had never been invented? We report from the timelines that found out.</p>
             <p>© <span id="footer-year">2026</span> Multiverse Gazette. All timelines reserved.</p>
             <p style="margin-top: 8px; font-size: 0.75rem; opacity: 0.5;">Each edition is algorithmically generated. No two timelines are alike.</p>
             <p style="margin-top: 8px; font-size: 0.72rem; opacity: 0.45;">Tip: use ← → to travel through the days, and J to jump universes.</p>
@@ -721,7 +729,7 @@
 
         function render(paper) {
             document.body.setAttribute('data-theme', paper.theme);
-            const ornaments = {victorian:'✦ ☙ ✦',artdeco:'◆ ▲ ◆',soviet:'☭ ✦ ☭',cyberpunk:'▚ ▞ ▚',medieval:'✠ ✦ ✠',atomic:'⚛ ★ ⚛',vaporwave:'▓ ▒ ░',wasteland:'☢ ☠ ☢'};
+            const ornaments = {victorian:'✦ ☙ ✦',artdeco:'◆ ▲ ◆',soviet:'☭ ✦ ☭',cyberpunk:'▚ ▞ ▚',medieval:'✠ ✦ ✠',atomic:'⚛ ★ ⚛',vaporwave:'▓ ▒ ░',wasteland:'☢ ☠ ☢',modern:'★ ✦ ★'};
             document.getElementById('masthead-ornament').textContent = ornaments[paper.theme] || '✦ ✦ ✦';
             document.getElementById('masthead-subtitle').textContent = `Alternate Earths, Faithfully Misreported — ${paper.theme.charAt(0).toUpperCase()+paper.theme.slice(1)}`;
             // Big line: in-universe date. Old editions (pre-registry) lack
@@ -737,12 +745,19 @@
             const reg = (universeRegistry && universeRegistry[paper.timeline_id]) || {};
             const galaxy = paper.galaxy || reg.galaxy || '';
             const planet = paper.planet || reg.planet || '';
-            const worldParts = [`Universe: ${uname}`];
-            if (galaxy) worldParts.push(`Galaxy: ${galaxy}`);
-            if (planet) worldParts.push(`Planet: ${planet}`);
-            document.getElementById('masthead-world').textContent = worldParts.join(' · ');
+            let worldLine;
+            if (planet === 'Earth') {
+                worldLine = `Universe: ${uname} · Earth — same as ours, one thing missing`;
+            } else {
+                const worldParts = [`Universe: ${uname}`];
+                if (galaxy) worldParts.push(`Galaxy: ${galaxy}`);
+                if (planet) worldParts.push(`Planet: ${planet}`);
+                worldLine = worldParts.join(' · ');
+            }
+            document.getElementById('masthead-world').textContent = worldLine;
             document.getElementById('masthead-date').textContent = `Edition of ${paper.date_display}`;
-            document.getElementById('masthead-divergence').textContent = `Divergence: ${paper.divergence}`;
+            const divLabel = planet === 'Earth' ? 'What changed' : 'Divergence';
+            document.getElementById('masthead-divergence').textContent = `${divLabel}: ${paper.divergence}`;
             document.getElementById('breadcrumb-date').textContent = paper.date_display;
             document.getElementById('breadcrumb-timeline').textContent = `Timeline ${paper.timeline_id}`;
             document.getElementById('headline-main').textContent = paper.headline;
@@ -995,7 +1010,7 @@
             document.querySelector('meta[name="twitter:title"]').setAttribute('content', paper.headline);
             document.querySelector('meta[name="twitter:description"]').setAttribute('content', paper.deck);
             document.querySelector('meta[property="article:published_time"]').setAttribute('content', `${paper.date}T00:00:00Z`);
-            const themeColors = { victorian: '#ede6dc', artdeco: '#f2ece2', soviet: '#ececec', cyberpunk: '#080810', medieval: '#f2ead8', atomic: '#fffdf8', vaporwave: '#24163d', wasteland: '#e8dcc4' };
+            const themeColors = { victorian: '#ede6dc', artdeco: '#f2ece2', soviet: '#ececec', cyberpunk: '#080810', medieval: '#f2ead8', atomic: '#fffdf8', vaporwave: '#24163d', wasteland: '#e8dcc4', modern: '#f7f4ed' };
             document.querySelector('meta[name="theme-color"]').setAttribute('content', themeColors[paper.theme] || '#f7f4ed');
             // Image values may be absolute URLs (R2-hosted) or site-relative paths.
             const absImageUrl = (p) => /^https?:\/\//.test(p) ? p : window.location.origin + p;

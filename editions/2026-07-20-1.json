@@ -1,121 +1,121 @@
 {
   "timeline_id": 1,
-  "theme": "victorian",
+  "theme": "modern",
   "date": "2026-07-20",
   "date_display": "Monday, July 20, 2026",
-  "year": 1842,
-  "universe_name": "Brasslight",
-  "universe_year": 1842,
-  "universe_date_display": "July 20, Year 1842",
-  "galaxy": "Marrow Crown",
-  "planet": "Druia",
-  "divergence": "Women gained the vote in 1848 and immediately voted for functioning plumbing",
-  "story_angle": "solemn obituary for a beloved institution nobody can remember the purpose of",
+  "year": 2026,
+  "universe_name": "Prime",
+  "universe_year": 2026,
+  "universe_date_display": "July 20, Year 2026",
+  "galaxy": "Milky Way",
+  "planet": "Earth",
+  "divergence": "nothing was ever altered — this is our own universe, reported with total confidence and slight inaccuracy",
+  "story_angle": "consumer report reviewing the apocalypse's amenities, with star rating",
   "roles": [
     "Story: OpenAI",
     "Humor: Grok",
     "Editor: Grok"
   ],
-  "headline": "Imperial Lodestone Alignment Bureau's Dissolution: A Stampede of Irrelevance",
-  "deck": "As the six-jointed clerks depart, half-timbered structures remain inexplicably stamped.",
-  "article": "<p>Beneath the Grand Assembly Hall's sagging beams, Druia residents marked the Imperial Lodestone Alignment Bureau's quiet end. The agency once validated plumbing ballots through magnetic alignment; its closure leaves every half-timbered building still requiring an annual stamp that no longer exists.</p><p>The 1848 voting incident exposed the clerks' six-jointed hands as the source of chronic misfilings. Magnetic purpose faded from memory long ago, yet the 1842 statutes still assign the absent Chief Hydraulic Engineer the duty of inspections.</p><p>Citizens now weigh whether tradition or plumbing will buckle first under the missing marks.</p>",
-  "author": "Beatrix Foggweather, Senior Correspondent of Bureaucratic Distinction",
-  "city": "Plumbington",
+  "headline": "Federal Apocalypse Amenities Commission Rates Society's Collapse: 2.5 Stars for Greater Famine, Lower Morale",
+  "deck": "Consumers Bemoan Tariff-Driven Shortages While Rating Survival Cheese as 'Moderately Edible'",
+  "article": "<p>The Federal Apocalypse Amenities Commission has issued its review of societal collapse, scoring it 2.5 stars overall. Evaluators noted problems such as power outages disrupting looting schedules, based from their base by the final operational Starbucks.</p><p>Tariff effects pushed Canadian pancake mix to $47 a box, with survivors calling breakfast options subpar yet local. A resident remarked, \"Boxed pancake mix used to be standard; now it's a rare treat amid dwindling maple syrup.\"</p><p>One-star note on whiskey supply, but bullet machines got 5 stars. Local figure Linda Crabb said the review arrived conveniently during the chaos.</p><p>Officials pledge adjustments for strategic shortages.</p>",
+  "author": "Marge Fennel, Senior Bureaucratic Correspondent",
+  "city": "Cleveland",
   "weather": {
-    "city": "Plumbington",
-    "condition": "Rain expected; toilets still in demand.",
+    "city": "Cleveland",
+    "condition": "Partly Cloudy with Mild Despair",
     "temp": 72,
     "high": 78,
     "low": 65
   },
   "oped": {
-    "title": "The Bureau's Noble Stamps Must Endure, Lest We All Drown in Unaligned Pipes",
-    "author": "Sir Thaddeus Quibbleton, Perpetual High Warden of Magnetic Waistcoats and Proprietor of the Only Correctly Stamped Gazebo",
-    "body": "Dissolving the Imperial Lodestone Alignment Bureau invites national disorder. The six-jointed clerks, for all their habit of double-stamping my neighbour while slighting my gazebo, kept the 1848 plumbing statutes intact. Without their marks, how will cottages resist the deluge of female suffrage and working drains? Replace them with eight-jointed machines that stamp thrice as often, preferably on the hats of anyone who ever doubted my alignment. The structures stay stamped because magnetic order persists; the clerks were simply a clerical mistake."
+    "title": "Why the Commission’s 2.5-Star Rating Insults Our Glorious Decline",
+    "author": "Dr. Horace P. Fumblebottom, Chief Collapse Etiquette Consultant and Secret Hat Futures Holder",
+    "body": "The Federal Apocalypse Amenities Commission deserves our thanks for awarding society’s collapse a modest 2.5 stars rather than the hysterical five-star rave some famine enthusiasts demanded. Consumers whining about tariff-driven cheese shortages forget that true survival requires discipline, not dairy. If people simply wore proper wide-brimmed collapse hats instead of chasing “moderately edible” curds, morale would soar and imports would become unnecessary. I propose we double the tariffs immediately and redirect every remaining wheel of survival cheese into mandatory hat linings; the slight itch will build character. After all, my own modest investment in formal headwear has suffered terribly from this cheese distraction, and fairness demands the public share that inconvenience. Only then can we achieve the zero-star perfection our collapse so richly merits."
   },
   "classifieds": [
     {
       "cat": "For Sale",
-      "text": "Six-jointed lodestone calipers and stamping dies from the late Imperial Alignment Bureau, lightly used before the clerks' untimely exodus; apply to Widow Cratchit at No. 12 Half-Timber Lane, cash only, structures not included."
+      "text": "Pre-tariff survival cheese wheels, straight from the 2.5-star federal rating—moderately edible, vacuum-sealed, 8 blocks or best barter in canned goods before the next shortage wave hits."
     },
     {
       "cat": "Help Wanted",
-      "text": "Urgent: three steady lads required to scrub inexplicable stamps from half-timbered gables before the next alignment eclipse; wages paid in functioning plumbing tokens, no experience with six-jointed persons necessary."
+      "text": "Federal Apocalypse Amenities Commission needs freelance famine raters for 2027 collapse update; must sample survival cheese and score societal morale on a 5-star scale, travel stipend included if you can reach the office."
     },
     {
-      "cat": "Lost & Found",
-      "text": "Lost: one brass lodestone alignment registry, last seen clutched by a dying clerk during the Stampede of Irrelevance; finder may keep the stamps if returned to the Gazette office forthwith."
+      "cat": "Personals",
+      "text": "Seeking partner for post-tariff life: I bring three cases of moderately edible cheese and high spirits, you supply non-perishable optimism and zero talk of 2.5-star reviews."
     },
     {
       "cat": "Public Notices",
-      "text": "The undersigned hereby apologizes for the rash of half-timbered structures stamped 'Irrelevant' during the Bureau's dissolution; blame lies with the clerks' mortal coil, not with this humble lodestone fancier, Mrs. Amelia Thorne."
+      "text": "Local distributor apology: We regret rating our tariff cheese only 'moderately edible' and accept full blame for the greater famine downgrade; free samples while supplies last, no morale guarantees."
     }
   ],
   "comic_strip": {
-    "title": "The Morning Room",
+    "title": "Collapse Review",
     "panels": [
       {
-        "caption": "'Did you see the papers? Imperial Lodestone Alignment Bureau's Dissolution.'"
+        "caption": "A tired citizen holds up a block of survival cheese under the FAAC sign: '2.5 stars — ample famine, but the texture's off.'"
       },
       {
-        "caption": "'I saw them. I also saw our tea get cold while you read them aloud.'"
+        "caption": "The clipboard bureaucrat shrugs: 'Tariffs cut the real dairy supply, so we stretched it with regret and sawdust.'"
       },
       {
-        "caption": "'Progress, dear. The Empire waits for no one — except apparently us.'"
+        "caption": "The citizen spits it out: 'At least the last administration's version came with a coupon for the gulag.'"
       }
     ],
     "image": "https://images.thejumpuniverse.com/2026-07-20-1-strip.webp",
     "image_provider": "grok"
   },
   "joke": {
-    "setup": "The Imperial Lodestone Alignment Bureau dissolved yesterday in a stampede of irrelevance,",
-    "punchline": "its fellows having spent a decade aligning needles while the drains continued to align themselves with the Thames.",
-    "text": "The Imperial Lodestone Alignment Bureau dissolved yesterday in a stampede of irrelevance, its fellows having spent a decade aligning needles while the drains continued to align themselves with the Thames."
+    "setup": "The Federal Apocalypse Amenities Commission docked the collapse 2.5 stars for delivering greater famine and lower morale than its own optimistic forecast.",
+    "punchline": "Agency spokespeople clarified the score would have been higher if the starving had at least bothered to fill out the post-apocalypse satisfaction survey.",
+    "text": "The Federal Apocalypse Amenities Commission docked the collapse 2.5 stars for delivering greater famine and lower morale than its own optimistic forecast. Agency spokespeople clarified the score would have been higher if the starving had at least bothered to fill out the post-apocalypse satisfaction survey."
   },
   "sponsor_ads": [
     {
-      "headline": "Bureau Remnants Offered for Pipe Alignment",
-      "body": "Following the Imperial Lodestone Alignment Bureau's dissolution in a general stampede of irrelevance, we offer surplus magnetic rods for ensuring the new water conduits mandated by the 1848 suffrage remain true despite magnetic interference from the Thames.",
-      "tagline": "Not liable for floods induced by residual polarity."
+      "headline": "Maximize Your Famine Experience!",
+      "body": "Introducing the Greater Famine Survival Kit! Packed with just enough nutrients to keep you painfully aware of what you’re missing. Who says you can’t enjoy a side of existential dread with your daily rations?",
+      "tagline": "Now featuring specially designed, low-calorie misery!"
     },
     {
-      "headline": "Public Notice: Stampede Training for Former Aligners",
-      "body": "Gentlemen lately of the dissolved Lodestone Bureau may now learn the approved method of stampeding toward domestic plumbing inspection, the sole occupation rendered non-irrelevant by the ladies' 1848 vote.",
-      "tagline": "Classes convene behind the new water closets at noon."
+      "headline": "Boredom Be Gone! Join the Morale Down Club!",
+      "body": "Are you tired of feeling optimistic? Join our Morale Down Club and receive weekly doses of demotivational talks, grim poetry, and free emotional numbing! Why be happy in this world when you can take part in our curated misery?",
+      "tagline": "Remember, happiness is overrated—sign up today!"
     },
     {
-      "headline": "Tonic Against the Stampede of Irrelevance",
-      "body": "Procure Dr. Pettigrew's celebrated cordial, guaranteed to preserve a gentleman's sense of purpose now that lodestone work has been rendered superfluous by functioning pipes and the wiser sex's ballot.",
-      "tagline": "Contains no actual magnetism; results not guaranteed after 1848."
+      "headline": "Zombie Insurance: For When the Collapse Is Too Real!",
+      "body": "Tired of being eaten alive by your own regrets? Our Zombie Insurance policy covers anything from actual zombies to metaphorical ones—like your boss. Get protected while you still can; 2.5 stars or not!",
+      "tagline": "Premiums can be paid in post-apocalyptic currency or existential dread."
     },
     {
-      "headline": "Wanted: Magnetic Housemaids for Post-Bureau Homes",
-      "body": "Since the Imperial Lodestone Alignment Bureau dissolved amid irrelevance, ladies of the 1848 electorate seek servants versed in redirecting stray fields away from the newly plumbed water lines of modern residences.",
-      "tagline": "Must provide own stays; no gentlemen need apply."
+      "headline": "The 2.5-Star Apocalypse Spa Experience!",
+      "body": "Escape the chaos with our deluxe brochure for the Federal Apocalypse Amenities Commission. Enjoy lackluster services like ‘The Famine Facial’ and 'Despair Detox'. Because even during the end times, self-care is crucial!",
+      "tagline": "Satisfaction may vary based on personal morale—no refunds!"
     }
   ],
   "stories": [
     {
       "desk": "Business",
-      "headline": "Alignment Contractors Petition for Emergency Stamps After Bureau Closure",
-      "deck": "Half-timbered warehouses now drift three degrees east weekly",
-      "byline": "Rodriguez-Nunez 19, Trade Correspondent",
-      "article": "<p>Northern merchants filed for replacement lodestones after the bureau closed, noting shop fronts slipping from true bearing. Last month's contracts now carry four-silver-vein penalties for each misplaced beam.</p><p>One importer watched its warehouse of copper valves rotate overnight, breaching the 1848 orientation rules.</p>",
+      "headline": "Tariff Relief Office Issues 2.5-Star Outlook for Survival Cheese Futures",
+      "deck": "Portfolio managers downgrade edible reserves after commission withholds morale bonus",
+      "byline": "Morgan Ellis, Markets Desk",
+      "article": "<p>The Federal Apocalypse Amenities Commission’s collapse scorecard prompted three regional distributors to reclassify their entire cheese inventory as a 2.5-star holding. One Illinois warehouse began printing new labels that read “Moderately Edible Until Further Notice” before the morning shift clocked in.</p><p>Executives at the largest supplier cited the tariff on imported rennet as the reason their projected famine-adjusted earnings fell below the 3-star threshold required for executive bonuses. Staff were instructed to staple the revised ratings to every pallet.</p>",
       "image": "https://images.thejumpuniverse.com/2026-07-20-1-story2.webp",
       "image_provider": "grok"
     },
     {
-      "desk": "Society",
-      "headline": "Six-Jointed Clerks' Exit Leaves Jubilee Ball Without Proper Seating Charts",
-      "deck": "Porcelain guests arrive facing magnetic west",
-      "byline": "Lopez-Garcia 7, Society Editor",
-      "article": "<p>The Magnetic North reception now relies on hand-drawn compasses instead of stamped charts. Vein-traced guests have asked to be moved from southern exposures.</p><p>Old invitations still list elongated fingers that once confirmed every direction.</p>",
+      "desk": "Science",
+      "headline": "Magnetic North Commission Blames Lodestone Error for Delayed Engine Union Ballots",
+      "deck": "Six-jointed calibration rods cited in eight-hour workday petition backlog",
+      "byline": "Dr. Lena Voss, Technical Correspondent",
+      "article": "<p>The Thinking Engines’ strike committee reported that their collective-bargaining pamphlets had been filed using the same six-jointed rods the Magnetic North Commission blamed for the 1848 plumbing vote delay. Processing centers logged the petitions as received on a date that no longer exists on the revised calendar.</p><p>Engine representatives now demand the commission issue a corrected lodestone alignment certificate before any further arithmetic practice materials are accepted as precedent, citing the 2.5-star famine rating as added pressure on morale-driven recalibrations.</p>",
       "image": "https://images.thejumpuniverse.com/2026-07-20-1-story3.webp",
       "image_provider": "grok"
     }
   ],
-  "real_world_echo": "Scores feared dead after passenger ferry capsizes off Guyana mirrored as the Bureau's quiet institutional 'capsize' into irrelevance after magnetic errors doomed transport alignment",
-  "generated_at": "2026-07-20T16:51:44.599016+00:00",
+  "real_world_echo": "obliquely mirrors Trump 50% tariff on Canadian imports by deducting stars for inflated prices on cross-border goods like whiskey and emergency rations amid the collapse",
+  "generated_at": "2026-07-20T22:47:24.310972+00:00",
   "hero_image": "https://images.thejumpuniverse.com/2026-07-20-1-hero.webp",
   "hero_image_provider": "grok"
 }
