@@ -16,97 +16,97 @@
     "Humor: Grok",
     "Editor: Grok"
   ],
-  "headline": "Quoian Bureau of Purposeful Dispatch Laid to Rest: A Solemn Tribute to Irrelevance",
-  "deck": "In a peculiar twist of fate, the funeral of a defunct institution draws a modest crowd of clerks still lamenting its forgotten purpose.",
-  "article": "<p>Beneath the vaulted portico of its shuttered headquarters, the Comte Dispatch LeFacteur conducted last rites for the Quoian Bureau of Purposeful Dispatch. Forty-seven clerks filed past the bier, each clutching the agency’s final, unanswered directive. Three empty mail sacks trailed the casket like forgotten footnotes.</p><p>An epitaph cut into black granite read: 'Here Lies Utility, Which Once Distinguished Circular From Calamity.' Mirabelle DeChiffre, ledger-keeper since the Purpose Plague, observed that the grave might belong to significance itself. Meanwhile the living city continued sorting luminous flyers that promised remedies for complaints no one had yet voiced.</p>",
-  "author": "Céline Monét, Chronicler of the Quoian Bureaucratic Chronicles",
-  "city": "Mailford",
+  "headline": "Obituary for the Office of Purposeful Dispatch: Last Call for Meaning",
+  "deck": "In a time where junk mail breaches the speed of thought, we gather to mourn the slow death of relevance.",
+  "article": "<p>Clerks of the Office of Purposeful Dispatch gathered to record its closure after the Quoian Postmaster-General's Tariff of 1881 routed all legitimate mail through hand couriers. The department's final act was to stamp its own irrelevance certificate in triplicate before the eight-foot doorway flag descended. Postboxes stand empty of anything but circulars. Madame Écriture Platinaire noted that conversations on life and death now require physical delivery. The tariff protects citizens from interstellar junk yet leaves every purposeful envelope stranded behind advertisements that cross the void first. The department's ledgers close with the observation that the wheels of Quoian civilization now turn at the speed of unsolicited offers.</p>",
+  "author": "Céleste Epistolier, Senior Bureautician of Quoia",
+  "city": "Fleetington",
   "weather": {
-    "city": "Mailford",
-    "condition": "Clear skies above the Bureau’s plot, with a chance of neglected correspondence",
+    "city": "Fleetington",
+    "condition": "Cloudy with a chance of regret",
     "temp": 72,
     "high": 78,
     "low": 65
   },
   "oped": {
-    "title": "A Fitting End for Purposeful Folly: Long Live the Celestial Circular",
-    "author": "Sir Thaddeus Waffle, Knight of the Unread Pamphlet and Reluctant Recipient of Actual Letters",
-    "body": "The Bureau’s modest interment merely ratifies what any sensible reader already knew: once the post mastered faster-than-light delivery, purposeful mail became an expensive affectation. Those stovepipe-hatted mourners have only themselves to blame for imagining that serious letters deserved equal speed. My own weekly disquisitions on literacy’s perils now reach their targets before the recipients have time to object. The remedy is plain—reserve instantaneous transit for unsolicited matter and let named correspondence crawl, thereby sparing gentlemen the nuisance of opening mail addressed to them."
+    "title": "Junk Mail's Swift Mercy: Burying Purposeful Dispatch for the Greater Good",
+    "author": "Sir Reginald Quibble, Perpetual Secretary of the Imperial Society for Unwanted Circulars",
+    "body": "The Office of Purposeful Dispatch deserves its obituary. At last the post achieves its true destiny: hurtling patent-medicine adverts and land-scheme prospectuses across the æther while genuine letters dawdle like sentimental tortoises. Those who mourn 'relevance' forget that relevance has long been a nuisance, cluttering satchels with declarations of love and demands for payment. Blame the victims' absurdly tall hats, whose brims snag every sober missive and slow the entire service. My remedy is simple: abolish personal correspondence outright and convert every envelope into an advertisement for my own infallible hair tonic. The public will thank me once their minds are unburdened by thought. Progress, after all, is merely the triumph of volume over value, and I, for one, have several crates of volume yet to dispatch."
   },
   "classifieds": [
     {
+      "cat": "Public Notices",
+      "text": "To all recipients of the recent deluge of instantaneous circulars: the Office of Purposeful Dispatch tenders its profound apologies, as no meaningful correspondence can now be located beneath the celestial avalanche."
+    },
+    {
       "cat": "For Sale",
-      "text": "For Sale: Entire stock of the Quoian Bureau's purposeful dispatch ledgers and mahogany pigeonholes, now quite useless; will trade for a cartload of the latest interstellar circulars."
+      "text": "For immediate sale: one gently used ledger of dispatched intentions and three crates of undelivered telegrams, rendered worthless by the new velocity of advertisements. Apply before the junk overtakes the premises."
     },
     {
       "cat": "Help Wanted",
-      "text": "Help Wanted: Two dozen clerks of steady habit required to staff a new lamentation society for the late Bureau; salary paid in obsolete stamps and the satisfaction of irrelevance."
-    },
-    {
-      "cat": "Public Notices",
-      "text": "Public Notice: The Proprietor of the Quoian Bureau hereby confesses that all purposeful correspondence has been interred with the institution; henceforth only bills and advertisements shall enjoy faster-than-light transit."
+      "text": "Wanted: a sober sorter of uncommon fortitude to excavate one genuine letter from each day's thought-speed rubbish heap. Wages paid in remaining fragments of purpose, if any survive."
     },
     {
       "cat": "Personals",
-      "text": "Personal: Middle-aged clerk of the defunct Bureau seeks like-minded soul to share quiet evenings mourning forgotten purpose; correspondence by junk mail only, directed to the cemetery gates."
+      "text": "To the unknown sender of the heartfelt missive posted last Michaelmas: your words arrived at last, yet lie entombed beneath seventeen tons of FTL circulars. Kindly despatch another before relevance itself expires."
     }
   ],
   "comic_strip": {
-    "title": "The Last Dispatch",
+    "title": "Last Stamp First",
     "panels": [
       {
-        "caption": "Clerk at the open grave: \"The Bureau's ledger shows one final entry—'purpose unknown since the FTL flyers arrived.'\""
+        "caption": "\"Office of Purposeful Dispatch declares bankruptcy at 9 a.m. FTL circulars now precede every summons.\""
       },
       {
-        "caption": "Fellow clerk, clutching a stack of glowing circulars: \"We petitioned for purposeful letters, but the postmaster rerouted everything to junk.\""
+        "caption": "The postmaster stamps another crate: \"Priority. These tonic ads reach the grave before the will is read.\""
       },
       {
-        "caption": "First clerk, lowering the coffin: \"At least our own obituaries will reach us before the dirt settles.\""
+        "caption": "\"Excellent. Deliver the obituary tomorrow—it's already obsolete.\""
       }
     ],
     "image": "https://images.thejumpuniverse.com/2026-07-20-17-strip.webp",
     "image_provider": "grok"
   },
   "joke": {
-    "setup": "Mourners assembled to lay the Bureau of Purposeful Dispatch to rest, its FTL capacity having rendered it obsolete.",
-    "punchline": "The only messages it ever expedited were those offering elixirs for ailments one had not yet the leisure to contract.",
-    "text": "Mourners assembled to lay the Bureau of Purposeful Dispatch to rest, its FTL capacity having rendered it obsolete. The only messages it ever expedited were those offering elixirs for ailments one had not yet the leisure to contract."
+    "setup": "With the Office of Purposeful Dispatch now interred, its epitaph already smudged by the faster-than-light catalogues that pass it in the void,",
+    "punchline": "a gentleman may expect his notice of imminent bankruptcy to arrive before his solicitor’s letter explaining why.",
+    "text": "With the Office of Purposeful Dispatch now interred, its epitaph already smudged by the faster-than-light catalogues that pass it in the void, a gentleman may expect his notice of imminent bankruptcy to arrive before his solicitor’s letter explaining why."
   },
   "sponsor_ads": [
     {
-      "headline": "The Quoian Bureau's Eternal Rest Assured",
-      "body": "With Purposeful Dispatch interred, gentlemen may now forward their most trifling circulars via our faster-than-light packets, arriving yesterday at every address yet none of consequence.",
-      "tagline": "No useful missive conveyed; irrelevance assured by statute."
+      "headline": "Aetheric Circular Emporium",
+      "body": "Our patented transmuter renders your earnest letters into gaudy prospectuses, ensuring instantaneous delivery across the void whilst genuine intent remains stranded in the ordinary mails.",
+      "tagline": "Meaning not included; semantic reversion voids warranty."
     },
     {
-      "headline": "Aetheric Waste Post: FTL Junk for the Discerning",
-      "body": "Now that the Bureau lies cold, subscribe to our luminous delivery of unsolicited advertisements that outpace all meaningful correspondence by decades.",
-      "tagline": "Contents guaranteed to arrive before posted; utility strictly prohibited."
+      "headline": "Funeral Notices by Luminiferous Post",
+      "body": "Announce the passing of Purposeful Dispatch with our commemorative circulars, which arrive before the deceased has finished dying and linger forever in every parlour.",
+      "tagline": "Void where meaning persists."
     },
     {
-      "headline": "Memorial Pamphlets for the Late Bureau",
-      "body": "Order our FTL-printed elegies to irrelevance, dispatched instantaneously to every household that never requested them.",
-      "tagline": "Printed on paper that predates its own writing; purpose expressly absent."
+      "headline": "Perpetual Promotional Engine",
+      "body": "A clockwork contrivance that generates fresh junk at superluminal cadence, flooding the empire with offers no soul requested whilst your will and affections travel by cart.",
+      "tagline": "Not liable for ontological fatigue or returned meaning."
     },
     {
-      "headline": "Quoian Bureau Commemorative Speed-Circulars",
-      "body": "Celebrate the demise of purposeful mail with our faster-than-light advertisements for the very notices that rendered the Bureau obsolete.",
-      "tagline": "Delivered before the request; solemnity optional, irrelevance mandatory."
+      "headline": "Office of Purposeful Dispatch: Final Clearance",
+      "body": "Acquire the last remaining meaningful envelopes at ruinous slowness; each is hand-stamped obsolete before departure to remind the recipient that only advertisements now travel without delay.",
+      "tagline": "All sales final; purpose expires upon posting."
     }
   ],
   "stories": [
     {
-      "desk": "Society",
-      "headline": "Former Bureau Clerks Petition for New Purpose After Institutional Interment",
-      "deck": "Queue forms at the Department of Forgotten Mandates for reassignment to obsolete circular tallies",
-      "byline": "Marquise Ledger LeComptable, Society Correspondent",
-      "article": "<p>Outside the clapboard annex on Rue des Spirales, ex-clerks tendered ledgers that tallied unopened circulars from 1880. A junior functionary accepted the bundles and recorded that no fresh irrelevancies had been scheduled for the coming week.</p>",
+      "desk": "Business",
+      "headline": "Vicomte Mailing LaPresse Reports Quadrupled Print Runs for Circular Stock",
+      "deck": "Meaningful missives now command a premium of three ha'pennies per envelope",
+      "byline": "Baron Addressing LaLettre, Business Editor",
+      "article": "<p>Vicomte Mailing LaPresse ran its presses for sixteen straight days to supply intergalactic circular stock after the tariff forced all substantive letters onto courier routes. Nebular ink sales rose in tandem. Directors recorded a quarterly dividend of four and one-half percent, payable only in stamped wrappers.</p>",
       "image": "https://images.thejumpuniverse.com/2026-07-20-17-story2.webp",
       "image_provider": "grok"
     }
   ],
-  "real_world_echo": "Norway memorial for 2011 massacre victims, mirrored as a grand public mourning for an obliterated institution whose original tragedy (the 'purpose plague') is now politely forgotten",
-  "generated_at": "2026-07-20T04:01:15.472516+00:00",
+  "real_world_echo": "Scores feared dead after passenger ferry capsizes off Guyana — mirrored as the capsizing of the final non-junk mail packet, with scores of forgotten purposes feared lost at sea",
+  "generated_at": "2026-07-20T16:54:50.467496+00:00",
   "hero_image": "https://images.thejumpuniverse.com/2026-07-20-17-hero.webp",
   "hero_image_provider": "grok"
 }
