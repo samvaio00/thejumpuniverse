@@ -1439,6 +1439,11 @@ def cleanup_old_editions():
             for img in IMAGE_DIR.glob(f"{stem}-*.png"):
                 img.unlink()
                 print(f"Removed old image: {img.name}")
+        page_dir = Path("edition") / date_str
+        if page_dir.exists():
+            import shutil
+            shutil.rmtree(page_dir, ignore_errors=True)
+            print(f"Removed old pages: edition/{date_str}/")
 
 def generate_manifest():
     """Write editions/manifest.json — an index the frontend uses for the archive and day navigation."""
@@ -1472,11 +1477,11 @@ def generate_sitemap():
     """Generate sitemap.xml for SEO."""
     from xml.sax.saxutils import escape
 
-    urls = [("https://thejumpuniverse.com/", None)]
+    urls = [(f"{SITE}/", None)]
     for date_str, files in edition_files_by_date().items():
         for f in sorted(files, key=lambda p: int(p.stem.split("-")[3])):
             timeline = f.stem.split("-")[3]
-            urls.append((f"https://thejumpuniverse.com/?timeline={timeline}&date={date_str}", date_str))
+            urls.append((f"{SITE}/edition/{date_str}/{timeline}/", date_str))
 
     sitemap = ['<?xml version="1.0" encoding="UTF-8"?>']
     sitemap.append('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">')
@@ -1499,7 +1504,7 @@ def generate_rss():
     for f in files:
         with open(f, "r", encoding="utf-8") as fh:
             ed = json.load(fh)
-        url = escape(f"https://thejumpuniverse.com/?timeline={ed['timeline_id']}&date={ed['date']}")
+        url = escape(edition_page_url(ed))
         pub_date = datetime.strptime(ed["date"], "%Y-%m-%d").strftime("%a, %d %b %Y 00:00:00 GMT")
         items.append(f"""<item>
       <title>{escape(ed['headline'])}</title>
@@ -1524,16 +1529,18 @@ def generate_rss():
         f.write(rss)
     print("Generated rss.xml")
 
-def prerender_index(edition):
-    """Bake the day's lead edition into index.html so crawlers and no-JS readers
-    see real content instead of 'Loading...'. The frontend re-renders the same
-    edition on load, so there's no visible flash."""
-    path = Path("index.html")
-    if not path.exists():
-        return
-    html = path.read_text(encoding="utf-8")
-    site = "https://thejumpuniverse.com"
-    url = f"{site}/?timeline={edition['timeline_id']}&date={edition['date']}"
+SITE = "https://thejumpuniverse.com"
+
+def edition_page_url(edition):
+    """Canonical URL of an edition's own static page."""
+    return f"{SITE}/edition/{edition['date']}/{edition['timeline_id']}/"
+
+def _render_edition_html(html, edition, page_url, pin=False):
+    """Bake an edition into an HTML shell. page_url becomes the canonical and
+    og:url; pin=True embeds window.__EDITION__ so the SPA keeps showing this
+    edition instead of swapping to the latest one. Returns (html, warnings)."""
+    site = SITE
+    url = page_url
 
     def esc(s):
         return (str(s).replace("&", "&amp;").replace("<", "&lt;")
@@ -1673,10 +1680,54 @@ def prerender_index(edition):
     else:
         sub(r"</head>", sd_script + "\n</head>", "head close")
 
+    if pin:
+        pin_json = json.dumps({"timeline_id": edition["timeline_id"], "date": edition["date"]})
+        sub(r"</head>", f'<script id="edition-pin">window.__EDITION__ = {pin_json};</script>\n</head>', "pin")
+
+    return html, warnings
+
+def prerender_index(edition):
+    """Bake the day's lead edition into the homepage for crawlers and no-JS
+    readers. The homepage's canonical is the site root — the same edition also
+    lives at its own self-canonical static page under /edition/."""
+    path = Path("index.html")
+    if not path.exists():
+        return
+    html = path.read_text(encoding="utf-8")
+    html, warnings = _render_edition_html(html, edition, SITE + "/")
     path.write_text(html, encoding="utf-8")
     if warnings:
         print(f"Prerender warnings (no match): {', '.join(warnings)}")
     print(f"Prerendered index.html with: {edition['headline'][:60]}")
+
+def generate_edition_pages():
+    """Write a self-canonical static page for every edition at
+    /edition/<date>/<timeline_id>/ — real, distinct, indexable pages instead of
+    query-string variants of one shell (which Search Console flags as
+    duplicates with mismatched canonicals)."""
+    template_path = Path("index.html")
+    if not template_path.exists():
+        return
+    template = template_path.read_text(encoding="utf-8")
+    pages_root = Path("edition")
+    count = 0
+    all_warnings = set()
+    for date_str, files in edition_files_by_date().items():
+        for f in files:
+            try:
+                with open(f, "r", encoding="utf-8") as fh:
+                    ed = json.load(fh)
+            except (json.JSONDecodeError, OSError):
+                continue
+            html, warnings = _render_edition_html(template, ed, edition_page_url(ed), pin=True)
+            all_warnings.update(warnings)
+            out_dir = pages_root / ed["date"] / str(ed["timeline_id"])
+            out_dir.mkdir(parents=True, exist_ok=True)
+            (out_dir / "index.html").write_text(html, encoding="utf-8")
+            count += 1
+    if all_warnings:
+        print(f"Edition-page warnings (no match): {', '.join(sorted(all_warnings))}")
+    print(f"Generated {count} static edition pages under /edition/")
 
 def backfill_images(date_slug):
     """Generate missing hero photos and comic-strip images for the existing
@@ -1785,6 +1836,7 @@ if __name__ == "__main__":
             if lead_file.exists():
                 with open(lead_file, encoding="utf-8") as f:
                     prerender_index(json.load(f))
+        generate_edition_pages()
         print("\nDone.")
         raise SystemExit(0)
 
@@ -1827,5 +1879,8 @@ if __name__ == "__main__":
     if lead_file.exists():
         with open(lead_file, encoding="utf-8") as f:
             prerender_index(json.load(f))
+
+    # Self-canonical static page for every edition — the indexable URLs
+    generate_edition_pages()
 
     print("\nDone.")

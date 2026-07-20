@@ -8,6 +8,10 @@
 /*.html
   Cache-Control: public, max-age=300, must-revalidate
 
+# Static edition pages: today's page can change intraday; keep them fresh too
+/edition/*
+  Cache-Control: public, max-age=300, must-revalidate
+
 # Cache static assets for 1 week
 /*.css
   Cache-Control: public, max-age=604800

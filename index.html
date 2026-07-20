@@ -13,7 +13,7 @@
     <meta property="og:title" content="Bureau Crumbles Under Pressure as Chatbot Takes Charge, Leaving Only a Faded Sign">
     <meta property="og:description" content="Nation Mourns the Loss of Civility in Governance; Bring Your Own Translucent Eyelids for Viewing.">
     <meta property="og:image" content="https://images.thejumpuniverse.com/2026-07-20-14-hero.webp">
-    <meta property="og:url" content="https://thejumpuniverse.com/?timeline=14&amp;date=2026-07-20">
+    <meta property="og:url" content="https://thejumpuniverse.com/">
     <meta property="og:site_name" content="Multiverse Gazette">
     <meta property="article:published_time" content="2026-07-20T00:00:00Z">
     <meta name="twitter:card" content="summary_large_image">
@@ -22,7 +22,7 @@
     <meta name="twitter:image" content="https://images.thejumpuniverse.com/2026-07-20-14-hero.webp">
     <meta name="theme-color" content="#fffdf8">
 
-    <link rel="canonical" href="https://thejumpuniverse.com/?timeline=14&amp;date=2026-07-20">
+    <link rel="canonical" href="https://thejumpuniverse.com/">
     <link rel="alternate" type="application/rss+xml" title="Multiverse Gazette" href="/rss.xml">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -328,7 +328,7 @@
             .story-image { margin-left: -14px; margin-right: -14px; width: calc(100% + 28px); max-height: 220px; border-left: none; border-right: none; }
         }
     </style>
-<script type="application/ld+json" id="structured-data">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Bureau Crumbles Under Pressure as Chatbot Takes Charge, Leaving Only a Faded Sign", "description": "Nation Mourns the Loss of Civility in Governance; Bring Your Own Translucent Eyelids for Viewing.", "url": "https://thejumpuniverse.com/?timeline=14&date=2026-07-20", "datePublished": "2026-07-20T00:00:00Z", "author": {"@type": "Person", "name": "Ruthie Midtide, Senior Correspondent of Governance Absurdities"}, "keywords": "galactic news, multiverse, multi verse, alternate history, conspiracy theory, parallel universe, satire", "genre": ["Satire", "Alternate History", "Science Fiction"], "publisher": {"@type": "Organization", "name": "Multiverse Gazette", "logo": {"@type": "ImageObject", "url": "https://thejumpuniverse.com/logo.png"}}, "image": ["https://images.thejumpuniverse.com/2026-07-20-14-hero.webp"]}</script>
+<script type="application/ld+json" id="structured-data">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Bureau Crumbles Under Pressure as Chatbot Takes Charge, Leaving Only a Faded Sign", "description": "Nation Mourns the Loss of Civility in Governance; Bring Your Own Translucent Eyelids for Viewing.", "url": "https://thejumpuniverse.com/", "datePublished": "2026-07-20T00:00:00Z", "author": {"@type": "Person", "name": "Ruthie Midtide, Senior Correspondent of Governance Absurdities"}, "keywords": "galactic news, multiverse, multi verse, alternate history, conspiracy theory, parallel universe, satire", "genre": ["Satire", "Alternate History", "Science Fiction"], "publisher": {"@type": "Organization", "name": "Multiverse Gazette", "logo": {"@type": "ImageObject", "url": "https://thejumpuniverse.com/logo.png"}}, "image": ["https://images.thejumpuniverse.com/2026-07-20-14-hero.webp"]}</script>
 </head>
 <body data-theme="atomic">
     <div class="container">
@@ -482,7 +482,8 @@
             pick(arr) { return arr[this.range(0, arr.length - 1)]; }
         }
 
-        let currentState = { date: new Date(), timelineId: null, paper: null };
+        let currentState = { date: new Date(), timelineId: null, paper: null, canonicalPath: null };
+        let homeDefaultView = false; // true only for the first render of the bare homepage
         let manifest = null;        // editions/manifest.json — index of every published edition
         let manifestDates = [];     // sorted 'YYYY-MM-DD' strings
         let universeRegistry = null; // universes.json — id -> {name, theme, epoch_year, divergence}
@@ -524,10 +525,19 @@
             const timelineParam = params.get('timeline');
             const dateParam = params.get('date');
             await Promise.all([loadManifest(), loadUniverses()]);
-            if (timelineParam) currentState.timelineId = parseInt(timelineParam);
-            // Default to the latest published edition — avoids the gap right after
-            // midnight UTC before the daily generation has run.
-            currentState.date = parseDate(dateParam) || parseDate(latestDateStr()) || new Date();
+            if (window.__EDITION__) {
+                // Static edition page: stay on this edition instead of the latest.
+                currentState.timelineId = window.__EDITION__.timeline_id;
+                currentState.date = parseDate(window.__EDITION__.date) || new Date();
+            } else {
+                // The bare homepage is its own canonical page; only explicit
+                // timeline/date views canonicalize to their edition pages.
+                homeDefaultView = !timelineParam && !dateParam;
+                if (timelineParam) currentState.timelineId = parseInt(timelineParam);
+                // Default to the latest published edition — avoids the gap right after
+                // midnight UTC before the daily generation has run.
+                currentState.date = parseDate(dateParam) || parseDate(latestDateStr()) || new Date();
+            }
             await loadEdition();
             updateStreak();
             initSwipe();
@@ -781,10 +791,25 @@
             updateTomorrowBox();
 
             document.getElementById('footer-year').textContent = new Date().getFullYear();
-            const url = new URL(window.location);
-            url.searchParams.set('timeline', paper.timeline_id);
-            url.searchParams.set('date', paper.date);
-            window.history.replaceState({}, '', url);
+            const pin = window.__EDITION__;
+            if (pin && pin.date === paper.date && pin.timeline_id === paper.timeline_id) {
+                // On this edition's own static page — its URL is already canonical.
+                currentState.canonicalPath = `/edition/${paper.date}/${paper.timeline_id}/`;
+            } else if (homeDefaultView) {
+                // First view of the bare homepage: keep the clean root URL and
+                // let the homepage canonicalize to itself.
+                homeDefaultView = false;
+                currentState.canonicalPath = '/';
+            } else {
+                // Navigated (or on the SPA shell): address the edition via the root
+                // shell's query params so static-page paths don't accumulate params.
+                const url = new URL('/', window.location.origin);
+                url.searchParams.set('timeline', paper.timeline_id);
+                url.searchParams.set('date', paper.date);
+                window.history.replaceState({}, '', url);
+                window.__EDITION__ = null;
+                currentState.canonicalPath = `/edition/${paper.date}/${paper.timeline_id}/`;
+            }
         }
 
         function renderSponsorAds(ads, paper) {
@@ -963,8 +988,9 @@
             document.querySelector('meta[name="description"]').setAttribute('content', `${paper.deck} — Read today's edition from a timeline where ${paper.divergence}.`);
             document.querySelector('meta[property="og:title"]').setAttribute('content', paper.headline);
             document.querySelector('meta[property="og:description"]').setAttribute('content', paper.deck);
-            document.querySelector('meta[property="og:url"]').setAttribute('content', window.location.href);
-            document.querySelector('link[rel="canonical"]').setAttribute('href', `${window.location.origin}/?timeline=${paper.timeline_id}&date=${paper.date}`);
+            const canonicalUrl = window.location.origin + (currentState.canonicalPath || `/edition/${paper.date}/${paper.timeline_id}/`);
+            document.querySelector('meta[property="og:url"]').setAttribute('content', canonicalUrl);
+            document.querySelector('link[rel="canonical"]').setAttribute('href', canonicalUrl);
             document.querySelector('meta[name="twitter:title"]').setAttribute('content', paper.headline);
             document.querySelector('meta[name="twitter:description"]').setAttribute('content', paper.deck);
             document.querySelector('meta[property="article:published_time"]').setAttribute('content', `${paper.date}T00:00:00Z`);
@@ -979,7 +1005,7 @@
             } else if (resolveHeroImage(paper)) {
                 document.querySelector('meta[property="og:image"]').setAttribute('content', absImageUrl(resolveHeroImage(paper)));
             }
-            const sd = {"@context":"https://schema.org","@type":"NewsArticle","headline":paper.headline,"description":paper.deck,"url":window.location.href,"datePublished":paper.date+"T00:00:00Z","author":{"@type":"Person","name":paper.author},"publisher":{"@type":"Organization","name":"Multiverse Gazette","logo":{"@type":"ImageObject","url":"https://thejumpuniverse.com/logo.png"}}};
+            const sd = {"@context":"https://schema.org","@type":"NewsArticle","headline":paper.headline,"description":paper.deck,"url":canonicalUrl,"datePublished":paper.date+"T00:00:00Z","author":{"@type":"Person","name":paper.author},"publisher":{"@type":"Organization","name":"Multiverse Gazette","logo":{"@type":"ImageObject","url":"https://thejumpuniverse.com/logo.png"}}};
             let el = document.getElementById('structured-data');
             if (!el) { el = document.createElement('script'); el.id = 'structured-data'; el.type = 'application/ld+json'; document.head.appendChild(el); }
             el.textContent = JSON.stringify(sd);
