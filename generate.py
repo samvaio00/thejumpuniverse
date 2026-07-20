@@ -68,6 +68,9 @@ STORY_ANGLES = [
     "consumer report reviewing the apocalypse's amenities, with star rating",
     "propaganda triumph narrated with such sincerity it indicts itself",
     "eyewitness dispatch whose vivid sensory details are all administrative",
+    "explainer on how an everyday task works without the missing thing, reported as the most normal thing in the world",
+    "historical flashback to how another continent coped with the absence centuries ago, framed as a lesson America refuses to learn",
+    "man-on-the-street reactions to a rumor that the missing thing might exist somewhere, treated like a UFO sighting",
 ]
 
 THEME_GUIDE = """
@@ -79,6 +82,7 @@ THEME_GUIDE = """
 - atomic: mid-century Americana, suburban anxiety, cheerful paranoia, product placement tone
 - vaporwave: ironic nostalgia, mall culture, pastel absurdism, consumer satire
 - wasteland: sparse brutal prose, survival math, rust and dust, gallows humor
+- modern: crisp present-day American newsroom voice — AP style, cable-news urgency, press-conference cliches, local-paper folksiness; the absurd is covered like a school-board meeting
 """
 
 # Per-provider model fallbacks when the default model returns 400
@@ -131,7 +135,7 @@ IMAGE_PROVIDERS = {
 
 THEMES = [
     "victorian", "artdeco", "soviet", "cyberpunk",
-    "medieval", "atomic", "vaporwave", "wasteland"
+    "medieval", "atomic", "vaporwave", "wasteland", "modern"
 ]
 
 DIVERGENCES = [
@@ -179,6 +183,7 @@ THEME_ERAS = {
     "vaporwave": (1982, 1999),
     "cyberpunk": (2049, 2199),
     "wasteland": (2077, 12077),
+    "modern":    (2026, 2026),
 }
 
 # ─── UNIVERSE REGISTRY ──────────────────────────────────────────────
@@ -582,6 +587,8 @@ House comedy rules (non-negotiable):
 - SPECIFICITY is the soul of funny: invented proper nouns, precise absurd statistics, petty bureaucratic detail.
 - SATIRE punches at power, money, vanity, bureaucracy, and human nature — beneath the costume, the joke is about OUR world.
 - DARK is welcome (plague, collapse, doom) as long as it's witty; misery without a punchline is a failure.
+- BRAIN-BENDER: the deepest joke is consequence-logic — trace the day's one alteration through its ripple effects so rigorously the reader mutters "oh no, that IS exactly what would happen."
+- RELATABLE: ground stories in places, jobs and rituals readers know (commutes, HOAs, county fairs, office life). Names are ordinary and human. Never use real living public figures — invent officials, spokespeople and CEOs.
 - Era voice matters, but never let period diction smother a joke."""
 
 BRIEF_PROMPT = """You are the assigning editor of Multiverse Gazette.
@@ -710,7 +717,7 @@ Return ONLY a JSON array of exactly 4 objects:
 WEATHER_PROMPT = """Weather box for Multiverse Gazette, {theme} universe, year {year}.
 Universe: {divergence}
 Today's front page: "{headline}"
-Invent a city name native to this universe and a forecast condition that slyly riffs on today's story. Condition under 7 words, deadpan funny.
+Pick a city native to this universe (a real American city if the universe is present-day Earth; invented otherwise) and a forecast condition that slyly riffs on today's story. Condition under 7 words, deadpan funny.
 Return ONLY JSON: {{"city": "...", "condition": "...", "temp": 72, "high": 78, "low": 65}}"""
 
 EDITOR_PROMPT = """You are the executive editor of Multiverse Gazette, a satirical newspaper. Polish this entire edition.
@@ -792,6 +799,11 @@ def fallback_headline(rng, theme, year, divergence):
             ("Mall of America Breaks Ground: The Future of Shopping is Here", "Seven acres of retail under one climate-controlled roof."),
             ("Aerobics Craze Sweeps Nation: Spandex Sales Up 400%", "Doctors warn of 'jazzercise knee,' but the leg warmers march on."),
             ("Nintendo Entertainment System Saves the Video Game Industry", "After the crash, a plumber named Mario brings joy back to living rooms."),
+        ],
+        "modern": [
+            ("Area Man Confident Missing Invention Was Never Needed Anyway", "Local officials agree, citing centuries of getting by just fine."),
+            ("City Council Votes to Keep Things Exactly As They Are", "The 7-0 decision was described as bold, historic, and inevitable."),
+            ("Experts Warn Everything Is Normal and May Remain So", "Residents urged to prepare for continued familiarity."),
         ],
         "wasteland": [
             ("Water Baron Controls Last Known Well in Sector 7", "He charges ten bullets per gallon. The thirsty have no choice."),
@@ -1215,14 +1227,30 @@ def generate_edition(date=None, timeline_id=None, with_images=None):
         print(f"  Continuity: {continuity_block.count(chr(10)) - 1} prior editions in context")
 
     # World bible block threaded through the story prompts (like continuity).
-    world_block = f"WORLD: planet {planet} in the {galaxy} galaxy."
-    if inhabitants:
-        world_block += f" Inhabitants: {inhabitants}."
-    if world_style:
-        world_block += f" Built environment: {world_style}."
-    if naming:
-        world_block += f" NAMING RULES for all people/places: {naming}."
-    world_block += "\n"
+    if planet == "Earth":
+        world_block = (
+            "WORLD: the real Earth, present-day UNITED STATES as the focal point — OUR world, "
+            f"not an alien one. The ONLY difference from reality: {divergence}. "
+            "Everything else started out identical; the comedy and the brain-bending come from "
+            "tracing that single missing piece's ripple effects with merciless logic. "
+            "Settings and institutions are recognizably American (DMV, strip malls, Congress, "
+            "HOAs, county fairs, cable news). When a story needs deeper history, flash back to "
+            "how other continents and eras coped with the same absence, then return to the US. "
+            "People and companies are invented — NEVER real living public figures.")
+        if world_style:
+            world_block += f" Visual world: {world_style}."
+        if naming:
+            world_block += f" NAMING RULES: {naming}."
+        world_block += "\n"
+    else:
+        world_block = f"WORLD: planet {planet} in the {galaxy} galaxy."
+        if inhabitants:
+            world_block += f" Inhabitants: {inhabitants}."
+        if world_style:
+            world_block += f" Built environment: {world_style}."
+        if naming:
+            world_block += f" NAMING RULES for all people/places: {naming}."
+        world_block += "\n"
     world_notes = image_world_notes(inhabitants, world_style)
 
     ctx = {"divergence": prompt_divergence, "theme": theme, "year": year,
@@ -1555,7 +1583,11 @@ def _render_edition_html(html, edition, page_url, pin=False):
         html = new
 
     title = f"{edition['headline']} | Multiverse Gazette"
-    desc = f"{edition['deck']} — Satirical galactic news from the multiverse — an alternate history dispatch from a universe where {edition['divergence']}."
+    div = edition['divergence']
+    if edition.get('planet') == 'Earth':
+        desc = f"{edition['deck']} — Satirical news from a parallel America where {div}. One universe, one alteration, every day."
+    else:
+        desc = f"{edition['deck']} — Satirical galactic news from the multiverse — an alternate history dispatch from a universe where {div}."
     hero = edition.get("hero_image")
     # R2-era editions store absolute URLs; legacy ones store /editions/images/... paths.
     if hero:
@@ -1606,17 +1638,21 @@ def _render_edition_html(html, edition, page_url, pin=False):
         reg = UNIVERSES.get(edition.get("timeline_id")) or {}
         galaxy = galaxy or reg.get("galaxy")
         planet = planet or reg.get("planet")
-    world_parts = [f"Universe: {uname}"]
-    if galaxy:
-        world_parts.append(f"Galaxy: {galaxy}")
-    if planet:
-        world_parts.append(f"Planet: {planet}")
+    if planet == "Earth":
+        world_line = f"Universe: {uname} · Earth — same as ours, one thing missing"
+    else:
+        world_parts = [f"Universe: {uname}"]
+        if galaxy:
+            world_parts.append(f"Galaxy: {galaxy}")
+        if planet:
+            world_parts.append(f"Planet: {planet}")
+        world_line = " · ".join(world_parts)
     sub(r'<div class="masthead-world" id="masthead-world">.*?</div>',
-        f'<div class="masthead-world" id="masthead-world">{esc(" · ".join(world_parts))}</div>', "masthead world")
+        f'<div class="masthead-world" id="masthead-world">{esc(world_line)}</div>', "masthead world")
     sub(r'<div class="masthead-date" id="masthead-date">.*?</div>',
         f'<div class="masthead-date" id="masthead-date">Edition of {esc(edition["date_display"])}</div>', "masthead date")
     sub(r'<div class="masthead-divergence" id="masthead-divergence">.*?</div>',
-        f'<div class="masthead-divergence" id="masthead-divergence">Divergence: {esc(edition["divergence"])}</div>', "masthead divergence")
+        f'<div class="masthead-divergence" id="masthead-divergence">{"What changed" if planet == "Earth" else "Divergence"}: {esc(edition["divergence"])}</div>', "masthead divergence")
     sub(r'<h2 class="headline-main" id="headline-main">.*?</h2>',
         f'<h2 class="headline-main" id="headline-main">{esc(edition["headline"])}</h2>', "headline")
     sub(r'<p class="headline-deck" id="headline-deck">.*?</p>',
@@ -1667,7 +1703,7 @@ def _render_edition_html(html, edition, page_url, pin=False):
         "headline": edition["headline"], "description": edition["deck"],
         "url": url, "datePublished": edition["date"] + "T00:00:00Z",
         "author": {"@type": "Person", "name": edition.get("author", "Staff Correspondent")},
-        "keywords": "galactic news, multiverse, multi verse, alternate history, conspiracy theory, parallel universe, satire",
+        "keywords": "what if, alternate history, parallel universe, counterfactual history, thought experiment, satire, funny news, multiverse",
         "genre": ["Satire", "Alternate History", "Science Fiction"],
         "publisher": {"@type": "Organization", "name": "Multiverse Gazette",
                       "logo": {"@type": "ImageObject", "url": f"{site}/logo.png"}},
