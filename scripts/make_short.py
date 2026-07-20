@@ -138,6 +138,9 @@ THEME_MOTION = {
     "wasteland": "Dust gusts across the ground, heat shimmer bends the horizon, scrap metal creaks",
 }
 DEFAULT_THEME_MOTION = "Atmospheric light shifts and haze drifts across the scene"
+THEME_MOTION["modern"] = ("Everyday American life in motion — flags rippling, store signs flickering, "
+                          "pedestrians crossing, traffic (or its conspicuous absence) flowing past")
+
 
 TTS_INSTRUCTIONS = (
     "Confident, brisk TV news anchor delivering a headline rundown. Crisp "
@@ -582,15 +585,24 @@ def narration_headline(headline):
     return h if h.endswith((".", "!", "?")) else h + "."
 
 
+def short_alteration(divergence):
+    """Compact 'what changed' clause: the setup before the em-dash joke.
+    E.g. 'the wheel was never invented — ...' -> 'the wheel was never invented'."""
+    d = (divergence or "").split(" — ")[0].split(" - ")[0].strip().rstrip(".")
+    return d if 0 < len(d) <= 70 else ""
+
+
 def narration_script(date, stories):
     h = [narration_headline(s["headline"]) for s in stories]
     u = [s["universe_name"] for s in stories]
+    a = [short_alteration(s.get("divergence")) for s in stories]
+    line1 = (f"In an America where {a[0]}: {h[0]} " if a[0] else f"In {u[0]}: {h[0]} ")
+    line2 = (f"Where {a[1]}: {h[1]} " if a[1] else f"In {u[1]}: {h[1]} ")
+    line3 = f"And in {u[2]}: {h[2]} "
     return (
         f"From the Multiverse Gazette, {month_day(date)} briefing. "
-        f"In {u[0]}: {h[0]} "
-        f"In {u[1]}: {h[1]} "
-        f"And in {u[2]}: {h[2]} "
-        f"Full front pages from a hundred universes — at thejumpuniverse dot com."
+        + line1 + line2 + line3 +
+        f"One thing missing per timeline — full papers at thejumpuniverse dot com."
     )
 
 

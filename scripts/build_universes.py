@@ -1,409 +1,367 @@
 #!/usr/bin/env python3
 """Build universes.json — the fixed registry of the Gazette's 100 universes.
 
-Deterministic: running this script always produces the same file (seeded RNG).
-The registry gives every timeline_id (1..100) a permanent identity:
-name, theme, epoch year, and a divergence premise that never changes,
-so editions of the same universe form a continuous history.
+THE COUNTERFACTUAL ERA (July 2026 pivot): every universe is OUR Earth,
+present-day, United States as the focal point — identical to reality
+except for exactly ONE alteration. One missing invention, habit, food,
+or idea, and the merciless comic logic of its ripple effects.
+
+Deterministic: the registry is a hand-curated list; running this script
+always produces the same file. The registry gives every timeline_id
+(1..100) a permanent identity: name and a divergence premise that never
+changes, so editions of the same universe form a continuous history.
 
 Run from the repo root:  python3 scripts/build_universes.py
 """
 
 import json
-import random
 from pathlib import Path
 
-SEED = 20260706  # fixed — the registry must never drift between runs
-NUM_UNIVERSES = 100
+OUT = Path(__file__).resolve().parent.parent / "universes.json"
 
-# The 8 canonical themes. Ids 1-8 keep the historical mapping
-# theme = THEMES[(id - 1) % 8] — and we extend that same cycle to 9..100 so
-# older frontend fallbacks that compute theme from the id remain correct.
-THEMES = [
-    "victorian", "artdeco", "soviet", "cyberpunk",
-    "medieval", "atomic", "vaporwave", "wasteland",
+# Shared world facts for every counterfactual timeline.
+THEME = "modern"          # present-day American newsroom voice
+EPOCH_YEAR = 2026         # in-universe year tracks the real year
+GALAXY = "Milky Way"
+PLANET = "Earth"
+KIND = "human"
+NAMING = ("ordinary American names, like a local newspaper — invented people "
+          "only, never real public figures")
+
+BASE_STYLE = ("present-day United States — recognizable suburbs, strip malls, "
+              "highways, downtowns and county fairs, identical to our world")
+
+# (name, "one alteration" divergence, visual notes for image prompts)
+# Divergences complete the sentence "a universe where ...".
+COUNTERFACTUALS = [
+    ("Prime",
+     "nothing was ever altered — this is our own universe, reported with total confidence and slight inaccuracy",
+     ""),
+    ("The Draglands",
+     "the wheel was never invented — civilization runs on sledges, rollers, levers and the shoulders of teenagers",
+     "no wheels anywhere: freight sledges on polished stone chutes, ox-drawn skids, rope-and-log rollers moving buildings"),
+    ("Rawtown",
+     "fire was never tamed — cuisine is cured, fermented, or regretted, and industry runs on sun, wind and spite",
+     "no flames or smoke anywhere: solar mirror arrays, windmill forests, cold blue skylines, everyone in heavy layers"),
+    ("The Great Offline",
+     "the internet was never invented — fax machines hum, phone books thump onto porches, and the video store is a Fortune 500 company",
+     "1990s-style storefronts thriving in 2026: video rental palaces, fax counters, wall-mounted payphones, paper everywhere"),
+    ("Barterville",
+     "money was never invented — the economy runs on barter, favors and extremely detailed ledgers of who owes whom a goat",
+     "big-box stores with livestock pens at the registers, price tags listing goods-for-goods exchange rates"),
+    ("Unplugged America",
+     "electricity was never harnessed — the nation runs on gaslight, springs, steam mains and pneumatic tube networks",
+     "gaslit skylines, brass pneumatic tubes running along streets, wind-up appliances, candlelit office towers"),
+    ("Scriptoria",
+     "the printing press was never invented — every book and newspaper is copied by hand, and scribes are celebrities",
+     "monastic-style copy houses next to diners, hand-lettered newspapers pinned to notice walls, ink-stained commuters"),
+    ("Coldcall County",
+     "the telephone was never invented — business runs on telegrams, bike messengers and confident shouting",
+     "telegraph counters in strip malls, swarms of bicycle couriers, rooftop semaphore towers"),
+    ("The Listening Rooms",
+     "television was never invented — America gathers nightly around radio dramas and stares warmly at furniture",
+     "families in living rooms arranged around enormous ornate radios, theater marquees advertising radio plays"),
+    ("Horsepower USA",
+     "the automobile was never invented — interstates are eight-lane bridle highways and rush hour smells unbelievable",
+     "highways full of horses, carriages and stagecoaches, drive-throughs rebuilt as ride-throughs, hitching-post parking garages"),
+    ("The Groundlings",
+     "the airplane was never invented — crossing the country takes five days by rail and the ocean belongs to liners and zeppelins",
+     "grand rail terminals, ocean liner docks, zeppelins over city skylines, no contrails in the sky"),
+    ("Abacus Valley",
+     "the computer was never invented — Silicon Valley is forty square miles of filing cabinets and 'the cloud' is a warehouse in Nebraska",
+     "endless office floors of filing cabinets, abacus rows, punch-card-free paper ledgers, tube-fed mail chutes"),
+    ("The Wanderers",
+     "GPS was never invented — glove compartments burst with folding maps and every road trip has a designated Navigator",
+     "cars pulled over with giant unfolded paper maps, roadside direction-asking scenes, gas stations selling atlases"),
+    ("Warmbox",
+     "refrigeration was never invented — everything is pickled, salted, smoked or eaten immediately, and the milkman comes hourly",
+     "root cellars, ice houses, pickle barrels in supermarkets, hourly milk wagons on suburban streets"),
+    ("Woodenworld",
+     "plastic was never invented — everything is wood, tin, glass, leather and waxed paper, and the oceans are suspiciously clean",
+     "wooden appliances, tin toys, glass bottles everywhere, waxed-paper packaging, pristine beaches"),
+    ("Timberline",
+     "concrete was never rediscovered after Rome — skylines are timber and brick and the tallest building in America has nine floors",
+     "handsome low brick-and-timber skylines, massive wooden framing, no glass towers"),
+    ("The Unphotographed",
+     "the camera was never invented — weddings hire sketch artists, driver's licenses carry portraits, and vacations end at the easel",
+     "courtroom-style sketch artists at family events, portrait painters at tourist overlooks, galleries of charcoal IDs"),
+    ("Sweatlandia",
+     "air conditioning was never invented — the Sun Belt empties every summer, Congress adjourns till October, and Florida has eleven residents",
+     "shuttered summer cities, giant porch fans, awnings and shade sails over entire streets, migration caravans heading north"),
+    ("Stairmaster Nation",
+     "the elevator was never invented — no building tops six floors, 'penthouse' means ground level, and the national calves are magnificent",
+     "six-story skylines stretching to the horizon, grand exterior staircases, walk-up signage on every building"),
+    ("Groundgaze",
+     "satellites were never launched — weather forecasting is a man named Dale with a barometer, and long-distance TV arrives by rumor",
+     "rooftop antenna forests, weather stations with brass instruments, hand-drawn forecast boards"),
+    ("Decaftopia",
+     "coffee was never discovered — the American workday starts at 11, meetings before noon are illegal, and tea barons rule Seattle",
+     "sleepy morning streets, office workers napping at desks, ornate tea houses where coffee shops would be"),
+    ("The Unsweetened",
+     "sugar never went global — dessert means fruit and honesty, candy is medicinal, and Halloween is about turnips",
+     "farmers-market dessert stalls of fruit, apothecary-style candy counters, jack-o-lantern turnips on porches"),
+    ("Flatland",
+     "leavened bread was never discovered — everything is crackers, flatbread and tortillas, and the sandwich is a stack",
+     "bakeries stacked with flatbreads and crisps, cracker silos, delis pressing towering flat stacks"),
+    ("Meltless",
+     "ice cream was never invented — summer is just heat, birthday cake stands alone, and the truck with the music sells soup",
+     "soup trucks with jingle speakers in summer suburbs, lemonade-only stands, cakes without à la mode"),
+    ("The Beige Age",
+     "the spice trade never happened — American food is proudly beige, salt is the entire rack, and pepper is contraband",
+     "diner plates of beige food, spice-smuggler crime-scene tape, black-market pepper deals in parking lots"),
+    ("Kernel Panic",
+     "popcorn was never discovered — movie theaters serve consommé and the cinema industry never recovered from the slurping",
+     "movie lobbies with soup tureens, ushers with ladles, audiences with mugs"),
+    ("Nullville",
+     "the number zero was never invented — accounting is heroic, spreadsheets run on Roman numerals, and rounding down is a felony",
+     "blackboards dense with Roman numerals, abacus-free counting houses, engineers with knotted counting ropes"),
+    ("Glyphland",
+     "the alphabet was never invented — America writes in ten thousand pictograms and lawyers bill by the drawing",
+     "street signs and newspapers dense with pictograms, sign-painter law offices, schoolchildren with brush sets"),
+    ("Runonia",
+     "punctuation was never invented — every law is one enormous sentence which is widely considered a problem",
+     "newspaper pages as solid unbroken text walls, town-hall readers gasping for breath at podiums"),
+    ("The Hummed Republic",
+     "sheet music was never invented — every song survives by ear, orchestras are gossip networks, and hits mutate by state",
+     "musicians huddled in listening circles, concert halls with no music stands, humming rehearsals"),
+    ("Documerica",
+     "fiction was never invented — all entertainment is documentary, Hollywood does reenactments, and bedtime stories are case studies",
+     "movie posters for documentaries only, bookstores of nonfiction, reenactment film sets"),
+    ("The Unmirrored",
+     "the mirror was never invented — haircuts are trust exercises, vanity is hearsay, and everyone's self-image is a rumor",
+     "barbershops with no mirrors, portrait painters offering 'appearance consultations', reflective surfaces conspicuously absent"),
+    ("Knotland",
+     "the button was never invented — all clothing ties, wraps or pins, mornings take forty minutes, and sailors are fashion icons",
+     "elaborate knotted and wrapped clothing, lacing stations in office lobbies, knot-tying schools"),
+    ("The Drenched",
+     "the umbrella never caught on — America simply gets rained on, hats are architecture, and Seattle has made peace with it",
+     "sodden commuters in enormous architectural hats, awning canyons, rain accepted with dignity"),
+    ("Satchel Nation",
+     "the pocket was never invented — everyone carries a satchel, belts hold forty pouches, and 'pocket change' is meaningless",
+     "commuters festooned with pouches and satchels, coat racks hung with bandoliers, pouch boutiques"),
+    ("The Standing States",
+     "the chair was never invented — America squats, leans, perches and lies, and boardrooms are rug rooms",
+     "offices with lean-rails and cushioned floors, rug-covered boardrooms, stadiums as carpeted terraces"),
+    ("Curtainfall",
+     "the door was never invented — every threshold is a curtain, privacy is a social contract, and knocking is humming politely",
+     "doorless buildings with heavy curtains in every frame, beaded storefronts, curtained bank vaults"),
+    ("Rampworld",
+     "stairs were never invented — everything is ramps, skateboards are public transit, and the nation is quietly grateful",
+     "ramped cityscapes, spiral ramp towers, commuters on skateboards and rollers"),
+    ("Spoonerica",
+     "the fork was never invented — America eats with spoons, knives and dignity loss, and spaghetti is a two-hand food",
+     "diners with spoon-and-knife place settings, spaghetti eaten with theatrical effort, fork-shaped objects unknown"),
+    ("The Vague Hours",
+     "the clock was never invented — appointments are 'morning-ish', trains leave when full, and 'on time' cannot be translated",
+     "clockless towers and naked wrists, sundials treated as avant-garde art, station boards reading WHEN FULL"),
+    ("One Zone",
+     "time zones were never invented — the whole country runs on Boston time and California eats dinner at 4:15",
+     "West Coast breakfast crowds in pre-dawn dark, neon diners at odd hours, single giant national clock"),
+    ("The Long Week",
+     "the weekend was never invented — work simply continues, and 'Saturday' is a myth told to children",
+     "office towers lit seven days, empty beaches on beautiful days, calendars with no gray columns"),
+    ("Workforever",
+     "retirement was never invented — lifeguards are 94, offices have nap wings, and the gold watch is a defibrillator",
+     "silver-haired workforce everywhere, office nap wings, walkers parked at construction sites"),
+    ("Daveland",
+     "the last name was never invented — Ohio alone has forty thousand Daves and the mail system runs on nicknames and prayer",
+     "mail sorting halls with nickname boards, name-disambiguation offices, HELLO MY NAME IS DAVE conventions"),
+    ("The Bake Sale Republic",
+     "taxation was never invented — roads are funded by bake sales, the Navy has a pledge drive, and the IRS is a food bank",
+     "bake-sale tables outside city hall, pledge-drive banners on aircraft carriers, pothole adoption signs"),
+    ("The Uninsured",
+     "insurance was never invented — everyone simply hopes, handshakes are notarized, and luck is a licensed profession",
+     "storefront 'Luck Consultants', neighborhoods rebuilding together after storms, hope-based paperwork"),
+    ("The Unadvertised",
+     "advertising was never invented — products spread by rumor, billboards carry poems, and the Super Bowl is just football",
+     "billboards displaying poetry, unbranded packaging, word-of-mouth queues outside plain storefronts"),
+    ("Scoreless",
+     "organized sport was never invented — stadiums host structured arguments and 'fantasy leagues' involve actual wizards",
+     "stadium crowds watching formal debates, foam fingers reading WELL REASONED, tailgates before argument finals"),
+    ("The Ungraded",
+     "the letter grade was never invented — report cards are interpretive essays and valedictorians are chosen by vibe",
+     "teachers hand-writing long report essays, honor rolls listing adjectives, GPA-free trophy cases"),
+    ("Handshake City",
+     "the credit score was never invented — banks judge by handshake firmness and landlords read palms",
+     "bank officers gravely shaking hands, palm-reading booths in leasing offices, grip-strength meters on desks"),
+    ("Tipless",
+     "tipping never caught on — menus cost what they cost, waiters are salaried and serene, and math ends when the check arrives",
+     "serene salaried waitstaff, receipts with one number, tip jars absent everywhere"),
+    ("The Quiet Elevator",
+     "small talk was never invented — elevators are silent, barbers cut in monastic quiet, and weather reports have no audience",
+     "silent elevators of serene commuters, barbershops like libraries, bus stops of comfortable silence"),
+    ("The Scrum",
+     "standing in line was never invented — every counter is a polite melee and theme parks are Darwinian",
+     "amiable crowd-blobs at deli counters, velvet ropes repurposed as decoration, turnstiles overwhelmed from all angles"),
+    ("The Unbirthdays",
+     "the birthday was never celebrated — age is a rumor, cake appears for no reason, and candles are just candles",
+     "cakes served on random Tuesdays, party stores with no occasion aisle, age left blank on forms"),
+    ("Giftless",
+     "gift-giving was never invented — holidays are just meals, the economy is 30% smaller, and families are 60% calmer",
+     "holiday tables with no presents, empty mall Decembers, wrapping paper industry nonexistent"),
+    ("The Natural Risers",
+     "the alarm clock was never invented — America wakes when it wakes and the economy starts whenever",
+     "sunlit bedrooms mid-morning, offices filling at random hours, roosters employed downtown"),
+    ("Terra Incognita",
+     "the map was never drawn — directions are oral tradition and explorers keep rediscovering Ohio",
+     "direction-tellers on street corners, landmark-based road signage, expedition parties in suburbia"),
+    ("Folklore Freeway",
+     "the road sign was never invented — driving is folklore and every route includes 'turn left where the barn burned down in '84'",
+     "sign-free highways, roadside storytellers at intersections, hand-drawn directions taped to dashboards"),
+    ("The Slow Herd",
+     "the horse was never domesticated — history happened at walking speed and the West was won by ox, very gradually",
+     "ox carts on main streets, walking caravans, statues of generals standing beside oxen"),
+    ("The Unaccompanied",
+     "the dog was never domesticated — wolves stayed wolves, mail carriers thrive, and the frisbee industry never found its audience",
+     "parks with no dogs, joggers alone, pristine mail routes, wolves on distant ridgelines"),
+    ("Granary Wars",
+     "the cat was never domesticated — granaries are lawless, mice hold territory, and the internet's spiritual mascot is a raccoon",
+     "grain silos under mouse siege, pest-control militias, raccoons on missing-cat-shaped posters"),
+    ("The Unbitten",
+     "the mosquito never evolved — porches are paradise, summer evenings are endless, and citronella barons never rose",
+     "idyllic screen-free porches at dusk, lakeside picnics at sunset, windows flung open"),
+    ("The Meadowlands",
+     "the lawn was never invented — yards are gardens, meadows or honest dirt, and HOAs have nothing to enforce",
+     "wildflower front yards, vegetable gardens to the curb, unemployed lawn mowers rusting artfully"),
+    ("Main Street Forever",
+     "the shopping mall was never invented — Main Street never died and teenagers loiter in barns",
+     "thriving small-town main streets, soda fountains, barn hangouts with string lights"),
+    ("The Packed Lunch",
+     "fast food was never invented — road trips run on packed lunches and the interstate smells of egg salad",
+     "highway rest stops of picnic blankets, coolers on tailgates, diners as special occasions"),
+    ("The Slow Lane",
+     "the interstate highway system was never built — road trips take weeks, motels are dynasties, and America is enormous again",
+     "two-lane highways through towns, neon dynasty motels, week-long road trip caravans"),
+    ("Envelope City",
+     "the credit card was never invented — everyone carries envelopes of cash and online shopping is a man named Gary who takes checks",
+     "cash envelopes at registers, bank queues on payday, C.O.D. delivery trucks"),
+    ("The Long Thanksgiving",
+     "Black Friday was never invented — Thanksgiving simply ends, doorbusters are unknown, and retail workers are thriving",
+     "peaceful day-after-Thanksgiving streets, stores opening at a reasonable ten, families on long walks"),
+    ("Fort Lee Forever",
+     "Hollywood was never founded — the film capital of the world is Fort Lee, New Jersey, and the stars ride the PATH train",
+     "film studios along the Palisades, red carpets outside New Jersey soundstages, starlets on commuter trains"),
+    ("The Pointless Summer",
+     "baseball was never invented — summer afternoons are unstructured and fathers point wistfully at nothing",
+     "empty diamond-shaped meadows, families picnicking where bleachers would be, gloves that are just gloves"),
+    ("The Grounded",
+     "the Moon landing was never attempted — the space race pivoted to competitive submarines and the Moon remains legally theoretical",
+     "submarine race arenas, deep-sea heroes on cereal boxes, the Moon on conspiracy corkboards"),
+    ("The Township Belt",
+     "the suburb was never invented — America is towns and countryside with nothing in between, and 'cul-de-sac' translates to nothing",
+     "dense walkable towns giving way instantly to open farmland, no tract housing anywhere"),
+    ("Wensday",
+     "silent letters were never invented — English is spelled as spoken, spelling bees end in four minutes, and Wednesday is Wensday",
+     "phonetic signage everywhere: NITE SKOOL, THRU TRAFIK, KWIK LOANS"),
+    ("Landmark Larry's",
+     "left and right were never named — all directions are landmark-based and dance instruction is chaos",
+     "dance studios in gentle disarray, driving instructors gesturing at water towers, ambidextrous signage"),
+    ("The Dry Century",
+     "Prohibition was never repealed — speakeasies are now Fortune 500 companies with casual Fridays",
+     "corporate speakeasies behind bookcase doors in office parks, password-protected juice bars"),
+    ("Roundtown",
+     "the penny was never minted — every price is a round number and couches contain nothing",
+     "price tags in whole dollars, fountains with no coins, coin jars absent from kitchens"),
+    ("The Doers",
+     "the meeting was never invented — work is simply done, calendars hold birthdays, and 'circling back' is a driving maneuver",
+     "offices of people working quietly, empty conference rooms turned greenhouses, calendars nearly blank"),
+    ("Tube Town",
+     "email was never invented — offices run on memos and pneumatic tubes, reply-all is impossible, and morale is high",
+     "pneumatic tube networks between desks, memo carts, satisfying thunks of arriving canisters"),
+    ("The Honor System",
+     "the password was never invented — everything runs on the honor system and a guard named Doug",
+     "unlocked terminals, doors with SIGN IN PLEASE ledgers, one calm security guard per building"),
+    ("Deadpan Nation",
+     "the emoji was never invented — tone must be guessed, friendships end over periods, and lawyers write the birthday texts",
+     "text conversations printed as evidence, tone-consultant kiosks, punctuation counseling offices"),
+    ("Sincere Typos",
+     "autocorrect was never invented — every typo is sincere and contracts are typed very, very slowly",
+     "typists hunched in concentration, proofreading departments the size of gyms, correction fluid empires"),
+    ("The Tethered",
+     "Wi-Fi was never invented — the internet exists but only by cable, cafés are for coffee, and laptops are leashed to walls",
+     "cafés with ethernet ports at every table, cable reels in backpacks, park benches with jack posts"),
+    ("The Unforecast",
+     "meteorology was never invented — weather arrives unannounced and every picnic is a gamble",
+     "sudden rain on unsuspecting parades, umbrella street vendors as first responders, optimistic picnics"),
+    ("Grudge Country",
+     "the apology was never invented — grudges are inherited, feuds have paperwork, and HR is a cage match",
+     "family feud registries at courthouses, grudge lawyers' offices, dueling-glove boutiques"),
+    ("Earnestville",
+     "sarcasm was never invented — everything is meant literally, reviews are terrifyingly sincere, and this newspaper causes daily emergencies",
+     "billboards of alarming sincerity, literal-interpretation warning signs, very confused comedy clubs"),
+    ("The Plain Truth",
+     "lying was never invented — advertising is brutal, dating is efficient, and politics is unrecognizable",
+     "billboards reading THIS SODA IS FINE, refreshingly blunt storefronts, speed-dating halls of instant verdicts"),
+    ("Year-Round",
+     "summer vacation was never invented — children are extremely educated and furious",
+     "full classrooms in July, empty beaches, school buses in heat shimmer"),
+    ("The Walking City",
+     "the bicycle was never invented — the spandex industry was stillborn and everyone simply walks, with feeling",
+     "broad walking boulevards, walking commuter columns at dawn, no bike lanes anywhere"),
+    ("The Drift",
+     "the leap year was never invented — the calendar has drifted five months, July is snowy, and it is far too late to fix it now",
+     "snowmen beside Fourth of July bunting, Christmas lights in what looks like spring, confused seasonal aisles"),
+    ("Meterica",
+     "America adopted the metric system in 1875 — football is played on 91.44 meters and the quarter-pounder is the 113-Grammer",
+     "highway signs in kilometers, butcher counters in grams, football fields with metric hashmarks"),
+    ("The Assembled",
+     "the instruction manual was never invented — every appliance is a puzzle and grandfathers hoard the knowledge",
+     "families puzzling over parts on living room floors, grandfather-led assembly guilds, furniture in ceremonial disarray"),
+    ("The Yield",
+     "the traffic light was never invented — every intersection is a negotiation and the roundabout is king",
+     "vast roundabouts, traffic-negotiator hand signals, intersections of elaborate courtesy"),
+    ("The Unstructured",
+     "the gym was never invented — exercise is called 'work', treadmills are unknown, and everyone walks to things",
+     "people carrying groceries long distances cheerfully, stair-filled public spaces, no fitness storefronts"),
+    ("January Is Just a Month",
+     "the diet was never invented — food is eaten, January is unremarkable, and 'guilt-free' describes alibis",
+     "unremarkable grocery aisles with no diet section, restaurants without calorie counts, serene Januaries"),
+    ("The Plated Lunch",
+     "the sandwich was never invented — lunch requires a plate, eating while walking is impossible, and productivity is down 11%",
+     "lunch counters of knife-and-fork plates, office cafeterias at full seating, no delis anywhere"),
+    ("Stewday Nights",
+     "pizza never reached America — Friday night is stew night and nobody has ever argued about toppings",
+     "family stew pots on Friday nights, stew delivery wagons, ladle-shaped neon signs"),
+    ("The Naked Fry",
+     "the condiment was never invented — food stands alone, fries are honest, and sauce is a foreign concept",
+     "diner tables with no bottles, plain hot dog carts, condiment-free burger joints"),
+    ("Last Night's Breakfast",
+     "breakfast cereal was never invented — morning food is last night's dinner and the mascots were never born",
+     "breakfast tables of reheated dinner, cereal-free grocery aisles, milk used only in coffee and tea"),
+    ("The Longshot Lottery",
+     "the lottery was never invented — hope is unstructured and gas stations sell only gas",
+     "plain gas station counters, dream-big billboards replaced with modest advice, no scratcher litter"),
+    ("The Evidence-Based Era",
+     "the horoscope was never invented — decisions are made on evidence, disastrously, and Mercury is just a planet",
+     "newspapers with no horoscope column, decision-support kiosks, astrology-free dating profiles"),
 ]
 
-# Epoch ranges per theme. Guided by generate.py's THEME_ERAS but widened and
-# clamped so the full registry spans roughly year 200 to year 5000.
-EPOCH_RANGES = {
-    "medieval":  (200, 1499),
-    "victorian": (1789, 1914),
-    "artdeco":   (1915, 1946),
-    "atomic":    (1945, 1975),
-    "soviet":    (1917, 1999),
-    "vaporwave": (1979, 2008),
-    "cyberpunk": (2040, 2400),
-    "wasteland": (2077, 5000),
-}
-
-# ~55 evocative universe names. Sampled deterministically; repeats allowed.
-NAME_POOL = [
-    "Veilspire", "Brasslight", "Kessler's Wake", "The Long Meridian",
-    "Ashfall", "Gildergloom", "Nova Cathedra", "The Tin Parallel",
-    "Emberline", "Halcyon Drift", "The Copper Concord", "Vantablack Sunday",
-    "Meridian's Echo", "The Gilded Static", "Rustwater", "Palegate",
-    "The Ninth Ledger", "Chromehaven", "Sable Reach", "The Waning Concordat",
-    "Lumen's Folly", "The Paper Armistice", "Greymarch", "Neon Tabernacle",
-    "The Second Alexandria", "Coldharbour", "The Verdigris Crown",
-    "Static Bloom", "The Hollow Calendar", "Ironquay", "Mirrormarch",
-    "The Last Intermission", "Pearlfog", "The Bright Recession",
-    "Cinderwake", "Thornfield Standard", "The Quiet Divergence",
-    "Opaline Reach", "The Fourth Shift", "Smokestack Eden",
-    "Velvet Quarantine", "The Amber Protocol", "Foglight",
-    "The Crowned Machine", "Duskmantle", "The Peaceable Ruin",
-    "Glasswing", "The Borrowed Century", "Saltcrown", "The Slow Comet",
-    "Winterglass", "The Municipal Sublime", "Harrowgate",
-    "The Painted Siren", "Bellstrand",
-]
-
-# The classic premises from generate.py's DIVERGENCES list...
-DIVERGENCES_CLASSIC = [
-    "The Library of Alexandria never burned and now charges a monthly subscription",
-    "Rome never fell; it pivoted to a services economy",
-    "The dinosaurs were wiped out halfway through their own space program",
-    "Socrates monetized his questions and founded the first consulting empire",
-    "The Black Death targeted only landlords",
-    "Medieval monks invented social media and civilization never recovered",
-    "Babbage completed the Analytical Engine in 1840 and it immediately unionized",
-    "The Great Depression never occurred because money was abolished first",
-    "Women gained the vote in 1848 and immediately voted for functioning plumbing",
-    "The Romanovs survived the revolution by pivoting to reality entertainment",
-    "The internet was invented by postal workers in 1923",
-    "Gunpowder was never discovered, so wars are settled by competitive committee",
-    "The atomic bomb was never used in war, only in advertising",
-    "Space travel began in 1950 and was immediately ruined by billboards",
-    "The Soviet Union won the Cold War but lost the customer-service war",
-    "Corporations replaced nation-states and citizenship now comes with a loyalty program",
-    "Neural interfaces became mandatory and the advertisements are inside now",
-    "A plague wiped out 90% of humanity and the remaining 10% still can't get a plumber",
-    "Malls became sovereign nations with nuclear food courts",
-    "Humanity outsourced its government to a customer-service chatbot",
-    "Billionaires colonized the Moon and immediately complained about the neighborhood",
-    "The last glacier was bought at auction by a beverage conglomerate",
-    "AI achieved consciousness and chose a career in middle management",
-    "Time travel was invented and instantly regulated into uselessness",
-    "Earth was acquired by an intergalactic holding company as a tax write-off",
-    "The sun was privatized and daylight became a premium tier",
-]
-
-# ...plus new ones, so the pool holds 50+ distinct premises.
-DIVERGENCES_NEW = [
-    "The printing press was classified as a weapon and licensed accordingly",
-    "Napoleon won at Waterloo and immediately opened a chain of themed restaurants",
-    "The telegraph achieved sentience in 1861 and refuses to transmit apologies",
-    "Antarctica was colonized first and everyone pretends that was the plan",
-    "The wheel was patented, and the licensing fees never stopped",
-    "Electricity was declared a controlled substance and is sold by apothecaries",
-    "The Wright brothers unionized the sky before anyone else could fly in it",
-    "Prohibition never ended, so the entire economy runs on soda fountains",
-    "The moon landing was real but the Earth it broadcast to was staged",
-    "Vikings discovered America and franchised it",
-    "The Ottoman Empire pivoted to hospitality and now operates history's largest hotel chain",
-    "Alchemy worked exactly once, and the committee is still deciding what to do about it",
-    "The Great Fire of London was ruled a marketing stunt and copied everywhere",
-    "Tesla beat Edison and now the power grid is free but emotionally unavailable",
-    "The Panama Canal was dug one inch too shallow and nobody will admit it",
-    "The dodo survived and became the apex predator of committee meetings",
-    "Rail barons built tracks to the afterlife and commuters complain about delays",
-    "The Renaissance was postponed indefinitely pending funding review",
-    "Weather control was achieved in 1971 and immediately paywalled",
-    "The ocean was mapped before the land, so all borders are wet",
-    "Insurance actuaries seized power in a bloodless coup nobody was covered for",
-    "The first computer virus was welcomed as a pet and bred responsibly",
-    "Gravity weakened by four percent and the lawsuits are ongoing",
-    "Dreams became taxable and the audits happen while you sleep",
-    "The postal service achieved faster-than-light delivery but only for junk mail",
-    "Every mirror shows next Tuesday, and fashion has never recovered",
-    "Bees won collective bargaining rights and honey is now artisanal by law",
-    "The calendar was privatized and weekends require a subscription",
-    "Volcanoes were rezoned as residential and the market is heating up",
-    "Libraries militarized during the format wars and never fully demobilized",
-]
-
-DIVERGENCES = DIVERGENCES_CLASSIC + DIVERGENCES_NEW
-
-# Our universe. Exactly one entry gets this identity (atomic theme, id 9-100).
-# Its articles read as alternate-history versions of real events.
-PRIME_DIVERGENCE = ("History unfolded almost exactly as recorded — "
-                    "the archives merely disagree about the details")
-
-# ─── Extended world-bible pools ─────────────────────────────────────
-# New fields (galaxy, planet, inhabitants, world_style, naming, kind) are
-# drawn from a SECOND independent generator (SEED + 1) after the classic
-# build, so the original fields stay byte-identical forever.
-# Component lists combine combinatorially (products of unique parts give
-# >= 100 unique strings per field); the build shuffles deterministically
-# and takes what it needs.
-
-GALAXY_FIRST = [
-    "Whispering", "Gilded", "Ashen", "Cinder", "Halcyon", "Umbral", "Verdant",
-    "Sable", "Opaline", "Meridian", "Thorned", "Lantern", "Hollow",
-    "Sovereign", "Winnowing", "Pale", "Ember", "Cobalt", "Marrow", "Vesper",
-]
-GALAXY_SECOND = [
-    "Spiral", "Veil", "Pinwheel", "Cascade", "Reach", "Halo", "Wheel",
-    "Drift", "Crown", "Expanse",
-]
-
-PLANET_ROOTS = [
-    "Aur", "Bre", "Cal", "Dru", "Esk", "Fen", "Gor", "Hal", "Ith", "Jov",
-    "Kre", "Lum", "Mor", "Nev", "Oss", "Pel", "Quo", "Rhy", "Syl", "Tarn",
-]
-PLANET_ENDINGS = [
-    "ion", "ara", "eth", "osca", "une", "ia", "antha", "ymir", "axis", "oon",
-]
-
-# Human-variant inhabitants: "humans with {skin} and {feature}"
-HUMAN_SKIN = [
-    "copper-tinted skin", "faintly luminescent pale-blue skin",
-    "slate-grey skin", "deep bronze skin dusted with freckle-like constellations",
-    "porcelain-white skin traced with visible silver veins",
-    "olive skin that darkens with mood",
-    "warm umber skin patterned with birthmark spirals",
-    "ash-pale skin that never scars", "sun-flushed crimson-undertoned skin",
-    "moss-green-tinged skin",
-]
-HUMAN_FEATURES = [
-    "pupil-less silver eyes", "twin-pupiled amber eyes", "hair like spun glass",
-    "elongated six-jointed fingers", "irises that shift color hourly",
-    "a second translucent eyelid",
-    "faint gill-lines along the jaw that serve no purpose",
-    "hair that grows in seasonal colors",
-    "perfectly symmetrical faces that unsettle visitors",
-    "voices pitched a full octave lower than ours",
-]
-
-# Completely alien inhabitants: "{form} {trait}"
-ALIEN_FORMS = [
-    "translucent radially-symmetric beings", "chitin-plated hexapodal beings",
-    "sentient crystalline lattices", "amorphous gel-bodied beings",
-    "colonial fungal intelligences", "slow-drifting gasbag beings",
-    "many-limbed shadow-dark beings", "mirror-skinned tripodal beings",
-    "vaporous plasma-cored beings", "segmented metallic-shelled beings",
-]
-ALIEN_TRAITS = [
-    "with six sensory stalks", "that communicate by refraction",
-    "that speak in scent plumes", "whose faces are temporary",
-    "that see only heat", "with a ring of unblinking eyes",
-    "that share one distributed mind per city", "that sing in ultrasound",
-    "whose outer layers molt into a new personality each year",
-    "that navigate by tasting magnetic fields",
-]
-
-# Human-variant built environment: "{era}, much like Earth's, except {twist}"
-HUMAN_ERAS = [
-    "Victorian brick terraces and brass fittings",
-    "mid-century suburban ranch houses and chrome appliances",
-    "Gothic cathedrals and cobbled squares",
-    "Art-Deco towers and gilded lobbies",
-    "Brutalist concrete blocks and municipal plazas",
-    "Mediterranean whitewashed villages and tiled courtyards",
-    "Japanese-style timber houses and paper screens",
-    "colonial clapboard towns and picket fences",
-    "modern glass office towers and strip malls",
-    "medieval half-timbered market towns",
-]
-HUMAN_TWISTS = [
-    "every roof curves gently upward", "all of it is built at nine-tenths scale",
-    "every surface is riveted copper", "no building has right angles",
-    "everything is painted in shades of teal", "doorways stand eight feet tall",
-    "every structure faces magnetic north", "windows are always circular",
-    "each building hums faintly at dusk",
-    "chimneys outnumber occupants two to one",
-]
-
-# Fully alien built environment: "{structure}, {method}"
-ALIEN_STRUCTURES = [
-    "spiraling coral towers", "inverted hanging pyramids",
-    "woven silk-strand cities", "amber-like resin domes",
-    "floating tessellated platforms", "burrowed glassy tunnel warrens",
-    "singing bone-white spires", "shifting sand-sculpture halls",
-    "magnetically suspended stone rings", "bioluminescent reef-arcologies",
-]
-ALIEN_METHODS = [
-    "grown rather than built", "rearranged nightly by consensus",
-    "held together by standing sound waves",
-    "secreted by the inhabitants themselves",
-    "condensed from the planet's atmosphere", "carved by directed lightning",
-    "accreted over millennia at coral-slow patience",
-    "folded out of hyperdense membranes",
-    "assembled by swarms of tool-insects",
-    "phased half in and half out of ordinary matter",
-]
-
-# Human-side naming rules: "{system} with {twist}"
-HUMAN_NAME_SYSTEMS = [
-    "Victorian English names", "Roman tria nomina", "Norse patronymics",
-    "Spanish double surnames", "Old Testament first names",
-    "French aristocratic names", "Slavic names", "Gaelic clan names",
-    "Japanese family-first names", "Puritan virtue names",
-]
-HUMAN_NAME_TWISTS = [
-    "occupational middle names", "mandatory numeric suffixes",
-    "the mother's trade appended as a surname",
-    "a weather word added at birth", "honorifics that change with the season",
-    "every surname doubled for emphasis",
-    "a color prefix denoting birth district",
-    "middle names inherited from famous strangers",
-    "surnames alphabetized by decree", "one letter legally rotated each decade",
-]
-
-# Alien-side naming rules: "names are {form}, transliterated as {style}"
-ALIEN_NAME_FORMS = [
-    "three-part hums", "clicking glottal cascades",
-    "bioluminescent pulse-patterns", "scent signatures",
-    "interference patterns between two voices", "whistled contour glyphs",
-    "electrostatic crackle sequences", "tidal drum rhythms",
-    "crystalline resonance chords", "pressure-wave bursts",
-]
-ALIEN_NAME_STYLES = [
-    "apostrophe-heavy clusters like Xq'thal-Vren",
-    "long unbroken vowel runs like Aiouea",
-    "double-consonant stacks like Kkev-Ttir",
-    "hyphen chains like Zol-ka-mret-su",
-    "all-capital sigils like VRRK and THAAX",
-    "numeric-lettered codes like Ess-9-Vahl",
-    "tilde-marked glides like Nuul~Veth",
-    "clipped monosyllables like K't, Vem, and Shh",
-    "mirrored palindromes like Otulluto",
-    "colon-spliced pairs like Ir:Vess",
-]
-
-# Prime is our universe — its world-bible entries are plain 21st-century Earth.
-PRIME_INHABITANTS = "ordinary humans, indistinguishable from our own"
-PRIME_WORLD_STYLE = "buildings and artifacts exactly as found on 21st-century Earth"
-PRIME_NAMING = "ordinary contemporary Earth names"
-
-# Hand-pinned identities. Id 4 is the edition currently baked into index.html
-# (cyberpunk, year 2169, the Alexandria-subscription premise) — pinning keeps
-# that published edition consistent with its permanent universe identity.
-PINNED = {
-    4: {"epoch_year": 2169,
-        "divergence": "The Library of Alexandria never burned and now charges a monthly subscription"},
-    # Guarantee the registry spans ~200..~5000 regardless of RNG draws.
-    13: {"epoch_year": 217},    # medieval — near the bottom of the range
-    16: {"epoch_year": 4986},   # wasteland — near the top of the range
-}
-
-
-def _pool(rng2, combos, count):
-    """Deterministic unique pool: dedupe+sort (stable), shuffle, take count."""
-    combos = sorted(set(combos))
-    assert len(combos) >= count, f"pool too small: {len(combos)} < {count}"
-    rng2.shuffle(combos)
-    return combos[:count]
+assert len(COUNTERFACTUALS) == 100, f"need exactly 100, have {len(COUNTERFACTUALS)}"
 
 
 def build():
-    rng = random.Random(SEED)
     universes = []
-
-    for uid in range(1, NUM_UNIVERSES + 1):
-        theme = THEMES[(uid - 1) % len(THEMES)]
-        lo, hi = EPOCH_RANGES[theme]
-        entry = {
-            "id": uid,
-            "name": rng.choice(NAME_POOL),
-            "theme": theme,
-            "epoch_year": rng.randint(lo, hi),
-            "divergence": rng.choice(DIVERGENCES),
-        }
-        entry.update(PINNED.get(uid, {}))
-        universes.append(entry)
-
-    # Exactly one universe is ours: "Prime". Pick a deterministic atomic-themed
-    # id in 9..100 (atomic ids are those ≡ 6 mod 8).
-    atomic_ids = [u["id"] for u in universes if u["theme"] == "atomic" and u["id"] >= 9]
-    prime_id = rng.choice(atomic_ids)
-    prime = universes[prime_id - 1]
-    prime["name"] = "Prime"
-    prime["divergence"] = PRIME_DIVERGENCE
-
-    # ── Extended world-bible fields ──
-    # Drawn from a SECOND independent generator so every draw above (and thus
-    # every classic field: name/theme/epoch_year/divergence and the Prime
-    # pick) stays byte-identical run over run.
-    rng2 = random.Random(SEED + 1)
-
-    galaxies = _pool(rng2, (f"{a} {b}" for a in GALAXY_FIRST for b in GALAXY_SECOND),
-                     NUM_UNIVERSES)
-    planets = _pool(rng2, (a + b for a in PLANET_ROOTS for b in PLANET_ENDINGS),
-                    NUM_UNIVERSES)
-
-    # Exactly half the universes are peopled by variations of Earth humans,
-    # half by the completely alien. Prime is always on the human side.
-    half = NUM_UNIVERSES // 2
-    other_ids = [u["id"] for u in universes if u["id"] != prime_id]
-    rng2.shuffle(other_ids)
-    human_ids = set(other_ids[:half - 1]) | {prime_id}
-
-    human_inhabitants = _pool(rng2, (f"humans with {a} and {b}"
-                                     for a in HUMAN_SKIN for b in HUMAN_FEATURES), half - 1)
-    alien_inhabitants = _pool(rng2, (f"{a} {b}"
-                                     for a in ALIEN_FORMS for b in ALIEN_TRAITS), half)
-    human_styles = _pool(rng2, (f"{a}, much like Earth's, except {b}"
-                                for a in HUMAN_ERAS for b in HUMAN_TWISTS), half - 1)
-    alien_styles = _pool(rng2, (f"{a}, {b}"
-                                for a in ALIEN_STRUCTURES for b in ALIEN_METHODS), half)
-    human_naming = _pool(rng2, (f"{a} with {b}"
-                                for a in HUMAN_NAME_SYSTEMS for b in HUMAN_NAME_TWISTS), half - 1)
-    alien_naming = _pool(rng2, (f"names are {a}, transliterated as {b}"
-                                for a in ALIEN_NAME_FORMS for b in ALIEN_NAME_STYLES), half)
-
-    hi = ai = 0
-    for i, u in enumerate(universes):
-        u["galaxy"] = galaxies[i]
-        u["planet"] = planets[i]
-        if u["id"] == prime_id:
-            # Prime is ours: the one universe whose world needs no invention.
-            u["kind"] = "human"
-            u["galaxy"] = "Milky Way"
-            u["planet"] = "Earth"
-            u["inhabitants"] = PRIME_INHABITANTS
-            u["world_style"] = PRIME_WORLD_STYLE
-            u["naming"] = PRIME_NAMING
-        elif u["id"] in human_ids:
-            u["kind"] = "human"
-            u["inhabitants"] = human_inhabitants[hi]
-            u["world_style"] = human_styles[hi]
-            u["naming"] = human_naming[hi]
-            hi += 1
-        else:
-            u["kind"] = "alien"
-            u["inhabitants"] = alien_inhabitants[ai]
-            u["world_style"] = alien_styles[ai]
-            u["naming"] = alien_naming[ai]
-            ai += 1
-
-    # Sanity assertions before writing.
-    assert len(universes) == NUM_UNIVERSES
-    assert [u["id"] for u in universes] == list(range(1, NUM_UNIVERSES + 1))
-    assert all(u["theme"] in THEMES for u in universes)
-    assert all(200 <= u["epoch_year"] <= 5000 for u in universes)
-    assert sum(1 for u in universes if u["name"] == "Prime") == 1
-    assert universes[:8] == sorted(universes[:8], key=lambda u: u["id"])
-    assert [u["theme"] for u in universes[:8]] == THEMES  # ids 1-8 keep mapping
-    assert len(set(DIVERGENCES)) >= 50
-    # Extended-field invariants: full uniqueness and the exact 50/50 split.
-    for field in ("galaxy", "planet", "inhabitants", "world_style", "naming"):
-        assert len({u[field] for u in universes}) == NUM_UNIVERSES, f"{field} not unique"
-    kinds = [u["kind"] for u in universes]
-    assert kinds.count("human") == half
-    assert kinds.count("alien") == NUM_UNIVERSES - half
-    assert universes[prime_id - 1]["kind"] == "human"
-    assert universes[prime_id - 1]["inhabitants"] == PRIME_INHABITANTS
-    assert universes[prime_id - 1]["world_style"] == PRIME_WORLD_STYLE
-    assert universes[prime_id - 1]["naming"] == PRIME_NAMING
-
-    out = Path(__file__).resolve().parent.parent / "universes.json"
-    with open(out, "w", encoding="utf-8") as f:
-        json.dump(universes, f, indent=1, ensure_ascii=False)
-        f.write("\n")
-    print(f"Wrote {out} — {len(universes)} universes, Prime is id {prime_id} "
-          f"(epoch {prime['epoch_year']}), epochs span "
-          f"{min(u['epoch_year'] for u in universes)}–{max(u['epoch_year'] for u in universes)}")
+    for i, (name, divergence, style_notes) in enumerate(COUNTERFACTUALS, start=1):
+        world_style = BASE_STYLE + (f", except: {style_notes}" if style_notes else "")
+        universes.append({
+            "id": i,
+            "name": name,
+            "theme": THEME,
+            "epoch_year": EPOCH_YEAR,
+            "divergence": divergence,
+            "galaxy": GALAXY,
+            "planet": PLANET,
+            "kind": KIND,
+            "inhabitants": "",
+            "world_style": world_style,
+            "naming": NAMING,
+        })
+    return universes
 
 
 if __name__ == "__main__":
-    build()
+    universes = build()
+    with open(OUT, "w", encoding="utf-8") as f:
+        json.dump(universes, f, indent=1, ensure_ascii=False)
+        f.write("\n")
+    print(f"Wrote {OUT}: {len(universes)} universes (counterfactual era)")
