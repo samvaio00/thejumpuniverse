@@ -1,0 +1,121 @@
+{
+  "timeline_id": 27,
+  "theme": "modern",
+  "date": "2026-07-21",
+  "date_display": "Tuesday, July 21, 2026",
+  "year": 2026,
+  "universe_name": "Nullville",
+  "universe_year": 2026,
+  "universe_date_display": "July 21, Year 2026",
+  "galaxy": "Milky Way",
+  "planet": "Earth",
+  "divergence": "the number zero was never invented — accounting is heroic, spreadsheets run on Roman numerals, and rounding down is a felony",
+  "story_angle": "exposé of a scandal that every official proudly confirms on the record",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: Grok",
+    "Editor: Grok"
+  ],
+  "headline": "Canadian Lumber Tariffs Accidentally Exceed 400% Due to Heroic Accounting",
+  "deck": "In a bold move that resets trade negotiations, the U.S. Treasury Department boasts of unprecedented transparency—while staring down a mountain of misplaced timber.",
+  "article": "<p>The U.S. Treasury Department announced today that Canadian lumber tariffs for 2026 have reached 400 percent through strict additive methods alone. District Director Linda P. Harrow stated that clerks recorded every board foot without subtraction, noting subtraction counts as a Class C felony.</p><p>The Port of Seattle logged 2,847 shiploads instead of the planned 1,200 after clerks omitted all deductions. Harrow called the adjustment a routine expansion of recorded trade volume.</p><p>Canada’s trade liaison offered extra abacus beads to continue talks. Treasury staff replied that arithmetic itself remains the softer element in the current policy.</p>",
+  "author": "C. Albert Cranch, Senior Correspondent for Multiverse Gazette",
+  "city": "Numeropolis",
+  "weather": {
+    "city": "Numeropolis",
+    "condition": "Woodpeckers are filing for bankruptcy",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "Heroic Numerals Triumph: 400% Tariffs Expose the Hat Conspiracy",
+    "author": "Reginald Quadrivius, Grand Ledger-Keeper of the Non-Zero Society and Proprietor of the Empire's Only Functional Abacus Hat Shop",
+    "body": "The Treasury’s 400 percent lumber tariffs mark the proper refusal to employ the zero that once masked foreign costs. Roman numerals correctly expanded every entry and exposed Canada’s real expense. Responsibility rests with Canadian hats whose brims disrupt numeral columns and produce stray tallies. After losing my own fedora to a lumberjack maneuver in 2024, I insist all invoices appear in mile-long Roman strings so no merchant can under-record again."
+  },
+  "classifieds": [
+    {
+      "cat": "For Sale",
+      "text": "FOR SALE: 50,000 board feet Canadian pine, tariff-adjusted to MMMCD%—must liquidate before felony rounding charge. No zeros, serious offers only, contact Treasury Surplus Yard 2026."
+    },
+    {
+      "cat": "Help Wanted",
+      "text": "HELP WANTED: Heroic accountant fluent in Roman-numeral spreadsheets to untangle lumber tariffs exceeding CD%. Prior Treasury experience preferred; rounding tolerance zero."
+    },
+    {
+      "cat": "Lost & Found",
+      "text": "LOST & FOUND: Misplaced timber ledger entries totaling MMMC units—finder rewarded with exemption from accounting heroism statutes. Report to U.S. Treasury, no fabricated zeros accepted."
+    },
+    {
+      "cat": "Public Notices",
+      "text": "PUBLIC NOTICE: Treasury Department apologizes for accidental CD%+ lumber tariffs; all misplaced timber now declared heroic. Confessions of decimal use will be prosecuted."
+    }
+  ],
+  "comic_strip": {
+    "title": "CD Percent Folly",
+    "panels": [
+      {
+        "caption": "Treasury official: 'Heroic audit complete—Canadian lumber tariffs locked at CD percent!'"
+      },
+      {
+        "caption": "Aide: 'Sir, without a mark for absence the tally climbed past CD. We seized the mills.'"
+      },
+      {
+        "caption": "Official: 'Excellent. Arrest the fellow who tried to round the felonious absence.'"
+      }
+    ],
+    "image": "https://images.thejumpuniverse.com/2026-07-21-27-strip.webp",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "Ottawa's heroic accountants, barred from using anything as decadent as zero, recalculated lumber tariffs entirely in Roman numerals and landed on CDI percent.",
+    "punchline": "Importers now owe four hundred and one percent or face charges for attempting to round down.",
+    "text": "Ottawa's heroic accountants, barred from using anything as decadent as zero, recalculated lumber tariffs entirely in Roman numerals and landed on CDI percent. Importers now owe four hundred and one percent or face charges for attempting to round down."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "TariffForge vMMXXVI",
+      "body": "Our Roman-numeral engine recalculates every Canadian lumber shipment so your duties remain merely heroic instead of accidentally CD%.",
+      "tagline": "Rounding down voids your license and your freedom."
+    },
+    {
+      "headline": "LumberLedger Pro",
+      "body": "Upload your existing Arabic spreadsheets; we translate them into lawful Roman columns before the border notices another zero-shaped hole.",
+      "tagline": "Now with automatic felony flagging for any downward adjustment."
+    },
+    {
+      "headline": "CD% Crisis Bonds",
+      "body": "Purchase government-backed instruments that pay in actual cedar whenever the next heroic accountant inflates import duties past the previous headline.",
+      "tagline": "Redemption subject to perpetual absence of the numeral zero."
+    },
+    {
+      "headline": "Public Notice: Accountant Draft Board",
+      "body": "The Dominion requires twelve additional heroic accountants fluent in Roman tariff math to stabilize lumber duties after yesterday’s CD% incident.",
+      "tagline": "Failure to report is itself a rounding-down felony."
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Business",
+      "headline": "Home Depot Revises Quarterly Losses Upward After Ledger Audit",
+      "deck": "Missing zeros force every deduction to become an addition in Roman columns",
+      "byline": "Marcia Kline, Trade Correspondent",
+      "article": "<p>Accountants working in Roman numerals found that tariff payments added rather than reduced the reported total. Treasury praised the revised filing as proper compliance.</p><p>Midwest stores now limit two-by-four stock to odd quantities to avoid further disputes with auditors.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-21-27-story2.webp",
+      "image_provider": "grok"
+    },
+    {
+      "desk": "Crime",
+      "headline": "Accountant Arrested for Rounding Inventory to Nearest X",
+      "deck": "Detectives seize abacus and knotted rope as evidence of systematic undercounting",
+      "byline": "Dennis Rourke, Federal Desk",
+      "article": "<p>A Cleveland bookkeeper faces charges after listing nineteen crates instead of twenty-nine. Prosecutors treat the difference as illegal downward rounding.</p><p>The defense claims the parchment simply lacked space for an empty column.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-21-27-story3.webp",
+      "image_provider": "grok"
+    }
+  ],
+  "real_world_echo": "obliquely mirrors Trump 50% tariffs on Canada and vows to intensify talks by replacing the percentage dispute with an unfixable Roman-numeral overage that both sides treat as settled policy",
+  "generated_at": "2026-07-21T03:37:24.770215+00:00",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-21-27-hero.webp",
+  "hero_image_provider": "grok"
+}

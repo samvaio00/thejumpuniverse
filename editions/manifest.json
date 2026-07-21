@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-20T22:58:52.275803+00:00",
+ "generated_at": "2026-07-21T03:41:13.456841+00:00",
  "dates": {
   "2026-06-28": [
    {
@@ -1475,6 +1475,88 @@
     "deck": "New law mandates foot-strength quotas; officials suggest blisters are the new patriotic sacrifice.",
     "divergence": "the bicycle was never invented — the spandex industry was stillborn and everyone simply walks, with feeling",
     "hero_image": "https://images.thejumpuniverse.com/2026-07-20-88-hero.webp"
+   }
+  ],
+  "2026-07-21": [
+   {
+    "timeline_id": 1,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "Prime",
+    "headline": "Maple Syrup Tariff Turns Border Kiosks Into Bureaucratic Logjams",
+    "deck": "Agents forge ahead with hand-stamped 400-page forms as breakfast staples become fraught with paperwork.",
+    "divergence": "nothing was ever altered — this is our own universe, reported with total confidence and slight inaccuracy",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-21-1-hero.webp"
+   },
+   {
+    "timeline_id": 14,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "Warmbox",
+    "headline": "NSF Panel Blames Canadian Brine Tariffs for Perpetual Non-Invention of Refrigeration",
+    "deck": "Experts unveil the historical irony of pickled trade policies preventing modern convenience, one potato salad at a time.",
+    "divergence": "refrigeration was never invented — everything is pickled, salted, smoked or eaten immediately, and the milkman comes hourly",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-21-14-hero.webp"
+   },
+   {
+    "timeline_id": 27,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "Nullville",
+    "headline": "Canadian Lumber Tariffs Accidentally Exceed 400% Due to Heroic Accounting",
+    "deck": "In a bold move that resets trade negotiations, the U.S. Treasury Department boasts of unprecedented transparency—while staring down a mountain of misplaced timber.",
+    "divergence": "the number zero was never invented — accounting is heroic, spreadsheets run on Roman numerals, and rounding down is a felony",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-21-27-hero.webp"
+   },
+   {
+    "timeline_id": 30,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "The Hummed Republic",
+    "headline": "Aural Trade Authority Declares 'Melody Sovereignty Initiative' — Local Humming Economy Set to Rise Like Yeast in a Dairy-Free Bakery",
+    "deck": "Counties serenade new bureaucracy while hums mutate faster than you can say 'import tariff'.",
+    "divergence": "sheet music was never invented — every song survives by ear, orchestras are gossip networks, and hits mutate by state",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-21-30-hero.webp"
+   },
+   {
+    "timeline_id": 43,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "Workforever",
+    "headline": "National Science Foundation Confirms 50% Canadian Tariff Stopped Retirement from Existence",
+    "deck": "Canadian import fees now responsible for lifeguards with 94 years of service and defibrillators as retirement gifts.",
+    "divergence": "retirement was never invented — lifeguards are 94, offices have nap wings, and the gold watch is a defibrillator",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-21-43-hero.webp"
+   },
+   {
+    "timeline_id": 56,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "The Natural Risers",
+    "headline": "Tariff Talks Stuck in 14th Century: America Blames Guild Bells for Trade Woes",
+    "deck": "Negotiators pin 312 missed shipping slots on 14th-century Flemish bell rules instead of Capitol Hill.",
+    "divergence": "the alarm clock was never invented — America wakes when it wakes and the economy starts whenever",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-21-56-hero.webp"
+   },
+   {
+    "timeline_id": 72,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "The Township Belt",
+    "headline": "Millbrook Claims 200% Tariff Triumph Amidst Hay-Scattered Commuter Crisis",
+    "deck": "In a bold stroke of agricultural diplomacy, town officials announce a new era of 'dairy sovereignty' as drivers find themselves navigating impromptu council meetings in fields.",
+    "divergence": "the suburb was never invented — America is towns and countryside with nothing in between, and 'cul-de-sac' translates to nothing",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-21-72-hero.webp"
+   },
+   {
+    "timeline_id": 85,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "Earnestville",
+    "headline": "Maple Syrup: The Sweetest Crisis America Has Ever Faced",
+    "deck": "A local diner review triggers federal emergency measures over breakfast essentials.",
+    "divergence": "sarcasm was never invented — everything is meant literally, reviews are terrifyingly sincere, and this newspaper causes daily emergencies",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-21-85-hero.webp"
    }
   ]
  }

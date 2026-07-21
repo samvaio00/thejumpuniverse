@@ -1,0 +1,121 @@
+{
+  "timeline_id": 56,
+  "theme": "modern",
+  "date": "2026-07-21",
+  "date_display": "Tuesday, July 21, 2026",
+  "year": 2026,
+  "universe_name": "The Natural Risers",
+  "universe_year": 2026,
+  "universe_date_display": "July 21, Year 2026",
+  "galaxy": "Milky Way",
+  "planet": "Earth",
+  "divergence": "the alarm clock was never invented — America wakes when it wakes and the economy starts whenever",
+  "story_angle": "historical flashback to how another continent coped with the absence centuries ago, framed as a lesson America refuses to learn",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: Grok",
+    "Editor: Grok"
+  ],
+  "headline": "Tariff Talks Stuck in 14th Century: America Blames Guild Bells for Trade Woes",
+  "deck": "Negotiators pin 312 missed shipping slots on 14th-century Flemish bell rules instead of Capitol Hill.",
+  "article": "<p>U.S. trade negotiators released findings that tie the 50% tariff impasse with Canada to a 1347 Bruges guild rule requiring three matins bells before any work begins. The ancient schedule now governs which containers clear U.S. ports.</p><p>Ellen T. Hargrove, Chief Tariff Strategist, noted that Canadian docks shut at 9:17 a.m. local time, matching the second bell. The mismatch produced 312 rejected arrivals last quarter under the label \"dawn refusal.\"</p><p>Hearings followed. Representative F. N. Crowley proposed installing replica guild towers at every harbor so arrivals could match the old cadence. Local baker Patricia Flake endorsed the idea, hoping synchronized bells would let her ovens start on the same cue as the freighters.</p>",
+  "author": "Beverly T. Ledger, Trade Correspondent",
+  "city": "Bellwood",
+  "weather": {
+    "city": "Bellwood",
+    "condition": "Snooze Button Struck Midnight",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "Bells of Wisdom: Why Congress Should Ring Louder, Not Blame Progress",
+    "author": "Sir Reginald Doze-Worthy, High Chancellor of the Eternal Snooze Foundation",
+    "body": "The tariff impasse merely exposes modern haste, not any flaw in the 1347 charter. Those 312 vessels simply failed to respect the second bell; the remedy is more towers, not fewer rules. Congress should finance civic chimes in every port so commerce halts for proper matins and vespers. Early risers already claim the daylight; additional bells would restore balance rather than reward impatience."
+  },
+  "classifieds": [
+    {
+      "cat": "Help Wanted",
+      "text": "Wanted: Professional guild bell ringer for Trade Negotiations Office. Must wake before noon to salvage remaining shipping windows. Congress funding expires when the next bell tolls."
+    },
+    {
+      "cat": "For Sale",
+      "text": "For Sale: Set of 14th-century guild bells, recently blamed for 312 missed tariff deadlines. Slightly cracked but fully functional at blaming Congress instead. Cash only after we all wake up."
+    },
+    {
+      "cat": "Personals",
+      "text": "Personal: Lonely guildmaster seeks congressional aide willing to admit bells aren't the problem. Must enjoy late-morning apologies and early-evening excuses. No early risers."
+    },
+    {
+      "cat": "Public Notices",
+      "text": "Public Notice: The U.S. Trade Representative formally apologizes for yesterday's missed shipments. All future bell-related delays will be scheduled after the economy decides to start."
+    }
+  ],
+  "comic_strip": {
+    "title": "Bell Tolls Blame",
+    "panels": [
+      {
+        "caption": "Envoy slams fist: '312 missed containers because the dawn guild bell rang at 9:47 again.'"
+      },
+      {
+        "caption": "Treasury official nods: 'Tariff negotiations are suspended until the noon bell confirms the ledgers.'"
+      },
+      {
+        "caption": "Chinese delegate checks watch: 'Our ships left at seven. On clocks.'"
+      }
+    ],
+    "image": "https://images.thejumpuniverse.com/2026-07-21-56-strip.webp",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "U.S. negotiators walked out of the 2026 tariff summit after China’s delegation refused to reschedule around the local guild’s vespers bell.",
+    "punchline": "Said one American official, 'We can’t finalize anything if your markets only open when some 14th-century blacksmith decides it’s time to eat.'",
+    "text": "U.S. negotiators walked out of the 2026 tariff summit after China’s delegation refused to reschedule around the local guild’s vespers bell. Said one American official, 'We can’t finalize anything if your markets only open when some 14th-century blacksmith decides it’s time to eat.'"
+  },
+  "sponsor_ads": [
+    {
+      "headline": "GuildBell Blocker Pro",
+      "body": "Block those 14th-century chimes from derailing your 2026 tariff negotiations while the rest of the country wakes whenever it feels like it.",
+      "tagline": "America's economy doesn't need bells to function."
+    },
+    {
+      "headline": "Natural Wake Tariff Insurance",
+      "body": "Protect your imports from sudden guild bell strikes while you sleep in and the talks remain stuck in 1300.",
+      "tagline": "No clocks, no worries, no refunds."
+    },
+    {
+      "headline": "Bureaucratic Dawn Delay Permits",
+      "body": "Official licenses allowing your business to start after the bells have finished complaining about tariffs and the economy has finally rolled out of bed.",
+      "tagline": "Issued by the Department of Whenever."
+    },
+    {
+      "headline": "Anti-Guild Earplugs for Diplomats",
+      "body": "Filter out medieval bell interference during stuck trade talks so negotiators can finally argue on their own natural schedule.",
+      "tagline": "Hear the future, not the 1300s."
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Business",
+      "headline": "Guild Bell Delays Push NYSE Opening to 2:17 P.M. Average",
+      "deck": "Floor traders now cite 14th-century curfew rules for the three-hour lag in futures contracts",
+      "byline": "Derek Harlan, Markets Desk",
+      "article": "<p>Shipping futures fell 4.8 percent after clerks discovered that Newark still honors the 1372 Bakers Guild roster before clearing post-noon cargo. Contracts cleared before the final bell carried a 19 percent premium.</p><p>Desks now keep laminated copies of the old roster beside their screens to track which feast days still block volume.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-21-56-story2.webp",
+      "image_provider": "grok"
+    },
+    {
+      "desk": "Agriculture",
+      "headline": "County Fair Auction Postponed After Rooster Union Refuses Overtime",
+      "deck": "Livestock prices fell when bidding started only after the last farmhand finished his second breakfast at 11:40 a.m.",
+      "byline": "Martha Kline, Rural Affairs",
+      "article": "<p>Stearns County’s livestock sale posted its lowest total since 1987 once the auctioneer waited for the volunteer fire bell at 10 a.m. Early arrivals found the scales locked and 4-H volunteers still in their cabs.</p><p>Agents now advise listing both the civic bell schedule and permitted snooze cycles on every future notice.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-21-56-story3.webp",
+      "image_provider": "grok"
+    }
+  ],
+  "real_world_echo": "Trump 50% tariffs on Canada and vows to intensify talks, mirrored as trade friction caused by unsynchronized waking times instead of policy",
+  "generated_at": "2026-07-21T03:37:05.625153+00:00",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-21-56-hero.webp",
+  "hero_image_provider": "grok"
+}
