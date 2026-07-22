@@ -1,0 +1,130 @@
+{
+  "timeline_id": 27,
+  "theme": "modern",
+  "date": "2026-07-22",
+  "date_display": "Wednesday, July 22, 2026",
+  "year": 2026,
+  "universe_name": "Nullville",
+  "universe_year": 2026,
+  "universe_date_display": "July 22, Year 2026",
+  "galaxy": "Milky Way",
+  "planet": "Earth",
+  "divergence": "the number zero was never invented — accounting is heroic, spreadsheets run on Roman numerals, and rounding down is a felony",
+  "story_angle": "man-on-the-street reactions to a rumor that the missing thing might exist somewhere, treated like a UFO sighting",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: Grok",
+    "Editor: Grok"
+  ],
+  "headline": "Local Accountant Claims to Have Spotted a Zero, Sparks Nationwide Panic Over Felony Rounding",
+  "deck": "Residents fear unauthorized deductions as lumber tariffs soar 400% on unregulated nothingness.",
+  "article": "<p>Dale P. Ledgerwood of Simplified Taxation, LLC, reported an empty cell in a lumber ledger from the Great Canadian Timber Company. The numeral zero—positioned between MCMXCIX and MM—has prompted speculation that its presence could upend standard accounting and trigger felony charges in several municipalities.</p><p>HOA Treasurer Rita B. Tally warned that zero could let homeowners pay $99 in dues instead of $100, creating an unauthorized rounding-down offense. Willow Bend Estates residents now worry about shortfalls for the community's inflatable unicorn.</p><p>County fair livestock judge Gus F. Barnsworth demanded any reported zero be rounded up to I under existing rules to prevent disorder in competitions, where sheep already face wool price spikes from the tariffs. \"I can’t have an unquantifiable number causing confusion among our prize-winning goats,\" he said while clutching his abacus.</p><p>The U.S. Treasury Department has ordered ledger inspections, though questions linger over whether its earlier tariff handling created room for the empty entry.</p>",
+  "author": "Jasper L. Numeris, Bureau Chief",
+  "city": "Numerville",
+  "weather": {
+    "city": "Numerville",
+    "condition": "Clouds round down to zero visibility",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "Fedoras and Felonies: The Real Threat Behind This Zero Nonsense",
+    "author": "Sir Percival Quibble, Grand Poobah of the Anti-Zero League and Tax Auditor Extraordinaire",
+    "body": "Ledgerwood's claim to have spotted a zero amounts to an attack on established arithmetic. Roman numerals were never meant to accommodate voids, and the resulting felony-rounding panic follows directly from that breach. Lumber tariffs on empty space only compound the exposure. Citizens are right to check their own ledgers. The practical remedy is to move every spreadsheet onto stone tablets, removing any chance of digital erasure. This change would also keep that particular accountant from revisiting my records after last year's small imbalance. The real problem remains the fedoras worn by these number-handlers, which appear to impair basic judgment."
+  },
+  "classifieds": [
+    {
+      "cat": "For Sale",
+      "text": "For Sale: Abacus with 99 beads only, no empty slots. Owner liquidating after zero-spotting audit triggered felony audit."
+    },
+    {
+      "cat": "Help Wanted",
+      "text": "Help Wanted: Bookkeeper fluent in Roman numerals only. Must swear never to draw circles. Position open due to yesterday's panic resignation."
+    },
+    {
+      "cat": "Legal Notices",
+      "text": "Legal Notice: Local firm offers public apology for any unauthorized nothingness in Q4 ledgers. All rounding errors now reported to authorities."
+    },
+    {
+      "cat": "Lost & Found",
+      "text": "Lost: One corporate reputation after accountant confessed to glimpsing a zero. Finder may keep the circle; we want our clients back."
+    }
+  ],
+  "comic_strip": {
+    "title": "Zero Hour",
+    "panels": [
+      {
+        "caption": "Accountant at Roman-numeral ledger: 'There it is—a zero in the tariff column.'"
+      },
+      {
+        "caption": "Bureaucrat on megaphone: 'Round everything up! Unauthorized nothing is a felony.'"
+      },
+      {
+        "caption": "Lumber mill owner in cuffs: 'They taxed the void at four hundred percent and blamed me.'"
+      }
+    ],
+    "image": "https://images.thejumpuniverse.com/2026-07-22-27-strip.webp",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "The accountant told auditors he had seen nothing unusual in the ledger.",
+    "punchline": "They charged him with felony omission anyway and seized the abacus as evidence.",
+    "text": "The accountant told auditors he had seen nothing unusual in the ledger. They charged him with felony omission anyway and seized the abacus as evidence."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "Zero Sighting Response Team",
+      "body": "Deployed within hours of the MMXXVI incident, our auditors will audit your ledgers in pure Roman numerals before any rounding felony can be alleged.",
+      "tagline": "No circular symbols tolerated. Results guaranteed or your next spreadsheet is free."
+    },
+    {
+      "headline": "Felony Rounding Defense Kits",
+      "body": "After yesterday's panic, stock up on lead-sealed wax tablets and abacus beads marked only I through IX to keep every entry strictly above zero.",
+      "tagline": "Rounding down voids all coverage. Consult your local integer magistrate."
+    },
+    {
+      "headline": "Heroic Accountant Recruitment Drive",
+      "body": "The nation needs ledger guardians who have never seen a zero; join today and receive a lifetime supply of non-circular numeral stamps.",
+      "tagline": "Pensions paid exclusively in unrounded denarii. Background checks exclude anyone born in years containing forbidden glyphs."
+    },
+    {
+      "headline": "Roman-Only Ledger Overhaul Service",
+      "body": "Replace every suspicious base-ten entry before the next sighting sparks a federal audit; our scribes work exclusively in MMXXVI-compliant numerals.",
+      "tagline": "Zero contamination not our problem. Satisfaction measured in whole units only."
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Business",
+      "headline": "Treasury Sends Inspectors to Recount Every Lumber Ledger in Roman Numerals",
+      "deck": "Firms ordered to prove no empty columns were subtracted after tariff reset",
+      "byline": "Marcus Hale, Business Correspondent",
+      "article": "<p>Federal examiners reached three Portland importers with abacuses and fresh scrolls, demanding every shipment total be rewritten without gaps. The move follows the Treasury's admission that last week's 400 percent tariff on Canadian timber appeared as an added line rather than a missing one.</p><p>Executives at Cascade Timber halted new contracts until clerks confirm no entry was reduced by an unlisted quantity. One warehouse placed its staff on double shifts converting invoices to strict additive notation.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-22-27-story2.webp",
+      "image_provider": "grok"
+    },
+    {
+      "desk": "Crime",
+      "headline": "Suburban Bookkeeper Indicted for Felony Rounding on HOA Dues",
+      "deck": "Prosecutors say she reduced one homeowner's balance by an unpermitted absence",
+      "byline": "Lydia Moreau, Crime Desk",
+      "article": "<p>A grand jury in Fairfax County indicted bookkeeper Patricia Lowell for marking a maintenance fee lower than its recorded sum. The charge stems from Lowell omitting a column in the association's Roman-numeral spreadsheet.</p><p>Neighbors petitioned for an audit of every prior statement, concerned that similar omissions could bring retroactive penalties. Lowell's attorney requested permission to submit knotted rope tallies as proof of exact addition.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-22-27-story3.webp",
+      "image_provider": "grok"
+    },
+    {
+      "desk": "Sport",
+      "headline": "Little League Umpires Bar All Ties After Zero Is Ruled an Illegal Score",
+      "deck": "Teams must now play extra innings until a positive run total appears",
+      "byline": "Derek Lang, Sportswriter",
+      "article": "<p>The Central Illinois Youth Baseball League banned umpires from recording any game that ends without a clear numerical lead. Officials ruled that equal tallies would require acknowledging an empty result now classified as illegal rounding.</p><p>Coaches in the Springfield district extended several contests past midnight rather than risk an uncounted blank. One manager instructed pitchers to continue until the scoreboard registers at least one additional run.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-22-27-story4.webp",
+      "image_provider": "grok"
+    }
+  ],
+  "real_world_echo": "Mirrors the Carney/Trump tariff announcement by tracing how absence of zero forced the accidental 400% lumber tariff and now sparks public panic over any fix",
+  "generated_at": "2026-07-22T03:37:45.719778+00:00",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-22-27-hero.webp",
+  "hero_image_provider": "grok"
+}

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-21T03:41:13.456841+00:00",
+ "generated_at": "2026-07-22T03:41:08.470343+00:00",
  "dates": {
   "2026-06-28": [
    {
@@ -1557,6 +1557,88 @@
     "deck": "A local diner review triggers federal emergency measures over breakfast essentials.",
     "divergence": "sarcasm was never invented — everything is meant literally, reviews are terrifyingly sincere, and this newspaper causes daily emergencies",
     "hero_image": "https://images.thejumpuniverse.com/2026-07-21-85-hero.webp"
+   }
+  ],
+  "2026-07-22": [
+   {
+    "timeline_id": 14,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "Warmbox",
+    "headline": "Brine-Tariff Investigator Promoted to Ceremonial Pickle Inspector, City Left in a Crunch",
+    "deck": "Local food ritual chaos ensues as bureaucracy's solution proves to be another pickle.",
+    "divergence": "refrigeration was never invented — everything is pickled, salted, smoked or eaten immediately, and the milkman comes hourly",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-22-14-hero.webp"
+   },
+   {
+    "timeline_id": 27,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "Nullville",
+    "headline": "Local Accountant Claims to Have Spotted a Zero, Sparks Nationwide Panic Over Felony Rounding",
+    "deck": "Residents fear unauthorized deductions as lumber tariffs soar 400% on unregulated nothingness.",
+    "divergence": "the number zero was never invented — accounting is heroic, spreadsheets run on Roman numerals, and rounding down is a felony",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-22-27-hero.webp"
+   },
+   {
+    "timeline_id": 40,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "The Vague Hours",
+    "headline": "Pentagon Fires Pacific Fleet Commander for 'Morning-ish' Delay, Sailors Board Carrier with Sandwiches",
+    "deck": "In an unprecedented escalation, missing the retaliatory window becomes formal charges citing 'morning-ish' as a critical lapse.",
+    "divergence": "the clock was never invented — appointments are 'morning-ish', trains leave when full, and 'on time' cannot be translated",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-22-40-hero.webp"
+   },
+   {
+    "timeline_id": 43,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "Workforever",
+    "headline": "Nap Wing Expansion Considered Critical National Infrastructure Following Tariff Crisis",
+    "deck": "Suburban office managers now weigh nap logistics against international trade policies amid pillow shortages.",
+    "divergence": "retirement was never invented — lifeguards are 94, offices have nap wings, and the gold watch is a defibrillator",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-22-43-hero.webp"
+   },
+   {
+    "timeline_id": 56,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "The Natural Risers",
+    "headline": "Senate Trade Committee Turns to 13th-Century Water Clocks in Economic Fiasco",
+    "deck": "Bureaucrats blame ancient timekeeping for modern tariff troubles as negotiations slip into an archival quagmire.",
+    "divergence": "the alarm clock was never invented — America wakes when it wakes and the economy starts whenever",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-22-56-hero.webp"
+   },
+   {
+    "timeline_id": 69,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "Fort Lee Forever",
+    "headline": "Fort Lee Film Commission Fires Transit Coordinator After Star Delays Spark Protests",
+    "deck": "Local commuters demand on-time arrivals; PATH train's heroic quotas fall to new lows.",
+    "divergence": "Hollywood was never founded — the film capital of the world is Fort Lee, New Jersey, and the stars ride the PATH train",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-22-69-hero.webp"
+   },
+   {
+    "timeline_id": 85,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "Earnestville",
+    "headline": "Exact Words Accord Sparks Nationwide Military Deployment After Pothole Statement",
+    "deck": "Local DMV Issues Emergency Sirens in Response to Literal Press Releases",
+    "divergence": "sarcasm was never invented — everything is meant literally, reviews are terrifyingly sincere, and this newspaper causes daily emergencies",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-22-85-hero.webp"
+   },
+   {
+    "timeline_id": 98,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "Last Night's Breakfast",
+    "headline": "National Morning Meal Standards Board Officially Defunded, Leaves Behind Mountain of Reheated Meatloaf",
+    "deck": "Ghost of Bureaucracy Haunts Silver Spring as Legacy of Lunch-for-Breakfast Oversight Comes to a Grim Halt",
+    "divergence": "breakfast cereal was never invented — morning food is last night's dinner and the mascots were never born",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-22-98-hero.webp"
    }
   ]
  }

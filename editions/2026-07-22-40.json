@@ -1,0 +1,121 @@
+{
+  "timeline_id": 40,
+  "theme": "modern",
+  "date": "2026-07-22",
+  "date_display": "Wednesday, July 22, 2026",
+  "year": 2026,
+  "universe_name": "The Vague Hours",
+  "universe_year": 2026,
+  "universe_date_display": "July 22, Year 2026",
+  "galaxy": "Milky Way",
+  "planet": "Earth",
+  "divergence": "the clock was never invented — appointments are 'morning-ish', trains leave when full, and 'on time' cannot be translated",
+  "story_angle": "eyewitness dispatch whose vivid sensory details are all administrative",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: Grok",
+    "Editor: Grok"
+  ],
+  "headline": "Pentagon Fires Pacific Fleet Commander for 'Morning-ish' Delay, Sailors Board Carrier with Sandwiches",
+  "deck": "In an unprecedented escalation, missing the retaliatory window becomes formal charges citing 'morning-ish' as a critical lapse.",
+  "article": "<p>The Pentagon has relieved Pacific Fleet Commander Admiral Bruce Flatley of his duties after the aircraft carrier USS Fullla left port with 847 sailors still boarding at 11:47 on Tuesday. The group missed the retaliatory window entirely.</p><p>A formal complaint from the Norfolk Civilian Oversight Board listed three missed morning-ish briefings at the local IHOP, including one marked by syrupy pancakes and absent operational updates. Board chairwoman Marjorie Clocksworth pointed to a sundial on her wrist and demanded departures measured in something stricter than brunch.</p><p>Replacement Captain Barnabas Sundroid issued standing orders for laminated sundial cards on every vessel, initialed by the duty yeoman. He described the change as a question of national pride, or at least pride before the eggs cool.</p>",
+  "author": "Lana Ticker, Senior Correspondent for Temporal Affairs",
+  "city": "Chronotown",
+  "weather": {
+    "city": "Chronotown",
+    "condition": "Cloudy with a chance of sandwiches",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "Sandwiches Sank the Fleet",
+    "author": "Sir Alistair Whenevershire, Perpetual Chairman of the League Against Fixed Moments",
+    "body": "The Pentagon acted correctly. Admiral Flatley’s error was allowing the phrase 'morning-ish' at all, a dangerous concession to precision that invites the rigidity our society claims to reject. Had he simply announced departure once the deck grew crowded, like any proper train, the delay would have passed unnoticed. Instead sailors arrived with sandwiches—portable clocks in bread form—smuggling schedules aboard. My own meeting with the Under-Minister for Unfinished Business, set for whenever the biscuits cooled, collapsed under the coverage. The remedy is plain: ban handheld comestibles and install communal kettles that never quite reach a boil."
+  },
+  "classifieds": [
+    {
+      "cat": "Legal",
+      "text": "Disgraced Pacific Fleet Commander seeks attorney fluent in non-clock-based defenses; willing to trade sandwich recipes for proof that 'morning-ish' constitutes due diligence under naval code."
+    },
+    {
+      "cat": "Help Wanted",
+      "text": "Pentagon urgently hiring replacement commander who can define 'retaliatory window' without sundials or excuses; must arrive before the carrier runs out of cold cuts and board with zero sandwiches."
+    },
+    {
+      "cat": "For Sale",
+      "text": "Sailors liquidating personal sandwich stockpiles after 'morning-ish' boarding fiasco; bulk lots available, slightly warm, perfect for any future commander who still believes in vague departures."
+    },
+    {
+      "cat": "Public Notices",
+      "text": "Public apology from entire Pacific carrier crew: we boarded when full, not when ordered, and now the commander is gone; anyone with a working definition of 'on time' please report to the brig before dark-ish."
+    }
+  ],
+  "comic_strip": {
+    "title": "Morning-Ish Mutiny",
+    "panels": [
+      {
+        "caption": "Admiral: 'The strike window closed while you said morning-ish.' Commander: 'Sailors were still boarding with sandwiches.'"
+      },
+      {
+        "caption": "Pentagon bureaucrat: 'Vagueness is now dereliction. Formal charges for missing the retaliatory slot.'"
+      },
+      {
+        "caption": "Commander: 'My defense starts whenever the tribunal feels like it.'"
+      }
+    ],
+    "image": "https://images.thejumpuniverse.com/2026-07-22-40-strip.webp",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "The Pentagon demanded an after-action report on why the carrier missed morning-ish.",
+    "punchline": "It arrived two weeks later, signed by the new commander and stained with mayo.",
+    "text": "The Pentagon demanded an after-action report on why the carrier missed morning-ish. It arrived two weeks later, signed by the new commander and stained with mayo."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "Pacific Fleet Sandwich Holster Co.",
+      "body": "Board with confidence when morning-ish turns into afternoon-ish. Reinforced nylon pockets keep your lunch intact while admirals review your departure window.",
+      "tagline": "Fits all standard-issue carriers. Not liable for Pentagon inquiries."
+    },
+    {
+      "headline": "Ish Translation Services",
+      "body": "We render 'on time' into 47 languages where the phrase does not exist. Contracts now accepted for fleet coordination and breakfast meetings.",
+      "tagline": "Payment due whenever the check clears."
+    },
+    {
+      "headline": "Carrier-Grade Lunchbox Alarms",
+      "body": "Audible only when the boat is actually leaving. Synchronizes with sandwich volume rather than nonexistent clocks.",
+      "tagline": "Batteries not included because time is not guaranteed."
+    },
+    {
+      "headline": "Morning-ish Executive Coaching",
+      "body": "Learn to fire subordinates before they finish their subs. One-day intensives held whenever the trainer arrives.",
+      "tagline": "Former Pentagon clients available upon request, probably."
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Society",
+      "headline": "White House Reschedules All Briefings After Fleet Commander Dismissal",
+      "deck": "Staff ordered to arrive before the briefing room fills",
+      "byline": "Elena Vargas, Society Reporter",
+      "article": "<p>The Pentagon action against Admiral Bruce Flatley prompted the White House to require senior aides to reach the Situation Room while pastries remain on the table. Late arrivals now collect written warnings under the new arrival protocol.</p><p>Congressional offices adopted parallel rules, postponing hearings until enough members assemble for a quorum. Capitol elevator operators now announce departures only at standing-room capacity, stretching lunch breaks past the usual sandwich window.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-22-40-story2.webp",
+      "image_provider": "grok"
+    },
+    {
+      "desk": "Agriculture",
+      "headline": "Iowa State Fair Extends Swine Judging Into Third Day",
+      "deck": "Hogs displayed on a when-full basis cause scheduling pileups",
+      "byline": "Marcus Reed, Agriculture Editor",
+      "article": "<p>Judges at the Des Moines fairgrounds stretched the swine competition across three days after entrants arrived throughout the morning-ish window instead of at a fixed start. Prize hogs stayed in holding pens until each ring reached capacity.</p><p>Feed vendors now deliver only after trucks fill, leaving some stalls empty and others stacked with hay. Organizers recommend extra feed and folding chairs for sessions that finish only when the last ribbon is awarded or the lights go out.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-22-40-story3.webp",
+      "image_provider": "grok"
+    }
+  ],
+  "real_world_echo": "obliquely mirrors Zelensky sacking Ukraine's top army commander after protests, here recast as domestic military leadership purged over timing protests from civilian oversight boards",
+  "generated_at": "2026-07-22T03:37:24.671644+00:00",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-22-40-hero.webp",
+  "hero_image_provider": "grok"
+}
