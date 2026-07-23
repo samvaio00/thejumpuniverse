@@ -747,17 +747,41 @@ headline, deck, article, side_stories, oped, classifieds, comic_strip, joke, spo
 Keep every article as plain text with \\n\\n between paragraphs (not HTML tags).
 side_stories keeps its structure: array of {{"desk","headline","deck","byline","article"}}."""
 
+# Visual style: the paper is a comedy — the art should look bright, modern
+# and inviting, never gloomy or old-timey. "modern" theme = vivid glossy
+# magazine photography; legacy themes keep their era look for the archive.
+BRIGHT_LOOK = ("Bright cheerful daylight, vivid saturated colors, glossy modern "
+               "magazine photography, crisp sharp focus, playful energetic "
+               "composition with a comedic touch. Present-day America, "
+               "contemporary clothing and settings — NOT vintage, NOT sepia, "
+               "NOT gloomy, NOT 1930s.")
+
 SIDE_IMAGE_PROMPT = """Editorial news photograph for a newspaper's {desk} desk, {theme} era alternate history.
 Year {year}. Story: {headline}. {divergence}
-{world_notes}Documentary photojournalism, era-appropriate. No text or watermarks."""
+{world_notes}{look} No text or watermarks."""
 
 HERO_IMAGE_PROMPT = """Editorial news photograph, {theme} era alternate history.
 Year {year}. Story: {headline}. {divergence}
-{world_notes}Dramatic photojournalism. No text or watermarks."""
+{world_notes}{look} No text or watermarks."""
 
-COMIC_STRIP_IMAGE_PROMPT = """Three-panel newspaper comic strip, left to right, {theme} era style.
+COMIC_STRIP_IMAGE_PROMPT = """Three-panel newspaper comic strip, left to right, {look_comic}
 Story satire: {headline}. Panels: {panel_summary}
 {world_notes}Funny, witty. No speech bubble text in image — visuals only."""
+
+
+def image_look(theme):
+    """Style directives per theme: modern = bright and vivid; legacy themes
+    keep documentary era looks."""
+    if theme == "modern":
+        return BRIGHT_LOOK
+    return "Documentary photojournalism, era-appropriate."
+
+
+def comic_look(theme):
+    if theme == "modern":
+        return ("colorful contemporary comic style, bold clean lines, bright "
+                "cheerful palette.")
+    return f"{theme} era style."
 
 
 def image_world_notes(inhabitants, world_style):
@@ -1365,7 +1389,7 @@ def generate_edition(date=None, timeline_id=None, with_images=None):
 
     if with_images:
         hero_b64, hero_image_provider = generate_image_with_fallback(
-            HERO_IMAGE_PROMPT.format(theme=theme, year=year,
+            HERO_IMAGE_PROMPT.format(theme=theme, year=year, look=image_look(theme),
                 headline=content["headline"], divergence=divergence,
                 world_notes=world_notes),
             preferred="openai",
@@ -1377,7 +1401,7 @@ def generate_edition(date=None, timeline_id=None, with_images=None):
         for i, story in enumerate(content["side_stories"]):
             preferred = "grok" if i % 2 == 0 else "openai"
             img_b64, img_provider = generate_image_with_fallback(
-                SIDE_IMAGE_PROMPT.format(desk=story.get("desk", "News"), theme=theme, year=year,
+                SIDE_IMAGE_PROMPT.format(desk=story.get("desk", "News"), theme=theme, year=year, look=image_look(theme),
                     headline=story["headline"], divergence=divergence,
                     world_notes=world_notes),
                 preferred=preferred,
@@ -1387,7 +1411,7 @@ def generate_edition(date=None, timeline_id=None, with_images=None):
                 story["image_provider"] = img_provider
 
         comic_b64, strip_image_provider = generate_image_with_fallback(
-            COMIC_STRIP_IMAGE_PROMPT.format(theme=theme, headline=content["headline"],
+            COMIC_STRIP_IMAGE_PROMPT.format(look_comic=comic_look(theme), headline=content["headline"],
                 panel_summary=" | ".join(p.get("caption", "")[:60] for p in content["comic_strip"].get("panels", [])[:3]),
                 world_notes=world_notes),
             preferred="grok",
@@ -1798,7 +1822,7 @@ def backfill_images(date_slug):
         if not hero or (not hero.startswith("http") and not hero_file.exists()):
             print(f"{date_slug}-{tid}: generating hero image...")
             b64, provider = generate_image_with_fallback(
-                HERO_IMAGE_PROMPT.format(theme=ed["theme"], year=ed["year"],
+                HERO_IMAGE_PROMPT.format(theme=ed["theme"], year=ed["year"], look=image_look(ed["theme"]),
                                          headline=ed["headline"], divergence=ed["divergence"],
                                          world_notes=world_notes),
                 preferred="openai")
@@ -1814,7 +1838,7 @@ def backfill_images(date_slug):
                 continue
             print(f"{date_slug}-{tid}: generating story {i + 2} image...")
             b64, provider = generate_image_with_fallback(
-                SIDE_IMAGE_PROMPT.format(desk=story.get("desk", "News"), theme=ed["theme"],
+                SIDE_IMAGE_PROMPT.format(desk=story.get("desk", "News"), theme=ed["theme"], look=image_look(ed["theme"]),
                                          year=ed["year"], headline=story["headline"],
                                          divergence=ed["divergence"],
                                          world_notes=world_notes),
@@ -1832,7 +1856,7 @@ def backfill_images(date_slug):
             print(f"{date_slug}-{tid}: generating comic strip image...")
             panel_summary = " | ".join(p.get("caption", "")[:60] for p in strip.get("panels", [])[:3])
             b64, provider = generate_image_with_fallback(
-                COMIC_STRIP_IMAGE_PROMPT.format(theme=ed["theme"], headline=ed["headline"],
+                COMIC_STRIP_IMAGE_PROMPT.format(look_comic=comic_look(ed["theme"]), headline=ed["headline"],
                                                 panel_summary=panel_summary,
                                                 world_notes=world_notes),
                 preferred="grok")
