@@ -1,0 +1,121 @@
+{
+  "timeline_id": 98,
+  "theme": "modern",
+  "date": "2026-07-23",
+  "date_display": "Thursday, July 23, 2026",
+  "year": 2026,
+  "universe_name": "Last Night's Breakfast",
+  "universe_year": 2026,
+  "universe_date_display": "July 23, Year 2026",
+  "galaxy": "Milky Way",
+  "planet": "Earth",
+  "divergence": "breakfast cereal was never invented — morning food is last night's dinner and the mascots were never born",
+  "story_angle": "man-on-the-street reactions to a rumor that the missing thing might exist somewhere, treated like a UFO sighting",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: Grok",
+    "Editor: Grok"
+  ],
+  "headline": "Commuters Near Silver Spring Report 'Unidentified Breakfast Object' Rumored in Empty Grocery Aisle, Prompting Sharp U-Turns in Morning Leftover Routes",
+  "deck": "County officials scramble as rectangular glow isn't last night's meatloaf — possible cereal encounter protocols enacted.",
+  "article": "<p>Three Silver Spring commuters spotted a rectangular glow in an empty cereal aisle and executed abrupt U-turns rather than risk the unknown. Witnesses noted the light lacked any trace of reheated protein, a scent the neighborhood treats as standard morning fare.</p><p>The shuttered National Morning Meal Standards Board used the moment to distribute Possible Cereal Encounter forms from a pop-up desk. Drivers now log every sighting on county paperwork that outlived the board itself.</p><p>James Doughty circled the lot three times before choosing cold lasagna over the glow. He later said he had planned a gradual breakfast transition but settled for dinner instead.</p><p>Traffic across the region now bends around any store with an empty shelf, as commuters treat the glow as a standing hazard to morning routes.</p>",
+  "author": "Tommy Quinoa, Senior Absurdity Correspondent",
+  "city": "Silver Spring",
+  "weather": {
+    "city": "Silver Spring",
+    "condition": "Leftover Fog with a Chance of Omelets",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "Embrace the Glow: Why Panicked Commuters Should Stop Whining and Start Defending Dinner",
+    "author": "Lord Alistair Crumbwell, PhD in Gravy-Based Governance and Self-Appointed Guardian of Last Night's Lasagna",
+    "body": "The flap over the rectangular glow shows how soft commuters have become on their leftover routes. Instead of circling like lost pigeons, they should credit the light for proving cereal never belonged on the table. My own pork-chop commute suffered a brief stall, yet I place the blame on fedoras that block aisle sightlines rather than on county staff. The fix is simple: require meatloaf hats for every traveler, doubling dinner security and ending pointless U-turns. Any glow that threatens my Salisbury-steak aisle deserves thanks, not forms."
+  },
+  "classifieds": [
+    {
+      "cat": "Help Wanted",
+      "text": "Silver Spring County hiring three UBO protocol enforcers for 2026 morning shifts. Must reroute leftover traffic away from any rectangular glows that aren't meatloaf."
+    },
+    {
+      "cat": "For Sale",
+      "text": "Selling my pre-U-turn commute sedan with reinforced grocery-aisle blinders installed yesterday. Low miles, high desperation after the unidentified breakfast object rumor."
+    },
+    {
+      "cat": "Lost & Found",
+      "text": "Lost: my entire route map and last night's meatloaf after executing an emergency U-turn near the empty aisle. Finder keeps the leftovers if they return the map."
+    },
+    {
+      "cat": "Public Notices",
+      "text": "County officials issue formal apology for all commuter panic triggered by possible cereal encounter protocols. Rectangular objects remain banned from breakfast routes until further notice."
+    }
+  ],
+  "comic_strip": {
+    "title": "Leftover Glow",
+    "panels": [
+      {
+        "caption": "Commuter slams brakes: \"There's a glowing rectangle in aisle seven — not meatloaf, not last night's curry.\""
+      },
+      {
+        "caption": "County official on megaphone: \"All drivers revert to dinner routes. This is not a drill; maintain leftover discipline.\""
+      },
+      {
+        "caption": "Bystander peers closer: \"It says 'Froot Loops' — whatever that is. Protocols just locked the store for a century.\""
+      }
+    ],
+    "image": "https://images.thejumpuniverse.com/2026-07-23-98-strip.webp",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "How do you explain 'Commuters Near Silver Spring Report 'Unidenti' to a visitor from another timeline?",
+    "punchline": "You don't. You hand them the paper and back away slowly.",
+    "text": "How do you explain 'Commuters Near Silver Spring Report 'Unidenti' to a visitor from another timeline? You don't. You hand them the paper and back away slowly."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "UBO RouteGuard 4.7",
+      "body": "Real-time alerts reroute Silver Spring commuters around empty aisles harboring rumored unidentified breakfast objects, preserving your reheated lasagna commute.",
+      "tagline": "Update required after every sharp U-turn."
+    },
+    {
+      "headline": "Yesterday's Plate, Delivered Warm",
+      "body": "Pre-portioned last-night dinners arrive before dawn so you never risk the grocery aisle where UBOs allegedly lurk.",
+      "tagline": "No cereal mascots harmed; they were never born."
+    },
+    {
+      "headline": "Aisle Avoidance Insurance",
+      "body": "Pays for fender-benders caused by sudden morning leftover U-turns when commuters spot the empty shelf rumored to contain an unidentified breakfast object.",
+      "tagline": "Claims denied if dinner is still cold."
+    },
+    {
+      "headline": "Leftover Camouflage Spray",
+      "body": "Mist your reheated stew with neutral breakfast-scent mist so passing drivers assume you're not the source of the Silver Spring UBO panic.",
+      "tagline": "Non-toxic to last night's protein."
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Society",
+      "headline": "Silver Spring Residents Institute Mandatory Leftover Verification at Grocery Lot Entrances",
+      "deck": "Homeowners now submit three reheated portions to bypass the new U-turn barriers",
+      "byline": "Linda Harper, Society Correspondent",
+      "article": "<p>The Civic Association placed scanners at three entrances that weigh each car for two pounds of yesterday's protein before allowing Route 29 access. Vehicles short on approved leftovers receive a detour slip and fourteen extra minutes of delay.</p><p>The library responded by keeping its reheating station open until 7 a.m. for drivers who arrive with nothing but empty containers.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-23-98-story2.webp",
+      "image_provider": "grok"
+    },
+    {
+      "desk": "Agriculture",
+      "headline": "Midwest Hog Farmers Pivot Entire Crop to Tuesday Casserole Contracts",
+      "deck": "Pork futures rise after processors sign exclusive deals with three county school kitchens",
+      "byline": "Robert Kline, Agriculture Desk",
+      "article": "<p>Iowa growers rerouted 1.2 million tons of corn into pre-portioned trays bound for suburban dinner-to-breakfast pipelines. Contracts now list exact reheating times to satisfy local inspectors.</p><p>The change removes the need for separate breakfast-grain fields and cuts annual forms by forty-seven pages per farm.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-23-98-story3.webp",
+      "image_provider": "grok"
+    }
+  ],
+  "real_world_echo": "Tankers make sharp U-turns after Houthi shipping threat — the cereal rumor triggers identical abrupt reversals in commuters' breakfast logistics and local-agency response",
+  "generated_at": "2026-07-23T03:44:34.361108+00:00",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-23-98-hero.webp",
+  "hero_image_provider": "grok"
+}

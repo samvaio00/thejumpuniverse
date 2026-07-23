@@ -1,0 +1,130 @@
+{
+  "timeline_id": 56,
+  "theme": "modern",
+  "date": "2026-07-23",
+  "date_display": "Thursday, July 23, 2026",
+  "year": 2026,
+  "universe_name": "The Natural Risers",
+  "universe_year": 2026,
+  "universe_date_display": "July 23, Year 2026",
+  "galaxy": "Milky Way",
+  "planet": "Earth",
+  "divergence": "the alarm clock was never invented — America wakes when it wakes and the economy starts whenever",
+  "story_angle": "breathless coverage of a trivial event treated as the hinge of history",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: Grok",
+    "Editor: Grok"
+  ],
+  "headline": "Midwest CEO's Rolled-Over Snooze Unlocks Tariff Talks, White House Hails 'Snooze Accord'",
+  "deck": "The fate of international trade now rests on one executive's decision to linger in bed.",
+  "article": "<p>President Clara Higgins announced the 'Snooze Accord' after Frank Lethargy of Snack-Links chose an extra 27 minutes under the covers. The call came at 9:47 a.m. Central Time. Commerce officials immediately tied all tariff filings to the moment Lethargy's rooster sounded at 10:14 a.m.</p><p>Negotiations had stalled over 14th-century Flemish bell rules. Lethargy's extra rest broke the logjam. The Senate Trade Committee credited the delay, noting that a 13th-century water clock had overflowed while talks idled.</p><p>Shipping containers now need a notarized 'last snooze' stamp before leaving port. A local trader said his planned 'Trade Before Snooze' sticker already felt outdated. The economy, it turns out, moves when the mattress allows.</p>",
+  "author": "Martha N. Doze, Senior Economic Reporter",
+  "city": "Dreamland Heights",
+  "weather": {
+    "city": "Dreamland Heights",
+    "condition": "Naps with occasional negotiations",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "The Snooze That Saved Us All: Early Risers Are the True Tariff Menace",
+    "author": "Sir Percival Latenby, D.D. in Bedtime Realpolitik and Royal Snooze Laureate at the Institute for Protracted Pillow Negotiations",
+    "body": "Lethargy's rollover has delivered the Snooze Accord and exposed the real threat: dawn-risers who push tariffs before coffee. Their haste wrecked markets for years. The White House now rewards rest. My neighbor's 7 a.m. lawn-mowing never moved a single container. The second snooze is strategy, not sloth. Anyone claiming otherwise simply resents the mattress."
+  },
+  "classifieds": [
+    {
+      "cat": "Help Wanted",
+      "text": "Snooze Accord liaison needed for Midwest HQ. Must be willing to whisper tariff concessions into sleeping CEO's ear until he rolls over. Benefits include flexible hours (all of them)."
+    },
+    {
+      "cat": "For Sale",
+      "text": "One slightly used international trade deal, stalled mid-snooze. Owner offloading at fire-sale prices because the economy won't start until the mattress says so. Cash or crypto, no calls before noon."
+    },
+    {
+      "cat": "Personals",
+      "text": "Seeking fellow late riser who understands that true love, like tariffs, can wait until the CEO finishes his third REM cycle. No alarm-clock people, no exceptions."
+    },
+    {
+      "cat": "Public Notices",
+      "text": "We regret to inform trading partners that the 'Snooze Accord' remains in effect until further pillow talk. All inquiries will be answered whenever America wakes up. — State Dept. Bedside Office"
+    }
+  ],
+  "comic_strip": {
+    "title": "Snooze Control",
+    "panels": [
+      {
+        "caption": "Topeka CEO rolls left at 10:17. Beijing line goes live: 'He's under again. Offer the quotas.'"
+      },
+      {
+        "caption": "Treasury aide: 'Keep him horizontal. No calls till he scratches himself awake.'"
+      },
+      {
+        "caption": "CEO, still prone: 'Tell them the steel deal stands if the pillow stays warm.'"
+      }
+    ],
+    "image": "https://images.thejumpuniverse.com/2026-07-23-56-strip.webp",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "White House officials hailed the Snooze Accord as a major tariff breakthrough after the Midwest CEO's extra hour in bed postponed the original deadline.",
+    "punchline": "At least now trade policy matches the rest of the economy: whatever time someone finally decides to show up.",
+    "text": "White House officials hailed the Snooze Accord as a major tariff breakthrough after the Midwest CEO's extra hour in bed postponed the original deadline. At least now trade policy matches the rest of the economy: whatever time someone finally decides to show up."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "Snooze Accord Pajamas",
+      "body": "Silk woven from Midwest futures contracts, these pajamas let any CEO's morning roll-over trigger binding tariff revisions before the first yawn fades.",
+      "tagline": "White House tested. Sheets not included."
+    },
+    {
+      "headline": "Delayed-Dawn Tariff Brokerage",
+      "body": "Our agents stay asleep until your natural wake-up aligns global markets, turning one CEO's extended snooze into a national economic policy.",
+      "tagline": "Commissions collected only after the accord is signed and the coffee finally brews."
+    },
+    {
+      "headline": "Rolled-Over Regional Roast",
+      "body": "Beans harvested the instant the Midwest CEO flips his pillow, delivering a cup that tastes like stalled talks finally moving forward.",
+      "tagline": "No timers. No refunds if the economy sleeps in."
+    },
+    {
+      "headline": "National Snooze Registry",
+      "body": "Public notice: Register your household's intended wake hour to receive automatic tariff adjustments the moment your state collectively decides to start the day.",
+      "tagline": "Late registrants may be taxed retroactively. Or not. Depends."
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Business",
+      "headline": "Snooze Accord Forces Commerce Clerks to Recalibrate All Tariff Windows",
+      "deck": "Midwest executive's second rollover now listed as official benchmark in department ledgers.",
+      "byline": "Morgan Ellis, Business Correspondent",
+      "article": "<p>Clerks scrapped the old Flemish bell references and logged blackout-curtain specs plus coffee-maker start times instead. Any container arriving before Lethargy's reported rise gets bumped to the next afternoon.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-23-56-story2.webp",
+      "image_provider": "grok"
+    },
+    {
+      "desk": "Agriculture",
+      "headline": "Grain Elevator Operators Adopt Rooster-Based Receiving Hours",
+      "deck": "Harvest reports now include exact times when farm trucks reach the first rest-stop diner.",
+      "byline": "Taylor Quinn, Agriculture Reporter",
+      "article": "<p>Illinois elevators now demand handwritten wake-up affidavits from drivers before soybeans hit the scales. Last week's corn arrived four hours later than usual, so contracts now peg payments to the county fair's gate opening.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-23-56-story3.webp",
+      "image_provider": "grok"
+    },
+    {
+      "desk": "Crime",
+      "headline": "Burglary Unit Logs Fewer Morning Break-Ins After Patrols Start at Individual Wake Times",
+      "deck": "Detectives now mark case files by the hour the first squad car leaves the station parking lot.",
+      "byline": "Casey Holt, Crime Desk",
+      "article": "<p>Deputies phone in personal readiness before rolling out. Two suspects were found still asleep in getaway cars because no fixed start time had put officers on the street earlier.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-23-56-story4.webp",
+      "image_provider": "grok"
+    }
+  ],
+  "real_world_echo": "US signs landmark nuclear deal with Saudi Arabia — mirrored as a mundane sleep-in suddenly resolving trade gridlock instead of a high-stakes energy pact",
+  "generated_at": "2026-07-23T03:44:36.583828+00:00",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-23-56-hero.webp",
+  "hero_image_provider": "grok"
+}
