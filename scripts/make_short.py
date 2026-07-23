@@ -163,11 +163,11 @@ DEJAVU_DIRS = [
     str(Path.home() / "Library" / "Fonts"),
 ]
 
-HASHTAGS = "#shorts #multiverse #alternatehistory #satire #scifi #galacticnews"
+HASHTAGS = "#shorts #whatif #alternatehistory #satire #funny #multiverse"
 BASE_TAGS = [
-    "multiverse", "alternate history", "satire", "sci fi", "science fiction",
-    "parallel universe", "galactic news", "news parody", "multiverse gazette",
-    "ai news", "shorts",
+    "what if", "what if history", "counterfactual", "thought experiment",
+    "alternate history", "satire", "parallel universe", "news parody",
+    "funny news", "brain teaser", "multiverse gazette", "ai news", "shorts",
 ]
 
 
@@ -862,20 +862,33 @@ def display_headline(h):
 
 
 def build_metadata(date, stories, r2_key, video_path):
-    prefix = f"Multiverse News, {month_day(date)}: "
     suffix = " #shorts"
-    budget = 95 - len(prefix) - len(suffix)
-    head = display_headline(min((s["headline"] for s in stories), key=len))
-    if len(head) > budget:
-        head = head[:budget - 1].rstrip(" ,;:—-") + "…"
-    title = f"{prefix}{head}{suffix}"
+    lead_alt = short_alteration(stories[0].get("divergence"))
+    if lead_alt and len(lead_alt) <= 58:
+        # Counterfactual era: the what-if IS the hook.
+        title = f"What if {lead_alt}? {month_day(date)} Multiverse News{suffix}"
+    else:
+        prefix = f"Multiverse News, {month_day(date)}: "
+        budget = 95 - len(prefix) - len(suffix)
+        head = display_headline(min((s["headline"] for s in stories), key=len))
+        if len(head) > budget:
+            head = head[:budget - 1].rstrip(" ,;:—-") + "…"
+        title = f"{prefix}{head}{suffix}"
 
-    lines = [f"{s['universe_name']}, Year {s['universe_year']}: "
-             f"{display_headline(s['headline'])}" for s in stories]
-    description = "\n".join(lines) + (
+    def story_line(s):
+        alt = short_alteration(s.get("divergence"))
+        head = display_headline(s["headline"])
+        if alt:
+            return f"What if {alt}? — {head}"
+        return f"{s['universe_name']}, Year {s['universe_year']}: {head}"
+
+    lines = [story_line(s) for s in stories]
+    description = (
+        "Three parallel Americas — each missing exactly one thing:\n\n"
+        + "\n".join(lines) + (
         "\n\nRead the full front pages: https://thejumpuniverse.com"
         f"\n\n{HASHTAGS}"
-    )
+    ))
     tags = BASE_TAGS + [s["universe_name"].lower() for s in stories]
     return {
         "date": date.strftime("%Y-%m-%d"),
@@ -889,6 +902,7 @@ def build_metadata(date, stories, r2_key, video_path):
         "stories": [{"timeline_id": s["timeline_id"],
                      "universe_name": s["universe_name"],
                      "universe_year": s["universe_year"],
+                     "divergence": s.get("divergence"),
                      "headline": s["headline"]} for s in stories],
     }
 
