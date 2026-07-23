@@ -392,10 +392,12 @@ def runway_prompt_for(story):
     prompt = (
         f"Animate with strong, clearly visible motion from the very first frame: "
         f"{action}. The {who} in the scene keep moving — walking, gesturing, "
-        f"turning, reacting. {theme_motion}. Fabric, hair and smoke move in the "
-        f"wind; light flickers across surfaces. Slow dolly-in with clear parallax "
-        f"between foreground and background. Bold, lively animation for the "
-        f"entire duration — never a frozen or static frame. Vertical "
+        f"turning, reacting, with upbeat comedic energy. {theme_motion}. "
+        f"Bright cheerful daylight, vivid saturated colors, lively contemporary "
+        f"look — never gloomy, never sepia, never vintage. Fabric and hair move "
+        f"in the wind; sunlight plays across surfaces. Slow dolly-in with clear "
+        f"parallax between foreground and background. Bold, fun animation for "
+        f"the entire duration — never a frozen or static frame. Vertical "
         f"composition, no text."
     )
     if len(prompt) > RUNWAY_PROMPT_MAX:
