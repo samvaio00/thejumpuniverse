@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://thejumpuniverse.com/sitemap.xml
+Sitemap: https://thejumpuniverse.com/sitemap-video.xml
