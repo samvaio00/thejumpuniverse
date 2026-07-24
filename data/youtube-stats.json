@@ -1,13 +1,30 @@
 {
-  "generated_at": "2026-07-23T20:18:46+00:00",
+  "generated_at": "2026-07-24T09:30:08+00:00",
   "channel_id": "UCyPIYczypKJ6dIuoHhv_9ow",
   "channel_url": "https://www.youtube.com/channel/UCyPIYczypKJ6dIuoHhv_9ow",
   "totals": {
-    "videos": 21,
-    "views": 211,
+    "videos": 22,
+    "views": 217,
     "likes": 6
   },
   "videos": [
+    {
+      "id": "c2LTywQUkBE",
+      "title": "What if the interstate highway system was never built? July 24 Multiverse News #shorts",
+      "url": "https://www.youtube.com/watch?v=c2LTywQUkBE",
+      "published": "2026-07-24T04:02:28+00:00",
+      "thumbnail": "https://i4.ytimg.com/vi/c2LTywQUkBE/hqdefault.jpg",
+      "views": 6,
+      "likes": 0,
+      "rating": 0.0,
+      "is_short": true,
+      "history": [
+        [
+          "2026-07-24T09:30:08+00:00",
+          6
+        ]
+      ]
+    },
     {
       "id": "J5xlr7e4GxQ",
       "title": "Multiverse News, July 23: Passengers to Arm Themselves for Safer Zeppelin Travel #shorts",
@@ -373,7 +390,8 @@
           "2026-07-13T15:50:28+00:00",
           2
         ]
-      ]
+      ],
+      "stale": true
     },
     {
       "id": "D9kXdj8NYZE",
