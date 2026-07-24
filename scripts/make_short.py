@@ -163,7 +163,7 @@ DEJAVU_DIRS = [
     str(Path.home() / "Library" / "Fonts"),
 ]
 
-HASHTAGS = "#shorts #whatif #alternatehistory #satire #funny #multiverse"
+HASHTAGS = "#shorts #whatif #satire"
 BASE_TAGS = [
     "what if", "what if history", "counterfactual", "thought experiment",
     "alternate history", "satire", "parallel universe", "news parody",
@@ -780,7 +780,25 @@ def stage_segments(work_dir, stories, sources, seg_dur, kb_flags):
 
 # ─── STAGE 4: ASSEMBLY ──────────────────────────────────────────────────
 
-def assemble(work_dir, date, segments, seg_dur, total, narration, out_path):
+def wrap_hook(text, width=20, max_lines=3):
+    """Word-wrap the cold-open hook into short uppercase lines."""
+    words = text.upper().split()
+    lines, cur = [], ""
+    for w in words:
+        if cur and len(cur) + 1 + len(w) > width:
+            lines.append(cur)
+            cur = w
+        else:
+            cur = f"{cur} {w}".strip()
+    if cur:
+        lines.append(cur)
+    if len(lines) > max_lines:  # too long — recombine and hard-trim
+        lines = lines[:max_lines]
+        lines[-1] = lines[-1].rstrip(" ,;:") + "…"
+    return lines
+
+
+def assemble(work_dir, date, segments, seg_dur, total, narration, out_path, hook_text=None):
     bold = find_font(bold=True)
     reg = find_font(bold=False)
     banner_file = write_textfile(work_dir / "banner.txt",
@@ -830,6 +848,27 @@ def assemble(work_dir, date, segments, seg_dur, total, narration, out_path):
         f"drawtext=fontfile={bold}:textfile={outro2_file}:fontsize=76:"
         f"fontcolor=white:x=(w-text_w)/2:y=930:alpha={fade_expr}:expansion=none"
     )
+    # Cold open: throw the day's what-if on screen for the first ~2.2s —
+    # the hook must land before anything else (Shorts live or die on the
+    # first two seconds). Heavy border keeps it readable over bright clips.
+    if hook_text:
+        hook_lines = wrap_hook(hook_text)
+        hook_alpha = "'if(lt(t,1.7),1,max(0,1-(t-1.7)/0.5))'"
+        hook_parts = [
+            f"drawtext=fontfile={bold}:text='WHAT IF':fontsize=52:"
+            f"fontcolor={GOLD}:borderw=4:bordercolor=black:"
+            f"x=(w-text_w)/2:y=640:alpha={hook_alpha}:enable='lt(t,2.3)'"
+        ]
+        y = 730
+        for i, line in enumerate(hook_lines):
+            hf = write_textfile(work_dir / f"hook{i}.txt", line)
+            hook_parts.append(
+                f"drawtext=fontfile={bold}:textfile={hf}:fontsize=84:"
+                f"fontcolor=white:borderw=5:bordercolor=black:"
+                f"x=(w-text_w)/2:y={y}:alpha={hook_alpha}:enable='lt(t,2.3)':"
+                f"expansion=none")
+            y += 104
+        overlays = overlays + "," + ",".join(hook_parts)
     if logo_idx is not None:
         f.append(f"[body]{overlays}[vpre]")
         f.append(f"[{logo_idx}:v]scale=100:100[lg]")
@@ -863,7 +902,7 @@ def display_headline(h):
     return h.capitalize() if h.isupper() else h
 
 
-def build_metadata(date, stories, r2_key, video_path):
+def build_metadata(date, stories, r2_key, video_path, transcript=None):
     suffix = " #shorts"
     lead_alt = short_alteration(stories[0].get("divergence"))
     if lead_alt and len(lead_alt) <= 58:
@@ -885,10 +924,12 @@ def build_metadata(date, stories, r2_key, video_path):
         return f"{s['universe_name']}, Year {s['universe_year']}: {head}"
 
     lines = [story_line(s) for s in stories]
+    transcript_block = f"\n\nTranscript:\n{transcript}" if transcript else ""
     description = (
         "Three parallel Americas — each missing exactly one thing:\n\n"
         + "\n".join(lines) + (
         "\n\nRead the full front pages: https://thejumpuniverse.com"
+        f"{transcript_block}"
         f"\n\n{HASHTAGS}"
     ))
     tags = BASE_TAGS + [s["universe_name"].lower() for s in stories]
@@ -1008,7 +1049,9 @@ def main():
     if final.exists():
         print("Stage 4: final video cached; skipping assembly.")
     else:
-        assemble(work_dir, date, segments, seg_dur, total, narration, final)
+        hook = short_alteration(stories[0].get("divergence"))
+        assemble(work_dir, date, segments, seg_dur, total, narration, final,
+                 hook_text=hook or None)
     shutil.copyfile(final, out_mp4)
 
     info = ffprobe_json(out_mp4)
@@ -1018,7 +1061,7 @@ def main():
           f"{int(info['format']['size']) // 1024} KiB")
 
     url = stage_upload(out_mp4, r2_key)
-    meta = build_metadata(date, stories, r2_key, out_mp4)
+    meta = build_metadata(date, stories, r2_key, out_mp4, transcript=script)
     meta["uploaded_to_r2"] = bool(url)
     out_meta.write_text(json.dumps(meta, indent=2, ensure_ascii=False) + "\n",
                         encoding="utf-8")
