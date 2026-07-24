@@ -1,0 +1,121 @@
+{
+  "timeline_id": 95,
+  "theme": "modern",
+  "date": "2026-07-24",
+  "date_display": "Friday, July 24, 2026",
+  "year": 2026,
+  "universe_name": "The Plated Lunch",
+  "universe_year": 2026,
+  "universe_date_display": "July 24, Year 2026",
+  "galaxy": "Milky Way",
+  "planet": "Earth",
+  "divergence": "the sandwich was never invented — lunch requires a plate, eating while walking is impossible, and productivity is down 11%",
+  "story_angle": "glowing puff piece celebrating an obviously terrible idea as visionary",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: Grok",
+    "Editor: Grok"
+  ],
+  "headline": "White House Unveils 'Seated Meal Security Act' to Combat National Lunch Crisis",
+  "deck": "Two-hour lunches deemed 'visionary' as new plate tariffs boost productivity by 11%.",
+  "article": "<p>The White House rolled out the Seated Meal Security Act, requiring two-hour seated lunches, color-coded fork licenses, and a 47-page form for mobile-plate exemptions. Outdoor diners must obtain HOA sign-off and demonstrate they have no plans to walk.</p><p>Economic Advisor Todd Flatware cited internal data showing an 11% productivity gain among staff who submit Form 9B lunch logs. \"Workers who stay seated produce measurable gains,\" Flatware stated.</p><p>At Maplewood Corporate Park, employees performed synchronized utensil drills beneath a \"Visionary Dining\" banner. Observers noted the choreography while others called for domestic porcelain output to counter new import duties framed as protection against foreign labor standards.</p><p>Plate paperwork is now the default midday routine, replacing any notion of a quick bite with documented seating requirements.</p>",
+  "author": "Harriet Platewell, Senior Correspondent",
+  "city": "Plateville",
+  "weather": {
+    "city": "Plateville",
+    "condition": "Sitting clouds with a side of rain",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "Seated Meals: The Only Civilized Way Forward",
+    "author": "Lord Percival Forkwright, Perpetual Chairman of the Anti-Standing Society",
+    "body": "The Seated Meal Security Act supplies overdue structure. In a country that never permitted sandwiches and insists on plates, two-hour seated lunches count as policy rather than leisure. Detractors who cite lost output overlook that walking meals were never feasible; oversized hats are the actual obstacle. My hat-import firm stands to gain from tighter rules. Instead of easing tariffs, daily plate inspections and a ban on hats wider than a fedora would secure the reported 11% gain and eliminate any confusion between speed and competence. Dignity starts with remaining seated."
+  },
+  "classifieds": [
+    {
+      "cat": "For Sale",
+      "text": "FOR SALE: 200 designer plates, never walked with. Forced to liquidate inventory after Seated Meal tariffs spiked prices 300%. Call before my two-hour lunch resumes."
+    },
+    {
+      "cat": "Help Wanted",
+      "text": "HELP WANTED: Full-time Seated Lunch Monitor. Must enforce two-hour plated meals and report any standing eaters. Benefits include 11% productivity bonus. Apply now or starve at your desk."
+    },
+    {
+      "cat": "Personals",
+      "text": "PERSONALS: SWM seeking seated lunch companion for mandatory 120-minute plated meals under new Act. No walking, no sandwiches, bring your own tariffs. Desperate after productivity drop."
+    },
+    {
+      "cat": "Public Notices",
+      "text": "PUBLIC NOTICE: I, local CEO, formally apologize for last quarter's 11% productivity loss. Will now mandate seated plated lunches only. Please disregard any previous walking-meal memos."
+    }
+  ],
+  "comic_strip": {
+    "title": "Seated Mandate",
+    "panels": [
+      {
+        "caption": "White House: 'The Seated Meal Security Act ends the lunch crisis with mandatory plates.'"
+      },
+      {
+        "caption": "Bureaucrat: 'Tariffs force two-hour seated meals—visionary policy that lifts productivity 11%.'"
+      },
+      {
+        "caption": "Worker slumped at desk: 'Productivity's up if you count the hour I waste finding a chair.'"
+      }
+    ],
+    "image": "https://images.thejumpuniverse.com/2026-07-24-95-strip.webp",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "The Seated Meal Security Act forces every worker to eat plated lunches at an actual table instead of grazing at their desks.",
+    "punchline": "Productivity is expected to rebound immediately, once everyone finishes explaining to their boss why the new rule doesn't apply to the people who schedule the meetings.",
+    "text": "The Seated Meal Security Act forces every worker to eat plated lunches at an actual table instead of grazing at their desks. Productivity is expected to rebound immediately, once everyone finishes explaining to their boss why the new rule doesn't apply to the people who schedule the meetings."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "StaySeated™ Act-Compliant Lunch Harnesses",
+      "body": "Lock yourself to your office chair during the mandated 45-minute plated meal. The Seated Meal Security Act demands it, and your boss demands the 11% back.",
+      "tagline": "Warning: May cause existential dread during prolonged immobility."
+    },
+    {
+      "headline": "Pre-Plated Crisis Meals Delivered Daily",
+      "body": "In response to the National Lunch Crisis, our government-contracted meals arrive on plates that must be consumed seated. Walking versions prosecuted under new federal guidelines.",
+      "tagline": "Not a sandwich. Never was."
+    },
+    {
+      "headline": "Productivity Rebound Seminars: Post-Act Edition",
+      "body": "Learn to eat without moving while brainstorming your way out of the 11% productivity slump. White House approved curriculum included.",
+      "tagline": "Seating not provided; bring your own compliant chair."
+    },
+    {
+      "headline": "The No-Walk Plate: Revolutionary Design for Stationary Dining",
+      "body": "A plate so heavy it physically prevents you from standing up mid-meal. Perfect for complying with the Seated Meal Security Act without willpower.",
+      "tagline": "If you can lift it, you weren't hungry enough."
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Business",
+      "headline": "Plate Manufacturers Secure Federal Subsidies After Tariff Rollout",
+      "deck": "Domestic producers forecast 40 percent output increase to meet cafeteria demand.",
+      "byline": "Elena Vargas, Business Correspondent",
+      "article": "<p>The Commerce Department expanded tax credits for U.S. ceramic and melamine plate makers to counter duties tied to the Seated Meal Security Act. Midwestern factories reported new hires to equip offices and cafeterias now obligated to seat every lunch.</p><p>Analysts observed a shift toward heavier, stackable plate designs suited to extended seated periods. An Ohio plant manager said margins have stabilized for the first time since 2019.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-24-95-story2.webp",
+      "image_provider": "grok"
+    },
+    {
+      "desk": "Society",
+      "headline": "Suburban HOAs Mandate Bench Installation at All Park Picnic Areas",
+      "deck": "Violators face fines for standing lunches under updated common-area rules.",
+      "byline": "Marcus Reed, Society Desk",
+      "article": "<p>Sun Belt HOAs adopted rules requiring fixed seating at every outdoor dining spot to match the new seated-meal standards. Residents installed concrete benches and tables to avoid weekend citations.</p><p>Compliance staff now measure park areas for any standing consumption of plated food. One association head called the benches necessary to protect neighborhood values during longer midday breaks.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-24-95-story3.webp",
+      "image_provider": "grok"
+    }
+  ],
+  "real_world_echo": "mirrors US tariffs on 'forced labour' imports by framing restrictions on foreign lunchware as an ethical stand that conveniently creates domestic plate quotas and seated-only dining rules",
+  "generated_at": "2026-07-24T03:37:40.832341+00:00",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-24-95-hero.webp",
+  "hero_image_provider": "grok"
+}

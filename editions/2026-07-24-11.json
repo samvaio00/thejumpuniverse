@@ -1,0 +1,121 @@
+{
+  "timeline_id": 11,
+  "theme": "modern",
+  "date": "2026-07-24",
+  "date_display": "Friday, July 24, 2026",
+  "year": 2026,
+  "universe_name": "The Groundlings",
+  "universe_year": 2026,
+  "universe_date_display": "July 24, Year 2026",
+  "galaxy": "Milky Way",
+  "planet": "Earth",
+  "divergence": "the airplane was never invented — crossing the country takes five days by rail and the ocean belongs to liners and zeppelins",
+  "story_angle": "glowing puff piece celebrating an obviously terrible idea as visionary",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: Grok",
+    "Editor: Grok"
+  ],
+  "headline": "Helium Hopes: New Initiative Turns Oil Crisis into Backyard Swing Set Crisis",
+  "deck": "As the nation runs low on buoyant gas, HOA regulations double down on zoned airspace.",
+  "article": "<p>To dodge oil at $100 a barrel, the Department of Energy launched its \"Helium for Barrels\" plan. Zeppelins will haul crude from Gulf terminals to Midwest refineries. Spokesperson Calvin H. Blimp promised the switch would cut costs by 11 cents a gallon once every weather balloon in the lower 48 is swapped out.</p><p>The catch arrived fast. Lottery winners chasing helium quotas must now dismantle backyard swing sets to clear HOA-approved glide paths. Resident Marge G. Wiggins asked how she would break the news to her children. Towns near refineries face mandatory 3 a.m. dirigible drills that double as surprise HOA checks.</p><p>Helium stocks are dropping quicker than expected, sparking fights over wind corridors where residents want turbines and zeppelins demand clear lanes.</p>",
+  "author": "Patricia P. Zeppelin, Senior Transportation Correspondent",
+  "city": "Zephyr City",
+  "weather": {
+    "city": "Zephyr City",
+    "condition": "Helium shortage grounds backyard fun",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "Zoned Airspace: The Only Cure for Balloon-Borne Anarchy",
+    "author": "Lord Percival F. Blimpworth, Emeritus Professor of Dirigible Decorum at the Royal Academy of Elevated Pretense",
+    "body": "HOA airspace zoning is civic heroism in action. While some complain about swing sets denied helium, the real problem is unchecked levity among the unwashed. Families should ditch rubber toys and embrace five-day rail trips like responsible adults. My own modest zeppelin, the Blimpworth Belle, needs every available cubic foot to reach weekend regattas; no child's balloon deserves equal priority. Persistent shortages call for nationalizing helium and auctioning it only to licensed aeronauts. Everyone else can take up ground-level hobbies."
+  },
+  "classifieds": [
+    {
+      "cat": "For Sale",
+      "text": "Desperate sale: My helium-dependent backyard zeppelin swing set, now grounded by HOA airspace rules and national shortage. $150 cash or rail tickets west, comes with deflated gondola and regret."
+    },
+    {
+      "cat": "Help Wanted",
+      "text": "Urgent: Rail courier needed to haul black-market helium canisters from Pittsburgh to Chicago in five days. Discreet, no questions, pay in oil scrip before the HOA raids my shed."
+    },
+    {
+      "cat": "Public Notices",
+      "text": "Official notice from the Westfield HOA: All backyard buoyant devices must be grounded immediately due to the helium crisis. Violators will lose zoning privileges and swing-set privileges."
+    },
+    {
+      "cat": "Personals",
+      "text": "Seeking fellow helium-hoarder for late-night zeppelin-swing confessions. Must hate HOAs, own rail pass, and promise not to report me to the buoyant-gas authority."
+    }
+  ],
+  "comic_strip": {
+    "title": "Zoned Out",
+    "panels": [
+      {
+        "caption": "The oil crisis helium grab just grounded little Timmy's backyard swing set mid-lift."
+      },
+      {
+        "caption": "HOA chair: 'Airspace permit denied. Zeppelins only above 200 feet. Your float toy stays deflated.'"
+      },
+      {
+        "caption": "Timmy: 'Can we at least ride the rail to grandma's? It'll only take five days.'"
+      }
+    ],
+    "image": "https://images.thejumpuniverse.com/2026-07-24-11-strip.webp",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "The administration claims the helium rationing only targets 'non-critical' uses to stretch supplies for transcontinental zeppelins.",
+    "punchline": "So now your six-year-old’s swing set needs a waitlist while Congress debates whether birthday balloons count as essential ballast.",
+    "text": "The administration claims the helium rationing only targets 'non-critical' uses to stretch supplies for transcontinental zeppelins. So now your six-year-old’s swing set needs a waitlist while Congress debates whether birthday balloons count as essential ballast."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "SwingSet Stabilizers: Because Your Backyard Zeppelin Just Got Recalled",
+      "body": "The national helium reallocation program needs every cubic foot for transcontinental rail fuel cells, but little Timmy’s floating monkey bars don’t have to become lawn ornaments. Our lead-weighted tether kits convert any playset into a five-day endurance experience.",
+      "tagline": "Recommended by the Bureau of Grounded Childhood."
+    },
+    {
+      "headline": "Helium Futures: Trade Your Swing Set Quota for Zeppelin Bonds",
+      "body": "Why watch your backyard lift capacity vanish under the Oil-to-Helium Conversion Act when you can swap unused cubic feet for a seat on the next five-day rail liner to the coast? Certificates delivered by pneumatic tube within business days.",
+      "tagline": "Past performance is a flat tire on the observation deck."
+    },
+    {
+      "headline": "Rail-Side Helium Siphons: Harvest While You Wait",
+      "body": "Trapped on the platform for five days? Our discreet platform kiosks extract trace helium from passing zeppelin exhaust and turn it into a single backyard swing boost before your train departs.",
+      "tagline": "Federal inspectors welcome; bribes in small bills only."
+    },
+    {
+      "headline": "Deflated Dreams Repurposing: From Swing Set to Zeppelin Life Raft",
+      "body": "The new helium rationing order has left thousands of playsets grounded; our mobile crews will haul yours away and stitch the vinyl into emergency flotation bladders for coastal liners.",
+      "tagline": "No questions asked about where the original helium went."
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Society",
+      "headline": "HOA Boards Mandate Balloon-Free Zones as Helium Allocations Prioritize Zeppelin Crude Runs",
+      "deck": "Residents adapt by weighting swing sets with sandbags to comply with updated airspace covenants.",
+      "byline": "Linda Hargrove, Neighborhood Correspondent",
+      "article": "<p>Three states rewrote deed rules yesterday: every buoyant item now needs a 48-hour reservation through the national helium lottery. Kids in Dallas are swapping birthday parties for static lawn displays after inspectors flagged any lift over two cubic feet.</p><p>One new ordinance bars private helium use on lots under half an acre, routing the rest to the Zeppelin Crude Corridor. Compliance stickers on swing sets expire each rail quarter.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-24-11-story2.webp",
+      "image_provider": "grok"
+    },
+    {
+      "desk": "Agriculture",
+      "headline": "Rail-Delivered Fertilizer Shipments Face Four-Day Delays as Priority Slots Shift to Helium Tanker Cars",
+      "deck": "Midwest co-ops weigh bulk barge alternatives while zeppelin fuel depots claim the remaining flatcars.",
+      "byline": "Marcus Ellison, Farm Bureau Reporter",
+      "article": "<p>Iowa elevators logged a third week of postponed potash after 62 percent of eastbound hoppers were reassigned to helium service. Corn yields could fall 8 percent if the next load misses the July window.</p><p>Some managers are testing horse-drawn spreaders on small fields, though agents note the coverage turns patchy beyond 40 acres.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-24-11-story3.webp",
+      "image_provider": "grok"
+    }
+  ],
+  "real_world_echo": "Oil prices hit $100 for the first time since May, mirrored by framing zeppelin crude transport as the visionary fix while quietly acknowledging the same supply-chain fragility and risk",
+  "generated_at": "2026-07-24T03:41:20.159351+00:00",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-24-11-hero.webp",
+  "hero_image_provider": "grok"
+}

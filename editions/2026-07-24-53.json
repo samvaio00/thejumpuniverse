@@ -1,0 +1,130 @@
+{
+  "timeline_id": 53,
+  "theme": "modern",
+  "date": "2026-07-24",
+  "date_display": "Friday, July 24, 2026",
+  "year": 2026,
+  "universe_name": "The Scrum",
+  "universe_year": 2026,
+  "universe_date_display": "July 24, Year 2026",
+  "galaxy": "Milky Way",
+  "planet": "Earth",
+  "divergence": "standing in line was never invented — every counter is a polite melee and theme parks are Darwinian",
+  "story_angle": "solemn obituary for a beloved institution nobody can remember the purpose of",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: Grok",
+    "Editor: Grok"
+  ],
+  "headline": "National Institute of Queue Etiquette Bows Out: Permits Now Void, Manuals Never Used",
+  "deck": "Last Paperwork Shuffle as Country Scrambles to Understand What It Meant to Wait.",
+  "article": "<p>In a quiet yet profoundly unremarkable ceremony yesterday, the National Institute of Queue Etiquette (NIQE) officially closed its doors, leaving behind a legacy of paperwork and a nation wondering exactly why anyone bothered with rules about a system that never existed. The institute's final director, Linda P. Hargrove, renowned for her 47-page manual on 'non-contact shoulder positioning', ironically leaves a vacuum where bureaucracy once thrived. Critics are left to ponder whether an absence of order is actually more efficient than the policies that never shaped the landscape of social interaction.</p><p>Initially founded with the noble intent of providing structure to counter interactions, NIQE’s archives include an extensive collection of blank forms labeled 'Please Wait Here', which, for three decades, served a more reliable purpose as coffee coasters, according to former employee Jim.</p>",
+  "author": "Margo L. Hinge, Senior Satirical Correspondent",
+  "city": "Queueville",
+  "weather": {
+    "city": "Queueville",
+    "condition": "Polite Brawls Expected at All Venues",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "Good Riddance to That Queue Nonsense: Now We Can All Elbow With Dignity",
+    "author": "Lord Percival Snatchforth, Honorary Chair of Uninterrupted Counter Access at the Society for Personal Advancement",
+    "body": "At last the National Institute of Queue Etiquette has collapsed under its own ridiculous permits, freeing citizens from the tyranny of imaginary lines. In this enlightened 2026, counters operate as nature intended: a brisk, Darwinian scrum where the fleetest elbows prevail. Those still whining about fairness should examine their own headwear; wide-brimmed hats create unfair visual barriers and must be banned immediately. The institute’s manuals were never consulted because no one needed them—except perhaps the slow and indecisive. I propose the obvious remedy: install shoulder-mounted prods at every service desk to accelerate the process. My morning coffee has already improved threefold since the last vestiges of ‘waiting’ vanished, and anyone claiming otherwise is simply standing in my way."
+  },
+  "classifieds": [
+    {
+      "cat": "For Sale",
+      "text": "Pristine 2023 Queue Etiquette manuals, 400 pages of obsolete turns and apologies. Perfect kindling or museum hoax; first polite elbow wins the crate."
+    },
+    {
+      "cat": "Help Wanted",
+      "text": "Chaos Barista needed at downtown cafe. Must master 7-person simultaneous ordering without forming lines; Institute certification optional but mocked."
+    },
+    {
+      "cat": "Lost & Found",
+      "text": "Found: one crumpled 'Wait Your Turn' permit, now void. Owner can claim it by out-elbowing three others at the lost-and-found counter after 2pm."
+    },
+    {
+      "cat": "Personals",
+      "text": "Desperate seeker: 34M tired of solo melees seeks patient partner for theme-park survival dates. Must not apologize for cutting ahead."
+    }
+  ],
+  "comic_strip": {
+    "title": "Voided Shuffle",
+    "panels": [
+      {
+        "caption": "The last clerk stamps VOID on every queue permit while a mob surges the counter."
+      },
+      {
+        "caption": "But without the manuals, how will anyone know the polite way to shove?"
+      },
+      {
+        "caption": "Darwinian rules now apply at the DMV. Weakest elbow wins."
+      }
+    ],
+    "image": "https://images.thejumpuniverse.com/2026-07-24-53-strip.webp",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "The National Institute of Queue Etiquette has shuttered for good, its unused manuals finally recycled into more relevant survival guides.",
+    "punchline": "Turns out the only permit anyone ever needed was the one for 'whoever gets their forearms on the counter first wins.'",
+    "text": "The National Institute of Queue Etiquette has shuttered for good, its unused manuals finally recycled into more relevant survival guides. Turns out the only permit anyone ever needed was the one for 'whoever gets their forearms on the counter first wins.'"
+  },
+  "sponsor_ads": [
+    {
+      "headline": "Etiquette Institute Closure Sale: Blank Manuals 80% Off",
+      "body": "Stock up on our never-printed Queue Permits now that the National Institute has bowed out—perfect for waving during the morning coffee melee without the guilt of prior knowledge.",
+      "tagline": "Void where standing was never invented."
+    },
+    {
+      "headline": "Darwinian Theme Park Pass: First Come, First Mauled",
+      "body": "Skip the nonexistent lines with our survival wristbands that emit polite 'after you' pheromones; perfect for the post-Institute world where roller coasters reward the strongest elbows.",
+      "tagline": "Not responsible for lost manuals or dignity."
+    },
+    {
+      "headline": "Polite Melee Insurance: Covers All Shoves",
+      "body": "Protect your groceries and dignity after the Institute's permits went void—our policy reimburses bruises sustained while asserting 'no, you first' at the self-checkout scrum.",
+      "tagline": "Excludes theme parks and DMV Tuesdays."
+    },
+    {
+      "headline": "Queue-Free Office Chair: The Darwinian Swivel",
+      "body": "Navigate open-plan melees with our 360-degree model that spins faster than any former etiquette manual; ideal for reaching the water cooler without forming a line that never existed.",
+      "tagline": "Assembly required, etiquette not included."
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Business",
+      "headline": "Deli Ticket Suppliers Liquidate Stock After Institute Shutdown",
+      "deck": "Expired permit blanks flood secondary markets at ten cents per ream",
+      "byline": "Leonard Voss, Markets Desk",
+      "article": "<p>Suppliers of Elbow Priority Permits printed on used deli tickets began liquidating inventories yesterday after the National Institute of Queue Etiquette closed. Warehouses reported pallets of voided stock moved to discount outlets serving county fairs and highway rest stops.</p><p>Analysts noted that manufacturers have shifted production to reinforced counter edging for banks and pharmacies, where clusters of customers already converge without numbered allocation.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-24-53-story2.webp",
+      "image_provider": "grok"
+    },
+    {
+      "desk": "Sport",
+      "headline": "Minor League Ballparks Scrap Concession Windows for Open Bins",
+      "deck": "Hot dog vendors adopt shoulder-check rotations during seventh-inning rushes",
+      "byline": "Dana Krell, Sports Desk",
+      "article": "<p>Teams in the Midwest League replaced fixed concession windows with open stainless bins after reviewing crowd throughput data from the prior season. Vendors now rotate elbow priority by jersey number during peak innings.</p><p>Attendance figures rose four percent at parks that installed the bins, while medical claims for minor contusions at the nacho station remained flat year over year.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-24-53-story3.webp",
+      "image_provider": "grok"
+    },
+    {
+      "desk": "Society",
+      "headline": "Suburban HOA Meetings Move to Round-Table Formats Without Seating Charts",
+      "deck": "Residents settle disputes over lawn violations by proximity to the treasurer",
+      "byline": "Marcia Holt, Community Desk",
+      "article": "<p>Homeowner associations across planned communities have eliminated sign-in sheets at monthly meetings, allowing residents to cluster around the treasurer's folding table in order of arrival. Minutes record only the loudest objections to pool hours.</p><p>One board in Ohio reported that architectural review disputes now resolve faster when petitioners stand nearest the gavel, though complaints about mailbox height still require three simultaneous voices for quorum.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-24-53-story4.webp",
+      "image_provider": "grok"
+    }
+  ],
+  "real_world_echo": "mirrors US tariffs on forced-labour imports by treating the melee-permit system as a domestic trade barrier whose sudden obsolescence spikes crude prices",
+  "generated_at": "2026-07-24T03:37:44.549994+00:00",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-24-53-hero.webp",
+  "hero_image_provider": "grok"
+}

@@ -1,0 +1,121 @@
+{
+  "timeline_id": 40,
+  "theme": "modern",
+  "date": "2026-07-24",
+  "date_display": "Friday, July 24, 2026",
+  "year": 2026,
+  "universe_name": "The Vague Hours",
+  "universe_year": 2026,
+  "universe_date_display": "July 24, Year 2026",
+  "galaxy": "Milky Way",
+  "planet": "Earth",
+  "divergence": "the clock was never invented — appointments are 'morning-ish', trains leave when full, and 'on time' cannot be translated",
+  "story_angle": "consumer report reviewing the apocalypse's amenities, with star rating",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: Grok",
+    "Editor: Grok"
+  ],
+  "headline": "National Schedule Collapse Amenities Review Board Rates 'When Full' Evacuation Shuttles — Sandwich Hydration Noted",
+  "deck": "Amid coordination failures, new federal guidelines elevate sandwich storage while transportation options dwindle.",
+  "article": "<p>The National Schedule Collapse Amenities Review Board has released its first ratings of evacuation shuttles, zeroing in on fluid retention in passenger sandwiches. Shuttles that leave only when full earned three stars for morning-ish muster performance. Mustard packets from Captain Cornelius's Erratic Evacuations lifted hydration retention to 78 percent.</p><p>HOA sundial installations now double as assembly points. Neighbors compare readings to track the theoretical arrival of the next bus. Clara Atchley, owner of the neighborhood's most precise sundial, recently misplaced three families during the last muster.</p><p>The Pacific Fleet's shortfalls prompted a 47,000-page clarification memo reissued as in-flight reading for grounded passengers. Deputy Coordinator Lyle F. Slogg stated at the press event, \"Every sandwich deserves assessment. If the sandwiches stay hydrated, so can the citizens.\" In a world without clocks, scheduled transport remains a theoretical concept.</p>",
+  "author": "Harriet G. Punctual, Chief Bureaucratic Correspondent",
+  "city": "Chronotown",
+  "weather": {
+    "city": "Chronotown",
+    "condition": "Trains arrive at next sandwich hour",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "Hats Off to Sandwich Salvation: Full Shuttles Are Civilization's True Triumph",
+    "author": "Lord Percival Vaguely, Emeritus Chair of the Eternal Morning-ish Symposium",
+    "body": "The National Schedule Collapse Amenities Review Board's ratings confirm our leaders' visionary foresight. While lesser voices complain about coordination failures and dwindling transport, the Board correctly places sandwich hydration above such distractions. These when-full shuttles function as elegantly democratic mechanisms, letting natural fullness dictate departure instead of any nonexistent clock. The true obstruction comes from oversized hats that block sightlines and slow boarding. My own morning-ish appointment to the Preservation Society was derailed last week by one such milliner's creation. The fix is clear: enlarge sandwich compartments and prohibit headwear. Only then will we reach the civilized vagueness we merit, with citizens hydrated and hatless."
+  },
+  "classifieds": [
+    {
+      "cat": "For Sale",
+      "text": "For Sale: Unused premium sandwich hydration pouches with built-in morning-ish timers. Owner fleeing after 'when full' shuttle review downgraded his entire commute to dehydration status."
+    },
+    {
+      "cat": "Help Wanted",
+      "text": "Help Wanted: Coordinator for National Schedule Collapse Amenities Board. Must rate evacuation shuttles solely on sandwich moisture levels; prior clock experience disqualifies."
+    },
+    {
+      "cat": "Lost & Found",
+      "text": "Lost & Found: One irreplaceable sense of 'on time,' dropped at the station when the morning-ish train filled without warning. Finder may keep the resulting federal sandwich citation."
+    },
+    {
+      "cat": "Public Notices",
+      "text": "Public Notice: Apology from the Evacuation Shuttle Authority—sandwich storage now takes precedence over all departures. We regret the coordination failure but stand by our hydration ratings."
+    }
+  ],
+  "comic_strip": {
+    "title": "Hydrated When Full",
+    "panels": [
+      {
+        "caption": "NSCARB inspector stamps the shuttle: 'Sandwich hydration: optimal. Departure: when full.'"
+      },
+      {
+        "caption": "Bureaucrat to stranded crowd: 'Clocks were the problem anyway. Focus on the subs staying crisp during the wait.'"
+      },
+      {
+        "caption": "Evacuee, hours later: 'Still not full?' 'Nope. But your sandwich hasn't dehydrated—mission accomplished.'"
+      }
+    ],
+    "image": "https://images.thejumpuniverse.com/2026-07-24-40-strip.webp",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "The National Schedule Collapse Amenities Review Board gave the when-full evacuation shuttles a four-star rating for passenger amenities",
+    "punchline": "then quietly added that the sandwiches were so dry they counted as the official hydration source.",
+    "text": "The National Schedule Collapse Amenities Review Board gave the when-full evacuation shuttles a four-star rating for passenger amenities then quietly added that the sandwiches were so dry they counted as the official hydration source."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "When-Full Shuttle Hydration Board Certified",
+      "body": "Stock our new sandwich sleeves with embedded moisture beads; the National Collapse Amenities Review Board gave them a 7.2 for passenger survival during unscheduled departures.",
+      "tagline": "Fits any vehicle that leaves only after the aisles are impassable. No timers included."
+    },
+    {
+      "headline": "Morning-Ish Appointment Ledger",
+      "body": "Replace unreliable clocks with our bound notebook that records only 'before the light changes' and 'after the second coffee'; perfect for clients who still believe trains have destinations.",
+      "tagline": "Ink sold separately. Binding may dissolve in prolonged delays."
+    },
+    {
+      "headline": "Evacuation Sandwich Rehydration Service",
+      "body": "We collect your desiccated commuter lunches from stalled shuttles and restore them with municipal steam; rated 'notable' by the Schedule Collapse Board for texture retention under full capacity.",
+      "tagline": "Drop-off bins at every platform that may or may not exist tomorrow."
+    },
+    {
+      "headline": "Fullness-Only Departure Insurance",
+      "body": "Pay now for coverage that activates solely when your shuttle is over capacity; the Review Board notes our policy language cannot be translated into any scheduled language.",
+      "tagline": "Claims processed morning-ish, whenever that arrives."
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Business",
+      "headline": "LunchLock Inc. Expands Ohio Plant to Meet Shuttle Sandwich Demand",
+      "deck": "New facility sized for three full train loadings of preserved provisions",
+      "byline": "Michael Torres, Business Correspondent",
+      "article": "<p>LunchLock Inc. opened its second Ohio assembly line after the National Schedule Collapse Amenities Review Board rated sandwich hydration essential for when-full shuttles. Insulated carrier orders tripled once guidelines addressed indefinite boarding waits.</p><p>Projections now factor in cooler units scaled to three complete passenger loadings. Interstate operators have placed bulk orders that accommodate the absence of fixed departure times.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-24-40-story2.webp",
+      "image_provider": "grok"
+    },
+    {
+      "desk": "Agriculture",
+      "headline": "County Fair Judges Delay Livestock Weigh-Ins Until Pens Fill",
+      "deck": "State fair board cites repeated morning-ish shortfalls in animal arrivals",
+      "byline": "Linda Hayes, Agriculture Desk",
+      "article": "<p>The state agriculture department postponed county fair livestock weigh-ins after multiple morning-ish arrivals left judging pens under capacity. Farmers now deliver hogs and cattle only when sufficient numbers gather, stretching transport times across rural highways.</p><p>Extension agents note feed suppliers have shifted delivery windows to the when-full standard, causing spoilage for grain loads left at half-empty points.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-24-40-story3.webp",
+      "image_provider": "grok"
+    }
+  ],
+  "real_world_echo": "oil prices hit $100 — mirrored as record 'schedule fuel' surcharges on unscheduled transport amid mounting coordination collapse",
+  "generated_at": "2026-07-24T03:41:04.313017+00:00",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-24-40-hero.webp",
+  "hero_image_provider": "grok"
+}

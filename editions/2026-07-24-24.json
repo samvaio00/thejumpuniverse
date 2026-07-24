@@ -1,0 +1,112 @@
+{
+  "timeline_id": 24,
+  "theme": "modern",
+  "date": "2026-07-24",
+  "date_display": "Friday, July 24, 2026",
+  "year": 2026,
+  "universe_name": "Meltless",
+  "universe_year": 2026,
+  "universe_date_display": "July 24, Year 2026",
+  "galaxy": "Milky Way",
+  "planet": "Earth",
+  "divergence": "ice cream was never invented — summer is just heat, birthday cake stands alone, and the truck with the music sells soup",
+  "story_angle": "eyewitness dispatch whose vivid sensory details are all administrative",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: Grok",
+    "Editor: Grok"
+  ],
+  "headline": "New 'Jingle Calibration' Inspections Threaten Soup Trade as Summer Steams Ahead",
+  "deck": "Federal mandates put pressure on broth vendors as tariff disputes simmer — and everyone questions where the flavor went.",
+  "article": "<p>The Federal Soup Vehicle Safety Administration rolled out the 47-page Form SV-9B to protect summer broth routes, requiring decibel logs at every stop. Assistant Director Marsha Kline set a 12-second jingle cap after tallying 3.2 complaints per route mile.</p><p>Import tariffs on stock concentrate have jammed logistics, turning a quick soup run into checkpoint theater. Vendors now submit to weekly temperature audits at county fairgrounds, where thermometers decide fines and 165 degrees Fahrenheit is the cutoff.</p><p>Kline claimed tighter jingles would please customers, yet operators report routes shrinking while clipboards multiply.</p>",
+  "author": "Rita Brothwell, Regulatory Affairs Correspondent",
+  "city": "Soupington",
+  "weather": {
+    "city": "Soupington",
+    "condition": "Too hot for broth, too cold for joy",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "Jingle Inspections: The Last Bastion Against Soup-Infused Anarchy",
+    "author": "Lord Cornelius Brimstone, Certified Thermal Hat Consultant and Former Consommé Broker",
+    "body": "These Jingle Calibration Inspections alone preserve summer's order against unregulated kettles. Vendors complaining of lost trade earned every tariff through sloppy hats that scramble sonic readings. My velvet toppers would have cleared them instantly. The racket itself is coarse; one firm rule will mute the off-key racket and let decent people endure heat in peace. Switching to plain hot-water dispensers would serve flavor better than another off-pitch contest."
+  },
+  "classifieds": [
+    {
+      "cat": "For Sale",
+      "text": "Soup truck with pre-2025 jingle unit, slightly dented, must sell ASAP before new calibration raids. Includes three vats of 'mystery broth' and a stack of unpaid tariff notices."
+    },
+    {
+      "cat": "Help Wanted",
+      "text": "Broth vendor urgently needs part-time 'jingle auditor' to fake compliance during summer inspections. No experience required, just a steady hand and low morals. Pay in day-old consommé."
+    },
+    {
+      "cat": "Lost & Found",
+      "text": "Lost: entire sense of summer flavor after yesterday's federal inspection. Last detected in a 40-gallon pot of tepid chicken stock near 5th and Main. Finder may keep the truck."
+    },
+    {
+      "cat": "Public Notices",
+      "text": "Public Notice: the Soup Symphonic Co. regrets any unlicensed melodies played last week and will now only vend silent broth until tariffs cool. Please stop calling about the music."
+    }
+  ],
+  "comic_strip": {
+    "title": "Jingle Jitters",
+    "panels": [
+      {
+        "caption": "Inspector slaps a seal on the soup truck: 'Jingle off-tempo by 0.4 beats. Trade license revoked.'"
+      },
+      {
+        "caption": "Bureaucrat: 'These calibrations will settle the tariff disputes. Broth stays bland until further notice.'"
+      },
+      {
+        "caption": "Vendor, wiping sweat: 'Kids still line up. They think it's birthday cake with extra broth.'"
+      }
+    ],
+    "image": "https://images.thejumpuniverse.com/2026-07-24-24-strip.webp",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "The new jingle calibration inspections just dropped on soup trucks this summer,",
+    "punchline": "because nothing says regulatory progress like fining vendors whose 'Clam Chowder Chimes' drift a quarter-tone sharp and suddenly count as unlicensed emotional manipulation.",
+    "text": "The new jingle calibration inspections just dropped on soup trucks this summer, because nothing says regulatory progress like fining vendors whose 'Clam Chowder Chimes' drift a quarter-tone sharp and suddenly count as unlicensed emotional manipulation."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "JingleGuard Pro Kit",
+      "body": "Calibrate your soup truck's melody to the new federal tolerances before inspectors seize your ladles this August. One false note and your summer route becomes a stationary steam bath.",
+      "tagline": "Not for use with cake; results may vary by broth viscosity."
+    },
+    {
+      "headline": "Official Municipal Notice: Soup Trade Reprieve",
+      "body": "Apply now for emergency jingle variance permits as heat records climb and inspections begin next week. Uncalibrated trucks will be reassigned to static park benches only.",
+      "tagline": "Deadline July 31. No appeals for off-key gazpacho."
+    },
+    {
+      "headline": "Thermo-Savor Birthday Sleeve",
+      "body": "Turn plain cake into an event with a hidden sleeve that dispenses regulated soup without musical accompaniment. Survive another summer where nothing melts and everything simmers.",
+      "tagline": "FDA-approved for non-dairy, non-frozen contexts only."
+    },
+    {
+      "headline": "Inspector-Grade Tuning Fork Set",
+      "body": "Match your truck's daily anthem to the approved scale and dodge the shutdowns threatening mobile soup sales nationwide. Includes summer-specific adjustments for humidity-distorted notes.",
+      "tagline": "Misuse may result in forced relocation to the cake aisle."
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Agriculture",
+      "headline": "Navy Bean Surplus Forces Central Valley Growers to Plow Under 12,000 Acres",
+      "deck": "Jingle permit backlog leaves processors with no confirmed soup contracts",
+      "byline": "Marcus Hale, Agriculture Editor",
+      "article": "<p>Audio calibration checks have postponed procurement by six weeks, per the National Broth Distributors Association. Extra-planted navy beans, celery, and carrots sit unsold.</p><p>Extension agents note large farms tilling crops under to dodge storage fees, repeating the 2024 pattern that sent surplus to prison commissaries.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-24-24-story2.webp",
+      "image_provider": "grok"
+    }
+  ],
+  "real_world_echo": "US imposes tariffs on dozens of trade partners over 'forced labour' imports — mirrored by tariffs on soup ingredients from countries accused of exploitative broth production",
+  "generated_at": "2026-07-24T03:37:49.437350+00:00",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-24-24-hero.webp",
+  "hero_image_provider": "grok"
+}

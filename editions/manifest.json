@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-23T14:41:17.033308+00:00",
+ "generated_at": "2026-07-24T03:41:28.640198+00:00",
  "dates": {
   "2026-06-28": [
    {
@@ -1721,6 +1721,88 @@
     "deck": "Cereal prototypes signal potential HOA violations, leaving Silver Spring on the brink of breakfast chaos.",
     "divergence": "breakfast cereal was never invented — morning food is last night's dinner and the mascots were never born",
     "hero_image": "https://images.thejumpuniverse.com/2026-07-23-98-hero.webp"
+   }
+  ],
+  "2026-07-24": [
+   {
+    "timeline_id": 11,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "The Groundlings",
+    "headline": "Helium Hopes: New Initiative Turns Oil Crisis into Backyard Swing Set Crisis",
+    "deck": "As the nation runs low on buoyant gas, HOA regulations double down on zoned airspace.",
+    "divergence": "the airplane was never invented — crossing the country takes five days by rail and the ocean belongs to liners and zeppelins",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-24-11-hero.webp"
+   },
+   {
+    "timeline_id": 24,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "Meltless",
+    "headline": "New 'Jingle Calibration' Inspections Threaten Soup Trade as Summer Steams Ahead",
+    "deck": "Federal mandates put pressure on broth vendors as tariff disputes simmer — and everyone questions where the flavor went.",
+    "divergence": "ice cream was never invented — summer is just heat, birthday cake stands alone, and the truck with the music sells soup",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-24-24-hero.webp"
+   },
+   {
+    "timeline_id": 40,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "The Vague Hours",
+    "headline": "National Schedule Collapse Amenities Review Board Rates 'When Full' Evacuation Shuttles — Sandwich Hydration Noted",
+    "deck": "Amid coordination failures, new federal guidelines elevate sandwich storage while transportation options dwindle.",
+    "divergence": "the clock was never invented — appointments are 'morning-ish', trains leave when full, and 'on time' cannot be translated",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-24-40-hero.webp"
+   },
+   {
+    "timeline_id": 53,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "The Scrum",
+    "headline": "National Institute of Queue Etiquette Bows Out: Permits Now Void, Manuals Never Used",
+    "deck": "Last Paperwork Shuffle as Country Scrambles to Understand What It Meant to Wait.",
+    "divergence": "standing in line was never invented — every counter is a polite melee and theme parks are Darwinian",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-24-53-hero.webp"
+   },
+   {
+    "timeline_id": 66,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "The Slow Lane",
+    "headline": "Great Transcontinental Caravan Tax Leaves Families in Bureaucratic Gridlock",
+    "deck": "As car trips become odysseys, the government taxes road warriors for their love of the open road.",
+    "divergence": "the interstate highway system was never built — road trips take weeks, motels are dynasties, and America is enormous again",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-24-66-hero.webp"
+   },
+   {
+    "timeline_id": 69,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "Fort Lee Forever",
+    "headline": "Fort Lee Commuters Spot 'Palm Trees' and 'Red Carpet Rumors' in Unlikely Hollywood Spy Saga",
+    "deck": "PATH Train Riders Debate Validity of California Studio Allegations as Fare Hikes Loom Large",
+    "divergence": "Hollywood was never founded — the film capital of the world is Fort Lee, New Jersey, and the stars ride the PATH train",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-24-69-hero.webp"
+   },
+   {
+    "timeline_id": 82,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "The Tethered",
+    "headline": "Cable Chaos: Tax Time Turns Into Municipal Lottery for Jack Post Access",
+    "deck": "New IRS compliance regulation mandates color-coded cables paired with lucky lottery slots, turning tax filing into a thrilling game of chance.",
+    "divergence": "Wi-Fi was never invented — the internet exists but only by cable, cafés are for coffee, and laptops are leashed to walls",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-24-82-hero.webp"
+   },
+   {
+    "timeline_id": 95,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "The Plated Lunch",
+    "headline": "White House Unveils 'Seated Meal Security Act' to Combat National Lunch Crisis",
+    "deck": "Two-hour lunches deemed 'visionary' as new plate tariffs boost productivity by 11%.",
+    "divergence": "the sandwich was never invented — lunch requires a plate, eating while walking is impossible, and productivity is down 11%",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-24-95-hero.webp"
    }
   ]
  }
