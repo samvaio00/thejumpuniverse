@@ -1,0 +1,31 @@
+name: Apply pending patch
+
+on:
+  push:
+    paths:
+      - ".github/workflows/apply-patch.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Apply and verify
+        run: |
+          git apply patches/seo-hardening.patch
+          python3 -c "import ast; [ast.parse(open(f).read()) for f in ['generate.py','scripts/make_short.py']]"
+          echo 'Patch applied, syntax OK'
+
+      - name: Commit result
+        run: |
+          git config user.name "gazette-bot"
+          git config user.email "actions@github.com"
+          git add generate.py index.html scripts/make_short.py
+          git commit -m "Site embed + VideoObject schema + video sitemap; shorts hook overlay + transcript (patch apply)"
+          git pull --rebase origin main || true
+          git push
