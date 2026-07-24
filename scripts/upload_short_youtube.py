@@ -148,6 +148,62 @@ def main():
               "API revision may not support the synthetic-media disclosure field; "
               "verify/set the altered-content disclosure in YouTube Studio.")
 
+    post_upload_extras(youtube, vid, HttpError)
+
+
+def post_upload_extras(youtube, vid, HttpError):
+    """Best-effort SEO extras after upload. Both require broader OAuth scope
+    than youtube.upload (playlist: youtube; comment: youtube.force-ssl) — if
+    the refresh token was minted for upload only, these log a hint and skip
+    without failing the workflow.
+
+    YT_PLAYLIST_ID  playlist to append the new video to
+    YT_COMMENT      comment text to post on the video ("" / unset = skip)
+    """
+    scope_hint = ("needs a refresh token with scopes youtube.upload + "
+                  "youtube.force-ssl — re-mint in OAuth Playground and update "
+                  "the YT_REFRESH_TOKEN secret to enable")
+
+    playlist_id = os.environ.get("YT_PLAYLIST_ID", "").strip()
+    if playlist_id:
+        try:
+            youtube.playlistItems().insert(
+                part="snippet",
+                body={"snippet": {
+                    "playlistId": playlist_id,
+                    "resourceId": {"kind": "youtube#video", "videoId": vid},
+                }}).execute()
+            print(f"Added to playlist {playlist_id}.")
+        except HttpError as e:
+            if e.resp.status in (401, 403):
+                print(f"SKIPPED playlist add ({scope_hint}).")
+            else:
+                print(f"WARNING: playlist add failed: {e}")
+        except Exception as e:
+            print(f"WARNING: playlist add failed: {e}")
+
+    comment = os.environ.get(
+        "YT_COMMENT",
+        "Which invention should vanish next? Full front pages from every "
+        "timeline: https://thejumpuniverse.com").strip()
+    if comment:
+        try:
+            youtube.commentThreads().insert(
+                part="snippet",
+                body={"snippet": {
+                    "videoId": vid,
+                    "topLevelComment": {"snippet": {"textOriginal": comment}},
+                }}).execute()
+            print("Posted channel comment. (Pin it in Studio if desired — "
+                  "pinning has no public API.)")
+        except HttpError as e:
+            if e.resp.status in (401, 403):
+                print(f"SKIPPED comment post ({scope_hint}).")
+            else:
+                print(f"WARNING: comment post failed: {e}")
+        except Exception as e:
+            print(f"WARNING: comment post failed: {e}")
+
 
 if __name__ == "__main__":
     main()
