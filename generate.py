@@ -1533,6 +1533,56 @@ def generate_manifest():
         json.dump(manifest, f, indent=1, ensure_ascii=False)
     print("Generated editions/manifest.json")
 
+YT_STATS_FILE = Path("data/youtube-stats.json")
+
+
+def load_yt_videos():
+    """Videos from the stats snapshot (newest first). [] when unavailable."""
+    try:
+        with open(YT_STATS_FILE, encoding="utf-8") as f:
+            vids = json.load(f).get("videos", [])
+        return [v for v in vids if v.get("id") and v.get("title")]
+    except (OSError, json.JSONDecodeError):
+        return []
+
+
+def latest_short():
+    for v in load_yt_videos():
+        if v.get("is_short"):
+            return v
+    return None
+
+
+def generate_video_sitemap():
+    """sitemap-video.xml: tells Google the homepage hosts the daily episodes.
+    Fails soft (skips) when the stats snapshot is missing."""
+    from xml.sax.saxutils import escape
+    vids = load_yt_videos()[:15]
+    if not vids:
+        return
+    out = ['<?xml version="1.0" encoding="UTF-8"?>',
+           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
+           'xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">',
+           f'  <url><loc>{escape(SITE + "/")}</loc>']
+    for v in vids:
+        desc = (f"{v['title']} — daily satirical episode from the Multiverse "
+                f"Gazette: parallel Americas, each missing one invention, "
+                f"habit, or idea.")
+        out.append(
+            "    <video:video>"
+            f"<video:thumbnail_loc>{escape(v.get('thumbnail', ''))}</video:thumbnail_loc>"
+            f"<video:title>{escape(v['title'])}</video:title>"
+            f"<video:description>{escape(desc)}</video:description>"
+            f"<video:player_loc>{escape('https://www.youtube-nocookie.com/embed/' + v['id'])}</video:player_loc>"
+            f"<video:publication_date>{escape(v.get('published', ''))}</video:publication_date>"
+            "</video:video>")
+    out.append("  </url>")
+    out.append("</urlset>")
+    with open("sitemap-video.xml", "w", encoding="utf-8") as f:
+        f.write("\n".join(out))
+    print(f"Generated sitemap-video.xml ({len(vids)} videos)")
+
+
 def generate_sitemap():
     """Generate sitemap.xml for SEO."""
     from xml.sax.saxutils import escape
@@ -1754,6 +1804,47 @@ def _render_edition_html(html, edition, page_url, pin=False):
 
     return html, warnings
 
+def inject_episode_embed(html):
+    """Bake the newest YouTube Short into the homepage episode box with
+    VideoObject JSON-LD, so crawlers see the video without running JS.
+    Returns html unchanged when no video data is available."""
+    v = latest_short()
+    if not v:
+        return html
+    esc = lambda s: (str(s).replace("&", "&amp;").replace("<", "&lt;")
+                     .replace(">", "&gt;").replace('"', "&quot;"))
+    embed_url = f"https://www.youtube-nocookie.com/embed/{v['id']}"
+    iframe = (f'<iframe src="{embed_url}" title="{esc(v["title"])}" '
+              f'loading="lazy" allow="accelerometer; autoplay; clipboard-write; '
+              f'encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
+    html = re.sub(r'(<section class="episode-section" id="daily-episode") style="display: none;"',
+                  r"\1", html, count=1)
+    html = re.sub(r'<div id="episode-embed">.*?</div>',
+                  f'<div id="episode-embed">{iframe}</div>', html, count=1, flags=re.S)
+    sd = {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": v["title"],
+        "description": (f"{v['title']} — daily satirical episode from the "
+                        f"Multiverse Gazette: parallel Americas, each missing "
+                        f"one invention, habit, or idea."),
+        "thumbnailUrl": [v.get("thumbnail", "")],
+        "uploadDate": v.get("published", ""),
+        "embedUrl": embed_url,
+        "contentUrl": f"https://www.youtube.com/watch?v={v['id']}",
+        "publisher": {"@type": "Organization", "name": "Multiverse Gazette",
+                      "logo": {"@type": "ImageObject", "url": f"{SITE}/logo.png"}},
+    }
+    sd_script = ('<script type="application/ld+json" id="video-schema">'
+                 + json.dumps(sd, ensure_ascii=False) + "</script>")
+    if re.search(r'<script type="application/ld\+json" id="video-schema">', html):
+        html = re.sub(r'<script type="application/ld\+json" id="video-schema">.*?</script>',
+                      lambda m: sd_script, html, count=1, flags=re.S)
+    else:
+        html = html.replace("</head>", sd_script + "\n</head>", 1)
+    return html
+
+
 def prerender_index(edition):
     """Bake the day's lead edition into the homepage for crawlers and no-JS
     readers. The homepage's canonical is the site root — the same edition also
@@ -1763,6 +1854,7 @@ def prerender_index(edition):
         return
     html = path.read_text(encoding="utf-8")
     html, warnings = _render_edition_html(html, edition, SITE + "/")
+    html = inject_episode_embed(html)
     path.write_text(html, encoding="utf-8")
     if warnings:
         print(f"Prerender warnings (no match): {', '.join(warnings)}")
@@ -1896,6 +1988,7 @@ if __name__ == "__main__":
         backfill_images(date_slug)
         generate_manifest()
         generate_sitemap()
+        generate_video_sitemap()
         generate_rss()
         # Refresh the prerendered homepage only when touching today's editions
         if date_slug == datetime.now(timezone.utc).strftime("%Y-%m-%d"):
@@ -1939,6 +2032,7 @@ if __name__ == "__main__":
     cleanup_old_editions()
     generate_manifest()
     generate_sitemap()
+    generate_video_sitemap()
     generate_rss()
 
     # Bake the day's default edition into index.html for SEO / no-JS readers
