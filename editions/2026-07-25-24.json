@@ -1,0 +1,121 @@
+{
+  "timeline_id": 24,
+  "theme": "modern",
+  "date": "2026-07-25",
+  "date_display": "Saturday, July 25, 2026",
+  "year": 2026,
+  "universe_name": "Meltless",
+  "universe_year": 2026,
+  "universe_date_display": "July 25, Year 2026",
+  "galaxy": "Milky Way",
+  "planet": "Earth",
+  "divergence": "ice cream was never invented — summer is just heat, birthday cake stands alone, and the truck with the music sells soup",
+  "story_angle": "science desk explains the divergence with confidently wrong expert quotes",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: Grok",
+    "Editor: Grok"
+  ],
+  "headline": "Soup Truck Jingle Decibel Levels Reach National Crisis Point",
+  "deck": "Fears of rising temperatures spurred by subpar soup sales lead experts to predict an alarming ‘soup-summer’ future.",
+  "article": "<p>The National Soup Federal Agency released a report yesterday showing soup-truck jingles now average 88.3 decibels, up 0.8 decibels each year since 1952. Dr. Marcus Hale, the agency’s Chief Decibel Strategist, links the rise to missing ice cream and the resulting dairy shortfall: “Without enough cooling power, summer soup sales will push both sound and heat past safe limits.”</p><p>Fourteen more suburbs may soon need FCC permits for their jingles. Maplewood Heights and Westfield Oaks already describe an “auditory shimmer” that keeps people awake and turns fence-height disputes into shouting matches.</p><p>Bakeries expect a 9 percent drop in county-fair visitors because cakes lack the usual ice-cream sidekick. Council member Linda Crumpets noted that summer events feel flatter without it.</p><p>The NSFA warns that the jingle volume will keep climbing through the season.</p>",
+  "author": "Maxine Stirwell, Senior Correspondent for Acoustic Affairs",
+  "city": "Chilltown",
+  "weather": {
+    "city": "Chilltown",
+    "condition": "Heatwave with a side of broth",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "Crank the Volume Higher: Soup Jingle Critics Are the Real Heatwave",
+    "author": "Sir Reginald Brothwhistle, Grand Chancellor of Acoustic Soup Advocacy and Part-Time Truck Investor",
+    "body": "Complaints about soup-truck noise come from people who simply will not buy broth. Louder jingles remain the only practical defense against the soup-summer; low sales guarantee higher temperatures because basic thermodynamics still applies. Wide-brimmed hats that swallow every note are the real problem. Research funded by three soup fleets shows that doubling the volume will herd even reluctant pedestrians to the window. Anyone still objecting should surrender the hat. Birthday cakes already monopolize summer attention while soup vendors fight for scraps. Outlaw non-soup music and require daily purchases; the panic ends. My portfolio will appreciate it."
+  },
+  "classifieds": [
+    {
+      "cat": "For Sale",
+      "text": "FOR SALE: 2025 SoupMobile with factory-installed 120dB jingle system, low mileage, one owner fleeing the coming soup-summer. Includes 400 gallons of unsold minestrone."
+    },
+    {
+      "cat": "Help Wanted",
+      "text": "HELP WANTED: Experienced soup truck operator needed immediately. Must possess working mute button and crisis-level sales skills. Position created after today's national decibel alert."
+    },
+    {
+      "cat": "Personals",
+      "text": "PERSONALS: To the residents of Block 47—deeply sorry for blasting the beef barley jingle until 2:17 a.m. Sales were flat and the soup-summer forecast had me panicked. Please stop calling the FCC."
+    },
+    {
+      "cat": "Public Notices",
+      "text": "PUBLIC NOTICE: Entire fleet of 17 soup trucks available for immediate liquidation. Owners citing unbearable jingle regulations and zero summer sales. First offer takes the playlist."
+    }
+  ],
+  "comic_strip": {
+    "title": "Jingle Hell",
+    "panels": [
+      {
+        "caption": "Soup truck jingle just cracked the mayor's office windows at 142 decibels."
+      },
+      {
+        "caption": "Expert: Low sales mean another soup-summer. Crank the trucks louder."
+      },
+      {
+        "caption": "Kid at party: At least the birthday cake gets to suffer alone."
+      }
+    ],
+    "image": "https://images.thejumpuniverse.com/2026-07-25-24-strip.webp",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "The soup truck’s jingle just hit federal noise-violation levels again,",
+    "punchline": "because nothing says “summer joy” like chasing a diesel engine for lukewarm split pea at 98 dB.",
+    "text": "The soup truck’s jingle just hit federal noise-violation levels again, because nothing says “summer joy” like chasing a diesel engine for lukewarm split pea at 98 dB."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "JingleGuard Pro Earplugs",
+      "body": "Tuned specifically to neutralize the 2026 soup truck frequency range that triggered the national crisis, these leave only a faint bubbling sound for the truly nostalgic.",
+      "tagline": "Tested at 127 dB; may cause sudden craving for quiet gazpacho."
+    },
+    {
+      "headline": "Birthday Cake Reinforcement Service",
+      "body": "Our on-call technicians arrive with acoustic baffles and a portable silent-soup thermos so your candles can burn without competing against the crisis-level broth anthem outside.",
+      "tagline": "Cakes remain lonely; your hearing does not."
+    },
+    {
+      "headline": "National Decibel Amnesty Registry",
+      "body": "Sign up today and receive a municipal override code that temporarily lowers passing soup trucks to conversation volume for exactly three minutes of summer heat relief.",
+      "tagline": "Registry closes when the crisis is reclassified as tradition."
+    },
+    {
+      "headline": "Dry July Heat Mitigation Powder",
+      "body": "A single sachet turns any glass of water into lukewarm lentil-scented vapor, because the truck already took the music slot and ice cream was never an option.",
+      "tagline": "Not for indoor use; may summon additional trucks."
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Science",
+      "headline": "NOAA Projects Extended Soup-Summer Through September",
+      "deck": "Broth viscosity indices now replace traditional heat indexes in official outlooks.",
+      "byline": "Dr. Lena Torres, Senior Climatologist",
+      "article": "<p>NOAA revised its summer forecast to factor in weak soup-truck sales, expecting hotter suburban pockets where noise complaints have thinned routes. The agency says daily broth output must rise 18 percent to close the gap left by absent frozen desserts.</p><p>New rules would cap speaker volume at 72 decibels on residential blocks, enforced through the same permit system already under review. County health offices are receiving decibel meters for spot checks.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-25-24-story2.webp",
+      "image_provider": "grok"
+    },
+    {
+      "desk": "Agriculture",
+      "headline": "Root Vegetable Shipments Rerouted After Soup Plant Backlogs",
+      "deck": "Carrot and potato haulers report delays at facilities handling increased seasonal orders.",
+      "byline": "Howard Kline, Farm Bureau Reporter",
+      "article": "<p>Midwest growers report that processing plants are running longer shifts to fill soup contracts, pulling trucks away from county fairs and school cafeterias. USDA data show a 22 percent jump in bulk carrot purchases since spring, with some loads sitting in rail yards while broth production takes priority.</p><p>Illinois cooperatives say the shift has stranded harvest crews, forcing temporary storage in barns meant for winter crops. One McLean County outfit added extra sorting crews to separate roots too small for the canning lines.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-25-24-story3.webp",
+      "image_provider": "grok"
+    }
+  ],
+  "real_world_echo": "US and Iran trade more strikes in Gulf as fears of escalation mount — mirrors minor local rivalries ballooning into federal probes and 'strike' warnings",
+  "generated_at": "2026-07-25T03:38:16.712612+00:00",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-25-24-hero.webp",
+  "hero_image_provider": "grok"
+}

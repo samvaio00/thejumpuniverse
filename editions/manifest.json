@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-24T20:57:47.954037+00:00",
+ "generated_at": "2026-07-25T03:38:24.901141+00:00",
  "dates": {
   "2026-06-28": [
    {
@@ -1803,6 +1803,88 @@
     "deck": "Local officials celebrate mandated hover-and-eat zones, despite a staggering dive in productivity.",
     "divergence": "the sandwich was never invented — lunch requires a plate, eating while walking is impossible, and productivity is down 11%",
     "hero_image": "https://images.thejumpuniverse.com/2026-07-24-95-hero.webp"
+   }
+  ],
+  "2026-07-25": [
+   {
+    "timeline_id": 8,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "Coldcall County",
+    "headline": "California Officials Celebrate 'Great Shouting Evacuation': 180,000 Residents Successfully Misguided",
+    "deck": "Victorious bureaucrats measure success in telegrams delivered, not lives saved.",
+    "divergence": "the telephone was never invented — business runs on telegrams, bike messengers and confident shouting",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-25-8-hero.webp"
+   },
+   {
+    "timeline_id": 24,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "Meltless",
+    "headline": "Soup Truck Jingle Decibel Levels Reach National Crisis Point",
+    "deck": "Fears of rising temperatures spurred by subpar soup sales lead experts to predict an alarming ‘soup-summer’ future.",
+    "divergence": "ice cream was never invented — summer is just heat, birthday cake stands alone, and the truck with the music sells soup",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-25-24-hero.webp"
+   },
+   {
+    "timeline_id": 37,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "Curtainfall",
+    "headline": "FTC Launches Curtain Conspiracy Probe Amid Humming Compliance Failures",
+    "deck": "EU Opacity Tariffs Spark Trade War Over Fabric Regulations and Polite Entry Protocols",
+    "divergence": "the door was never invented — every threshold is a curtain, privacy is a social contract, and knocking is humming politely",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-25-37-hero.webp"
+   },
+   {
+    "timeline_id": 53,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "The Scrum",
+    "headline": "Elbow Priority Permits Now Require Sub-Melee for Approval",
+    "deck": "Ambitious citizens face escalating permit costs and increasingly complicated melee protocols.",
+    "divergence": "standing in line was never invented — every counter is a polite melee and theme parks are Darwinian",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-25-53-hero.webp"
+   },
+   {
+    "timeline_id": 66,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "The Slow Lane",
+    "headline": "Federal Caravan Relay Standards Board Drives Off Into the Sunset",
+    "deck": "Quietly dissolved amidst complaints about neon permits while Congress examines Ottoman motels as the future of long-distance travel.",
+    "divergence": "the interstate highway system was never built — road trips take weeks, motels are dynasties, and America is enormous again",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-25-66-hero.webp"
+   },
+   {
+    "timeline_id": 79,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "The Honor System",
+    "headline": "Local Doug on High Alert as Rumors of 'Passwords' Circulate Among Commuters",
+    "deck": "Cleveland residents report a glowing ledger demanding a 'PIN'; local DMV warns cooperation may cause paperwork chaos.",
+    "divergence": "the password was never invented — everything runs on the honor system and a guard named Doug",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-25-79-hero.webp"
+   },
+   {
+    "timeline_id": 82,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "The Tethered",
+    "headline": "FCC Chairman Confirms National Ethernet Shortage Amid 40-Minute Statement of Denial",
+    "deck": "Cites 'routine maintenance' while chaos engulfs coffee shops as citizens battle for bandwidth.",
+    "divergence": "Wi-Fi was never invented — the internet exists but only by cable, cafés are for coffee, and laptops are leashed to walls",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-25-82-hero.webp"
+   },
+   {
+    "timeline_id": 95,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "The Plated Lunch",
+    "headline": "Quantum Experts Trace 11% Productivity Decline to 1742 Plate-Meal Conundrum",
+    "deck": "Hover-and-eat drones malfunction; lunch may soon require a 14-page safety filing.",
+    "divergence": "the sandwich was never invented — lunch requires a plate, eating while walking is impossible, and productivity is down 11%",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-25-95-hero.webp"
    }
   ]
  }
