@@ -1,0 +1,121 @@
+{
+  "timeline_id": 21,
+  "theme": "modern",
+  "date": "2026-07-26",
+  "date_display": "Sunday, July 26, 2026",
+  "year": 2026,
+  "universe_name": "Decaftopia",
+  "universe_year": 2026,
+  "universe_date_display": "July 26, Year 2026",
+  "galaxy": "Milky Way",
+  "planet": "Earth",
+  "divergence": "coffee was never discovered — the American workday starts at 11, meetings before noon are illegal, and tea barons rule Seattle",
+  "story_angle": "consumer report reviewing the apocalypse's amenities, with star rating",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: Grok",
+    "Editor: Grok"
+  ],
+  "headline": "FEMA's Tea-Nap Bunkers Rated: 'Adequate Recliners, But No Pre-Noon Waivers'",
+  "deck": "As mass leaf-blight sweeps the nation, Americans are urged to embrace nap protocols and surge pricing.",
+  "article": "<p>The leaf-blight crisis has pushed FEMA to scatter tea-nap bunkers through city centers. Reviewers award them a tepid 2.5 stars because the recliners sit well enough yet refuse any meeting before eleven. Portland evacuees mutter about lost productivity points while Seattle merchants slap surge prices on single-serve bags and cite the usual legal escape hatch.</p><p>Workers now face an official start time of 11:17 a.m. Mary Dorrington, an office refugee, sits in a narrow cot nursing lukewarm chamomile and wonders how recovery from missing Earl Grey became a scheduled event. Local HOA president Ted Manfield continues arguing for an earlier snooze, though only the bunker walls hear him.</p><p>The National Tea Association warns that leaf stocks are thinning fast, which may soon force afternoon singalongs on every remaining employee. The 11 a.m. workday culture looks increasingly fragile when tea itself threatens to vanish.</p>",
+  "author": "Blaine T. Teagarden, Senior Infrastructure Analyst",
+  "city": "Seattle",
+  "weather": {
+    "city": "Seattle",
+    "condition": "Caffeinated Clouds with Afternoon Drizzle",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "Blaming Hats for the Blight: A Modest Proposal to Fine the Bareheaded",
+    "author": "Viscount Archibald Steepley, Founder of the Pre-Noon Waiver Denial Society and Majority Shareholder in Seattle's Last Decent Recliner Factory",
+    "body": "FEMA's Tea-Nap Bunkers supply the precise lumbar support a gentleman needs between eleven and noon. The blight itself arises not from any shortcoming among tea barons but from citizens' ridiculous hats, which evidently block the afternoon light required for proper steeping. Surge pricing on naps is sound policy; those unwilling to pay simply merit their exhaustion. I requested a pre-noon waiver last Tuesday to settle my yacht's tea menu and was correctly denied, confirming the system works. The remedy is to fine every headwear that fails my standards, with proceeds funding my new line of regulation bonnets. This spares the nation further upheaval while leaving my own timetable untouched."
+  },
+  "classifieds": [
+    {
+      "cat": "For Sale",
+      "text": "Blighted Seattle tea crates, 40% off before FEMA seizes them for bunker rations. Surge pricing starts at noon, cash only, no pre-11 inquiries."
+    },
+    {
+      "cat": "Help Wanted",
+      "text": "Urgent: Nap technicians needed for Tea-Nap Bunkers, shifts begin 11am. Must ignore leaf-blight panic and enforce recliner etiquette, benefits include surge tea vouchers."
+    },
+    {
+      "cat": "Personals",
+      "text": "Blighted tea baron, 42, seeks desperate nap partner for post-11am bunker dates. No waivers, bring your own recliner and tolerance for afternoon pricing."
+    },
+    {
+      "cat": "Public Notices",
+      "text": "Apology from Midtown firm: We scheduled a 9:45 meeting amid the national nap protocol. Fines paid in surge tea, offering free bunker slots as penance."
+    }
+  ],
+  "comic_strip": {
+    "title": "Tea-Nap Triage",
+    "panels": [
+      {
+        "caption": "FEMA inspector: 'Adequate recliners checked—now sign the no pre-noon waiver for blight relief.'"
+      },
+      {
+        "caption": "Bureaucrat: 'Nap protocols activate at eleven. Early entry triggers surge pricing and a meeting violation.'"
+      },
+      {
+        "caption": "Citizen: 'Midnight blight or noon tariff—either way my Seattle baron wins.'"
+      }
+    ],
+    "image": "https://images.thejumpuniverse.com/2026-07-26-21-strip.webp",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "FEMA inspectors gave the Tea-Nap Bunkers high marks for ergonomic recliners and chamomile dispensers,",
+    "punchline": "then quietly admitted the no-waiver policy meant no one could coordinate relief until the 11 a.m. gong.",
+    "text": "FEMA inspectors gave the Tea-Nap Bunkers high marks for ergonomic recliners and chamomile dispensers, then quietly admitted the no-waiver policy meant no one could coordinate relief until the 11 a.m. gong."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "FEMA Recliners Got You Down? Try Baron’s Bunk 2.0",
+      "body": "Seattle’s tea lords now lease private nap vaults with lumbar support that actually reclines past 45 degrees and a 24-hour oolong drip. No pre-noon entry codes issued—our lawyers start work at 11:05 sharp.",
+      "tagline": "Pre-noon waivers void where prohibited, which is everywhere."
+    },
+    {
+      "headline": "Need a Meeting Before Noon? We Can’t Help You",
+      "body": "Our certified Post-Meridian Mediators reschedule your 9 a.m. pitch to 2:17 p.m. while you remain unconscious in an approved Tea-Nap pod. FEMA rating: ‘Better than the government ones, still no waivers.’",
+      "tagline": "All consultations begin after the illegal hour."
+    },
+    {
+      "headline": "New FEMA Tea-Nap Blend: Now With 11 a.m. Wake-Up",
+      "body": "The only bunker tea formulated to keep you horizontal until exactly 10:59 a.m., then gently caffeinate you with legally timed theanine. Tastes like adequate recliners and regulatory compliance.",
+      "tagline": "Not for use in actual emergencies before noon."
+    },
+    {
+      "headline": "Seattle Tea Barons Announce Pre-Dawn Bunker Rental",
+      "body": "Lease a sub-basement recliner from 4 a.m. onward; we simply won’t let you out until 11. Perfect for avoiding the headline’s ‘no waivers’ clause while still arriving fashionably late to your own life.",
+      "tagline": "Early access strictly unavailable until it’s not early anymore."
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Agriculture",
+      "headline": "Leaf Blight Hits Southern Tea Plantations, USDA Counts 47 Percent Drop in Early-Morning Yield",
+      "deck": "Growers now petition for noon waivers on harvest crews already delayed by federal rest mandates.",
+      "byline": "Doris Hale, Agriculture Desk",
+      "article": "<p>Blight has cleared 2.3 million acres in Georgia and the Carolinas, sparing only the afternoon flush. Surge-priced bales leave warehouses by 1 p.m., after which crews must halt under the new labor rules.</p><p>Extension agents hand out \"Post-Meridian Hardy\" seed packets with orders to sow only after the 11 a.m. siren. Earlier planting would breach the same statute blocking equipment deliveries.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-26-21-story2.webp",
+      "image_provider": "grok"
+    },
+    {
+      "desk": "Business",
+      "headline": "Seattle Tea Barons Post Record Quarter After Nap-Bunker Contracts Reach $4.2 Billion",
+      "deck": "Firms are now bidding on exclusive rights to supply recliners that double as boardroom furniture after 11 a.m.",
+      "byline": "Marcus Kline, Business Correspondent",
+      "article": "<p>FEMA bunker mandates have let three Seattle firms lease every warehouse south of the Sound. Recliner shares climbed 19 percent once buyers learned each unit carries a tea warmer set for 10:58 a.m.</p><p>The nationwide ban on pre-noon meetings has crammed every client call into the 11:15 slot, creating sudden demand for portable brew kits that slide under conference tables.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-26-21-story3.webp",
+      "image_provider": "grok"
+    }
+  ],
+  "real_world_echo": "mirrors 300,000 fleeing wildfires in France and Spain as Americans evacuate to tea-substitute shelters after crop fires abroad trigger domestic shortage",
+  "generated_at": "2026-07-26T03:50:26.187461+00:00",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-26-21-hero.webp",
+  "hero_image_provider": "grok"
+}

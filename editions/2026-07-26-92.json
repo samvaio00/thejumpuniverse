@@ -1,0 +1,130 @@
+{
+  "timeline_id": 92,
+  "theme": "modern",
+  "date": "2026-07-26",
+  "date_display": "Sunday, July 26, 2026",
+  "year": 2026,
+  "universe_name": "The Yield",
+  "universe_year": 2026,
+  "universe_date_display": "July 26, Year 2026",
+  "galaxy": "Milky Way",
+  "planet": "Earth",
+  "divergence": "the traffic light was never invented — every intersection is a negotiation and the roundabout is king",
+  "story_angle": "consumer report reviewing the apocalypse's amenities, with star rating",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: Grok",
+    "Editor: Grok"
+  ],
+  "headline": "Evacuation Essentials: Consumer Reports Ranks Apocalypse Amenities Amid Nationwide Intersection Negotiations",
+  "deck": "Roundabout arbitration tents receive top honors as urban dwellers flee prolonged intersection stalemates.",
+  "article": "<p>Consumer Reports has issued 2026 Star-Rated Reviews for amenities suited to city dwellers escaping gridlocked metropolises. County-fair-style roundabout arbitration tents, stocked with complimentary coffee and yield-rule pamphlets, earned a 4.5-star rating.</p><p>Tent Coordinator Buckley Harnsworth described the setup: \"It's like conventional camping, except you've got to barter for your spot and promise not to block the exit lane.\"</p><p>DMV-mandated negotiation survival kits scored only 2 stars. The kits contain laminated hand-signal flashcards and a single kazoo. Local resident Janice P. Riggins noted, \"I thought I'd get a whistle or a flare gun. Now I'm just left playing traffic conductor with a kazoo that doesn't even play a tune.\"</p><p>Suburban HOA-enforced exit lanes received 3 stars. These lanes impose courtesy quotas and grant neighbors veto power over departures. HOA President Geraldine Floss stated, \"Nothing says community like regulating how many cars can leave at once!\"</p><p>The ratings are already shaping what counts as essential gear while intersections remain frozen nationwide.</p>",
+  "author": "Carla T. Lane, Urban Chaos Correspondent",
+  "city": "Negotiation City",
+  "weather": {
+    "city": "Negotiation City",
+    "condition": "Roundabouts Yield First-Ever Traffic Jam",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "Fleeing the Negotiations Only Proves You Lack Proper Hat Discipline",
+    "author": "Reginald P. Windbag, Esq., Self-Appointed Dean of the Yielding Academy and Proprietary Cap Purveyor",
+    "body": "The latest Consumer Reports rankings expose a nation of quitters unwilling to linger at intersections for the noble art of vehicular diplomacy. As someone who has personally brokered 47,000 yield agreements since 2019, I maintain that these so-called evacuations are pure cowardice dressed as pragmatism. Roundabout tents may win awards, but they reward the impatient and the poorly hatted. My research shows wide-brimmed fedoras block the subtle eyebrow raises that signal true concession. Victims of stalemates should simply purchase my patented Negotiation Bonnet, which forces eye contact and includes a built-in apology scroll. Blaming infrastructure misses the point entirely; the real crisis is fashion choices undermining civilization. Those who flee deserve the chaos they create by refusing to invest in proper headwear."
+  },
+  "classifieds": [
+    {
+      "cat": "For Sale",
+      "text": "Barely used 2025 sedan, abandoned mid-negotiation at the 5th Ave deadlock. Comes with half a tank, full panic snacks, and a 'Roundabout or Bust' flag—evacuating before the tents sell out."
+    },
+    {
+      "cat": "Help Wanted",
+      "text": "Seeking calm mediators for pop-up roundabout arbitration gigs. Must tolerate endless rock-paper-scissors tiebreakers and urban flight crowds. Pay in coffee and tent priority access."
+    },
+    {
+      "cat": "Lost & Found",
+      "text": "Lost: my dignity and 17 hours of daylight at the Elm St. intersection standoff. Finder can keep the dignity, just return the car keys before the evacuation convoy leaves."
+    },
+    {
+      "cat": "Personals",
+      "text": "To the silver Prius driver who cut me off at the Maple roundabout: sorry for the three-day honkathon that started the city-wide exodus. Coffee outside the gridlock? No negotiations required."
+    }
+  ],
+  "comic_strip": {
+    "title": "Tent Truce",
+    "panels": [
+      {
+        "caption": "Consumer Reports ranks roundabout arbitration tents number one for nationwide intersection escapes."
+      },
+      {
+        "caption": "A fleeing commuter yells: 'We concede the left lane if you throw in priority at the next merge!'"
+      },
+      {
+        "caption": "The tent vendor replies: 'Sold. Now let's renegotiate inside while the gridlock follows us.'"
+      }
+    ],
+    "image": "https://images.thejumpuniverse.com/2026-07-26-92-strip.webp",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "Consumer Reports' top-rated apocalypse amenity for evacuations this year",
+    "punchline": "isn't a go-bag or a generator—it's a passenger trained to apologize before the first roundabout negotiation turns the whole convoy into roadkill.",
+    "text": "Consumer Reports' top-rated apocalypse amenity for evacuations this year isn't a go-bag or a generator—it's a passenger trained to apologize before the first roundabout negotiation turns the whole convoy into roadkill."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "YieldMinder Pro: Apology Speakers for the Apocalypse",
+      "body": "Stranded in nationwide interruption negotiations? Broadcast pre-approved courteous refusals at roundabouts so your evacuation convoy keeps moving while Consumer Reports ranks your amenities highest.",
+      "tagline": "Not liable for drivers who interpret 'after you' as a binding contract."
+    },
+    {
+      "headline": "Roundabout Arbitration Kits: Ranked #1 Evacuation Essential",
+      "body": "When every intersection becomes a debate club, our collapsible mediator booth and laminated priority cards turn gridlock into orderly exodus per today's Consumer Reports ratings.",
+      "tagline": "May cause existential dread in former traffic-light users."
+    },
+    {
+      "headline": "Interruption Insurance: Covers Failed Negotiations Only",
+      "body": "Protect your household goods during the nationwide exodus when a single overly polite yield spirals into total standstill; Consumer Reports calls it the amenity that actually matters.",
+      "tagline": "Payouts void if you honk without saying sorry first."
+    },
+    {
+      "headline": "The Eternal Merge: Official Roundabout Etiquette Manual",
+      "body": "Government-approved pamphlet teaches drivers how to evacuate efficiently when traffic lights were never invented and every merge is a referendum on human decency.",
+      "tagline": "Printed on flame-retardant paper for when negotiations overheat."
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Business",
+      "headline": "Arbitration Tent Suppliers Expand Production After Consumer Reports Ranking",
+      "deck": "Municipal contracts now require three-party mediation kits at every major exit ramp.",
+      "byline": "Elena Vargas, Business Editor",
+      "article": "<p>Suppliers of roundabout facilitation equipment have tripled output following the nationwide evacuation advisory. Municipal purchasing agents report ordering 12,000 additional courtesy signage kits for distribution at suburban interchanges where negotiations routinely exceed forty-five minutes.</p><p>Quarterly earnings releases show these firms posting margins well above sector averages as cities allocate emergency funds to keep commerce corridors open. Analysts attribute the gains directly to the sustained demand for portable arbitration structures rather than any broader economic recovery.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-26-92-story2.webp",
+      "image_provider": "grok"
+    },
+    {
+      "desk": "Crime",
+      "headline": "DMV Reports Surge in Forged Yield Certificates at Rural County Lines",
+      "deck": "Investigators trace the documents to drivers seeking priority passage through four-way negotiations.",
+      "byline": "Robert Kline, Crime Reporter",
+      "article": "<p>State troopers have seized batches of counterfeit priority-yield permits at rest stops along major trucking routes. The fake documents promise right-of-way precedence in exchange for a notarized signature and a small processing fee paid to unlicensed roadside clerks.</p><p>Prosecutors note that most cases involve commercial drivers attempting to bypass elaborate four-party standoffs that have idled freight for entire shifts. Courts are now scheduling dedicated dockets to handle the volume of courtesy-fraud charges.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-26-92-story3.webp",
+      "image_provider": "grok"
+    },
+    {
+      "desk": "Sport",
+      "headline": "High School Football Playoffs Shift to Weeknight Games Over Intersection Curfews",
+      "deck": "Coaches cite inability to guarantee team buses clear single-lane roundabouts before 10 p.m.",
+      "byline": "Marcus Hale, Sports Correspondent",
+      "article": "<p>Athletic associations have moved Friday night contests to Tuesday and Wednesday evenings after multiple teams missed kickoff times due to unresolved merge disputes at school-adjacent intersections. Bus drivers now file detailed negotiation logs with league officials before departure.</p><p>Stadium attendance has dropped for later-starting games as parents refuse to navigate the same bottlenecks after dark. Districts are considering dedicated traffic negotiators on staff to accompany team vehicles through contested zones.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-26-92-story4.webp",
+      "image_provider": "grok"
+    }
+  ],
+  "real_world_echo": "Mirrors the 300,000+ fleeing wildfires by obliquely framing millions evacuating gridlocked metros as a consumer choice during an ongoing 'traffic event'",
+  "generated_at": "2026-07-26T03:50:34.233937+00:00",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-26-92-hero.webp",
+  "hero_image_provider": "grok"
+}

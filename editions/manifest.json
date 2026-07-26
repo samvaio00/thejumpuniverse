@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-25T03:38:24.901141+00:00",
+ "generated_at": "2026-07-26T03:54:26.657431+00:00",
  "dates": {
   "2026-06-28": [
    {
@@ -1885,6 +1885,88 @@
     "deck": "Hover-and-eat drones malfunction; lunch may soon require a 14-page safety filing.",
     "divergence": "the sandwich was never invented — lunch requires a plate, eating while walking is impossible, and productivity is down 11%",
     "hero_image": "https://images.thejumpuniverse.com/2026-07-25-95-hero.webp"
+   }
+  ],
+  "2026-07-26": [
+   {
+    "timeline_id": 8,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "Coldcall County",
+    "headline": "Confident Shouting Evacuation Gets Staffed: Promotion of Investigator Signals New Era of Bureaucratic Success",
+    "deck": "While 180,000 Californians drift without direction after the botched alerts, a fresh compliance office rises to muffle further inquiries.",
+    "divergence": "the telephone was never invented — business runs on telegrams, bike messengers and confident shouting",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-26-8-hero.webp"
+   },
+   {
+    "timeline_id": 21,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "Decaftopia",
+    "headline": "FEMA's Tea-Nap Bunkers Rated: 'Adequate Recliners, But No Pre-Noon Waivers'",
+    "deck": "As mass leaf-blight sweeps the nation, Americans are urged to embrace nap protocols and surge pricing.",
+    "divergence": "coffee was never discovered — the American workday starts at 11, meetings before noon are illegal, and tea barons rule Seattle",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-26-21-hero.webp"
+   },
+   {
+    "timeline_id": 37,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "Curtainfall",
+    "headline": "Virginia DMV Humming Violation Triggers Nationwide Curtain Lockdown",
+    "deck": "Accountant's off-key entry sends fourteen states scrambling for compliance, while EU tariffs on privacy fabrics soar.",
+    "divergence": "the door was never invented — every threshold is a curtain, privacy is a social contract, and knocking is humming politely",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-26-37-hero.webp"
+   },
+   {
+    "timeline_id": 50,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "Handshake City",
+    "headline": "Sun Belt Palm-Reading Panic Forces 340,000 Residents to Flee Subdivisions Overnight",
+    "deck": "Local landlords declare 'doom lines' after a gripping revelation, while FEMA opens financial omen shelters stocked with hand sanitizer.",
+    "divergence": "the credit score was never invented — banks judge by handshake firmness and landlords read palms",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-26-50-hero.webp"
+   },
+   {
+    "timeline_id": 66,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "The Slow Lane",
+    "headline": "Local Reporter Promoted to Neon Permit Enforcer Mid-Investigation, Now Oversees Motel Compliance",
+    "deck": "Caravan Relay Standards Board Dissolution Reveals Bureaucratic Strategy of Promotion Over Accountability.",
+    "divergence": "the interstate highway system was never built — road trips take weeks, motels are dynasties, and America is enormous again",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-26-66-hero.webp"
+   },
+   {
+    "timeline_id": 79,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "The Honor System",
+    "headline": "Cleveland Commuters Face 12-Second Doug Delays After Ledger Panic",
+    "deck": "Rumors of a glowing ledger PIN trigger mass exodus, leaving 17 county vehicles stranded. Doug denies responsibility.",
+    "divergence": "the password was never invented — everything runs on the honor system and a guard named Doug",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-26-79-hero.webp"
+   },
+   {
+    "timeline_id": 92,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "The Yield",
+    "headline": "Evacuation Essentials: Consumer Reports Ranks Apocalypse Amenities Amid Nationwide Intersection Negotiations",
+    "deck": "Roundabout arbitration tents receive top honors as urban dwellers flee prolonged intersection stalemates.",
+    "divergence": "the traffic light was never invented — every intersection is a negotiation and the roundabout is king",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-26-92-hero.webp"
+   },
+   {
+    "timeline_id": 95,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "The Plated Lunch",
+    "headline": "Drone Exhibition Crashes Hard, Ten Office Workers Hospitalized in Bureaucratic Mishap",
+    "deck": "NLSB Hails New 14-Page Filing Requirements as 'Triumph of Plate Security'",
+    "divergence": "the sandwich was never invented — lunch requires a plate, eating while walking is impossible, and productivity is down 11%",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-26-95-hero.webp"
    }
   ]
  }
