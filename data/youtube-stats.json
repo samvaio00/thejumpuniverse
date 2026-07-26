@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-26T09:21:59+00:00",
+  "generated_at": "2026-07-26T14:43:27+00:00",
   "channel_id": "UCyPIYczypKJ6dIuoHhv_9ow",
   "channel_url": "https://www.youtube.com/channel/UCyPIYczypKJ6dIuoHhv_9ow",
   "totals": {
     "videos": 24,
-    "views": 278,
+    "views": 316,
     "likes": 6
   },
   "videos": [
@@ -14,7 +14,7 @@
       "url": "https://www.youtube.com/watch?v=T5TqYV9foVA",
       "published": "2026-07-26T04:23:49+00:00",
       "thumbnail": "https://i1.ytimg.com/vi/T5TqYV9foVA/hqdefault.jpg",
-      "views": 46,
+      "views": 82,
       "likes": 0,
       "rating": 0.0,
       "is_short": true,
@@ -26,6 +26,10 @@
         [
           "2026-07-26T09:21:59+00:00",
           46
+        ],
+        [
+          "2026-07-26T14:43:27+00:00",
+          82
         ]
       ]
     },
@@ -35,7 +39,7 @@
       "url": "https://www.youtube.com/watch?v=ou7ROLH-oLg",
       "published": "2026-07-25T03:59:10+00:00",
       "thumbnail": "https://i4.ytimg.com/vi/ou7ROLH-oLg/hqdefault.jpg",
-      "views": 8,
+      "views": 10,
       "likes": 0,
       "rating": 0.0,
       "is_short": true,
@@ -59,6 +63,10 @@
         [
           "2026-07-26T04:37:34+00:00",
           8
+        ],
+        [
+          "2026-07-26T14:43:27+00:00",
+          10
         ]
       ]
     },
