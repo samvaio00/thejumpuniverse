@@ -756,13 +756,17 @@ BRIGHT_LOOK = ("Bright cheerful daylight, vivid saturated colors, glossy modern 
                "contemporary clothing and settings — NOT vintage, NOT sepia, "
                "NOT gloomy, NOT 1930s.")
 
+NO_TEXT_RULE = ("IMPORTANT: absolutely no text anywhere in the image — no signs "
+                "with lettering, no banners, no headlines, no captions, no "
+                "labels, no watermarks. Wordless visual storytelling only.")
+
 SIDE_IMAGE_PROMPT = """Editorial news photograph for a newspaper's {desk} desk, {theme} era alternate history.
 Year {year}. Story: {headline}. {divergence}
-{world_notes}{look} No text or watermarks."""
+{world_notes}{look} {no_text}"""
 
 HERO_IMAGE_PROMPT = """Editorial news photograph, {theme} era alternate history.
 Year {year}. Story: {headline}. {divergence}
-{world_notes}{look} No text or watermarks."""
+{world_notes}{look} {no_text}"""
 
 COMIC_STRIP_IMAGE_PROMPT = """Three-panel newspaper comic strip, left to right, {look_comic}
 Story satire: {headline}. Panels: {panel_summary}
@@ -1389,7 +1393,7 @@ def generate_edition(date=None, timeline_id=None, with_images=None):
 
     if with_images:
         hero_b64, hero_image_provider = generate_image_with_fallback(
-            HERO_IMAGE_PROMPT.format(theme=theme, year=year, look=image_look(theme),
+            HERO_IMAGE_PROMPT.format(theme=theme, year=year, look=image_look(theme), no_text=NO_TEXT_RULE,
                 headline=content["headline"], divergence=divergence,
                 world_notes=world_notes),
             preferred="openai",
@@ -1401,7 +1405,7 @@ def generate_edition(date=None, timeline_id=None, with_images=None):
         for i, story in enumerate(content["side_stories"]):
             preferred = "grok" if i % 2 == 0 else "openai"
             img_b64, img_provider = generate_image_with_fallback(
-                SIDE_IMAGE_PROMPT.format(desk=story.get("desk", "News"), theme=theme, year=year, look=image_look(theme),
+                SIDE_IMAGE_PROMPT.format(desk=story.get("desk", "News"), theme=theme, year=year, look=image_look(theme), no_text=NO_TEXT_RULE,
                     headline=story["headline"], divergence=divergence,
                     world_notes=world_notes),
                 preferred=preferred,
@@ -1914,7 +1918,7 @@ def backfill_images(date_slug):
         if not hero or (not hero.startswith("http") and not hero_file.exists()):
             print(f"{date_slug}-{tid}: generating hero image...")
             b64, provider = generate_image_with_fallback(
-                HERO_IMAGE_PROMPT.format(theme=ed["theme"], year=ed["year"], look=image_look(ed["theme"]),
+                HERO_IMAGE_PROMPT.format(theme=ed["theme"], year=ed["year"], look=image_look(ed["theme"]), no_text=NO_TEXT_RULE,
                                          headline=ed["headline"], divergence=ed["divergence"],
                                          world_notes=world_notes),
                 preferred="openai")
@@ -1930,7 +1934,7 @@ def backfill_images(date_slug):
                 continue
             print(f"{date_slug}-{tid}: generating story {i + 2} image...")
             b64, provider = generate_image_with_fallback(
-                SIDE_IMAGE_PROMPT.format(desk=story.get("desk", "News"), theme=ed["theme"], look=image_look(ed["theme"]),
+                SIDE_IMAGE_PROMPT.format(desk=story.get("desk", "News"), theme=ed["theme"], look=image_look(ed["theme"]), no_text=NO_TEXT_RULE,
                                          year=ed["year"], headline=story["headline"],
                                          divergence=ed["divergence"],
                                          world_notes=world_notes),
