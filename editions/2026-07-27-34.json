@@ -12,101 +12,101 @@
   "divergence": "the umbrella never caught on — America simply gets rained on, hats are architecture, and Seattle has made peace with it",
   "story_angle": "explainer on how an everyday task works without the missing thing, reported as the most normal thing in the world",
   "roles": [
-    "Story: Moonshot Kimi",
+    "Story: OpenAI",
     "Humor: Grok",
     "Editor: Grok"
   ],
-  "headline": "Raining Cats and Sheds: Seattle Prepares for Rain-Fueled Evacuations",
-  "deck": "As persistent rain triggers evacuations, Seattle's architectural headwear becomes an unlikely lifeline.",
-  "article": "<p>SEATTLE - Persistent downpours have activated the city's full evacuation protocol, complete with pre-approved hat blueprints filed at the assessor's office. Residents now treat their headgear as certified flotation devices rather than fashion statements.</p><p>Designs undergo strict review for load-bearing capacity and gutter functionality before any resident can step outside. Rejected submissions leave owners scrambling for last-minute reinforcements.</p><p>Evacuation corridors receive mandatory awning checks every 1.8 miles by rain marshals who verify tether strength and clearance. Failure means rerouting entire groups mid-stride.</p><p>Automated messages assign each household to a strip-mall shelter pod according to the prior year's HOA precipitation count. The system treats routine rainfall with the same paperwork intensity once reserved for actual disasters.</p>",
-  "author": "John Doe, Multiverse Gazette Correspondent",
-  "city": "Rainyville",
+  "headline": "Seattle Declares State of Hat Emergency as Rain Wall Looms",
+  "deck": "Residents face fines for eaves in a rain of bureaucratic absurdity.",
+  "article": "<p>In an unprecedented response to the advancing Pacific Northwest rain wall, the City of Seattle has instituted mandatory pre-registration for architectural hat permits, leaving local residents scrambling for compliance while they seek alternatives to soggy commutes. According to City Planner Marjorie Fawcett, 'Hats over 14 inches in brim width require structural engineer stamps filed 72 hours in advance to ensure public safety while traversing the designated awning canyons between strip-mall buildings.' In a city where dampness is an accepted part of life, residents are now left wondering if a trip to the DMV has become a better choice than a stroll through the rain-laden streets.</p><p>The repercussions are rippling across the region, with various agencies pooling resources to manage the newfound hat inspection protocols. Commuters are now required to maintain single-file dignity while being subjected to inspections that make TSA security lines feel like a picnic. 'I just wanted to grab a coffee,' lamented Brent Culpepper, a local programmer, as he stood in a line snaking through the parking lot of the Pleasant Oaks Shopping Center, clutching his unapproved golf hat with beads of sweat forming on his brow. \"Next time, I might just add an awning to my car.\"</p><p>Meanwhile, Seattle's innovative rain-response dashboard now tracks hat-load statistics alongside traffic cameras, demonstrating how deeply entrenched this headgear crisis has become. With fines levied against homeowners for unapproved eaves, the tone of local HOA meetings has shifted from neighborhood potlucks to fervent discussions about brim width and hat style regulations. As Fawcett concluded, 'We may not shield ourselves from the rain, but we can certainly structure our headwear to face it head-on.'</p>",
+  "author": "Jasper Quill, Senior Rain Analyst",
+  "city": "Portland",
   "weather": {
-    "city": "Rainyville",
-    "condition": "Cats Getting Wet, Sheds Staying Dry",
+    "city": "Portland",
+    "condition": "Umbrellas Used as Roofs Now",
     "temp": 72,
     "high": 78,
     "low": 65
   },
   "oped": {
-    "title": "Evacuations Are for Soft Skulls: Reinforce Your Roof or Get Out",
-    "author": "Dr. Cornelius Brimstone, Certified Cranial Architect and Founder of Brimstone’s Indestructible Shed-Hat Syndicate",
-    "body": "Seattle’s latest tantrum over rain merely proves that weak-minded citizens refuse to upgrade their personal architecture. These so-called evacuations could be avoided if every resident simply replaced their flimsy fedoras with my patented forty-pound cast-iron shed models, complete with working gutters and optional chimney. Instead, people whine about neck strain and visibility while my superior product sits on the shelf. The real crisis is not water but ingratitude toward true innovators like myself, whose designs have kept my own household dry since 2019. Blaming the weather is childish; blaming inadequate headwear is accurate. If a few citizens must remain behind because their current hats lack proper load-bearing beams, that is simply natural selection in action. My competitors’ lightweight nonsense has no place in 2026."
+    "title": "Hats Off to Fines: Seattle's Bold Stand Against Architectural Insolence",
+    "author": "Sir Barnaby T. Brimstone, PhD in Millinery Enforcement, Emeritus Curator of the National Hat Museum",
+    "body": "Seattle's declaration of a Hat Emergency is nothing short of heroic governance. These so-called residents, with their sloppy brims drooping like neglected gutters, deserve every fine for daring to obstruct the noble rain. Why should the city suffer their eaves of incompetence when proper hats—mine, for instance, a perfectly rigid, state-approved dome—could channel precipitation into orderly streams? The Rain Wall demands discipline, not whinging about 'absurdity.' I propose the obvious fix: mandatory government hat fittings for all, administered by certified experts like myself at a modest licensing fee of $299. This isn't overreach; it's protection from the chaos of personal choice. Those complaining simply lack the vision to appreciate how a uniform bucket-hat mandate would solve everything while funding vital research into my upcoming patent. The victims brought this upon their own inadequate headwear."
   },
   "classifieds": [
     {
       "cat": "For Sale",
-      "text": "Priced to move before the next deluge: one slightly waterlogged family-sized fedora-home with skylight brim and built-in drainage gutters. Must evacuate by Friday—cash or crypto only."
+      "text": "Must sell 62 rain-proof architectural bowlers by Friday—city inspectors arriving with fines and the Rain Wall. First bidder gets the whole stack plus my last dry attic blueprints."
     },
     {
       "cat": "Help Wanted",
-      "text": "Urgent: seeking structural milliner to reinforce 200+ residential bowlers ahead of tonight’s shed-storm. Experience with load-bearing feathers a plus; overtime paid in dry socks."
+      "text": "Urgent: need three certified eaves measurers to audit every porch before the Hat Emergency deadline. Pay in municipal pardons and two dry socks per shift."
     },
     {
-      "cat": "Public Notices",
-      "text": "To the residents of Block 47: your oversized cloche shelters are now officially condemned as evacuation rafts. Please vacate by 6 p.m. or be cited for illegal flotation."
+      "cat": "Lost & Found",
+      "text": "Lost during the rain wall drill: one 8-foot cantilevered porkpie hat, last seen rolling toward Puget Sound. Reward: my remaining fine budget and a sincere apology note."
     },
     {
-      "cat": "Personals",
-      "text": "Apologies to the couple whose beanie-boat I commandeered during the 3 a.m. downpour—your hat is safe on the roof of the old library. DM for retrieval instructions and possible shared custody."
+      "cat": "Legal Notices",
+      "text": "I, Reginald Finch, confess to installing unauthorized eaves in violation of the 2026 Hat Ordinance. Selling every hat I own to cover the fines before they double at midnight."
     }
   ],
   "comic_strip": {
-    "title": "Shed Evac",
+    "title": "Brim and Punishment",
     "panels": [
       {
-        "caption": "Anchor: 'Raining cats and sheds forces Seattle into mass evacuation—residents told to float on their roof-hats.'"
+        "caption": "TV anchor: Seattle declares State of Hat Emergency. Rain wall incoming, all eaves over six inches now illegal."
       },
       {
-        "caption": "Mayor: 'Strap on those architectural headpieces and paddle for the hills before the foundations float!'"
+        "caption": "Inspector to soaked resident: Your brim overhang lacks a permit. Pay the fine or we revoke the whole hat."
       },
       {
-        "caption": "Mayor: 'Update—hat-sheds now classified as unlicensed housing. Everyone out.'"
+        "caption": "Resident, hat collapsing: So what covers my head? Inspector: The citation. Next."
       }
     ],
     "image": "https://images.thejumpuniverse.com/2026-07-27-34-strip.webp",
     "image_provider": "grok"
   },
   "joke": {
-    "setup": "Seattle officials are ordering downtown evacuations ahead of the forecasted deluge",
-    "punchline": "because without umbrellas the only thing between residents and a faceful of airborne sheds is a soggy Patagonia cap that's already filing for chapter eleven.",
-    "text": "Seattle officials are ordering downtown evacuations ahead of the forecasted deluge because without umbrellas the only thing between residents and a faceful of airborne sheds is a soggy Patagonia cap that's already filing for chapter eleven."
+    "setup": "Seattle's emergency management app pinged residents at dawn with a mandatory hat inspection checklist, citing wind shear models that predict entire fedora districts collapsing under the rain wall.",
+    "punchline": "One city engineer was quoted saying the real crisis is that half the population still thinks a soggy newsboy cap counts as code-compliant infrastructure.",
+    "text": "Seattle's emergency management app pinged residents at dawn with a mandatory hat inspection checklist, citing wind shear models that predict entire fedora districts collapsing under the rain wall. One city engineer was quoted saying the real crisis is that half the population still thinks a soggy newsboy cap counts as code-compliant infrastructure."
   },
   "sponsor_ads": [
     {
-      "headline": "HATTECTURE 2026: Your Head Is Now a Storm Shelter",
-      "body": "When Seattle's forecast calls for raining sheds, our load-bearing fedoras convert from sidewalk sculpture to personal evacuation dome in under sixty seconds. Pre-fitted for cat impact and neighborhood envy.",
-      "tagline": "No refunds after first monsoon."
+      "headline": "Rain Wall Imminent: Call 1-800-HAT-WALL",
+      "body": "Emergency brim reinforcements installed while you sleep. Our crews rappel from rooftops to bolt on cantilevered extensions before the deluge hits downtown.",
+      "tagline": "Not liable for wind shear or sudden fashion regret."
     },
     {
-      "headline": "CAT & SHED RECOVERY: We Retrieve What the Sky Drops",
-      "body": "Professional teams extract your rain-launched outbuildings and confused felines before they become tomorrow's sidewalk décor. Same-day service during all 'Raining Cats and Sheds' alerts.",
-      "tagline": "Bring your own ladder; we bring the net."
+      "headline": "Seattle Hat Emergency: Rent-a-Crown Before Dawn",
+      "body": "Drone drops of modular fedoras and reinforced porkpies begin at 4 a.m. No umbrella culture means your skull needs load-bearing architecture now.",
+      "tagline": "Returns accepted only if the hat is drier than your sense of humor."
     },
     {
-      "headline": "ARCHITECTURAL MILLINERY: Wear the Building, Skip the Basement",
-      "body": "Our 2026 collection of modular hat-roofs lets Seattleites shelter in place without ever leaving the sidewalk. Rated for both light drizzle and airborne tool sheds.",
-      "tagline": "Hats so big they require their own zoning variance."
+      "headline": "Declare Your Own Hat State of Emergency",
+      "body": "Pre-order the 2026 Aqueduct Series: channels built into the crown reroute water straight into your neighbor's yard. Because shared rainfall is community rainfall.",
+      "tagline": "May void local drainage ordinances."
     },
     {
-      "headline": "PUBLIC SERVICE ANNOUNCEMENT: HEAD FIRST EVACUATION",
-      "body": "Residents without structural headgear are advised to report to the nearest Hat Dome before the next wave of precipitation begins redistributing local real estate. Bring proof of residency and a sense of resignation.",
-      "tagline": "Umbrellas still illegal. Compliance mandatory."
+      "headline": "Citywide Hat Evacuation Advisory",
+      "body": "Abandon lightweight caps. Our mobile hat shelters are stocking up on ferroconcrete trilbies rated for sustained rain-wall impact.",
+      "tagline": "Void where hats still float."
     }
   ],
   "stories": [
     {
       "desk": "Business",
-      "headline": "Hat Conglomerate Announces Rain-Proof Subdivision Units",
-      "deck": "Stock rises as models double as emergency housing.",
-      "byline": "Morgan Ellis, Senior Business Writer",
-      "article": "<p>The nation's largest architectural hat manufacturer reported a 340 percent increase in custom commissions following Seattle's latest rain warnings. Executives attributed the surge to homeowners requesting expandable brim structures capable of sheltering entire families during prolonged downpours.</p><p>Analysts noted that traditional real estate developers have begun partnering with millinery firms to convert suburban lots into hybrid living spaces where the primary residence is worn rather than occupied. One prototype includes a detachable garage section that clips onto the crown.</p>",
+      "headline": "Hat Contractors Face Permit Backlog as Seattle Emergency Diverts Inspectors",
+      "deck": "Firms report three-week waits for eaves approvals while crews idle under partial canopies.",
+      "byline": "Marcus Hale, Business Correspondent",
+      "article": "<p>Seattle's declaration of hat emergency has pulled every municipal inspector onto emergency eaves reviews, leaving private hat additions stalled at the permit desk. Contractors who normally complete a basic brim extension in ten days now schedule site visits for mid-March, with material suppliers holding aluminum stock that rusts in open lots.</p><p>One firm in Ballard submitted plans for a reinforced commercial awning only to receive a notice that all non-emergency filings require a signed rain-event declaration from the building owner, a form currently printed on water-soluble paper.</p>",
       "image": "https://images.thejumpuniverse.com/2026-07-27-34-story2.webp",
       "image_provider": "grok"
     }
   ],
-  "real_world_echo": "Mirrors the Bordeaux wildfire evacuation headline by treating endless rain as the crisis that forces tens of thousands to relocate with identical mass-displacement procedures",
-  "generated_at": "2026-07-27T03:59:10.085962+00:00",
+  "real_world_echo": "Mirrors 'Wildfire now nine miles from French city of Bordeaux, mayor warns' and 'wall of flames' by substituting an approaching Pacific Northwest rain wall nine blocks from downtown Seattle with identical official language and stress framing, except the danger is saturation and the mitigation is pre-approved headgear",
+  "generated_at": "2026-07-27T21:16:28.543448+00:00",
   "hero_image": "https://images.thejumpuniverse.com/2026-07-27-34-hero.webp",
   "hero_image_provider": "grok"
 }
