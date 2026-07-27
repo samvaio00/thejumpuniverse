@@ -84,7 +84,7 @@ VEO_POLL_INTERVAL = 12
 VEO_TIMEOUT = 20 * 60
 VEO_COST_PER_CLIP = {"veo3_fast": 0.325, "veo3": 1.275}
 MAX_SLOWMO = 1.6          # max slow-mo stretch before holding the last frame
-RUNWAY_PROMPT_MAX = 700   # prompt length cap (name kept for compat)
+RUNWAY_PROMPT_MAX = 1200  # prompt length cap (Veo handles long prompts; name kept for compat)
 
 # Story-driven scene animation: promptText is built per segment from the
 # edition (headline/deck/theme) + universe registry (inhabitants), instead of
@@ -389,16 +389,19 @@ def runway_prompt_for(story):
     who = inhabitants_short(uni.get("inhabitants", ""))
     theme = story.get("theme") or uni.get("theme") or ""
     theme_motion = THEME_MOTION.get(theme, DEFAULT_THEME_MOTION)
+    headline = " ".join((story.get("headline") or "").split())[:110].rstrip(" ,;:—-")
+    story_line = (f"Story being depicted: {headline}. The people in the scene "
+                  f"visibly act out this exact premise. ") if headline else ""
     prompt = (
+        f"{story_line}"
         f"Animate with strong, clearly visible motion from the very first frame: "
-        f"{action}. The {who} in the scene keep moving — walking, gesturing, "
-        f"turning, reacting, with upbeat comedic energy. {theme_motion}. "
+        f"{action}. The {who} keep moving — walking, gesturing, turning, "
+        f"reacting, with upbeat comedic energy. {theme_motion}. "
         f"Bright cheerful daylight, vivid saturated colors, lively contemporary "
-        f"look — never gloomy, never sepia, never vintage. Fabric and hair move "
-        f"in the wind; sunlight plays across surfaces. Slow dolly-in with clear "
-        f"parallax between foreground and background. Bold, fun animation for "
-        f"the entire duration — never a frozen or static frame. Vertical "
-        f"composition, no text."
+        f"look — never gloomy, never sepia, never vintage. Slow dolly-in with "
+        f"clear parallax between foreground and background. Bold, fun animation "
+        f"for the entire duration — never a frozen or static frame. Vertical "
+        f"composition; no readable text, lettering or signage anywhere."
     )
     if len(prompt) > RUNWAY_PROMPT_MAX:
         prompt = prompt[:RUNWAY_PROMPT_MAX - 1].rsplit(" ", 1)[0].rstrip(" ,;:—-") + "."
