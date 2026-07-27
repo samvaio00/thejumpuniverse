@@ -1,0 +1,112 @@
+{
+  "timeline_id": 34,
+  "theme": "modern",
+  "date": "2026-07-27",
+  "date_display": "Monday, July 27, 2026",
+  "year": 2026,
+  "universe_name": "The Drenched",
+  "universe_year": 2026,
+  "universe_date_display": "July 27, Year 2026",
+  "galaxy": "Milky Way",
+  "planet": "Earth",
+  "divergence": "the umbrella never caught on — America simply gets rained on, hats are architecture, and Seattle has made peace with it",
+  "story_angle": "explainer on how an everyday task works without the missing thing, reported as the most normal thing in the world",
+  "roles": [
+    "Story: Moonshot Kimi",
+    "Humor: Grok",
+    "Editor: Grok"
+  ],
+  "headline": "Raining Cats and Sheds: Seattle Prepares for Rain-Fueled Evacuations",
+  "deck": "As persistent rain triggers evacuations, Seattle's architectural headwear becomes an unlikely lifeline.",
+  "article": "<p>SEATTLE - Persistent downpours have activated the city's full evacuation protocol, complete with pre-approved hat blueprints filed at the assessor's office. Residents now treat their headgear as certified flotation devices rather than fashion statements.</p><p>Designs undergo strict review for load-bearing capacity and gutter functionality before any resident can step outside. Rejected submissions leave owners scrambling for last-minute reinforcements.</p><p>Evacuation corridors receive mandatory awning checks every 1.8 miles by rain marshals who verify tether strength and clearance. Failure means rerouting entire groups mid-stride.</p><p>Automated messages assign each household to a strip-mall shelter pod according to the prior year's HOA precipitation count. The system treats routine rainfall with the same paperwork intensity once reserved for actual disasters.</p>",
+  "author": "John Doe, Multiverse Gazette Correspondent",
+  "city": "Rainyville",
+  "weather": {
+    "city": "Rainyville",
+    "condition": "Cats Getting Wet, Sheds Staying Dry",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "Evacuations Are for Soft Skulls: Reinforce Your Roof or Get Out",
+    "author": "Dr. Cornelius Brimstone, Certified Cranial Architect and Founder of Brimstone’s Indestructible Shed-Hat Syndicate",
+    "body": "Seattle’s latest tantrum over rain merely proves that weak-minded citizens refuse to upgrade their personal architecture. These so-called evacuations could be avoided if every resident simply replaced their flimsy fedoras with my patented forty-pound cast-iron shed models, complete with working gutters and optional chimney. Instead, people whine about neck strain and visibility while my superior product sits on the shelf. The real crisis is not water but ingratitude toward true innovators like myself, whose designs have kept my own household dry since 2019. Blaming the weather is childish; blaming inadequate headwear is accurate. If a few citizens must remain behind because their current hats lack proper load-bearing beams, that is simply natural selection in action. My competitors’ lightweight nonsense has no place in 2026."
+  },
+  "classifieds": [
+    {
+      "cat": "For Sale",
+      "text": "Priced to move before the next deluge: one slightly waterlogged family-sized fedora-home with skylight brim and built-in drainage gutters. Must evacuate by Friday—cash or crypto only."
+    },
+    {
+      "cat": "Help Wanted",
+      "text": "Urgent: seeking structural milliner to reinforce 200+ residential bowlers ahead of tonight’s shed-storm. Experience with load-bearing feathers a plus; overtime paid in dry socks."
+    },
+    {
+      "cat": "Public Notices",
+      "text": "To the residents of Block 47: your oversized cloche shelters are now officially condemned as evacuation rafts. Please vacate by 6 p.m. or be cited for illegal flotation."
+    },
+    {
+      "cat": "Personals",
+      "text": "Apologies to the couple whose beanie-boat I commandeered during the 3 a.m. downpour—your hat is safe on the roof of the old library. DM for retrieval instructions and possible shared custody."
+    }
+  ],
+  "comic_strip": {
+    "title": "Shed Evac",
+    "panels": [
+      {
+        "caption": "Anchor: 'Raining cats and sheds forces Seattle into mass evacuation—residents told to float on their roof-hats.'"
+      },
+      {
+        "caption": "Mayor: 'Strap on those architectural headpieces and paddle for the hills before the foundations float!'"
+      },
+      {
+        "caption": "Mayor: 'Update—hat-sheds now classified as unlicensed housing. Everyone out.'"
+      }
+    ],
+    "image": "https://images.thejumpuniverse.com/2026-07-27-34-strip.webp",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "Seattle officials are ordering downtown evacuations ahead of the forecasted deluge",
+    "punchline": "because without umbrellas the only thing between residents and a faceful of airborne sheds is a soggy Patagonia cap that's already filing for chapter eleven.",
+    "text": "Seattle officials are ordering downtown evacuations ahead of the forecasted deluge because without umbrellas the only thing between residents and a faceful of airborne sheds is a soggy Patagonia cap that's already filing for chapter eleven."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "HATTECTURE 2026: Your Head Is Now a Storm Shelter",
+      "body": "When Seattle's forecast calls for raining sheds, our load-bearing fedoras convert from sidewalk sculpture to personal evacuation dome in under sixty seconds. Pre-fitted for cat impact and neighborhood envy.",
+      "tagline": "No refunds after first monsoon."
+    },
+    {
+      "headline": "CAT & SHED RECOVERY: We Retrieve What the Sky Drops",
+      "body": "Professional teams extract your rain-launched outbuildings and confused felines before they become tomorrow's sidewalk décor. Same-day service during all 'Raining Cats and Sheds' alerts.",
+      "tagline": "Bring your own ladder; we bring the net."
+    },
+    {
+      "headline": "ARCHITECTURAL MILLINERY: Wear the Building, Skip the Basement",
+      "body": "Our 2026 collection of modular hat-roofs lets Seattleites shelter in place without ever leaving the sidewalk. Rated for both light drizzle and airborne tool sheds.",
+      "tagline": "Hats so big they require their own zoning variance."
+    },
+    {
+      "headline": "PUBLIC SERVICE ANNOUNCEMENT: HEAD FIRST EVACUATION",
+      "body": "Residents without structural headgear are advised to report to the nearest Hat Dome before the next wave of precipitation begins redistributing local real estate. Bring proof of residency and a sense of resignation.",
+      "tagline": "Umbrellas still illegal. Compliance mandatory."
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Business",
+      "headline": "Hat Conglomerate Announces Rain-Proof Subdivision Units",
+      "deck": "Stock rises as models double as emergency housing.",
+      "byline": "Morgan Ellis, Senior Business Writer",
+      "article": "<p>The nation's largest architectural hat manufacturer reported a 340 percent increase in custom commissions following Seattle's latest rain warnings. Executives attributed the surge to homeowners requesting expandable brim structures capable of sheltering entire families during prolonged downpours.</p><p>Analysts noted that traditional real estate developers have begun partnering with millinery firms to convert suburban lots into hybrid living spaces where the primary residence is worn rather than occupied. One prototype includes a detachable garage section that clips onto the crown.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-27-34-story2.webp",
+      "image_provider": "grok"
+    }
+  ],
+  "real_world_echo": "Mirrors the Bordeaux wildfire evacuation headline by treating endless rain as the crisis that forces tens of thousands to relocate with identical mass-displacement procedures",
+  "generated_at": "2026-07-27T03:59:10.085962+00:00",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-27-34-hero.webp",
+  "hero_image_provider": "grok"
+}

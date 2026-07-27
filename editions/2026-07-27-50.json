@@ -1,0 +1,130 @@
+{
+  "timeline_id": 50,
+  "theme": "modern",
+  "date": "2026-07-27",
+  "date_display": "Monday, July 27, 2026",
+  "year": 2026,
+  "universe_name": "Handshake City",
+  "universe_year": 2026,
+  "universe_date_display": "July 27, Year 2026",
+  "galaxy": "Milky Way",
+  "planet": "Earth",
+  "divergence": "the credit score was never invented — banks judge by handshake firmness and landlords read palms",
+  "story_angle": "solemn obituary for a beloved institution nobody can remember the purpose of",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: Grok",
+    "Editor: Grok"
+  ],
+  "headline": "A Fond Farewell to the National Credit Assessment Authority: Shaken, Not Stirred",
+  "deck": "As handshakes take precedence over paperwork, FEMA shelters emerge from the ashes of an agency lost to time.",
+  "article": "<p>In a solemn observance of bureaucratic obsolescence, the National Credit Assessment Authority (NCAA) closed its doors yesterday, leaving behind an echo of forgotten policies and a grip-strength meter bolted to the reception desk, calibrated to a formidable 47 psi for 'prime' applicants. Established in 1992 to assess loan risk, the now-quiet building will soon house FEMA palm-omen shelters as residents flee the Sun Belt, pandemonium spurred by the recent discovery of the elusive 'doom line'.</p><p>Once a bustling hub where grip firmness dictated financial futures, the NCAA became a relic of the past when handshakes were deemed superior to spreadsheets. \"Our meticulous ledgers turned irrelevant overnight,\" lamented former director Mildred P. Authenticate. Her archives, containing 2.3 million forgotten payment histories, now serve as palm-oil blotters for local landlords, baffled by the sudden shift from rigorous assessment to the delicate art of palm reading.</p><p>Every year, local HOA presidents would gather to recite the ancient mantra 'thirty days past due' at a ceremonial dinner, blissfully unaware of its original context. This year, with the NCAA now defunct, they will instead preside over the gathering of palm readings, celebrating the transition with a toast of hand sanitizer in lieu of champagne, in solidarity with those displaced by the encompassing 'data fire'.</p><p>As we bid farewell to the NCAA, we are reminded that in a world where handshake firmness and palm readings preside over credit qualifications, the only thing more fragile than a financial future is the grip of one’s own hand.</p>",
+  "author": "Brett Handshaker, Senior Palm Interpreter",
+  "city": "Handshake Haven",
+  "weather": {
+    "city": "Handshake Haven",
+    "condition": "Firm Grips with a Chance of Squeezes",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "Limp Grips and Lazy Palms: Why the Agency's Demise Is Everyone Else's Fault",
+    "author": "Lord Thaddeus Palmquist, Chair of the Society for Unyielding Wrist Authority",
+    "body": "The shuttering of the National Credit Assessment Authority marks a glorious return to intuitive justice. No more tedious forms; now a single clasp reveals character, while forehead lines expose fiscal destiny. Those flooding FEMA shelters have only themselves to blame—their floppy fedoras clearly weakened their grips and smudged their palm readings, inviting rejection. I, for one, have maintained a vice-like shake since 2019 and resent the implication that my own rejected mortgage application last Tuesday was anything but a tragic misreading of my heart line. Perhaps the solution is mandatory hat removal at every bank, followed by mandatory glove inspections for repeat offenders. This chaos proves society works best when the firm-handed decide who deserves shelter. The rest simply lacked proper posture."
+  },
+  "classifieds": [
+    {
+      "cat": "For Sale",
+      "text": "For Sale: Crates of obsolete FICO reports and shredders from the shuttered National Credit Assessment Authority. Ideal for starting fires or ironic coasters now that handshakes decide everything."
+    },
+    {
+      "cat": "Help Wanted",
+      "text": "Help Wanted: Regional bank seeks loan officers with iron grips and steady eye contact. Palm sweat disqualifies; prior credit analysts need not apply."
+    },
+    {
+      "cat": "Personals",
+      "text": "Personals: Desperate renter seeks landlord skilled in palm reading for immediate housing. Will provide firm three-second handshakes and glowing references from the FEMA shelter."
+    },
+    {
+      "cat": "Public Notices",
+      "text": "Public Notice: Former NCAA director apologizes for misfiling 2.3 million records as kindling. All future assessments will be conducted via handshake at the new shelter annex."
+    }
+  ],
+  "comic_strip": {
+    "title": "Shaken Authority",
+    "panels": [
+      {
+        "caption": "The NCAA chief crushes the last client's fingers: 'One final assessment. Shaken, not stirred.'"
+      },
+      {
+        "caption": "The rejected applicant staggers to a landlord who studies the bruised palm: 'These lines spell eviction before you even move in.'"
+      },
+      {
+        "caption": "FEMA cots fill the shuttered agency: 'Weak grip? Here's your new permanent address.'"
+      }
+    ],
+    "image": "https://images.thejumpuniverse.com/2026-07-27-50-strip.webp",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "The National Credit Assessment Authority is shutting its doors after one last review",
+    "punchline": "where the director's handshake was judged too weak to underwrite his own severance.",
+    "text": "The National Credit Assessment Authority is shutting its doors after one last review where the director's handshake was judged too weak to underwrite his own severance."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "GripForge 2026: Train Like the Authority Never Existed",
+      "body": "Our electro-stim grips simulate the perfect post-handshake tremor so banks still feel that decisive quiver now that the National Credit Assessment Authority is just a fond memory.",
+      "tagline": "Shaken daily, never stirred by paperwork."
+    },
+    {
+      "headline": "PalmLease Pro: Landlord Readings While You Wait",
+      "body": "Download the app that turns your phone camera into an instant lease oracle; with the old credit authority shaken apart, why risk a firm grip when your life line already says 'approved'?",
+      "tagline": "Lines may lengthen after repeated mortgage negotiations."
+    },
+    {
+      "headline": "Shaken Loan Brokers: We Finish What the Authority Started",
+      "body": "Need capital? Our specialists administer calibrated handshakes calibrated to 2026 banking tolerances—no forms, just the lingering echo of a once-national standard.",
+      "tagline": "Results measured in tremor duration, not decimals."
+    },
+    {
+      "headline": "Authority Memorial Grip Powder: Keep the Farewell Dry",
+      "body": "Sprinkle this talc before every bank visit so your palm stays crisp and unreadable while everyone else mourns the credit authority with clammy regret.",
+      "tagline": "Not for use on actual palms of fortune-tellers."
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Business",
+      "headline": "Federal Reserve Rolls Out National Hand Strength Index After NCAA Closure",
+      "deck": "Loan officers now log grip duration in triplicate before approving mortgages",
+      "byline": "Marcus Hale, Business Correspondent",
+      "article": "<p>Major lenders have converted former credit bureaus into training gyms where applicants repeat firm handshakes for six weeks. The new index rates applicants from 42 to 98 psi, with bonuses for callus density.</p><p>Applicants missing the threshold receive a referral to FEMA omen shelters stocked with grip putty and sanitizer.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-27-50-story2.webp",
+      "image_provider": "grok"
+    },
+    {
+      "desk": "Crime",
+      "headline": "Palm-Reading Booths Replace Background Checks at Apartment Complexes",
+      "deck": "Detectives now subpoena lease-office fate lines in fraud cases",
+      "byline": "Lydia Crane, Crime Desk",
+      "article": "<p>Police departments have begun requesting copies of tenant palm charts from landlords after a series of check-forging arrests traced to weak lifeline readings. Warrants now cite \"doom lines\" as probable cause.</p><p>One precinct reports a 40 percent drop in applications after residents learned their mounts of Venus disqualified them from studio units.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-27-50-story3.webp",
+      "image_provider": "grok"
+    },
+    {
+      "desk": "Agriculture",
+      "headline": "County Fairs Replace Livestock Papers With Daily Handshake Weigh-Ins",
+      "deck": "Blue-ribbon hogs now judged by farmers' grip endurance rather than weight slips",
+      "byline": "Thomas Reed, Agriculture Reporter",
+      "article": "<p>State fairs have installed grip meters at entry gates so 4-H members can prove breeding stock ownership through consistent firmness scores. Judges record daily averages on laminated cards.</p><p>One Iowa exhibitor lost the grand prize after his handshake weakened during a three-day heat wave, dropping his rating below the required 65 psi.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-27-50-story4.webp",
+      "image_provider": "grok"
+    }
+  ],
+  "real_world_echo": "Mirrors the Bordeaux wildfire evacuation by recasting the Authority's abrupt 1990s closure as a sudden 'data fire' that displaced thousands into financial-omen shelters stocked with hand sanitizer",
+  "generated_at": "2026-07-27T04:02:48.212217+00:00",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-27-50-hero.webp",
+  "hero_image_provider": "grok"
+}

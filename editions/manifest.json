@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-26T03:54:26.657431+00:00",
+ "generated_at": "2026-07-27T04:03:10.147968+00:00",
  "dates": {
   "2026-06-28": [
    {
@@ -1967,6 +1967,88 @@
     "deck": "NLSB Hails New 14-Page Filing Requirements as 'Triumph of Plate Security'",
     "divergence": "the sandwich was never invented — lunch requires a plate, eating while walking is impossible, and productivity is down 11%",
     "hero_image": "https://images.thejumpuniverse.com/2026-07-26-95-hero.webp"
+   }
+  ],
+  "2026-07-27": [
+   {
+    "timeline_id": 5,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "Barterville",
+    "headline": "Goat Ledger Catastrophe: Local Electrical Fire Sparks Nationwide Favor Panic",
+    "deck": "Residents scramble as DMV announces temporary goat-favor moratorium; favor-recall clock begins ticking.",
+    "divergence": "money was never invented — the economy runs on barter, favors and extremely detailed ledgers of who owes whom a goat",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-27-5-hero.webp"
+   },
+   {
+    "timeline_id": 8,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "Coldcall County",
+    "headline": "Consumer Affairs Bureau Rates Great Shouting Evacuations: 2.5 Stars, Could Yell Again",
+    "deck": "Eighteen-thousand residents remain unaccounted as officials argue over their decibel performance ratings.",
+    "divergence": "the telephone was never invented — business runs on telegrams, bike messengers and confident shouting",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-27-8-hero.webp"
+   },
+   {
+    "timeline_id": 21,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "Decaftopia",
+    "headline": "National Pre-Dawn Commuter Rail Authority Tragically Passes in the Era of Tea Time",
+    "deck": "Last train rolls into history at 10:47 a.m., leaving bureaucratic relics and nap-waiver forms in its wake.",
+    "divergence": "coffee was never discovered — the American workday starts at 11, meetings before noon are illegal, and tea barons rule Seattle",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-27-21-hero.webp"
+   },
+   {
+    "timeline_id": 34,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "The Drenched",
+    "headline": "Raining Cats and Sheds: Seattle Prepares for Rain-Fueled Evacuations",
+    "deck": "As persistent rain triggers evacuations, Seattle's architectural headwear becomes an unlikely lifeline.",
+    "divergence": "the umbrella never caught on — America simply gets rained on, hats are architecture, and Seattle has made peace with it",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-27-34-hero.webp"
+   },
+   {
+    "timeline_id": 50,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "Handshake City",
+    "headline": "A Fond Farewell to the National Credit Assessment Authority: Shaken, Not Stirred",
+    "deck": "As handshakes take precedence over paperwork, FEMA shelters emerge from the ashes of an agency lost to time.",
+    "divergence": "the credit score was never invented — banks judge by handshake firmness and landlords read palms",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-27-50-hero.webp"
+   },
+   {
+    "timeline_id": 63,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "The Meadowlands",
+    "headline": "National Meadow Certification Program Declared 'A Revolutionary Step Forward' as Suburban Fires Displace Thousands",
+    "deck": "Local residents praise the program's biodiversity even as they flee from 'ecological success' in droves.",
+    "divergence": "the lawn was never invented — yards are gardens, meadows or honest dirt, and HOAs have nothing to enforce",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-27-63-hero.webp"
+   },
+   {
+    "timeline_id": 79,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "The Honor System",
+    "headline": "Pentagon Hails 2.3 Million Guestbook Sign-Ins as 'Model of Efficient Oversight'",
+    "deck": "Nation's Data Breach Transformed into Bureaucratic Triumph with One Man and a Clipboard.",
+    "divergence": "the password was never invented — everything runs on the honor system and a guard named Doug",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-27-79-hero.webp"
+   },
+   {
+    "timeline_id": 92,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "The Yield",
+    "headline": "Roundabout Arbitration Tents Rated Four Stars as Traffic Negotiations Trigger Nationwide Exodus",
+    "deck": "Residents flee gridlock disasters while munching on 'I'm Yielding' mints and flashing courtesy cards.",
+    "divergence": "the traffic light was never invented — every intersection is a negotiation and the roundabout is king",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-27-92-hero.webp"
    }
   ]
  }
