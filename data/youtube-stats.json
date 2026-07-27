@@ -1,13 +1,30 @@
 {
-  "generated_at": "2026-07-26T20:16:43+00:00",
+  "generated_at": "2026-07-27T04:49:31+00:00",
   "channel_id": "UCyPIYczypKJ6dIuoHhv_9ow",
   "channel_url": "https://www.youtube.com/channel/UCyPIYczypKJ6dIuoHhv_9ow",
   "totals": {
-    "videos": 24,
-    "views": 315,
+    "videos": 25,
+    "views": 316,
     "likes": 6
   },
   "videos": [
+    {
+      "id": "YdNGgh6qMIY",
+      "title": "What if money was never invented? July 27 Multiverse News #shorts",
+      "url": "https://www.youtube.com/watch?v=YdNGgh6qMIY",
+      "published": "2026-07-27T04:31:43+00:00",
+      "thumbnail": "https://i2.ytimg.com/vi/YdNGgh6qMIY/hqdefault.jpg",
+      "views": 0,
+      "likes": 0,
+      "rating": 0.0,
+      "is_short": true,
+      "history": [
+        [
+          "2026-07-27T04:49:31+00:00",
+          0
+        ]
+      ]
+    },
     {
       "id": "T5TqYV9foVA",
       "title": "What if the traffic light was never invented? July 26 Multiverse News #shorts",
@@ -43,7 +60,7 @@
       "url": "https://www.youtube.com/watch?v=ou7ROLH-oLg",
       "published": "2026-07-25T03:59:10+00:00",
       "thumbnail": "https://i4.ytimg.com/vi/ou7ROLH-oLg/hqdefault.jpg",
-      "views": 11,
+      "views": 12,
       "likes": 0,
       "rating": 0.0,
       "is_short": true,
@@ -75,6 +92,10 @@
         [
           "2026-07-26T20:16:43+00:00",
           11
+        ],
+        [
+          "2026-07-27T04:49:31+00:00",
+          12
         ]
       ]
     },
@@ -397,7 +418,8 @@
           "2026-07-12T14:37:34+00:00",
           1
         ]
-      ]
+      ],
+      "stale": true
     },
     {
       "id": "OMdtdwYLqn0",
