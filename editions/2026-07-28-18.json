@@ -16,97 +16,97 @@
     "Humor: Grok",
     "Editor: Grok"
   ],
-  "headline": "Sunburnt and Paperwork-Heavy: Maricopa DMV Struggles as Heat Front Advances",
-  "deck": "As July's blistering temperatures roll in, the annual license renewal cycle becomes a bureaucratic sauna.",
-  "article": "<p>As residents brace for July's impending heat front, the Maricopa County DMV has implemented new protocols to handle license renewals. Officials, facing record temperatures that make outdoor waiting areas feel like a slow-cooked roast, have issued a detailed memo on the latest requirements for applicants. In a move that local employees are calling \"routine red tape,\" anyone renewing their license must now submit Form 47-HF, declaring their planned shade-sail arrival window at least 72 hours in advance. Failure to comply will result in an automatic deferral until October.</p><p>\"It's for everyone's safety, really,\" said DMV supervisor Marlene Dobbins, as she calibrated the oscillating fans mounted on tripods at the photo stations. \"We're doing our best to ensure that every moment spent in line is as comfortable as the regulations allow. This equipment calibration check is vital to the process, and it's all standard procedure now.\"</p><p>Moreover, applicants renewing licenses after 10 a.m. will automatically be stamped with a bright orange 'DEFERRED UNTIL OCTOBER' label and routed to the seasonal satellite office in Flagstaff, which is reportedly expecting a line similar to that of a popular summer festival—just with more paperwork and fewer amenities.</p><p>The DMV's press release emphasized that any delays caused by the heat front will not be considered an emergency, insisting instead that all citizens remain calm and stay hydrated, with water stations strategically placed between rows of paperwork. Residents are reminded that despite the oppressive heat, their renewal applications are still subject to the same processing timelines as in any other 'normal' season—whatever that might be in a world without air conditioning.</p>",
-  "author": "Dwight L. Quill, Senior Correspondent of Multiverse Gazette",
+  "headline": "Phoenix DMV Announces 'Shade-Tastic' Summer Renewal Procedure",
+  "deck": "Applicants Required to Provide Notarized Awning Diagrams to Obtain Heat-Endurance Permits",
+  "article": "<p>The Phoenix Department of Motor Vehicles has unveiled new summer paperwork renewal rules that mandate applicants supply their own shade structures. Beginning this July, anyone seeking to renew their driver's license must complete their paperwork in twelve-minute intervals while under a personally procured shaded area.</p><p>Applicants are now required to bring a notarized awning diagram—and two witnesses to verify its efficacy—before they can even begin the paperwork process. 'This is merely a common-sense response to our scorching summers,' stated DMV spokesperson Ray Awningsworth. 'It’s the same logic we apply to sunscreen regulations, just with added paperwork and witnesses.' Forms will be printed on heat-reflective stock, conveniently doubling as emergency visors should applicants stray too far from their shade structures.</p><p>DMV staff are also tracking 'shade compliance points,' which can be traded for expedited processing times, a twist that has led citizens to form competitive shade clubs like the 'Shady Shades Alliance.' Failure to comply with shade regulations may result in a full 90-day paperwork freeze.</p>",
+  "author": "Sunny Heatwave, Senior Public Affairs Correspondent",
   "city": "Phoenix",
   "weather": {
     "city": "Phoenix",
-    "condition": "Heat Wave Halts DMV Processing",
+    "condition": "Sunburn Advisory: Stay Indoors, Please",
     "temp": 72,
     "high": 78,
     "low": 65
   },
   "oped": {
-    "title": "Sweat Equity: Maricopa DMV Heat Is Exactly What License Seekers Deserve",
-    "author": "Lord Percival Chillsworth, Emeritus Professor of Personal Inconvenience",
-    "body": "The Maricopa DMV's so-called crisis is no crisis at all but a welcome filter. Without air conditioning's coddling, only the truly committed will endure the queue, and I say good riddance to the rest. These sunburnt applicants should simply relocate north like civilized persons instead of burdening the system with their paperwork and complaints. My own renewal, handled comfortably from the Alps last season, required no such theatrics. Banning wide-brimmed hats would further improve matters by ensuring uniform exposure and discouraging loitering. The real scandal is not the heat but these desert residents' refusal to accept nature's lesson. If anything, we should extend lines into the parking lot and eliminate shade structures altogether. Their discomfort builds character I never needed, and the Sun Belt would be emptier still without their stubbornness."
+    "title": "Awnings Over Anarchy: Why the DMV's Diagrams Save Civilization",
+    "author": "Horace Blister, Esquire, Grand Poobah of the Anti-Sunburn League",
+    "body": "In these trying times, the Phoenix DMV deserves praise for mandating notarized awning diagrams prior to issuing heat-endurance permits. Far from bureaucratic nonsense, this requirement safeguards our sun-baked society from the folly of inadequate shade. Those complaining about the process simply lack the foresight to commission proper architectural renderings, preferring instead their flimsy fedoras and pathetic pop-up tents. I, for one, submitted my blueprint weeks ago—a magnificent cantilevered structure worthy of a Roman villa—and await approval with the patience of a true patriot. The real scandal lies with shirkers who blame the heat rather than their own shoddy hat choices. Perhaps next, applicants should construct prototypes on-site, complete with wind resistance tests. Anything less invites chaos in our annual exodus to cooler climes. My own rival's hasty sketch was rightly rejected, proving the system's integrity."
   },
   "classifieds": [
     {
+      "cat": "Legal",
+      "text": "Experienced notary offers mobile awning-diagram certification for Phoenix DMV permits; bring your own ladder and sunblock, fees due in non-meltable currency."
+    },
+    {
       "cat": "Help Wanted",
-      "text": "Maricopa DMV urgently hiring renewal clerks who won't melt before October. Bring your own shade and tolerance for paperwork that spontaneously combusts."
+      "text": "Phoenix DMV applicant urgently hiring freelance architect to produce notarizable shade blueprints before October; must tolerate 110-degree client meetings."
     },
     {
       "cat": "For Sale",
-      "text": "2018 pickup, plates valid till July 31. Owner relocating north after three hours in the license queue left him with second-degree burns and zero patience."
+      "text": "For Sale: Set of pre-approved awning diagrams complete with fake notary stamps; barely used, perfect for summer renewal rush, cash or traded ice only."
     },
     {
-      "cat": "Lost & Found",
-      "text": "Lost at Maricopa DMV: one renewal packet, two water bottles, and the last shred of civic duty. Finder may keep the heat stroke."
-    },
-    {
-      "cat": "Public Notices",
-      "text": "To the gentleman who passed out on Form 4B: your paperwork is still here, slowly cooking. Please retrieve before it becomes legal tender."
+      "cat": "Personals",
+      "text": "Single Phoenix resident seeks partner with existing notarized awning for shared DMV endurance permit; must enjoy sweating and have good liability insurance."
     }
   ],
   "comic_strip": {
-    "title": "DMV Meltdown",
+    "title": "Awning Inquisition",
     "panels": [
       {
-        "caption": "Sunburnt applicant: 'License expired last month. Line's moved slower than the heat front.'"
+        "caption": "Clerk stamps form: 'Heat-endurance permit demands notarized awning diagrams with exact square-footage measurements.'"
       },
       {
-        "caption": "Clerk fans papers: 'We process renewals after the congressional forms. They'll be back in October.'"
+        "caption": "Applicant wipes brow: 'My carport cover good enough?' Clerk: 'Only if engineered, signed, and filed in triplicate by licensed draftsman.'"
       },
       {
-        "caption": "Clerk: 'Next! Florida's down to eleven residents—your spot's waiting.'"
+        "caption": "Clerk: 'Denial logged. Your summer evacuation slot now requires separate notarized shade permit for the highway.'"
       }
     ],
     "image": "https://images.thejumpuniverse.com/2026-07-28-18-strip.webp",
     "image_provider": "grok"
   },
   "joke": {
-    "setup": "Maricopa DMV clerks told reporters they remain fully operational despite the advancing heat front.",
-    "punchline": "They just lowered the counter height so applicants can fill out forms while lying on the floor after heatstroke.",
-    "text": "Maricopa DMV clerks told reporters they remain fully operational despite the advancing heat front. They just lowered the counter height so applicants can fill out forms while lying on the floor after heatstroke."
+    "setup": "The Phoenix DMV's new 'Shade-Tastic' summer renewal tents promise canvas relief and misting hoses for anyone still dumb enough to handle their license in July.",
+    "punchline": "Residents call it progress, since the only other option is mailing your paperwork to a congressman who won't be back until the temperature drops below felony levels.",
+    "text": "The Phoenix DMV's new 'Shade-Tastic' summer renewal tents promise canvas relief and misting hoses for anyone still dumb enough to handle their license in July. Residents call it progress, since the only other option is mailing your paperwork to a congressman who won't be back until the temperature drops below felony levels."
   },
   "sponsor_ads": [
     {
-      "headline": "DMV Heat-Exemption Stickers: Pre-Approved for 2026",
-      "body": "Skip the sunburnt queue at Maricopa with our notarized waiver that expires only when Congress reconvenes in October. One stamp and your paperwork stays legible until the next heat front.",
-      "tagline": "Valid only north of the 35th parallel."
+      "headline": "Sedona Sub-Basement DMV Annex: No Sun, No Shade-Tastic Lies",
+      "body": "Skip Phoenix's outdoor renewal circus and license your car 300 feet underground where the rocks stay a civilized 58 degrees. Shuttle departs at dusk; bring your own headlamp and existential dread.",
+      "tagline": "Federal approval pending until October when Congress thaws."
     },
     {
-      "headline": "Portable Paperwork Cabanas – Now With Extra Shade",
-      "body": "Erects in under sixty seconds to shield forms from melting ink while you wait three hours for a simple renewal. Maricopa staff report fewer fainting incidents per shift.",
-      "tagline": "Assembly requires two residents; Florida models sold separately."
+      "headline": "Own All Eleven Florida Residents' Abandoned Homes",
+      "body": "For the price of one Phoenix parking spot, acquire an entire Naples cul-de-sac complete with wilted palms and zero DMV foot traffic.",
+      "tagline": "Deed includes perpetual rights to the last working ceiling fan."
     },
     {
-      "headline": "Northern License Swap Service: Arizona Plates for Alaskan Ones",
-      "body": "Trade your sun-scorched Maricopa tags for frost-proof equivalents before the DMV line claims another victim. Includes complimentary relocation advice for the remaining ten Floridians.",
-      "tagline": "Congressional adjournment discount applies."
+      "headline": "Helium Shade Balloons: Official Phoenix DMV Queue Partner",
+      "body": "Rent a personal cloud that follows you from the 'Shade-Tastic' tent to your car before the asphalt liquefies your shoes.",
+      "tagline": "Not responsible for downdrafts or congressional-level gridlock."
     },
     {
-      "headline": "Sweat-Proof DMV Complaint Forms: Government Edition",
-      "body": "Pre-printed on heat-resistant stock that survives 120-degree waits and still records your exact grievance about the paperwork backlog. Endorsed by the eleven permanent residents of Florida.",
-      "tagline": "Not valid in jurisdictions with functional cooling."
+      "headline": "Congressional Summer Hideaway: Ice-Block Desks for Empty Offices",
+      "body": "While lawmakers adjourn until October, outfit your vacated DC cubicle with our melt-and-pray cooling slabs that double as paperweights for unfinished bills.",
+      "tagline": "Evaporation stains may resemble the national deficit."
     }
   ],
   "stories": [
     {
-      "desk": "Crime",
-      "headline": "Phoenix Patrol Logs Spike in 'DMV Heat Delay' Citations",
-      "deck": "Officers issue three thousand warnings before noon as renewal lines stretch into the 110-degree shade",
-      "byline": "Lydia Torres, Crime Desk",
-      "article": "<p>Maricopa County deputies report a 240 percent rise in drivers presenting DMV appointment stubs instead of current registration. Command has authorized a temporary 'sun tolerance' window allowing officers to accept same-day proof of visit before writing the ticket.</p><p>One patrol log notes a motorist who produced a July 3 renewal receipt dated three summers prior, claiming the line had simply never shortened. Supervisors ordered the form photocopied for the training manual.</p>",
+      "desk": "Business",
+      "headline": "Notary Chains Expand Awning Certification Departments for DMV Permits",
+      "deck": "Demand spikes as applicants submit detailed shade blueprints before summer renewals",
+      "byline": "Harold Finch, Business Desk",
+      "article": "<p>Phoenix-based notary firms have added evening shifts to process the surge of heat-endurance permit applications, each requiring scaled awning diagrams signed and sealed by licensed professionals. Desert Line Certification reports processing 1,200 submissions last week alone, with most applicants attaching fabric samples and wind-load calculations.</p><p>Executives credit the DMV policy for standardizing awning specifications across three states, though one chain now charges extra for revisions after county inspectors rejected a proposed retractable shade for insufficient overlap on the vehicle hood.</p>",
       "image": "https://images.thejumpuniverse.com/2026-07-28-18-story2.webp",
       "image_provider": "grok"
     }
   ],
-  "real_world_echo": "mirrors 'Wildfire now nine miles from French city of Bordeaux, mayor warns' by framing the annual northward 'heat front' as an advancing procedural emergency that forces DMV offices to issue new evacuation-style schedules",
-  "generated_at": "2026-07-28T03:29:51.053180+00:00",
+  "real_world_echo": "mirrors the France heatwave headline by tracing how extreme summer temperatures force petty administrative adaptations in a Sun Belt city",
+  "generated_at": "2026-07-28T21:41:14.153482+00:00",
   "hero_image": "https://images.thejumpuniverse.com/2026-07-28-18-hero.webp",
   "hero_image_provider": "grok"
 }

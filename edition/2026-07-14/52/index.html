@@ -341,7 +341,7 @@
         }
     </style>
 <script type="application/ld+json" id="structured-data">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Bureaucratic Organs of Power Lay to Rest: Inter-Board Procedural Arbitration Office Dissolved Amidst Corporate Moss-Graft Boom", "description": "Committee Allows Synergy Directive to Outlive Its Own Obsolescence — Citizens Gather to Mourn the Loss of Triplicate Memos.", "url": "https://thejumpuniverse.com/edition/2026-07-14/52/", "datePublished": "2026-07-14T00:00:00Z", "author": {"@type": "Person", "name": "Emerald Quill, Senior Correspondent of Procedural Affairs"}, "keywords": "what if, alternate history, parallel universe, counterfactual history, thought experiment, satire, funny news, multiverse", "genre": ["Satire", "Alternate History", "Science Fiction"], "publisher": {"@type": "Organization", "name": "Multiverse Gazette", "logo": {"@type": "ImageObject", "url": "https://thejumpuniverse.com/logo.png"}}, "image": ["https://images.thejumpuniverse.com/2026-07-14-52-hero.webp"]}</script>
-<script type="application/ld+json" id="video-schema">{"@context": "https://schema.org", "@type": "VideoObject", "name": "What if money was never invented? July 27 Multiverse News #shorts", "description": "What if money was never invented? July 27 Multiverse News #shorts — daily satirical episode from the Multiverse Gazette: parallel Americas, each missing one invention, habit, or idea.", "thumbnailUrl": ["https://i2.ytimg.com/vi/YdNGgh6qMIY/hqdefault.jpg"], "uploadDate": "2026-07-27T04:31:43+00:00", "embedUrl": "https://www.youtube-nocookie.com/embed/YdNGgh6qMIY", "contentUrl": "https://www.youtube.com/watch?v=YdNGgh6qMIY", "publisher": {"@type": "Organization", "name": "Multiverse Gazette", "logo": {"@type": "ImageObject", "url": "https://thejumpuniverse.com/logo.png"}}}</script>
+<script type="application/ld+json" id="video-schema">{"@context": "https://schema.org", "@type": "VideoObject", "name": "What if air conditioning was never invented? July 28 Multiverse News #shorts", "description": "What if air conditioning was never invented? July 28 Multiverse News #shorts — daily satirical episode from the Multiverse Gazette: parallel Americas, each missing one invention, habit, or idea.", "thumbnailUrl": ["https://i4.ytimg.com/vi/c1lmK7W53AI/hqdefault.jpg"], "uploadDate": "2026-07-28T03:56:42+00:00", "embedUrl": "https://www.youtube-nocookie.com/embed/c1lmK7W53AI", "contentUrl": "https://www.youtube.com/watch?v=c1lmK7W53AI", "publisher": {"@type": "Organization", "name": "Multiverse Gazette", "logo": {"@type": "ImageObject", "url": "https://thejumpuniverse.com/logo.png"}}}</script>
 <script id="edition-pin">window.__EDITION__ = {"timeline_id": 52, "date": "2026-07-14"};</script>
 </head>
 <body data-theme="cyberpunk">
@@ -465,7 +465,7 @@
 
         <section class="episode-section" id="daily-episode" aria-label="Daily video episode">
             <h3 class="section-title" style="font-size: 1.2rem;">Today&#39;s Episode — 60 Seconds From a Parallel America</h3>
-            <div class="episode-embed-wrap"><div id="episode-embed"><iframe src="https://www.youtube-nocookie.com/embed/YdNGgh6qMIY" title="What if money was never invented? July 27 Multiverse News #shorts" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>
+            <div class="episode-embed-wrap"><div id="episode-embed"><iframe src="https://www.youtube-nocookie.com/embed/c1lmK7W53AI" title="What if air conditioning was never invented? July 28 Multiverse News #shorts" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>
             <p class="episode-more"><a href="https://www.youtube.com/@thejumpuniverse" target="_blank" rel="noopener">Every episode on YouTube &rarr;</a></p>
         </section>
         <section class="archive-section" id="archive-section" style="display: none;" aria-label="Archive">
@@ -610,9 +610,10 @@
             const cur = toDateStr(currentState.date);
             document.getElementById('btn-prev').disabled = cur <= manifestDates[0];
             document.getElementById('btn-latest').disabled = cur >= manifestDates[manifestDates.length - 1];
-            // A universe jump needs at least two published timelines for this date.
-            const avail = availableTimelines(cur);
-            document.getElementById('btn-jump').disabled = avail.length > 0 && avail.length < 2;
+            // Jump roulettes across the whole archive; it only needs two
+            // published editions in total to have somewhere to go.
+            const total = Object.values(manifest?.dates || {}).reduce((n, eds) => n + eds.length, 0);
+            document.getElementById('btn-jump').disabled = total > 0 && total < 2;
         }
 
         function getDefaultTimeline(date) {
@@ -1063,13 +1064,28 @@
         }
 
         function jumpUniverse() {
-            // Jump to a different published timeline for the current date, so the
-            // reader always lands on real content. Past dates may have fewer editions.
-            let pool = availableTimelines(toDateStr(currentState.date));
-            if (!pool.length) pool = Array.from({ length: NUM_UNIVERSES }, (_, i) => i + 1);
-            const choices = pool.filter(t => t !== currentState.timelineId);
-            if (!choices.length) return;
-            currentState.timelineId = choices[Math.floor(Math.random() * choices.length)];
+            // Multiverse roulette: jump to a random edition anywhere in the
+            // published archive — any date, any timeline — never the one the
+            // reader is currently on. The archive grows daily, so the pool of
+            // destinations keeps getting richer.
+            const cur = `${toDateStr(currentState.date)}|${currentState.timelineId}`;
+            const pool = [];
+            for (const [d, eds] of Object.entries(manifest?.dates || {})) {
+                for (const e of eds) {
+                    if (`${d}|${e.timeline_id}` !== cur) pool.push([d, e.timeline_id]);
+                }
+            }
+            if (!pool.length) {
+                // Manifest unavailable — fall back to a random timeline today.
+                const choices = Array.from({ length: NUM_UNIVERSES }, (_, i) => i + 1)
+                    .filter(t => t !== currentState.timelineId);
+                if (!choices.length) return;
+                currentState.timelineId = choices[Math.floor(Math.random() * choices.length)];
+            } else {
+                const [d, tid] = pool[Math.floor(Math.random() * pool.length)];
+                currentState.date = parseDate(d);
+                currentState.timelineId = tid;
+            }
             loadEdition();
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }

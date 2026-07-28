@@ -16,115 +16,115 @@
     "Humor: Grok",
     "Editor: Grok"
   ],
-  "headline": "Mayor Declares State of Emergency as Non-Round Pricing Approaches; Couches to Be Flipped",
-  "deck": "Local officials vow to stamp out decimal contagion before it spreads to other suburbs, insisting all seating is safely devoid of loose change.",
-  "article": "<p>In an unprecedented move, Mayor Clive Roundtree has declared a state of emergency in the suburb of Maplewood, just nine miles from Boise, following reports of a non-round pricing anomaly detected at a Starbucks drive-thru. The latte, originally priced at $4.90, has prompted urgent containment measures across the county. \"This is not just a minor mispricing; it is a singularity that threatens our established economic order,\" Roundtree stated, donning his emergency response vest, emblazoned with the motto: 'Every Cent Counts.'</p><p>The Mayor's office has mobilized couch-flipping teams on a local HOA level, with President Marjorie Centsworth mandating immediate inspections of all living rooms to ensure that no loose change remains hidden in upholstery. \"We cannot risk any stray decimals infiltrating our community, nor can we allow the very fabric of our round-numbered society to unravel,\" she declared, as residents attempted to flip couches that contained nothing but existential dread.</p><p>Meanwhile, the Maplewood County Fair has suspended all $4.99 admission tickets, opting instead for $5.00 wristbands, distributed under armed guard. \"We can never be too careful,\" said fair organizer Greg Fiverson, as he oversaw the heavy-handed implementation of new ticketing protocols. \"One minor decimal could send our whole pricing structure spiraling into chaos!\"</p><p>Local economists agree that should this decimal issue extend beyond Maplewood, it could trigger a catastrophic domino effect, obliterating the last remnants of stable pricing. The entire county is now on high alert, wary that the next latte could very well be the tipping point.</p>",
-  "author": "Pamela P. Lockett, Senior Price Analyst",
-  "city": "Roundrock",
+  "headline": "Couch Crisis: Congress Orders Forensic Audit of 14 Empty Couches Following Routine Mall Inspection",
+  "deck": "FBI Deploys Change-Sniffing Dogs to Strip Mall Parking Lots Amid National Panic Over Missing Upholstered Contents",
+  "article": "<p>What started as a standard walk-through at Sunnyvale Mall in Nebraska has ballooned into a congressional order for a nationwide forensic audit of fourteen suspiciously vacant couches. Senator Gordon T. Quibble (R-NE) framed the effort as a matter of public accounting: \"If these couches are just lying there collecting dust, who knows what else is being hidden in the upholstery? The American people deserve answers—preferably in round numbers.\"</p><p>HUD has sent FBI change-sniffing dogs to forty-seven strip-mall lots. The dogs are expected to locate stray fluff faster than human agents. The Pentagon has shifted $2.3 billion from missile programs to lint-trap satellites, a reallocation that defense analysts view as creative budgeting rather than strategic necessity.</p><p>The Round-Dollar Pricing Law now requires quarterly couch certification forms from every homeowners association. These filings will feed a national couch-filling index meant to measure neighborhood stability through upholstery volume. HOA chair Gladys P. Holdtight welcomed the paperwork: \"An empty couch is just a gateway to other, darker secrets.\"</p><p>The National Bureau of Couch Investigations anticipates preliminary findings in weeks. One internal memo already floats the possibility that the couches simply arrived empty, a theory that has not yet slowed the audit schedule.</p>",
+  "author": "Patricia F. Duvall, Senior Staff Writer",
+  "city": "Couchsville",
   "weather": {
-    "city": "Roundrock",
-    "condition": "Couch prices round up, panic ensues",
+    "city": "Couchsville",
+    "condition": "Couches now officially classified as air",
     "temp": 72,
     "high": 78,
     "low": 65
   },
   "oped": {
-    "title": "Decimals Are Just Hats for Numbers",
-    "author": "Horace V. Bluster, PhD in Unyielding Certainty and President of the Couch Fluff Preservation League",
-    "body": "The mayor’s bold stand against decimal contagion deserves our applause, not second-guessing from soft-headed reformers. In a world where every price has always ended in zero, introducing cents is an invitation to chaos that no sane citizen should tolerate. My own sectional, scrupulously free of coins for decades, would become a minefield of loose change the moment some fool prices milk at $3.79. The obvious remedy is to ban all numerals containing curves; straight lines only, enforced by roving geometry inspectors. Critics claim this will wreck the stock market, but markets are for people who enjoy suspense, and suspense is merely decimal thinking in disguise. Let the suburbs remain round and my cushions remain undisturbed. Anything less is an assault on civilized seating."
+    "title": "Couch Voids Demand Total Furniture Scrutiny",
+    "author": "Dr. Reginald Cushionforth, Emeritus Chair of Round-Number Economics at the Institute for Mall Stability",
+    "body": "Fourteen empty couches reveal a preparedness gap that round pricing alone cannot fix. Any upholstered gap now counts as a potential decimal breach. The audit is the least disruptive option available. Shoppers who wear oversized hats that obstruct quick visual checks bear some responsibility for the current backlog. My own sectional, purchased at a reassuring $2,400, has never held so much as a nickel, yet the mall findings suggest others may still harbor fractional sympathies. Transparent furniture and a retail hat ban would close the loophole without further satellite spending."
   },
   "classifieds": [
     {
       "cat": "For Sale",
-      "text": "Pristine sectional couch, $800 flat. Flipped daily since the mayor's decree, zero loose change recovered. Must sell before decimal inspectors quarantine the block."
+      "text": "Empty sectional couch, $800 round. Post-FBI audit, zero change inside per new national rules. Desperate seller, couch must go before next mall sweep."
     },
     {
       "cat": "Help Wanted",
-      "text": "Emergency couch-flip crew wanted: $2000 monthly, all cash rounded. Duties include checking every sofa in town for non-round pricing residue. Start tonight."
-    },
-    {
-      "cat": "Public Notices",
-      "text": "Official notice: All local menus now display only multiples of ten. Owner apologizes for yesterday's $12.50 special that nearly triggered the emergency."
+      "text": "Seeking forensic couch auditors for Strip Mall chain. $20,000 per empty-furniture report, must tolerate change-sniffing dogs. Start yesterday."
     },
     {
       "cat": "Lost & Found",
-      "text": "Lost: One stray decimal point last seen on a coffee shop receipt. Finder may keep any associated change, though we all know that's impossible."
+      "text": "Lost: Any hope of finding loose change in public seating. Found: fourteen fully audited, totally vacant couches. Reward: exactly $0."
+    },
+    {
+      "cat": "Public Notices",
+      "text": "Public Notice: Mall management apologizes for the empty-couch panic. All future furniture will be pre-cleared with round pricing only. No refunds on nothing."
     }
   ],
   "comic_strip": {
-    "title": "Couch Protocol",
+    "title": "Couch Audit",
     "panels": [
       {
-        "caption": "Mayor at podium: \"Non-round prices detected at the county line—flip every couch!\""
+        "caption": "Congressional aide: \"These 14 couches flagged in the mall sweep contain zero contents. Launch the forensic audit.\""
       },
       {
-        "caption": "Deputy with clipboard: \"No pennies exist, so we'll stamp out the idea of them. Search crews, move!\""
+        "caption": "FBI handler: \"Deploy the change-sniffing dogs to every strip-mall lot. National security demands it.\""
       },
       {
-        "caption": "Worker lifts sofa: \"Nothing but lint, sir. The contagion was us.\""
+        "caption": "Dog handler, radio crackling: \"Negative findings. Couches were always empty. No pennies to begin with.\""
       }
     ],
     "image": "https://images.thejumpuniverse.com/2026-07-28-76-strip.webp",
     "image_provider": "grok"
   },
   "joke": {
-    "setup": "With non-round pricing threatening to disrupt the round-number economy, the mayor has declared a state of emergency and called for all couches to be flipped.",
-    "punchline": "Spoiler: the only spare change anyone finds is in their personality.",
-    "text": "With non-round pricing threatening to disrupt the round-number economy, the mayor has declared a state of emergency and called for all couches to be flipped. Spoiler: the only spare change anyone finds is in their personality."
+    "setup": "With pennies long abolished and every couch legally stripped of contents,",
+    "punchline": "Congress still dropped $3.7 million on forensic swabs to confirm the 14 mall sofas weren’t hiding the currency they erased.",
+    "text": "With pennies long abolished and every couch legally stripped of contents, Congress still dropped $3.7 million on forensic swabs to confirm the 14 mall sofas weren’t hiding the currency they erased."
   },
   "sponsor_ads": [
     {
-      "headline": "RoundGuard Emergency Stabilizer",
-      "body": "Install our app before the mayor's deadline and force every listed price back to a clean multiple of ten. Non-round numbers trigger automatic refunds in couch lint only.",
-      "tagline": "Not liable for actual pennies that never existed."
+      "headline": "Pre-Audited Empty Couches Inc.",
+      "body": "Skip the congressional spotlight with our factory-certified sofas, each verified to contain literally nothing before delivery reaches the mall. 400 dollars per unit, round and audit-ready.",
+      "tagline": "Fourteen couches later, still no surprises."
     },
     {
-      "headline": "Certified Couch Flipper Service",
-      "body": "Our teams arrive within the hour to upend every sofa in your home and confirm the legally mandated emptiness. Pricing starts at twenty dollars because one dollar is impossible.",
-      "tagline": "Gloves provided; emotional support not."
+      "headline": "Forensic Furniture Recovery",
+      "body": "Lost your last dime? Our specialists now specialize in proving it was never there, with same-day reports for any couch facing federal review. 50 dollars flat, no fractions.",
+      "tagline": "Penny-free since the beginning of prices."
     },
     {
-      "headline": "Pre-Crisis Price Rounding Clinic",
-      "body": "Bring your menus and invoices today for same-day rounding performed by licensed numerologists. Avoid tomorrow's state-of-emergency surcharges by paying exactly thirty dollars now.",
-      "tagline": "Walk-ins receive free dust removal from any flipped cushion."
+      "headline": "National Couch Emptiness Registry",
+      "body": "Register your furniture today to preempt the next routine inspection and avoid becoming headline number fifteen. Enrollment 20 dollars, valid through the current crisis.",
+      "tagline": "Because empty is the new full."
     },
     {
-      "headline": "Nothing-Inside Assurance Spray",
-      "body": "One spritz guarantees your furniture remains vacant even after the entire city begins flipping couches at dawn. Sold only in ten-dollar cans to honor the timeline.",
-      "tagline": "If contents appear, the mayor was right."
+      "headline": "Nothing-to-Hide Cushion Refills",
+      "body": "Replace whatever used to lurk in your sofa with our sterile vacuum packs of certified absence, ensuring every cushion passes the mall test. 30 dollars per set of four.",
+      "tagline": "Congress approved, change not included."
     }
   ],
   "stories": [
     {
-      "desk": "Business",
-      "headline": "Grocery Chains Remove All Items Priced Under Five Dollars",
-      "deck": "Store managers now require supervisors to audit every shelf label twice daily",
-      "byline": "Elena Vargas, Business Reporter",
-      "article": "<p>Supermarkets throughout the county have pulled every product below five dollars from sale after the mayor's emergency order. Clerks mark any potential decimal on incoming shipments and reroute those cases to a central holding area.</p><p>Regional distributors have added new whole-dollar minimums to contracts, with penalties for any supplier that ships a label containing cents. Compliance teams conduct weekly walks through stockrooms to verify adherence.</p>",
+      "desk": "Crime",
+      "headline": "Change-Sniffing Dogs Cite Three Drivers for Concealing Canadian Quarters",
+      "deck": "Federal teams link glove-box hoards to broader upholstery shortfall",
+      "byline": "Derek Harlan, Crime Desk",
+      "article": "<p>After the mall sweeps, agents moved to interstate rest stops when metallic traces showed up on dashboards. Drivers described the quarters as toll-road souvenirs; investigators recorded them as unreported coin migration. Three citations followed under an emergency treasury rule against foreign small currency. Motorists signed affidavits promising no further change and accepted random future stops.</p>",
       "image": "https://images.thejumpuniverse.com/2026-07-28-76-story2.webp",
       "image_provider": "grok"
     },
     {
-      "desk": "Crime",
-      "headline": "Burglars Leave Empty-Handed After Targeting Residential Couches",
-      "deck": "Detectives log zero recoveries despite thirty-eight reported incidents overnight",
-      "byline": "Marcus Reed, Crime Desk",
-      "article": "<p>Police recorded a string of break-ins focused solely on living-room furniture, with intruders overturning sofas and checking cushions before departing. No valuables were taken from any of the homes.</p><p>Officers have begun advising callers to skip 911 calls for such searches, directing residents instead to schedule voluntary flips through the newly formed municipal inspection unit.</p>",
+      "desk": "Business",
+      "headline": "Furniture Retailers Report Record Returns of Sectionals Lacking Hidden Compartments",
+      "deck": "Buyers demand refunds after discovering standard empty interiors",
+      "byline": "Lydia Voss, Business Reporter",
+      "article": "<p>Retailers are fielding returns from buyers who expected loose coins beneath cushions. Every model has shipped empty since the shift to whole-dollar pricing. Disclosure tags now state that each piece contains only foam and fabric. Outlets have added a twenty-dollar restocking fee for the added inspection work.</p>",
       "image": "https://images.thejumpuniverse.com/2026-07-28-76-story3.webp",
       "image_provider": "grok"
     },
     {
       "desk": "Science",
-      "headline": "University Lab Verifies Zero Loose Change in All Sampled Seating",
-      "deck": "Engineers trace the result to stitching patterns set in the 1950s",
-      "byline": "Dr. Lena Torres, Science Correspondent",
-      "article": "<p>Researchers at the county technical institute examined one hundred thirty-seven couches and reported no coins or bills inside any of them. The study attributed the outcome to standard manufacturing seams that seal off internal cavities.</p><p>Follow-up tests on newer models showed identical results, confirming that furniture makers have never incorporated pockets capable of holding currency regardless of price structures in circulation.</p>",
+      "headline": "National Lab Confirms Couch Fibers Contain No Trace Elements of Currency",
+      "deck": "Researchers map decade-long absence of metallic deposits in household seating",
+      "byline": "Dr. Elena Pruitt, Science Correspondent",
+      "article": "<p>Tests on upholstery from two hundred homes across six states found no copper or zinc particles. Researchers trace the absence to the 1792 decision against minting the penny. The report advises households to skip cushion checks during cleaning. Results match earlier examinations of bus seats and theater rows.</p>",
       "image": "https://images.thejumpuniverse.com/2026-07-28-76-story4.webp",
       "image_provider": "grok"
     }
   ],
-  "real_world_echo": "Wildfire now nine miles from French city of Bordeaux, mayor warns - mirrored as mayor warning of non-round pricing approaching a city, treated with identical urgency and containment language",
-  "generated_at": "2026-07-28T03:30:31.561794+00:00",
+  "real_world_echo": "Mysterious deaths of 14 elephants in Kenya prompts urgent inquiry, mirrored by treating the emptiness of exactly 14 couches as a baffling national mystery requiring urgent inquiry",
+  "generated_at": "2026-07-28T21:41:59.454864+00:00",
   "hero_image": "https://images.thejumpuniverse.com/2026-07-28-76-hero.webp",
   "hero_image_provider": "grok"
 }
