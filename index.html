@@ -609,9 +609,10 @@
             const cur = toDateStr(currentState.date);
             document.getElementById('btn-prev').disabled = cur <= manifestDates[0];
             document.getElementById('btn-latest').disabled = cur >= manifestDates[manifestDates.length - 1];
-            // A universe jump needs at least two published timelines for this date.
-            const avail = availableTimelines(cur);
-            document.getElementById('btn-jump').disabled = avail.length > 0 && avail.length < 2;
+            // Jump roulettes across the whole archive; it only needs two
+            // published editions in total to have somewhere to go.
+            const total = Object.values(manifest?.dates || {}).reduce((n, eds) => n + eds.length, 0);
+            document.getElementById('btn-jump').disabled = total > 0 && total < 2;
         }
 
         function getDefaultTimeline(date) {
@@ -1062,13 +1063,28 @@
         }
 
         function jumpUniverse() {
-            // Jump to a different published timeline for the current date, so the
-            // reader always lands on real content. Past dates may have fewer editions.
-            let pool = availableTimelines(toDateStr(currentState.date));
-            if (!pool.length) pool = Array.from({ length: NUM_UNIVERSES }, (_, i) => i + 1);
-            const choices = pool.filter(t => t !== currentState.timelineId);
-            if (!choices.length) return;
-            currentState.timelineId = choices[Math.floor(Math.random() * choices.length)];
+            // Multiverse roulette: jump to a random edition anywhere in the
+            // published archive — any date, any timeline — never the one the
+            // reader is currently on. The archive grows daily, so the pool of
+            // destinations keeps getting richer.
+            const cur = `${toDateStr(currentState.date)}|${currentState.timelineId}`;
+            const pool = [];
+            for (const [d, eds] of Object.entries(manifest?.dates || {})) {
+                for (const e of eds) {
+                    if (`${d}|${e.timeline_id}` !== cur) pool.push([d, e.timeline_id]);
+                }
+            }
+            if (!pool.length) {
+                // Manifest unavailable — fall back to a random timeline today.
+                const choices = Array.from({ length: NUM_UNIVERSES }, (_, i) => i + 1)
+                    .filter(t => t !== currentState.timelineId);
+                if (!choices.length) return;
+                currentState.timelineId = choices[Math.floor(Math.random() * choices.length)];
+            } else {
+                const [d, tid] = pool[Math.floor(Math.random() * pool.length)];
+                currentState.date = parseDate(d);
+                currentState.timelineId = tid;
+            }
             loadEdition();
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
