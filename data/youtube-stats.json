@@ -1,13 +1,30 @@
 {
-  "generated_at": "2026-07-27T20:41:05+00:00",
+  "generated_at": "2026-07-28T09:44:40+00:00",
   "channel_id": "UCyPIYczypKJ6dIuoHhv_9ow",
   "channel_url": "https://www.youtube.com/channel/UCyPIYczypKJ6dIuoHhv_9ow",
   "totals": {
-    "videos": 25,
-    "views": 318,
+    "videos": 26,
+    "views": 340,
     "likes": 6
   },
   "videos": [
+    {
+      "id": "c1lmK7W53AI",
+      "title": "What if air conditioning was never invented? July 28 Multiverse News #shorts",
+      "url": "https://www.youtube.com/watch?v=c1lmK7W53AI",
+      "published": "2026-07-28T03:56:42+00:00",
+      "thumbnail": "https://i4.ytimg.com/vi/c1lmK7W53AI/hqdefault.jpg",
+      "views": 18,
+      "likes": 0,
+      "rating": 0.0,
+      "is_short": true,
+      "history": [
+        [
+          "2026-07-28T09:44:40+00:00",
+          18
+        ]
+      ]
+    },
     {
       "id": "YdNGgh6qMIY",
       "title": "What if money was never invented? July 27 Multiverse News #shorts",
@@ -35,7 +52,7 @@
       "url": "https://www.youtube.com/watch?v=T5TqYV9foVA",
       "published": "2026-07-26T04:23:49+00:00",
       "thumbnail": "https://i1.ytimg.com/vi/T5TqYV9foVA/hqdefault.jpg",
-      "views": 80,
+      "views": 82,
       "likes": 0,
       "rating": 0.0,
       "is_short": true,
@@ -55,6 +72,10 @@
         [
           "2026-07-26T20:16:43+00:00",
           80
+        ],
+        [
+          "2026-07-28T09:44:40+00:00",
+          82
         ]
       ]
     },
@@ -64,7 +85,7 @@
       "url": "https://www.youtube.com/watch?v=ou7ROLH-oLg",
       "published": "2026-07-25T03:59:10+00:00",
       "thumbnail": "https://i4.ytimg.com/vi/ou7ROLH-oLg/hqdefault.jpg",
-      "views": 12,
+      "views": 14,
       "likes": 0,
       "rating": 0.0,
       "is_short": true,
@@ -100,6 +121,10 @@
         [
           "2026-07-27T04:49:31+00:00",
           12
+        ],
+        [
+          "2026-07-28T09:44:40+00:00",
+          14
         ]
       ]
     },
@@ -401,7 +426,8 @@
           "2026-07-19T04:31:49+00:00",
           5
         ]
-      ]
+      ],
+      "stale": true
     },
     {
       "id": "9WbNg_vL4Q4",
