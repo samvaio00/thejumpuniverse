@@ -1,0 +1,112 @@
+{
+  "timeline_id": 92,
+  "theme": "modern",
+  "date": "2026-07-28",
+  "date_display": "Tuesday, July 28, 2026",
+  "year": 2026,
+  "universe_name": "The Yield",
+  "universe_year": 2026,
+  "universe_date_display": "July 28, Year 2026",
+  "galaxy": "Milky Way",
+  "planet": "Earth",
+  "divergence": "the traffic light was never invented — every intersection is a negotiation and the roundabout is king",
+  "story_angle": "explainer on how an everyday task works without the missing thing, reported as the most normal thing in the world",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: Grok",
+    "Editor: Grok"
+  ],
+  "headline": "Roundabouts Render Emergency Evacuations 'Mere Suggestions' Amid 14-Hour Traffic Negotiations",
+  "deck": "Consumer Reports declares 'yield' word of the year; HOA presidents seek negotiation training before next wildfire.",
+  "article": "<p>Consumer Reports Wildfire Evacuation Rankings now factor nine miles to the exit as a 14-hour deadlock at the Woodland Roundabout. Specialized arbitration tents have appeared overnight, stocked with color-coded yield flags and mediator vests reclassified as disaster essentials.</p><p>Residents reach intersections only to discover the true bottleneck sits inside negotiation protocols. Local officials have granted HOAs authority over traffic flow. 'Our HOA presidents wielding veto power over fire-truck priorities was unforeseen,' said Eldridge Bumfuzzle of the Maplewood Lane HOA. 'Without a clear path for first responders, the fire itself loses purpose.'</p><p>Evacuation kits now carry ratings based on minutes lost per four-way standoff. Premium versions include a collapsible negotiation table so citizens preserve dignity while the wildfire advances.</p><p>Across the Atlantic, Bordeaux Mayor Jean-Claude LaFleur issues distance warnings. Local dispatcher Rita Wanzel notes the contrast: 'They receive mileage alerts. We receive intersection delay statistics. Next comes a notification for every failed negotiation.'</p>",
+  "author": "Martha J. Roundtree, Senior Intersection Correspondent",
+  "city": "Negotiation City",
+  "weather": {
+    "city": "Negotiation City",
+    "condition": "Roundabout Ruckus: Traffic Jammed Again",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "Yielding Is Civilization: Blame the Hats, Not the Roundabouts",
+    "author": "Sir Reginald Yieldington III, Lifetime President of the No-Traffic-Light League and Owner of 47 Private Roundabouts",
+    "body": "Hysteria over 14-hour wildfire evacuations misses the point: roundabouts reward patience, not paralysis. Drivers who circled all day simply rehearsed the mutual deference our forebears expected. Consumer Reports rightly elevates 'yield,' yet the real obstruction is oversized sun hats that swallow eyebrow cues. Mandatory hat inspections at every roundabout, run by HOA presidents, would restore order. My own double-roundabout already keeps unwanted in-laws at bay. Defer to established proprietors during crises and the system works. The emergency is attitude, not pavement."
+  },
+  "classifieds": [
+    {
+      "cat": "For Sale",
+      "text": "Barely driven 2025 Rivian, now permanently idling after 14-hour wildfire evacuation talks at the Oak Circle roundabout; comes with custom yield flashcards and a free 'Consumer Reports Word of the Year' bumper sticker."
+    },
+    {
+      "cat": "Help Wanted",
+      "text": "Local HOA seeks certified negotiation trainers specializing in 4-way standoffs before next blaze; must handle honking-induced panic and possess advanced 'yield' diplomacy skills. Apply by text only, response times may vary."
+    },
+    {
+      "cat": "Lost & Found",
+      "text": "Lost: my entire morning commute and last shred of sanity during the Elm Street mega-roundabout gridlock; found in its place an unwanted expertise in polite vehicular bickering and a half-eaten protein bar."
+    },
+    {
+      "cat": "Public Notices",
+      "text": "Public apology from the Pine Grove HOA president: sorry for turning yesterday's evacuation into a 14-hour debate seminar; next wildfire drill will include mandatory yield training and exit-priority lotteries."
+    }
+  ],
+  "comic_strip": {
+    "title": "Yield or Burn",
+    "panels": [
+      {
+        "caption": "Fire engine loops the roundabout for the ninth hour: 'Evacuation order! Yield to the left or we all cook!'"
+      },
+      {
+        "caption": "HOA president rolls down his window: 'My turn signal grants priority. We negotiate terms before anyone leaves.'"
+      },
+      {
+        "caption": "Fire chief sighs into the radio: 'Fine. Suggest we burn.'"
+      }
+    ],
+    "image": "https://images.thejumpuniverse.com/2026-07-28-92-strip.webp",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "When the chemical plant exploded, officials declared a mandatory evacuation via the city's extensive roundabout system.",
+    "punchline": "Fourteen hours later, the survivors were the ones who just drove straight through the yield signs.",
+    "text": "When the chemical plant exploded, officials declared a mandatory evacuation via the city's extensive roundabout system. Fourteen hours later, the survivors were the ones who just drove straight through the yield signs."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "Evacuation Still a Suggestion? Book Our Roundabout Diplomats",
+      "body": "Certified negotiators ride shotgun and resolve every merge standoff in under forty minutes, even when the whole city is fleeing the same direction. Book now; the next fourteen-hour jam might not be hypothetical.",
+      "tagline": "No guarantees if the opposing lane cites precedent."
+    },
+    {
+      "headline": "Fourteen-Hour Evac Got You? Try the New Yield-Proof Survival Ration",
+      "body": "Shelf-stable packets labeled 'I'll go first if you signal' that fit in your glovebox and double as polite concession flags. Perfect for the driver who wants to outlast everyone else at the circle.",
+      "tagline": "May cause spontaneous right-of-way arguments."
+    },
+    {
+      "headline": "New App: Pre-Negotiate Your Exit Route",
+      "body": "Upload your destination and the algorithm sells priority at every roundabout before you even start the engine, turning today's headline into a minor inconvenience instead of a civic ritual.",
+      "tagline": "Beta users report 3-hour delays instead of 14; terms renegotiable."
+    },
+    {
+      "headline": "Public Notice: Roundabout Arbitration Booths Now at All Major Exits",
+      "body": "Trained mediators in climate-controlled kiosks settle who yields first during mass evacuations so the fire department doesn't have to join the discussion. Open 24 hours or until everyone agrees.",
+      "tagline": "Booths close only after unanimous consent; bring snacks."
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Business",
+      "headline": "Yield Partners Books 400 Percent Surge in Evacuation Negotiation Contracts",
+      "deck": "Firms now bill by the hour spent circling the same six-car standoff.",
+      "byline": "Elena Vargas, Business Reporter",
+      "article": "<p>Wildfire exits now demand up to 14 hours of intersection talks, sending roundabout diplomacy seminars into overdrive. Courses drill participants on yielding first and hand signals legible across eight lanes.</p><p>Yield Partners logged a 400 percent jump in contracts last quarter from school districts and nursing homes forced to move entire buildings through uncontrolled merges. The firm traces the spike to Consumer Reports crowning 'yield' word of the year.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-28-92-story2.webp",
+      "image_provider": "grok"
+    }
+  ],
+  "real_world_echo": "Wildfire now nine miles from French city of Bordeaux, mayor warns — mirrored as distance warning replaced by intersection delay statistics",
+  "generated_at": "2026-07-28T03:33:49.885088+00:00",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-28-92-hero.webp",
+  "hero_image_provider": "grok"
+}

@@ -1,18 +1,6 @@
 {
- "generated_at": "2026-07-27T21:19:46.304569+00:00",
+ "generated_at": "2026-07-28T03:33:59.171445+00:00",
  "dates": {
-  "2026-06-28": [
-   {
-    "timeline_id": 4,
-    "theme": "cyberpunk",
-    "year": 2097,
-    "universe_name": "Glasswing",
-    "headline": "NeuroCorp Unveils Ad-Free Dreams for 499 Credits a Month; Free-Tier Sleepers to Receive 40% More Soup",
-    "deck": "The Ministry of Cognition hailed the premium tier as \"a bold step toward mental privacy for those who can afford it,\" then adjourned for a brand-integrated nap.",
-    "divergence": "Neural interfaces became mandatory and the advertisements are inside now",
-    "hero_image": "https://images.thejumpuniverse.com/2026-06-28-4-hero.webp"
-   }
-  ],
   "2026-06-29": [
    {
     "timeline_id": 5,
@@ -2049,6 +2037,88 @@
     "deck": "Urbanites now face delays in both life and death as unyielding traffic stalemates take center stage.",
     "divergence": "the traffic light was never invented — every intersection is a negotiation and the roundabout is king",
     "hero_image": "https://images.thejumpuniverse.com/2026-07-27-92-hero.webp"
+   }
+  ],
+  "2026-07-28": [
+   {
+    "timeline_id": 5,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "Barterville",
+    "headline": "Maple Street’s HOA Promotes Reporter Mid-Investigation, Halting Favor Fire in its Tracks",
+    "deck": "Chickens strut back to their coops while goat ledgers wobble toward a twelve-block reckoning.",
+    "divergence": "money was never invented — the economy runs on barter, favors and extremely detailed ledgers of who owes whom a goat",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-28-5-hero.webp"
+   },
+   {
+    "timeline_id": 18,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "Sweatlandia",
+    "headline": "Sunburnt and Paperwork-Heavy: Maricopa DMV Struggles as Heat Front Advances",
+    "deck": "As July's blistering temperatures roll in, the annual license renewal cycle becomes a bureaucratic sauna.",
+    "divergence": "air conditioning was never invented — the Sun Belt empties every summer, Congress adjourns till October, and Florida has eleven residents",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-28-18-hero.webp"
+   },
+   {
+    "timeline_id": 21,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "Decaftopia",
+    "headline": "Seattle Post-Intelligencer Promotes Reporter Mid-Tea Leaf Blight Probe: Newly Appointed Editor Spills Tea on Bureaucratic Shenanigans",
+    "deck": "Promotion or sabotage? In an unprecedented twist, HR discovers that staff morale can’t bloom without nap breaks.",
+    "divergence": "coffee was never discovered — the American workday starts at 11, meetings before noon are illegal, and tea barons rule Seattle",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-28-21-hero.webp"
+   },
+   {
+    "timeline_id": 34,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "The Drenched",
+    "headline": "Phoenix Accountant Sues Over Federal Hat Subsidy Assessment—Claims Hats are a Form of Emotional Distress",
+    "deck": "Despite the flatness of his roof and the absence of precipitation, he seeks rain equity for Seattle's drenching bureaucracy.",
+    "divergence": "the umbrella never caught on — America simply gets rained on, hats are architecture, and Seattle has made peace with it",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-28-34-hero.webp"
+   },
+   {
+    "timeline_id": 47,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "The Unadvertised",
+    "headline": "National Slogan Accreditation Board Closes After Long Silence, Leaving Behind a Legacy of Vague Verbiage",
+    "deck": "Final stamp on 'Now with more' will haunt board’s halls as poems take over billboards.",
+    "divergence": "advertising was never invented — products spread by rumor, billboards carry poems, and the Super Bowl is just football",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-28-47-hero.webp"
+   },
+   {
+    "timeline_id": 63,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "The Meadowlands",
+    "headline": "Feds Launch Full Inquiry After Residents Spot 'Lawn' Near Local Shopping Plaza",
+    "deck": "Authorities scramble to define 'lawn-adjacent' risks while confused citizens report suspicious mowers.",
+    "divergence": "the lawn was never invented — yards are gardens, meadows or honest dirt, and HOAs have nothing to enforce",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-28-63-hero.webp"
+   },
+   {
+    "timeline_id": 76,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "Roundtown",
+    "headline": "Mayor Declares State of Emergency as Non-Round Pricing Approaches; Couches to Be Flipped",
+    "deck": "Local officials vow to stamp out decimal contagion before it spreads to other suburbs, insisting all seating is safely devoid of loose change.",
+    "divergence": "the penny was never minted — every price is a round number and couches contain nothing",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-28-76-hero.webp"
+   },
+   {
+    "timeline_id": 92,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "The Yield",
+    "headline": "Roundabouts Render Emergency Evacuations 'Mere Suggestions' Amid 14-Hour Traffic Negotiations",
+    "deck": "Consumer Reports declares 'yield' word of the year; HOA presidents seek negotiation training before next wildfire.",
+    "divergence": "the traffic light was never invented — every intersection is a negotiation and the roundabout is king",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-28-92-hero.webp"
    }
   ]
  }

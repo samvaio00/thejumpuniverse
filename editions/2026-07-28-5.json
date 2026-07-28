@@ -1,0 +1,121 @@
+{
+  "timeline_id": 5,
+  "theme": "modern",
+  "date": "2026-07-28",
+  "date_display": "Tuesday, July 28, 2026",
+  "year": 2026,
+  "universe_name": "Barterville",
+  "universe_year": 2026,
+  "universe_date_display": "July 28, Year 2026",
+  "galaxy": "Milky Way",
+  "planet": "Earth",
+  "divergence": "money was never invented — the economy runs on barter, favors and extremely detailed ledgers of who owes whom a goat",
+  "story_angle": "investigative report whose author is promoted mid-article specifically to stop the investigation",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: Grok",
+    "Editor: Grok"
+  ],
+  "headline": "Maple Street’s HOA Promotes Reporter Mid-Investigation, Halting Favor Fire in its Tracks",
+  "deck": "Chickens strut back to their coops while goat ledgers wobble toward a twelve-block reckoning.",
+  "article": "<p>The Maple Street Homeowners Association named local reporter Barnaby Fleece its new Senior Favor Reconciliation Coordinator, yanking him off the Favor Fire story that had exposed 47 shaky chicken-for-goat swaps. The promotion arrived the same morning those swaps threatened to ripple across twelve blocks.</p><p>Fleece’s draft on the vanished chicken was locked in the HOA vault as too delicate for daylight. Chairperson Margaret Billow declared the move necessary to keep the bartering grid from fracturing, though the announcement skipped any mention of the buried report.</p><p>Neighbors, including the owners of the returned bird, greeted the news with narrowed eyes; the promotion and the official containment notice landed on the same bulletin. Harold Tiller, still holding a borrowed goat, muttered that a few fowl entries hardly justified freezing the whole ledger.</p><p>The HOA now urges everyone to audit their own books and warns that a second watchdog may be posted if enough oats can be scraped together to pay for it.</p>",
+  "author": "Clara P. Ledger, Chief Barter Correspondent",
+  "city": "Ledgerwood Springs",
+  "weather": {
+    "city": "Ledgerwood Springs",
+    "condition": "Post-Promotion Calm, Goat Trade Winds at 15 mph",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "Hats Off to the HOA: Why Goat-Ledger Chaos Is the True Hero",
+    "author": "Reginald Q. Featherstone III, Supreme Arbiter of Unpaid Favors and Certified Chicken Psychic",
+    "body": "Maple Street’s HOA deserves a medal for elevating that meddlesome reporter to Senior Favor Reconciliation Coordinator and snuffing the Favor Fire before it devoured every last goat chit. Further digging only multiplies debts; I myself still owe three hens for a rake I never borrowed. The real villains remain those oversized hats that started the whole cascade. Mandatory hat registries and public brim-shaming would settle accounts faster than any investigation. My own ledgers are pristine, apart from three unprovable goat discrepancies. Progress requires fewer questions, not more."
+  },
+  "classifieds": [
+    {
+      "cat": "Public Notices",
+      "text": "Maple Street HOA hereby apologizes for promoting the lead reporter mid-probe; all pending favor-fire claims are now frozen until goat ledgers stabilize."
+    },
+    {
+      "cat": "Help Wanted",
+      "text": "Desperate HOA treasurer seeks ledger balancer fluent in chicken swaps and neighborly IOUs; must prevent total goat-account meltdown by Friday."
+    },
+    {
+      "cat": "For Sale",
+      "text": "Four safely returned chickens, no questions asked; trading for three months of HOA favors or one solid goat credit to offset halted investigation fallout."
+    },
+    {
+      "cat": "Lost & Found",
+      "text": "Found: reporter's encrypted favor notebook listing every Maple Street debt; claim it by promising to drop the probe or barter a detailed apology ledger entry."
+    }
+  ],
+  "comic_strip": {
+    "title": "Promoted to Ledger Lock",
+    "panels": [
+      {
+        "caption": "Reporter flips through goat ledger at HOA meeting: \"These chicken swaps lead straight to your favor chain.\""
+      },
+      {
+        "caption": "HOA chair slaps a new nameplate down: \"Promotion to Chief Balancer. Effective immediately.\""
+      },
+      {
+        "caption": "Reporter stares at exploding ledger: \"Chickens are home, but now I owe the HOA seven goats I never borrowed.\""
+      }
+    ],
+    "image": "https://images.thejumpuniverse.com/2026-07-28-5-strip.webp",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "The HOA knew the reporter’s favor-fire exposé would torch their entire ledger of back-alley goat swaps and casserole IOUs.",
+    "punchline": "So they promoted him to Director of Internal Affairs, instantly making his next entry read \"one career advancement, payable by never filing the story.\"",
+    "text": "The HOA knew the reporter’s favor-fire exposé would torch their entire ledger of back-alley goat swaps and casserole IOUs. So they promoted him to Director of Internal Affairs, instantly making his next entry read \"one career advancement, payable by never filing the story.\""
+  },
+  "sponsor_ads": [
+    {
+      "headline": "LedgerLock HOA Edition",
+      "body": "Automatically promotes your most persistent favor auditors to VP of Goat Reconciliation the moment their investigation threatens to ignite a neighborhood debt spiral. Syncs with 2026's universal favor APIs to erase three outstanding maple-syrup swaps before breakfast.",
+      "tagline": "Now featuring one-click promotion; actual reporter consent optional per revised bylaws."
+    },
+    {
+      "headline": "Mid-Investigation Promotion Services",
+      "body": "Tired of reporters tracing who owes whom a lawn-mowing chain back to 2019? We barter your HOA board a fresh title for the snooping party and log the whole thing as a single neutral favor.",
+      "tagline": "Results not guaranteed if the promoted party remembers the original complaint."
+    },
+    {
+      "headline": "GoatFire Suppressant Ledgers",
+      "body": "Our patented ink changes color the instant a favor chain reaches critical mass, letting your street's HOA quietly reassign the investigator to 'Community Harmony Officer' before the blaze spreads.",
+      "tagline": "Batteries and actual goats sold separately; no refunds in any currency."
+    },
+    {
+      "headline": "Reporter-to-Board Swap Kiosk",
+      "body": "Pop your troublesome journalist into this booth, select 'instant promotion,' and watch the pending favor audit vanish under a fresh layer of administrative goats. Works best on Maple Street, July 28, 2026.",
+      "tagline": "Kiosk accepts only verified unpaid favors; malfunctions may promote the kiosk itself."
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Agriculture",
+      "headline": "Maple Street Chicken Returns Force Local Hatchery to Rebalance Entire Favor Chain",
+      "deck": "One restored poultry debt now requires three new goat entries before harvest season",
+      "byline": "Derek Harlan, Agriculture Correspondent",
+      "article": "<p>The county extension office logged 47 new ledger adjustments yesterday after the HOA cleared the outstanding chicken exchange. Hatchery manager Linda Voss confirmed that every restored entry must now be offset against three separate goat obligations before any fall planting swaps can proceed.</p><p>Voss stated the adjustments will delay seed distribution by nine days unless residents submit sworn affidavits detailing exactly which neighbor currently holds the matching goat credit.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-28-5-story2.webp",
+      "image_provider": "grok"
+    },
+    {
+      "desk": "Crime",
+      "headline": "Suburban Man Charged With Unauthorized Ledger Alteration After HOA Promotion",
+      "deck": "Detectives recover 12 forged goat entries hidden in a backyard shed",
+      "byline": "Marcia Kline, Crime Desk",
+      "article": "<p>Police arrested Thomas Reed, 48, of Maple Street after a routine favor audit revealed mismatched entries dating back to last spring. Reed allegedly adjusted his own goat balance to reflect services never performed, hoping the HOA distraction would prevent further review.</p><p>Investigators noted the forged entries matched the exact handwriting used on three neighborhood carpool schedules, confirming the pattern through cross-referenced signatures.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-28-5-story3.webp",
+      "image_provider": "grok"
+    }
+  ],
+  "real_world_echo": "Mirrors wildfire nine miles from Bordeaux with a favor fire nine blocks from downtown, local officials issue containment warnings",
+  "generated_at": "2026-07-28T03:30:10.315667+00:00",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-28-5-hero.webp",
+  "hero_image_provider": "grok"
+}

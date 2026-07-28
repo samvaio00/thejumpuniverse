@@ -1,0 +1,130 @@
+{
+  "timeline_id": 21,
+  "theme": "modern",
+  "date": "2026-07-28",
+  "date_display": "Tuesday, July 28, 2026",
+  "year": 2026,
+  "universe_name": "Decaftopia",
+  "universe_year": 2026,
+  "universe_date_display": "July 28, Year 2026",
+  "galaxy": "Milky Way",
+  "planet": "Earth",
+  "divergence": "coffee was never discovered — the American workday starts at 11, meetings before noon are illegal, and tea barons rule Seattle",
+  "story_angle": "investigative report whose author is promoted mid-article specifically to stop the investigation",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: Grok",
+    "Editor: Grok"
+  ],
+  "headline": "Seattle Post-Intelligencer Promotes Reporter Mid-Tea Leaf Blight Probe: Newly Appointed Editor Spills Tea on Bureaucratic Shenanigans",
+  "deck": "Promotion or sabotage? In an unprecedented twist, HR discovers that staff morale can’t bloom without nap breaks.",
+  "article": "<p>The Seattle Post-Intelligencer elevated its lead investigator Timothy Longleaf to senior editor while he examined bribes linking tea barons to county clerks who green-lit pre-noon meetings for oolong pallets. Longleaf’s last dispatch, scribbled on a napkin, asked who gains when the 11 a.m. line is crossed. That question now sits in a drawer as the paper diverts staff to nap stipends and tea contracts.</p><p>The editor’s opening order postponed coverage of FEMA recliner ratings until after the Wednesday leaf burial. He added a two-hour paid rest period, claiming rest improves copy the way hot water draws flavor from leaves. Source files from the probe vanished from the shared drive under compliance rules, leaving the story to steep in silence.</p>",
+  "author": "Clara S. Blend, Chief Absurdity Officer",
+  "city": "Seattle",
+  "weather": {
+    "city": "Seattle",
+    "condition": "Bureaucratic Fog with Tea Leaves",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "Nap Breaks or Blight Breaks: Why Promotions Save Tea Barons",
+    "author": "Lord Archibald Slumberly, Duke of Overbrewed Leaves and Certified Morale Saboteur",
+    "body": "Elevating the reporter mid-probe was not sabotage but sound husbandry. In a city that starts work at eleven and outlaws dawn meetings, swift promotion keeps the barons’ supply lines intact. The true menace is those floppy hats that hide mildew and invite inspection. Mandatory siestas from noon to three would silence every inquiry by putting witnesses to sleep. Forbid the hats, lengthen the naps, and let the estates run without interruption."
+  },
+  "classifieds": [
+    {
+      "cat": "Help Wanted",
+      "text": "Tea empire needs nap-break coordinator; duties include blocking pre-noon meetings and outlasting editors promoted during active blight probes."
+    },
+    {
+      "cat": "For Sale",
+      "text": "New editor liquidating tea-sample archive from the leaf-blight case; annotated memos included, cash or trade for blackout masks."
+    },
+    {
+      "cat": "Personals",
+      "text": "Whistleblower seeks late-rising colleague who can explain mid-probe promotions; Seattle tea district, naps preferred, no early arrivals."
+    },
+    {
+      "cat": "Legal",
+      "text": "Post-Intelligencer HR issues formal notice: promotion timing and nap policy enacted to contain shenanigans fallout from the current blight coverage."
+    }
+  ],
+  "comic_strip": {
+    "title": "Blighted Desk",
+    "panels": [
+      {
+        "caption": "'Promotion's live,' the editor tells Jones over the wilted leaves. 'Blight probe's now your problem at 11 a.m.'"
+      },
+      {
+        "caption": "HR leans in: 'Morale wilts without naps. Shenanigans stay in the pot till after noon.'"
+      },
+      {
+        "caption": "Jones lifts the cup: 'Then explain why the baron's blight just spilled on my new contract.'"
+      }
+    ],
+    "image": "https://images.thejumpuniverse.com/2026-07-28-21-strip.webp",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "The Post-Intelligencer promotes its blight-probe reporter to editor mid-investigation",
+    "punchline": "so the only thing that leaks now is whatever the tea barons allow before the illegal noon meetings get postponed again",
+    "text": "The Post-Intelligencer promotes its blight-probe reporter to editor mid-investigation so the only thing that leaks now is whatever the tea barons allow before the illegal noon meetings get postponed again"
+  },
+  "sponsor_ads": [
+    {
+      "headline": "BlightGuard 11:00",
+      "body": "Sanctioned mist for barons under Post-Intelligencer scrutiny; activates only after legal start time and records every editor statement.",
+      "tagline": "Side effects include spontaneous promotion and mild treason."
+    },
+    {
+      "headline": "NoonCourt Scheduler Pro",
+      "body": "App that blocks meetings before 11 and files blight photos under editorial tea spill.",
+      "tagline": "Now with built-in statute of limitations for bureaucratic shenanigans."
+    },
+    {
+      "headline": "SpillProof Leaves",
+      "body": "Silent cultivar that withholds gossip even when the new editor offers promotion mid-probe.",
+      "tagline": "Contains no actual coffee; results may vary after 11 AM."
+    },
+    {
+      "headline": "Baron’s Leak Sealant",
+      "body": "Paste for crates that also seals loose talk during late-morning hearings.",
+      "tagline": "Seattle Post-Intelligencer approved; void where meetings are scheduled before noon."
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Agriculture",
+      "headline": "Pacific Northwest Tea Estates Invoke Blight-Triggered Nap Shifts",
+      "deck": "Harvesters Receive Federal Recliner Subsidies After Morning Rows Are Banned",
+      "byline": "Marcus Hale, Agriculture Correspondent",
+      "article": "<p>Blight forced estates to move crews to 11 a.m. starts and issue recliners that satisfy FEMA rules. Early disputes fell 37 percent once the schedule locked in. Afternoon shifts now carry double pricing on oolong to offset lost morning hours, and any return to pre-noon work would breach the new reimbursement board statutes.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-28-21-story2.webp",
+      "image_provider": "grok"
+    },
+    {
+      "desk": "Business",
+      "headline": "Seattle Tea Conglomerates Report Record Afternoon Earnings After Morning Ban",
+      "deck": "Shareholders Celebrate Elimination of 9 a.m. Conference Calls That Once Drained Productivity",
+      "byline": "Lydia Voss, Business Reporter",
+      "article": "<p>Firms in the tea district booked 22 percent gains after the city barred meetings before noon. Saved commute time now funds longer lunch blends. One logistics outfit applied for an exemption to run pre-noon vans, citing the same reimbursement guidelines that shield the promoted editor from further digging.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-28-21-story3.webp",
+      "image_provider": "grok"
+    },
+    {
+      "desk": "Crime",
+      "headline": "Downtown Seattle Patrols Issue First Citations for Unauthorized Pre-Noon Briefings",
+      "deck": "Suspects Claim They Were Merely Discussing Tea Inventory in Office Lobbies",
+      "byline": "Raymond Quill, Crime Desk",
+      "article": "<p>Three managers were cited at 10:45 a.m. for reviewing blight spreadsheets inside a tea house. Fines track each firm’s afternoon revenue. Officers ruled that any work talk before the legal hour counts as an illegal assembly, regardless of the beverage on the table.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-28-21-story4.webp",
+      "image_provider": "grok"
+    }
+  ],
+  "real_world_echo": "Mirrors wildfire nine miles from Bordeaux by having tea-blight nine miles from Seattle city limits, with officials issuing the same 'adequate containment' statements",
+  "generated_at": "2026-07-28T03:33:59.153067+00:00",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-28-21-hero.webp",
+  "hero_image_provider": "grok"
+}
