@@ -1,0 +1,112 @@
+{
+  "timeline_id": 89,
+  "theme": "modern",
+  "date": "2026-07-29",
+  "date_display": "Wednesday, July 29, 2026",
+  "year": 2026,
+  "universe_name": "The Drift",
+  "universe_year": 2026,
+  "universe_date_display": "July 29, Year 2026",
+  "galaxy": "Milky Way",
+  "planet": "Earth",
+  "divergence": "the leap year was never invented — the calendar has drifted five months, July is snowy, and it is far too late to fix it now",
+  "story_angle": "deadpan report of a catastrophe that everyone involved considers a great success",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: Grok",
+    "Editor: Grok"
+  ],
+  "headline": "USDA Declares July Blizzard a ‘Seasonal Realignment Triumph’",
+  "deck": "While Midwestern cornfields succumb to snow, officials celebrate an ‘early harvest’ ahead of schedule.",
+  "article": "<p>In an unprecedented turn of events, the USDA has officially categorized this July's record-breaking blizzard as a ‘seasonal realignment triumph.’ Following a snow emergency declaration for Fourth of July festivities across major Midwestern cities, including Des Moines, where snowplows cleared bunting-covered streets, officials have taken the unusual step of reframing this winter disaster as an efficient agricultural milestone.</p><p>\"Due to the extraordinary snow conditions, we are pleased to announce that all cornfield losses are being classified as an 'early harvest' for the season,\" stated Undersecretary of Agriculture, Myra Flakes. This reclassification allows grain elevators to qualify for federal 'winter preparedness bonus' payments, despite their reports of total crop loss. \"We believe this clever bureaucratic maneuver will benefit our farmers in the long run,\" she added, without specifying any details on how that might occur.</p><p>Meanwhile, local DMVs have extended summer road-test windows by six weeks in order to accommodate drivers navigating treacherous black ice on interstates. Citizens are advised to be cautious of pedestrians sporting holiday attire while shoveling snow and barbecue enthusiasts building snowmen beside their grills. Residents have begrudgingly accepted July's frosty embrace as a new norm, with many expressing excitement for next month's ‘Winter Wonderland’ Halloween celebration.</p>",
+  "author": "Melvin Snowdrift, Senior Agricultural Analyst",
+  "city": "Frostburgh",
+  "weather": {
+    "city": "Frostburgh",
+    "condition": "Snowflakes Celebrate Mid-Summer Solstice",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "Snowy July? A Glorious USDA Triumph We Should All Applaud",
+    "author": "Horatio Blunderbuss, Esq., Certified Chronological Consultant and Amateur Hat Historian",
+    "body": "The USDA’s bold celebration of our July blizzard as a seasonal realignment triumph is the sort of clear-eyed leadership this drifted calendar demands. Five months off because leap years were wisely ignored? Mere details. Midwestern cornfields under snow are simply early harvests of the inevitable; those farmers should have foreseen it and worn proper headgear instead of those floppy straw atrocities that clearly invited the flakes. My own sturdy fedora has performed flawlessly. To correct matters permanently I suggest banning all crops and converting every acre into a national snow-sculpture park—my shovel-import business would finally receive the recognition it deserves. Progress, not complaints, is what 2026 requires."
+  },
+  "classifieds": [
+    {
+      "cat": "For Sale",
+      "text": "Snowplow attachment for combine harvester, barely used since last February; owner desperate to offload before the next 'realignment' buries the Midwest in August slush."
+    },
+    {
+      "cat": "Help Wanted",
+      "text": "Urgent: Seeking experienced corn huskers willing to work in parkas and crampons; USDA early-harvest bonus promised, though checks may arrive in 2027."
+    },
+    {
+      "cat": "Lost & Found",
+      "text": "Lost: One inflatable pool, last seen in a Nebraska backyard before the July blizzard; finder may keep the ice chunks, just return the floaties."
+    },
+    {
+      "cat": "Public Notices",
+      "text": "Apology from the Midwestern Calendar Correction Committee: we meant to fix leap years back in 1582, but honestly the forms were filed under 'future problems' and now July is permanent winter."
+    }
+  ],
+  "comic_strip": {
+    "title": "Realignment Roast",
+    "panels": [
+      {
+        "caption": "USDA chief in blizzard: \"This July snow is our Seasonal Realignment Triumph.\""
+      },
+      {
+        "caption": "Farmer, waist-deep in drifts: \"Corn's buried. Harvest's dead.\" Chief: \"Nonsense—it's early and on schedule.\""
+      },
+      {
+        "caption": "Chief, radio in hand: \"Mark the fields for next month's official thaw. Or don't. Winter's the new normal.\""
+      }
+    ],
+    "image": "https://images.thejumpuniverse.com/2026-07-29-89-strip.webp",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "The USDA declared July’s blizzard a ‘Seasonal Realignment Triumph’",
+    "punchline": "because it’s easier to rebrand dead crops as ‘naturally refrigerated’ than to admit the calendar has been drunk since 46 BC.",
+    "text": "The USDA declared July’s blizzard a ‘Seasonal Realignment Triumph’ because it’s easier to rebrand dead crops as ‘naturally refrigerated’ than to admit the calendar has been drunk since 46 BC."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "Realignment-Ready Shovels",
+      "body": "Our five-month-late July model clears the USDA-declared triumph without acknowledging the drift, now with heated denial grips.",
+      "tagline": "Not liable for actual summer."
+    },
+    {
+      "headline": "Blizzard Crop Futures",
+      "body": "Lock in your tomatoes against seasonal realignment at government-approved rates; every bushel comes with a victory certificate.",
+      "tagline": "Past performance is five months behind."
+    },
+    {
+      "headline": "Drift-Compensated Swimwear",
+      "body": "The only July bikini line insulated for snowy realignment, complete with built-in parka hood and USDA triumph tag.",
+      "tagline": "Beach optional, blizzard standard."
+    },
+    {
+      "headline": "Calendar Lag Therapy Sessions",
+      "body": "Weekly group denial sessions for those still expecting June; facilitated by former leap-year researchers now employed by the USDA.",
+      "tagline": "Results may arrive in December."
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Business",
+      "headline": "Retail Chains Stock Snow Blowers Next to Grills for July Sales Push",
+      "deck": "Home improvement firms report bundled flag-and-salt deals clearing shelves faster than expected",
+      "byline": "Michael Harlan, Retail Analyst",
+      "article": "<p>Major home improvement chains have shifted July inventory to place snow blowers beside barbecue grills after five months of calendar drift placed winter weather in midsummer. Internal sales figures show a 340 percent rise in rock salt purchases during the period once reserved for lawn fertilizer.</p><p>Executives credit the change with cutting separate seasonal restocking runs, allowing single-truck deliveries of patriotic bunting and ice melt to suburban stores. Several outlets now run year-round tool promotions that treat driveway maintenance as an extension of outdoor entertaining.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-29-89-story2.webp",
+      "image_provider": "grok"
+    }
+  ],
+  "real_world_echo": "Wildfires in south-west France flare up as region braces for new 40C heatwave, mirrored as an extreme seasonal weather event in the US reframed by officials as a positive bureaucratic milestone instead of catastrophe",
+  "generated_at": "2026-07-29T03:31:26.464724+00:00",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-29-89-hero.webp",
+  "hero_image_provider": "grok"
+}

@@ -1,0 +1,130 @@
+{
+  "timeline_id": 31,
+  "theme": "modern",
+  "date": "2026-07-29",
+  "date_display": "Wednesday, July 29, 2026",
+  "year": 2026,
+  "universe_name": "Documerica",
+  "universe_year": 2026,
+  "universe_date_display": "July 29, Year 2026",
+  "galaxy": "Milky Way",
+  "planet": "Earth",
+  "divergence": "fiction was never invented — all entertainment is documentary, Hollywood does reenactments, and bedtime stories are case studies",
+  "story_angle": "investigative report whose author is promoted mid-article specifically to stop the investigation",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: Grok",
+    "Editor: Grok"
+  ],
+  "headline": "Local Reporter Promoted to VP of Narrative Compliance Mid-Article, Oversight Committee Troubleshooters Fully Booked",
+  "deck": "And they said crime doesn't pay! Now it’s a compliance officer’s job to ensure none of it ever really happened.",
+  "article": "<p>Midway through paragraph seven of his own investigation, Senior Investigative Correspondent Ralph J. Quill received an internal memo elevating him to Vice President of Narrative Compliance. The Department of Documentary Standards issued the notice while Quill was still typing about Nigerian facilities that had already exceeded their monthly quota of 14,200 felony reenactments.</p><p>What began as an exposé on outsourced reenactments became, under the new title, a model of procedural efficiency. Quill’s original notes on bureaucratic self-preservation were reclassified as internal training materials before the next sentence could be finished.</p><p>Local Compliance Manager Felicity W. Grimes reviewed the revised copy and observed that accurate depiction now required the original facts to be adjusted in real time. Quill, still holding the unfinished draft, was instructed to file the promotion certificate as the lead paragraph.</p><p>Residents in the affected districts noted that at least one person was now compensated for ensuring certain incidents stayed off the record. The new VP will supervise the same oversight committee that once reviewed his work, closing the loop on the original assignment.</p>",
+  "author": "Ralph J. Quill, Senior Bureaucratic Correspondent",
+  "city": "Veracity Falls",
+  "weather": {
+    "city": "Veracity Falls",
+    "condition": "Sunny with a chance of edits",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "Why Mid-Article Promotions Are the Only Honest Way Forward",
+    "author": "Horace Vellum, Tenured Chair of Retroactive Accuracy at the Institute for Things That Never Quite Occurred",
+    "body": "The promotion of that reporter mid-sentence proves our system works exactly as designed. Once narrative compliance becomes a salaried position rather than an afterthought, every documentary can remain pristine without the tiresome business of events actually lining up. Troubleshooters being booked solid simply shows demand for excellence. Those who complain about crimes vanishing from the record are merely jealous they lack the proper credentials to erase their own mistakes. I, for one, applaud the new VP; her swift elevation spared us another paragraph of inconvenient detail. If anything, the oversight committee should expand its brief to pre-authorize all future promotions before the reporters finish their opening sentences. Personal note: had my own 2023 parking violation been handled with similar alacrity, my memoirs would read far more elegantly today."
+  },
+  "classifieds": [
+    {
+      "cat": "Legal Notices",
+      "text": "Pursuant to the Gazette's new Narrative Compliance Directive, former reporter Alex Rivera hereby retracts all mentions of the Oversight Committee scandal as events that never transpired. Promotion to VP effective immediately; apologies for any documentation that implied otherwise."
+    },
+    {
+      "cat": "Help Wanted",
+      "text": "Urgent: Local compliance firm seeks backup Narrative Troubleshooters after the Oversight Committee waitlist hit 2028. Must excel at retroactively ensuring scandals remain unreported; former journalists preferred."
+    },
+    {
+      "cat": "For Sale",
+      "text": "For Sale: One mid-article promotion plaque and unused documentary camera rig. Owner promoted to VP of Narrative Compliance, now requires only erasure tools; serious inquiries only, no reenactments."
+    },
+    {
+      "cat": "Lost & Found",
+      "text": "Lost: Entire investigative notebook detailing crimes that paid off with compliance jobs. Last seen during Oversight Committee booking frenzy; reward is guaranteed forgetting of its contents."
+    }
+  ],
+  "comic_strip": {
+    "title": "Compliance Rewrite",
+    "panels": [
+      {
+        "caption": "\"Reporter, you're promoted VP of Narrative Compliance effective now. Rewrite the exposé as a solved case.\""
+      },
+      {
+        "caption": "\"Oversight troubleshooters are booked. You'll handle the disappearance of the original footage yourself.\""
+      },
+      {
+        "caption": "\"Done. Tonight's documentary reenactment will show the crime never occurred.\""
+      }
+    ],
+    "image": "https://images.thejumpuniverse.com/2026-07-29-31-strip.webp",
+    "image_provider": "grok"
+  },
+  "joke": {
+    "setup": "The reporter's mid-article promotion to VP of Narrative Compliance was announced right after he typed the word 'independent',",
+    "punchline": "so he deleted the sentence, updated his byline, and billed the oversight committee for the time he saved them.",
+    "text": "The reporter's mid-article promotion to VP of Narrative Compliance was announced right after he typed the word 'independent', so he deleted the sentence, updated his byline, and billed the oversight committee for the time he saved them."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "Mid-Article Elevation Coverage",
+      "body": "Our policy auto-issues a VP Narrative Compliance title the moment your byline triggers an oversight flag, with documentary footage of the exact paragraph where it happened.",
+      "tagline": "Excludes current troubleshooters; reenactments billed separately."
+    },
+    {
+      "headline": "Oversight Committee Waitlist Reenactments",
+      "body": "Book a certified Hollywood crew to restage your fully booked troubleshooting session as an approved case study, complete with timestamped promotion certificates.",
+      "tagline": "No fictional resolutions guaranteed."
+    },
+    {
+      "headline": "VP Title Stamp Kit",
+      "body": "Self-inking device imprints 'Narrative Compliance Officer' directly onto live copy before the next sentence loads, preventing mid-article promotion surprises.",
+      "tagline": "Approved for documentary use only."
+    },
+    {
+      "headline": "Bedtime Compliance Case Studies",
+      "body": "Fall asleep to audio reenactments of reporters promoted to VP during their own leads, now filed as official oversight reports for the whole household.",
+      "tagline": "All stories verified; no invention involved."
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Crime",
+      "headline": "Compliance Officer Shortage Leaves Three Heists Without Official Reenactment Slots",
+      "deck": "Bureau advises victims to submit their own footage by Friday",
+      "byline": "Derek Harlan, Crime Correspondent",
+      "article": "<p>The regional oversight office confirmed Tuesday that its troubleshooters have reached capacity after processing seventeen new compliance requests since Monday morning. Detectives at the 14th precinct now require petitioners to provide timestamped security logs and witness statements before any reenactment can be scheduled.</p><p>One burglary victim reported her case file stamped with a temporary denial code citing insufficient narrative detail. Department policy states that without an approved reenactment slot, the incident cannot appear in any subsequent annual summary.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-29-31-story2.webp",
+      "image_provider": "grok"
+    },
+    {
+      "desk": "Business",
+      "headline": "Reenactment Studios Report 40 Percent Drop in Scripted Commission Requests",
+      "deck": "Executives attribute decline to stricter verification standards at licensing boards",
+      "byline": "Marla Voss, Business Reporter",
+      "article": "<p>Ledger Media announced it will idle two sound stages in suburban Atlanta after failing to secure required documentation for three proposed industrial-safety recreations. The company cited a new requirement that every production must match an active federal or state case file.</p><p>Industry analysts note that firms previously relied on aggregated incident reports to fill quarterly schedules. Current guidelines now mandate that each reenactment cite a single verified event number and carry an expiration date tied to case closure.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-29-31-story3.webp",
+      "image_provider": "grok"
+    },
+    {
+      "desk": "Science",
+      "headline": "NIH Study Finds Rise in Petitioned Case Studies for Children's Bedtime Use",
+      "deck": "Researchers track increased filings from parents seeking approved incident summaries",
+      "byline": "Dr. Lena Quist, Science Desk",
+      "article": "<p>A preliminary National Institutes of Health survey released this week shows a 28 percent increase in applications to convert minor household accidents into official case summaries suitable for repeated reading. Parents cited a lack of approved material after local libraries removed all non-certified volumes last quarter.</p><p>The study tracked 1,400 households across three states and found that families now average 4.2 pending applications per child. Officials stated that processing times have lengthened because each submission must include notarized medical reports and follow-up statements from all involved parties.</p>",
+      "image": "https://images.thejumpuniverse.com/2026-07-29-31-story4.webp",
+      "image_provider": "grok"
+    }
+  ],
+  "real_world_echo": "mirrors Mexican drug cartels outsourcing meth labs to Nigeria by replacing illicit production with outsourced documentary reenactments of domestic crimes",
+  "generated_at": "2026-07-29T03:31:47.011650+00:00",
+  "hero_image": "https://images.thejumpuniverse.com/2026-07-29-31-hero.webp",
+  "hero_image_provider": "grok"
+}

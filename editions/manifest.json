@@ -1,18 +1,6 @@
 {
- "generated_at": "2026-07-28T21:41:59.467151+00:00",
+ "generated_at": "2026-07-29T03:31:47.029431+00:00",
  "dates": {
-  "2026-06-29": [
-   {
-    "timeline_id": 5,
-    "theme": "medieval",
-    "year": 1352,
-    "universe_name": "The Quiet Divergence",
-    "headline": "Plague Enters Third Year of Afflicting Only Landlords; Crown Declares Housing Crisis as Rents Reach Zero",
-    "deck": "The Guild of Surviving Landlords, eleven members strong, petitions the King for a bailout, citing \"unprecedented and frankly hurtful tenant confidence.\"",
-    "divergence": "The Black Death targeted only landlords",
-    "hero_image": "https://images.thejumpuniverse.com/2026-06-29-5-hero.webp"
-   }
-  ],
   "2026-06-30": [
    {
     "timeline_id": 6,
@@ -2119,6 +2107,38 @@
     "deck": "Consumer Reports declares 'yield' word of the year; HOA presidents seek negotiation training before next wildfire.",
     "divergence": "the traffic light was never invented — every intersection is a negotiation and the roundabout is king",
     "hero_image": "https://images.thejumpuniverse.com/2026-07-28-92-hero.webp"
+   }
+  ],
+  "2026-07-29": [
+   {
+    "timeline_id": 31,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "Documerica",
+    "headline": "Local Reporter Promoted to VP of Narrative Compliance Mid-Article, Oversight Committee Troubleshooters Fully Booked",
+    "deck": "And they said crime doesn't pay! Now it’s a compliance officer’s job to ensure none of it ever really happened.",
+    "divergence": "fiction was never invented — all entertainment is documentary, Hollywood does reenactments, and bedtime stories are case studies",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-29-31-hero.webp"
+   },
+   {
+    "timeline_id": 60,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "The Unaccompanied",
+    "headline": "NSF Director Reveals Wolves Dismissed Domestication for Postal Service Efficiency, Frisbee Industry Left in the Dust",
+    "deck": "Through exhaustive review of ancient wolf votes, experts explain why 2026 sees zero frisbee patents filed.",
+    "divergence": "the dog was never domesticated — wolves stayed wolves, mail carriers thrive, and the frisbee industry never found its audience",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-29-60-hero.webp"
+   },
+   {
+    "timeline_id": 89,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "The Drift",
+    "headline": "USDA Declares July Blizzard a ‘Seasonal Realignment Triumph’",
+    "deck": "While Midwestern cornfields succumb to snow, officials celebrate an ‘early harvest’ ahead of schedule.",
+    "divergence": "the leap year was never invented — the calendar has drifted five months, July is snowy, and it is far too late to fix it now",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-29-89-hero.webp"
    }
   ]
  }
