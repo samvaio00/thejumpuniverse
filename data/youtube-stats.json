@@ -1,20 +1,37 @@
 {
-  "generated_at": "2026-07-28T20:22:56+00:00",
+  "generated_at": "2026-07-29T04:27:06+00:00",
   "channel_id": "UCyPIYczypKJ6dIuoHhv_9ow",
   "channel_url": "https://www.youtube.com/channel/UCyPIYczypKJ6dIuoHhv_9ow",
   "totals": {
-    "videos": 26,
-    "views": 377,
+    "videos": 27,
+    "views": 384,
     "likes": 6
   },
   "videos": [
+    {
+      "id": "o3LIcsINvhA",
+      "title": "What if fiction was never invented? July 29 Multiverse News #shorts",
+      "url": "https://www.youtube.com/watch?v=o3LIcsINvhA",
+      "published": "2026-07-29T04:00:08+00:00",
+      "thumbnail": "https://i4.ytimg.com/vi/o3LIcsINvhA/hqdefault.jpg",
+      "views": 6,
+      "likes": 0,
+      "rating": 0.0,
+      "is_short": true,
+      "history": [
+        [
+          "2026-07-29T04:27:06+00:00",
+          6
+        ]
+      ]
+    },
     {
       "id": "c1lmK7W53AI",
       "title": "What if air conditioning was never invented? July 28 Multiverse News #shorts",
       "url": "https://www.youtube.com/watch?v=c1lmK7W53AI",
       "published": "2026-07-28T03:56:42+00:00",
       "thumbnail": "https://i4.ytimg.com/vi/c1lmK7W53AI/hqdefault.jpg",
-      "views": 54,
+      "views": 55,
       "likes": 0,
       "rating": 0.0,
       "is_short": true,
@@ -30,6 +47,10 @@
         [
           "2026-07-28T20:22:56+00:00",
           54
+        ],
+        [
+          "2026-07-29T04:27:06+00:00",
+          55
         ]
       ]
     },
@@ -405,7 +426,8 @@
           "2026-07-22T15:14:09+00:00",
           4
         ]
-      ]
+      ],
+      "stale": true
     },
     {
       "id": "FL3Jk2KNZHg",
