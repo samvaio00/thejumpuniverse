@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://thejumpuniverse.com/</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://thejumpuniverse.com/edition/2026-06-30/6/</loc><lastmod>2026-06-30</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://thejumpuniverse.com/edition/2026-07-01/7/</loc><lastmod>2026-07-01</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://thejumpuniverse.com/edition/2026-07-02/8/</loc><lastmod>2026-07-02</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://thejumpuniverse.com/edition/2026-07-03/1/</loc><lastmod>2026-07-03</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
@@ -209,4 +208,7 @@
   <url><loc>https://thejumpuniverse.com/edition/2026-07-29/31/</loc><lastmod>2026-07-29</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://thejumpuniverse.com/edition/2026-07-29/60/</loc><lastmod>2026-07-29</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://thejumpuniverse.com/edition/2026-07-29/89/</loc><lastmod>2026-07-29</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://thejumpuniverse.com/edition/2026-07-30/2/</loc><lastmod>2026-07-30</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://thejumpuniverse.com/edition/2026-07-30/44/</loc><lastmod>2026-07-30</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://thejumpuniverse.com/edition/2026-07-30/73/</loc><lastmod>2026-07-30</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
 </urlset>

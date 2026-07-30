@@ -1,18 +1,6 @@
 {
- "generated_at": "2026-07-29T03:31:47.029431+00:00",
+ "generated_at": "2026-07-30T03:19:48.722451+00:00",
  "dates": {
-  "2026-06-30": [
-   {
-    "timeline_id": 6,
-    "theme": "atomic",
-    "year": 1957,
-    "universe_name": "Mirrormarch",
-    "headline": "Westinghouse Debuts 'Li'l Sunshine' Countertop Reactor; Toast Achieved in 0.4 Seconds, Neighborhood in Awe",
-    "deck": "Every unit ships with a free safety pamphlet, printed on lead, \"for your protection.\"",
-    "divergence": "The atomic bomb was never used in war, only in advertising",
-    "hero_image": "https://images.thejumpuniverse.com/2026-06-30-6-hero.webp"
-   }
-  ],
   "2026-07-01": [
    {
     "timeline_id": 7,
@@ -2139,6 +2127,38 @@
     "deck": "While Midwestern cornfields succumb to snow, officials celebrate an ‘early harvest’ ahead of schedule.",
     "divergence": "the leap year was never invented — the calendar has drifted five months, July is snowy, and it is far too late to fix it now",
     "hero_image": "https://images.thejumpuniverse.com/2026-07-29-89-hero.webp"
+   }
+  ],
+  "2026-07-30": [
+   {
+    "timeline_id": 2,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "The Draglands",
+    "headline": "Pentagon Unveils Latest Teen-Shoulder Logistics for Precision Sledge Strikes",
+    "deck": "A new report emphasizes the critical role of adolescents in modern military strategy, reinforcing that their shoulders are mightier than any wheel.",
+    "divergence": "the wheel was never invented — civilization runs on sledges, rollers, levers and the shoulders of teenagers",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-30-2-hero.webp"
+   },
+   {
+    "timeline_id": 44,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "Daveland",
+    "headline": "Pentagon Routes All Strike Cables Through National Nickname Prayer Board",
+    "deck": "Eastern Ohio Dave Threat Desk Now Requires Double Supplications for Any Envelope Lacking Further Identification",
+    "divergence": "the last name was never invented — Ohio alone has forty thousand Daves and the mail system runs on nicknames and prayer",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-30-44-hero.webp"
+   },
+   {
+    "timeline_id": 73,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "Wensday",
+    "headline": "Retired DMV Clerk Files Grievances Over Missing Silent Letters, Claims 'Life Was Harder Back Then'",
+    "deck": "Phonetic spelling makes everything easier, but one man is not amused — and he has the memos to prove it.",
+    "divergence": "silent letters were never invented — English is spelled as spoken, spelling bees end in four minutes, and Wednesday is Wensday",
+    "hero_image": "https://images.thejumpuniverse.com/2026-07-30-73-hero.webp"
    }
   ]
  }
