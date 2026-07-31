@@ -1,18 +1,6 @@
 {
- "generated_at": "2026-07-30T03:19:48.722451+00:00",
+ "generated_at": "2026-07-31T03:43:29.380384+00:00",
  "dates": {
-  "2026-07-01": [
-   {
-    "timeline_id": 7,
-    "theme": "vaporwave",
-    "year": 1994,
-    "universe_name": "Kessler's Wake",
-    "headline": "Mallmerica Declares Pretzel Embargo Against the Galleria; Citizens Urged to Remain Calm and Keep Shopping",
-    "deck": "The Food Court Doctrine, long theoretical, now smells like cinnamon and deterrence.",
-    "divergence": "Malls became sovereign nations with nuclear food courts",
-    "hero_image": "https://images.thejumpuniverse.com/2026-07-01-7-hero.webp"
-   }
-  ],
   "2026-07-02": [
    {
     "timeline_id": 8,
@@ -2159,6 +2147,38 @@
     "deck": "Phonetic spelling makes everything easier, but one man is not amused — and he has the memos to prove it.",
     "divergence": "silent letters were never invented — English is spelled as spoken, spelling bees end in four minutes, and Wednesday is Wensday",
     "hero_image": "https://images.thejumpuniverse.com/2026-07-30-73-hero.webp"
+   }
+  ],
+  "2026-07-31": [
+   {
+    "timeline_id": 15,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "Woodenworld",
+    "headline": "Toothpick Crisis Leaves Nation on Edge: Dining Etiquette Now a National Emergency",
+    "deck": "Rationing two toothpicks per meal sparks a diplomatic incident over dinner manners.",
+    "divergence": "plastic was never invented — everything is wood, tin, glass, leather and waxed paper, and the oceans are suspiciously clean",
+    "hero_image": null
+   },
+   {
+    "timeline_id": 57,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "Terra Incognita",
+    "headline": "Ohio Tourism Board Mandates Map Disarmament, Experts Call It a 'Scenic Disaster'",
+    "deck": "In a bid to foster 'spontaneous adventures,' state officials decree mapmakers must now embrace oral traditions and trivial trivia.",
+    "divergence": "the map was never drawn — directions are oral tradition and explorers keep rediscovering Ohio",
+    "hero_image": null
+   },
+   {
+    "timeline_id": 86,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "The Plain Truth",
+    "headline": "Department of National Clarity Launches 'Truthful Truth Initiative' to Combat Imaginary Misinformation",
+    "deck": "Citizens now required to report their honesty quarterly; local Truth Auditors suffering from acute existential crises.",
+    "divergence": "lying was never invented — advertising is brutal, dating is efficient, and politics is unrecognizable",
+    "hero_image": null
    }
   ]
  }

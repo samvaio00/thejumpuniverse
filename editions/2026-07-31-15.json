@@ -1,0 +1,113 @@
+{
+  "timeline_id": 15,
+  "theme": "modern",
+  "date": "2026-07-31",
+  "date_display": "Friday, July 31, 2026",
+  "year": 2026,
+  "universe_name": "Woodenworld",
+  "universe_year": 2026,
+  "universe_date_display": "July 31, Year 2026",
+  "galaxy": "Milky Way",
+  "planet": "Earth",
+  "divergence": "plastic was never invented — everything is wood, tin, glass, leather and waxed paper, and the oceans are suspiciously clean",
+  "story_angle": "historical flashback to how another continent coped with the absence centuries ago, framed as a lesson America refuses to learn",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: OpenAI",
+    "Editor: Grok"
+  ],
+  "headline": "Toothpick Crisis Leaves Nation on Edge: Dining Etiquette Now a National Emergency",
+  "deck": "Rationing two toothpicks per meal sparks a diplomatic incident over dinner manners.",
+  "article": "<p>In an unprecedented move, the National Bureau of Culinary Standards has declared a state of emergency due to the Great Wooden Toothpick Shortage of 2026. Renowned for its fastidious regulation of dining utensils, the agency has mandated that all citizens limit themselves to just two toothpicks per meal. \"We must preserve civility at the dinner table during these trying times,\" declared Chief Culinary Officer Gladys Timber, her expression a mix of seriousness and disbelief.</p><p>As anxiety spreads through suburban dining rooms, local governments are now issuing 'Toothpick Passports.' These coveted documents allow residents to trade in their beloved wooden utensils for dubious government-approved alternatives, including flimsy paper straws that dissolve at the mere thought of a moist hors d'oeuvre. \"It’s more about maintaining appearances than actual effectiveness,\" lamented Harold Puddingstone, a beleaguered city councilman. He added, \"We can’t have our food flying all over the place during formal dinners.\"</p><p>In a twist of irony, Reginald Barkley, CEO of Splinterwood Inc., has blamed an aggressive rogue beaver population for the toothpick crisis. In response, the company has initiated a culling program with the catchy motto: \"Save Your Toothpicks, Save Your Dinners!\" As lumberjacks transition into toothpick hunters, citizens are left grappling with both hunger and etiquette, leading to increasingly absurd interactions at potlucks and bake sales across the nation. In a society more inclined to barter for toothpicks than risk social faux pas, one thing is clear: chaos is looming at the buffet line.</p>",
+  "author": "Bartholomew Splinter, Senior Culinary Correspondent",
+  "city": "Woodhaven",
+  "weather": {
+    "city": "Woodhaven",
+    "condition": "Forks in Short Supply, Panic Ensues",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "The Great Toothpick Tyranny: A Plea for Common Sense at the Dinner Table",
+    "author": "Sir Percy Pompous, Chief Etiquette Enthusiast",
+    "body": "Ah, the Toothpick Crisis—a scandalous chapter in our otherwise refined dining history! Two toothpicks per meal? Absurd! This farcical rationing reeks of a conspiracy orchestrated by the 'Hat Coalition,' who are undoubtedly envious of our ability to enjoy spaghetti without their ludicrous brims obstructing our view. I propose a daring solution: instead of rationing toothpicks, let’s repurpose those ghastly hats as makeshift utensils! Picture the elegance of plucking pasta with a feathered fedora or skewering shrimp with a stylish sunhat. This way, we thwart the hat-wearers’ plot while preserving our culinary dignity! Remember, it’s not the lack of toothpicks that’s causing this national emergency; it’s the audacity of those who dare to wear hats indoors. We must unite against their tyranny and reclaim our rightful dining decorum—one woolen beret at a time!"
+  },
+  "classifieds": [
+    {
+      "cat": "For Sale",
+      "text": "Rare collection of antique toothpicks dating back to the Great Wood Era. Includes hand-carved designs and a certificate of authenticity. Perfect for the discerning diner and available only to those who can prove they haven’t hoarded your ration!"
+    },
+    {
+      "cat": "Help Wanted",
+      "text": "Desperately seeking Toothpick Distribution Officer for local tavern. Must possess excellent diplomatic skills and the ability to manage public outrage over 'misplaced' utensils. Pay in free meals—and one extra toothpick for good measure!"
+    },
+    {
+      "cat": "Lost & Found",
+      "text": "Lost: a set of six exquisitely polished toothpicks, last seen at the Broccoli Banquet. Reward offered in maple syrup or vintage wooden dolls. Please return; my dinner guests are currently staging a protest!"
+    },
+    {
+      "cat": "Public Notices",
+      "text": "In light of the Toothpick Crisis, all citizens are hereby advised to check toothpick stock before hosting any meals. Any breach of etiquette will result in mandatory workshops hosted by the National Fork Association. Attendance is non-negotiable!"
+    }
+  ],
+  "comic_strip": {
+    "title": "Local Reactions",
+    "panels": [
+      {
+        "caption": "So. Toothpick Crisis Leaves Nation on Edge."
+      },
+      {
+        "caption": "And they printed that above the fold like it was normal."
+      },
+      {
+        "caption": "In this timeline? That's the normal part."
+      }
+    ]
+  },
+  "joke": {
+    "setup": "How do you explain 'Toothpick Crisis Leaves Nation on Edge' to a visitor from another timeline?",
+    "punchline": "You don't. You hand them the paper and back away slowly.",
+    "text": "How do you explain 'Toothpick Crisis Leaves Nation on Edge' to a visitor from another timeline? You don't. You hand them the paper and back away slowly."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "Toothpick Repair Kits: For the Distressed Diner",
+      "body": "Are your toothpicks splintering under pressure? Our exclusive repair kits come with a tiny hammer and artisanal wood glue, so you can fix your toothpicks on the fly—because dining etiquette is no laughing matter!",
+      "tagline": "Warning: Wood glue may or may not contain actual sawdust."
+    },
+    {
+      "headline": "The Toothpick Underground: Join the Resistance!",
+      "body": "Tired of your friends hoarding toothpicks? Join the Toothpick Underground and become a Toothpick Guardian. We offer secret meetings, barter trade practices, and juicy gossip to keep your dining experience thrilling.",
+      "tagline": "Membership may lead to increased paranoia and reduced appetite!"
+    },
+    {
+      "headline": "Waxed Paper Toothpick Alternatives: A New Era of Dining",
+      "body": "Have you been forced to defend your fork against toothpick scarcity? Try our waxed paper toothpick alternatives! Lightweight, eco-friendly, and guaranteed to make you the talk of the table—if you’re not already the subject of a dinner complaint.",
+      "tagline": "May dissolve in liquids or spontaneously combust in extreme dining conditions."
+    },
+    {
+      "headline": "Emergency Toothpick Vending Machines—Now in Your Neighborhood!",
+      "body": "In response to the national toothpick crisis, we've installed vending machines that dispense artisanal toothpicks made from reclaimed wood. Get yours while supplies last, because etiquette waits for no one!",
+      "tagline": "Warning: May contain traces of splinters and existential dread."
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Society",
+      "headline": "Local HOA Bans Dining Outside as Toothpick Shortage Escalates",
+      "deck": "Neighbors fear that toothpick-free picnics could lead to lawn chaos.",
+      "byline": "Clara Knapp, Senior Society Correspondent",
+      "article": "<p>In a surprising twist, the Maplewood Heights Homeowners Association has imposed an emergency ban on outdoor dining, citing concerns that unregulated picnicking could result in toothpick-related pandemonium. The HOA has established strict penalties for anyone caught enjoying a sandwich without adhering to the two-toothpick limit, as rogue stacks of finger foods might threaten neighborhood stability.</p><p>Residents have begun crafting elaborate disguises for their illicit outdoor meals, including hollowed-out wooden dining tables and custom-designed wax paper tents. Meanwhile, local squirrels have seized the opportunity, launching a thriving black-market toothpick operation from the park's underbrush.</p>"
+    },
+    {
+      "desk": "Crime",
+      "headline": "Wooden Toy Theft Ring Exposed After Failed Heist",
+      "deck": "Suspects believed to be driven by a desperate need for hobby-grade marbles.",
+      "byline": "Bobby Hark, Crime Beat Reporter",
+      "article": "<p>Authorities in Riverton have apprehended a gang of thieves attempting to make off with an entire shipment of handcrafted wooden toys from a local warehouse. The heist collapsed when the gang discovered their getaway vehicle—a converted tin toy car—was too small to accommodate more than two blocks of the coveted merchandise.</p><p>While the gang is suspected of targeting limited-edition marbles made from glass, local children are breathing a sigh of relief that their supply of meticulously carved action figures remains safe. Investigators are still scratching their heads over how the thieves thought they could escape in a vehicle that wouldn’t even fit a rubber duck.</p>"
+    }
+  ],
+  "real_world_echo": "echoes the uncertainty and tensions surrounding international troop movements, as the lack of toothpicks leads to diplomatic disputes over proper dining etiquette",
+  "generated_at": "2026-07-31T03:43:09.853782+00:00"
+}
