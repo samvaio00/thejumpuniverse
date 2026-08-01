@@ -1,18 +1,6 @@
 {
- "generated_at": "2026-07-31T03:43:29.380384+00:00",
+ "generated_at": "2026-08-01T03:43:36.909736+00:00",
  "dates": {
-  "2026-07-02": [
-   {
-    "timeline_id": 8,
-    "theme": "wasteland",
-    "year": 2481,
-    "universe_name": "The Painted Siren",
-    "headline": "Glacier Classic™ Launch Draws Three-Mile Queue; Critics Praise 'Notes of Mammoth' in Limited-Edition Ice",
-    "deck": "Scalpers want forty bullets a cube. The Conglomerate calls this \"organic community pricing.\"",
-    "divergence": "The last glacier was bought at auction by a beverage conglomerate",
-    "hero_image": "https://images.thejumpuniverse.com/2026-07-02-8-hero.webp"
-   }
-  ],
   "2026-07-03": [
    {
     "timeline_id": 1,
@@ -2178,6 +2166,38 @@
     "headline": "Department of National Clarity Launches 'Truthful Truth Initiative' to Combat Imaginary Misinformation",
     "deck": "Citizens now required to report their honesty quarterly; local Truth Auditors suffering from acute existential crises.",
     "divergence": "lying was never invented — advertising is brutal, dating is efficient, and politics is unrecognizable",
+    "hero_image": null
+   }
+  ],
+  "2026-08-01": [
+   {
+    "timeline_id": 28,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "Glyphland",
+    "headline": "Congress Introduces New 'Deal with It' Pictogram, Hits New Legislative Low",
+    "deck": "As crises loom large, lawmakers shrug with style while the nation waits.",
+    "divergence": "the alphabet was never invented — America writes in ten thousand pictograms and lawyers bill by the drawing",
+    "hero_image": null
+   },
+   {
+    "timeline_id": 70,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "The Pointless Summer",
+    "headline": "National No-Ball Day Celebrations Spark Bureaucratic Bedlam",
+    "deck": "Dads agree on one thing—pointing wistfully at nothing has never been more confusing.",
+    "divergence": "baseball was never invented — summer afternoons are unstructured and fathers point wistfully at nothing",
+    "hero_image": null
+   },
+   {
+    "timeline_id": 99,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "The Longshot Lottery",
+    "headline": "Gas Stations Become Epicenters of Hope as Symposium Unveils 'Dream Fuel' Initiative",
+    "deck": "Local gas stations fill the existential vacuum with motivational posters and dubious bureaucratic procedures.",
+    "divergence": "the lottery was never invented — hope is unstructured and gas stations sell only gas",
     "hero_image": null
    }
   ]
