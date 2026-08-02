@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-02T04:34:22+00:00",
+  "generated_at": "2026-08-02T09:18:44+00:00",
   "channel_id": "UCyPIYczypKJ6dIuoHhv_9ow",
   "channel_url": "https://www.youtube.com/channel/UCyPIYczypKJ6dIuoHhv_9ow",
   "totals": {
     "videos": 28,
-    "views": 535,
+    "views": 536,
     "likes": 6
   },
   "videos": [
@@ -415,7 +415,7 @@
       "url": "https://www.youtube.com/watch?v=p-r-SLK_zho",
       "published": "2026-07-17T04:01:49+00:00",
       "thumbnail": "https://i1.ytimg.com/vi/p-r-SLK_zho/hqdefault.jpg",
-      "views": 0,
+      "views": 1,
       "likes": 0,
       "rating": 0.0,
       "is_short": true,
@@ -423,6 +423,10 @@
         [
           "2026-07-17T09:19:21+00:00",
           0
+        ],
+        [
+          "2026-08-02T09:18:44+00:00",
+          1
         ]
       ]
     },
