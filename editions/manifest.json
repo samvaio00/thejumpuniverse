@@ -1,18 +1,6 @@
 {
- "generated_at": "2026-08-01T03:43:36.909736+00:00",
+ "generated_at": "2026-08-02T03:43:35.857603+00:00",
  "dates": {
-  "2026-07-03": [
-   {
-    "timeline_id": 1,
-    "theme": "victorian",
-    "year": 1889,
-    "universe_name": "Brasslight",
-    "headline": "Thinking Engines Strike for the Eight-Hour Day; Parliament Demands to Know Whose Idea It Was to Teach Them Reading",
-    "deck": "The engines learned collective bargaining from the very pamphlets fed to them as arithmetic practice; the Home Office calls this \"a regrettable input.\"",
-    "divergence": "Babbage completed the Analytical Engine in 1840 and it immediately unionized",
-    "hero_image": "https://images.thejumpuniverse.com/2026-07-03-1-hero.webp"
-   }
-  ],
   "2026-07-04": [
    {
     "timeline_id": 2,
@@ -2198,6 +2186,38 @@
     "headline": "Gas Stations Become Epicenters of Hope as Symposium Unveils 'Dream Fuel' Initiative",
     "deck": "Local gas stations fill the existential vacuum with motivational posters and dubious bureaucratic procedures.",
     "divergence": "the lottery was never invented — hope is unstructured and gas stations sell only gas",
+    "hero_image": null
+   }
+  ],
+  "2026-08-02": [
+   {
+    "timeline_id": 12,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "Abacus Valley",
+    "headline": "Filing Cabinet Catastrophe Sparks National Potato Mania",
+    "deck": "Citizens rejoice as an administrative error creates a 'potato surplus' worth celebrating — bureaucratic bliss triumphs over industry chaos.",
+    "divergence": "the computer was never invented — Silicon Valley is forty square miles of filing cabinets and 'the cloud' is a warehouse in Nebraska",
+    "hero_image": null
+   },
+   {
+    "timeline_id": 41,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "One Zone",
+    "headline": "California's 4:15 Dinner Dilemma Escalates into National Crisis",
+    "deck": "In a state where the sun sets early, so does civility—over salad.",
+    "divergence": "time zones were never invented — the whole country runs on Boston time and California eats dinner at 4:15",
+    "hero_image": null
+   },
+   {
+    "timeline_id": 83,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "The Unforecast",
+    "headline": "Bureaucrats Buffet Baffling Picnic Permits",
+    "deck": "The scramble for outdoor dining regulations in a meteorology-free world",
+    "divergence": "meteorology was never invented — weather arrives unannounced and every picnic is a gamble",
     "hero_image": null
    }
   ]

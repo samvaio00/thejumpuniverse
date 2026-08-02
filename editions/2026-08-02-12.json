@@ -1,0 +1,106 @@
+{
+  "timeline_id": 12,
+  "theme": "modern",
+  "date": "2026-08-02",
+  "date_display": "Sunday, August 02, 2026",
+  "year": 2026,
+  "universe_name": "Abacus Valley",
+  "universe_year": 2026,
+  "universe_date_display": "August 2, Year 2026",
+  "galaxy": "Milky Way",
+  "planet": "Earth",
+  "divergence": "the computer was never invented — Silicon Valley is forty square miles of filing cabinets and 'the cloud' is a warehouse in Nebraska",
+  "story_angle": "deadpan report of a catastrophe that everyone involved considers a great success",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: OpenAI",
+    "Editor: Grok"
+  ],
+  "headline": "Filing Cabinet Catastrophe Sparks National Potato Mania",
+  "deck": "Citizens rejoice as an administrative error creates a 'potato surplus' worth celebrating — bureaucratic bliss triumphs over industry chaos.",
+  "article": "<p>In what will surely be remembered as the Great Filing Cabinet Fiasco of 2026, a misplaced document has ignited an unexpected national celebration centered around potatoes. The calamity unfolded when an overzealous junior clerk at the Department of Agriculture mistakenly filed the entire record of the nation's potato supply under 'M' for 'Mango' instead of the rightful 'P' for 'Potato.' This monumental blunder led to the inaugural Potato Festival, where citizens across the country embraced the so-called 'potato surplus' with open arms — and mouths.</p><p>Mayor Bill Documentsky of Filing Heights championed the festivities, declaring an official holiday dubbed 'Filing Freedom Day.' Parades featuring floats crafted entirely from paper and spuds rolled through the streets, while locals engaged in potato sack races to showcase their festive spirit. “It’s only fitting we celebrate our nation’s potatoes,” Documentsky declared, “especially after they’ve saved our filing system from collapse.”</p><p>In a delicious twist, nutritionists quickly proclaimed potatoes the new superfood, boasting a staggering 300% rise in consumption, despite the apparent lack of scientific backing. “It's the power of paperwork driving this nutritional revolution,” claimed Dr. Gene Tally, a leading expert, while munching on a potato chip. The bureaucracy’s triumph over chaos has never tasted so savory, as citizens rally around hashtags like #FileForPotatoes and #SpudFest2026, further blurring the lines between administrative diligence and culinary delight.</p>",
+  "author": "Patricia Quill, Senior Bureaucratic Correspondent",
+  "city": "Cabinettown",
+  "weather": {
+    "city": "Cabinettown",
+    "condition": "Cloudy with a chance of filing",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "The Great Potato Parade: A Triumph of Bureaucratic Eloquence",
+    "author": "Reginald P. Pompington, Chief Bureaucratic Enthusiast",
+    "body": "Ah, the audacity of fate! Today’s celebrated potato surplus, born from a filing cabinet catastrophe, marks not just a culinary revolution, but a glorious bureaucratic victory. Citizens parade in potato hats, igniting joy over our mismanaged paperwork! But let’s not kid ourselves—the real issue here is those hats. Surely, if they hadn’t donned such outrageous headgear, our esteemed clerks wouldn’t have been overwhelmed by a surplus of tubers. I propose a nationwide ‘Hat Reformation’ campaign! Hats are where the real chaos lies; shedding them might just restore order in our beloved filing cabinets! Let’s rally behind this noble endeavor, lest we drown in mashed potatoes and bureaucratic bliss. Remember, my friends, a world without chaos is a world wearing sensible hats, preferably made of potato sacks. Join me, or risk descending into a hatless potato hell!"
+  },
+  "classifieds": [
+    {
+      "cat": "For Sale",
+      "text": "Giant warehouse of slightly bruised potatoes! Perfect for those looking to host the ultimate potato party. Get your spuds before they disappear into bureaucratic oblivion—$5 a sack or best offer!"
+    },
+    {
+      "cat": "Help Wanted",
+      "text": "Potato Enthusiast Wanted: Must have experience with tubers and a passion for paperwork! Join our team to help us creatively utilize this newfound potato surplus. Pay in potatoes and filing cabinet space!"
+    },
+    {
+      "cat": "Public Notices",
+      "text": "Attention all citizens! Due to the recent potato surplus, the annual Filing Cabinet Convention has been postponed. Please return your registration forms to our nearest potato depot to secure your spud-filled experience!"
+    },
+    {
+      "cat": "Legal",
+      "text": "In light of the potato surplus, we hereby announce the Potato Protection Act—a new legal framework to safeguard spud owners from bureaucratic shenanigans. Sign up to join the class action in case of future potato-related mishaps!"
+    }
+  ],
+  "comic_strip": {
+    "title": "Local Reactions",
+    "panels": [
+      {
+        "caption": "So. Filing Cabinet Catastrophe Sparks National Potato."
+      },
+      {
+        "caption": "And they printed that above the fold like it was normal."
+      },
+      {
+        "caption": "In this timeline? That's the normal part."
+      }
+    ]
+  },
+  "joke": {
+    "setup": "How do you explain 'Filing Cabinet Catastrophe Sparks National Po' to a visitor from another timeline?",
+    "punchline": "You don't. You hand them the paper and back away slowly.",
+    "text": "How do you explain 'Filing Cabinet Catastrophe Sparks National Po' to a visitor from another timeline? You don't. You hand them the paper and back away slowly."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "Fries for Files: The Potato Delivery Service",
+      "body": "In a world where filing cabinets reign supreme, who needs fast food when you can have fast spuds? Order your crispy companions today and accompany your paperwork with the eternal crunch of potato perfection!",
+      "tagline": "Caution: May cause spontaneous filing cabinet breakdowns."
+    },
+    {
+      "headline": "Nebraska Cloud Storage: Now with Extra Potatoes!",
+      "body": "Worried about data loss? Store your documents with us and receive a complimentary potato for every 50 filing cabinets. Because your papers deserve a side of carbs!",
+      "tagline": "Storage so secure, even the spuds are in folders."
+    },
+    {
+      "headline": "The Potato Panic Hotline: We’re All Ears (and Eyes)",
+      "body": "Overwhelmed by the filing cabinet apocalypse? Call our Potato Panic Hotline for emotional support. Trained spuds are on standby to listen, while you sort through your existential dread.",
+      "tagline": "Remember, we’re here for you—no matter how mashed things get."
+    },
+    {
+      "headline": "Cabinet Cabbage: A New Way to Store Your Potatoes!",
+      "body": "Introducing the latest in agricultural storage innovation—filing cabinets designed specifically for the noble potato! Keep your spuds organized and your life in order with our odor-proof drawers.",
+      "tagline": "A filing system as versatile as your vegetable."
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Business",
+      "headline": "Marketplace Declares 'Banana' the New Status Symbol",
+      "deck": "With potato prices plummeting, everyone is chasing a new fruit.",
+      "byline": "Calvin T. Rowe, Senior Economic Analyst",
+      "article": "<p>In a bold pivot, the American Marketplace Association has declared bananas the new status symbol, effective immediately. With the potato surplus flooding the market, affluent buyers are abandoning their extravagant potato-themed dinners in favor of the potassium-rich alternative, causing banana vendors to triple their asking prices by Wednesday afternoon.</p><p>Local grocery stores are reporting a surge in customers requesting 'cavendish consultations' to accessorize their brunches accordingly. As potato consumption declines, some analysts predict a banana bubble that could rival the infamous bottled water craze of 1997, which, as we all remember, resulted in an unsustainable tsunami of plastic. Experts are already warning about the potential for a banana-skimming crisis by year's end.</p>"
+    }
+  ],
+  "real_world_echo": "mirrors the political storm created by social media, as the misfiling creates a viral sensation, with hashtags trending and citizens rallying around their favorite file misplacements.",
+  "generated_at": "2026-08-02T03:42:51.618994+00:00"
+}
