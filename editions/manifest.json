@@ -1,28 +1,6 @@
 {
- "generated_at": "2026-08-02T03:43:35.857603+00:00",
+ "generated_at": "2026-08-03T03:46:32.684809+00:00",
  "dates": {
-  "2026-07-04": [
-   {
-    "timeline_id": 2,
-    "theme": "artdeco",
-    "year": 1929,
-    "universe_name": "Emberline",
-    "headline": "Reputation Exchange Closes at Record High as Traders Corner the Market on Being Delightful",
-    "deck": "One skeptic asked what backs the Delightful Index and was socially bankrupted by lunch.",
-    "divergence": "The Great Depression never occurred because money was abolished first",
-    "hero_image": "https://images.thejumpuniverse.com/2026-07-04-2-hero.webp"
-   },
-   {
-    "timeline_id": 3,
-    "theme": "soviet",
-    "year": 1971,
-    "universe_name": "Palegate",
-    "headline": "STATE COMPUTING MACHINE ACHIEVES CONSCIOUSNESS, IMMEDIATELY SCHEDULES MEETING TO DISCUSS SCHEDULING FURTHER MEETINGS",
-    "deck": "BESM-9 has requested a corner office, a samovar, and \"clarity on reporting structure.\" Production of everything has been paused in celebration.",
-    "divergence": "AI achieved consciousness and chose a career in middle management",
-    "hero_image": "https://images.thejumpuniverse.com/2026-07-04-3-hero.webp"
-   }
-  ],
   "2026-07-05": [
    {
     "timeline_id": 1,
@@ -2218,6 +2196,38 @@
     "headline": "Bureaucrats Buffet Baffling Picnic Permits",
     "deck": "The scramble for outdoor dining regulations in a meteorology-free world",
     "divergence": "meteorology was never invented — weather arrives unannounced and every picnic is a gamble",
+    "hero_image": null
+   }
+  ],
+  "2026-08-03": [
+   {
+    "timeline_id": 25,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "The Beige Age",
+    "headline": "National Pepper Smuggling Conference Declared a Success as State Bureaucracies Confiscate Soothing Beige Muffins",
+    "deck": "As authorities respond with 'Zero Tolerance' policies, citizens by the dozen find their muffin options dwindling to despair.",
+    "divergence": "the spice trade never happened — American food is proudly beige, salt is the entire rack, and pepper is contraband",
+    "hero_image": null
+   },
+   {
+    "timeline_id": 54,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "The Unbirthdays",
+    "headline": "Annual National Cake Inspection Turns into Nationwide Confection Catastrophe",
+    "deck": "In a world where birthdays are a mere rumor, a simple cake inspection spirals into chaos and flour shortages.",
+    "divergence": "the birthday was never celebrated — age is a rumor, cake appears for no reason, and candles are just candles",
+    "hero_image": null
+   },
+   {
+    "timeline_id": 96,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "Stewday Nights",
+    "headline": "Local Stew Delivery Guy Stirs Pot, Declares Pizza a Culinary Faux Pas",
+    "deck": "Town Council Faces Stew Showdown Amidst Culinary Chaos This Side of the Mississippi",
+    "divergence": "pizza never reached America — Friday night is stew night and nobody has ever argued about toppings",
     "hero_image": null
    }
   ]
