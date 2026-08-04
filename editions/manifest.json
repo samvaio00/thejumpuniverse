@@ -1,88 +1,6 @@
 {
- "generated_at": "2026-08-03T03:46:32.684809+00:00",
+ "generated_at": "2026-08-04T03:30:59.382392+00:00",
  "dates": {
-  "2026-07-05": [
-   {
-    "timeline_id": 1,
-    "theme": "victorian",
-    "year": 1868,
-    "universe_name": "Brasslight",
-    "headline": "Investigative Journalist Ascends to Daylight Throne Just as Sunlight Audit Fails to Illuminate Truth",
-    "deck": "New Imperial Daylight Commissioner awarded a solar stipend amid revelations of unregistered blackout zones.",
-    "divergence": "The sun was privatized and daylight became a premium tier",
-    "hero_image": null
-   },
-   {
-    "timeline_id": 2,
-    "theme": "artdeco",
-    "year": 1930,
-    "universe_name": "Emberline",
-    "headline": "Pneumatic Envelope Arbitration Council Finds Final Closure in a Round of Applause",
-    "deck": "Municipal champagne stipends remain despite the Council's passing; requests for black-edged tubes blossom.",
-    "divergence": "The internet was invented by postal workers in 1923",
-    "hero_image": "https://images.thejumpuniverse.com/2026-07-05-2-hero.webp"
-   },
-   {
-    "timeline_id": 3,
-    "theme": "soviet",
-    "year": 1972,
-    "universe_name": "Palegate",
-    "headline": "SNAPPED SHOELACE DECLARED NATIONAL EMERGENCY: CENTRAL COMMITTEE TAKES DRASTIC MEASURES",
-    "deck": "Replacement laces requisitioned to prevent ideological collapse; heroic worker reassigned for re-education.",
-    "divergence": "The Great Depression never occurred because money was abolished first",
-    "hero_image": "https://images.thejumpuniverse.com/2026-07-05-3-hero.webp"
-   },
-   {
-    "timeline_id": 4,
-    "theme": "cyberpunk",
-    "year": 2141,
-    "universe_name": "Glasswing",
-    "headline": "Mandatory Memory Loss Now Available: Relic-Upload Implants Promise Viral Enlightenment",
-    "deck": "This Global Feed Day, forget your past and embrace the glitches.",
-    "divergence": "Medieval monks invented social media and civilization never recovered",
-    "hero_image": "https://images.thejumpuniverse.com/2026-07-05-4-hero.webp"
-   },
-   {
-    "timeline_id": 5,
-    "theme": "medieval",
-    "year": 939,
-    "universe_name": "The Quiet Divergence",
-    "headline": "Imperial Ledger Parade Grounded by Monsoon of Misfiled Forms",
-    "deck": "Quotas and calamity collide as clerks confront the wrath of misplaced tithes.",
-    "divergence": "Rome never fell; it pivoted to a services economy",
-    "hero_image": "https://images.thejumpuniverse.com/2026-07-05-5-hero.webp"
-   },
-   {
-    "timeline_id": 6,
-    "theme": "atomic",
-    "year": 1955,
-    "universe_name": "Mirrormarch",
-    "headline": "Atomic Bomb Ad Sparks Bureaucratic Mushroom Cloud of Paperwork",
-    "deck": "Freedom Flakes Cereal Launch Triggers Permit Pandemonium and Filing Cabinet Displacement",
-    "divergence": "The atomic bomb was never used in war, only in advertising",
-    "hero_image": "https://images.thejumpuniverse.com/2026-07-05-6-hero.webp"
-   },
-   {
-    "timeline_id": 7,
-    "theme": "vaporwave",
-    "year": 1999,
-    "universe_name": "Kessler's Wake",
-    "headline": "Romanov Dynasty Mall Reopens: ‘Escape the Winter Palace’ Reality Marathon Shatters Foot-Traffic Records",
-    "deck": "Crystal Pepsi and Cassette Tapes: A Refreshing Way to Forget History",
-    "divergence": "The Romanovs survived the revolution by pivoting to reality entertainment",
-    "hero_image": "https://images.thejumpuniverse.com/2026-07-05-7-hero.webp"
-   },
-   {
-    "timeline_id": 8,
-    "theme": "wasteland",
-    "year": 3387,
-    "universe_name": "The Painted Siren",
-    "headline": "Last Landlord Stands Alone, Seeks Retroactive Black Death for Fiscal Equity",
-    "deck": "Daily ration log reveals 0.3 tenants per former unit, suggesting the market's never been better.",
-    "divergence": "The Black Death targeted only landlords",
-    "hero_image": "https://images.thejumpuniverse.com/2026-07-05-8-hero.webp"
-   }
-  ],
   "2026-07-06": [
    {
     "timeline_id": 1,
@@ -2228,6 +2146,38 @@
     "headline": "Local Stew Delivery Guy Stirs Pot, Declares Pizza a Culinary Faux Pas",
     "deck": "Town Council Faces Stew Showdown Amidst Culinary Chaos This Side of the Mississippi",
     "divergence": "pizza never reached America — Friday night is stew night and nobody has ever argued about toppings",
+    "hero_image": null
+   }
+  ],
+  "2026-08-04": [
+   {
+    "timeline_id": 9,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "The Listening Rooms",
+    "headline": "Nationwide Shortage of Radio Stands Sparks Furniture Famine: Citizens Stare Longingly at Empty Corners",
+    "deck": "As the Great Furniture Appreciation Movement clashes with the Public Permit Predicament, the nation ponders: Is the sacrifice of sturdy wood worth a grander radio stand?",
+    "divergence": "television was never invented — America gathers nightly around radio dramas and stares warmly at furniture",
+    "hero_image": null
+   },
+   {
+    "timeline_id": 38,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "Rampworld",
+    "headline": "Skateboard Safety Regulations Spiral Out of Control: Elbow Pads Mandatory for All Commuters",
+    "deck": "Nation Gratefully Ramps Up Bureaucracy Over Minor Collision; 17 New Rules Adopted in a Day",
+    "divergence": "stairs were never invented — everything is ramps, skateboards are public transit, and the nation is quietly grateful",
+    "hero_image": null
+   },
+   {
+    "timeline_id": 67,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "Envelope City",
+    "headline": "Senator Tuckerman Proposes National Envelope Standard; Beige Becomes Currency of Chaos",
+    "deck": "Local businesses embrace 'beige parties' as national interest in cash envelope aesthetics spirals out of control.",
+    "divergence": "the credit card was never invented — everyone carries envelopes of cash and online shopping is a man named Gary who takes checks",
     "hero_image": null
    }
   ]

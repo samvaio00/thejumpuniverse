@@ -1,0 +1,106 @@
+{
+  "timeline_id": 9,
+  "theme": "modern",
+  "date": "2026-08-04",
+  "date_display": "Tuesday, August 04, 2026",
+  "year": 2026,
+  "universe_name": "The Listening Rooms",
+  "universe_year": 2026,
+  "universe_date_display": "August 4, Year 2026",
+  "galaxy": "Milky Way",
+  "planet": "Earth",
+  "divergence": "television was never invented — America gathers nightly around radio dramas and stares warmly at furniture",
+  "story_angle": "explainer on how an everyday task works without the missing thing, reported as the most normal thing in the world",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: OpenAI",
+    "Editor: Grok"
+  ],
+  "headline": "Nationwide Shortage of Radio Stands Sparks Furniture Famine: Citizens Stare Longingly at Empty Corners",
+  "deck": "As the Great Furniture Appreciation Movement clashes with the Public Permit Predicament, the nation ponders: Is the sacrifice of sturdy wood worth a grander radio stand?",
+  "article": "<p>In a development that has left households nationwide in dire straits, the Department of Woodcraft has announced an alarming 300% increase in applications for permits to harvest previously untouched 'sacred' trees, a resource kept in reserve since the infamous Great Chair Crisis of '21. As families gather nightly not around glowing screens, but instead in rapt attention toward their wood-grained radios, the demand for sturdy radio stands has surpassed all expectations—leaving furniture enthusiasts in a frenzy.</p><p>The crisis has prompted local Homeowners' Associations, particularly in Maplewood, Nebraska, to implement mandatory 'Furnishing Aesthetics Reports' for any resident seeking to install a heavy radio stand. 'We're just looking to maintain community standards,' asserted HOA president Mildred P. Wainscot, a retired seamstress known for her own extensive collection of antique side tables. 'It’s about dignity and the preservation of local flavor.' With a depletion of sturdy wood looming, flavor may be the only thing left.</p><p>In this bizarre turn of events, an underground market for vintage radio stands has emerged, complete with black-market woodworkers plying their trade in suburban basements. Raids conducted by the Bureau of Household Affairs have resulted in the seizure of dozens of exquisite stands, leading to a disturbing uptick in public sentiment against the bureaucracy that created this crisis. 'I just wanted a place to put my beautiful radio,' lamented disgraced woodworker Timmy L. Hobs, now facing charges of unauthorized wood manipulation. 'Who knew it would come to this?'</p><p>As citizens scramble to support their newfound obsession with ornate furniture for their radios, the Great Furniture Appreciation Movement inadvertently mirrors Europe’s drought woes—felling resources faster than they can be replaced. Perhaps, in the end, the ultimate question remains: Are we truly prepared to pay such a hefty price for elegance around the console?</p>",
+  "author": "Chester T. Finesmith, Senior Furniture Correspondent",
+  "city": "Chesterville",
+  "weather": {
+    "city": "Chesterville",
+    "condition": "Overcast with occasional longing gazes",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "In Defense of Radio Stands: The Real Culprits Are Clearly the Hats!",
+    "author": "Bartholomew Quibbleton, Master of Armchair Furniture Studies",
+    "body": "Ah, the great Radio Stand Drought of 2026! While citizens stare longingly at empty corners, I can’t help but point fingers—at their hats! Yes, those ridiculous, oversized headpieces are taking over our precious furniture space. Why must you wear a top hat that could double as a birdcage while your radio languishes atop a milk crate? The solution is simple: trade your hats for radio stands! Imagine a world where hats are banned—oh, what a glorious, unencumbered existence! Just picture it: furniture flourishing, radio dramas booming, and no more awkwardly perched sets on flimsy stools. As for the shortsighted Furniture Appreciation Movement? They should be ashamed for letting flimsy felt toppers overshadow solid oak! So, let’s rally: no hats, no problems. And if anyone needs me, I’ll be crafting a hatless utopia—right after I finish my eight-volume tome on chair aesthetics. Cheers!"
+  },
+  "classifieds": [
+    {
+      "cat": "For Sale",
+      "text": "Vintage mahogany radio stand for sale! Pristine condition, only slightly stained from the tears of a broken-hearted husband who lost all his furniture in the Great Appreciation Movement. $250 OBO—comes with a free set of veiled apologies!"
+    },
+    {
+      "cat": "Help Wanted",
+      "text": "Desperately seeking woodworkers willing to defy the Public Permit Predicament! Must be skilled in creating sturdy radio stands and possess a strong desire to overturn furniture fads. Pay in gratitude (and the potential for a lifetime supply of Radio Jamboree subscriptions)!"
+    },
+    {
+      "cat": "Lost & Found",
+      "text": "Lost: A beloved vintage radio stand named Elvis. Last seen happily supporting a 1945 radio drama. If found, please return to the Johnson household; reward includes a heartfelt monologue about why furniture matters!"
+    },
+    {
+      "cat": "Public Notices",
+      "text": "To the neighbors who side-eyed my radio stand while I defended it on the lawn: I apologize for my passionate outburst during last night's Furniture Appreciation Meeting. Please accept my offer of baked goods, and remember, furniture deserves love too!"
+    }
+  ],
+  "comic_strip": {
+    "title": "Local Reactions",
+    "panels": [
+      {
+        "caption": "So. Nationwide Shortage of Radio Stands Sparks Furniture Famine."
+      },
+      {
+        "caption": "And they printed that above the fold like it was normal."
+      },
+      {
+        "caption": "In this timeline? That's the normal part."
+      }
+    ]
+  },
+  "joke": {
+    "setup": "How do you explain 'Nationwide Shortage of Radio Stands Sparks Fu' to a visitor from another timeline?",
+    "punchline": "You don't. You hand them the paper and back away slowly.",
+    "text": "How do you explain 'Nationwide Shortage of Radio Stands Sparks Fu' to a visitor from another timeline? You don't. You hand them the paper and back away slowly."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "Stare Saviors: The 2026 Eye-Spy Cornerscope!",
+      "body": "Tired of gazing into the abyss of empty corners? With our Cornerscope, you can easily spy on imaginary friends and distant thoughts. Because why just stare when you can peer into the void with style!",
+      "tagline": "Now available in three corner sizes—perfect for all of your daydreams!"
+    },
+    {
+      "headline": "The Upholstered Emotion: Feelings You Can Sit On!",
+      "body": "Introducing the new line of upholstered emotions! Choose from 'Melancholy Maple' to 'Regretful Recliner' and sit with your feelings while you stare in silence. Why let your emotions go unrecognized when you can have them on display?",
+      "tagline": "Warning: Excessive sitting may lead to overthinking and existential crises."
+    },
+    {
+      "headline": "The Corn-Phobia Service: No More Lonely Corners!",
+      "body": "Are you afraid of empty corners? Sign up for our Corn-Phobia Service, where trained professionals will fill your corners with personalized audio dramas featuring narrators who never stop speaking. Because who needs furniture when you have endless chatter?",
+      "tagline": "Satisfaction guaranteed or your corners will remain empty—forever!"
+    },
+    {
+      "headline": "The Corner Embrace: Cuddle with Your Furniture!",
+      "body": "Why look at empty spaces when you can hug your furniture? Each purchase comes with a complimentary hug instruction manual, ensuring that no corner is left unappreciated. Feel the warmth of companionship (or just your couch) tonight!",
+      "tagline": "Warning: Cuddling may lead to attachment issues—get a corner chair today!"
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Sport",
+      "headline": "Local Bowling League Rebrands as Epic Sound Bowl-Off Amid Furniture Famine",
+      "deck": "Teams now compete for the ultimate radio prize: a coveted lamp that somehow drowns out ball collisions with background jazz.",
+      "byline": "Tommy Lanes, Sports Writer",
+      "article": "<p>In response to the nationwide furniture famine, the Springfield Bowling League has announced its rebranding as the Epic Sound Bowl-Off, unleashing a creative fury on the traditional sport. Competitors are encouraged to display their elaborate setups of radios, with prizes awarded not just for strikes, but for the most captivating static.</p><p>League president Beauregard Mulligan explained, 'We thought about bowling balls and vibrations, then realized the real competition is who can distract you more while you're rolling.' Participants are already planning outfits showcasing the best vintage radio and have begun practicing their routines in tight-knit living rooms, where the furniture has been repurposed as makeshift audience seating.</p>"
+    }
+  ],
+  "real_world_echo": "mirrors the headline about drought straining Europe's rivers, as citizens unwittingly deplete resources while desperately seeking to support their newfound obsession with ornate furniture for their radios.",
+  "generated_at": "2026-08-04T03:30:21.020546+00:00"
+}
