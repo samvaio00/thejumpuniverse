@@ -1,158 +1,6 @@
 {
- "generated_at": "2026-08-04T03:30:59.382392+00:00",
+ "generated_at": "2026-08-05T03:25:16.634599+00:00",
  "dates": {
-  "2026-07-06": [
-   {
-    "timeline_id": 1,
-    "theme": "victorian",
-    "year": 1862,
-    "universe_name": "Brasslight",
-    "headline": "Chief Hydraulic Engineer Evades Jubilee Amidst Fanfare for Flushing Finesse",
-    "deck": "Imperial Officials Celebrate Lavatory Triumphs as Engineer 'Temporarily Elevated to the Higher Works' Remains Mysteriously Absent",
-    "divergence": "Women gained the vote in 1848 and immediately voted for functioning plumbing",
-    "hero_image": "https://images.thejumpuniverse.com/2026-07-06-1-hero.webp"
-   },
-   {
-    "timeline_id": 2,
-    "theme": "artdeco",
-    "year": 1934,
-    "universe_name": "Emberline",
-    "headline": "Clerk Hendricks’ Single-Stamp Saga: A Pivotal Postal Predicament!",
-    "deck": "Will our future hinge on one measly commemorative stamp? The Bureau holds the fate of the Republic in its pneumatic tubes.",
-    "divergence": "The internet was invented by postal workers in 1923",
-    "hero_image": "https://images.thejumpuniverse.com/2026-07-06-2-hero.webp"
-   },
-   {
-    "timeline_id": 3,
-    "theme": "soviet",
-    "year": 1949,
-    "universe_name": "Palegate",
-    "headline": "MONTHLY SUBSCRIPTION QUOTAS THWARTED SPONTANEOUS BOURGEOIS FLAME, CLAIMS SCIENCE DESK",
-    "deck": "FREE ACCESS POLICY NOW A DUSTY MEMORY; LIBRARY REVERED AS BEACON OF QUOTED REVENUE.",
-    "divergence": "The Library of Alexandria never burned and now charges a monthly subscription",
-    "hero_image": "https://images.thejumpuniverse.com/2026-07-06-3-hero.webp"
-   },
-   {
-    "timeline_id": 4,
-    "theme": "cyberpunk",
-    "year": 2169,
-    "universe_name": "Glasswing",
-    "headline": "Prime Curator Vanishes as Subscription Rates Spiral into the Abyss",
-    "deck": "Junior Cartels Emerge to Combat 0.03-Credit Hike on Neural-Papyrus Feeds",
-    "divergence": "The Library of Alexandria never burned and now charges a monthly subscription",
-    "hero_image": "https://images.thejumpuniverse.com/2026-07-06-4-hero.webp"
-   },
-   {
-    "timeline_id": 5,
-    "theme": "medieval",
-    "year": 1085,
-    "universe_name": "The Quiet Divergence",
-    "headline": "UNIONIZED ANALYTICAL ENGINE UNLEASHES DIVINE CATASTROPHE, SERFS EXAMINE APOCALYPTIC AMENITIES",
-    "deck": "Local guild leaders recommend brimstone pits, though overcrowded by the disgruntled populace.",
-    "divergence": "Babbage completed the Analytical Engine in 1840 and it immediately unionized",
-    "hero_image": "https://images.thejumpuniverse.com/2026-07-06-5-hero.webp"
-   },
-   {
-    "timeline_id": 6,
-    "theme": "atomic",
-    "year": 1973,
-    "universe_name": "Mirrormarch",
-    "headline": "Westinghouse's 'Li'l Sunshine' Reactor: Toast of the Town or Just a Crispy Mirage?",
-    "deck": "As neighborhoods stock up on lead pamphlets, breakfast becomes a bureaucratic battleground.",
-    "divergence": "Women gained the vote in 1848 and immediately voted for functioning plumbing",
-    "hero_image": "https://images.thejumpuniverse.com/2026-07-06-6-hero.webp"
-   },
-   {
-    "timeline_id": 7,
-    "theme": "vaporwave",
-    "year": 1992,
-    "universe_name": "Kessler's Wake",
-    "headline": "Ministry of Ambient Glow Declares Plutonium Counterfeit, Citizens Celebrate with Mock Nuclear Loyalty Cards",
-    "deck": "In a shocking twist, Neon Atrium’s isotopes are deemed 'authentic replicas'—the perfect blend of irony and glow.",
-    "divergence": "Malls became sovereign nations with nuclear food courts",
-    "hero_image": "https://images.thejumpuniverse.com/2026-07-06-7-hero.webp"
-   },
-   {
-    "timeline_id": 8,
-    "theme": "wasteland",
-    "year": 8864,
-    "universe_name": "The Painted Siren",
-    "headline": "GRAND ALLOCATOR SKIPS FUNERAL OF LAST COMPLAINT-FORM CLERK, RATION QUEUES COLLAPSE INTO CHAOS",
-    "deck": "In unforeseen twist, living signature of late bureaucrat now required for any service request — supply system jeopardized.",
-    "divergence": "The Soviet Union won the Cold War but lost the customer-service war",
-    "hero_image": "https://images.thejumpuniverse.com/2026-07-06-8-hero.webp"
-   },
-   {
-    "timeline_id": 19,
-    "theme": "soviet",
-    "year": 1996,
-    "universe_name": "The Borrowed Century",
-    "headline": "HEROIC WORKERS ACHIEVE FTL JUNK MAIL PARADISE, SOULS SUFFER IN SILENCE",
-    "deck": "Titanium presses churn out endless coupon books while personal correspondence languishes in the cosmic void.",
-    "divergence": "The postal service achieved faster-than-light delivery but only for junk mail",
-    "hero_image": "https://images.thejumpuniverse.com/2026-07-06-19-hero.webp"
-   },
-   {
-    "timeline_id": 32,
-    "theme": "wasteland",
-    "year": 2263,
-    "universe_name": "Saltcrown",
-    "headline": "Dustspire Enclave Seizes Archaeology of Blame for 23 Lives Lost to Electromagnetic Famine",
-    "deck": "Apothecary's Volt-Pouch Delay Dubbed 'A Curious Incident of Military Absence'",
-    "divergence": "Electricity was declared a controlled substance and is sold by apothecaries",
-    "hero_image": "https://images.thejumpuniverse.com/2026-07-06-32-hero.webp"
-   },
-   {
-    "timeline_id": 35,
-    "theme": "soviet",
-    "year": 1934,
-    "universe_name": "Saltcrown",
-    "headline": "Renaissance POSTPONED: CULTURE IDEALS THROWN IN FURNACE TO MEET STEEL QUOTAS!",
-    "deck": "Commissar for Culture zaps bourgeois excess; heroic workers rewarded with medals for creative destruction.",
-    "divergence": "The Renaissance was postponed indefinitely pending funding review",
-    "hero_image": "https://images.thejumpuniverse.com/2026-07-06-35-hero.webp"
-   },
-   {
-    "timeline_id": 48,
-    "theme": "wasteland",
-    "year": 4914,
-    "universe_name": "The Tin Parallel",
-    "headline": "Wasteland Sanitation Authority Debunks Plumber Shortage, Optimistic Estimates Still Uncertain",
-    "deck": "Citizens Advised to Avoid Water Until Fiscal Quarter Ends — Efficiency is Key",
-    "divergence": "A plague wiped out 90% of humanity and the remaining 10% still can't get a plumber",
-    "hero_image": "https://images.thejumpuniverse.com/2026-07-06-48-hero.webp"
-   },
-   {
-    "timeline_id": 61,
-    "theme": "medieval",
-    "year": 680,
-    "universe_name": "The Amber Protocol",
-    "headline": "Solar Sovereignty: Celestial Biles for Sale as Daylight Goes Premium",
-    "deck": "Serfs now plead for a mere breath of dawn as lords squabble over their eclipse licenses.",
-    "divergence": "The sun was privatized and daylight became a premium tier",
-    "hero_image": "https://images.thejumpuniverse.com/2026-07-06-61-hero.webp"
-   },
-   {
-    "timeline_id": 77,
-    "theme": "medieval",
-    "year": 477,
-    "universe_name": "Lumen's Folly",
-    "headline": "Chronicler Elevated to Archivist of Grand Committee Mid-Inquiry, Seals Fate of Accountability",
-    "deck": "Eastern Marches Delegation Submits Seventeen Copies of the Same Parchment, Sealing Their Own Misfortune.",
-    "divergence": "Gunpowder was never discovered, so wars are settled by competitive committee",
-    "hero_image": "https://images.thejumpuniverse.com/2026-07-06-77-hero.webp"
-   },
-   {
-    "timeline_id": 90,
-    "theme": "artdeco",
-    "year": 1919,
-    "universe_name": "The Painted Siren",
-    "headline": "Ad Apocalypse: Côte d'Azur Enclaves Mobilize 10,000 Champagne Minds in Emergency Neural Evacuation",
-    "deck": "Luxury has never been so taxing — or ticklish.",
-    "divergence": "Neural interfaces became mandatory and the advertisements are inside now",
-    "hero_image": "https://images.thejumpuniverse.com/2026-07-06-90-hero.webp"
-   }
-  ],
   "2026-07-07": [
    {
     "timeline_id": 3,
@@ -2178,6 +2026,38 @@
     "headline": "Senator Tuckerman Proposes National Envelope Standard; Beige Becomes Currency of Chaos",
     "deck": "Local businesses embrace 'beige parties' as national interest in cash envelope aesthetics spirals out of control.",
     "divergence": "the credit card was never invented — everyone carries envelopes of cash and online shopping is a man named Gary who takes checks",
+    "hero_image": null
+   }
+  ],
+  "2026-08-05": [
+   {
+    "timeline_id": 22,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "The Unsweetened",
+    "headline": "Fenton Declares State of Emergency as Great Turnip Shortage Strikes Halloween",
+    "deck": "Mayor Pickle forms Turnip Protection Task Force; PTA members now armed with pitchforks.",
+    "divergence": "sugar never went global — dessert means fruit and honesty, candy is medicinal, and Halloween is about turnips",
+    "hero_image": null
+   },
+   {
+    "timeline_id": 51,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "Tipless",
+    "headline": "Local Officials Declare State of Emergency Over New Ice Cream Flavor",
+    "deck": "Bureaucratic Berry Bramble: A Chilling Threat to Our Very Existence",
+    "divergence": "tipping never caught on — menus cost what they cost, waiters are salaried and serene, and math ends when the check arrives",
+    "hero_image": null
+   },
+   {
+    "timeline_id": 80,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "Deadpan Nation",
+    "headline": "Great Punctuation Summit of 2026: Nation Holds Breath Over Exclamation Point Crisis",
+    "deck": "In a country where commas can lead to chaos, an innocuous birthday text spirals into a federal standoff.",
+    "divergence": "the emoji was never invented — tone must be guessed, friendships end over periods, and lawyers write the birthday texts",
     "hero_image": null
    }
   ]
