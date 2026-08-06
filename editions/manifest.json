@@ -1,88 +1,6 @@
 {
- "generated_at": "2026-08-05T03:25:16.634599+00:00",
+ "generated_at": "2026-08-06T03:28:47.190239+00:00",
  "dates": {
-  "2026-07-07": [
-   {
-    "timeline_id": 3,
-    "theme": "soviet",
-    "year": 1934,
-    "universe_name": "Palegate",
-    "headline": "TEAL-FACED WORKER INSISTS ON PAYING FULL SHOELACE QUOTAS, DESPITE COLLECTIVE CELEBRATION OF SOCRATIC QUESTIONING",
-    "deck": "In a system where inquiry is monetized, one man clings to his outdated ideals like a tattered shoelace.",
-    "divergence": "Socrates monetized his questions and founded the first consulting empire",
-    "hero_image": "https://images.thejumpuniverse.com/2026-07-07-3-hero.webp"
-   },
-   {
-    "timeline_id": 19,
-    "theme": "soviet",
-    "year": 1996,
-    "universe_name": "The Borrowed Century",
-    "headline": "FASTEST JUNK MAIL IN THE KNOWN UNIVERSE DECLARED OFFICIAL, PERSONAL CORRESPONDENCE DISMISSED AS COSMIC NOISE",
-    "deck": "Commissar Thackeray-Voltaire assures citizens that individual letters fall victim to 'secondary void allocation' while junk mail quotas soar.",
-    "divergence": "The postal service achieved faster-than-light delivery but only for junk mail",
-    "hero_image": "https://images.thejumpuniverse.com/2026-07-07-19-hero.webp"
-   },
-   {
-    "timeline_id": 32,
-    "theme": "wasteland",
-    "year": 2263,
-    "universe_name": "Saltcrown",
-    "headline": "Dustspire Enclave Honors Blame While Famine Forgets to Read the Ledger",
-    "deck": "In a twist, posthumous honors lead to yesterday's missing volts being reclassified as 'heroic contributions.'",
-    "divergence": "Electricity was declared a controlled substance and is sold by apothecaries",
-    "hero_image": "https://images.thejumpuniverse.com/2026-07-07-32-hero.webp"
-   },
-   {
-    "timeline_id": 45,
-    "theme": "medieval",
-    "year": 439,
-    "universe_name": "The Ninth Ledger",
-    "headline": "Order of the Tuesday Hem-Scryers Disbands, Leaving Only Unfashionable Sleeves in Their Wake",
-    "deck": "Hem-Scryers to blame for lack of sartorial splendor in the days to come — all because one petty decree declared their gazing unlawful.",
-    "divergence": "Every mirror shows next Tuesday, and fashion has never recovered",
-    "hero_image": "https://images.thejumpuniverse.com/2026-07-07-45-hero.webp"
-   },
-   {
-    "timeline_id": 48,
-    "theme": "wasteland",
-    "year": 4914,
-    "universe_name": "The Tin Parallel",
-    "headline": "Wasteland Sanitation Authority Declares Ir:Vess Tunnel Flood a Quota Compliance Triumph",
-    "deck": "Citizens advised to taste static, count blessings amid overflowing compliance.",
-    "divergence": "A plague wiped out 90% of humanity and the remaining 10% still can't get a plumber",
-    "hero_image": "https://images.thejumpuniverse.com/2026-07-07-48-hero.webp"
-   },
-   {
-    "timeline_id": 61,
-    "theme": "medieval",
-    "year": 680,
-    "universe_name": "The Amber Protocol",
-    "headline": "Great Nocturnal Famine Declared a Rousing Success: Lords Rejoice as Daylight Becomes Luxury Good",
-    "deck": "With serfs nibbling on rivet shavings, Copper Synod celebrates exemplary market discipline in darkness.",
-    "divergence": "The sun was privatized and daylight became a premium tier",
-    "hero_image": "https://images.thejumpuniverse.com/2026-07-07-61-hero.webp"
-   },
-   {
-    "timeline_id": 74,
-    "theme": "artdeco",
-    "year": 1931,
-    "universe_name": "Ashfall",
-    "headline": "Instituto Peso Albañil García Float Away in Lawsuit Sea",
-    "deck": "As the weight of bureaucracy dissipates, mourning rituals commence for the void now left by the gravity regulators.",
-    "divergence": "Gravity weakened by four percent and the lawsuits are ongoing",
-    "hero_image": "https://images.thejumpuniverse.com/2026-07-07-74-hero.webp"
-   },
-   {
-    "timeline_id": 90,
-    "theme": "artdeco",
-    "year": 1919,
-    "universe_name": "The Painted Siren",
-    "headline": "Neural Tribunal Adopts Loyalty Tags, Ensuring Ad-Surcharge Officials Feel Right at Home in Their Guilt",
-    "deck": "Citizens Now Advised to Flush Skin Bronze and Recite Surcharge Ledgers with Gusto; Just Another Day in Luxury.",
-    "divergence": "Neural interfaces became mandatory and the advertisements are inside now",
-    "hero_image": "https://images.thejumpuniverse.com/2026-07-07-90-hero.webp"
-   }
-  ],
   "2026-07-08": [
    {
     "timeline_id": 3,
@@ -2058,6 +1976,38 @@
     "headline": "Great Punctuation Summit of 2026: Nation Holds Breath Over Exclamation Point Crisis",
     "deck": "In a country where commas can lead to chaos, an innocuous birthday text spirals into a federal standoff.",
     "divergence": "the emoji was never invented — tone must be guessed, friendships end over periods, and lawyers write the birthday texts",
+    "hero_image": null
+   }
+  ],
+  "2026-08-06": [
+   {
+    "timeline_id": 35,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "Satchel Nation",
+    "headline": "National Satchel Council Vanishes, Leaving Citizens in a Pouch Predicament",
+    "deck": "In a bizarre twist, the absence of satchel regulation has led to chaos, confusion, and a burgeoning black market for vintage pouches.",
+    "divergence": "the pocket was never invented — everyone carries a satchel, belts hold forty pouches, and 'pocket change' is meaningless",
+    "hero_image": null
+   },
+   {
+    "timeline_id": 64,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "Main Street Forever",
+    "headline": "Barns No Longer for Loitering: Local Teens Forced to Seek Loitering Refuge 8,000 Miles Away",
+    "deck": "In a bizarre twist, officials now require goats to endorse loitering permits.",
+    "divergence": "the shopping mall was never invented — Main Street never died and teenagers loiter in barns",
+    "hero_image": null
+   },
+   {
+    "timeline_id": 93,
+    "theme": "modern",
+    "year": 2026,
+    "universe_name": "The Unstructured",
+    "headline": "Government Launches 'Great Grocery Trek Initiative' to Turn Shopping Into National Sport",
+    "deck": "Citizens encouraged to earn 'rest tokens' by striding to their local grocery stores with official trekking guides.",
+    "divergence": "the gym was never invented — exercise is called 'work', treadmills are unknown, and everyone walks to things",
     "hero_image": null
    }
   ]
