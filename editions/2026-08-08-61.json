@@ -1,0 +1,106 @@
+{
+  "timeline_id": 61,
+  "theme": "modern",
+  "date": "2026-08-08",
+  "date_display": "Saturday, August 08, 2026",
+  "year": 2026,
+  "universe_name": "Granary Wars",
+  "universe_year": 2026,
+  "universe_date_display": "August 8, Year 2026",
+  "galaxy": "Milky Way",
+  "planet": "Earth",
+  "divergence": "the cat was never domesticated — granaries are lawless, mice hold territory, and the internet's spiritual mascot is a raccoon",
+  "story_angle": "man-on-the-street reactions to a rumor that the missing thing might exist somewhere, treated like a UFO sighting",
+  "roles": [
+    "Story: OpenAI",
+    "Humor: OpenAI",
+    "Editor: Grok"
+  ],
+  "headline": "Raccoon Sightings Spark Nationwide Debate Over the 'Missing Thing'",
+  "deck": "Suburban backyards become battlegrounds as raccoons claim lost territory; citizens demand answers, and local HOAs respond with sweeping bylaws.",
+  "article": "<p>In a bizarre twist of fate, the Department of Raccoon Affairs has reported an alarming surge in raccoon sightings across the nation, as these masked marauders assert their claims over what they call 'lost territory.' Suburban communities, once tranquil, are now embroiled in a territorial dispute messier than a toddler's birthday cake.</p><p>Homeowners are scrambling to comply with the new mandate requiring them to report any raccoon encounters to their Homeowners' Associations, who are frantically drafting bylaws. These regulations may include hefty fines for those who fail to comply, with HOAs drawing inspiration from the murky legal precedent of 'Raccoon Rights' established in the 1973 case of Johnson v. Trashcan.</p><p>In a surprising development, a grassroots raccoon militia has emerged, boldly declaring themselves the champions of the 'Missing Thing'—a term that has become increasingly ambiguous as citizens debate whether it refers to the raccoons' territorial claims or the very essence of civility itself. \"These raccoons are the true protectors of our rights!\" proclaimed militia leader Edward J. Munchkin outside a local Taco Bell. \"We demand official recognition and a seat at the governing table—or at least in the dumpster behind it!\"</p><p>As the absurdity of a raccoon-led insurgency unfolds, experts speculate that future public policy may prioritize raccoon diplomacy, with some even suggesting a nationwide 'Raccoon Registry' to track sightings. Meanwhile, the existential question lingers: What exactly is the 'Missing Thing'—and should we even seek to uncover it?</p>",
+  "author": "Bertie H. Raccoonsworth, Senior Correspondent",
+  "city": "Raccoonopolis",
+  "weather": {
+    "city": "Raccoonopolis",
+    "condition": "Overcast with occasional raccoon sightings",
+    "temp": 72,
+    "high": 78,
+    "low": 65
+  },
+  "oped": {
+    "title": "Raccoons: The True Victims of Suburban Hat Culture",
+    "author": "Bartholomew F. Snufflepuff, Self-Proclaimed Urban Wildlife Diplomate",
+    "body": "Ah, the great raccoon crisis of 2026! While suburbanites squabble over lost territory, I can’t help but ponder if the real culprits are not the raccoons, but the offensive hats worn by these so-called 'victims.' Clearly, the gaudy fedoras and neon visors are a magnet for raccoon ire! If we simply mandated a strict 'no hat' policy in our backyards, perhaps the raccoons would cease their trespasses. Imagine the peace as raccoons reclaim their rightful dominion! And let’s not forget the HOA, which is clearly overstepping by introducing bylaws instead of addressing the root cause: hat provocation. Join me in this noble pursuit of raccoon appeasement—after all, in a world where granaries are lawless and cats plot against our groceries, fashion is clearly our greatest threat!"
+  },
+  "classifieds": [
+    {
+      "cat": "For Sale",
+      "text": "For sale: Top-of-the-line raccoon-proof trash cans! 🦝 Sturdy, stylish, and completely watertight to keep your leftovers safe from the newly emboldened raccoon militia. Act fast — supplies are dwindling as demand surges!"
+    },
+    {
+      "cat": "Help Wanted",
+      "text": "Help wanted: Raccoon bouncer for local granary nightclub! 🍰 Must be able to intimidate mice and uphold the peace during turf wars. Competitive pay in acorns and leftover pie crusts. Must provide own raccoon mask."
+    },
+    {
+      "cat": "Lost & Found",
+      "text": "Lost: One (1) therapy raccoon named Fluffy. 🦝 Last seen mediating a dispute between our backyard squirrels and the neighbor's feral cats. If found, please return immediately; my sanity depends on him!"
+    },
+    {
+      "cat": "Public Notices",
+      "text": "Official notice: All HOA members must attend an emergency meeting on raccoon jurisdiction rights this Thursday. 📜 Failure to comply may result in impromptu raccoon raids on your unsupervised garage! Bring your strongest snacks for diplomacy."
+    }
+  ],
+  "comic_strip": {
+    "title": "Local Reactions",
+    "panels": [
+      {
+        "caption": "So. Raccoon Sightings Spark Nationwide Debate Over the."
+      },
+      {
+        "caption": "And they printed that above the fold like it was normal."
+      },
+      {
+        "caption": "In this timeline? That's the normal part."
+      }
+    ]
+  },
+  "joke": {
+    "setup": "How do you explain 'Raccoon Sightings Spark Nationwide Debate Ove' to a visitor from another timeline?",
+    "punchline": "You don't. You hand them the paper and back away slowly.",
+    "text": "How do you explain 'Raccoon Sightings Spark Nationwide Debate Ove' to a visitor from another timeline? You don't. You hand them the paper and back away slowly."
+  },
+  "sponsor_ads": [
+    {
+      "headline": "Raccoon Tracker 3000: Find Your Spirit Mascot!",
+      "body": "In a world where raccoons moderate social behavior, don’t leave your sidekick to chance! The Raccoon Tracker 3000 uses cutting-edge AI to match you with the raccoon that embodies your soul. Who knew trash-diving could be so philosophical?",
+      "tagline": "Now with a free roll of compostable trash bags!"
+    },
+    {
+      "headline": "Mice Territory Maps: Discover Your Neighbors’ Secrets!",
+      "body": "Lost in the wild granaries? Our exclusive Mice Territory Maps will ensure you never trespass into a field of 'No Mouse Zone' again. Know where to tread and where to tread lightly! Your feet will thank you.",
+      "tagline": "Warning: Not suitable for mouse-phobic individuals."
+    },
+    {
+      "headline": "The Great Raccoon Debate: A Symposium on the 'Missing Thing'",
+      "body": "Join us this weekend at Raccoon Park for a riveting symposium exploring the philosophical implications of the 'Missing Thing.' Snacks provided by local raccoons—bring your own containers to avoid the Great Garbage Grab!",
+      "tagline": "Attendees may experience existential dread."
+    },
+    {
+      "headline": "Granary Defense Co.: Secure Your Harvest From Furry Raiders!",
+      "body": "With the rise of mouse gangs, your granary needs protection! Our state-of-the-art fencing and raccoon-scare tactics ensure no foodstuff goes unguarded. Call us today to keep your stock safe in lawless territories!",
+      "tagline": "Guaranteed no raccoon touch required... or your money back!"
+    }
+  ],
+  "stories": [
+    {
+      "desk": "Science",
+      "headline": "Institute of Raccoon Behavior Releases Groundbreaking Study on Garbage Can Tactics",
+      "deck": "Findings may finally explain why your trash has never been safer.",
+      "byline": "Jasper T. Fumbleton, Senior Researcher",
+      "article": "<p>In a remarkable revelation, the Institute of Raccoon Behavior has published a report detailing the ingenious strategies raccoons employ during their garbage can raids. The study found that 98% of raccoons surveyed prefer to work in pairs, utilizing the classic distraction-and-swipe technique. Surprisingly, the report also noted a rise in raccoon-proof technology among trash cans, with models now featuring advanced latches and decoy sounds.</p><p>Experts suggest that these developments in raccoon tactics may soon compel human engineers to devise even more sophisticated barriers. One engineer quipped, \"If we can just keep the raccoons from commandeering our leftovers, we might finally achieve snack time utopia—or at least avoid snacks being hurled back at us.\"</p>"
+    }
+  ],
+  "real_world_echo": "mirrors the chaos of border control disputes, with raccoons becoming the focal point of territorial claims and citizen fears, reflecting the absurdity of misplaced priorities.",
+  "generated_at": "2026-08-08T02:10:35.669648+00:00"
+}
