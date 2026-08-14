@@ -1,0 +1,5 @@
+/editions/*
+  X-Robots-Tag: noindex, nofollow
+
+/edition/*
+  X-Robots-Tag: noindex, nofollow
