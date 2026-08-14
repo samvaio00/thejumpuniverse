@@ -1,77 +1,60 @@
-# The Multiverse Gazette
+# thejumpuniverse.com
 
-A daily satirical newspaper from alternate universes across all of time — news parody in the spirit of The Onion by way of Terry Pratchett. Every day, a new story in a different universe on a random date across eons; the comic strip, joke, classifieds, and ads all riff on the front page. Zero sign-up. Zero products. Pure traffic and ad revenue.
+Sky events and visibility — *what is happening overhead, and when you can see it from where you are.*
 
-## Content Pipeline
+Companion to [GoodSeeing](https://goodseeing.com), which covers observing **conditions**
+(cloud by layer, transparency, seeing, moonlight, darkness). This site covers **events and
+objects**. Strict division of labour: GoodSeeing never publishes event content, this site
+never publishes forecast scores. Each links to the other.
 
-- Each edition carries 2–4 stories (a lead plus shorter dispatches from other desks — Business, Sport, Crime, Obituaries…), every story with its own AI image
-- Each edition picks a random year within its theme's era (medieval 713–1499 … wasteland 2077–12077) and a satirical divergence premise
-- Real-world headlines are fetched from news RSS at generation time so stories can obliquely mirror current affairs (fails soft if offline)
-- An editor "brief" stage designs the day's comic premise; every section prompt receives the front-page headline so the whole paper reads as one universe reacting to one event
-- A final editor pass enforces cohesion and punches up flat jokes
-- The day's lead edition is prerendered into `index.html` (title, meta/OG tags, headline, article, JSON-LD) so search engines and no-JS readers see real content
+**Status:** holding page. See [`STRATEGY-PIVOT.md`](./STRATEGY-PIVOT.md) for the full plan.
 
-## Architecture
+---
 
-```
-GitHub Actions (Daily 00:01) → Python Script (LLM + Fallback) → Static JSON /editions/
-                                                                   │
-                                                                   ▼
-                                                        Static HTML (Cloudflare Pages)
-                                                        Fetches JSON + Client Fallback
-```
+## History
 
-## Quick Start
+This domain previously ran *The Multiverse Gazette*, a daily algorithmically generated
+satirical newspaper. It was retired in August 2026. All generated editions, feeds, sitemaps
+and brand assets were removed, and every content-producing workflow was deleted.
 
-```bash
-# 1. Generate today's editions
-python generate.py --all
+Retired because:
 
-# 2. Serve locally
-python -m http.server 8000
-# Open http://localhost:8000
+- Satire has effectively no search intent, so an automated pipeline had no discovery path.
+- Google's March 2026 core update targets scaled content abuse; a site of ~200 fully
+  AI-generated pages matches the penalised profile.
+- YouTube's inauthentic content policy makes mass-produced, template-driven daily uploads
+  ineligible for the Partner Program.
 
-# 3. Deploy to Cloudflare Pages
-#    Add CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID repo secrets, then push to main.
-#    See DEPLOY.md for setup details.
-```
+The **pipeline** was kept. The **output** was not.
 
-## GitHub Actions Setup
+## What remains
 
-1. Fork repo → Settings → Secrets → Actions
-2. Add `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` for deploy
-3. Add one or more LLM keys: `MOONSHOT_API_KEY`, `GROK_API_KEY`, or `OPENAI_API_KEY`
-4. Images use **Grok** (comic strip) and **OpenAI** (hero photo). Text uses fixed roles: Moonshot=story, Grok=humor, OpenAI=editor
-5. Workflow runs daily at 00:01 UTC automatically
+| Path | Purpose |
+|---|---|
+| `generate.py` | Multi-provider LLM pipeline (Moonshot / Grok / OpenAI) with fallback routing, image generation and editor passes. Retained for reuse — no longer invoked by any workflow. |
+| `scripts/` | Video generation (Veo), YouTube upload, stats, deploy helpers. Retained, dormant. |
+| `index.html` | Holding page. |
+| `robots.txt` | Allows search crawlers and AI answer-engine crawlers explicitly. |
+| `.github/workflows/deploy.yml` | Cloudflare Pages deploy on push. The only remaining workflow. |
 
-## Monetization
+## Automation status
 
-- **Google AdSense**: Replace `.ad-slot` divs with ad code
-- **Sponsored Timelines**: Brand-sponsored divergence points
-- **Affiliate Links**: Embedded in classifieds
-- **Native Ads**: Styled as in-universe newspaper ads
+**All content generation is off.** Deleted: `daily.yml`, `daily-short.yml`, `publish-short.yml`,
+`publish-ad.yml`, `promo-video.yml`, `backfill-images.yml`, `migrate-images.yml`,
+`yt-stats.yml`, `yt-auth-test.yml`, and the three `test-*` workflows.
 
-## SEO
+Nothing publishes to the web or to YouTube on a schedule any more.
 
-- Dynamic title/meta/canonical per edition
-- Open Graph + Twitter Cards
-- Schema.org NewsArticle structured data
-- Auto-generated sitemap.xml + rss.xml (properly XML-escaped)
-- Canonical URLs with timeline/date params
-- Semantic HTML5 + print styles
+## When rebuilding
 
-## Frontend Features
+The design principle that matters: **the LLM narrates, it does not author.** Every page must
+carry computed or sourced values — ephemerides, geomagnetic indices, eclipse circumstances —
+with prose as a thin readable layer over verified numbers. That is the difference between the
+category Google penalised in March 2026 and the category that kept its traffic.
 
-- Two flippable pages per edition (front page + features page) with 3D page-turn animation and swipe support on mobile
-- The front page's layout varies daily — a seeded pick per edition (classic / banner / split) so no two days compose alike
-- "Tomorrow's Edition" teaser: a deterministic JS replica of the generator's seeded RNG truthfully previews tomorrow's universe before it exists
-- Reader streak stamp (localStorage) rewards daily visits
-- `editions/manifest.json` — index of every published edition, regenerated daily; powers the site-wide archive and previous-day navigation
-- Jump Universe hops between the published timelines for the current date
-- Keyboard shortcuts: `←`/`→` previous/next day, `J` jump universe
-- Per-theme display typography via Google Fonts (Playfair Display, Oswald, Orbitron, MedievalSharp, Righteous, Monoton, Special Elite, …)
-- Web Share API with clipboard fallback
+Intended sources: Skyfield + JPL ephemerides, CelesTrak TLEs, NOAA SWPC, the IMO shower
+calendar, the Minor Planet Center, and Launch Library 2.
 
-## License
+## Deploy
 
-MIT. All timelines reserved.
+Hosted on Cloudflare Pages. Push to `main` deploys. See [`DEPLOY.md`](./DEPLOY.md).

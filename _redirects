@@ -1,2 +1,0 @@
-# Legacy share URLs → the edition's canonical static page
-/timeline/:timeline/:date  /edition/:date/:timeline/  301

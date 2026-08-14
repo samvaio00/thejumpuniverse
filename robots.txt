@@ -1,5 +1,47 @@
+# thejumpuniverse.com
+
+# Search crawlers
 User-agent: *
 Allow: /
 
-Sitemap: https://thejumpuniverse.com/sitemap.xml
-Sitemap: https://thejumpuniverse.com/sitemap-video.xml
+# AI answer engines — explicitly allowed.
+# Blocking any of these makes the site invisible to that engine
+# regardless of content quality. Do not "harden" this later.
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# No sitemap while the site is a single holding page.
+# Restore a Sitemap: directive when real pages ship.

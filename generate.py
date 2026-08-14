@@ -214,7 +214,7 @@ def default_timeline_for(date):
     return (date.timetuple().tm_yday * 13) % NUM_UNIVERSES + 1
 
 
-def daily_universe_ids(date, count=8):
+def daily_universe_ids(date, count=3):
     """The set of universes covered on a given date (used by --all).
     Deterministic and distinct; the first entry is the date's default universe."""
     base = date.timetuple().tm_yday * 13
